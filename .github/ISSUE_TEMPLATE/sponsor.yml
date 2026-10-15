@@ -1,0 +1,25 @@
+name: Sponsor inquiry
+description: Ask about sponsoring CodeToolPicker (homepage slot or newsletter)
+title: "[Sponsor] <Company name>"
+labels: ["sponsor"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for your interest! See [SPONSOR.md](https://github.com/patwinplastics/codetoolpicker/blob/main/SPONSOR.md). This issue is public — don't include confidential info."
+  - type: input
+    id: company
+    attributes: {label: Company / product, placeholder: "e.g. Acme AI IDE"}
+    validations: {required: true}
+  - type: input
+    id: contact
+    attributes: {label: Best contact (email or X handle)}
+    validations: {required: true}
+  - type: dropdown
+    id: format
+    attributes:
+      label: Interested in
+      multiple: true
+      options: [Homepage sponsor slot, Newsletter sponsorship, Featured listing in comparison, Not sure yet]
+  - type: textarea
+    id: notes
+    attributes: {label: Goals / timing / budget range (optional)}

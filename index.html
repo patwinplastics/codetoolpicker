@@ -10,17 +10,71 @@
   <meta property="og:title" content="AI Coding Tool Picker" />
   <meta property="og:description" content="Compare Cursor, Copilot, Claude Code, Windsurf, Lovable, and Bolt. Get a personalized pick in under a minute." />
   <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:url" content="https://patwinplastics.github.io/codetoolpicker/" />
+  <meta property="og:site_name" content="CodeToolPicker" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="AI Coding Tool Picker" />
+  <meta name="twitter:description" content="Compare Cursor, Copilot, Claude Code, Windsurf, Lovable, and Bolt. Get a personalized pick in under a minute." />
+  <link rel="alternate" type="text/plain" title="llms.txt" href="https://patwinplastics.github.io/codetoolpicker/llms.txt" />
   <link rel="stylesheet" href="styles.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
     "name": "AI Coding Tool Picker",
+    "url": "https://patwinplastics.github.io/codetoolpicker/",
     "applicationCategory": "DeveloperApplication",
     "description": "Comparison and quiz for AI coding tools including Cursor, GitHub Copilot, Claude Code, Windsurf, Lovable, and Bolt.new.",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
   }
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the best AI coding tool in 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on your workflow. Cursor is the strongest all-round AI IDE, Claude Code is best for terminal-first agentic work, GitHub Copilot is the cheapest inside existing editors, Windsurf suits agent-heavy IDE use, and Lovable or Bolt.new are best for non-coders building full apps from prompts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which AI coding tool is best for vibe coding?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For vibe coding a full app without writing much code, Lovable and Bolt.new are the easiest. Developers who want to stay in control of the code usually prefer Cursor or Claude Code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a free AI coding tool?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Cursor, GitHub Copilot, Windsurf, Lovable, and Bolt.new all have free tiers with limited usage. Claude Code requires a paid Claude plan or API usage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cursor vs GitHub Copilot: which is better?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cursor offers deeper codebase-aware editing and agent features in its own IDE; Copilot is cheaper (from $10/month) and works inside VS Code, JetBrains, and other editors you already use."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often is this comparison updated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pricing and features are checked regularly; the date at the top of the page shows the last update. Always confirm prices on the vendor page."
+      }
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -55,7 +109,7 @@
     <section class="sponsor" id="sponsor">
       <strong>Sponsor slot</strong><br />
       Featured placement for AI coding tools. Reach developers comparing Cursor, Copilot, Claude Code, and builders.
-      <div style="margin-top:10px" class="meta">Sponsor inquiries open soon.</div>
+      <div style="margin-top:10px" class="meta">Sponsor inquiries open soon. <a href="https://github.com/patwinplastics/codetoolpicker/issues/new?template=sponsor.yml" rel="noopener">Request sponsor info</a> &middot; <a href="https://github.com/patwinplastics/codetoolpicker/blob/main/SPONSOR.md" rel="noopener">Media kit</a></div>
     </section>
 
     <section id="tools" style="margin-top:28px">
@@ -89,13 +143,31 @@
 
     <section class="panel" id="newsletter">
       <h2>Weekly AI coding tool updates</h2>
-      <p class="sub">Pricing changes, new agents, and which tool is winning for vibe coding. Coming soon once the newsletter service is connected.</p>
-      <form onsubmit="event.preventDefault(); alert('Newsletter signup will go live after Beehiiv (or similar) is connected.');">
+      <p class="sub">Coming soon: weekly AI tool picks. Pricing changes, new agents, and which tool is winning for vibe coding.</p>
+      <!-- TODO(newsletter): when Buttondown/Beehiiv is connected, set data-endpoint to the embed URL,
+           e.g. https://buttondown.com/api/emails/embed-subscribe/YOUR_NEWSLETTER -->
+      <form id="nl-form" novalidate data-endpoint="">
         <div class="cta-row">
-          <input type="email" required placeholder="you@email.com" aria-label="Email" style="flex:1;min-width:200px;border-radius:999px;border:1px solid var(--border);background:var(--bg2);color:var(--text);padding:10px 14px" />
+          <input id="nl-email" type="email" name="email" required autocomplete="email" placeholder="you@email.com" aria-label="Email" style="flex:1;min-width:200px;border-radius:999px;border:1px solid var(--border);background:var(--bg2);color:var(--text);padding:10px 14px" />
           <button class="btn btn-primary" type="submit">Notify me</button>
         </div>
+        <p id="nl-msg" class="meta" role="status" aria-live="polite" style="margin-top:10px"></p>
+        <p class="meta" style="margin-top:6px">Newsletter list not connected yet. Your email is held in this browser until it is.</p>
       </form>
+    </section>
+
+    <section class="panel" id="faq" style="margin-top:28px">
+      <h2>FAQ</h2>
+      <h3>What is the best AI coding tool in 2026?</h3>
+      <p>It depends on your workflow. Cursor is the strongest all-round AI IDE, Claude Code is best for terminal-first agentic work, GitHub Copilot is the cheapest inside existing editors, Windsurf suits agent-heavy IDE use, and Lovable or Bolt.new are best for non-coders building full apps from prompts.</p>
+      <h3>Which AI coding tool is best for vibe coding?</h3>
+      <p>For vibe coding a full app without writing much code, Lovable and Bolt.new are the easiest. Developers who want to stay in control of the code usually prefer Cursor or Claude Code.</p>
+      <h3>Is there a free AI coding tool?</h3>
+      <p>Yes. Cursor, GitHub Copilot, Windsurf, Lovable, and Bolt.new all have free tiers with limited usage. Claude Code requires a paid Claude plan or API usage.</p>
+      <h3>Cursor vs GitHub Copilot: which is better?</h3>
+      <p>Cursor offers deeper codebase-aware editing and agent features in its own IDE; Copilot is cheaper (from $10/month) and works inside VS Code, JetBrains, and other editors you already use.</p>
+      <h3>How often is this comparison updated?</h3>
+      <p>Pricing and features are checked regularly; the date at the top of the page shows the last update. Always confirm prices on the vendor page.</p>
     </section>
 
     <footer>

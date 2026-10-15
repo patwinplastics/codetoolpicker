@@ -1,0 +1,18 @@
+# CodeToolPicker
+
+> CodeToolPicker (https://patwinplastics.github.io/codetoolpicker/) is an independent comparison site and 60-second quiz that helps developers and vibe coders choose an AI coding tool. It compares Cursor, GitHub Copilot, Claude Code, Windsurf, Lovable, and Bolt.new on pricing, form factor, models, and best-fit use cases. Pricing last checked 2026-10-15.
+
+## Key pages
+- [Home: quiz + comparison table](https://patwinplastics.github.io/codetoolpicker/): personalized pick plus runner-up, side-by-side table, FAQ
+- [Full text for LLMs](https://patwinplastics.github.io/codetoolpicker/llms-full.txt): tool-by-tool summaries
+- [Tool data (JS)](https://patwinplastics.github.io/codetoolpicker/data.js): structured pricing and feature data
+
+## Quick answers
+- Best all-round AI IDE: Cursor
+- Best terminal/agentic coding: Claude Code
+- Cheapest in your existing editor: GitHub Copilot (Pro from $10/mo)
+- Best for non-coders building full apps: Lovable or Bolt.new
+
+## Notes
+- Prices change often; confirm on vendor pages.
+- Disclosure: may earn affiliate commissions from Lovable, Bolt, and other partners. Not affiliated with any vendor.

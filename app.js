@@ -111,3 +111,29 @@
   renderTable();
   showQuizStep();
 })();
+
+// Newsletter signup: validate, queue in localStorage, POST to endpoint if configured.
+(function () {
+  const form = document.getElementById("nl-form");
+  if (!form) return;
+  const input = document.getElementById("nl-email");
+  const msg = document.getElementById("nl-msg");
+  const KEY = "ctp_newsletter_queue";
+  const valid = (e) => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(e);
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    const email = input.value.trim().toLowerCase();
+    if (!valid(email)) { msg.textContent = "Please enter a valid email address."; input.focus(); return; }
+    let q = [];
+    try { q = JSON.parse(localStorage.getItem(KEY) || "[]"); } catch (_) {}
+    if (!q.some((x) => x.email === email)) q.push({ email, ts: new Date().toISOString() });
+    try { localStorage.setItem(KEY, JSON.stringify(q)); } catch (_) {}
+    const endpoint = form.dataset.endpoint;
+    if (endpoint) {
+      const fd = new FormData(); fd.append("email", email);
+      fetch(endpoint, { method: "POST", body: fd, mode: "no-cors" }).catch(() => {});
+    }
+    msg.textContent = "You're on the list! We'll send weekly AI tool picks once the newsletter launches.";
+    form.reset();
+  });
+})();
