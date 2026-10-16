@@ -19,7 +19,7 @@
 | Featured listing | Highlighted card in the tools grid | Clearly labeled. Doesn't change quiz results |
 
 ## Editorial policy
-Sponsorship never changes rankings, quiz logic, or comparison data. All paid placements are labeled.
+**Rankings are not for sale.** Sponsorship and affiliate relationships never change rankings, recommendations, quiz logic, or comparison data. Every sponsored placement is labeled "Sponsored" and every affiliate link is disclosed. Sponsors get visibility, not verdicts: if a sponsor's pricing or product changes, we report it the same way we would for anyone else. This policy is shown on the homepage and on every comparison page.
 
 ## Good fits
 AI IDEs and agents (Cursor, Windsurf/Devin, Copilot, Claude Code, Zed, Cline), app builders (Lovable, Bolt.new, Replit, v0), and dev infrastructure (hosting, databases, auth, model APIs).

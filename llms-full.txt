@@ -1,18 +1,25 @@
 # CodeToolPicker — full text
-Independent AI coding tool comparison. Source: https://patwinplastics.github.io/codetoolpicker/ . Data checked 2026-10-15; confirm prices on vendor sites.
+Independent AI coding tool comparison. Source: https://patwinplastics.github.io/codetoolpicker/ . Data checked 2026-10-16 (Cursor, Copilot, Claude Code verified on official pages that day; Windsurf, Lovable, Bolt last checked 2026-10-15); confirm prices on vendor sites.
+
+Editorial policy: rankings are not for sale. Sponsors and affiliate links are labeled and never change recommendations, quiz logic, or comparison data.
+
+See also: https://patwinplastics.github.io/codetoolpicker/cursor-bundle-alternatives/ (Cursor bundle vs Claude Code vs Copilot)
 
 ## Cursor
 - tagline: AI-first IDE with agents, cloud agents, and multi-model chat
 - category: ai-ide
 - formFactor: Desktop IDE
-- models: Grok + Composer included; Claude/GPT/Gemini via prepaid credit on Premium+
+- models: Grok + Composer included; Claude/GPT/Gemini on Premium+ billed separately at API list price
 - bestFor: Daily coding in a full IDE with agents and cloud work
-- strengths: ["Full IDE", "Cloud agents", "Strong agent workflows", "Multi-model (Premium+)"]
+- strengths: ["Full IDE","Cloud agents","Strong agent workflows","Multi-model (Premium+)"]
+- limits: ["Third-party models (Claude, GPT, etc.) are not in included usage: billed at API list price from first use (Premium+ only; not on Plus)","Usage pool shared with Grok, refreshes weekly","Legacy Cursor Pro/Pro+ plans continue for existing subscribers; switching optional"]
+- pricing source: https://cursor.com/pricing
 - plan Free: $0/mo — Limited usage
-- plan Plus: $8/mo — Cursor/Grok models only
-- plan Premium: $30/mo — 4x Plus + third-party models at API price
-- plan Super: $100/mo — 15x Plus
-- plan Ultra: $200/mo — 50x Plus
+- plan Plus: $8/mo — Grok models only; $80/yr
+- plan Premium: $30/mo — 4x Plus; Claude/GPT etc. billed separately at API list price; $300/yr
+- plan Super: $100/mo — 15x Plus; $1000/yr
+- plan Ultra: $200/mo — 50x Plus; $2000/yr
+- plan Teams: $30/mo — From $30/seat (Premium/Super/Ultra seats)
 
 ## GitHub Copilot
 - tagline: AI pair programmer inside VS Code, JetBrains, and GitHub
@@ -20,12 +27,15 @@ Independent AI coding tool comparison. Source: https://patwinplastics.github.io/
 - formFactor: IDE extension + GitHub
 - models: Selection of models; premium models on higher tiers
 - bestFor: GitHub-centric teams who want completions plus chat and agents
-- strengths: ["Deep GitHub integration", "Works in many IDEs", "Team admin controls", "Usage-based credits"]
+- strengths: ["Deep GitHub integration","Works in many IDEs","Team admin controls","Usage-based credits"]
+- limits: ["Credits run out on heavy agent use","Less of a standalone agent IDE than Cursor/Windsurf"]
+- pricing source: https://docs.github.com/en/copilot/get-started/plans
 - plan Free: $0/mo — Limited AI credits, auto model only
 - plan Pro: $10/mo — 1,500 AI credits / mo
 - plan Pro+: $39/mo — 7,000 AI credits / mo
 - plan Max: $100/mo — 20,000 AI credits / mo
 - plan Business: $19/mo — Per seat, 1,900 credits
+- plan Enterprise: $39/mo — Per seat, 3,900 credits
 
 ## Claude Code
 - tagline: Anthropic's terminal and IDE coding agent
@@ -33,10 +43,13 @@ Independent AI coding tool comparison. Source: https://patwinplastics.github.io/
 - formFactor: Terminal / IDE agent
 - models: Claude Sonnet, Opus, and related Claude models
 - bestFor: Terminal-native agentic coding on Claude models
-- strengths: ["Strong reasoning models", "Terminal-first agent", "Shared plan with Claude chat"]
-- plan Pro: $20/mo — Claude Code included; shared usage pool
+- strengths: ["Strong reasoning models","Terminal-first agent","Shared plan with Claude chat"]
+- limits: ["No free Claude Code tier","Usage shared with Claude chat","Claude-only models"]
+- pricing source: https://claude.com/pricing?mode=code
+- plan Pro: $20/mo — Claude Code included; $17/mo billed annually
 - plan Max 5x: $100/mo — 5x Pro usage
-- plan Max 20x: $200/mo — 20x Pro usage
+- plan Max 20x: see note — 20x Pro usage; price not shown on claude.com/pricing (Max listed 'from $100')
+- plan API: see note — Pay-as-you-go Console tokens
 
 ## Windsurf
 - tagline: AI IDE with Cascade agent and cloud agents (Devin Cloud)
@@ -44,7 +57,9 @@ Independent AI coding tool comparison. Source: https://patwinplastics.github.io/
 - formFactor: Desktop IDE
 - models: Frontier OpenAI, Claude, Gemini + SWE models
 - bestFor: Engineers who want a Cursor-class IDE with Cascade multi-step agents
-- strengths: ["Cascade agent", "Cloud agents", "Competitive Pro price", "Extra usage at API price"]
+- strengths: ["Cascade agent","Cloud agents","Competitive Pro price","Extra usage at API price"]
+- limits: ["Quotas can bite power users","Smaller ecosystem than Cursor/Copilot"]
+- pricing source: https://windsurf.com/pricing
 - plan Free: $0/mo — Light daily/weekly quota
 - plan Pro: $20/mo — Standard quota + frontier models
 - plan Max: $200/mo — Heavy quota
@@ -56,7 +71,9 @@ Independent AI coding tool comparison. Source: https://patwinplastics.github.io/
 - formFactor: Browser builder
 - models: Managed builder models
 - bestFor: Non-engineers and vibe coders who want a working web app from chat
-- strengths: ["Fast chat-to-app", "Hosting included", "Great for prototypes", "Affiliate-friendly category"]
+- strengths: ["Fast chat-to-app","Hosting included","Great for prototypes","Affiliate-friendly category"]
+- limits: ["Less control than a real IDE","Credit math on bigger apps","Web-first"]
+- pricing source: https://lovable.dev/pricing
 - plan Free: $0/mo — 5 daily build credits (capped monthly)
 - plan Paid: $25/mo — From ~$25/mo; credit-based (check live page)
 
@@ -66,7 +83,9 @@ Independent AI coding tool comparison. Source: https://patwinplastics.github.io/
 - formFactor: Browser IDE / builder
 - models: Managed builder models
 - bestFor: Code-visible chat-to-app with real project files in the browser
-- strengths: ["Real code in browser", "Hosting + DB options", "Token rollover on paid", "Affiliate potential"]
+- strengths: ["Real code in browser","Hosting + DB options","Token rollover on paid","Affiliate potential"]
+- limits: ["Token limits on free","Browser sandbox constraints","Not a full desktop IDE"]
+- pricing source: https://bolt.new/pricing
 - plan Free: $0/mo — 300K tokens/day, 1M/mo, Bolt branding
 - plan Pro: $25/mo — From 10M tokens/mo, custom domain, no branding
 - plan Teams: $30/mo — Per member / mo

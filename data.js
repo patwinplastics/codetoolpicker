@@ -1,4 +1,4 @@
-// Pricing researched 2026-10-15 from vendor pages. Verify before quoting publicly.
+// Pricing verified 2026-10-16 on official pages (cursor.com/pricing, docs.x.ai/x-subscription/pricing, docs.github.com Copilot plans, claude.com/pricing).
 window.TOOL_DATA = [
   {
     id: "cursor",
@@ -12,15 +12,16 @@ window.TOOL_DATA = [
     freeTier: true,
     plans: [
       { name: "Free", price: 0, note: "Limited usage" },
-      { name: "Plus", price: 8, note: "Cursor/Grok models only" },
-      { name: "Premium", price: 30, note: "4x Plus + third-party models at API price" },
-      { name: "Super", price: 100, note: "15x Plus" },
-      { name: "Ultra", price: 200, note: "50x Plus" }
+      { name: "Plus", price: 8, note: "Grok models only; $80/yr" },
+      { name: "Premium", price: 30, note: "4x Plus; Claude/GPT etc. billed separately at API list price; $300/yr" },
+      { name: "Super", price: 100, note: "15x Plus; $1000/yr" },
+      { name: "Ultra", price: 200, note: "50x Plus; $2000/yr" },
+      { name: "Teams", price: 30, note: "From $30/seat (Premium/Super/Ultra seats)" }
     ],
     strengths: ["Full IDE", "Cloud agents", "Strong agent workflows", "Multi-model (Premium+)"],
-    limits: ["Third-party models cost extra on Premium+", "Pricing is usage-pooled weekly"],
+    limits: ["Third-party models (Claude, GPT, etc.) are not in included usage: billed at API list price from first use (Premium+ only; not on Plus)", "Usage pool shared with Grok, refreshes weekly", "Legacy Cursor Pro/Pro+ plans continue for existing subscribers; switching optional"],
     formFactor: "Desktop IDE",
-    models: "Grok + Composer included; Claude/GPT/Gemini via prepaid credit on Premium+",
+    models: "Grok + Composer included; Claude/GPT/Gemini on Premium+ billed separately at API list price",
     affiliate: false,
     sponsorFit: "high"
   },
@@ -39,7 +40,8 @@ window.TOOL_DATA = [
       { name: "Pro", price: 10, note: "1,500 AI credits / mo" },
       { name: "Pro+", price: 39, note: "7,000 AI credits / mo" },
       { name: "Max", price: 100, note: "20,000 AI credits / mo" },
-      { name: "Business", price: 19, note: "Per seat, 1,900 credits" }
+      { name: "Business", price: 19, note: "Per seat, 1,900 credits" },
+      { name: "Enterprise", price: 39, note: "Per seat, 3,900 credits" }
     ],
     strengths: ["Deep GitHub integration", "Works in many IDEs", "Team admin controls", "Usage-based credits"],
     limits: ["Credits run out on heavy agent use", "Less of a standalone agent IDE than Cursor/Windsurf"],
@@ -59,9 +61,9 @@ window.TOOL_DATA = [
     startingPaid: 20,
     freeTier: false,
     plans: [
-      { name: "Pro", price: 20, note: "Claude Code included; shared usage pool" },
+      { name: "Pro", price: 20, note: "Claude Code included; $17/mo billed annually" },
       { name: "Max 5x", price: 100, note: "5x Pro usage" },
-      { name: "Max 20x", price: 200, note: "20x Pro usage" },
+      { name: "Max 20x", price: null, note: "20x Pro usage; price not shown on claude.com/pricing (Max listed 'from $100')" },
       { name: "API", price: null, note: "Pay-as-you-go Console tokens" }
     ],
     strengths: ["Strong reasoning models", "Terminal-first agent", "Shared plan with Claude chat"],
