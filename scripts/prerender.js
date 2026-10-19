@@ -49,11 +49,11 @@ fs.writeFileSync(idx, html);
 
 const lines = [
   "# CodeToolPicker — full text",
-  `Independent AI coding tool comparison. Source: https://patwinplastics.github.io/codetoolpicker/ . Data checked ${checked} on official vendor pricing pages; confirm prices on vendor sites.`,
+  `Independent AI coding tool comparison. Source: https://codetoolpicker.com/ . Data checked ${checked} on official vendor pricing pages; confirm prices on vendor sites.`,
   "",
   "Editorial policy: rankings are not for sale. Sponsors and affiliate links are labeled and never change recommendations, quiz logic, or comparison data.",
   "",
-  "See also: https://patwinplastics.github.io/codetoolpicker/cursor-bundle-alternatives/ (Cursor bundle vs Claude Code vs Copilot)",
+  "See also: https://codetoolpicker.com/cursor-bundle-alternatives/ (Cursor bundle vs Claude Code vs Copilot)",
   "",
   "Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, plans, and pricing); windsurf.com redirects to devin.ai.",
 ];

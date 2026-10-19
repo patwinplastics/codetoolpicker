@@ -1,6 +1,6 @@
 # Sponsor CodeToolPicker
 
-**CodeToolPicker** (https://patwinplastics.github.io/codetoolpicker/) helps developers and vibe coders pick an AI coding tool through a 60-second quiz and a live side-by-side comparison of Cursor, GitHub Copilot, Claude Code, Windsurf, Lovable, and Bolt.new.
+**CodeToolPicker** (https://codetoolpicker.com/) helps developers and vibe coders pick an AI coding tool through a 60-second quiz and a live side-by-side comparison of Cursor, GitHub Copilot, Claude Code, Windsurf, Lovable, and Bolt.new.
 
 ## Audience
 - Developers, indie hackers, and "vibe coders" actively deciding which AI coding tool to pay for, so they're close to buying
