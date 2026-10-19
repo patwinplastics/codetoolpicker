@@ -5,6 +5,7 @@
   const answers = [];
 
   const moneyLabel = (n) => (n == null ? "Usage-based" : n === 0 ? "Free" : `$${n}/mo`);
+  const ctaUrl = (t) => t.affiliateUrl || t.website;
 
   function renderCards(list) {
     const el = document.getElementById("cards");
@@ -20,7 +21,7 @@
         <p class="meta"><strong>Best for:</strong> ${t.bestFor}</p>
         <ul class="list">${t.strengths.slice(0, 3).map((s) => `<li>${s}</li>`).join("")}</ul>
         <div class="actions">
-          <a class="btn btn-primary" href="${t.website}" rel="noopener sponsored">Visit ${t.name}</a>
+          <a class="btn btn-primary" href="${ctaUrl(t)}" rel="noopener sponsored">Visit ${t.name}</a>
           <a class="btn" href="${t.pricingUrl}" rel="noopener">Pricing</a>
         </div>
       </article>
@@ -82,7 +83,7 @@
       <p>${top.bestFor}. Starts at <strong>${moneyLabel(top.startingPaid)}</strong>.</p>
       <p class="meta">Also consider ${second.name} if you want ${second.tagline.toLowerCase()}.</p>
       <div class="cta-row" style="margin-top:12px">
-        <a class="btn btn-primary" href="${top.website}" rel="noopener sponsored">Try ${top.name}</a>
+        <a class="btn btn-primary" href="${ctaUrl(top)}" rel="noopener sponsored">Try ${top.name}</a>
         <a class="btn" href="#tool-${top.id}">See details</a>
         <button class="btn" id="quiz-reset">Retake</button>
       </div>

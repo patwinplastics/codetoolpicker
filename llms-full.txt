@@ -16,6 +16,7 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - bestFor: Daily coding in a full IDE with agents and cloud work
 - strengths: ["Full IDE","Cloud agents","Strong agent workflows","Multi-model (Premium+)"]
 - limits: ["Third-party models (Claude, GPT, etc.) are not in included usage: billed at API list price from first use (Premium+ only; not on Plus)","Usage pool shared with Grok, refreshes weekly","Legacy Cursor Pro/Pro+ plans continue for existing subscribers; switching optional"]
+- website: https://cursor.com
 - pricing source: https://cursor.com/pricing
 - plan Free: $0/mo — Limited usage
 - plan Plus: $8/mo — Grok models only; $80/yr
@@ -31,7 +32,8 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - models: Selection of models; premium models on higher tiers
 - bestFor: GitHub-centric teams who want completions plus chat and agents
 - strengths: ["Deep GitHub integration","Works in many IDEs","Team admin controls","Usage-based credits"]
-- limits: ["Credits run out on heavy agent use","Less of a standalone agent IDE than Cursor/Windsurf"]
+- limits: ["Credits run out on heavy agent use","Less of a standalone agent IDE than Cursor/Devin Desktop"]
+- website: https://github.com/features/copilot
 - pricing source: https://docs.github.com/en/copilot/get-started/plans
 - plan Free: $0/mo — Limited AI credits, auto model only
 - plan Pro: $10/mo — 1,500 AI credits / mo
@@ -48,6 +50,7 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - bestFor: Terminal-native agentic coding on Claude models
 - strengths: ["Strong reasoning models","Terminal-first agent","Shared plan with Claude chat"]
 - limits: ["No free Claude Code tier","Usage shared with Claude chat","Claude-only models"]
+- website: https://claude.com/product/claude-code
 - pricing source: https://claude.com/pricing?mode=code
 - plan Pro: $20/mo — Claude Code included; $17/mo billed annually
 - plan Max 5x: $100/mo — 5x Pro usage
@@ -62,6 +65,7 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - bestFor: Engineers who want a Cursor-class IDE that manages many local and cloud agents
 - strengths: ["Agent Command Center (local + cloud agents)","Devin Cloud included on paid plans","Competitive Pro price","Extra usage at API price"]
 - limits: ["Quotas can bite power users","Renamed from Windsurf in June 2026; some docs and extensions still say Windsurf"]
+- website: https://devin.ai
 - pricing source: https://devin.ai/pricing
 - plan Free: $0/mo — Light agent quota, unlimited Tab and inline edits
 - plan Pro: $20/mo — Increased quotas + frontier models, Devin Cloud access
@@ -76,6 +80,7 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - bestFor: Non-engineers and vibe coders who want a working web app from chat
 - strengths: ["Fast chat-to-app","Hosting included","Great for prototypes","Affiliate-friendly category"]
 - limits: ["Less control than a real IDE","Credit math on bigger apps","Web-first"]
+- website: https://lovable.dev
 - pricing source: https://lovable.dev/pricing
 - plan Free: $0/mo — 5 daily build credits (capped monthly)
 - plan Paid: $25/mo — From ~$25/mo; credit-based (check live page)
@@ -88,6 +93,8 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - bestFor: Code-visible chat-to-app with real project files in the browser
 - strengths: ["Real code in browser","Hosting + DB options","Token rollover on paid","Affiliate potential"]
 - limits: ["Token limits on free","Browser sandbox constraints","Not a full desktop IDE"]
+- website: https://bolt.new
+- affiliate / referral CTA: https://bolt.cello.so/aLdglbfmlfZ
 - pricing source: https://bolt.new/pricing
 - plan Free: $0/mo — 300K tokens/day, 1M/mo, Bolt branding
 - plan Pro: $25/mo — From 10M tokens/mo, custom domain, no branding

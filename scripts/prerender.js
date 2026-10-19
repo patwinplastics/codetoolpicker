@@ -9,6 +9,7 @@ require(path.join(root, "data.js"));
 const tools = window.TOOL_DATA;
 const checked = process.argv[2] || new Date().toISOString().slice(0, 10);
 const money = (n) => (n == null ? "Usage-based" : n === 0 ? "Free" : `$${n}/mo`);
+const ctaUrl = (t) => t.affiliateUrl || t.website;
 
 const cards = tools.map((t) => `
       <article class="card" data-category="${t.category}" id="tool-${t.id}">
@@ -22,7 +23,7 @@ const cards = tools.map((t) => `
         <p class="meta"><strong>Best for:</strong> ${t.bestFor}</p>
         <ul class="list">${t.strengths.slice(0, 3).map((s) => `<li>${s}</li>`).join("")}</ul>
         <div class="actions">
-          <a class="btn btn-primary" href="${t.website}" rel="noopener sponsored">Visit ${t.name}</a>
+          <a class="btn btn-primary" href="${ctaUrl(t)}" rel="noopener sponsored">Visit ${t.name}</a>
           <a class="btn" href="${t.pricingUrl}" rel="noopener">Pricing</a>
         </div>
       </article>`).join("");
@@ -63,7 +64,9 @@ for (const t of tools) {
     `- tagline: ${t.tagline}`, `- category: ${t.category}`, `- formFactor: ${t.formFactor}`,
     `- models: ${t.models}`, `- bestFor: ${t.bestFor}`,
     `- strengths: ${JSON.stringify(t.strengths)}`, `- limits: ${JSON.stringify(t.limits)}`,
-    `- pricing source: ${t.pricingUrl}`);
+    `- website: ${t.website}`);
+  if (t.affiliateUrl) lines.push(`- affiliate / referral CTA: ${t.affiliateUrl}`);
+  lines.push(`- pricing source: ${t.pricingUrl}`);
   for (const p of t.plans) lines.push(`- plan ${p.name}: ${p.price == null ? "see vendor" : `$${p.price}/mo`} — ${p.note}`);
 }
 fs.writeFileSync(path.join(root, "llms-full.txt"), lines.join("\n") + "\n");

@@ -126,6 +126,7 @@ window.TOOL_DATA = [
     tagline: "In-browser AI app builder on StackBlitz WebContainers",
     bestFor: "Code-visible chat-to-app with real project files in the browser",
     website: "https://bolt.new",
+    affiliateUrl: "https://bolt.cello.so/aLdglbfmlfZ",
     pricingUrl: "https://bolt.new/pricing",
     startingPaid: 25,
     freeTier: true,
@@ -139,7 +140,7 @@ window.TOOL_DATA = [
     formFactor: "Browser IDE / builder",
     models: "Managed builder models",
     affiliate: true,
-    affiliateNote: "Reportedly ~15% affiliate (capped; verify on partner page)",
+    affiliateNote: "Bolt referral link live (Earn $50 / Cello); may earn a commission",
     sponsorFit: "high"
   }
 ];
