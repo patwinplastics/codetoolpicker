@@ -5,6 +5,8 @@ Editorial policy: rankings are not for sale. Sponsors and affiliate links are la
 Contact (sponsorships, corrections): sponsors@codetoolpicker.com
 
 See also: https://codetoolpicker.com/cursor-bundle-alternatives/ (Cursor bundle vs Claude Code vs Copilot)
+See also: https://codetoolpicker.com/cursor-vs-copilot/ (Cursor vs GitHub Copilot)
+See also: https://codetoolpicker.com/switch-from-copilot-to-cursor/ (switch from Copilot to Cursor without losing your setup)
 
 Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, plans, and pricing); windsurf.com redirects to devin.ai.
 

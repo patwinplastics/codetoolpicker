@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name='impact-site-verification' value='83f48c6a-f7b9-45b3-8866-03f8600f0734'>
+  <title>How to Switch from GitHub Copilot to Cursor Without Losing Your Setup (2026)</title>
+  <meta name="description" content="Step-by-step: import VS Code settings and extensions into Cursor, move copilot-instructions.md to AGENTS.md or .cursor/rules, port MCP servers, and pick the right Cursor plan. Sourced from official docs, Oct 2026." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://codetoolpicker.com/switch-from-copilot-to-cursor/" />
+  <meta property="og:title" content="Switch from GitHub Copilot to Cursor without losing your setup" />
+  <meta property="og:description" content="Settings, extensions, instructions/rules, MCP servers, and plan choice. Sourced from Cursor and GitHub docs, Oct 19, 2026." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://codetoolpicker.com/switch-from-copilot-to-cursor/" />
+  <meta property="og:site_name" content="CodeToolPicker" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to switch from GitHub Copilot to Cursor without losing your setup",
+    "step": [
+      { "@type": "HowToStep", "name": "Import your VS Code setup", "text": "In Cursor Settings (Cmd/Ctrl+Shift+J), go to General > Account and click Import under VS Code Import to bring over extensions, themes, settings and keybindings." },
+      { "@type": "HowToStep", "name": "Move repository-wide instructions", "text": "Copy .github/copilot-instructions.md into an AGENTS.md file in the repo root (read by both Copilot agents and Cursor), or into a .cursor/rules/*.mdc rule with alwaysApply: true." },
+      { "@type": "HowToStep", "name": "Move path-specific instructions", "text": "For each .github/instructions/NAME.instructions.md file, create .cursor/rules/NAME.mdc and copy its applyTo glob into the globs field with alwaysApply: false." },
+      { "@type": "HowToStep", "name": "Port MCP servers", "text": "Copy servers from .vscode/mcp.json (which uses a top-level servers key) into .cursor/mcp.json (which uses mcpServers), checking the format. Don't paste credentials into the file." },
+      { "@type": "HowToStep", "name": "Protect secrets", "text": "Add a .cursorignore file (gitignore syntax) for files Cursor should not read. Cursor already ignores .gitignore entries and .env files by default." },
+      { "@type": "HowToStep", "name": "Choose a plan", "text": "Cursor Plus ($8/month) is Grok-only. If you relied on Claude or GPT in Copilot, you need Premium ($30/month) or higher, with those models billed at API list price." }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Does Cursor read .github/copilot-instructions.md?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Cursor's rules documentation lists four sources: Project Rules in .cursor/rules, User Rules, Team Rules, and AGENTS.md. copilot-instructions.md is not listed, so copy its contents into AGENTS.md or a .cursor/rules .mdc file. Keep the original if teammates or Copilot code review still use it." } },
+      { "@type": "Question", "name": "What is the easiest way to share instructions between Copilot and Cursor?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Use AGENTS.md. GitHub's docs say Copilot agents use the nearest AGENTS.md in the directory tree, and Cursor supports AGENTS.md in the project root and subdirectories. One file serves both tools." } },
+      { "@type": "Question", "name": "Will my VS Code extensions and keybindings work in Cursor?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Cursor is based on the VS Code codebase and has a one-click VS Code Import (Cursor Settings > General > Account) that transfers extensions, themes, settings and keybindings. You can also export a VS Code profile and import it in Cursor." } },
+      { "@type": "Question", "name": "Why is my rule in .cursor/rules being ignored?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Project rules must use the .mdc extension with frontmatter (description, globs, alwaysApply). A plain .md file in .cursor/rules is ignored. Use AGENTS.md if you prefer plain markdown." } },
+      { "@type": "Question", "name": "Which Cursor plan should a Copilot Pro user pick?",
+        "acceptedAnswer": { "@type": "Answer", "text": "If Grok and Cursor's Composer models are enough, Plus at $8/month is cheaper than Copilot Pro at $10. If you depend on Claude or GPT, you need Premium at $30/month or higher, and those models are billed separately at API list price, so Cursor will usually cost more than Copilot Pro for that use." } }
+    ]
+  }
+  </script>
+  <style>
+    .wrap table td, .wrap table th { vertical-align: top; }
+    .note { font-size: .9em; color: var(--muted); }
+    article h2 { margin-top: 28px; }
+    pre { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 12px; overflow-x: auto; font-size: .9em; }
+    code { font-size: .92em; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo"><a href="../" style="color:inherit;text-decoration:none">CodeTool<span>Picker</span></a></div>
+      <nav>
+        <a href="../#quiz">Quiz</a>
+        <a href="../#compare">Compare</a>
+        <a href="../cursor-vs-copilot/">Cursor vs Copilot</a>
+        <a href="./">Switch Copilot → Cursor</a>
+        <a href="../cursor-bundle-alternatives/">Cursor bundle vs Claude Code vs Copilot</a>
+      </nav>
+    </header>
+
+    <article>
+    <section class="hero">
+      <h1>How to switch from GitHub Copilot to Cursor without losing your setup</h1>
+      <p>Your editor setup, repo instructions, and MCP servers can all come with you. This guide maps each Copilot file to its Cursor equivalent, using only what Cursor's and GitHub's official docs say.</p>
+      <p class="updated">Checked against official docs and pricing pages Oct 19, 2026.</p>
+      <div class="cta-row"><a class="btn btn-primary" href="../cursor-vs-copilot/">First: should you switch? Cursor vs Copilot</a> <a class="btn" href="../#quiz">Take the 60-second quiz</a></div>
+    </section>
+
+    <section class="panel" style="overflow-x:auto">
+      <h2>Copilot → Cursor cheat sheet</h2>
+      <table>
+        <thead><tr><th>In Copilot / VS Code</th><th>In Cursor</th></tr></thead>
+        <tbody>
+          <tr><td>VS Code extensions, themes, settings, keybindings</td><td>One-click <strong>VS Code Import</strong> (Cursor Settings → General → Account)</td></tr>
+          <tr><td><code>.github/copilot-instructions.md</code> (repo-wide)</td><td><code>AGENTS.md</code> in the repo root, or <code>.cursor/rules/*.mdc</code> with <code>alwaysApply: true</code></td></tr>
+          <tr><td><code>.github/instructions/NAME.instructions.md</code> with <code>applyTo</code></td><td><code>.cursor/rules/NAME.mdc</code> with <code>globs</code> and <code>alwaysApply: false</code></td></tr>
+          <tr><td><code>AGENTS.md</code> (anywhere in repo)</td><td>Works as-is. Cursor reads <code>AGENTS.md</code> in the root and subdirectories</td></tr>
+          <tr><td>Personal instructions</td><td>User Rules (Customize → Rules)</td></tr>
+          <tr><td>Organization instructions</td><td>Team Rules (Cursor dashboard, Team/Enterprise plans)</td></tr>
+          <tr><td><code>.vscode/mcp.json</code> (<code>servers</code> key)</td><td><code>.cursor/mcp.json</code> in the project or <code>~/.cursor/mcp.json</code> globally (<code>mcpServers</code> key)</td></tr>
+          <tr><td>Content exclusion / secrets</td><td><code>.cursorignore</code> (gitignore syntax) plus global ignore patterns</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="panel">
+      <h2>Step 1: Import your VS Code setup</h2>
+      <p>Cursor is based on the VS Code codebase. Open Cursor Settings (<code>Cmd/Ctrl+Shift+J</code>), go to <strong>General → Account</strong>, and under <strong>VS Code Import</strong> click <strong>Import</strong>. That transfers your extensions, themes, settings and keybindings.</p>
+      <p>Moving between machines? Export a profile in VS Code (<em>Preferences: Open Profiles (UI)</em> → ⋯ → Export Profile) and import it in Cursor from the same Profiles screen.</p>
+      <p class="note">Source: <a href="https://cursor.com/docs/configuration/migrations/vscode" rel="noopener">Cursor VS Code migration docs</a>.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Step 2: Move your Copilot instructions</h2>
+      <p>Cursor's docs list four rule sources: Project Rules (<code>.cursor/rules</code>), User Rules, Team Rules, and <code>AGENTS.md</code>. <code>copilot-instructions.md</code> isn't one of them, so copy its contents over.</p>
+      <h3>Easiest: one AGENTS.md for both tools</h3>
+      <p>GitHub's docs say Copilot agents use the nearest <code>AGENTS.md</code> in the directory tree, and Cursor reads <code>AGENTS.md</code> in the root and subdirectories. If teammates stay on Copilot, one plain-markdown file keeps both tools in sync.</p>
+      <pre><code># AGENTS.md
+## Code style
+- Use TypeScript for all new files
+## Build and test
+- Always run npm install before npm test</code></pre>
+      <h3>More control: Cursor project rules</h3>
+      <p>Repo-wide instructions become an always-on rule:</p>
+      <pre><code># .cursor/rules/project.mdc
+---
+alwaysApply: true
+---
+(paste the contents of .github/copilot-instructions.md here)</code></pre>
+      <p>Path-specific Copilot files map almost one-to-one. Copy the <code>applyTo</code> glob into <code>globs</code>:</p>
+      <pre><code># .github/instructions/models.instructions.md   (Copilot)
+---
+applyTo: "app/models/**/*.rb"
+---
+
+# .cursor/rules/models.mdc   (Cursor)
+---
+globs: app/models/**/*.rb
+alwaysApply: false
+---</code></pre>
+      <p><strong>Gotcha:</strong> project rules must use the <code>.mdc</code> extension. A plain <code>.md</code> file in <code>.cursor/rules</code> is ignored. Cursor also suggests keeping each rule under 500 lines.</p>
+      <p><strong>Keep the Copilot files</strong> if anyone still uses Copilot. Copilot code review on GitHub reads repository instructions from the PR's head branch, so deleting them changes those reviews.</p>
+      <p class="note">Sources: <a href="https://cursor.com/docs/context/rules" rel="noopener">Cursor rules docs</a> · <a href="https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions" rel="noopener">GitHub repository custom instructions</a>.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Step 3: Port your MCP servers</h2>
+      <p>Create <code>.cursor/mcp.json</code> in the project (or <code>~/.cursor/mcp.json</code> for every project). Cursor's file uses a top-level <code>mcpServers</code> object; VS Code's <code>.vscode/mcp.json</code> uses <code>servers</code>. Don't copy one into the other without checking the format, and don't paste API keys into files you commit.</p>
+      <p class="note">Sources: <a href="https://cursor.com/docs/context/mcp" rel="noopener">Cursor MCP docs</a> · <a href="https://code.visualstudio.com/docs/copilot/customization/mcp-servers" rel="noopener">VS Code MCP docs</a>.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Step 4: Keep secrets out of context</h2>
+      <p>Cursor already skips files in <code>.gitignore</code> and a default list that includes <code>.env*</code> and lockfiles. Add a <code>.cursorignore</code> (gitignore syntax) for anything else, and consider global ignore patterns such as <code>**/.env</code>, <code>**/*.pem</code> and <code>**/*.key</code>. Cursor notes that agent terminal and MCP tools can't be blocked by <code>.cursorignore</code>, so it isn't a complete security control.</p>
+      <p class="note">Source: <a href="https://cursor.com/docs/context/ignore-files" rel="noopener">Cursor ignore file docs</a>.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Step 5: Pick a Cursor plan (check this before you cancel Copilot)</h2>
+      <ul>
+        <li><strong>Plus, $8/mo:</strong> Grok models only. Cheaper than Copilot Pro ($10) if Grok and Composer are enough for you.</li>
+        <li><strong>Premium, $30/mo:</strong> 4x Plus usage, plus Claude, GPT and other third-party models, which are billed separately at API list price from first use.</li>
+        <li><strong>Super $100 / Ultra $200:</strong> 15x and 50x Plus usage.</li>
+        <li><strong>Teams:</strong> from $30/seat, vs Copilot Business at $19/seat.</li>
+      </ul>
+      <p><strong>Honest take:</strong> if Claude or GPT through Copilot Pro is what you rely on, Cursor will usually cost more for the same models. Switch for Cursor's agent-first IDE and cloud agents, not to save money. Try Cursor Free on a real repo first, and keep Copilot until you're sure.</p>
+      <p class="note">Sources: <a href="https://cursor.com/pricing" rel="noopener">cursor.com/pricing</a> · <a href="https://docs.github.com/en/copilot/get-started/plans" rel="noopener">GitHub Copilot plans</a>. Checked Oct 19, 2026. Full breakdown: <a href="../cursor-vs-copilot/">Cursor vs Copilot</a>.</p>
+    </section>
+
+    <section class="panel" id="faq">
+      <h2>FAQ</h2>
+      <h3>Does Cursor read .github/copilot-instructions.md?</h3>
+      <p>Cursor's rules documentation lists four sources: Project Rules in <code>.cursor/rules</code>, User Rules, Team Rules, and <code>AGENTS.md</code>. <code>copilot-instructions.md</code> is not listed, so copy its contents into <code>AGENTS.md</code> or a <code>.cursor/rules</code> <code>.mdc</code> file. Keep the original if teammates or Copilot code review still use it.</p>
+      <h3>What is the easiest way to share instructions between Copilot and Cursor?</h3>
+      <p>Use <code>AGENTS.md</code>. GitHub's docs say Copilot agents use the nearest <code>AGENTS.md</code> in the directory tree, and Cursor supports <code>AGENTS.md</code> in the project root and subdirectories. One file serves both tools.</p>
+      <h3>Will my VS Code extensions and keybindings work in Cursor?</h3>
+      <p>Cursor is based on the VS Code codebase and has a one-click VS Code Import (Cursor Settings → General → Account) that transfers extensions, themes, settings and keybindings. You can also export a VS Code profile and import it in Cursor.</p>
+      <h3>Why is my rule in .cursor/rules being ignored?</h3>
+      <p>Project rules must use the <code>.mdc</code> extension with frontmatter (<code>description</code>, <code>globs</code>, <code>alwaysApply</code>). A plain <code>.md</code> file in <code>.cursor/rules</code> is ignored. Use <code>AGENTS.md</code> if you prefer plain markdown.</p>
+      <h3>Which Cursor plan should a Copilot Pro user pick?</h3>
+      <p>If Grok and Cursor's Composer models are enough, Plus at $8/month is cheaper than Copilot Pro at $10. If you depend on Claude or GPT, you need Premium at $30/month or higher, and those models are billed separately at API list price, so Cursor will usually cost more than Copilot Pro for that use.</p>
+    </section>
+
+    <section class="panel" id="disclosure">
+      <h2>Editorial disclosure</h2>
+      <p><strong>Rankings are not for sale.</strong> Sponsored placements and affiliate links are always labeled, and they never change our recommendations, quiz results, or comparison data. None of the links on this page are affiliate links: Cursor and GitHub don't pay us. <a href="https://github.com/patwinplastics/codetoolpicker/blob/main/SPONSOR.md#editorial-policy" rel="noopener">Editorial policy</a>.</p>
+    </section>
+    </article>
+
+    <footer>
+      <p><a href="../">← Back to the AI Coding Tool Picker</a></p>
+      <p>Not affiliated with Cursor, xAI, X, GitHub, or Microsoft.</p>
+      <p>Contact, sponsorships, and corrections: <a href="mailto:sponsors@codetoolpicker.com">sponsors@codetoolpicker.com</a></p>
+    </footer>
+  </div>
+</body>
+</html>

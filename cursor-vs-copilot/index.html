@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name='impact-site-verification' value='83f48c6a-f7b9-45b3-8866-03f8600f0734'>
+  <title>Cursor vs GitHub Copilot (Oct 2026): Pricing, Models, and Which to Pick</title>
+  <meta name="description" content="Cursor vs GitHub Copilot, verified Oct 19, 2026: Cursor Plus $8 (Grok-only) vs Copilot Pro $10 (Claude and GPT in credits). Plans, models, form factor, teams, and an honest verdict." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://codetoolpicker.com/cursor-vs-copilot/" />
+  <meta property="og:title" content="Cursor vs GitHub Copilot (Oct 2026)" />
+  <meta property="og:description" content="Plans, models, and who should pick which. Verified on official pricing pages Oct 19, 2026." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://codetoolpicker.com/cursor-vs-copilot/" />
+  <meta property="og:site_name" content="CodeToolPicker" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Cursor vs GitHub Copilot (Oct 2026): pricing, models, and which to pick",
+    "datePublished": "2026-10-19",
+    "dateModified": "2026-10-19",
+    "author": { "@type": "Organization", "name": "CodeToolPicker" },
+    "publisher": { "@type": "Organization", "name": "CodeToolPicker" },
+    "mainEntityOfPage": "https://codetoolpicker.com/cursor-vs-copilot/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Is Cursor or GitHub Copilot cheaper?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Cursor Plus is the cheapest paid plan at $8/month, but it includes Grok models only. GitHub Copilot Pro is $10/month with 1,500 AI credits and a selection of models including Claude and GPT. If you want Claude or GPT, Copilot is cheaper: in Cursor those models need Premium ($30/month) or higher and are billed separately at API list price. Prices checked Oct 19, 2026." } },
+      { "@type": "Question", "name": "Can I use Claude and GPT models in Cursor?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, on Premium ($30/month) and above. Third-party models such as Claude and GPT are not part of Cursor's included usage; they are billed separately at API list price from the first use. Cursor Plus ($8/month) is Grok-only." } },
+      { "@type": "Question", "name": "Does GitHub Copilot work in my current editor?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Copilot is an extension for VS Code, JetBrains IDEs and other editors, and also works on GitHub itself. Cursor is its own desktop IDE built on the VS Code codebase, so you switch editors to use it." } },
+      { "@type": "Question", "name": "Do Cursor and GitHub Copilot have free tiers?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Both do. Cursor Free has limited usage. Copilot Free has limited AI credits, uses the auto model only, and includes 2,000 completions per month." } },
+      { "@type": "Question", "name": "Which is better for teams, Cursor or Copilot?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Copilot Business is $19 per seat per month (1,900 credits) and Enterprise is $39 per seat (3,900 credits), with admin controls and deep GitHub integration. Cursor team seats start at $30 per seat. Teams already on GitHub usually find Copilot cheaper and easier to roll out; teams that want an agent-first IDE with cloud agents often prefer Cursor." } },
+      { "@type": "Question", "name": "Can I switch from Copilot to Cursor without losing my setup?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Mostly, yes. Cursor can import VS Code extensions, themes, settings and keybindings in one click, and an AGENTS.md file in your repo is read by both Copilot agents and Cursor. Copilot instruction files need to be copied into AGENTS.md or Cursor .mdc rules. See the CodeToolPicker switching guide for step-by-step instructions." } }
+    ]
+  }
+  </script>
+  <style>
+    .wrap table td, .wrap table th { vertical-align: top; }
+    .note { font-size: .9em; color: var(--muted); }
+    article h2 { margin-top: 28px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo"><a href="../" style="color:inherit;text-decoration:none">CodeTool<span>Picker</span></a></div>
+      <nav>
+        <a href="../#quiz">Quiz</a>
+        <a href="../#compare">Compare</a>
+        <a href="./">Cursor vs Copilot</a>
+        <a href="../switch-from-copilot-to-cursor/">Switch Copilot → Cursor</a>
+        <a href="../cursor-bundle-alternatives/">Cursor bundle vs Claude Code vs Copilot</a>
+      </nav>
+    </header>
+
+    <article>
+    <section class="hero">
+      <h1>Cursor vs GitHub Copilot (Oct 2026)</h1>
+      <p>Short answer: <strong>Copilot</strong> is the cheaper way to get Claude and GPT inside the editor you already use. <strong>Cursor</strong> is the stronger agent-first IDE, and its $8 Plus plan is the cheapest paid option if you're fine with Grok models. Details below.</p>
+      <p class="updated">Prices verified on official pricing pages Oct 19, 2026. Prices change often; confirm with the linked sources.</p>
+      <div class="cta-row"><a class="btn btn-primary" href="../#quiz">Not sure? Take the 60-second picker quiz</a> <a class="btn" href="../#compare">See all 6 tools</a></div>
+    </section>
+
+    <section class="panel" style="overflow-x:auto">
+      <h2>Side by side</h2>
+      <table>
+        <thead><tr><th></th><th>Cursor</th><th>GitHub Copilot</th></tr></thead>
+        <tbody>
+          <tr><td>What it is</td><td>Its own AI-first desktop IDE (built on VS Code) with agents and cloud agents</td><td>Extension for VS Code, JetBrains and other editors, plus GitHub, CLI and app</td></tr>
+          <tr><td>Free tier</td><td>Free: limited usage</td><td>Free: limited AI credits, auto model only, 2,000 completions/mo</td></tr>
+          <tr><td>Entry paid</td><td>Plus $8/mo ($80/yr), <strong>Grok models only</strong></td><td>Pro $10/mo, 1,500 AI credits/mo</td></tr>
+          <tr><td>Mid tier</td><td>Premium $30/mo ($300/yr), 4x Plus usage</td><td>Pro+ $39/mo, 7,000 AI credits/mo</td></tr>
+          <tr><td>Top individual</td><td>Super $100/mo (15x Plus), Ultra $200/mo (50x Plus)</td><td>Max $100/mo, 20,000 AI credits/mo</td></tr>
+          <tr><td>Claude / GPT models</td><td>Premium and up only, billed separately at API list price from first use</td><td>Included in credits on paid plans (selection of models; premium models on higher tiers)</td></tr>
+          <tr><td>Included models</td><td>Grok + Composer</td><td>Selection of models, including Claude and GPT families</td></tr>
+          <tr><td>Completions</td><td>Tab completions in the IDE</td><td>Unlimited on paid plans</td></tr>
+          <tr><td>Teams</td><td>From $30/seat (Premium/Super/Ultra seats)</td><td>Business $19/seat (1,900 credits), Enterprise $39/seat (3,900 credits)</td></tr>
+          <tr><td>Usage model</td><td>One weekly usage pool shared with Grok</td><td>Monthly AI credits; heavy agent use can run them out</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Sources: <a href="https://cursor.com/pricing" rel="noopener">cursor.com/pricing</a> · <a href="https://docs.x.ai/x-subscription/pricing" rel="noopener">X Subscription pricing docs</a> · <a href="https://docs.github.com/en/copilot/get-started/plans" rel="noopener">GitHub Copilot plans</a>. Checked Oct 19, 2026. Legacy Cursor Pro/Pro+ plans continue for existing subscribers; we couldn't verify their current price on an official page, so they aren't listed.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Where Cursor wins</h2>
+      <ul>
+        <li><strong>Agent-first IDE.</strong> Cursor is built around agents, including cloud agents, rather than adding chat to an existing editor.</li>
+        <li><strong>Cheapest paid entry.</strong> Plus is $8/month, $2 less than Copilot Pro, if Grok and Cursor's Composer models cover your work.</li>
+        <li><strong>Premium extras.</strong> Premium ($30) adds cloud agents and automations, code hosting, and AI code reviews (Bugbot).</li>
+        <li><strong>Familiar if you use VS Code.</strong> It's based on the VS Code codebase and can import your extensions, themes, settings and keybindings.</li>
+      </ul>
+      <h2>Where Copilot wins</h2>
+      <ul>
+        <li><strong>Claude and GPT for less.</strong> Pro ($10) includes a selection of models in its credits. In Cursor, the same model families need Premium ($30+) plus API list price.</li>
+        <li><strong>No editor switch.</strong> Works in VS Code, JetBrains and more, so mixed-editor teams can standardize on one tool.</li>
+        <li><strong>GitHub teams.</strong> Business at $19/seat is cheaper than Cursor's $30 seats, with admin controls and deep GitHub integration.</li>
+        <li><strong>Watch out:</strong> credits run out on heavy agent use, and Copilot is less of a standalone agent IDE than Cursor.</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>Verdict: who should pick which</h2>
+      <h3>Pick Cursor if…</h3>
+      <ul>
+        <li>You code daily and want the strongest agent workflows in a full IDE.</li>
+        <li>You're happy on Grok/Composer models ($8 Plus), or you'll pay Premium + API price for Claude/GPT.</li>
+        <li>You want cloud agents and AI code review in the same tool.</li>
+      </ul>
+      <h3>Pick GitHub Copilot if…</h3>
+      <ul>
+        <li>Claude and GPT are your daily drivers and you want the lowest price.</li>
+        <li>You or your team use JetBrains or several editors, or already live on GitHub.</li>
+        <li>You want predictable per-seat team pricing ($19 Business).</li>
+      </ul>
+      <p>Already on Copilot and leaning Cursor? Read <a href="../switch-from-copilot-to-cursor/">how to switch from Copilot to Cursor without losing your setup</a>. Also weighing Claude Code? See <a href="../cursor-bundle-alternatives/">Cursor vs Claude Code vs Copilot</a>, or let the <a href="../#quiz">quiz</a> decide in about a minute.</p>
+    </section>
+
+    <section class="panel" id="faq">
+      <h2>FAQ</h2>
+      <h3>Is Cursor or GitHub Copilot cheaper?</h3>
+      <p>Cursor Plus is the cheapest paid plan at $8/month, but it includes Grok models only. GitHub Copilot Pro is $10/month with 1,500 AI credits and a selection of models including Claude and GPT. If you want Claude or GPT, Copilot is cheaper: in Cursor those models need Premium ($30/month) or higher and are billed separately at API list price.</p>
+      <h3>Can I use Claude and GPT models in Cursor?</h3>
+      <p>Yes, on Premium ($30/month) and above. Third-party models such as Claude and GPT are not part of Cursor's included usage; they are billed separately at API list price from the first use. Cursor Plus ($8/month) is Grok-only.</p>
+      <h3>Does GitHub Copilot work in my current editor?</h3>
+      <p>Yes. Copilot is an extension for VS Code, JetBrains IDEs and other editors, and also works on GitHub itself. Cursor is its own desktop IDE built on the VS Code codebase, so you switch editors to use it.</p>
+      <h3>Do Cursor and GitHub Copilot have free tiers?</h3>
+      <p>Both do. Cursor Free has limited usage. Copilot Free has limited AI credits, uses the auto model only, and includes 2,000 completions per month.</p>
+      <h3>Which is better for teams, Cursor or Copilot?</h3>
+      <p>Copilot Business is $19 per seat per month (1,900 credits) and Enterprise is $39 per seat (3,900 credits), with admin controls and deep GitHub integration. Cursor team seats start at $30 per seat. Teams already on GitHub usually find Copilot cheaper and easier to roll out; teams that want an agent-first IDE with cloud agents often prefer Cursor.</p>
+      <h3>Can I switch from Copilot to Cursor without losing my setup?</h3>
+      <p>Mostly, yes. Cursor can import VS Code extensions, themes, settings and keybindings in one click, and an <code>AGENTS.md</code> file in your repo is read by both Copilot agents and Cursor. Copilot instruction files need to be copied into <code>AGENTS.md</code> or Cursor <code>.mdc</code> rules. <a href="../switch-from-copilot-to-cursor/">Step-by-step switching guide</a>.</p>
+    </section>
+
+    <section class="panel" id="disclosure">
+      <h2>Editorial disclosure</h2>
+      <p><strong>Rankings are not for sale.</strong> Sponsored placements and affiliate links are always labeled, and they never change our recommendations, quiz results, or comparison data. None of the links on this page are affiliate links: Cursor and GitHub don't pay us. <a href="https://github.com/patwinplastics/codetoolpicker/blob/main/SPONSOR.md#editorial-policy" rel="noopener">Editorial policy</a>.</p>
+    </section>
+    </article>
+
+    <footer>
+      <p><a href="../">← Back to the AI Coding Tool Picker</a></p>
+      <p>Not affiliated with Cursor, xAI, X, GitHub, or Microsoft.</p>
+      <p>Contact, sponsorships, and corrections: <a href="mailto:sponsors@codetoolpicker.com">sponsors@codetoolpicker.com</a></p>
+    </footer>
+  </div>
+</body>
+</html>
