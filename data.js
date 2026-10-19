@@ -93,7 +93,7 @@ window.TOOL_DATA = [
     strengths: ["Agent Command Center (local + cloud agents)", "Devin Cloud included on paid plans", "Competitive Pro price", "Extra usage at API price"],
     limits: ["Quotas can bite power users", "Renamed from Windsurf in June 2026; some docs and extensions still say Windsurf"],
     formFactor: "Desktop IDE",
-    models: "Frontier OpenAI, Claude, Gemini, xAI + open-source and SWE models",
+    models: "Frontier OpenAI, Claude, Gemini, SpaceXAI + open-source and SWE models",
     affiliate: false,
     sponsorFit: "medium"
   },
@@ -108,8 +108,9 @@ window.TOOL_DATA = [
     startingPaid: 25,
     freeTier: true,
     plans: [
-      { name: "Free", price: 0, note: "5 daily build credits (capped monthly)" },
-      { name: "Paid", price: 25, note: "From ~$25/mo; credit-based (check live page)" }
+      { name: "Free", price: 0, note: "5 daily build credits (up to 30/mo) + 20 Cloud credits/mo" },
+      { name: "Pro", price: 25, note: "100 monthly credits + daily grants, custom domains; $21/mo billed yearly" },
+      { name: "Business", price: 50, note: "100 monthly credits, SSO, team workspace, unlimited users; $42/mo billed yearly" }
     ],
     strengths: ["Fast chat-to-app", "Hosting included", "Great for prototypes", "Affiliate-friendly category"],
     limits: ["Less control than a real IDE", "Credit math on bigger apps", "Web-first"],
@@ -132,8 +133,8 @@ window.TOOL_DATA = [
     freeTier: true,
     plans: [
       { name: "Free", price: 0, note: "300K tokens/day, 1M/mo, Bolt branding" },
-      { name: "Pro", price: 25, note: "From 10M tokens/mo, custom domain, no branding" },
-      { name: "Teams", price: 30, note: "Per member / mo" }
+      { name: "Pro", price: 25, note: "From 10M tokens/mo, custom domain, no branding; $18/mo billed annually" },
+      { name: "Teams", price: 30, note: "Per member / mo; $27/mo billed annually" }
     ],
     strengths: ["Real code in browser", "Hosting + DB options", "Token rollover on paid", "Affiliate potential"],
     limits: ["Token limits on free", "Browser sandbox constraints", "Not a full desktop IDE"],

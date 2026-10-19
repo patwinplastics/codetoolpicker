@@ -7,6 +7,9 @@
 - [Cursor's new bundle: should you switch to Claude Code or Copilot?](https://codetoolpicker.com/cursor-bundle-alternatives/): sourced comparison of Cursor's X Subscription tiers vs Claude Code and GitHub Copilot, and who should switch
 - [Cursor vs GitHub Copilot](https://codetoolpicker.com/cursor-vs-copilot/): plan-by-plan pricing, models, teams, and who should pick which (verified 2026-10-19)
 - [Switch from GitHub Copilot to Cursor without losing your setup](https://codetoolpicker.com/switch-from-copilot-to-cursor/): import VS Code settings, move copilot-instructions.md to AGENTS.md or .cursor/rules, port MCP servers
+- [Lovable vs Bolt.new](https://codetoolpicker.com/lovable-vs-bolt/): app builders compared on pricing, credits vs tokens, teams, and GitHub sync (verified 2026-10-19)
+- [Cursor vs Windsurf (now Devin Desktop)](https://codetoolpicker.com/cursor-vs-windsurf/): AI IDEs compared on plans, included models, agents, and team pricing (verified 2026-10-19)
+- [Claude Code vs Cursor](https://codetoolpicker.com/claude-code-vs-cursor/): terminal agent vs AI IDE, Claude model pricing, usage limits, teams (verified 2026-10-19)
 - [Full text for LLMs](https://codetoolpicker.com/llms-full.txt): tool-by-tool summaries
 - [Tool data (JS)](https://codetoolpicker.com/data.js): structured pricing and feature data
 
@@ -16,11 +19,11 @@
 - Best terminal/agentic coding: Claude Code
 - Cheapest multi-model in your existing editor: GitHub Copilot (Pro from $10/mo)
 - Best Cursor-class IDE for managing many agents: Devin Desktop (formerly Windsurf; Pro $20/mo)
-- Best for non-coders building full apps: Lovable or Bolt.new
+- Best for non-coders building full apps: Lovable or Bolt.new (both Pro $25/mo; Bolt $18/mo billed annually, Lovable $21/mo)
 
 ## Notes
 - Windsurf was renamed Devin Desktop by Cognition on 2026-06-02; windsurf.com redirects to https://devin.ai. Same IDE, plans, and pricing.
 - Prices change often; confirm on vendor pages.
 - Editorial policy: rankings are not for sale; sponsors and affiliate links are labeled and never change recommendations.
-- Disclosure: may earn affiliate commissions from Lovable, Bolt, and other partners. Not affiliated with any vendor.
+- Disclosure: Bolt.new CTA links are referral links; may earn affiliate commissions from Bolt, Lovable, and other partners. Not affiliated with any vendor.
 - Contact (sponsorships, corrections): sponsors@codetoolpicker.com

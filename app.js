@@ -6,6 +6,13 @@
 
   const moneyLabel = (n) => (n == null ? "Usage-based" : n === 0 ? "Free" : `$${n}/mo`);
   const ctaUrl = (t) => t.affiliateUrl || t.website;
+  // Lowercase only a plain leading word ("Chat-to-app" -> "chat-to-app"); keep acronyms,
+  // brand names and possessives ("AI", "Anthropic's", "Cognition's") and the rest as written.
+  const midSentence = (s) => {
+    const first = s.split(/\s/)[0];
+    if (/^[A-Z][a-z]/.test(first) && !/['\u2019]/.test(first)) return s.charAt(0).toLowerCase() + s.slice(1);
+    return s;
+  };
 
   function renderCards(list) {
     const el = document.getElementById("cards");
@@ -81,11 +88,15 @@
     result.innerHTML = `
       <h3>Best fit: ${top.name}</h3>
       <p>${top.bestFor}. Starts at <strong>${moneyLabel(top.startingPaid)}</strong>.</p>
-      <p class="meta">Also consider ${second.name} if you want ${second.tagline.toLowerCase()}.</p>
+      <p class="meta">Also consider ${second.name} if you want ${midSentence(second.tagline)}.</p>
       <div class="cta-row" style="margin-top:12px">
         <a class="btn btn-primary" href="${ctaUrl(top)}" rel="noopener sponsored">Try ${top.name}</a>
         <a class="btn" href="#tool-${top.id}">See details</a>
         <button class="btn" id="quiz-reset">Retake</button>
+      </div>
+      <div class="sponsor" id="quiz-sponsor" style="margin-top:14px;padding:14px">
+        <strong>Sponsor slot</strong> <span class="meta">(Sponsored placements are labeled and never change your quiz result)</span>
+        <div class="meta" style="margin-top:6px">Founding sponsor rates available now. Email <a href="mailto:sponsors@codetoolpicker.com?subject=CodeToolPicker%20sponsorship">sponsors@codetoolpicker.com</a></div>
       </div>
     `;
     document.getElementById("quiz-body").innerHTML = "";

@@ -7,6 +7,9 @@ Contact (sponsorships, corrections): sponsors@codetoolpicker.com
 See also: https://codetoolpicker.com/cursor-bundle-alternatives/ (Cursor bundle vs Claude Code vs Copilot)
 See also: https://codetoolpicker.com/cursor-vs-copilot/ (Cursor vs GitHub Copilot)
 See also: https://codetoolpicker.com/switch-from-copilot-to-cursor/ (switch from Copilot to Cursor without losing your setup)
+See also: https://codetoolpicker.com/lovable-vs-bolt/ (Lovable vs Bolt.new)
+See also: https://codetoolpicker.com/cursor-vs-windsurf/ (Cursor vs Windsurf, now Devin Desktop)
+See also: https://codetoolpicker.com/claude-code-vs-cursor/ (Claude Code vs Cursor)
 
 Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, plans, and pricing); windsurf.com redirects to devin.ai.
 
@@ -63,7 +66,7 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - tagline: Cognition's AI IDE (formerly Windsurf) with an Agent Command Center for local and cloud Devin agents
 - category: ai-ide
 - formFactor: Desktop IDE
-- models: Frontier OpenAI, Claude, Gemini, xAI + open-source and SWE models
+- models: Frontier OpenAI, Claude, Gemini, SpaceXAI + open-source and SWE models
 - bestFor: Engineers who want a Cursor-class IDE that manages many local and cloud agents
 - strengths: ["Agent Command Center (local + cloud agents)","Devin Cloud included on paid plans","Competitive Pro price","Extra usage at API price"]
 - limits: ["Quotas can bite power users","Renamed from Windsurf in June 2026; some docs and extensions still say Windsurf"]
@@ -84,8 +87,9 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - limits: ["Less control than a real IDE","Credit math on bigger apps","Web-first"]
 - website: https://lovable.dev
 - pricing source: https://lovable.dev/pricing
-- plan Free: $0/mo — 5 daily build credits (capped monthly)
-- plan Paid: $25/mo — From ~$25/mo; credit-based (check live page)
+- plan Free: $0/mo — 5 daily build credits (up to 30/mo) + 20 Cloud credits/mo
+- plan Pro: $25/mo — 100 monthly credits + daily grants, custom domains; $21/mo billed yearly
+- plan Business: $50/mo — 100 monthly credits, SSO, team workspace, unlimited users; $42/mo billed yearly
 
 ## Bolt.new
 - tagline: In-browser AI app builder on StackBlitz WebContainers
@@ -99,5 +103,5 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - affiliate / referral CTA: https://bolt.cello.so/aLdglbfmlfZ
 - pricing source: https://bolt.new/pricing
 - plan Free: $0/mo — 300K tokens/day, 1M/mo, Bolt branding
-- plan Pro: $25/mo — From 10M tokens/mo, custom domain, no branding
-- plan Teams: $30/mo — Per member / mo
+- plan Pro: $25/mo — From 10M tokens/mo, custom domain, no branding; $18/mo billed annually
+- plan Teams: $30/mo — Per member / mo; $27/mo billed annually
