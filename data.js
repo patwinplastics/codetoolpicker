@@ -1,4 +1,5 @@
-// Pricing verified 2026-10-16 on official pages (cursor.com/pricing, docs.x.ai/x-subscription/pricing, docs.github.com Copilot plans, claude.com/pricing).
+// Pricing verified 2026-10-19 on official pages (cursor.com/pricing, docs.x.ai/x-subscription/pricing, docs.github.com Copilot plans, claude.com/pricing, devin.ai/pricing, bolt.new/pricing, lovable.dev/pricing).
+// Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02; windsurf.com now redirects to devin.ai. id stays "windsurf" for quiz/anchor stability.
 window.TOOL_DATA = [
   {
     id: "cursor",
@@ -44,7 +45,7 @@ window.TOOL_DATA = [
       { name: "Enterprise", price: 39, note: "Per seat, 3,900 credits" }
     ],
     strengths: ["Deep GitHub integration", "Works in many IDEs", "Team admin controls", "Usage-based credits"],
-    limits: ["Credits run out on heavy agent use", "Less of a standalone agent IDE than Cursor/Windsurf"],
+    limits: ["Credits run out on heavy agent use", "Less of a standalone agent IDE than Cursor/Devin Desktop"],
     formFactor: "IDE extension + GitHub",
     models: "Selection of models; premium models on higher tiers",
     affiliate: false,
@@ -75,24 +76,24 @@ window.TOOL_DATA = [
   },
   {
     id: "windsurf",
-    name: "Windsurf",
+    name: "Devin Desktop (formerly Windsurf)",
     category: "ai-ide",
-    tagline: "AI IDE with Cascade agent and cloud agents (Devin Cloud)",
-    bestFor: "Engineers who want a Cursor-class IDE with Cascade multi-step agents",
-    website: "https://windsurf.com",
-    pricingUrl: "https://windsurf.com/pricing",
+    tagline: "Cognition's AI IDE (formerly Windsurf) with an Agent Command Center for local and cloud Devin agents",
+    bestFor: "Engineers who want a Cursor-class IDE that manages many local and cloud agents",
+    website: "https://devin.ai",
+    pricingUrl: "https://devin.ai/pricing",
     startingPaid: 20,
     freeTier: true,
     plans: [
-      { name: "Free", price: 0, note: "Light daily/weekly quota" },
-      { name: "Pro", price: 20, note: "Standard quota + frontier models" },
-      { name: "Max", price: 200, note: "Heavy quota" },
-      { name: "Teams", price: 40, note: "Per seat" }
+      { name: "Free", price: 0, note: "Light agent quota, unlimited Tab and inline edits" },
+      { name: "Pro", price: 20, note: "Increased quotas + frontier models, Devin Cloud access" },
+      { name: "Max", price: 200, note: "Significantly higher quotas" },
+      { name: "Teams", price: 80, note: "$80/mo team plan + $40/mo per full dev seat, up to 200 users" }
     ],
-    strengths: ["Cascade agent", "Cloud agents", "Competitive Pro price", "Extra usage at API price"],
-    limits: ["Quotas can bite power users", "Smaller ecosystem than Cursor/Copilot"],
+    strengths: ["Agent Command Center (local + cloud agents)", "Devin Cloud included on paid plans", "Competitive Pro price", "Extra usage at API price"],
+    limits: ["Quotas can bite power users", "Renamed from Windsurf in June 2026; some docs and extensions still say Windsurf"],
     formFactor: "Desktop IDE",
-    models: "Frontier OpenAI, Claude, Gemini + SWE models",
+    models: "Frontier OpenAI, Claude, Gemini, xAI + open-source and SWE models",
     affiliate: false,
     sponsorFit: "medium"
   },

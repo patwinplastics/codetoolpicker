@@ -1,9 +1,11 @@
 # CodeToolPicker — full text
-Independent AI coding tool comparison. Source: https://patwinplastics.github.io/codetoolpicker/ . Data checked 2026-10-16 (Cursor, Copilot, Claude Code verified on official pages that day; Windsurf, Lovable, Bolt last checked 2026-10-15); confirm prices on vendor sites.
+Independent AI coding tool comparison. Source: https://patwinplastics.github.io/codetoolpicker/ . Data checked 2026-10-19 on official vendor pricing pages; confirm prices on vendor sites.
 
 Editorial policy: rankings are not for sale. Sponsors and affiliate links are labeled and never change recommendations, quiz logic, or comparison data.
 
 See also: https://patwinplastics.github.io/codetoolpicker/cursor-bundle-alternatives/ (Cursor bundle vs Claude Code vs Copilot)
+
+Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, plans, and pricing); windsurf.com redirects to devin.ai.
 
 ## Cursor
 - tagline: AI-first IDE with agents, cloud agents, and multi-model chat
@@ -48,22 +50,22 @@ See also: https://patwinplastics.github.io/codetoolpicker/cursor-bundle-alternat
 - pricing source: https://claude.com/pricing?mode=code
 - plan Pro: $20/mo — Claude Code included; $17/mo billed annually
 - plan Max 5x: $100/mo — 5x Pro usage
-- plan Max 20x: see note — 20x Pro usage; price not shown on claude.com/pricing (Max listed 'from $100')
-- plan API: see note — Pay-as-you-go Console tokens
+- plan Max 20x: see vendor — 20x Pro usage; price not shown on claude.com/pricing (Max listed 'from $100')
+- plan API: see vendor — Pay-as-you-go Console tokens
 
-## Windsurf
-- tagline: AI IDE with Cascade agent and cloud agents (Devin Cloud)
+## Devin Desktop (formerly Windsurf)
+- tagline: Cognition's AI IDE (formerly Windsurf) with an Agent Command Center for local and cloud Devin agents
 - category: ai-ide
 - formFactor: Desktop IDE
-- models: Frontier OpenAI, Claude, Gemini + SWE models
-- bestFor: Engineers who want a Cursor-class IDE with Cascade multi-step agents
-- strengths: ["Cascade agent","Cloud agents","Competitive Pro price","Extra usage at API price"]
-- limits: ["Quotas can bite power users","Smaller ecosystem than Cursor/Copilot"]
-- pricing source: https://windsurf.com/pricing
-- plan Free: $0/mo — Light daily/weekly quota
-- plan Pro: $20/mo — Standard quota + frontier models
-- plan Max: $200/mo — Heavy quota
-- plan Teams: $40/mo — Per seat
+- models: Frontier OpenAI, Claude, Gemini, xAI + open-source and SWE models
+- bestFor: Engineers who want a Cursor-class IDE that manages many local and cloud agents
+- strengths: ["Agent Command Center (local + cloud agents)","Devin Cloud included on paid plans","Competitive Pro price","Extra usage at API price"]
+- limits: ["Quotas can bite power users","Renamed from Windsurf in June 2026; some docs and extensions still say Windsurf"]
+- pricing source: https://devin.ai/pricing
+- plan Free: $0/mo — Light agent quota, unlimited Tab and inline edits
+- plan Pro: $20/mo — Increased quotas + frontier models, Devin Cloud access
+- plan Max: $200/mo — Significantly higher quotas
+- plan Teams: $80/mo — $80/mo team plan + $40/mo per full dev seat, up to 200 users
 
 ## Lovable
 - tagline: Chat-to-app builder for shipping web apps fast
