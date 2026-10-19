@@ -52,6 +52,7 @@ const lines = [
   `Independent AI coding tool comparison. Source: https://codetoolpicker.com/ . Data checked ${checked} on official vendor pricing pages; confirm prices on vendor sites.`,
   "",
   "Editorial policy: rankings are not for sale. Sponsors and affiliate links are labeled and never change recommendations, quiz logic, or comparison data.",
+  "Contact (sponsorships, corrections): sponsors@codetoolpicker.com",
   "",
   "See also: https://codetoolpicker.com/cursor-bundle-alternatives/ (Cursor bundle vs Claude Code vs Copilot)",
   "",

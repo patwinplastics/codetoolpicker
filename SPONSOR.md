@@ -25,4 +25,6 @@
 AI IDEs and agents (Cursor, Windsurf/Devin, Copilot, Claude Code, Zed, Cline), app builders (Lovable, Bolt.new, Replit, v0), and dev infrastructure (hosting, databases, auth, model APIs).
 
 ## Get in touch
-Open a [sponsor inquiry](https://github.com/patwinplastics/codetoolpicker/issues/new?template=sponsor.yml). A dedicated sponsor email is coming soon.
+Email **[sponsors@codetoolpicker.com](mailto:sponsors@codetoolpicker.com?subject=CodeToolPicker%20sponsorship)** with your company, the product you'd like to promote, and the format you're interested in. We reply within 1–2 business days.
+
+Founding sponsors: homepage slot from **$150–$300/month**, rate locked in while traffic grows.
