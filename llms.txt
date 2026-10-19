@@ -4,6 +4,7 @@
 
 ## Key pages
 - [Home: quiz + comparison table](https://codetoolpicker.com/): personalized pick plus runner-up, side-by-side table, FAQ
+- [AI coding tool pricing (all 26 plans)](https://codetoolpicker.com/ai-coding-tool-pricing/): every plan with monthly and annual prices, which plan you actually need, what a team of 5 pays, what costs extra, best free tools, and a dated pricing change log (verified 2026-10-19)
 - [Cursor's new bundle: should you switch to Claude Code or Copilot?](https://codetoolpicker.com/cursor-bundle-alternatives/): sourced comparison of Cursor's X Subscription tiers vs Claude Code and GitHub Copilot, and who should switch
 - [Cursor vs GitHub Copilot](https://codetoolpicker.com/cursor-vs-copilot/): plan-by-plan pricing, models, teams, and who should pick which (verified 2026-10-19)
 - [Switch from GitHub Copilot to Cursor without losing your setup](https://codetoolpicker.com/switch-from-copilot-to-cursor/): import VS Code settings, move copilot-instructions.md to AGENTS.md or .cursor/rules, port MCP servers
@@ -11,7 +12,7 @@
 - [Cursor vs Windsurf (now Devin Desktop)](https://codetoolpicker.com/cursor-vs-windsurf/): AI IDEs compared on plans, included models, agents, and team pricing (verified 2026-10-19)
 - [Claude Code vs Cursor](https://codetoolpicker.com/claude-code-vs-cursor/): terminal agent vs AI IDE, Claude model pricing, usage limits, teams (verified 2026-10-19)
 - [Full text for LLMs](https://codetoolpicker.com/llms-full.txt): tool-by-tool summaries
-- [Tool data (JS)](https://codetoolpicker.com/data.js): structured pricing and feature data
+- [Tool data (JS)](https://codetoolpicker.com/data.js): structured pricing, annual prices, plan guides, and change log (window.TOOL_DATA, window.PRICING, window.PRICE_LOG)
 
 ## Quick answers
 - Best all-round AI IDE: Cursor (Plus $8/mo is Grok-only; Claude/GPT in Cursor cost extra at API list price on Premium $30+)
@@ -20,6 +21,9 @@
 - Cheapest multi-model in your existing editor: GitHub Copilot (Pro from $10/mo)
 - Best Cursor-class IDE for managing many agents: Devin Desktop (formerly Windsurf; Pro $20/mo)
 - Best for non-coders building full apps: Lovable or Bolt.new (both Pro $25/mo; Bolt $18/mo billed annually, Lovable $21/mo)
+- Cheapest paid plan: Cursor Plus $8/mo (Grok only). Cheapest with Claude + GPT included: GitHub Copilot Pro $10/mo
+- Best free options: GitHub Copilot Free (2,000 completions/mo) and Devin Desktop Free (unlimited Tab, light agent quota). Claude Code has no free tier
+- Cheapest for a team of 5 (monthly billing): Lovable Business $50/mo total (unlimited users); Copilot Business $95; Claude Team $125; Cursor Teams $150; Bolt Teams $150; Devin Desktop Teams $280
 
 ## Notes
 - Windsurf was renamed Devin Desktop by Cognition on 2026-06-02; windsurf.com redirects to https://devin.ai. Same IDE, plans, and pricing.

@@ -14,38 +14,14 @@
     return s;
   };
 
+  const R = window.CTP_RENDER;
+  const P = window.PRICING || {};
   function renderCards(list) {
-    const el = document.getElementById("cards");
-    el.innerHTML = list.map((t) => `
-      <article class="card" data-category="${t.category}" id="tool-${t.id}">
-        <div>
-          <span class="badge">${t.formFactor}</span>
-          ${t.affiliate ? '<span class="badge money">Affiliate potential</span>' : ""}
-        </div>
-        <h3>${t.name}</h3>
-        <p class="meta">${t.tagline}</p>
-        <div class="price">${moneyLabel(t.startingPaid)} <small>starting paid</small></div>
-        <p class="meta"><strong>Best for:</strong> ${t.bestFor}</p>
-        <ul class="list">${t.strengths.slice(0, 3).map((s) => `<li>${s}</li>`).join("")}</ul>
-        <div class="actions">
-          <a class="btn btn-primary" href="${ctaUrl(t)}" rel="noopener sponsored">Visit ${t.name}</a>
-          <a class="btn" href="${t.pricingUrl}" rel="noopener">Pricing</a>
-        </div>
-      </article>
-    `).join("");
+    document.getElementById("cards").innerHTML = list.map((t) => R.card(t, "")).join("");
   }
 
   function renderTable() {
-    const body = document.querySelector("#compare-table tbody");
-    body.innerHTML = tools.map((t) => `
-      <tr>
-        <td><a href="#tool-${t.id}">${t.name}</a></td>
-        <td>${t.formFactor}</td>
-        <td>${moneyLabel(t.startingPaid)}${t.freeTier ? " (+ free tier)" : ""}</td>
-        <td>${t.models}</td>
-        <td>${t.bestFor}</td>
-      </tr>
-    `).join("");
+    document.querySelector("#compare-table tbody").innerHTML = tools.map(R.glanceRow).join("");
   }
 
   function showQuizStep() {
@@ -56,9 +32,10 @@
     }
     const q = quiz[step];
     box.innerHTML = `
+      <div class="quiz-progress" aria-hidden="true"><span style="width:${(step / quiz.length) * 100}%"></span></div>
       <div class="quiz-q">${step + 1}/${quiz.length}: ${q.q}</div>
       <div class="options">
-        ${q.options.map((o, i) => `<button class="option" data-i="${i}">${o.label}</button>`).join("")}
+        ${q.options.map((o, i) => `<button type="button" class="option" data-i="${i}">${o.label}</button>`).join("")}
       </div>
     `;
     box.querySelectorAll(".option").forEach((btn) => {
@@ -66,6 +43,8 @@
         answers[step] = q.options[Number(btn.dataset.i)];
         step += 1;
         showQuizStep();
+        const nb = document.querySelector("#quiz-body .option") || document.querySelector("#quiz-result h3");
+        if (nb && step > 0) { nb.setAttribute("tabindex", nb.tagName === "H3" ? "-1" : "0"); nb.focus({ preventScroll: true }); }
       });
     });
   }
@@ -85,20 +64,39 @@
     const second = tools.find((t) => t.id === secondId);
     const result = document.getElementById("quiz-result");
     result.classList.add("show");
+    const pair = [top.id, second.id].sort().join("|");
+    const cmp = (window.COMPARE_PAGES || {})[pair];
+    const tp = P[top.id] || {};
+    const guide = (tp.guide || [])[tp.start || 0];
     result.innerHTML = `
-      <h3>Best fit: ${top.name}</h3>
-      <p>${top.bestFor}. Starts at <strong>${moneyLabel(top.startingPaid)}</strong>.</p>
-      <p class="meta">Also consider ${second.name} if you want ${midSentence(second.tagline)}.</p>
+      <p class="eyebrow">Your best fit</p>
+      <h3>${top.name}</h3>
+      ${tp.bestBadge ? `<span class="badge best">${tp.bestBadge}</span>` : ""}
+      <p>${top.bestFor}. Starts at <strong>${moneyLabel(top.startingPaid)}</strong>${top.freeTier ? ", with a free tier to try first" : ""}.</p>
+      ${guide ? `<p class="meta"><strong>Plan to start with:</strong> ${guide[0]}. ${guide[1]}</p>` : ""}
+      ${tp.skipIf ? `<p class="skip"><strong>Skip it if:</strong> ${tp.skipIf}</p>` : ""}
       <div class="cta-row" style="margin-top:12px">
-        <a class="btn btn-primary" href="${ctaUrl(top)}" rel="noopener sponsored">Try ${top.name}</a>
-        <a class="btn" href="#tool-${top.id}">See details</a>
-        <button class="btn" id="quiz-reset">Retake</button>
+        <a class="btn btn-primary btn-lg" href="${ctaUrl(top)}" rel="noopener sponsored">${top.affiliateUrl ? "Try" : "Visit"} ${R.short(top.name)} &rarr;</a>
+        <button class="btn" type="button" id="quiz-cost">Estimate my cost</button>
+        <button class="btn" type="button" id="quiz-reset">Retake</button>
+      </div>
+      ${top.affiliateUrl ? '<p class="meta tiny">Referral link: we may earn a commission at no extra cost to you. It never changes your result.</p>' : ""}
+      <div class="runner">
+        <p><strong>Runner-up: ${second.name}</strong>, if you want ${midSentence(second.tagline)}. From ${moneyLabel(second.startingPaid)}.</p>
+        <div class="cta-row">
+          ${cmp ? `<a class="btn" href="${cmp.url}">Compare: ${cmp.label}</a>` : `<a class="btn" href="#compare">Compare all six</a>`}
+          <a class="btn" href="${ctaUrl(second)}" rel="noopener sponsored">${second.affiliateUrl ? "Try" : "Visit"} ${R.short(second.name)}</a>
+        </div>
       </div>
       <div class="sponsor" id="quiz-sponsor" style="margin-top:14px;padding:14px">
         <strong>Sponsor slot</strong> <span class="meta">(Sponsored placements are labeled and never change your quiz result)</span>
         <div class="meta" style="margin-top:6px">Founding sponsor rates available now. Email <a href="mailto:sponsors@codetoolpicker.com?subject=CodeToolPicker%20sponsorship">sponsors@codetoolpicker.com</a></div>
       </div>
     `;
+    document.getElementById("quiz-cost").addEventListener("click", () => {
+      if (window.CTP_CALC) window.CTP_CALC.select(top.id);
+      document.getElementById("cost").scrollIntoView({ behavior: "smooth" });
+    });
     document.getElementById("quiz-body").innerHTML = "";
     document.getElementById("quiz-reset").addEventListener("click", () => {
       step = 0;
@@ -106,6 +104,7 @@
       result.classList.remove("show");
       result.innerHTML = "";
       showQuizStep();
+      document.getElementById("quiz").scrollIntoView({ behavior: "smooth" });
     });
   }
 

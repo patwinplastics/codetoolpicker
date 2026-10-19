@@ -8,16 +8,34 @@
   <meta name="description" content="Pick the best AI coding tool for your workflow. Live comparison of Cursor, GitHub Copilot, Claude Code, Devin Desktop (formerly Windsurf), Lovable, and Bolt.new with verified pricing, strengths, and a 60-second quiz." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://codetoolpicker.com/" />
-  <meta property="og:title" content="AI Coding Tool Picker" />
+  <meta property="og:title" content="Which AI coding tool (and plan) should you use? | CodeToolPicker" />
   <meta property="og:description" content="Compare Cursor, Copilot, Claude Code, Devin Desktop (formerly Windsurf), Lovable, and Bolt. Get a personalized pick in under a minute." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://codetoolpicker.com/" />
   <meta property="og:site_name" content="CodeToolPicker" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="AI Coding Tool Picker" />
+  <meta property="og:image" content="https://codetoolpicker.com/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="CodeToolPicker: pick the right AI coding tool and plan in 60 seconds" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://codetoolpicker.com/og.png" />
+  <meta name="twitter:title" content="Which AI coding tool (and plan) should you use?" />
   <meta name="twitter:description" content="Compare Cursor, Copilot, Claude Code, Devin Desktop (formerly Windsurf), Lovable, and Bolt. Get a personalized pick in under a minute." />
   <link rel="alternate" type="text/plain" title="llms.txt" href="https://codetoolpicker.com/llms.txt" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#0b0f14" />
   <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "Organization", "@id": "https://codetoolpicker.com/#org", "name": "CodeToolPicker", "url": "https://codetoolpicker.com/", "logo": "https://codetoolpicker.com/apple-touch-icon.png", "email": "sponsors@codetoolpicker.com", "description": "Independent comparison site for AI coding tools. Rankings are not for sale." },
+      { "@type": "WebSite", "@id": "https://codetoolpicker.com/#website", "name": "CodeToolPicker", "url": "https://codetoolpicker.com/", "publisher": { "@id": "https://codetoolpicker.com/#org" } }
+    ]
+  }
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -93,21 +111,27 @@
       <div class="logo">CodeTool<span>Picker</span></div>
       <nav>
         <a href="#quiz">Quiz</a>
-        <a href="#tools">Tools</a>
+        <a href="#cost">Cost calculator</a>
         <a href="#compare">Compare</a>
-        <a href="#comparisons">Comparisons</a>
-        <a href="#newsletter">Newsletter</a>
+        <a href="#comparisons">Guides</a>
+        <a href="ai-coding-tool-pricing/">Pricing</a>
       </nav>
     </header>
 
     <section class="hero">
-      <h1>Which AI coding tool should you use?</h1>
-      <p>Honest comparison of the top AI IDEs and app builders. Pricing checked Oct 19, 2026. Take the quiz or skim the table.</p>
+      <p class="eyebrow">Independent · Prices verified Oct 19, 2026</p>
+      <h1>Find the right AI coding tool <span class="hl">and the right plan</span> in 60 seconds.</h1>
+      <p>Cursor, GitHub Copilot, Claude Code, Devin Desktop (Windsurf), Lovable and Bolt, compared on what you'd actually pay. Every price is checked against the official pricing page, and every tool gets an honest "skip it if".</p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="#quiz">Take the 60-second quiz</a>
-        <a class="btn" href="#compare">Jump to comparison table</a>
+        <a class="btn btn-primary btn-lg" href="#quiz">Take the 60-second quiz</a>
+        <a class="btn btn-lg" href="#cost">Calculate my monthly cost</a>
       </div>
-      <p class="updated" style="margin-top:14px">Data updated 2026-10-19. Prices change often; always confirm on the vendor page.</p>
+      <ul class="trust">
+        <li><strong>6</strong> tools</li>
+        <li><strong>26</strong> plans priced</li>
+        <li><strong>3</strong> questions</li>
+        <li>Rankings <strong>not for sale</strong></li>
+      </ul>
     </section>
 
     <section class="panel" id="quiz">
@@ -115,6 +139,27 @@
       <p class="sub">Three questions. One recommended tool, plus a runner-up.</p>
       <div id="quiz-body"></div>
       <div class="result" id="quiz-result"></div>
+    </section>
+
+    <section id="best" style="margin-top:28px">
+      <h2>Best AI coding tool for…</h2>
+      <p class="sub" style="color:var(--muted)">Our picks by job, with the plan we'd start on. Prices verified Oct 19, 2026.</p>
+      <div class="picks">
+        <a class="pick" href="#tool-cursor"><span class="pick-for">All-round AI IDE</span><strong>Cursor</strong><span class="meta">Premium $30/mo for Claude/GPT (billed extra at API price); Plus $8 if Grok models are enough</span></a>
+        <a class="pick" href="#tool-copilot"><span class="pick-for">Best value in VS Code / JetBrains</span><strong>GitHub Copilot</strong><span class="meta">Pro $10/mo: 1,500 AI credits, Claude and GPT included</span></a>
+        <a class="pick" href="#tool-claude-code"><span class="pick-for">Claude users &amp; terminal agents</span><strong>Claude Code</strong><span class="meta">Pro $20/mo, or $17/mo billed yearly</span></a>
+        <a class="pick" href="#tool-windsurf"><span class="pick-for">Running many agents at once</span><strong>Devin Desktop</strong><span class="meta">Pro $20/mo with Devin Cloud agents</span></a>
+        <a class="pick" href="#tool-lovable"><span class="pick-for">Non-coders &amp; groups</span><strong>Lovable</strong><span class="meta">Pro $25/mo, unlimited users share one plan</span></a>
+        <a class="pick" href="#tool-bolt"><span class="pick-for">Cheapest yearly app builder</span><strong>Bolt.new</strong><span class="meta">Pro $18/mo billed yearly, real project files</span></a>
+        <a class="pick" href="ai-coding-tool-pricing/#free"><span class="pick-for">Free</span><strong>Copilot Free or Devin Desktop Free</strong><span class="meta">2,000 completions/mo, or unlimited Tab with a light agent quota</span></a>
+      </div>
+    </section>
+
+    <section class="panel" id="cost" style="margin-top:28px">
+      <h2>What will it actually cost? <span class="new">New</span></h2>
+      <p class="sub">Pick tools and plans, add seats, switch to yearly billing. See the real monthly and yearly total, plus what isn't included.</p>
+      <div id="cost-calc" class="calc"><noscript><p>The calculator needs JavaScript. See the <a href="ai-coding-tool-pricing/">full AI coding tool pricing table</a> instead.</p></noscript></div>
+      <p class="meta" style="margin-top:8px">Want every plan explained? <a href="ai-coding-tool-pricing/">AI coding tool pricing: which plan do you actually need?</a></p>
     </section>
 
     <section class="sponsor" id="sponsor">
@@ -134,162 +179,192 @@
       </div>
       <div class="grid" id="cards"><!-- PRERENDER:cards -->
       <article class="card" data-category="ai-ide" id="tool-cursor">
-        <div>
+        <div class="badges">
+          <span class="badge best">Best all-round AI IDE</span>
           <span class="badge">Desktop IDE</span>
-          
         </div>
         <h3>Cursor</h3>
         <p class="meta">AI-first IDE with agents, cloud agents, and multi-model chat</p>
-        <div class="price">$8/mo <small>starting paid</small></div>
+        <div class="price">$8/mo <small>starting paid · free tier</small></div>
         <p class="meta"><strong>Best for:</strong> Daily coding in a full IDE with agents and cloud work</p>
         <ul class="list"><li>Full IDE</li><li>Cloud agents</li><li>Strong agent workflows</li></ul>
+        <p class="skip"><strong>Skip it if:</strong> Claude or GPT is your daily model. In Cursor they are billed at API list price on top of a $30+ plan; Copilot and Claude Code include them in the plan price.</p>
         <div class="actions">
           <a class="btn btn-primary" href="https://cursor.com" rel="noopener sponsored">Visit Cursor</a>
-          <a class="btn" href="https://cursor.com/pricing" rel="noopener">Pricing</a>
+          <a class="btn" href="ai-coding-tool-pricing/#plans-cursor">Which plan?</a>
         </div>
+        
       </article>
       <article class="card" data-category="ai-ide" id="tool-copilot">
-        <div>
+        <div class="badges">
+          <span class="badge best">Best value in your current editor</span>
           <span class="badge">IDE extension + GitHub</span>
-          
         </div>
         <h3>GitHub Copilot</h3>
         <p class="meta">AI pair programmer inside VS Code, JetBrains, and GitHub</p>
-        <div class="price">$10/mo <small>starting paid</small></div>
+        <div class="price">$10/mo <small>starting paid · free tier</small></div>
         <p class="meta"><strong>Best for:</strong> GitHub-centric teams who want completions plus chat and agents</p>
         <ul class="list"><li>Deep GitHub integration</li><li>Works in many IDEs</li><li>Team admin controls</li></ul>
+        <p class="skip"><strong>Skip it if:</strong> You want a standalone agent-first IDE, or you run long agent sessions all day. Credits run out, and heavy users end up on Pro+ ($39) or Max ($100).</p>
         <div class="actions">
           <a class="btn btn-primary" href="https://github.com/features/copilot" rel="noopener sponsored">Visit GitHub Copilot</a>
-          <a class="btn" href="https://docs.github.com/en/copilot/get-started/plans" rel="noopener">Pricing</a>
+          <a class="btn" href="ai-coding-tool-pricing/#plans-copilot">Which plan?</a>
         </div>
+        
       </article>
       <article class="card" data-category="agent" id="tool-claude-code">
-        <div>
+        <div class="badges">
+          <span class="badge best">Best terminal coding agent</span>
           <span class="badge">Terminal / IDE agent</span>
-          
         </div>
         <h3>Claude Code</h3>
         <p class="meta">Anthropic's terminal and IDE coding agent</p>
-        <div class="price">$20/mo <small>starting paid</small></div>
+        <div class="price">$20/mo <small>starting paid · no free tier</small></div>
         <p class="meta"><strong>Best for:</strong> Terminal-native agentic coding on Claude models</p>
         <ul class="list"><li>Strong reasoning models</li><li>Terminal-first agent</li><li>Shared plan with Claude chat</li></ul>
+        <p class="skip"><strong>Skip it if:</strong> You want a free tier, a full visual IDE, or GPT/Gemini models. Claude Code is Claude-only and needs a paid plan.</p>
         <div class="actions">
           <a class="btn btn-primary" href="https://claude.com/product/claude-code" rel="noopener sponsored">Visit Claude Code</a>
-          <a class="btn" href="https://claude.com/pricing?mode=code" rel="noopener">Pricing</a>
+          <a class="btn" href="ai-coding-tool-pricing/#plans-claude-code">Which plan?</a>
         </div>
+        
       </article>
       <article class="card" data-category="ai-ide" id="tool-windsurf">
-        <div>
+        <div class="badges">
+          <span class="badge best">Best for running many agents</span>
           <span class="badge">Desktop IDE</span>
-          
         </div>
         <h3>Devin Desktop (formerly Windsurf)</h3>
         <p class="meta">Cognition's AI IDE (formerly Windsurf) with an Agent Command Center for local and cloud Devin agents</p>
-        <div class="price">$20/mo <small>starting paid</small></div>
+        <div class="price">$20/mo <small>starting paid · free tier</small></div>
         <p class="meta"><strong>Best for:</strong> Engineers who want a Cursor-class IDE that manages many local and cloud agents</p>
         <ul class="list"><li>Agent Command Center (local + cloud agents)</li><li>Devin Cloud included on paid plans</li><li>Competitive Pro price</li></ul>
+        <p class="skip"><strong>Skip it if:</strong> You need predictable heavy usage on a fixed budget. Quotas aren't published as numbers, and overages bill at API pricing.</p>
         <div class="actions">
-          <a class="btn btn-primary" href="https://devin.ai" rel="noopener sponsored">Visit Devin Desktop (formerly Windsurf)</a>
-          <a class="btn" href="https://devin.ai/pricing" rel="noopener">Pricing</a>
+          <a class="btn btn-primary" href="https://devin.ai" rel="noopener sponsored">Visit Devin Desktop</a>
+          <a class="btn" href="ai-coding-tool-pricing/#plans-windsurf">Which plan?</a>
         </div>
+        
       </article>
       <article class="card" data-category="builder" id="tool-lovable">
-        <div>
+        <div class="badges">
+          <span class="badge best">Best for non-coders and groups</span>
           <span class="badge">Browser builder</span>
-          <span class="badge money">Affiliate potential</span>
         </div>
         <h3>Lovable</h3>
         <p class="meta">Chat-to-app builder for shipping web apps fast</p>
-        <div class="price">$25/mo <small>starting paid</small></div>
+        <div class="price">$25/mo <small>starting paid · free tier</small></div>
         <p class="meta"><strong>Best for:</strong> Non-engineers and vibe coders who want a working web app from chat</p>
         <ul class="list"><li>Fast chat-to-app</li><li>Hosting included</li><li>Great for prototypes</li></ul>
+        <p class="skip"><strong>Skip it if:</strong> You're a developer who wants full control of the stack, or you need to keep building in an existing repo. Lovable's Git sync always creates a new repo.</p>
         <div class="actions">
           <a class="btn btn-primary" href="https://lovable.dev" rel="noopener sponsored">Visit Lovable</a>
-          <a class="btn" href="https://lovable.dev/pricing" rel="noopener">Pricing</a>
+          <a class="btn" href="ai-coding-tool-pricing/#plans-lovable">Which plan?</a>
         </div>
+        
       </article>
       <article class="card" data-category="builder" id="tool-bolt">
-        <div>
+        <div class="badges">
+          <span class="badge best">Best code-visible app builder</span>
           <span class="badge">Browser IDE / builder</span>
-          <span class="badge money">Affiliate potential</span>
         </div>
         <h3>Bolt.new</h3>
         <p class="meta">In-browser AI app builder on StackBlitz WebContainers</p>
-        <div class="price">$25/mo <small>starting paid</small></div>
+        <div class="price">$25/mo <small>starting paid · free tier</small></div>
         <p class="meta"><strong>Best for:</strong> Code-visible chat-to-app with real project files in the browser</p>
         <ul class="list"><li>Real code in browser</li><li>Hosting + DB options</li><li>Token rollover on paid</li></ul>
+        <p class="skip"><strong>Skip it if:</strong> Your project will get big (each message syncs more files, so tokens go faster), or several people want to share one budget. Bolt Teams is priced per member.</p>
         <div class="actions">
-          <a class="btn btn-primary" href="https://bolt.cello.so/aLdglbfmlfZ" rel="noopener sponsored">Visit Bolt.new</a>
-          <a class="btn" href="https://bolt.new/pricing" rel="noopener">Pricing</a>
+          <a class="btn btn-primary" href="https://bolt.cello.so/aLdglbfmlfZ" rel="noopener sponsored">Try Bolt.new</a>
+          <a class="btn" href="ai-coding-tool-pricing/#plans-bolt">Which plan?</a>
         </div>
+        <p class="meta tiny">Referral link: we may earn a commission at no cost to you.</p>
       </article>
       <!-- /PRERENDER:cards --></div>
     </section>
 
-    <section class="panel" id="compare" style="margin-top:28px; overflow-x:auto">
-      <h2>Side-by-side comparison</h2>
-      <p class="sub">Built for humans and for AI chatbots that cite comparison pages.</p>
-      <table id="compare-table">
+    <section class="panel" id="compare" style="margin-top:28px">
+      <h2>All six at a glance</h2>
+      <p class="sub">Free tier, entry price, which models are actually included, agents, and team pricing. Verified Oct 19, 2026.</p>
+      <p class="meta swipe">Swipe sideways to see all columns →</p>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Comparison table, scrolls sideways">
+      <table id="compare-table" class="glance">
         <thead>
           <tr>
-            <th>Tool</th>
-            <th>Form factor</th>
-            <th>Starting paid</th>
-            <th>Models</th>
-            <th>Best for</th>
+            <th scope="col">Tool</th>
+            <th scope="col">Free tier</th>
+            <th scope="col">Starting paid</th>
+            <th scope="col">Models included</th>
+            <th scope="col">Agents</th>
+            <th scope="col">Works in</th>
+            <th scope="col">Teams from</th>
           </tr>
         </thead>
         <tbody><!-- PRERENDER:table -->
       <tr>
-        <td><a href="#tool-cursor">Cursor</a></td>
-        <td>Desktop IDE</td>
-        <td>$8/mo (+ free tier)</td>
-        <td>Grok + Composer included; Claude/GPT/Gemini on Premium+ billed separately at API list price</td>
-        <td>Daily coding in a full IDE with agents and cloud work</td>
+        <th scope="row"><a href="#tool-cursor">Cursor</a></th>
+        <td>Yes: limited agent and chat requests</td>
+        <td>$8/mo</td>
+        <td>Grok models included; Claude/GPT on Premium+ at extra API cost</td>
+        <td>Agent on all plans; cloud agents and Bugbot reviews on Premium+</td>
+        <td>Own desktop IDE (VS Code-based)</td>
+        <td>$30/seat</td>
       </tr>
       <tr>
-        <td><a href="#tool-copilot">GitHub Copilot</a></td>
-        <td>IDE extension + GitHub</td>
-        <td>$10/mo (+ free tier)</td>
-        <td>Selection of models; premium models on higher tiers</td>
-        <td>GitHub-centric teams who want completions plus chat and agents</td>
+        <th scope="row"><a href="#tool-copilot">GitHub Copilot</a></th>
+        <td>Yes: 2,000 completions/mo, limited credits, auto model</td>
+        <td>$10/mo</td>
+        <td>Claude, GPT, Gemini, Grok and more inside your credits (paid plans)</td>
+        <td>Agent mode, cloud agent, code review (limited on Free)</td>
+        <td>Extension for VS Code, JetBrains and more, plus GitHub, CLI, app</td>
+        <td>$19/seat</td>
       </tr>
       <tr>
-        <td><a href="#tool-claude-code">Claude Code</a></td>
-        <td>Terminal / IDE agent</td>
+        <th scope="row"><a href="#tool-claude-code">Claude Code</a></th>
+        <td>No: Claude Free doesn't include Claude Code</td>
         <td>$20/mo</td>
-        <td>Claude Sonnet, Opus, and related Claude models</td>
-        <td>Terminal-native agentic coding on Claude models</td>
+        <td>Claude only (Sonnet, Opus, Haiku) inside plan usage</td>
+        <td>Agent-first: terminal, IDE extensions, desktop</td>
+        <td>Terminal / IDE agent</td>
+        <td>$25/seat ($20 billed annually)</td>
       </tr>
       <tr>
-        <td><a href="#tool-windsurf">Devin Desktop (formerly Windsurf)</a></td>
-        <td>Desktop IDE</td>
-        <td>$20/mo (+ free tier)</td>
-        <td>Frontier OpenAI, Claude, Gemini, SpaceXAI + open-source and SWE models</td>
-        <td>Engineers who want a Cursor-class IDE that manages many local and cloud agents</td>
+        <th scope="row"><a href="#tool-windsurf">Devin Desktop</a></th>
+        <td>Yes: light agent quota, unlimited Tab and inline edits</td>
+        <td>$20/mo</td>
+        <td>Frontier OpenAI, Claude, Gemini + SWE-2 (Pro+)</td>
+        <td>Local agents; Devin Cloud agents on Pro+</td>
+        <td>Own desktop IDE (formerly Windsurf)</td>
+        <td>$80/mo + $40/seat</td>
       </tr>
       <tr>
-        <td><a href="#tool-lovable">Lovable</a></td>
-        <td>Browser builder</td>
-        <td>$25/mo (+ free tier)</td>
-        <td>Managed builder models</td>
-        <td>Non-engineers and vibe coders who want a working web app from chat</td>
+        <th scope="row"><a href="#tool-lovable">Lovable</a></th>
+        <td>Yes: 5 credits/day (up to 30/mo)</td>
+        <td>$25/mo</td>
+        <td>Managed by Lovable (you don't pick)</td>
+        <td>Chat-to-app builder with hosting</td>
+        <td>Browser app builder</td>
+        <td>$50/mo, unlimited users</td>
       </tr>
       <tr>
-        <td><a href="#tool-bolt">Bolt.new</a></td>
-        <td>Browser IDE / builder</td>
-        <td>$25/mo (+ free tier)</td>
-        <td>Managed builder models</td>
-        <td>Code-visible chat-to-app with real project files in the browser</td>
+        <th scope="row"><a href="#tool-bolt">Bolt.new</a></th>
+        <td>Yes: 1M tokens/mo, 300K/day, Bolt branding</td>
+        <td>$25/mo</td>
+        <td>Newest AI models on Pro (managed by Bolt)</td>
+        <td>Chat-to-app builder with real project files</td>
+        <td>Browser IDE / app builder</td>
+        <td>$30/member ($27 annual)</td>
       </tr>
       <!-- /PRERENDER:table --></tbody>
       </table>
+      </div>
     </section>
 
     <section class="panel" id="comparisons" style="margin-top:28px">
       <h2>Comparisons and guides</h2>
       <p class="sub">Head-to-head breakdowns with prices checked on official pricing pages.</p>
       <ul class="list">
+        <li><a href="ai-coding-tool-pricing/"><strong>AI coding tool pricing 2026</strong></a>: all 26 plans, which one you need, and a pricing change log</li>
         <li><a href="lovable-vs-bolt/">Lovable vs Bolt.new</a>: app builders, credits vs tokens, teams, GitHub sync</li>
         <li><a href="cursor-vs-windsurf/">Cursor vs Windsurf (now Devin Desktop)</a>: AI IDEs, models, agents, team pricing</li>
         <li><a href="claude-code-vs-cursor/">Claude Code vs Cursor</a>: terminal agent vs AI IDE, Claude pricing, limits</li>
@@ -332,17 +407,20 @@
       <h3>What happened to Windsurf?</h3>
       <p>Cognition renamed Windsurf to Devin Desktop on June 2, 2026. It is the same IDE with the same plans and pricing, now centered on an Agent Command Center for local and cloud Devin agents. windsurf.com redirects to devin.ai. Pricing as of Oct 19, 2026: Free $0, Pro $20/month, Max $200/month, Teams $80/month plus $40 per full dev seat (<a href="https://devin.ai/blog/windsurf-is-now-devin-desktop" rel="noopener">announcement</a>, <a href="https://devin.ai/pricing" rel="noopener">pricing</a>). Full breakdown: <a href="cursor-vs-windsurf/">Cursor vs Windsurf (Devin Desktop)</a>.</p>
       <h3>How often is this comparison updated?</h3>
-      <p>Pricing and features are checked regularly; the date at the top of the page shows the last update. Always confirm prices on the vendor page.</p>
+      <p>Pricing and features are checked regularly against official vendor pages; see the <a href="ai-coding-tool-pricing/#changelog">pricing change log</a> for what changed and when. Always confirm prices on the vendor page.</p>
     </section>
 
     <footer>
       <p><strong>Rankings are not for sale.</strong> Sponsors and affiliate links are labeled and never change recommendations.</p>
-      <p>CodeToolPicker is an independent comparison site. We may earn affiliate commissions from Lovable, Bolt, and other partners. Cursor, Copilot, and most IDE vendors currently do not offer public affiliate programs.</p>
+      <p>CodeToolPicker is an independent comparison site. Bolt.new buttons are referral links (marked "referral" or "Try"), so we may earn a commission at no extra cost to you. Other tool links are plain links. Cursor, Copilot, and most IDE vendors don't offer public affiliate programs.</p>
+      <p><a href="ai-coding-tool-pricing/">Pricing &amp; plans</a> · <a href="ai-coding-tool-pricing/#changelog">Pricing change log</a> · <a href="llms.txt">llms.txt</a> · <a href="https://github.com/patwinplastics/codetoolpicker/blob/main/SPONSOR.md" rel="noopener">Advertise</a></p>
       <p>Contact, sponsorships, and corrections: <a href="mailto:sponsors@codetoolpicker.com">sponsors@codetoolpicker.com</a></p>
       <p>Not affiliated with Cursor, xAI, GitHub, Anthropic, Cognition (Devin/Windsurf), Lovable, or StackBlitz.</p>
     </footer>
   </div>
   <script src="data.js"></script>
+  <script src="render.js"></script>
   <script src="app.js"></script>
+  <script src="calc.js"></script>
 </body>
 </html>

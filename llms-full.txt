@@ -4,6 +4,7 @@ Independent AI coding tool comparison. Source: https://codetoolpicker.com/ . Dat
 Editorial policy: rankings are not for sale. Sponsors and affiliate links are labeled and never change recommendations, quiz logic, or comparison data.
 Contact (sponsorships, corrections): sponsors@codetoolpicker.com
 
+See also: https://codetoolpicker.com/ai-coding-tool-pricing/ (all 26 plans, which one you need, cost calculator, pricing change log)
 See also: https://codetoolpicker.com/cursor-bundle-alternatives/ (Cursor bundle vs Claude Code vs Copilot)
 See also: https://codetoolpicker.com/cursor-vs-copilot/ (Cursor vs GitHub Copilot)
 See also: https://codetoolpicker.com/switch-from-copilot-to-cursor/ (switch from Copilot to Cursor without losing your setup)
@@ -29,6 +30,21 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - plan Super: $100/mo — 15x Plus; $1000/yr
 - plan Ultra: $200/mo — 50x Plus; $2000/yr
 - plan Teams: $30/mo — From $30/seat (Premium/Super/Ultra seats)
+- best for (badge): Best all-round AI IDE
+- price Free: monthly $0; annual $0
+- price Plus: monthly $8/mo; annual $80/yr (≈$7/mo) — Grok models only
+- price Premium: monthly $30/mo; annual $300/yr (≈$25/mo) — 4x Plus usage; Claude/GPT billed extra at API list price
+- price Super: monthly $100/mo; annual $1,000/yr (≈$84/mo) — 15x Plus usage
+- price Ultra: monthly $200/mo; annual $2,000/yr (≈$167/mo) — 50x Plus usage
+- price Teams (Premium seat): monthly $30/seat/mo; annual Not listed — Super/Ultra seats $100/$200
+- which plan: Free — Try the editor and agent before paying.
+- which plan: Plus $8 — Only if Grok models are enough for you. Cursor itself recommends Plus for social creators with limited AI usage.
+- which plan: Premium $30 — Cursor's pick for new AI users. Needed for cloud agents, Bugbot code reviews, and any Claude or GPT use (billed extra).
+- which plan: Super $100 — Cursor's pick for daily agent users: 15x Plus usage plus priority access at peak times.
+- which plan: Ultra $200 — Power users: 50x Plus usage and earliest access to new models.
+- which plan: Teams $30+/seat — Centralized billing, SSO, usage analytics, team-wide privacy settings.
+- not included: Claude, GPT and other third-party models are not included in any plan: billed at API list price on top (Premium and up).
+- skip it if: Claude or GPT is your daily model. In Cursor they are billed at API list price on top of a $30+ plan; Copilot and Claude Code include them in the plan price.
 
 ## GitHub Copilot
 - tagline: AI pair programmer inside VS Code, JetBrains, and GitHub
@@ -46,6 +62,21 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - plan Max: $100/mo — 20,000 AI credits / mo
 - plan Business: $19/mo — Per seat, 1,900 credits
 - plan Enterprise: $39/mo — Per seat, 3,900 credits
+- best for (badge): Best value in your current editor
+- price Free: monthly $0; annual $0 — 2,000 completions/mo, auto model only
+- price Pro: monthly $10/mo; annual Not listed — 1,500 AI credits/mo
+- price Pro+: monthly $39/mo; annual Not listed — 7,000 AI credits/mo
+- price Max: monthly $100/mo; annual Not listed — 20,000 AI credits/mo
+- price Business: monthly $19/seat/mo; annual Not listed — 1,900 credits per user, pooled
+- price Enterprise: monthly $39/seat/mo; annual Not listed — 3,900 credits per user, pooled; needs GitHub Enterprise Cloud
+- which plan: Free — Light use: 2,000 completions a month and auto model selection only. Free for verified students too.
+- which plan: Pro $10 — The best value for most individuals: 1,500 AI credits and a choice of models including Claude and GPT. Verified teachers and popular open-source maintainers may get it free.
+- which plan: Pro+ $39 — Heavy agent users: 7,000 credits and premium models.
+- which plan: Max $100 — Sustained high-volume use: 20,000 credits and priority access to premium models.
+- which plan: Business $19/seat — Organizations that need policy control and centralized management.
+- which plan: Enterprise $39/seat — Companies on GitHub Enterprise Cloud that want a bigger credit pool.
+- not included: Org usage beyond the pooled credits is $0.01 per AI credit. Completions are unlimited on paid plans.
+- skip it if: You want a standalone agent-first IDE, or you run long agent sessions all day. Credits run out, and heavy users end up on Pro+ ($39) or Max ($100).
 
 ## Claude Code
 - tagline: Anthropic's terminal and IDE coding agent
@@ -61,6 +92,17 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - plan Max 5x: $100/mo — 5x Pro usage
 - plan Max 20x: see vendor — 20x Pro usage; price not shown on claude.com/pricing (Max listed 'from $100')
 - plan API: see vendor — Pay-as-you-go Console tokens
+- best for (badge): Best terminal coding agent
+- price Pro: monthly $20/mo; annual $200/yr (≈$17/mo) — $17/mo billed annually ($200 up front)
+- price Max 5x: monthly $100/mo; annual Not listed — 5x Pro usage; Max 20x price not listed on claude.com/pricing
+- price Team (standard seat): monthly $25/seat/mo; annual $240/seat/yr (≈$20/seat/mo) — $20/seat/mo billed annually; teams of 2 to 150
+- price Team (premium seat): monthly $125/seat/mo; annual $1,200/seat/yr (≈$100/seat/mo) — 5x standard usage; $100/seat/mo billed annually
+- which plan: Pro $20 — Start here. Includes Claude Code with usage limits; $17/mo if you pay $200 for the year.
+- which plan: Max 5x from $100 — If you hit Pro limits most days. 5x Pro usage plus priority access at busy times.
+- which plan: Team $25/seat — Teams of 2 to 150: standard seats are $25/mo ($20 annual); premium seats with 5x usage are $125 ($100 annual).
+- which plan: API (pay per token) — Automation and CI. Example: Sonnet 5.5 is $2 per million input tokens and $10 per million output tokens.
+- not included: Usage limits apply and are shared with Claude chat. API use is billed per token.
+- skip it if: You want a free tier, a full visual IDE, or GPT/Gemini models. Claude Code is Claude-only and needs a paid plan.
 
 ## Devin Desktop (formerly Windsurf)
 - tagline: Cognition's AI IDE (formerly Windsurf) with an Agent Command Center for local and cloud Devin agents
@@ -76,6 +118,17 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - plan Pro: $20/mo — Increased quotas + frontier models, Devin Cloud access
 - plan Max: $200/mo — Significantly higher quotas
 - plan Teams: $80/mo — $80/mo team plan + $40/mo per full dev seat, up to 200 users
+- best for (badge): Best for running many agents
+- price Free: monthly $0; annual $0 — Light agent quota, unlimited Tab
+- price Pro: monthly $20/mo; annual Not listed — Higher quotas, frontier models, Devin Cloud
+- price Max: monthly $200/mo; annual Not listed — Significantly higher quotas
+- price Teams: monthly $80/mo + $40/seat/mo; annual Not listed — $80/mo team plan + $40/mo per full dev seat, up to 200 users
+- which plan: Free — Unlimited Tab completions and inline edits with a light agent quota.
+- which plan: Pro $20 — Most individuals: higher quotas, frontier models, SWE-2, and Devin Cloud agents.
+- which plan: Max $200 — Significantly higher quotas for all-day agent use.
+- which plan: Teams $80 + $40/seat — Up to 200 users with their own quota per full seat.
+- not included: Extra usage beyond quotas is billed at API pricing. Quotas aren't published as numbers.
+- skip it if: You need predictable heavy usage on a fixed budget. Quotas aren't published as numbers, and overages bill at API pricing.
 
 ## Lovable
 - tagline: Chat-to-app builder for shipping web apps fast
@@ -90,6 +143,15 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - plan Free: $0/mo — 5 daily build credits (up to 30/mo) + 20 Cloud credits/mo
 - plan Pro: $25/mo — 100 monthly credits + daily grants, custom domains; $21/mo billed yearly
 - plan Business: $50/mo — 100 monthly credits, SSO, team workspace, unlimited users; $42/mo billed yearly
+- best for (badge): Best for non-coders and groups
+- price Free: monthly $0; annual $0 — 5 credits/day (up to 30/mo)
+- price Pro: monthly $25/mo; annual $252/yr (≈$21/mo) — 100 monthly credits + daily grants; $21/mo billed annually
+- price Business: monthly $50/mo; annual $504/yr (≈$42/mo) — SSO, team workspace; $42/mo billed annually
+- which plan: Free — Enough to build and test a small app: 5 credits a day, up to 30 a month.
+- which plan: Pro $25 — Most solo builders: 100 monthly credits plus daily grants, custom domains, no Lovable badge. $21/mo billed annually. Students get up to 50% off.
+- which plan: Business $50 — Growing teams: SSO, team workspace, role-based access. $42/mo billed annually.
+- not included: Not priced per seat: every plan includes unlimited users sharing one credit balance. On-demand credits cost extra.
+- skip it if: You're a developer who wants full control of the stack, or you need to keep building in an existing repo. Lovable's Git sync always creates a new repo.
 
 ## Bolt.new
 - tagline: In-browser AI app builder on StackBlitz WebContainers
@@ -105,3 +167,17 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - plan Free: $0/mo — 300K tokens/day, 1M/mo, Bolt branding
 - plan Pro: $25/mo — From 10M tokens/mo, custom domain, no branding; $18/mo billed annually
 - plan Teams: $30/mo — Per member / mo; $27/mo billed annually
+- best for (badge): Best code-visible app builder
+- price Free: monthly $0; annual $0 — 1M tokens/mo, 300K/day, Bolt branding
+- price Pro: monthly $25/mo; annual $216/yr (≈$18/mo) — From 10M tokens/mo, no daily limit; $18/mo billed annually
+- price Teams: monthly $30/seat/mo; annual $324/seat/yr (≈$27/seat/mo) — Per member; $27/member/mo billed annually
+- which plan: Free — Try it: 1M tokens a month (300K a day). Sites carry Bolt branding.
+- which plan: Pro $25 — Most solo builders: from 10M tokens, no daily limit, rollover, custom domain. $18/mo billed annually, the cheapest annual app-builder plan here.
+- which plan: Teams $30/member — Centralized billing, admin controls, SSO. $27/member billed annually.
+- not included: Token use grows with project size. Higher-token Pro tiers cost more than the base price.
+- skip it if: Your project will get big (each message syncs more files, so tokens go faster), or several people want to share one budget. Bolt Teams is priced per member.
+
+## Pricing change log
+- 2026-10-19: Re-verified all 26 plans on official pricing pages. Added annual prices: Lovable Pro $21/mo and Business $42/mo billed annually, Bolt Pro $18/mo and Teams $27/member billed annually. (source: https://lovable.dev/pricing)
+- 2026-10-16: Cursor is now sold as The X Subscription: Plus $8, Premium $30, Super $100, Ultra $200. Plus is Grok-only; Claude/GPT in Cursor cost extra at API list price. (Date we first recorded it.) (source: https://docs.x.ai/x-subscription/pricing)
+- 2026-06-02: Cognition renamed Windsurf to Devin Desktop. Same IDE, plans and prices; windsurf.com redirects to devin.ai. (source: https://devin.ai/blog/windsurf-is-now-devin-desktop)
