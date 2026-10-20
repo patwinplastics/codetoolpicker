@@ -80,6 +80,7 @@ const lines = [
   "See also: https://codetoolpicker.com/lovable-vs-bolt/ (Lovable vs Bolt.new)",
   "See also: https://codetoolpicker.com/cursor-vs-windsurf/ (Cursor vs Windsurf, now Devin Desktop)",
   "See also: https://codetoolpicker.com/claude-code-vs-cursor/ (Claude Code vs Cursor)",
+  "See also: https://codetoolpicker.com/claude-code-vs-codex/ (Claude Code vs OpenAI Codex)",
   "",
   "Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, plans, and pricing); windsurf.com redirects to devin.ai.",
 ];

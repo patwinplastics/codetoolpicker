@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name='impact-site-verification' value='83f48c6a-f7b9-45b3-8866-03f8600f0734'>
+  <title>Claude Code vs OpenAI Codex (Oct 2026): Same Prices, Different Limits</title>
+  <meta name="description" content="Claude Code vs OpenAI Codex, verified Oct 20, 2026: both start at $20 and both team seats cost $20/$100. Codex has Free and $8 tiers and no 5-hour cap on Pro; Claude Max adds API credits. Verdict inside." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://codetoolpicker.com/claude-code-vs-codex/" />
+  <meta property="og:title" content="Claude Code vs OpenAI Codex (Oct 2026): same prices, different limits" />
+  <meta property="og:description" content="Anthropic and OpenAI now charge the same $20 / $100 / $20-per-seat ladder for their coding agents. Here's what actually differs, verified on official pages Oct 20, 2026." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://codetoolpicker.com/claude-code-vs-codex/" />
+  <meta property="og:site_name" content="CodeToolPicker" />
+  <meta property="og:image" content="https://codetoolpicker.com/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@codetoolpicker" />
+  <meta name="twitter:image" content="https://codetoolpicker.com/og.png" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#0b0f14" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CodeToolPicker", "item": "https://codetoolpicker.com/"}, {"@type": "ListItem", "position": 2, "name": "Comparisons", "item": "https://codetoolpicker.com/#comparisons"}, {"@type": "ListItem", "position": 3, "name": "Claude Code vs OpenAI Codex", "item": "https://codetoolpicker.com/claude-code-vs-codex/"}]}</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Claude Code vs OpenAI Codex (Oct 2026): same prices, different limits",
+  "datePublished": "2026-10-20",
+  "dateModified": "2026-10-20",
+  "author": {"@type": "Organization", "name": "CodeToolPicker"},
+  "publisher": {"@type": "Organization", "name": "CodeToolPicker"},
+  "mainEntityOfPage": "https://codetoolpicker.com/claude-code-vs-codex/"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Is Claude Code or Codex cheaper?",
+     "acceptedAnswer": {"@type": "Answer", "text": "At the paid tiers the list prices match: Claude Pro and ChatGPT Plus are both $20/month, Claude Max and ChatGPT Pro both start at $100/month, and team seats on Claude Team and ChatGPT Business are both $20/seat/month billed annually ($25 monthly), or $100 ($125 monthly) for premium seats. Codex is cheaper to start, because ChatGPT Free and Go ($8/month) include limited Codex access in the desktop app, while Claude Code isn't on Claude Free. Claude Pro is also $17/month if billed annually. Prices checked Oct 20, 2026."}},
+    {"@type": "Question", "name": "Does Codex have a free plan?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Yes, a limited one. OpenAI's Codex pricing page lists Free ($0) and Go ($8/month) with GPT-6 Luna at Standard speed in the desktop app, subject to rollout. The full set of surfaces (web, CLI, IDE extension, iOS) and cloud features like automatic code review start on Plus at $20/month. Claude Code has no free tier."}},
+    {"@type": "Question", "name": "Which has better usage limits?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Neither publishes a fixed message count. On the $20 plans both use rolling five-hour windows plus weekly limits. The difference is at $100 and up: OpenAI says ChatGPT Pro plans currently have no five-hour limit for Codex (weekly limits still apply), while Claude Max gives 5x or 20x Pro usage per five-hour session. Claude Max also includes $100 to $200 a month in Claude Platform API credits."}},
+    {"@type": "Question", "name": "Can I use Codex or Claude Code with an API key instead of a subscription?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Yes, both. Codex with an API key works in the CLI, SDK and IDE extension at API prices, without cloud features like GitHub code review or Slack. Claude Code can switch to pay-as-you-go API credits through an Anthropic Console account."}},
+    {"@type": "Question", "name": "Can Claude Code and Codex share project instructions?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Yes, through AGENTS.md. Codex uses AGENTS.md for custom instructions, including nested files in subfolders. Claude Code reads CLAUDE.md and can read an existing AGENTS.md in its place, so one file can serve both agents."}},
+    {"@type": "Question", "name": "Which is better for teams?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Seat prices are identical: $20/seat billed annually or $25 monthly for standard seats, and $100 or $125 for premium seats with 5x usage. Claude Team covers 2 to 150 people; ChatGPT Business covers 2 to 200 and also offers Codex-only seats with no fixed monthly fee that bill against workspace credits, which suits teams where only a few people code heavily. Pick by which models your team prefers."}}
+  ]
+}
+  </script>
+  <style>
+    .wrap table td, .wrap table th { vertical-align: top; }
+    .note { font-size: .9em; color: var(--muted); }
+    article h2 { margin-top: 28px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo"><a href="../" style="color:inherit;text-decoration:none">CodeTool<span>Picker</span></a></div>
+      <nav>
+        <a href="../#quiz">Quiz</a>
+        <a href="../#compare">Compare</a>
+        <a href="../#comparisons">Guides</a>
+        <a href="../ai-coding-tool-pricing/">Pricing</a>
+      </nav>
+    </header>
+    <p class="crumbs"><a href="../">Home</a> › <a href="../#comparisons">Comparisons</a> › Claude Code vs OpenAI Codex</p>
+
+    <article>
+    <section class="hero">
+      <h1>Claude Code vs OpenAI Codex (Oct 2026)</h1>
+      <p>Short answer: Anthropic and OpenAI now charge <strong>the same price ladder</strong> for their coding agents: $20 to start, $100 for heavy use, and $20 or $100 per team seat. So pick on models and limits, not price. Choose <strong>Claude Code</strong> if Claude Opus and Sonnet are the models you trust, or if you'd use Max's included API credits. Choose <strong>Codex</strong> if you want to start free or at $8, want no five-hour cap at $100+, or want automatic GitHub code review and cloud tasks built into your $20 plan.</p>
+      <p class="updated">Prices verified on official pricing pages and help docs Oct 20, 2026. Prices change often; confirm with the linked sources.</p>
+      <div class="cta-row"><a class="btn btn-primary" href="../#quiz">Not sure? Take the 60-second picker quiz</a> <a class="btn" href="../ai-coding-tool-pricing/">See every AI coding plan</a></div>
+    </section>
+
+    <section class="panel" style="overflow-x:auto">
+      <h2>Side by side</h2>
+      <table>
+        <thead><tr><th></th><th>Claude Code (Anthropic)</th><th>Codex (OpenAI)</th></tr></thead>
+        <tbody>
+          <tr><td>What it is</td><td>Agentic coding tool: terminal CLI, VS Code and JetBrains extensions, desktop app, and the web</td><td>Coding agent in the ChatGPT desktop app, on the web (Codex cloud), in the CLI, an IDE extension, and on iOS</td></tr>
+          <tr><td>Free tier</td><td>None: Claude Code isn't on Claude Free</td><td>Free ($0) and Go ($8/mo): limited Codex in the desktop app on GPT-6 Luna, subject to rollout</td></tr>
+          <tr><td>Entry paid</td><td>Claude Pro $20/mo, or $17/mo billed annually ($200 up front)</td><td>ChatGPT Plus $20/mo: all surfaces, cloud tasks, automatic code review, Slack integration</td></tr>
+          <tr><td>Heavy use</td><td>Max from $100/mo: 5x or 20x Pro usage per five-hour session, plus $100 or $200 a month in API credits</td><td>Pro at $100, $200 or $500/mo. Pro plans currently have no five-hour limit (weekly limits still apply). Ultrafast mode on Pro $500 only</td></tr>
+          <tr><td>Models in plan</td><td>Opus, Sonnet and Haiku on Pro and up. Fable via usage credits on Pro, up to 50% of weekly limits on Max</td><td>GPT-6.1 Sol, GPT-6 Sol and GPT-6 Luna on Plus, with limited GPT-6 Astra; full Astra allowance on Pro $100 and $200</td></tr>
+          <tr><td>Limits on the $20 plan</td><td>Rolling five-hour window plus weekly limits, shared with Claude chat</td><td>Rolling five-hour window plus weekly limits, shared with ChatGPT Work. OpenAI estimates 15–160 local GPT-6.1 Sol messages per five hours on Plus</td></tr>
+          <tr><td>When you run out</td><td>Wait, upgrade to Max, or turn on usage credits at API rates</td><td>Wait, upgrade to Pro, or buy ChatGPT credits; you can also run local chats on an API key</td></tr>
+          <tr><td>API-key mode</td><td>Pay-as-you-go through an Anthropic Console account</td><td>CLI, SDK and IDE extension at API prices; no cloud features (GitHub review, Slack)</td></tr>
+          <tr><td>Teams</td><td>Team: Standard $20/seat annual ($25 monthly), Premium $100 ($125 monthly) with 5x usage, 2–150 people. Enterprise $20/seat + API usage</td><td>Business: Standard $20/seat annual ($25 monthly), Premium $100 ($125 monthly) with 5x usage and no five-hour limit, 2–200 people. Plus Codex-only seats with no fixed fee, billed on workspace credits</td></tr>
+          <tr><td>Project instructions</td><td>CLAUDE.md, or an existing AGENTS.md</td><td>AGENTS.md (nested files supported)</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Sources: <a href="https://claude.com/pricing" rel="noopener">claude.com/pricing</a> · <a href="https://code.claude.com/docs/en/overview" rel="noopener">Claude Code docs</a> · <a href="https://developers.openai.com/codex/pricing" rel="noopener">Codex pricing</a> · <a href="https://chatgpt.com/pricing" rel="noopener">chatgpt.com/pricing</a> · <a href="https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers" rel="noopener">ChatGPT Pro tiers</a> · <a href="https://help.openai.com/en/articles/8792828-chatgpt-business-overview" rel="noopener">ChatGPT Business overview</a>. Checked Oct 20, 2026. Claude lists Max as "from $100" without a separate Max 20x price, so we don't list one. OpenAI says Pro $200 includes more usage than Pro $100 but doesn't publish exact multiples on its pricing page, so we don't either.</p>
+    </section>
+
+    <section class="panel">
+      <h2>What a team of 5 pays</h2>
+      <table>
+        <thead><tr><th></th><th>Claude Team</th><th>ChatGPT Business</th></tr></thead>
+        <tbody>
+          <tr><td>5 standard seats, monthly billing</td><td>$125/mo</td><td>$125/mo</td></tr>
+          <tr><td>5 standard seats, annual billing</td><td>$100/mo ($1,200/yr)</td><td>$100/mo ($1,200/yr)</td></tr>
+          <tr><td>4 standard + 1 premium (annual)</td><td>$180/mo</td><td>$180/mo</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Same money either way. The real cost difference shows up in overage: Claude bills extra usage at API rates, and ChatGPT Business bills it as workspace credits. ChatGPT Business can also add Codex-only seats with no fixed fee for occasional coders.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Where Claude Code wins</h2>
+      <ul>
+        <li><strong>Claude models at a flat price.</strong> Opus, Sonnet and Haiku are all in plan usage from $20. If Claude is your preferred coding model, this is the cheapest way to get it.</li>
+        <li><strong>Max includes API credits.</strong> Max adds $100 or $200 a month in Claude Platform credits, useful if you also build on the API.</li>
+        <li><strong>Annual discount for individuals.</strong> Pro drops to $17/mo billed annually; ChatGPT Plus is monthly only.</li>
+        <li><strong>Lives in more editors.</strong> Official VS Code and JetBrains extensions, and the VS Code extension also installs in Cursor.</li>
+      </ul>
+      <h2>Where Codex wins</h2>
+      <ul>
+        <li><strong>You can start free.</strong> ChatGPT Free and Go ($8) include limited Codex in the desktop app; Claude Code starts at $20.</li>
+        <li><strong>No five-hour cap at $100+.</strong> ChatGPT Pro plans currently have no five-hour Codex limit, only weekly limits. Claude Max still uses five-hour sessions.</li>
+        <li><strong>Cloud features in the $20 plan.</strong> Plus includes Codex cloud tasks on the web and iOS, automatic GitHub code review, and the Slack integration.</li>
+        <li><strong>A top tier for speed.</strong> Pro $500 adds Ultrafast mode for GPT-6 Astra and GPT-6.1 Sol.</li>
+        <li><strong>Watch out:</strong> GPT-5.5 was retired from Codex with ChatGPT sign-in on Oct 14, 2026. If your workflow was tuned to it, test on GPT-6.1 Sol before you commit.</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>Verdict: who should pick which</h2>
+      <h3>Pick Claude Code if…</h3>
+      <ul>
+        <li>Claude Opus or Sonnet produces the code you like best, and you want it at a flat monthly price.</li>
+        <li>You already pay for Claude Pro or Max: Claude Code is included.</li>
+        <li>You'd actually use Max's monthly API credits, or want the $17/mo annual price.</li>
+      </ul>
+      <h3>Pick Codex if…</h3>
+      <ul>
+        <li>You want to try a coding agent for free or $8 before paying $20.</li>
+        <li>You hit five-hour limits a lot and are ready for $100+: Pro removes that cap.</li>
+        <li>You want automatic PR reviews, cloud tasks from your phone, and Slack hand-offs included in your plan.</li>
+        <li>Your team has a few heavy coders and many light ones: Codex-only seats have no fixed fee.</li>
+      </ul>
+      <p><strong>Honest caveat:</strong> "$20" doesn't buy the same amount of work on both. Neither vendor publishes a fixed message count, and usage depends on model, context size and task. Both plans can be cancelled monthly, so the best test is one real week of your own work on each. Since both read <code>AGENTS.md</code>, switching costs you almost nothing. Comparing an AI IDE instead? See <a href="../claude-code-vs-cursor/">Claude Code vs Cursor</a>, or let the <a href="../#quiz">quiz</a> decide.</p>
+    </section>
+
+    <section class="panel" id="faq">
+      <h2>FAQ</h2>
+      <h3>Is Claude Code or Codex cheaper?</h3>
+      <p>At the paid tiers the list prices match: Claude Pro and ChatGPT Plus are both $20/month, Claude Max and ChatGPT Pro both start at $100/month, and team seats on Claude Team and ChatGPT Business are both $20/seat/month billed annually ($25 monthly), or $100 ($125 monthly) for premium seats. Codex is cheaper to start, because ChatGPT Free and Go ($8/month) include limited Codex access in the desktop app, while Claude Code isn't on Claude Free. Claude Pro is also $17/month if billed annually.</p>
+      <h3>Does Codex have a free plan?</h3>
+      <p>Yes, a limited one. OpenAI's Codex pricing page lists Free ($0) and Go ($8/month) with GPT-6 Luna at Standard speed in the desktop app, subject to rollout. The full set of surfaces (web, CLI, IDE extension, iOS) and cloud features like automatic code review start on Plus at $20/month. Claude Code has no free tier.</p>
+      <h3>Which has better usage limits?</h3>
+      <p>Neither publishes a fixed message count. On the $20 plans both use rolling five-hour windows plus weekly limits. The difference is at $100 and up: OpenAI says ChatGPT Pro plans currently have no five-hour limit for Codex (weekly limits still apply), while Claude Max gives 5x or 20x Pro usage per five-hour session. Claude Max also includes $100 to $200 a month in Claude Platform API credits.</p>
+      <h3>Can I use Codex or Claude Code with an API key instead of a subscription?</h3>
+      <p>Yes, both. Codex with an API key works in the CLI, SDK and IDE extension at API prices, without cloud features like GitHub code review or Slack. Claude Code can switch to pay-as-you-go API credits through an Anthropic Console account.</p>
+      <h3>Can Claude Code and Codex share project instructions?</h3>
+      <p>Yes, through AGENTS.md. Codex uses AGENTS.md for custom instructions, including nested files in subfolders. Claude Code reads CLAUDE.md and can read an existing AGENTS.md in its place, so one file can serve both agents.</p>
+      <h3>Which is better for teams?</h3>
+      <p>Seat prices are identical: $20/seat billed annually or $25 monthly for standard seats, and $100 or $125 for premium seats with 5x usage. Claude Team covers 2 to 150 people; ChatGPT Business covers 2 to 200 and also offers Codex-only seats with no fixed monthly fee that bill against workspace credits, which suits teams where only a few people code heavily. Pick by which models your team prefers.</p>
+    </section>
+
+    <section class="panel" id="related">
+      <h2>Related guides</h2>
+      <ul class="related">
+        <li><a href="../claude-code-vs-cursor/">Claude Code vs Cursor<small>Terminal agent vs AI IDE</small></a></li>
+        <li><a href="../ai-coding-tool-pricing/">AI coding tool pricing<small>All 26 plans + cost calculator</small></a></li>
+        <li><a href="../cursor-bundle-alternatives/">Cursor's new bundle vs Claude Code and Copilot<small>Claude/GPT now cost extra in Cursor</small></a></li>
+        <li><a href="../cursor-vs-copilot/">Cursor vs GitHub Copilot<small>$8 Grok-only vs $10 multi-model</small></a></li>
+      </ul>
+    </section>
+
+    <aside class="sponsor" id="sponsor" aria-label="Sponsor slot">
+      <strong>Sponsor slot</strong> <span class="meta">(Sponsored placements are labeled and never affect rankings or verdicts)</span><br />
+      Reach developers choosing between Claude Code, Codex, and other coding agents.
+      <div style="margin-top:10px" class="meta">Founding sponsor rates available now. Email <a href="mailto:sponsors@codetoolpicker.com?subject=CodeToolPicker%20sponsorship">sponsors@codetoolpicker.com</a> &middot; <a href="https://github.com/patwinplastics/codetoolpicker/blob/main/SPONSOR.md" rel="noopener">Media kit</a></div>
+    </aside>
+
+    <section class="panel" id="disclosure">
+      <h2>Editorial disclosure</h2>
+      <p><strong>Rankings are not for sale.</strong> Sponsored placements and affiliate links are always labeled, and they never change our recommendations, quiz results, or comparison data. None of the links on this page are affiliate links: Anthropic and OpenAI don't pay us. <a href="https://github.com/patwinplastics/codetoolpicker/blob/main/SPONSOR.md#editorial-policy" rel="noopener">Editorial policy</a>.</p>
+    </section>
+    </article>
+
+    <footer>
+      <p><a href="../">← Back to the AI Coding Tool Picker</a> · <a href="../ai-coding-tool-pricing/">Pricing &amp; plans calculator</a></p>
+      <p>More comparisons: <a href="../lovable-vs-bolt/">Lovable vs Bolt</a> · <a href="../cursor-vs-windsurf/">Cursor vs Windsurf (Devin Desktop)</a> · <a href="../claude-code-vs-cursor/">Claude Code vs Cursor</a> · <a href="./">Claude Code vs Codex</a> · <a href="../cursor-vs-copilot/">Cursor vs Copilot</a> · <a href="../switch-from-copilot-to-cursor/">Switch Copilot → Cursor</a> · <a href="../cursor-bundle-alternatives/">Cursor bundle vs Claude Code vs Copilot</a></p>
+      <p>Not affiliated with Anthropic or OpenAI.</p>
+      <p>Contact, sponsorships, and corrections: <a href="mailto:sponsors@codetoolpicker.com">sponsors@codetoolpicker.com</a></p>
+    </footer>
+  </div>
+</body>
+</html>

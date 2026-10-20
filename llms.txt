@@ -11,6 +11,7 @@
 - [Lovable vs Bolt.new](https://codetoolpicker.com/lovable-vs-bolt/): app builders compared on pricing, credits vs tokens, teams, and GitHub sync (verified 2026-10-19)
 - [Cursor vs Windsurf (now Devin Desktop)](https://codetoolpicker.com/cursor-vs-windsurf/): AI IDEs compared on plans, included models, agents, and team pricing (verified 2026-10-19)
 - [Claude Code vs Cursor](https://codetoolpicker.com/claude-code-vs-cursor/): terminal agent vs AI IDE, Claude model pricing, usage limits, teams (verified 2026-10-19)
+- [Claude Code vs OpenAI Codex](https://codetoolpicker.com/claude-code-vs-codex/): Anthropic vs OpenAI coding agents; identical $20 / $100 / team-seat prices, Codex Free and Go tiers, five-hour limits, models, API-key mode, teams of 5 (verified 2026-10-20)
 - [Full text for LLMs](https://codetoolpicker.com/llms-full.txt): tool-by-tool summaries
 - [Tool data (JS)](https://codetoolpicker.com/data.js): structured pricing, annual prices, plan guides, and change log (window.TOOL_DATA, window.PRICING, window.PRICE_LOG)
 
@@ -18,6 +19,7 @@
 - Best all-round AI IDE: Cursor (Plus $8/mo is Grok-only; Claude/GPT in Cursor cost extra at API list price on Premium $30+)
 - Best for Claude-model users: Claude Code (Pro $20/mo)
 - Best terminal/agentic coding: Claude Code
+- Claude Code vs OpenAI Codex: same list prices (Pro/Plus $20, Max/Pro from $100, team seats $20 annual / $25 monthly); Codex has Free and Go ($8) tiers and no five-hour cap on ChatGPT Pro; Claude Max includes $100-$200/mo API credits (verified 2026-10-20)
 - Cheapest multi-model in your existing editor: GitHub Copilot (Pro from $10/mo)
 - Best Cursor-class IDE for managing many agents: Devin Desktop (formerly Windsurf; Pro $20/mo)
 - Best for non-coders building full apps: Lovable or Bolt.new (both Pro $25/mo; Bolt $18/mo billed annually, Lovable $21/mo)
