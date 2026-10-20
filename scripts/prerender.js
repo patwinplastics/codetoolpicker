@@ -67,20 +67,21 @@ if (fs.existsSync(pg)) {
 }
 
 const lines = [
-  "# CodeToolPicker — full text",
+  "# CodeToolPicker: full text",
   `Independent AI coding tool comparison. Source: https://codetoolpicker.com/ . Data checked ${checked} on official vendor pricing pages; confirm prices on vendor sites.`,
   "",
   "Editorial policy: rankings are not for sale. Sponsors and affiliate links are labeled and never change recommendations, quiz logic, or comparison data.",
   "Contact (sponsorships, corrections): sponsors@codetoolpicker.com",
   "",
-  "See also: https://codetoolpicker.com/ai-coding-tool-pricing/ (all 26 plans, which one you need, cost calculator, pricing change log)",
+  "See also: https://codetoolpicker.com/ai-coding-tool-pricing/ (all 38 plans across 8 tools, which one you need, cost calculator, pricing change log)",
   "See also: https://codetoolpicker.com/cursor-bundle-alternatives/ (Cursor bundle vs Claude Code vs Copilot)",
   "See also: https://codetoolpicker.com/cursor-vs-copilot/ (Cursor vs GitHub Copilot)",
   "See also: https://codetoolpicker.com/switch-from-copilot-to-cursor/ (switch from Copilot to Cursor without losing your setup)",
   "See also: https://codetoolpicker.com/lovable-vs-bolt/ (Lovable vs Bolt.new)",
   "See also: https://codetoolpicker.com/cursor-vs-windsurf/ (Cursor vs Windsurf, now Devin Desktop)",
   "See also: https://codetoolpicker.com/claude-code-vs-cursor/ (Claude Code vs Cursor)",
-  "See also: https://codetoolpicker.com/claude-code-vs-codex/ (Claude Code vs OpenAI Codex)",
+  "See also: https://codetoolpicker.com/claude-code-vs-codex/ (Claude Code vs OpenAI Codex, with 30 days of status-page incident data)",
+  "See also: https://codetoolpicker.com/cursor-vs-antigravity/ (Cursor vs Google Antigravity)",
   "",
   "Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, plans, and pricing); windsurf.com redirects to devin.ai.",
 ];
@@ -92,12 +93,12 @@ for (const t of tools) {
     `- website: ${t.website}`);
   if (t.affiliateUrl) lines.push(`- affiliate / referral CTA: ${t.affiliateUrl}`);
   lines.push(`- pricing source: ${t.pricingUrl}`);
-  for (const p of t.plans) lines.push(`- plan ${p.name}: ${p.price == null ? "see vendor" : `$${p.price}/mo`} — ${p.note}`);
+  for (const p of t.plans) lines.push(`- plan ${p.name}: ${p.price == null ? "see vendor" : `$${p.price}/mo`}: ${p.note}`);
   const pr = P[t.id];
   if (pr) {
     lines.push(`- best for (badge): ${pr.bestBadge}`);
-    for (const pl of pr.plans) lines.push(`- price ${pl.name}: monthly ${fmtMonth(pl)}; annual ${fmtYear(pl)}${pl.note ? ` — ${pl.note}` : ""}`);
-    for (const [n, w] of pr.guide) lines.push(`- which plan: ${n} — ${w}`);
+    for (const pl of pr.plans) lines.push(`- price ${pl.name}: monthly ${fmtMonth(pl)}; annual ${fmtYear(pl)}${pl.note ? `; ${pl.note}` : ""}`);
+    for (const [n, w] of pr.guide) lines.push(`- which plan: ${n}: ${w}`);
     lines.push(`- not included: ${pr.extraCost}`);
     lines.push(`- skip it if: ${pr.skipIf}`);
   }

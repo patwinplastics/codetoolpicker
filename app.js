@@ -84,7 +84,7 @@
       <div class="runner">
         <p><strong>Runner-up: ${second.name}</strong>, if you want ${midSentence(second.tagline)}. From ${moneyLabel(second.startingPaid)}.</p>
         <div class="cta-row">
-          ${cmp ? `<a class="btn" href="${cmp.url}">Compare: ${cmp.label}</a>` : `<a class="btn" href="#compare">Compare all six</a>`}
+          ${cmp ? `<a class="btn" href="${cmp.url}">Compare: ${cmp.label}</a>` : `<a class="btn" href="#compare">Compare all tools</a>`}
           <a class="btn" href="${ctaUrl(second)}" rel="noopener sponsored">${second.affiliateUrl ? "Try" : "Visit"} ${R.short(second.name)}</a>
         </div>
       </div>

@@ -5,7 +5,7 @@ labels: ["sponsor"]
 body:
   - type: markdown
     attributes:
-      value: "Thanks for your interest! See [SPONSOR.md](https://github.com/patwinplastics/codetoolpicker/blob/main/SPONSOR.md). This issue is public — don't include confidential info."
+      value: "Thanks for your interest! See [SPONSOR.md](https://github.com/patwinplastics/codetoolpicker/blob/main/SPONSOR.md). This issue is public, so don't include confidential info."
   - type: input
     id: company
     attributes: {label: Company / product, placeholder: "e.g. Acme AI IDE"}

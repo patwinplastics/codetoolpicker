@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name='impact-site-verification' value='83f48c6a-f7b9-45b3-8866-03f8600f0734'>
   <title>Claude Code vs OpenAI Codex (Oct 2026): Same Prices, Different Limits</title>
-  <meta name="description" content="Claude Code vs OpenAI Codex, verified Oct 20, 2026: both start at $20 and both team seats cost $20/$100. Codex has Free and $8 tiers and no 5-hour cap on Pro; Claude Max adds API credits. Verdict inside." />
+  <meta name="description" content="Claude Code vs OpenAI Codex, verified Oct 20, 2026: both start at $20 and both team seats cost $20/$100. Codex has Free and $8 tiers and no 5-hour cap on Pro; Claude Max adds API credits. Plus 30 days of status-page incidents." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://codetoolpicker.com/claude-code-vs-codex/" />
   <meta property="og:title" content="Claude Code vs OpenAI Codex (Oct 2026): same prices, different limits" />
@@ -52,6 +52,8 @@
      "acceptedAnswer": {"@type": "Answer", "text": "Yes, both. Codex with an API key works in the CLI, SDK and IDE extension at API prices, without cloud features like GitHub code review or Slack. Claude Code can switch to pay-as-you-go API credits through an Anthropic Console account."}},
     {"@type": "Question", "name": "Can Claude Code and Codex share project instructions?",
      "acceptedAnswer": {"@type": "Answer", "text": "Yes, through AGENTS.md. Codex uses AGENTS.md for custom instructions, including nested files in subfolders. Claude Code reads CLAUDE.md and can read an existing AGENTS.md in its place, so one file can serve both agents."}},
+    {"@type": "Question", "name": "Which is more reliable, Claude Code or Codex?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Based on each company's own status page from Sep 21 to Oct 20, 2026, Claude Code had 4 incidents totaling 4.3 hours, all labeled major, while Codex had 7 incidents totaling 49.4 hours, mostly degraded performance, including one 25-hour Work Mode incident in the ChatGPT desktop app and one 55-minute full outage. Incident hours aren't the same as downtime, and results swing a lot with the time window you pick."}},
     {"@type": "Question", "name": "Which is better for teams?",
      "acceptedAnswer": {"@type": "Answer", "text": "Seat prices are identical: $20/seat billed annually or $25 monthly for standard seats, and $100 or $125 for premium seats with 5x usage. Claude Team covers 2 to 150 people; ChatGPT Business covers 2 to 200 and also offers Codex-only seats with no fixed monthly fee that bill against workspace credits, which suits teams where only a few people code heavily. Pick by which models your team prefers."}}
   ]
@@ -80,7 +82,7 @@
     <section class="hero">
       <h1>Claude Code vs OpenAI Codex (Oct 2026)</h1>
       <p>Short answer: Anthropic and OpenAI now charge <strong>the same price ladder</strong> for their coding agents: $20 to start, $100 for heavy use, and $20 or $100 per team seat. So pick on models and limits, not price. Choose <strong>Claude Code</strong> if Claude Opus and Sonnet are the models you trust, or if you'd use Max's included API credits. Choose <strong>Codex</strong> if you want to start free or at $8, want no five-hour cap at $100+, or want automatic GitHub code review and cloud tasks built into your $20 plan.</p>
-      <p class="updated">Prices verified on official pricing pages and help docs Oct 20, 2026. Prices change often; confirm with the linked sources.</p>
+      <p class="updated">Prices verified on official pricing pages and help docs Oct 20, 2026. <a href="#reliability">Reliability data</a> from both official status pages, Sep 21 to Oct 20. Prices change often; confirm with the linked sources.</p>
       <div class="cta-row"><a class="btn btn-primary" href="../#quiz">Not sure? Take the 60-second picker quiz</a> <a class="btn" href="../ai-coding-tool-pricing/">See every AI coding plan</a></div>
     </section>
 
@@ -115,6 +117,43 @@
         </tbody>
       </table>
       <p class="note">Same money either way. The real cost difference shows up in overage: Claude bills extra usage at API rates, and ChatGPT Business bills it as workspace credits. ChatGPT Business can also add Codex-only seats with no fixed fee for occasional coders.</p>
+    </section>
+
+
+    <section class="panel" id="reliability">
+      <h2>Reliability: what the official status pages show</h2>
+      <p>We counted every incident that OpenAI and Anthropic posted against their coding agents on their own status pages from Sep 21 to Oct 20, 2026 (30 days, UTC). For Codex that's the Codex Web, Codex API, CLI, VS Code extension and "Codex in ChatGPT Desktop" components on <a href="https://status.openai.com/" rel="noopener">status.openai.com</a>. For Claude Code it's incidents tagged "Claude Code" on <a href="https://status.claude.com/" rel="noopener">status.claude.com</a>.</p>
+      <table>
+        <thead><tr><th>Last 30 days</th><th>Claude Code</th><th>Codex</th></tr></thead>
+        <tbody>
+          <tr><td>Incidents</td><td>4</td><td>7</td></tr>
+          <tr><td>Hours with an open incident (overlaps counted once)</td><td>4.3 hours</td><td>49.4 hours</td></tr>
+          <tr><td>Worst label</td><td>"Major" (elevated errors), all 4</td><td>One 55-minute full outage (Sep 25); the rest degraded performance or partial outage</td></tr>
+          <tr><td>Biggest single incident</td><td>2 h 5 min (Sep 29)</td><td>25 h 14 min of degraded Work Mode in the ChatGPT desktop app (Oct 5 to 6)</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Fact check on a viral claim:</strong> a post on X said Codex had 42.7 hours of open incidents over two weeks versus 34 minutes for Claude Code. The status pages back that up for Oct 5 to Oct 19: 42.7 hours across 4 Codex incidents versus 34 minutes across 2 Claude Code incidents. But the window matters a lot. Start two days later (Oct 7 to Oct 20) and it's 17.5 hours versus zero; start one day later (Oct 6 to Oct 20) and it's 25.9 hours versus 18 minutes.</p>
+      <p><strong>How to read this:</strong> open-incident hours are not downtime. Most Codex hours were "degraded performance", and more than half came from one incident in the ChatGPT desktop app, so the CLI, IDE extension, web and API components together logged 14.6 hours. Claude Code's incidents were shorter but every one was labeled major. Each company decides what to post and how to label it, and a status page can't show the errors you personally hit. Over this month Claude Code had fewer and shorter incidents; we'll refresh these numbers as new incidents come in.</p>
+      <details>
+        <summary>All 11 incidents, with links (start date in UTC)</summary>
+        <div class="table-scroll"><table>
+          <thead><tr><th>Date</th><th>Tool</th><th>Incident</th><th>Open for</th><th>Status page label</th></tr></thead>
+          <tbody>
+          <tr><td>Oct 14</td><td>Codex</td><td><a href="https://status.openai.com/incidents/01M4WKPE1EY48ZB4RZJ80YH7ES" rel="noopener">Degraded performance in Codex and ChatGPT Work</a></td><td>2 h 47 min</td><td>degraded performance: Codex in ChatGPT Desktop</td></tr>
+          <tr><td>Oct 13</td><td>Codex</td><td><a href="https://status.openai.com/incidents/01M4T4ZCM54D3ZPTQXRSWFG0XS" rel="noopener">Degraded performance in GPT-6.1 Sol Codex and Work mode</a></td><td>8 h 18 min</td><td>degraded performance: CLI, Codex API, Codex Web, VS Code extension</td></tr>
+          <tr><td>Oct 7</td><td>Codex</td><td><a href="https://status.openai.com/incidents/01M4ADHMMBK7K92NJFJ0DXRYJM" rel="noopener">Unable to create new ChatGPT Work threads in latest version of desktop app</a></td><td>6 h 21 min</td><td>partial outage: Codex in ChatGPT Desktop</td></tr>
+          <tr><td>Oct 6</td><td>Claude Code</td><td><a href="https://status.claude.com/incidents/ch27pb90bn85" rel="noopener">Elevated errors for Claude Opus 5.5</a></td><td>18 min</td><td>major</td></tr>
+          <tr><td>Oct 5</td><td>Claude Code</td><td><a href="https://status.claude.com/incidents/bhphxz3vr58g" rel="noopener">Elevated errors for Claude Mythos 5.1 and Claude Fable 5.1</a></td><td>15 min</td><td>major</td></tr>
+          <tr><td>Oct 5</td><td>Codex</td><td><a href="https://status.openai.com/incidents/01M45E0JFFJZ6EQ3BWYPW74R2Z" rel="noopener">Elevated Work Mode errors</a></td><td>25 h 14 min</td><td>degraded performance: Codex in ChatGPT Desktop</td></tr>
+          <tr><td>Sep 29</td><td>Codex</td><td><a href="https://status.openai.com/incidents/01M3Q4RK1SM4EMK445GGPG7C0N" rel="noopener">Elevated errors across ChatGPT, Codex, and the API including the Agents API</a></td><td>5 h 21 min</td><td>degraded performance: CLI, Codex API, Codex Web, Codex in ChatGPT Desktop, VS Code extension</td></tr>
+          <tr><td>Sep 29</td><td>Claude Code</td><td><a href="https://status.claude.com/incidents/4xvtc2gnq73l" rel="noopener">Elevated errors on claude.ai, Claude Code, Claude Cowork and the Claude API</a></td><td>2 h 5 min</td><td>major</td></tr>
+          <tr><td>Sep 25</td><td>Codex</td><td><a href="https://status.openai.com/incidents/01M3DCNWMW57HYK8FJ5FBFPA39" rel="noopener">Issues with Codex</a></td><td>55 min</td><td>full outage: CLI, Codex API, Codex Web, VS Code extension</td></tr>
+          <tr><td>Sep 23</td><td>Codex</td><td><a href="https://status.openai.com/incidents/01M389CDQ97B11QPMSRAAYSE5S" rel="noopener">Mobile users unable to see Work Mode and the Model Picker</a></td><td>24 min</td><td>degraded performance: Codex in ChatGPT Desktop</td></tr>
+          <tr><td>Sep 22</td><td>Claude Code</td><td><a href="https://status.claude.com/incidents/7g1qpkyz5gxh" rel="noopener">Elevated errors for multiple models</a></td><td>1 h 37 min</td><td>major</td></tr>
+          </tbody>
+        </table></div>
+        <p class="note">Method: Codex durations use OpenAI's per-component impact windows; Claude Code durations run from Anthropic's first post to "resolved", because Anthropic's public data doesn't give per-component times. We left out OpenAI incidents that didn't list a Codex component, such as "Elevated error rates in Codex Cloud" (Oct 5 to 6, no component listed, and inside the Work Mode window anyway) and two "Dot in Codex" issues filed under ChatGPT. Data pulled Oct 20, 2026.</p>
+      </details>
     </section>
 
     <section class="panel">
@@ -165,6 +204,8 @@
       <p>Yes, both. Codex with an API key works in the CLI, SDK and IDE extension at API prices, without cloud features like GitHub code review or Slack. Claude Code can switch to pay-as-you-go API credits through an Anthropic Console account.</p>
       <h3>Can Claude Code and Codex share project instructions?</h3>
       <p>Yes, through AGENTS.md. Codex uses AGENTS.md for custom instructions, including nested files in subfolders. Claude Code reads CLAUDE.md and can read an existing AGENTS.md in its place, so one file can serve both agents.</p>
+      <h3>Which is more reliable, Claude Code or Codex?</h3>
+      <p>Based on each company's own status page from Sep 21 to Oct 20, 2026, Claude Code had 4 incidents totaling 4.3 hours, all labeled major, while Codex had 7 incidents totaling 49.4 hours, mostly degraded performance, including one 25-hour Work Mode incident in the ChatGPT desktop app and one 55-minute full outage. Incident hours aren't the same as downtime, and results swing a lot with the time window you pick. See the <a href="#reliability">incident table</a>.</p>
       <h3>Which is better for teams?</h3>
       <p>Seat prices are identical: $20/seat billed annually or $25 monthly for standard seats, and $100 or $125 for premium seats with 5x usage. Claude Team covers 2 to 150 people; ChatGPT Business covers 2 to 200 and also offers Codex-only seats with no fixed monthly fee that bill against workspace credits, which suits teams where only a few people code heavily. Pick by which models your team prefers.</p>
     </section>
@@ -172,8 +213,9 @@
     <section class="panel" id="related">
       <h2>Related guides</h2>
       <ul class="related">
+        <li><a href="../cursor-vs-antigravity/">Cursor vs Google Antigravity<small>New: $19.99 Gemini + Claude vs $30 + API</small></a></li>
         <li><a href="../claude-code-vs-cursor/">Claude Code vs Cursor<small>Terminal agent vs AI IDE</small></a></li>
-        <li><a href="../ai-coding-tool-pricing/">AI coding tool pricing<small>All 26 plans + cost calculator</small></a></li>
+        <li><a href="../ai-coding-tool-pricing/">AI coding tool pricing<small>All 38 plans + cost calculator</small></a></li>
         <li><a href="../cursor-bundle-alternatives/">Cursor's new bundle vs Claude Code and Copilot<small>Claude/GPT now cost extra in Cursor</small></a></li>
         <li><a href="../cursor-vs-copilot/">Cursor vs GitHub Copilot<small>$8 Grok-only vs $10 multi-model</small></a></li>
       </ul>
@@ -193,7 +235,7 @@
 
     <footer>
       <p><a href="../">← Back to the AI Coding Tool Picker</a> · <a href="../ai-coding-tool-pricing/">Pricing &amp; plans calculator</a></p>
-      <p>More comparisons: <a href="../lovable-vs-bolt/">Lovable vs Bolt</a> · <a href="../cursor-vs-windsurf/">Cursor vs Windsurf (Devin Desktop)</a> · <a href="../claude-code-vs-cursor/">Claude Code vs Cursor</a> · <a href="./">Claude Code vs Codex</a> · <a href="../cursor-vs-copilot/">Cursor vs Copilot</a> · <a href="../switch-from-copilot-to-cursor/">Switch Copilot → Cursor</a> · <a href="../cursor-bundle-alternatives/">Cursor bundle vs Claude Code vs Copilot</a></p>
+      <p>More comparisons: <a href="../lovable-vs-bolt/">Lovable vs Bolt</a> · <a href="../cursor-vs-windsurf/">Cursor vs Windsurf (Devin Desktop)</a> · <a href="../claude-code-vs-cursor/">Claude Code vs Cursor</a> · <a href="./">Claude Code vs Codex</a> · <a href="../cursor-vs-antigravity/">Cursor vs Antigravity</a> · <a href="../cursor-vs-copilot/">Cursor vs Copilot</a> · <a href="../switch-from-copilot-to-cursor/">Switch Copilot → Cursor</a> · <a href="../cursor-bundle-alternatives/">Cursor bundle alternatives</a></p>
       <p>Not affiliated with Anthropic or OpenAI.</p>
       <p>Contact, sponsorships, and corrections: <a href="mailto:sponsors@codetoolpicker.com">sponsors@codetoolpicker.com</a></p>
     </footer>

@@ -11,6 +11,7 @@
   tools.forEach((t) => (state.rows[t.id] = { on: false, plan: defaultPlan(t.id), seats: 1 }));
 
   function defaultPlan(id) {
+    if (P[id].defaultPlan) return P[id].defaultPlan;
     const pl = P[id].plans;
     const paid = pl.find((p) => p.monthly > 0 && !p.seat);
     return (paid || pl[0]).name;
@@ -18,6 +19,7 @@
   const PRESETS = [
     { label: "Solo dev on a budget", set: { copilot: ["Pro", 1] } },
     { label: "Cursor + Claude Code", set: { cursor: ["Premium", 1], "claude-code": ["Pro", 1] } },
+    { label: "Compare the $20 agents", set: { "claude-code": ["Pro", 1], codex: ["Plus", 1], antigravity: ["Google AI Pro", 1] } },
     { label: "Non-coder building an app", set: { lovable: ["Pro", 1] } },
     { label: "Try both app builders", set: { lovable: ["Pro", 1], bolt: ["Pro", 1] } },
     { label: "5-dev team on GitHub", set: { copilot: ["Business", 5] } },

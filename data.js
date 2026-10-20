@@ -1,4 +1,4 @@
-// Pricing verified 2026-10-19 on official pages (cursor.com/pricing, docs.x.ai/x-subscription/pricing, docs.github.com Copilot plans, claude.com/pricing, devin.ai/pricing, bolt.new/pricing, lovable.dev/pricing).
+// Pricing verified 2026-10-19 on official pages; Antigravity, Codex and Cursor re-checked 2026-10-20 (antigravity.google/pricing + docs/plans + docs/models, gemini.google/subscriptions, developers.openai.com/codex/pricing, docs.x.ai/x-subscription/pricing, docs.github.com Copilot plans, claude.com/pricing, devin.ai/pricing, bolt.new/pricing, lovable.dev/pricing).
 // Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02; windsurf.com now redirects to devin.ai. id stays "windsurf" for quiz/anchor stability.
 window.TOOL_DATA = [
   {
@@ -143,6 +143,54 @@ window.TOOL_DATA = [
     affiliate: true,
     affiliateNote: "Bolt referral link live (Earn $50 / Cello); may earn a commission",
     sponsorFit: "high"
+  },
+  {
+    id: "codex",
+    name: "OpenAI Codex",
+    category: "agent",
+    tagline: "OpenAI's coding agent in the ChatGPT desktop app, on the web, in the CLI, an IDE extension and iOS",
+    bestFor: "ChatGPT users who want a coding agent with cloud tasks and automatic PR reviews",
+    website: "https://developers.openai.com/codex",
+    pricingUrl: "https://developers.openai.com/codex/pricing",
+    startingPaid: 8,
+    freeTier: true,
+    plans: [
+      { name: "Free", price: 0, note: "Limited Codex in the desktop app on GPT-6 Luna, subject to rollout" },
+      { name: "Go", price: 8, note: "Lightweight Codex in the desktop app on GPT-6 Luna" },
+      { name: "Plus", price: 20, note: "Web, CLI, IDE extension, iOS; cloud tasks, automatic code review, Slack" },
+      { name: "Pro", price: 100, note: "Pro at $100, $200 or $500; no five-hour Codex limit right now (weekly limits apply)" },
+      { name: "Business", price: 25, note: "Per user; $20/user/mo billed annually, 2+ users" }
+    ],
+    strengths: ["Free and $8 entry tiers", "Cloud tasks and automatic GitHub code review on Plus", "No five-hour cap on Pro plans (weekly limits apply)", "Works with an API key in the CLI, SDK and IDE extension"],
+    limits: ["OpenAI models only on ChatGPT plans", "Usage shared with ChatGPT Work", "GPT-5.5 retired from Codex with ChatGPT sign-in on Oct 14, 2026"],
+    formFactor: "Desktop app / CLI / IDE agent",
+    models: "GPT-6.1 Sol, GPT-6 Sol and GPT-6 Luna on Plus; GPT-6 Astra on Pro",
+    affiliate: false,
+    sponsorFit: "high"
+  },
+  {
+    id: "antigravity",
+    name: "Google Antigravity",
+    category: "agent",
+    tagline: "Google's agent-first coding platform: a desktop agent app, its own IDE, a CLI and editor extensions",
+    bestFor: "Developers who want Gemini and Claude models in one $20 plan, across app, IDE and terminal",
+    website: "https://antigravity.google",
+    pricingUrl: "https://antigravity.google/pricing",
+    startingPaid: 19.99,
+    freeTier: true,
+    plans: [
+      { name: "Free", price: 0, note: "Basic weekly limit, unlimited Tab and Command requests, Gemini 3.8 Flash" },
+      { name: "Google AI Pro", price: 19.99, note: "Quota refreshes every 5 hours up to a weekly limit; Gemini 4 Argon, Claude Opus/Sonnet 5.5 (paid, not trial)" },
+      { name: "Google AI Ultra 5x", price: 99.99, note: "5x the Pro quota" },
+      { name: "Google AI Ultra 20x", price: 199.99, note: "20x the Pro quota, highest weekly limits" },
+      { name: "Gemini Enterprise", price: 30, note: "Teams via Google Cloud: Standard/Plus from $30/seat, or pay-as-you-go with $0 seat fee" }
+    ],
+    strengths: ["Claude Opus and Sonnet 5.5 included in the $19.99 Pro quota", "Free tier with unlimited Tab completions", "Agent app, own IDE, CLI, and extensions for VS Code, JetBrains, Zed and Xcode"],
+    limits: ["Quotas aren't published as numbers", "No bring-your-own API key", "Individual plans need a personal Google account; teams go through Google Cloud", "Gemini 4 Argon isn't in the standalone Antigravity IDE (App, CLI and extensions only)"],
+    formFactor: "Agent app + IDE + CLI",
+    models: "Gemini 4 Argon and 3.8 Flash, plus Claude Opus/Sonnet 5.5 on Pro and Ultra",
+    affiliate: false,
+    sponsorFit: "high"
   }
 ];
 
@@ -151,29 +199,29 @@ window.QUIZ = [
     id: "role",
     q: "What are you mainly doing?",
     options: [
-      { id: "ship-app", label: "Ship a web app fast from chat", scores: { lovable: 3, bolt: 3, cursor: 0, windsurf: 0, copilot: 0, "claude-code": 0 } },
-      { id: "daily-code", label: "Write and refactor code every day", scores: { cursor: 3, windsurf: 3, copilot: 2, "claude-code": 2, lovable: 0, bolt: 0 } },
-      { id: "agent-heavy", label: "Hand big tasks to an agent", scores: { cursor: 3, "claude-code": 3, windsurf: 2, copilot: 1, lovable: 1, bolt: 1 } },
-      { id: "github-team", label: "Work with a team on GitHub", scores: { copilot: 3, cursor: 2, windsurf: 1, "claude-code": 1, lovable: 0, bolt: 0 } }
+      { id: "ship-app", label: "Ship a web app fast from chat", scores: { lovable: 3, bolt: 3, cursor: 0, windsurf: 0, copilot: 0, "claude-code": 0, codex: 0, antigravity: 1 } },
+      { id: "daily-code", label: "Write and refactor code every day", scores: { cursor: 3, windsurf: 3, copilot: 2, "claude-code": 2, lovable: 0, bolt: 0, codex: 2, antigravity: 2 } },
+      { id: "agent-heavy", label: "Hand big tasks to an agent", scores: { cursor: 3, "claude-code": 3, windsurf: 2, copilot: 1, lovable: 1, bolt: 1, codex: 3, antigravity: 3 } },
+      { id: "github-team", label: "Work with a team on GitHub", scores: { copilot: 3, cursor: 2, windsurf: 1, "claude-code": 1, lovable: 0, bolt: 0, codex: 2, antigravity: 1 } }
     ]
   },
   {
     id: "budget",
     q: "What's your monthly budget?",
     options: [
-      { id: "free", label: "Free or under $15", scores: { copilot: 2, cursor: 2, windsurf: 1, lovable: 1, bolt: 1, "claude-code": 0 } },
-      { id: "mid", label: "About $20–40", scores: { cursor: 2, windsurf: 3, copilot: 2, "claude-code": 3, lovable: 2, bolt: 2 } },
-      { id: "power", label: "$100+ for heavy use", scores: { cursor: 3, "claude-code": 3, windsurf: 2, copilot: 2, lovable: 1, bolt: 1 } }
+      { id: "free", label: "Free or under $15", scores: { copilot: 2, cursor: 2, windsurf: 1, lovable: 1, bolt: 1, "claude-code": 0, codex: 2, antigravity: 2 } },
+      { id: "mid", label: "About $20–40", scores: { cursor: 2, windsurf: 3, copilot: 2, "claude-code": 3, lovable: 2, bolt: 2, codex: 3, antigravity: 3 } },
+      { id: "power", label: "$100+ for heavy use", scores: { cursor: 3, "claude-code": 3, windsurf: 2, copilot: 2, lovable: 1, bolt: 1, codex: 3, antigravity: 2 } }
     ]
   },
   {
     id: "surface",
     q: "Where do you want to work?",
     options: [
-      { id: "desktop-ide", label: "Desktop IDE", scores: { cursor: 3, windsurf: 3, copilot: 2, "claude-code": 1, lovable: 0, bolt: 0 } },
-      { id: "terminal", label: "Terminal", scores: { "claude-code": 3, cursor: 1, windsurf: 1, copilot: 1, lovable: 0, bolt: 0 } },
-      { id: "browser", label: "Browser only", scores: { lovable: 3, bolt: 3, cursor: 0, windsurf: 0, copilot: 1, "claude-code": 0 } },
-      { id: "any", label: "Whatever works", scores: { cursor: 2, copilot: 2, windsurf: 2, "claude-code": 1, lovable: 1, bolt: 1 } }
+      { id: "desktop-ide", label: "Desktop IDE", scores: { cursor: 3, windsurf: 3, copilot: 2, "claude-code": 1, lovable: 0, bolt: 0, codex: 1, antigravity: 2 } },
+      { id: "terminal", label: "Terminal", scores: { "claude-code": 3, cursor: 1, windsurf: 1, copilot: 1, lovable: 0, bolt: 0, codex: 3, antigravity: 2 } },
+      { id: "browser", label: "Browser only", scores: { lovable: 3, bolt: 3, cursor: 0, windsurf: 0, copilot: 1, "claude-code": 0, codex: 1, antigravity: 0 } },
+      { id: "any", label: "Whatever works", scores: { cursor: 2, copilot: 2, windsurf: 2, "claude-code": 1, lovable: 1, bolt: 1, codex: 1, antigravity: 2 } }
     ]
   }
 ];
@@ -184,7 +232,9 @@ window.QUIZ = [
 // docs.github.com/en/copilot/get-started/plans, claude.com/pricing, devin.ai/pricing, lovable.dev/pricing (yearly toggle), bolt.new/pricing.
 // monthly = price per month (per seat if seat:true) on monthly billing. annual = total per year (per seat if seat:true) on annual billing,
 // or null when the vendor doesn't publish an annual price. base = flat monthly fee on top of seats (Devin Teams).
-window.PRICING_CHECKED = "2026-10-19";
+// Codex, Google Antigravity and Cursor re-checked 2026-10-20 on developers.openai.com/codex/pricing, antigravity.google/pricing,
+// antigravity.google/docs/plans, antigravity.google/docs/models, gemini.google/subscriptions and cursor.com/pricing.
+window.PRICING_CHECKED = "2026-10-20";
 window.PRICING = {
   cursor: {
     start: 2,
@@ -303,6 +353,52 @@ window.PRICING = {
       ["Teams $30/member", "Centralized billing, admin controls, SSO. $27/member billed annually."]
     ],
     skipIf: "Your project will get big (each message syncs more files, so tokens go faster), or several people want to share one budget. Bolt Teams is priced per member."
+  },
+  codex: {
+    start: 2,
+    defaultPlan: "Plus",
+    bestBadge: "Cheapest way into a coding agent",
+    plans: [
+      { name: "Free", monthly: 0, annual: 0, note: "Limited Codex in the desktop app (GPT-6 Luna), subject to rollout" },
+      { name: "Go", monthly: 8, annual: null, note: "Lightweight Codex in the desktop app (GPT-6 Luna)" },
+      { name: "Plus", monthly: 20, annual: null, note: "All surfaces, cloud tasks, automatic code review, Slack" },
+      { name: "Pro $100", monthly: 100, annual: null, note: "No five-hour Codex limit right now (weekly limits apply); full GPT-6 Astra allowance" },
+      { name: "Pro $200", monthly: 200, annual: null, note: "More usage than Pro $100 (OpenAI doesn't publish the multiple)" },
+      { name: "Pro $500", monthly: 500, annual: null, note: "Adds Ultrafast mode" },
+      { name: "Business (standard seat)", monthly: 25, annual: 240, seat: true, note: "$20/user/mo billed annually; 2+ users" }
+    ],
+    extraCost: "Usage beyond plan limits is paid with ChatGPT credits (Plus and up). Codex usage is shared with ChatGPT Work. API-key use is billed at API prices.",
+    glance: { free: "Yes: Free and Go ($8) in the desktop app, subject to rollout", models: "OpenAI only: GPT-6.1 Sol, GPT-6 Sol, GPT-6 Luna (Astra on Pro)", agents: "Agent-first: local and cloud tasks, automatic PR reviews (Plus+)", surface: "ChatGPT desktop app, web, CLI, IDE extension, iOS", team: "$25/seat ($20 billed annually)" },
+    guide: [
+      ["Free", "Try Codex on quick tasks in the desktop app. Availability is subject to rollout."],
+      ["Go $8", "Light coding help in the desktop app only, on GPT-6 Luna."],
+      ["Plus $20", "Most developers: Codex in the CLI, IDE extension, web and iOS, plus cloud tasks and automatic code review."],
+      ["Pro $100", "If you hit five-hour limits: Pro plans currently have no five-hour Codex limit, only weekly limits."],
+      ["Pro $200 / $500", "All-day heavy use. $500 adds Ultrafast mode."],
+      ["Business $25/seat", "Teams of 2+: SAML SSO, admin controls, no training on business data by default. $20/seat billed annually."]
+    ],
+    skipIf: "You want Claude or Gemini models, or a full visual IDE. Codex on ChatGPT plans runs OpenAI models only."
+  },
+  antigravity: {
+    start: 1,
+    bestBadge: "Most models in a $20 plan",
+    plans: [
+      { name: "Free", monthly: 0, annual: 0, note: "Basic weekly limit, unlimited Tab and Command requests" },
+      { name: "Google AI Pro", monthly: 19.99, annual: null, note: "Quota refreshes every 5 hours up to a weekly limit; Claude 5.5 models on paid (not trial) plans" },
+      { name: "Google AI Ultra 5x", monthly: 99.99, annual: null, note: "5x the Pro quota, priority access" },
+      { name: "Google AI Ultra 20x", monthly: 199.99, annual: null, note: "20x the Pro quota, highest weekly limits" },
+      { name: "Gemini Enterprise (Standard/Plus)", monthly: 30, annual: null, seat: true, note: "From $30/seat via Google Cloud; a pay-as-you-go option has a $0 seat fee" }
+    ],
+    extraCost: "Usage beyond your quota needs purchased AI credits at Gemini Enterprise consumption prices (you choose Never or Always). Paid tiers are Google AI subscriptions, so you can't buy Antigravity on its own.",
+    glance: { free: "Yes: basic weekly limit, unlimited Tab, Gemini 3.8 Flash", models: "Gemini 4 Argon + Claude Opus/Sonnet 5.5 inside the plan quota (Pro+)", agents: "Agent-first: multi-agent app, scheduled tasks, CLI, SDK", surface: "Own agent app + IDE, CLI, extensions for VS Code, JetBrains, Zed, Xcode", team: "From $30/seat via Google Cloud" },
+    guide: [
+      ["Free", "Try the agent with Gemini 3.8 Flash on a weekly quota. Claude Sonnet/Opus 4.6 and GPT-OSS 120B are on Free until Google removes them on Nov 2, 2026."],
+      ["Google AI Pro $19.99", "Most individuals: quota refreshes every five hours up to a weekly limit, with Gemini 4 Argon and Claude Opus/Sonnet 5.5. The Claude 5.5 models need a paid plan, not the free trial."],
+      ["Google AI Ultra $99.99", "Daily drivers: 5x the Pro quota and priority access."],
+      ["Google AI Ultra $199.99", "All-day agent use: 20x the Pro quota and the highest weekly limits."],
+      ["Gemini Enterprise from $30/seat", "Organizations on Google Cloud. Covers the Antigravity App, CLI and IDE extensions, not the standalone Antigravity IDE."]
+    ],
+    skipIf: "You need a credit-card team plan with admin controls, want to bring your own API key, or sign in with a Google Workspace account. Individual plans are built for personal Google accounts, and teams go through Google Cloud."
   }
 };
 
@@ -312,12 +408,17 @@ window.COMPARE_PAGES = {
   "cursor|windsurf": { url: "cursor-vs-windsurf/", label: "Cursor vs Devin Desktop (Windsurf)" },
   "claude-code|cursor": { url: "claude-code-vs-cursor/", label: "Claude Code vs Cursor" },
   "copilot|cursor": { url: "cursor-vs-copilot/", label: "Cursor vs GitHub Copilot" },
-  "claude-code|copilot": { url: "cursor-bundle-alternatives/", label: "Cursor vs Claude Code vs Copilot" }
+  "claude-code|copilot": { url: "cursor-bundle-alternatives/", label: "Cursor vs Claude Code vs Copilot" },
+  "claude-code|codex": { url: "claude-code-vs-codex/", label: "Claude Code vs OpenAI Codex" },
+  "antigravity|cursor": { url: "cursor-vs-antigravity/", label: "Cursor vs Google Antigravity" }
 };
 
 // Dated pricing changes we track. Only sourced events.
 window.PRICE_LOG = [
+  { date: "2026-10-20", text: "Added OpenAI Codex (Free, Go $8, Plus $20, Pro $100/$200/$500, Business $25/seat) and Google Antigravity (Free, Google AI Pro $19.99, Ultra $99.99/$199.99, Gemini Enterprise from $30/seat) to the picker, calculator and this guide. Re-checked Cursor: unchanged.", src: "https://antigravity.google/pricing" },
+  { date: "2026-10-14", text: "OpenAI retired GPT-5.5 from Codex for ChatGPT sign-in. API-key sessions weren't affected.", src: "https://developers.openai.com/codex/pricing" },
   { date: "2026-10-19", text: "Re-verified all 26 plans on official pricing pages. Added annual prices: Lovable Pro $21/mo and Business $42/mo billed annually, Bolt Pro $18/mo and Teams $27/member billed annually.", src: "https://lovable.dev/pricing" },
   { date: "2026-10-16", text: "Cursor is now sold as The X Subscription: Plus $8, Premium $30, Super $100, Ultra $200. Plus is Grok-only; Claude/GPT in Cursor cost extra at API list price. (Date we first recorded it.)", src: "https://docs.x.ai/x-subscription/pricing" },
-  { date: "2026-06-02", text: "Cognition renamed Windsurf to Devin Desktop. Same IDE, plans and prices; windsurf.com redirects to devin.ai.", src: "https://devin.ai/blog/windsurf-is-now-devin-desktop" }
+  { date: "2026-06-02", text: "Cognition renamed Windsurf to Devin Desktop. Same IDE, plans and prices; windsurf.com redirects to devin.ai.", src: "https://devin.ai/blog/windsurf-is-now-devin-desktop" },
+  { date: "2026-05-19", text: "Google added a $100/month Google AI Ultra tier (5x Pro quota for Antigravity) and cut the top Ultra tier from $250 to $200/month (20x Pro).", src: "https://antigravity.google/blog/changes-to-antigravity-plans/" }
 ];
