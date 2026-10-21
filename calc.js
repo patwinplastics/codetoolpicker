@@ -88,8 +88,8 @@
       const c = cost(t.id);
       total += c.yearly; totalMonthlyBilled += c.monthlyBilled;
       const flag = state.bill === "annual" && !c.annualUsed && c.p.monthly > 0 ? ' <span class="tag">monthly only</span>' : "";
-      const href = t.affiliateUrl || t.website;
-      return `<tr><td><a href="${href}" rel="noopener${t.affiliateUrl ? " sponsored" : ""}">${t.name.replace(" (formerly Windsurf)", "")}</a>${t.affiliateUrl ? ' <span class="tag">referral</span>' : ""}</td><td>${c.p.name}${c.p.seat ? ` × ${c.seats}` : ""}${flag}</td><td class="num">${fmt(c.perMonth)}</td><td class="num">${fmt(c.yearly)}</td></tr>`;
+      const L = (window.LINKS || {})[t.id] || { url: t.website, affiliate: false };
+      return `<tr><td><a href="${L.url}" rel="${L.affiliate ? "sponsored nofollow noopener" : "noopener"}" data-link="${t.id}">${t.name.replace(" (formerly Windsurf)", "")}</a>${L.affiliate ? ' <span class="tag ref">referral</span>' : ""}</td><td>${c.p.name}${c.p.seat ? ` × ${c.seats}` : ""}${flag}</td><td class="num">${fmt(c.perMonth)}</td><td class="num">${fmt(c.yearly)}</td></tr>`;
     }).join("");
     const saved = totalMonthlyBilled - total;
     const extras = on.map((t) => `<li><strong>${t.name.replace(" (formerly Windsurf)", "")}:</strong> ${P[t.id].extraCost}</li>`).join("");

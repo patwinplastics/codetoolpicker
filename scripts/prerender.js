@@ -12,7 +12,6 @@ const R = window.CTP_RENDER;
 const P = window.PRICING;
 const checked = process.argv[2] || new Date().toISOString().slice(0, 10);
 const money = (n) => (n == null ? "Usage-based" : n === 0 ? "Free" : `$${n}/mo`);
-const ctaUrl = (t) => t.affiliateUrl || t.website;
 
 const cards = tools.map((t) => R.card(t, "")).join("");
 const table = tools.map(R.glanceRow).join("");
@@ -46,9 +45,10 @@ const planSections = tools.map((t) => {
       <p class="meta"><strong>Not included:</strong> ${p.extraCost}</p>
       <p class="skip"><strong>Skip ${R.short(t.name)} if:</strong> ${p.skipIf}</p>
       <div class="cta-row" style="margin-top:12px">
-        <a class="btn btn-primary" href="${R.ctaUrl(t)}" rel="noopener sponsored">${t.affiliateUrl ? "Try" : "Visit"} ${R.short(t.name)}${t.affiliateUrl ? " (referral link)" : ""}</a>
+        ${R.tryBtn(t.id, `${t.freeTier ? "Try" : "Get"} ${R.short(t.name)}${t.freeTier ? " free" : ""}`, "btn-primary")}
         <a class="btn" href="#calc" data-calc="${t.id}">Estimate ${R.short(t.name)} cost</a>
       </div>
+      ${R.disclosure([t.id])}
     </section>`;
 }).join("");
 const log = window.PRICE_LOG.map((e) => `<li><time datetime="${e.date}">${e.date}</time>${e.text} <a href="${e.src}" rel="noopener">Source</a></li>`).join("");
@@ -82,6 +82,7 @@ const lines = [
   "See also: https://codetoolpicker.com/claude-code-vs-cursor/ (Claude Code vs Cursor)",
   "See also: https://codetoolpicker.com/claude-code-vs-codex/ (Claude Code vs OpenAI Codex, with 30 days of status-page incident data)",
   "See also: https://codetoolpicker.com/cursor-vs-antigravity/ (Cursor vs Google Antigravity)",
+  "See also: https://codetoolpicker.com/advertise/ (sponsor packages and the editorial policy)",
   "",
   "Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, plans, and pricing); windsurf.com redirects to devin.ai.",
 ];
@@ -91,7 +92,7 @@ for (const t of tools) {
     `- models: ${t.models}`, `- bestFor: ${t.bestFor}`,
     `- strengths: ${JSON.stringify(t.strengths)}`, `- limits: ${JSON.stringify(t.limits)}`,
     `- website: ${t.website}`);
-  if (t.affiliateUrl) lines.push(`- affiliate / referral CTA: ${t.affiliateUrl}`);
+  if (t.affiliateUrl) lines.push(`- affiliate / referral CTA (disclosed on site): ${t.affiliateUrl}`);
   lines.push(`- pricing source: ${t.pricingUrl}`);
   for (const p of t.plans) lines.push(`- plan ${p.name}: ${p.price == null ? "see vendor" : `$${p.price}/mo`}: ${p.note}`);
   const pr = P[t.id];
@@ -103,7 +104,15 @@ for (const t of tools) {
     lines.push(`- skip it if: ${pr.skipIf}`);
   }
 }
+lines.push("", "## Ship your app: the rest of the stack (prices checked 2026-10-20)");
+for (const g of window.STACK) {
+  lines.push(`### ${g.group}: ${g.why}`);
+  for (const it of g.items) lines.push(`- ${window.LINKS[it.id].name} (${window.LINKS[it.id].url}): ${it.fit}. ${it.price}`);
+  if (g.note) lines.push(`- Note: ${g.note}`);
+}
 lines.push("", "## Pricing change log");
 for (const e of window.PRICE_LOG) lines.push(`- ${e.date}: ${e.text} (source: ${e.src})`);
 fs.writeFileSync(path.join(root, "llms-full.txt"), lines.join("\n") + "\n");
+const n = require(path.join(__dirname, "funnels.js"))(root);
+console.log(`funnels wired on ${n} pages`);
 console.log(`prerendered ${tools.length} tools, checked ${checked}`);

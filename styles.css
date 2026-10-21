@@ -202,7 +202,7 @@ button, input, select, textarea { font: inherit; }
 .pick strong { font-size: 1.05rem; }
 .swipe { display: none; margin: -6px 0 8px; }
 .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-table.glance { min-width: 860px; }
+table.glance { min-width: 940px; }
 table.glance th[scope="row"] { position: sticky; left: 0; background: var(--card); white-space: nowrap; }
 /* calculator */
 .calc-top { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; margin-bottom: 12px; }
@@ -249,3 +249,27 @@ table.glance th[scope="row"] { position: sticky; left: 0; background: var(--card
   .panel { padding: 16px; }
   .swipe { display: block; }
 }
+/* ---- 2026-10-20 funnels: try panels, ship-your-app stack, advertise packages ---- */
+.tag.ref { border-color: #3d6b5a; color: var(--accent); margin-left: 4px; }
+.btn .tag.ref { font-weight: 600; }
+.btn-primary .tag.ref { border-color: rgba(6,32,22,.35); color: #062016; }
+.aff-note { margin-top: 8px !important; }
+.try-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+.try-item { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 14px; display: flex; flex-direction: column; gap: 8px; }
+.try-item h3 { margin: 0; }
+.try-item p { margin: 0; }
+.try-item .cta-row { margin-top: auto; }
+.stack-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.stack-group h3 { margin: 0 0 2px; font-size: 1rem; }
+.stack-group > .meta { margin: 0 0 8px; }
+.stack-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.stack-list li { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px; }
+.stack-list span { color: var(--muted); font-size: .88rem; }
+.stack-list small { color: var(--text); font-size: .8rem; opacity: .85; }
+.pkg-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+.pkg { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; display: flex; flex-direction: column; gap: 8px; }
+.pkg h3 { margin: 0; }
+.pkg .price small { font-size: .8rem; color: var(--muted); font-weight: 500; }
+.pkg .cta-row { margin-top: auto; }
+.pkg .badge { align-self: flex-start; }
+.featured-pkg { border-color: #2f6b58; box-shadow: 0 0 0 1px #2f6b58 inset; }

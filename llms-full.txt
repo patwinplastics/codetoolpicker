@@ -13,6 +13,7 @@ See also: https://codetoolpicker.com/cursor-vs-windsurf/ (Cursor vs Windsurf, no
 See also: https://codetoolpicker.com/claude-code-vs-cursor/ (Claude Code vs Cursor)
 See also: https://codetoolpicker.com/claude-code-vs-codex/ (Claude Code vs OpenAI Codex, with 30 days of status-page incident data)
 See also: https://codetoolpicker.com/cursor-vs-antigravity/ (Cursor vs Google Antigravity)
+See also: https://codetoolpicker.com/advertise/ (sponsor packages and the editorial policy)
 
 Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, plans, and pricing); windsurf.com redirects to devin.ai.
 
@@ -164,7 +165,7 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - strengths: ["Real code in browser","Hosting + DB options","Token rollover on paid","Affiliate potential"]
 - limits: ["Token limits on free","Browser sandbox constraints","Not a full desktop IDE"]
 - website: https://bolt.new
-- affiliate / referral CTA: https://bolt.cello.so/aLdglbfmlfZ
+- affiliate / referral CTA (disclosed on site): https://bolt.cello.so/aLdglbfmlfZ
 - pricing source: https://bolt.new/pricing
 - plan Free: $0/mo: 300K tokens/day, 1M/mo, Bolt branding
 - plan Pro: $25/mo: From 10M tokens/mo, custom domain, no branding; $18/mo billed annually
@@ -239,6 +240,23 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - which plan: Gemini Enterprise from $30/seat: Organizations on Google Cloud. Covers the Antigravity App, CLI and IDE extensions, not the standalone Antigravity IDE.
 - not included: Usage beyond your quota needs purchased AI credits at Gemini Enterprise consumption prices (you choose Never or Always). Paid tiers are Google AI subscriptions, so you can't buy Antigravity on its own.
 - skip it if: You need a credit-card team plan with admin controls, want to bring your own API key, or sign in with a Google Workspace account. Individual plans are built for personal Google accounts, and teams go through Google Cloud.
+
+## Ship your app: the rest of the stack (prices checked 2026-10-20)
+### Hosting: Where your app lives once it works on your machine.
+- Vercel (https://vercel.com): Next.js and front-end apps. Hobby free (personal, non-commercial); Pro $20/mo per developer seat
+- Netlify (https://www.netlify.com): Static sites and front ends, unlimited Pro members. Free; Personal $9/mo; Pro $20/mo with unlimited members
+- Railway (https://railway.com): Back ends, workers and databases with no server setup. Free trial $5 credit; Hobby $5/mo incl. $5 usage; Pro $20/mo
+- Render (https://render.com): Heroku-style web services, cron jobs and Postgres. Hobby $0 + compute; Pro $25/mo + compute
+### Database and auth: Most AI-built apps need a Postgres database and logins.
+- Supabase (https://supabase.com): Postgres + auth + storage in one; Lovable and Bolt connect to it. Free (2 projects, pause after 1 week idle); Pro from $25/mo
+- Neon (https://neon.com): Serverless Postgres with branching, pay for what you use. Free (100 projects); paid plans usage-based
+### Code review: AI writes code fast; something should read it before it ships.
+- CodeRabbit (https://www.coderabbit.ai): AI review on every pull request, in GitHub or GitLab. Free for public repos; Essentials $24/user/mo billed annually ($30 monthly)
+- Note: Already paying for Copilot or Codex Plus? Both include AI pull request review, so try that first.
+### Domain name: A real domain for your app.
+- Cloudflare Registrar (https://www.cloudflare.com/products/registrar/): Domains at cost with no markup. Wholesale price per TLD
+- Porkbun (https://porkbun.com): Cheap domains with free WHOIS privacy. Varies by TLD
+- Namecheap (https://www.namecheap.com): Popular registrar with hosting and email add-ons. Varies by TLD
 
 ## Pricing change log
 - 2026-10-20: Added OpenAI Codex (Free, Go $8, Plus $20, Pro $100/$200/$500, Business $25/seat) and Google Antigravity (Free, Google AI Pro $19.99, Ultra $99.99/$199.99, Gemini Enterprise from $30/seat) to the picker, calculator and this guide. Re-checked Cursor: unchanged. (source: https://antigravity.google/pricing)

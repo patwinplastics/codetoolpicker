@@ -116,8 +116,8 @@ window.TOOL_DATA = [
     limits: ["Less control than a real IDE", "Credit math on bigger apps", "Web-first"],
     formFactor: "Browser builder",
     models: "Managed builder models",
-    affiliate: true,
-    affiliateNote: "Reportedly pays up to ~$100 per subscriber (verify on their partner page)",
+    affiliate: false,
+    affiliateNote: "Impact affiliate application in review (Oct 2026): $100 one-time per first paid subscription. Link goes live in window.LINKS once approved.",
     sponsorFit: "high"
   },
   {
@@ -127,7 +127,6 @@ window.TOOL_DATA = [
     tagline: "In-browser AI app builder on StackBlitz WebContainers",
     bestFor: "Code-visible chat-to-app with real project files in the browser",
     website: "https://bolt.new",
-    affiliateUrl: "https://bolt.cello.so/aLdglbfmlfZ",
     pricingUrl: "https://bolt.new/pricing",
     startingPaid: 25,
     freeTier: true,
@@ -141,7 +140,7 @@ window.TOOL_DATA = [
     formFactor: "Browser IDE / builder",
     models: "Managed builder models",
     affiliate: true,
-    affiliateNote: "Bolt referral link live (Earn $50 / Cello); may earn a commission",
+    affiliateNote: "Bolt referral link (Cello): 15% of payments up to $50 per referral; the reader gets 20% off their first subscription",
     sponsorFit: "high"
   },
   {
@@ -422,3 +421,85 @@ window.PRICE_LOG = [
   { date: "2026-06-02", text: "Cognition renamed Windsurf to Devin Desktop. Same IDE, plans and prices; windsurf.com redirects to devin.ai.", src: "https://devin.ai/blog/windsurf-is-now-devin-desktop" },
   { date: "2026-05-19", text: "Google added a $100/month Google AI Ultra tier (5x Pro quota for Antigravity) and cut the top Ultra tier from $250 to $200/month (20x Pro).", src: "https://antigravity.google/blog/changes-to-antigravity-plans/" }
 ];
+
+// ---------------------------------------------------------------------------
+// LINK MAP: the single source for every outbound "Try X" / "Get started" button,
+// on tool cards, quiz results, comparison verdicts, pricing rows and the "Ship your app" stack.
+// To switch on an affiliate link once a program approves us:
+//   1) paste the issued link into `url`, 2) set affiliate: true (and `perk` if the link gives
+//   readers a real discount), 3) run `node scripts/prerender.js`, 4) push.
+// Affiliate links automatically get rel="sponsored nofollow noopener", a "referral" tag and a
+// disclosure line. NEVER put a link here that a program hasn't actually issued to us.
+// Program research (commission, cookie, signup URL): /workspace/affiliate-programs.md (Oct 20, 2026).
+window.LINKS = {
+  // AI coding tools
+  cursor: { name: "Cursor", url: "https://cursor.com", affiliate: false },           // no program (referrals closed Jul 23, 2026)
+  copilot: { name: "GitHub Copilot", url: "https://github.com/features/copilot", affiliate: false }, // no program
+  "claude-code": { name: "Claude Code", url: "https://claude.com/product/claude-code", affiliate: false }, // no program
+  windsurf: { name: "Devin Desktop", url: "https://devin.ai", affiliate: false },     // credits-only referral
+  lovable: { name: "Lovable", url: "https://lovable.dev", affiliate: false },         // Impact application in review
+  bolt: { name: "Bolt.new", url: "https://bolt.cello.so/aLdglbfmlfZ", affiliate: true,
+    perk: "Signing up through this link gives you 20% off your first Bolt subscription (3 months on monthly billing, or your first annual payment)." },
+  codex: { name: "OpenAI Codex", url: "https://developers.openai.com/codex", affiliate: false }, // in-product credits only
+  antigravity: { name: "Google Antigravity", url: "https://antigravity.google", affiliate: false }, // no program
+  // Ship your app: hosting
+  vercel: { name: "Vercel", url: "https://vercel.com", affiliate: false },            // no program
+  netlify: { name: "Netlify", url: "https://www.netlify.com", affiliate: false },     // PartnerStack, 20% x 12 mo (apply)
+  railway: { name: "Railway", url: "https://railway.com", affiliate: false },         // 15% x 12 mo (self-serve)
+  render: { name: "Render", url: "https://render.com", affiliate: false },            // no program
+  // Database
+  supabase: { name: "Supabase", url: "https://supabase.com", affiliate: false },      // no program
+  neon: { name: "Neon", url: "https://neon.com", affiliate: false },                  // credits pilot only
+  // Code review
+  coderabbit: { name: "CodeRabbit", url: "https://www.coderabbit.ai", affiliate: false }, // Dub, $30/lead (apply)
+  // Domains
+  cloudflare: { name: "Cloudflare Registrar", url: "https://www.cloudflare.com/products/registrar/", affiliate: false },
+  porkbun: { name: "Porkbun", url: "https://porkbun.com", affiliate: false },         // Ambassador program (apply)
+  namecheap: { name: "Namecheap", url: "https://www.namecheap.com", affiliate: false } // Impact (apply)
+};
+window.ctpLink = function (id) {
+  const l = (window.LINKS || {})[id];
+  if (!l) throw new Error("ctpLink: no LINKS entry for " + id);
+  return { href: l.url, aff: !!l.affiliate, perk: l.perk || "", name: l.name,
+    rel: l.affiliate ? "sponsored nofollow noopener" : "noopener" };
+};
+// Keep TOOL_DATA in sync with the link map (app.js, calc.js and render.js read t.affiliateUrl).
+(window.TOOL_DATA || []).forEach(function (t) {
+  const l = window.LINKS[t.id];
+  if (!l) return;
+  t.affiliate = !!l.affiliate;
+  if (l.affiliate) t.affiliateUrl = l.url; else delete t.affiliateUrl;
+});
+
+// "Ship your app": what readers need after they pick a tool. Prices checked 2026-10-20 on
+// vercel.com/pricing, netlify.com/pricing, railway.com/pricing, render.com/pricing,
+// supabase.com/pricing, neon.com/pricing, coderabbit.ai/pricing.
+window.STACK = [
+  { group: "Hosting", why: "Where your app lives once it works on your machine.", items: [
+    { id: "vercel", fit: "Next.js and front-end apps", price: "Hobby free (personal, non-commercial); Pro $20/mo per developer seat" },
+    { id: "netlify", fit: "Static sites and front ends, unlimited Pro members", price: "Free; Personal $9/mo; Pro $20/mo with unlimited members" },
+    { id: "railway", fit: "Back ends, workers and databases with no server setup", price: "Free trial $5 credit; Hobby $5/mo incl. $5 usage; Pro $20/mo" },
+    { id: "render", fit: "Heroku-style web services, cron jobs and Postgres", price: "Hobby $0 + compute; Pro $25/mo + compute" }
+  ] },
+  { group: "Database and auth", why: "Most AI-built apps need a Postgres database and logins.", items: [
+    { id: "supabase", fit: "Postgres + auth + storage in one; Lovable and Bolt connect to it", price: "Free (2 projects, pause after 1 week idle); Pro from $25/mo" },
+    { id: "neon", fit: "Serverless Postgres with branching, pay for what you use", price: "Free (100 projects); paid plans usage-based" }
+  ] },
+  { group: "Code review", why: "AI writes code fast; something should read it before it ships.", items: [
+    { id: "coderabbit", fit: "AI review on every pull request, in GitHub or GitLab", price: "Free for public repos; Essentials $24/user/mo billed annually ($30 monthly)" }
+  ], note: "Already paying for Copilot or Codex Plus? Both include AI pull request review, so try that first." },
+  { group: "Domain name", why: "A real domain for your app.", items: [
+    { id: "cloudflare", fit: "Domains at cost with no markup", price: "Wholesale price per TLD" },
+    { id: "porkbun", fit: "Cheap domains with free WHOIS privacy", price: "Varies by TLD" },
+    { id: "namecheap", fit: "Popular registrar with hosting and email add-ons", price: "Varies by TLD" }
+  ] }
+];
+
+// Advertise page checkout links. Paste a Stripe Payment Link (https://buy.stripe.com/...) to show a
+// "Pay by card" button for that package, then run `node scripts/prerender.js`. Empty = email only.
+window.CHECKOUT = {
+  "founding-full": "",     // Founding sponsor, all placements, $300/mo
+  "founding-guides": "",   // Founding sponsor, guide + pricing pages, $150/mo
+  featured: "",            // Featured listing, $99/mo
+  newsletter: ""           // Newsletter sponsorship, $49/issue (once the list launches)
+};

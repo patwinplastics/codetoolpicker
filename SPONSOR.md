@@ -26,7 +26,17 @@
 ## Good fits
 AI IDEs and agents (Cursor, Windsurf/Devin, Copilot, Claude Code, Zed, Cline), app builders (Lovable, Bolt.new, Replit, v0), and dev infrastructure (hosting, databases, auth, model APIs).
 
-## Get in touch
-Email **[sponsors@codetoolpicker.com](mailto:sponsors@codetoolpicker.com?subject=CodeToolPicker%20sponsorship)** with your company, the product you'd like to promote, and the format you're interested in. We reply within 1–2 business days.
+## Packages and pricing
+Full details and booking: **https://codetoolpicker.com/advertise/**
 
-Founding sponsors: homepage slot from **$150–$300/month**, rate locked in while traffic grows. Founding placements include the homepage slot, featured listing, newsletter, a labeled sponsor slot next to quiz results, and a labeled sponsor slot on the comparison pages.
+| Package | Price | Includes |
+|---|---|---|
+| Founding sponsor: full | $300/mo | Homepage slot, quiz results slot, every comparison/guide page slot, featured listing, newsletter once it launches |
+| Founding sponsor: guides | $150/mo | Every comparison/guide page slot plus the pricing guide |
+| Featured listing | $99/mo | Labeled card in the tool grid or the "Ship your app" stack |
+| Newsletter sponsorship | $49/issue (founding) | Top slot in the weekly email, once the list launches |
+
+## Get in touch
+Email **[sponsors@codetoolpicker.com](mailto:sponsors@codetoolpicker.com?subject=CodeToolPicker%20sponsorship)** with your company, the product you'd like to promote, and the format you're interested in. We reply within 1 to 2 business days.
+
+Founding sponsors: homepage slot from **$150 to $300/month**, rate locked in while traffic grows. Founding placements include the homepage slot, featured listing, newsletter, a labeled sponsor slot next to quiz results, and a labeled sponsor slot on the comparison pages.
