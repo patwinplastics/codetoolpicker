@@ -407,13 +407,14 @@ window.COMPARE_PAGES = {
   "cursor|windsurf": { url: "cursor-vs-windsurf/", label: "Cursor vs Devin Desktop (Windsurf)" },
   "claude-code|cursor": { url: "claude-code-vs-cursor/", label: "Claude Code vs Cursor" },
   "copilot|cursor": { url: "cursor-vs-copilot/", label: "Cursor vs GitHub Copilot" },
-  "claude-code|copilot": { url: "cursor-bundle-alternatives/", label: "Cursor vs Claude Code vs Copilot" },
+  "claude-code|copilot": { url: "copilot-vs-claude-code/", label: "GitHub Copilot vs Claude Code" },
   "claude-code|codex": { url: "claude-code-vs-codex/", label: "Claude Code vs OpenAI Codex" },
   "antigravity|cursor": { url: "cursor-vs-antigravity/", label: "Cursor vs Google Antigravity" }
 };
 
 // Dated pricing changes we track. Only sourced events.
 window.PRICE_LOG = [
+  { date: "2026-10-21", text: "Re-checked GitHub Copilot: unchanged (Free, Pro $10 with 1,500 AI credits, Pro+ $39 with 7,000, Max $100 with 20,000, Business $19/seat, Enterprise $39/seat). Copilot Pro and up now list Claude Opus 5.5 and can hand tasks to Anthropic's Claude agent (preview).", src: "https://docs.github.com/en/copilot/get-started/plans" },
   { date: "2026-10-20", text: "Added OpenAI Codex (Free, Go $8, Plus $20, Pro $100/$200/$500, Business $25/seat) and Google Antigravity (Free, Google AI Pro $19.99, Ultra $99.99/$199.99, Gemini Enterprise from $30/seat) to the picker, calculator and this guide. Re-checked Cursor: unchanged.", src: "https://antigravity.google/pricing" },
   { date: "2026-10-14", text: "OpenAI retired GPT-5.5 from Codex for ChatGPT sign-in. API-key sessions weren't affected.", src: "https://developers.openai.com/codex/pricing" },
   { date: "2026-10-19", text: "Re-verified all 26 plans on official pricing pages. Added annual prices: Lovable Pro $21/mo and Business $42/mo billed annually, Bolt Pro $18/mo and Teams $27/member billed annually.", src: "https://lovable.dev/pricing" },

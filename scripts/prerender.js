@@ -80,6 +80,7 @@ const lines = [
   "See also: https://codetoolpicker.com/lovable-vs-bolt/ (Lovable vs Bolt.new)",
   "See also: https://codetoolpicker.com/cursor-vs-windsurf/ (Cursor vs Windsurf, now Devin Desktop)",
   "See also: https://codetoolpicker.com/claude-code-vs-cursor/ (Claude Code vs Cursor)",
+  "See also: https://codetoolpicker.com/copilot-vs-claude-code/ (GitHub Copilot vs Claude Code: $10 credits vs $20 five-hour limits, teams of 5)",
   "See also: https://codetoolpicker.com/claude-code-vs-codex/ (Claude Code vs OpenAI Codex, with 30 days of status-page incident data)",
   "See also: https://codetoolpicker.com/cursor-vs-antigravity/ (Cursor vs Google Antigravity)",
   "See also: https://codetoolpicker.com/advertise/ (sponsor packages and the editorial policy)",

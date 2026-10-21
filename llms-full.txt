@@ -11,6 +11,7 @@ See also: https://codetoolpicker.com/switch-from-copilot-to-cursor/ (switch from
 See also: https://codetoolpicker.com/lovable-vs-bolt/ (Lovable vs Bolt.new)
 See also: https://codetoolpicker.com/cursor-vs-windsurf/ (Cursor vs Windsurf, now Devin Desktop)
 See also: https://codetoolpicker.com/claude-code-vs-cursor/ (Claude Code vs Cursor)
+See also: https://codetoolpicker.com/copilot-vs-claude-code/ (GitHub Copilot vs Claude Code: $10 credits vs $20 five-hour limits, teams of 5)
 See also: https://codetoolpicker.com/claude-code-vs-codex/ (Claude Code vs OpenAI Codex, with 30 days of status-page incident data)
 See also: https://codetoolpicker.com/cursor-vs-antigravity/ (Cursor vs Google Antigravity)
 See also: https://codetoolpicker.com/advertise/ (sponsor packages and the editorial policy)
@@ -259,6 +260,7 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - Namecheap (https://www.namecheap.com): Popular registrar with hosting and email add-ons. Varies by TLD
 
 ## Pricing change log
+- 2026-10-21: Re-checked GitHub Copilot: unchanged (Free, Pro $10 with 1,500 AI credits, Pro+ $39 with 7,000, Max $100 with 20,000, Business $19/seat, Enterprise $39/seat). Copilot Pro and up now list Claude Opus 5.5 and can hand tasks to Anthropic's Claude agent (preview). (source: https://docs.github.com/en/copilot/get-started/plans)
 - 2026-10-20: Added OpenAI Codex (Free, Go $8, Plus $20, Pro $100/$200/$500, Business $25/seat) and Google Antigravity (Free, Google AI Pro $19.99, Ultra $99.99/$199.99, Gemini Enterprise from $30/seat) to the picker, calculator and this guide. Re-checked Cursor: unchanged. (source: https://antigravity.google/pricing)
 - 2026-10-14: OpenAI retired GPT-5.5 from Codex for ChatGPT sign-in. API-key sessions weren't affected. (source: https://developers.openai.com/codex/pricing)
 - 2026-10-19: Re-verified all 26 plans on official pricing pages. Added annual prices: Lovable Pro $21/mo and Business $42/mo billed annually, Bolt Pro $18/mo and Teams $27/member billed annually. (source: https://lovable.dev/pricing)
