@@ -4,7 +4,7 @@
 
 ## Key pages
 - [Home: quiz + comparison table](https://codetoolpicker.com/): personalized pick plus runner-up, side-by-side table, FAQ
-- [AI coding tool pricing (all 38 plans, 8 tools)](https://codetoolpicker.com/ai-coding-tool-pricing/): every plan with monthly and annual prices, which plan you actually need, what a team of 5 pays, what costs extra, best free tools, and a dated pricing change log (verified 2026-10-19 to 2026-10-20)
+- [AI coding tool pricing (all 40 plans, 9 tools)](https://codetoolpicker.com/ai-coding-tool-pricing/): every plan with monthly and annual prices, which plan you actually need, what a team of 5 pays, what costs extra, best free tools, and a dated pricing change log (verified 2026-10-19 to 2026-10-22)
 - [Cursor's new bundle: should you switch to Claude Code or Copilot?](https://codetoolpicker.com/cursor-bundle-alternatives/): sourced comparison of Cursor's X Subscription tiers vs Claude Code, GitHub Copilot, OpenAI Codex and Google Antigravity, and who should switch (re-verified 2026-10-20)
 - [Cursor vs GitHub Copilot](https://codetoolpicker.com/cursor-vs-copilot/): plan-by-plan pricing, models, teams, and who should pick which (verified 2026-10-19)
 - [Switch from GitHub Copilot to Cursor without losing your setup](https://codetoolpicker.com/switch-from-copilot-to-cursor/): import VS Code settings, move copilot-instructions.md to AGENTS.md or .cursor/rules, port MCP servers
@@ -13,13 +13,16 @@
 - [Claude Code vs Cursor](https://codetoolpicker.com/claude-code-vs-cursor/): terminal agent vs AI IDE, Claude model pricing, usage limits, teams (verified 2026-10-19)
 - [Claude Code vs OpenAI Codex](https://codetoolpicker.com/claude-code-vs-codex/): Anthropic vs OpenAI coding agents; identical $20 / $100 / team-seat prices, Codex Free and Go tiers, five-hour limits, models, API-key mode, teams of 5, and 30 days of incident data from status.openai.com and status.claude.com (verified 2026-10-20)
 - [GitHub Copilot vs Claude Code](https://codetoolpicker.com/copilot-vs-claude-code/): Copilot Pro $10 (1,500 AI credits, includes Claude Opus 5.5, unlimited completions) vs Claude Pro $20 (five-hour limits); free tiers, Copilot's Claude cloud agent, teams of 5 ($95 vs $100-$125), who should pick which (verified 2026-10-21)
-- [Cursor vs Google Antigravity](https://codetoolpicker.com/cursor-vs-antigravity/): Google AI Pro $19.99 includes Gemini 4 Argon and Claude Opus/Sonnet 5.5 vs Cursor Premium $30 + API-priced Claude; free tiers, limits, surfaces, teams of 5 (verified 2026-10-20)
+- [Cursor vs Google Antigravity](https://codetoolpicker.com/cursor-vs-antigravity/): Google AI Pro $19.99 includes Gemini 4 Argon and Claude Opus/Sonnet 5.5 vs Cursor Premium $30 + API-priced Claude; free tiers, limits, surfaces, teams of 5, and what switching actually costs (overlap month, leftover credit, legacy plans, team seats, rules and MCP migration) (verified 2026-10-20, switching costs 2026-10-22)
+- [Gemini CLI vs Claude Code](https://codetoolpicker.com/gemini-cli-vs-claude-code/): since June 18, 2026 Gemini CLI no longer serves free, Google AI Pro or Ultra sign-ins (moved to closed-source Antigravity CLI); it stays open source (Apache 2.0) on paid Gemini API keys and Gemini Code Assist Standard (~$22.80/user/mo, $19 on 12 months) or Enterprise (~$54, $45); Claude Pro $20; teams of 5 ($95-$114 vs $100-$125); three-way note with Codex (verified 2026-10-22)
 - [Advertise / sponsor packages](https://codetoolpicker.com/advertise/): founding sponsor packages ($150 and $300/mo), featured listing ($99/mo), newsletter sponsorship, and the editorial policy (rankings are never for sale)
 - Ship your app: every comparison page and the pricing guide now list the usual next costs (hosting: Vercel, Netlify, Railway, Render; database: Supabase, Neon; code review: CodeRabbit; domains: Cloudflare Registrar, Porkbun, Namecheap), with prices checked 2026-10-20
 - [Full text for LLMs](https://codetoolpicker.com/llms-full.txt): tool-by-tool summaries
 - [Tool data (JS)](https://codetoolpicker.com/data.js): structured pricing, annual prices, plan guides, and change log (window.TOOL_DATA, window.PRICING, window.PRICE_LOG)
 
 ## Quick answers
+- Gemini CLI vs Claude Code: Gemini CLI has no subscription option for individuals since June 18, 2026 (Google AI Pro/Ultra now cover Antigravity CLI instead); it runs on paid Gemini API keys or Code Assist licenses. Claude Code needs Claude Pro $20/mo ($17 billed annually). Gemini CLI is open source (Apache 2.0); Claude Code and Antigravity CLI are not (verified 2026-10-22)
+- Cursor pricing fact-check: Plus is $8/mo but Grok-only; Claude and other third-party models need Premium $30+ and are billed at API list price from prepaid credit; Teams/Enterprise add a $0.25 per million token Cursor Token Rate on most third-party models (verified 2026-10-22 on cursor.com)
 - GitHub Copilot vs Claude Code: Copilot Pro is $10/mo with 1,500 AI credits that reset monthly and include Claude Opus 5.5; Claude Code needs Claude Pro at $20/mo with five-hour limits; Copilot Business $19/seat vs Claude Team $20-$25/seat (verified 2026-10-21)
 - Best all-round AI IDE: Cursor (Plus $8/mo is Grok-only; Claude/GPT in Cursor cost extra at API list price on Premium $30+)
 - Best for Claude-model users: Claude Code (Pro $20/mo)

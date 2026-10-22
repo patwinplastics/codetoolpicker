@@ -31,7 +31,7 @@
   "@type": "Article",
   "headline": "Cursor vs Google Antigravity (Oct 2026): prices, models, verdict",
   "datePublished": "2026-10-20",
-  "dateModified": "2026-10-20",
+  "dateModified": "2026-10-22",
   "author": {"@type": "Organization", "name": "CodeToolPicker"},
   "publisher": {"@type": "Organization", "name": "CodeToolPicker"},
   "mainEntityOfPage": "https://codetoolpicker.com/cursor-vs-antigravity/"
@@ -53,7 +53,9 @@
     {"@type": "Question", "name": "How much do Antigravity's paid plans cost?",
      "acceptedAnswer": {"@type": "Answer", "text": "Antigravity's paid tiers come with Google AI subscriptions: Google AI Pro is $19.99/month and Google AI Ultra is $99.99/month (5x the Pro quota) or $199.99/month (20x). Usage beyond your quota can be paid with AI credits at Gemini Enterprise consumption prices. Organizations buy through Google Cloud: Gemini Enterprise Standard and Plus start at $30 per seat per month, and a pay-as-you-go option has no seat fee."}},
     {"@type": "Question", "name": "Which is better for teams, Cursor or Antigravity?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Cursor is simpler: Teams starts at $30 per seat on a credit card, with centralized billing, SSO and mixed seat tiers. Antigravity has no self-serve team plan; organizations use it through Google Cloud and Gemini Enterprise (from $30 per seat, or pay-as-you-go), and the standalone Antigravity IDE isn't supported for enterprise deployments. Teams already on Google Cloud may prefer Antigravity."}}
+     "acceptedAnswer": {"@type": "Answer", "text": "Cursor is simpler: Teams starts at $30 per seat on a credit card, with centralized billing, SSO and mixed seat tiers. Antigravity has no self-serve team plan; organizations use it through Google Cloud and Gemini Enterprise (from $30 per seat, or pay-as-you-go), and the standalone Antigravity IDE isn't supported for enterprise deployments. Teams already on Google Cloud may prefer Antigravity."}},
+    {"@type": "Question", "name": "What does it cost to switch from Cursor to Antigravity?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Plan on paying for both for up to a month (Cursor changes take effect at the end of the billing period, and Google doesn't refund partial periods): Cursor Premium $30 plus Google AI Pro $19.99 is $49.99. Unused Cursor top-up credit stays until it expires (currently 365 days after purchase), and if you leave a legacy Cursor Pro plan ($20) you can't get it back; the comparable plan is Premium at $30. Teams move to Google Cloud (Gemini Enterprise from $30 per seat). AGENTS.md works in both, but Cursor .mdc rules need new frontmatter and remote MCP servers need a serverUrl field in Antigravity."}}
   ]
 }
   </script>
@@ -81,7 +83,7 @@
     <section class="hero">
       <h1>Cursor vs Google Antigravity (Oct 2026)</h1>
       <p>Short answer: if you want <strong>Claude or Gemini</strong>, Antigravity is the better deal right now. Google AI Pro at <strong>$19.99/mo</strong> includes Gemini 4 Argon and Claude Opus and Sonnet 5.5 inside its quota, while Cursor needs Premium at $30/mo and then bills Claude and Gemini on top at API list price. Choose <strong>Cursor</strong> if you want its IDE with cloud agents, Bugbot code reviews and a simple card-paid team plan, or if Grok models are enough (Plus is $8). Choose <strong>Antigravity</strong> if you want the most model choice for $20, a free tier with unlimited Tab, or an agent that also runs in VS Code, JetBrains, Zed and Xcode.</p>
-      <p class="updated">Verified on official pricing pages and docs Oct 20, 2026. Prices and model lineups change often; confirm with the linked sources.</p>
+      <p class="updated">Verified on official pricing pages and docs Oct 20, 2026; Cursor pricing and the switching-costs section re-checked Oct 22, 2026. Prices and model lineups change often; confirm with the linked sources.</p>
       <div class="cta-row"><a class="btn btn-primary" href="../#quiz">Not sure? Take the 60-second picker quiz</a> <a class="btn" href="../ai-coding-tool-pricing/#calc">Compare costs in the calculator</a></div>
     </section>
 
@@ -101,7 +103,7 @@
           <tr><td>Included models</td><td>Grok models, from one weekly pool shared with Grok</td><td>Gemini models share one quota, drawn down at API price ratios; non-Gemini models have their own limit</td></tr>
           <tr><td>How limits work</td><td>Weekly pool; buy top-offs or wait for the refresh</td><td>Pro and Ultra refresh every five hours up to a weekly limit; Free refreshes weekly. Optional AI credits for overage (setting: Never or Always)</td></tr>
           <tr><td>Where it runs</td><td>Cursor's own desktop IDE, CLI, cloud agents, mobile</td><td>Own App and IDE (macOS, Windows, Linux), CLI, extensions for VS Code, Visual Studio, JetBrains, Zed and Xcode</td></tr>
-          <tr><td>Teams</td><td>Teams from $30/seat (Premium), Super and Ultra seats $100 and $200, mix seat types, SSO</td><td>No self-serve team plan. Via Google Cloud: Gemini Enterprise Standard/Plus from $30/seat, or pay-as-you-go with a $0 seat fee</td></tr>
+          <tr><td>Teams</td><td>Teams from $30/seat (Premium), Super and Ultra seats $100 and $200, mix seat types, SSO. Third-party models on Teams add a $0.25 per million token Cursor Token Rate</td><td>No self-serve team plan. Via Google Cloud: Gemini Enterprise Standard/Plus from $30/seat, or pay-as-you-go with a $0 seat fee</td></tr>
           <tr><td>Annual billing</td><td>Yes: $80, $300, $1,000, $2,000 a year</td><td>No annual price shown on the pages we checked</td></tr>
           <tr><td>Bring your own API key</td><td>Not listed on the pricing page</td><td>Not supported, per Antigravity's plans docs</td></tr>
           <tr><td>Who can sign up</td><td>Self-serve by credit or debit card</td><td>Personal Google accounts, 18+, in supported countries. Google suggests a @gmail.com address if a Workspace account fails</td></tr>
@@ -130,7 +132,7 @@
       <table>
         <thead><tr><th>Setup</th><th>Per month</th><th>Notes</th></tr></thead>
         <tbody>
-          <tr><td>Cursor Teams, 5 Premium seats</td><td>$150 ($1,800/yr)</td><td>Centralized billing, SSO, usage analytics. Claude and GPT billed extra at API price</td></tr>
+          <tr><td>Cursor Teams, 5 Premium seats</td><td>$150 ($1,800/yr)</td><td>Centralized billing, SSO, usage analytics. Claude and GPT billed extra at API price plus a $0.25 per million token Cursor Token Rate</td></tr>
           <tr><td>Antigravity via Gemini Enterprise Standard/Plus</td><td>From $150</td><td>"Starting at $30 per seat per month" through Google Cloud. Covers the App, CLI and IDE extensions, not the standalone IDE</td></tr>
           <tr><td>Antigravity via Google Cloud pay-as-you-go</td><td>$0 seat fee + usage</td><td>Consumption-based pricing; needs a Google Cloud project with invoiced billing</td></tr>
           <tr><td>5 people each on Google AI Pro</td><td>$99.95</td><td>Cheapest on paper, but these are separate personal accounts with no team admin or central billing</td></tr>
@@ -156,6 +158,26 @@
         <li><strong>Five-hour refresh on paid plans.</strong> Pro and Ultra quotas refresh every five hours up to a weekly cap, so one heavy morning doesn't end your week.</li>
         <li><strong>Watch out:</strong> Claude 4.6 and GPT-OSS 120B leave the free tier on Nov 2, 2026, and the Claude 5.5 models aren't on the Pro free trial. Quotas aren't published as numbers, and there's no bring-your-own-key option.</li>
       </ul>
+    </section>
+
+    <section class="panel" id="switching-costs">
+      <h2>What switching actually costs</h2>
+      <p>The sticker prices above are only part of it. Here is what moving from Cursor to Antigravity (or back) costs in real money and time, based on each vendor's own terms and docs, checked Oct 22, 2026.</p>
+      <table>
+        <thead><tr><th>Cost</th><th>What it means in practice</th></tr></thead>
+        <tbody>
+          <tr><td>The overlap month</td><td>Cursor says to cancel at least 24 hours before renewal, and plan downgrades take effect at the end of the billing period; Google says "No refunds for partial billing periods, except as required by applicable law." Trying both properly means paying both for up to a month: Cursor Premium $30 + Google AI Pro $19.99 = <strong>$49.99</strong>. On a Cursor annual plan ($300 for Premium) the pages we checked don't promise a refund for leaving mid-year, so time the switch to your renewal.</td></tr>
+          <tr><td>Leftover Cursor credit</td><td>Claude and GPT in Cursor are paid from prepaid top-up credit. Unused credit stays in your account until it's used or expires, currently 365 days after purchase, so anything left when you leave is money you only get back by coming back. Run it down first, or keep Auto Top-up off in the weeks before you switch.</td></tr>
+          <tr><td>Losing a legacy Cursor plan</td><td>If you're still on legacy Cursor Pro at $20, it isn't sold to new customers. Cancel it and come back later, and the comparable plan is Premium at $30: <strong>+$10 a month</strong>, or $120 a year.</td></tr>
+          <tr><td>Team seats</td><td>Cursor Teams is self-serve on a card ($30, $100 or $200 per seat, mixable). Antigravity has no self-serve team plan: teams go through Google Cloud (Gemini Enterprise from $30 per seat, or pay-as-you-go with a $0 seat fee and invoiced billing). A team of 5 moving from Cursor Premium seats ($150/mo) to Gemini Enterprise starts at the same $150/mo, plus the setup of a Google Cloud project. Gemini Enterprise covers the Antigravity App, CLI and IDE extensions but not the standalone Antigravity IDE. Cursor's dashboard-managed Team Rules don't carry over.</td></tr>
+          <tr><td>Accounts</td><td>Individual Antigravity plans are Google AI subscriptions for personal Google accounts. If your team signs in with Google Workspace, individual plans aren't the path; you're on the Google Cloud route above.</td></tr>
+          <tr><td>Model access changes</td><td>Moving to Antigravity: Claude Opus and Sonnet 5.5 come inside the Pro quota (not on the free trial), but GPT models are limited to GPT-OSS 120B until Nov 2, 2026, Grok isn't offered, and there's no bring-your-own-key. Gemini 4 Argon works in the Antigravity App, CLI and extensions, not the standalone IDE. Moving to Cursor: Claude, GPT and Gemini cost API list price on top of Premium, and on Teams most of them add a $0.25 per million token Cursor Token Rate.</td></tr>
+          <tr><td>Rules and instructions</td><td>An <code>AGENTS.md</code> file works in both, unchanged. Cursor project rules (<code>.cursor/rules/*.mdc</code> with <code>alwaysApply</code>, <code>globs</code> and <code>description</code>) need rewriting for Antigravity (<code>.agents/rules/*.md</code> with a <code>trigger</code> of <code>always_on</code>, <code>model_decision</code>, <code>glob</code> or <code>manual</code>). Antigravity silently drops a rule with missing or invalid frontmatter, ignores rule files in subfolders unless you list them in <code>.agents/rules.json</code>, and truncates any rule file over 24 KB.</td></tr>
+          <tr><td>MCP servers and extensions</td><td>Cursor keeps MCP servers in <code>.cursor/mcp.json</code> (or <code>~/.cursor/mcp.json</code>); Antigravity uses <code>.agents/mcp_config.json</code> (or <code>~/.gemini/config/mcp_config.json</code>). The format is close, but remote servers must use <code>serverUrl</code>: Antigravity doesn't accept the <code>url</code> field Cursor uses, so copied remote entries fail until renamed. You won't lose your editor, though: Antigravity has extensions for VS Code, Visual Studio, JetBrains, Zed and Xcode.</td></tr>
+          <tr><td>Learning and setup time</td><td>The biggest cost and the one nobody can price for you. Neither vendor publishes quota numbers, so you only learn whether a plan fits by working on it. Budget a normal week of your own tasks on the new tool before cancelling the old one, which is exactly the overlap month above.</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Sources: <a href="https://cursor.com/pricing" rel="noopener">cursor.com/pricing</a> · <a href="https://cursor.com/help/account-and-billing/overages" rel="noopener">Cursor usage-based charges</a> · <a href="https://cursor.com/help/account-and-billing/pricing" rel="noopener">Cursor pricing and legacy plans</a> · <a href="https://cursor.com/docs/models-and-pricing" rel="noopener">Cursor models and pricing</a> · <a href="https://cursor.com/docs/rules" rel="noopener">Cursor rules</a> · <a href="https://cursor.com/docs/mcp" rel="noopener">Cursor MCP</a> · <a href="https://gemini.google/subscriptions/" rel="noopener">Google AI plans</a> · <a href="https://antigravity.google/docs/plans" rel="noopener">Antigravity plans</a> · <a href="https://antigravity.google/docs/models" rel="noopener">Antigravity models</a> · <a href="https://antigravity.google/docs/rules/" rel="noopener">Antigravity rules</a> · <a href="https://antigravity.google/docs/mcp/" rel="noopener">Antigravity MCP</a>. Checked Oct 22, 2026; Gemini Enterprise seat prices are from our Oct 20 check.</p>
     </section>
 
     <section class="panel">
@@ -189,7 +211,7 @@
         </div>
         <div class="try-item">
           <h3>Google Antigravity</h3>
-          <p class="meta"><strong>Start on:</strong> Google AI Pro $19.99. Most individuals: quota refreshes every five hours up to a weekly limit, with Gemini 4 Argon and Claude Opus/Sonnet 5.5. The Claude 5.5 models need a paid plan, not the free trial.</p>
+          <p class="meta"><strong>Start on:</strong> Google AI Pro $19.99. Most individuals: quota refreshes every five hours up to a weekly limit, with Gemini 4 Argon and Claude Opus/Sonnet 5.5. Gemini 4 Argon and the Claude 5.5 models need a paid plan, not the free trial.</p>
           <div class="cta-row">
             <a href="https://antigravity.google" rel="noopener" class="btn btn-primary" data-link="antigravity">Try Google Antigravity free &rarr;</a>
             <a class="btn" href="../ai-coding-tool-pricing/#plans-antigravity">All Google Antigravity plans</a>
@@ -213,6 +235,8 @@
       <p>Antigravity's paid tiers come with Google AI subscriptions: Google AI Pro is $19.99/month and Google AI Ultra is $99.99/month (5x the Pro quota) or $199.99/month (20x). Usage beyond your quota can be paid with AI credits at Gemini Enterprise consumption prices. Organizations buy through Google Cloud: Gemini Enterprise Standard and Plus start at $30 per seat per month, and a pay-as-you-go option has no seat fee.</p>
       <h3>Which is better for teams, Cursor or Antigravity?</h3>
       <p>Cursor is simpler: Teams starts at $30 per seat on a credit card, with centralized billing, SSO and mixed seat tiers. Antigravity has no self-serve team plan; organizations use it through Google Cloud and Gemini Enterprise (from $30 per seat, or pay-as-you-go), and the standalone Antigravity IDE isn't supported for enterprise deployments. Teams already on Google Cloud may prefer Antigravity.</p>
+      <h3>What does it cost to switch from Cursor to Antigravity?</h3>
+      <p>Plan on paying for both for up to a month (Cursor changes take effect at the end of the billing period, and Google doesn't refund partial periods): Cursor Premium $30 plus Google AI Pro $19.99 is $49.99. Unused Cursor top-up credit stays until it expires (currently 365 days after purchase), and if you leave a legacy Cursor Pro plan ($20) you can't get it back; the comparable plan is Premium at $30. Teams move to Google Cloud (Gemini Enterprise from $30 per seat). AGENTS.md works in both, but Cursor .mdc rules need new frontmatter and remote MCP servers need a serverUrl field in Antigravity.</p>
     </section>
     <!-- PRERENDER:stack -->
     <section class="panel stack" id="ship">
@@ -250,10 +274,11 @@
     <section class="panel" id="related">
       <h2>Related guides</h2>
       <ul class="related">
-        <li><a href="../copilot-vs-claude-code/">GitHub Copilot vs Claude Code<small>New: $10 credits vs $20 flat</small></a></li>
+        <li><a href="../gemini-cli-vs-claude-code/">Gemini CLI vs Claude Code<small>New: Gemini CLI dropped Google AI plans</small></a></li>
+        <li><a href="../copilot-vs-claude-code/">GitHub Copilot vs Claude Code<small>$10 credits vs $20 flat</small></a></li>
         <li><a href="../claude-code-vs-cursor/">Claude Code vs Cursor<small>Terminal agent vs AI IDE</small></a></li>
         <li><a href="../cursor-vs-windsurf/">Cursor vs Devin Desktop (Windsurf)<small>Models, agents, team pricing</small></a></li>
-        <li><a href="../ai-coding-tool-pricing/">AI coding tool pricing<small>All 38 plans + cost calculator</small></a></li>
+        <li><a href="../ai-coding-tool-pricing/">AI coding tool pricing<small>All 40 plans + cost calculator</small></a></li>
         <li><a href="../claude-code-vs-codex/">Claude Code vs OpenAI Codex<small>Same prices, different limits and uptime</small></a></li>
         <li><a href="../cursor-bundle-alternatives/">Cursor's new bundle: switch?<small>Claude Code, Copilot, Codex, Antigravity</small></a></li>
       </ul>
@@ -273,7 +298,7 @@
 
     <footer>
       <p><a href="../">← Back to the AI Coding Tool Picker</a> · <a href="../ai-coding-tool-pricing/">Pricing &amp; plans calculator</a></p>
-      <p>More comparisons: <a href="../lovable-vs-bolt/">Lovable vs Bolt</a> · <a href="../cursor-vs-windsurf/">Cursor vs Windsurf (Devin Desktop)</a> · <a href="../claude-code-vs-cursor/">Claude Code vs Cursor</a> · <a href="../claude-code-vs-codex/">Claude Code vs Codex</a> · <a href="../copilot-vs-claude-code/">Copilot vs Claude Code</a> · <a href="./">Cursor vs Antigravity</a> · <a href="../cursor-vs-copilot/">Cursor vs Copilot</a> · <a href="../switch-from-copilot-to-cursor/">Switch Copilot → Cursor</a> · <a href="../cursor-bundle-alternatives/">Cursor bundle alternatives</a></p>
+      <p>More comparisons: <a href="../lovable-vs-bolt/">Lovable vs Bolt</a> · <a href="../cursor-vs-windsurf/">Cursor vs Windsurf (Devin Desktop)</a> · <a href="../claude-code-vs-cursor/">Claude Code vs Cursor</a> · <a href="../claude-code-vs-codex/">Claude Code vs Codex</a> · <a href="../copilot-vs-claude-code/">Copilot vs Claude Code</a> · <a href="../gemini-cli-vs-claude-code/">Gemini CLI vs Claude Code</a> · <a href="./">Cursor vs Antigravity</a> · <a href="../cursor-vs-copilot/">Cursor vs Copilot</a> · <a href="../switch-from-copilot-to-cursor/">Switch Copilot → Cursor</a> · <a href="../cursor-bundle-alternatives/">Cursor bundle alternatives</a></p>
       <p>Not affiliated with Cursor, xAI, X, or Google.</p>
       <p>Contact, sponsorships, and corrections: <a href="mailto:sponsors@codetoolpicker.com">sponsors@codetoolpicker.com</a> · <a href="../advertise/">Advertise with us</a></p>
     </footer>

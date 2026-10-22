@@ -1,10 +1,10 @@
 # CodeToolPicker: full text
-Independent AI coding tool comparison. Source: https://codetoolpicker.com/ . Data checked 2026-10-20 on official vendor pricing pages; confirm prices on vendor sites.
+Independent AI coding tool comparison. Source: https://codetoolpicker.com/ . Data checked 2026-10-22 on official vendor pricing pages; confirm prices on vendor sites.
 
 Editorial policy: rankings are not for sale. Sponsors and affiliate links are labeled and never change recommendations, quiz logic, or comparison data.
 Contact (sponsorships, corrections): sponsors@codetoolpicker.com
 
-See also: https://codetoolpicker.com/ai-coding-tool-pricing/ (all 38 plans across 8 tools, which one you need, cost calculator, pricing change log)
+See also: https://codetoolpicker.com/ai-coding-tool-pricing/ (all 40 plans across 9 tools, which one you need, cost calculator, pricing change log)
 See also: https://codetoolpicker.com/cursor-bundle-alternatives/ (Cursor bundle vs Claude Code vs Copilot)
 See also: https://codetoolpicker.com/cursor-vs-copilot/ (Cursor vs GitHub Copilot)
 See also: https://codetoolpicker.com/switch-from-copilot-to-cursor/ (switch from Copilot to Cursor without losing your setup)
@@ -13,7 +13,8 @@ See also: https://codetoolpicker.com/cursor-vs-windsurf/ (Cursor vs Windsurf, no
 See also: https://codetoolpicker.com/claude-code-vs-cursor/ (Claude Code vs Cursor)
 See also: https://codetoolpicker.com/copilot-vs-claude-code/ (GitHub Copilot vs Claude Code: $10 credits vs $20 five-hour limits, teams of 5)
 See also: https://codetoolpicker.com/claude-code-vs-codex/ (Claude Code vs OpenAI Codex, with 30 days of status-page incident data)
-See also: https://codetoolpicker.com/cursor-vs-antigravity/ (Cursor vs Google Antigravity)
+See also: https://codetoolpicker.com/cursor-vs-antigravity/ (Cursor vs Google Antigravity, with what switching actually costs)
+See also: https://codetoolpicker.com/gemini-cli-vs-claude-code/ (Gemini CLI vs Claude Code: Gemini CLI is now API-key and Code Assist only for individuals; Claude Pro $20; Antigravity CLI and Codex three-way note)
 See also: https://codetoolpicker.com/advertise/ (sponsor packages and the editorial policy)
 
 Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, plans, and pricing); windsurf.com redirects to devin.ai.
@@ -25,29 +26,29 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - models: Grok + Composer included; Claude/GPT/Gemini on Premium+ billed separately at API list price
 - bestFor: Daily coding in a full IDE with agents and cloud work
 - strengths: ["Full IDE","Cloud agents","Strong agent workflows","Multi-model (Premium+)"]
-- limits: ["Third-party models (Claude, GPT, etc.) are not in included usage: billed at API list price from first use (Premium+ only; not on Plus)","Usage pool shared with Grok, refreshes weekly","Legacy Cursor Pro/Pro+ plans continue for existing subscribers; switching optional"]
+- limits: ["Third-party models (Claude, GPT, etc.) are not in included usage: billed at API list price from first use (Premium+ only; not on Plus)","Usage pool shared with Grok, refreshes weekly","Teams and Enterprise pay a $0.25 per million token Cursor Token Rate on top of API price for most third-party models (individual plans don't)","Legacy Cursor Pro/Pro+ plans continue for existing subscribers; switching optional"]
 - website: https://cursor.com
 - pricing source: https://cursor.com/pricing
 - plan Free: $0/mo: Limited usage
-- plan Plus: $8/mo: Grok models only; $80/yr
+- plan Plus: $8/mo: Grok models only (Grok 4.7/4.6/4.5 + Composer 2.5 at fixed settings); $80/yr
 - plan Premium: $30/mo: 4x Plus; Claude/GPT etc. billed separately at API list price; $300/yr
 - plan Super: $100/mo: 15x Plus; $1000/yr
 - plan Ultra: $200/mo: 50x Plus; $2000/yr
-- plan Teams: $30/mo: From $30/seat (Premium/Super/Ultra seats)
+- plan Teams: $30/mo: From $30/seat (Premium/Super/Ultra seats); third-party models add a $0.25/M-token Cursor Token Rate
 - best for (badge): Best all-round AI IDE
 - price Free: monthly $0; annual $0
 - price Plus: monthly $8/mo; annual $80/yr (≈$7/mo); Grok models only
 - price Premium: monthly $30/mo; annual $300/yr (≈$25/mo); 4x Plus usage; Claude/GPT billed extra at API list price
 - price Super: monthly $100/mo; annual $1,000/yr (≈$84/mo); 15x Plus usage
 - price Ultra: monthly $200/mo; annual $2,000/yr (≈$167/mo); 50x Plus usage
-- price Teams (Premium seat): monthly $30/seat/mo; annual Not listed; Super/Ultra seats $100/$200
+- price Teams (Premium seat): monthly $30/seat/mo; annual Not listed; Super/Ultra seats $100/$200; third-party models add a $0.25/M-token Cursor Token Rate
 - which plan: Free: Try the editor and agent before paying.
 - which plan: Plus $8: Only if Grok models are enough for you. Cursor itself recommends Plus for social creators with limited AI usage.
 - which plan: Premium $30: Cursor's pick for new AI users. Needed for cloud agents, Bugbot code reviews, and any Claude or GPT use (billed extra).
 - which plan: Super $100: Cursor's pick for daily agent users: 15x Plus usage plus priority access at peak times.
 - which plan: Ultra $200: Power users: 50x Plus usage and earliest access to new models.
-- which plan: Teams $30+/seat: Centralized billing, SSO, usage analytics, team-wide privacy settings.
-- not included: Claude, GPT and other third-party models are not included in any plan: billed at API list price on top (Premium and up).
+- which plan: Teams $30+/seat: Centralized billing, SSO, usage analytics, team-wide privacy settings. Third-party models cost API price plus a $0.25 per million token Cursor Token Rate (cheap models like Claude Haiku 5.5 and Gemini Flash are exempt).
+- not included: Claude, GPT and other third-party models are not included in any plan: billed at API list price from prepaid credit, from the first request (Premium and up; not available on Free or Plus). On Teams and Enterprise, most third-party models also carry a Cursor Token Rate of $0.25 per million tokens (input, output and cached).
 - skip it if: Claude or GPT is your daily model. In Cursor they are billed at API list price on top of a $30+ plan; Copilot and Claude Code include them in the plan price.
 
 ## GitHub Copilot
@@ -103,7 +104,7 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - price Team (premium seat): monthly $125/seat/mo; annual $1,200/seat/yr (≈$100/seat/mo); 5x standard usage; $100/seat/mo billed annually
 - which plan: Pro $20: Start here. Includes Claude Code with usage limits; $17/mo if you pay $200 for the year.
 - which plan: Max 5x from $100: If you hit Pro limits most days. 5x Pro usage plus priority access at busy times.
-- which plan: Team $25/seat: Teams of 2 to 150: standard seats are $25/mo ($20 annual); premium seats with 5x usage are $125 ($100 annual).
+- which plan: Team $25/seat: Teams of 2 to 150: standard seats are $25/mo ($20 annual); premium seats with 5x usage are $125 ($100 annual). Team includes up to $500 a month in pooled API credits.
 - which plan: API (pay per token): Automation and CI. Example: Sonnet 5.5 is $2 per million input tokens and $10 per million output tokens.
 - not included: Usage limits apply and are shared with Claude chat. API use is billed per token.
 - skip it if: You want a free tier, a full visual IDE, or GPT/Gemini models. Claude Code is Claude-only and needs a paid plan.
@@ -235,12 +236,34 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - price Google AI Ultra 20x: monthly $199.99/mo; annual Not listed; 20x the Pro quota, highest weekly limits
 - price Gemini Enterprise (Standard/Plus): monthly $30/seat/mo; annual Not listed; From $30/seat via Google Cloud; a pay-as-you-go option has a $0 seat fee
 - which plan: Free: Try the agent with Gemini 3.8 Flash on a weekly quota. Claude Sonnet/Opus 4.6 and GPT-OSS 120B are on Free until Google removes them on Nov 2, 2026.
-- which plan: Google AI Pro $19.99: Most individuals: quota refreshes every five hours up to a weekly limit, with Gemini 4 Argon and Claude Opus/Sonnet 5.5. The Claude 5.5 models need a paid plan, not the free trial.
+- which plan: Google AI Pro $19.99: Most individuals: quota refreshes every five hours up to a weekly limit, with Gemini 4 Argon and Claude Opus/Sonnet 5.5. Gemini 4 Argon and the Claude 5.5 models need a paid plan, not the free trial.
 - which plan: Google AI Ultra $99.99: Daily drivers: 5x the Pro quota and priority access.
 - which plan: Google AI Ultra $199.99: All-day agent use: 20x the Pro quota and the highest weekly limits.
 - which plan: Gemini Enterprise from $30/seat: Organizations on Google Cloud. Covers the Antigravity App, CLI and IDE extensions, not the standalone Antigravity IDE.
 - not included: Usage beyond your quota needs purchased AI credits at Gemini Enterprise consumption prices (you choose Never or Always). Paid tiers are Google AI subscriptions, so you can't buy Antigravity on its own.
 - skip it if: You need a credit-card team plan with admin controls, want to bring your own API key, or sign in with a Google Workspace account. Individual plans are built for personal Google accounts, and teams go through Google Cloud.
+
+## Gemini CLI
+- tagline: Google's open-source (Apache 2.0) terminal agent for Gemini models, now for API-key and Code Assist users only
+- category: agent
+- formFactor: Terminal agent (open source)
+- models: Gemini 3 and 2.5 models (Auto routing); not optimized for Gemini 4 Argon
+- bestFor: Teams with Gemini Code Assist licenses, and developers who want an open-source terminal agent billed per token
+- strengths: ["Open source under Apache 2.0, still updated weekly","Pay-per-token with a Gemini API key, good for scripts and CI (headless mode)","Subagents, hooks, skills, extensions, MCP, checkpointing and sandboxing"]
+- limits: ["Since June 18, 2026, Sign in with Google no longer works for free, Google AI Pro or Ultra users (Google moved them to the closed-source Antigravity CLI)","Google says it isn't optimized for Gemini 4 Argon","Code Assist Standard and Enterprise are on a separate deprecation schedule Google hasn't published"]
+- website: https://geminicli.com
+- pricing source: https://geminicli.com/docs/resources/quota-and-pricing/
+- plan Gemini API key: see vendor: Pay per token at Gemini API prices
+- plan Code Assist Standard: $22.8/mo: Per user via Google Cloud (listed hourly: about $22.80/mo, $19/mo on a 12-month commitment); 1,500 requests/user/day
+- plan Code Assist Enterprise: $54/mo: Per user (about $54/mo, $45/mo on a 12-month commitment); 2,000 requests/user/day
+- best for (badge): Best open-source terminal agent
+- price Code Assist Standard: monthly $22.80/seat/mo; annual $228/seat/yr (≈$19/seat/mo); Google lists $0.031232877/hour (monthly commitment) or $0.026027397/hour (12-month); 1,500 requests/user/day
+- price Code Assist Enterprise: monthly $54/seat/mo; annual $540/seat/yr (≈$45/seat/mo); Google lists $0.073972603/hour (monthly) or $0.061643836/hour (12-month); 2,000 requests/user/day
+- which plan: Gemini API key (pay per token): Individuals since June 18, 2026: bring a paid Gemini API key and pay per token. Good for scripts and CI. Gemini 3.1 Pro Preview is $2 in / $12 out per million tokens.
+- which plan: Code Assist Standard ~$22.80/seat: Companies on Google Cloud: 1,500 requests per user per day, plus Code Assist in VS Code and IntelliJ. About $19/seat on a 12-month commitment.
+- which plan: Code Assist Enterprise ~$54/seat: Higher limits (2,000 requests per user per day) and code customization on your private repos. About $45/seat on a 12-month commitment.
+- not included: With a Gemini API key you pay per token instead of a seat (for example Gemini 3.1 Pro Preview $2 in / $12 out per million tokens, Gemini 3.8 Flash $0.75 / $3.75 through Dec 31, 2026). Free, Google AI Pro and Ultra subscriptions no longer work in Gemini CLI.
+- skip it if: You're an individual who wants a flat monthly plan. Google moved free, AI Pro and Ultra users to Antigravity CLI on June 18, 2026; Claude Code (from $20) or Antigravity (from $19.99) are the subscription options.
 
 ## Ship your app: the rest of the stack (prices checked 2026-10-20)
 ### Hosting: Where your app lives once it works on your machine.
@@ -260,6 +283,8 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - Namecheap (https://www.namecheap.com): Popular registrar with hosting and email add-ons. Varies by TLD
 
 ## Pricing change log
+- 2026-10-22: Re-checked Cursor: plans unchanged (Free, Plus $8 Grok-only, Premium $30, Super $100, Ultra $200; $80/$300/$1,000/$2,000 a year; Teams $30/$100/$200 per seat). Confirmed Claude and other third-party models aren't on Free or Plus and are billed at API list price from prepaid credit on Premium and up. New to our data: on Teams and Enterprise, most third-party models add a Cursor Token Rate of $0.25 per million tokens. (source: https://cursor.com/docs/models-and-pricing)
+- 2026-10-22: Added Gemini CLI. Google stopped serving Gemini CLI for free, Google AI Pro and Ultra sign-ins on June 18, 2026 (moved to Antigravity CLI). It still works with paid Gemini API keys and Gemini Code Assist Standard (about $22.80/user/mo, $19 on a 12-month commitment) or Enterprise (about $54, $45 on 12 months). Claude Team now lists up to $500/month in pooled API credits. (source: https://developers.google.com/gemini-code-assist/docs/deprecations/code-assist-individuals)
 - 2026-10-21: Re-checked GitHub Copilot: unchanged (Free, Pro $10 with 1,500 AI credits, Pro+ $39 with 7,000, Max $100 with 20,000, Business $19/seat, Enterprise $39/seat). Copilot Pro and up now list Claude Opus 5.5 and can hand tasks to Anthropic's Claude agent (preview). (source: https://docs.github.com/en/copilot/get-started/plans)
 - 2026-10-20: Added OpenAI Codex (Free, Go $8, Plus $20, Pro $100/$200/$500, Business $25/seat) and Google Antigravity (Free, Google AI Pro $19.99, Ultra $99.99/$199.99, Gemini Enterprise from $30/seat) to the picker, calculator and this guide. Re-checked Cursor: unchanged. (source: https://antigravity.google/pricing)
 - 2026-10-14: OpenAI retired GPT-5.5 from Codex for ChatGPT sign-in. API-key sessions weren't affected. (source: https://developers.openai.com/codex/pricing)

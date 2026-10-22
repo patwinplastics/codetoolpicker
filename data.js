@@ -1,4 +1,4 @@
-// Pricing verified 2026-10-19 on official pages; Antigravity, Codex and Cursor re-checked 2026-10-20 (antigravity.google/pricing + docs/plans + docs/models, gemini.google/subscriptions, developers.openai.com/codex/pricing, docs.x.ai/x-subscription/pricing, docs.github.com Copilot plans, claude.com/pricing, devin.ai/pricing, bolt.new/pricing, lovable.dev/pricing).
+// Pricing verified 2026-10-19 on official pages; Antigravity, Codex and Cursor re-checked 2026-10-20; Cursor, Claude, Antigravity re-checked and Gemini CLI added 2026-10-22 (cursor.com/pricing, cursor.com/docs/models-and-pricing, geminicli.com/docs quota page, developers.google.com Code Assist deprecation, cloud.google.com/products/gemini/pricing, ai.google.dev/gemini-api/docs/pricing) (antigravity.google/pricing + docs/plans + docs/models, gemini.google/subscriptions, developers.openai.com/codex/pricing, docs.x.ai/x-subscription/pricing, docs.github.com Copilot plans, claude.com/pricing, devin.ai/pricing, bolt.new/pricing, lovable.dev/pricing).
 // Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02; windsurf.com now redirects to devin.ai. id stays "windsurf" for quiz/anchor stability.
 window.TOOL_DATA = [
   {
@@ -13,14 +13,14 @@ window.TOOL_DATA = [
     freeTier: true,
     plans: [
       { name: "Free", price: 0, note: "Limited usage" },
-      { name: "Plus", price: 8, note: "Grok models only; $80/yr" },
+      { name: "Plus", price: 8, note: "Grok models only (Grok 4.7/4.6/4.5 + Composer 2.5 at fixed settings); $80/yr" },
       { name: "Premium", price: 30, note: "4x Plus; Claude/GPT etc. billed separately at API list price; $300/yr" },
       { name: "Super", price: 100, note: "15x Plus; $1000/yr" },
       { name: "Ultra", price: 200, note: "50x Plus; $2000/yr" },
-      { name: "Teams", price: 30, note: "From $30/seat (Premium/Super/Ultra seats)" }
+      { name: "Teams", price: 30, note: "From $30/seat (Premium/Super/Ultra seats); third-party models add a $0.25/M-token Cursor Token Rate" }
     ],
     strengths: ["Full IDE", "Cloud agents", "Strong agent workflows", "Multi-model (Premium+)"],
-    limits: ["Third-party models (Claude, GPT, etc.) are not in included usage: billed at API list price from first use (Premium+ only; not on Plus)", "Usage pool shared with Grok, refreshes weekly", "Legacy Cursor Pro/Pro+ plans continue for existing subscribers; switching optional"],
+    limits: ["Third-party models (Claude, GPT, etc.) are not in included usage: billed at API list price from first use (Premium+ only; not on Plus)", "Usage pool shared with Grok, refreshes weekly", "Teams and Enterprise pay a $0.25 per million token Cursor Token Rate on top of API price for most third-party models (individual plans don't)", "Legacy Cursor Pro/Pro+ plans continue for existing subscribers; switching optional"],
     formFactor: "Desktop IDE",
     models: "Grok + Composer included; Claude/GPT/Gemini on Premium+ billed separately at API list price",
     affiliate: false,
@@ -189,7 +189,28 @@ window.TOOL_DATA = [
     formFactor: "Agent app + IDE + CLI",
     models: "Gemini 4 Argon and 3.8 Flash, plus Claude Opus/Sonnet 5.5 on Pro and Ultra",
     affiliate: false,
-    sponsorFit: "high"
+  },
+  {
+    id: "gemini-cli",
+    name: "Gemini CLI",
+    category: "agent",
+    tagline: "Google's open-source (Apache 2.0) terminal agent for Gemini models, now for API-key and Code Assist users only",
+    bestFor: "Teams with Gemini Code Assist licenses, and developers who want an open-source terminal agent billed per token",
+    website: "https://geminicli.com",
+    pricingUrl: "https://geminicli.com/docs/resources/quota-and-pricing/",
+    startingPaid: null,
+    freeTier: false,
+    plans: [
+      { name: "Gemini API key", price: null, note: "Pay per token at Gemini API prices" },
+      { name: "Code Assist Standard", price: 22.8, note: "Per user via Google Cloud (listed hourly: about $22.80/mo, $19/mo on a 12-month commitment); 1,500 requests/user/day" },
+      { name: "Code Assist Enterprise", price: 54, note: "Per user (about $54/mo, $45/mo on a 12-month commitment); 2,000 requests/user/day" }
+    ],
+    strengths: ["Open source under Apache 2.0, still updated weekly", "Pay-per-token with a Gemini API key, good for scripts and CI (headless mode)", "Subagents, hooks, skills, extensions, MCP, checkpointing and sandboxing"],
+    limits: ["Since June 18, 2026, Sign in with Google no longer works for free, Google AI Pro or Ultra users (Google moved them to the closed-source Antigravity CLI)", "Google says it isn't optimized for Gemini 4 Argon", "Code Assist Standard and Enterprise are on a separate deprecation schedule Google hasn't published"],
+    formFactor: "Terminal agent (open source)",
+    models: "Gemini 3 and 2.5 models (Auto routing); not optimized for Gemini 4 Argon",
+    affiliate: false,
+    sponsorFit: "medium"
   }
 ];
 
@@ -198,29 +219,29 @@ window.QUIZ = [
     id: "role",
     q: "What are you mainly doing?",
     options: [
-      { id: "ship-app", label: "Ship a web app fast from chat", scores: { lovable: 3, bolt: 3, cursor: 0, windsurf: 0, copilot: 0, "claude-code": 0, codex: 0, antigravity: 1 } },
-      { id: "daily-code", label: "Write and refactor code every day", scores: { cursor: 3, windsurf: 3, copilot: 2, "claude-code": 2, lovable: 0, bolt: 0, codex: 2, antigravity: 2 } },
-      { id: "agent-heavy", label: "Hand big tasks to an agent", scores: { cursor: 3, "claude-code": 3, windsurf: 2, copilot: 1, lovable: 1, bolt: 1, codex: 3, antigravity: 3 } },
-      { id: "github-team", label: "Work with a team on GitHub", scores: { copilot: 3, cursor: 2, windsurf: 1, "claude-code": 1, lovable: 0, bolt: 0, codex: 2, antigravity: 1 } }
+      { id: "ship-app", label: "Ship a web app fast from chat", scores: { lovable: 3, bolt: 3, cursor: 0, windsurf: 0, copilot: 0, "claude-code": 0, codex: 0, antigravity: 1, "gemini-cli": 0 } },
+      { id: "daily-code", label: "Write and refactor code every day", scores: { cursor: 3, windsurf: 3, copilot: 2, "claude-code": 2, lovable: 0, bolt: 0, codex: 2, antigravity: 2, "gemini-cli": 1 } },
+      { id: "agent-heavy", label: "Hand big tasks to an agent", scores: { cursor: 3, "claude-code": 3, windsurf: 2, copilot: 1, lovable: 1, bolt: 1, codex: 3, antigravity: 3, "gemini-cli": 2 } },
+      { id: "github-team", label: "Work with a team on GitHub", scores: { copilot: 3, cursor: 2, windsurf: 1, "claude-code": 1, lovable: 0, bolt: 0, codex: 2, antigravity: 1, "gemini-cli": 1 } }
     ]
   },
   {
     id: "budget",
     q: "What's your monthly budget?",
     options: [
-      { id: "free", label: "Free or under $15", scores: { copilot: 2, cursor: 2, windsurf: 1, lovable: 1, bolt: 1, "claude-code": 0, codex: 2, antigravity: 2 } },
-      { id: "mid", label: "About $20–40", scores: { cursor: 2, windsurf: 3, copilot: 2, "claude-code": 3, lovable: 2, bolt: 2, codex: 3, antigravity: 3 } },
-      { id: "power", label: "$100+ for heavy use", scores: { cursor: 3, "claude-code": 3, windsurf: 2, copilot: 2, lovable: 1, bolt: 1, codex: 3, antigravity: 2 } }
+      { id: "free", label: "Free or under $15", scores: { copilot: 2, cursor: 2, windsurf: 1, lovable: 1, bolt: 1, "claude-code": 0, codex: 2, antigravity: 2, "gemini-cli": 0 } },
+      { id: "mid", label: "About $20 to $40", scores: { cursor: 2, windsurf: 3, copilot: 2, "claude-code": 3, lovable: 2, bolt: 2, codex: 3, antigravity: 3, "gemini-cli": 1 } },
+      { id: "power", label: "$100+ for heavy use", scores: { cursor: 3, "claude-code": 3, windsurf: 2, copilot: 2, lovable: 1, bolt: 1, codex: 3, antigravity: 2, "gemini-cli": 1 } }
     ]
   },
   {
     id: "surface",
     q: "Where do you want to work?",
     options: [
-      { id: "desktop-ide", label: "Desktop IDE", scores: { cursor: 3, windsurf: 3, copilot: 2, "claude-code": 1, lovable: 0, bolt: 0, codex: 1, antigravity: 2 } },
-      { id: "terminal", label: "Terminal", scores: { "claude-code": 3, cursor: 1, windsurf: 1, copilot: 1, lovable: 0, bolt: 0, codex: 3, antigravity: 2 } },
-      { id: "browser", label: "Browser only", scores: { lovable: 3, bolt: 3, cursor: 0, windsurf: 0, copilot: 1, "claude-code": 0, codex: 1, antigravity: 0 } },
-      { id: "any", label: "Whatever works", scores: { cursor: 2, copilot: 2, windsurf: 2, "claude-code": 1, lovable: 1, bolt: 1, codex: 1, antigravity: 2 } }
+      { id: "desktop-ide", label: "Desktop IDE", scores: { cursor: 3, windsurf: 3, copilot: 2, "claude-code": 1, lovable: 0, bolt: 0, codex: 1, antigravity: 2, "gemini-cli": 0 } },
+      { id: "terminal", label: "Terminal", scores: { "claude-code": 3, cursor: 1, windsurf: 1, copilot: 1, lovable: 0, bolt: 0, codex: 3, antigravity: 2, "gemini-cli": 3 } },
+      { id: "browser", label: "Browser only", scores: { lovable: 3, bolt: 3, cursor: 0, windsurf: 0, copilot: 1, "claude-code": 0, codex: 1, antigravity: 0, "gemini-cli": 0 } },
+      { id: "any", label: "Whatever works", scores: { cursor: 2, copilot: 2, windsurf: 2, "claude-code": 1, lovable: 1, bolt: 1, codex: 1, antigravity: 2, "gemini-cli": 0 } }
     ]
   }
 ];
@@ -233,7 +254,7 @@ window.QUIZ = [
 // or null when the vendor doesn't publish an annual price. base = flat monthly fee on top of seats (Devin Teams).
 // Codex, Google Antigravity and Cursor re-checked 2026-10-20 on developers.openai.com/codex/pricing, antigravity.google/pricing,
 // antigravity.google/docs/plans, antigravity.google/docs/models, gemini.google/subscriptions and cursor.com/pricing.
-window.PRICING_CHECKED = "2026-10-20";
+window.PRICING_CHECKED = "2026-10-22";
 window.PRICING = {
   cursor: {
     start: 2,
@@ -244,9 +265,9 @@ window.PRICING = {
       { name: "Premium", monthly: 30, annual: 300, note: "4x Plus usage; Claude/GPT billed extra at API list price" },
       { name: "Super", monthly: 100, annual: 1000, note: "15x Plus usage" },
       { name: "Ultra", monthly: 200, annual: 2000, note: "50x Plus usage" },
-      { name: "Teams (Premium seat)", monthly: 30, annual: null, seat: true, note: "Super/Ultra seats $100/$200" }
+      { name: "Teams (Premium seat)", monthly: 30, annual: null, seat: true, note: "Super/Ultra seats $100/$200; third-party models add a $0.25/M-token Cursor Token Rate" }
     ],
-    extraCost: "Claude, GPT and other third-party models are not included in any plan: billed at API list price on top (Premium and up).",
+    extraCost: "Claude, GPT and other third-party models are not included in any plan: billed at API list price from prepaid credit, from the first request (Premium and up; not available on Free or Plus). On Teams and Enterprise, most third-party models also carry a Cursor Token Rate of $0.25 per million tokens (input, output and cached).",
     glance: { free: "Yes: limited agent and chat requests", models: "Grok models included; Claude/GPT on Premium+ at extra API cost", agents: "Agent on all plans; cloud agents and Bugbot reviews on Premium+", surface: "Own desktop IDE (VS Code-based)", team: "$30/seat" },
     guide: [
       ["Free", "Try the editor and agent before paying."],
@@ -254,7 +275,7 @@ window.PRICING = {
       ["Premium $30", "Cursor's pick for new AI users. Needed for cloud agents, Bugbot code reviews, and any Claude or GPT use (billed extra)."],
       ["Super $100", "Cursor's pick for daily agent users: 15x Plus usage plus priority access at peak times."],
       ["Ultra $200", "Power users: 50x Plus usage and earliest access to new models."],
-      ["Teams $30+/seat", "Centralized billing, SSO, usage analytics, team-wide privacy settings."]
+      ["Teams $30+/seat", "Centralized billing, SSO, usage analytics, team-wide privacy settings. Third-party models cost API price plus a $0.25 per million token Cursor Token Rate (cheap models like Claude Haiku 5.5 and Gemini Flash are exempt)."]
     ],
     skipIf: "Claude or GPT is your daily model. In Cursor they are billed at API list price on top of a $30+ plan; Copilot and Claude Code include them in the plan price."
   },
@@ -295,7 +316,7 @@ window.PRICING = {
     guide: [
       ["Pro $20", "Start here. Includes Claude Code with usage limits; $17/mo if you pay $200 for the year."],
       ["Max 5x from $100", "If you hit Pro limits most days. 5x Pro usage plus priority access at busy times."],
-      ["Team $25/seat", "Teams of 2 to 150: standard seats are $25/mo ($20 annual); premium seats with 5x usage are $125 ($100 annual)."],
+      ["Team $25/seat", "Teams of 2 to 150: standard seats are $25/mo ($20 annual); premium seats with 5x usage are $125 ($100 annual). Team includes up to $500 a month in pooled API credits."],
       ["API (pay per token)", "Automation and CI. Example: Sonnet 5.5 is $2 per million input tokens and $10 per million output tokens."]
     ],
     skipIf: "You want a free tier, a full visual IDE, or GPT/Gemini models. Claude Code is Claude-only and needs a paid plan."
@@ -392,12 +413,28 @@ window.PRICING = {
     glance: { free: "Yes: basic weekly limit, unlimited Tab, Gemini 3.8 Flash", models: "Gemini 4 Argon + Claude Opus/Sonnet 5.5 inside the plan quota (Pro+)", agents: "Agent-first: multi-agent app, scheduled tasks, CLI, SDK", surface: "Own agent app + IDE, CLI, extensions for VS Code, JetBrains, Zed, Xcode", team: "From $30/seat via Google Cloud" },
     guide: [
       ["Free", "Try the agent with Gemini 3.8 Flash on a weekly quota. Claude Sonnet/Opus 4.6 and GPT-OSS 120B are on Free until Google removes them on Nov 2, 2026."],
-      ["Google AI Pro $19.99", "Most individuals: quota refreshes every five hours up to a weekly limit, with Gemini 4 Argon and Claude Opus/Sonnet 5.5. The Claude 5.5 models need a paid plan, not the free trial."],
+      ["Google AI Pro $19.99", "Most individuals: quota refreshes every five hours up to a weekly limit, with Gemini 4 Argon and Claude Opus/Sonnet 5.5. Gemini 4 Argon and the Claude 5.5 models need a paid plan, not the free trial."],
       ["Google AI Ultra $99.99", "Daily drivers: 5x the Pro quota and priority access."],
       ["Google AI Ultra $199.99", "All-day agent use: 20x the Pro quota and the highest weekly limits."],
       ["Gemini Enterprise from $30/seat", "Organizations on Google Cloud. Covers the Antigravity App, CLI and IDE extensions, not the standalone Antigravity IDE."]
     ],
     skipIf: "You need a credit-card team plan with admin controls, want to bring your own API key, or sign in with a Google Workspace account. Individual plans are built for personal Google accounts, and teams go through Google Cloud."
+  },
+  "gemini-cli": {
+    start: 0,
+    bestBadge: "Best open-source terminal agent",
+    plans: [
+      { name: "Code Assist Standard", monthly: 22.8, annual: 228, seat: true, note: "Google lists $0.031232877/hour (monthly commitment) or $0.026027397/hour (12-month); 1,500 requests/user/day" },
+      { name: "Code Assist Enterprise", monthly: 54, annual: 540, seat: true, note: "Google lists $0.073972603/hour (monthly) or $0.061643836/hour (12-month); 2,000 requests/user/day" }
+    ],
+    extraCost: "With a Gemini API key you pay per token instead of a seat (for example Gemini 3.1 Pro Preview $2 in / $12 out per million tokens, Gemini 3.8 Flash $0.75 / $3.75 through Dec 31, 2026). Free, Google AI Pro and Ultra subscriptions no longer work in Gemini CLI.",
+    glance: { free: "No for individuals: Google sign-in for free, AI Pro and Ultra users ended June 18, 2026", models: "Gemini 3 and 2.5 (Auto); not optimized for Gemini 4 Argon", agents: "Terminal agent: subagents, plan mode, hooks, skills, MCP, headless mode", surface: "Terminal, open source (Apache 2.0)", team: "Code Assist ~$22.80/seat ($19 on 12-mo)" },
+    guide: [
+      ["Gemini API key (pay per token)", "Individuals since June 18, 2026: bring a paid Gemini API key and pay per token. Good for scripts and CI. Gemini 3.1 Pro Preview is $2 in / $12 out per million tokens."],
+      ["Code Assist Standard ~$22.80/seat", "Companies on Google Cloud: 1,500 requests per user per day, plus Code Assist in VS Code and IntelliJ. About $19/seat on a 12-month commitment."],
+      ["Code Assist Enterprise ~$54/seat", "Higher limits (2,000 requests per user per day) and code customization on your private repos. About $45/seat on a 12-month commitment."]
+    ],
+    skipIf: "You're an individual who wants a flat monthly plan. Google moved free, AI Pro and Ultra users to Antigravity CLI on June 18, 2026; Claude Code (from $20) or Antigravity (from $19.99) are the subscription options."
   }
 };
 
@@ -409,11 +446,14 @@ window.COMPARE_PAGES = {
   "copilot|cursor": { url: "cursor-vs-copilot/", label: "Cursor vs GitHub Copilot" },
   "claude-code|copilot": { url: "copilot-vs-claude-code/", label: "GitHub Copilot vs Claude Code" },
   "claude-code|codex": { url: "claude-code-vs-codex/", label: "Claude Code vs OpenAI Codex" },
-  "antigravity|cursor": { url: "cursor-vs-antigravity/", label: "Cursor vs Google Antigravity" }
+  "antigravity|cursor": { url: "cursor-vs-antigravity/", label: "Cursor vs Google Antigravity" },
+  "claude-code|gemini-cli": { url: "gemini-cli-vs-claude-code/", label: "Gemini CLI vs Claude Code" }
 };
 
 // Dated pricing changes we track. Only sourced events.
 window.PRICE_LOG = [
+  { date: "2026-10-22", text: "Re-checked Cursor: plans unchanged (Free, Plus $8 Grok-only, Premium $30, Super $100, Ultra $200; $80/$300/$1,000/$2,000 a year; Teams $30/$100/$200 per seat). Confirmed Claude and other third-party models aren't on Free or Plus and are billed at API list price from prepaid credit on Premium and up. New to our data: on Teams and Enterprise, most third-party models add a Cursor Token Rate of $0.25 per million tokens.", src: "https://cursor.com/docs/models-and-pricing" },
+  { date: "2026-10-22", text: "Added Gemini CLI. Google stopped serving Gemini CLI for free, Google AI Pro and Ultra sign-ins on June 18, 2026 (moved to Antigravity CLI). It still works with paid Gemini API keys and Gemini Code Assist Standard (about $22.80/user/mo, $19 on a 12-month commitment) or Enterprise (about $54, $45 on 12 months). Claude Team now lists up to $500/month in pooled API credits.", src: "https://developers.google.com/gemini-code-assist/docs/deprecations/code-assist-individuals" },
   { date: "2026-10-21", text: "Re-checked GitHub Copilot: unchanged (Free, Pro $10 with 1,500 AI credits, Pro+ $39 with 7,000, Max $100 with 20,000, Business $19/seat, Enterprise $39/seat). Copilot Pro and up now list Claude Opus 5.5 and can hand tasks to Anthropic's Claude agent (preview).", src: "https://docs.github.com/en/copilot/get-started/plans" },
   { date: "2026-10-20", text: "Added OpenAI Codex (Free, Go $8, Plus $20, Pro $100/$200/$500, Business $25/seat) and Google Antigravity (Free, Google AI Pro $19.99, Ultra $99.99/$199.99, Gemini Enterprise from $30/seat) to the picker, calculator and this guide. Re-checked Cursor: unchanged.", src: "https://antigravity.google/pricing" },
   { date: "2026-10-14", text: "OpenAI retired GPT-5.5 from Codex for ChatGPT sign-in. API-key sessions weren't affected.", src: "https://developers.openai.com/codex/pricing" },
@@ -443,6 +483,7 @@ window.LINKS = {
     perk: "Signing up through this link gives you 20% off your first Bolt subscription (3 months on monthly billing, or your first annual payment)." },
   codex: { name: "OpenAI Codex", url: "https://developers.openai.com/codex", affiliate: false }, // in-product credits only
   antigravity: { name: "Google Antigravity", url: "https://antigravity.google", affiliate: false }, // no program
+  "gemini-cli": { name: "Gemini CLI", url: "https://geminicli.com", affiliate: false }, // no program (open source)
   // Ship your app: hosting
   vercel: { name: "Vercel", url: "https://vercel.com", affiliate: false },            // no program
   netlify: { name: "Netlify", url: "https://www.netlify.com", affiliate: false },     // PartnerStack, 20% x 12 mo (apply)

@@ -29,7 +29,8 @@ fs.writeFileSync(idx, html);
 
 // ---- Pricing guide page (ai-coding-tool-pricing/) ----
 const fmtYear = (pl) => (pl.annual == null ? "Not listed" : pl.annual === 0 ? "$0" : `$${pl.annual.toLocaleString("en-US")}${pl.seat ? "/seat" : ""}/yr (≈$${Math.ceil(pl.annual / 12)}${pl.seat ? "/seat" : ""}/mo)`);
-const fmtMonth = (pl) => (pl.monthly === 0 ? "$0" : `${pl.base ? `$${pl.base}/mo + ` : ""}$${pl.monthly}${pl.seat ? "/seat" : ""}/mo`);
+const num = (n) => (n % 1 ? n.toFixed(2) : String(n));
+const fmtMonth = (pl) => (pl.monthly === 0 ? "$0" : `${pl.base ? `$${pl.base}/mo + ` : ""}$${num(pl.monthly)}${pl.seat ? "/seat" : ""}/mo`);
 const planSections = tools.map((t) => {
   const p = P[t.id];
   return `
@@ -73,7 +74,7 @@ const lines = [
   "Editorial policy: rankings are not for sale. Sponsors and affiliate links are labeled and never change recommendations, quiz logic, or comparison data.",
   "Contact (sponsorships, corrections): sponsors@codetoolpicker.com",
   "",
-  "See also: https://codetoolpicker.com/ai-coding-tool-pricing/ (all 38 plans across 8 tools, which one you need, cost calculator, pricing change log)",
+  "See also: https://codetoolpicker.com/ai-coding-tool-pricing/ (all 40 plans across 9 tools, which one you need, cost calculator, pricing change log)",
   "See also: https://codetoolpicker.com/cursor-bundle-alternatives/ (Cursor bundle vs Claude Code vs Copilot)",
   "See also: https://codetoolpicker.com/cursor-vs-copilot/ (Cursor vs GitHub Copilot)",
   "See also: https://codetoolpicker.com/switch-from-copilot-to-cursor/ (switch from Copilot to Cursor without losing your setup)",
@@ -82,7 +83,8 @@ const lines = [
   "See also: https://codetoolpicker.com/claude-code-vs-cursor/ (Claude Code vs Cursor)",
   "See also: https://codetoolpicker.com/copilot-vs-claude-code/ (GitHub Copilot vs Claude Code: $10 credits vs $20 five-hour limits, teams of 5)",
   "See also: https://codetoolpicker.com/claude-code-vs-codex/ (Claude Code vs OpenAI Codex, with 30 days of status-page incident data)",
-  "See also: https://codetoolpicker.com/cursor-vs-antigravity/ (Cursor vs Google Antigravity)",
+  "See also: https://codetoolpicker.com/cursor-vs-antigravity/ (Cursor vs Google Antigravity, with what switching actually costs)",
+  "See also: https://codetoolpicker.com/gemini-cli-vs-claude-code/ (Gemini CLI vs Claude Code: Gemini CLI is now API-key and Code Assist only for individuals; Claude Pro $20; Antigravity CLI and Codex three-way note)",
   "See also: https://codetoolpicker.com/advertise/ (sponsor packages and the editorial policy)",
   "",
   "Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, plans, and pricing); windsurf.com redirects to devin.ai.",
