@@ -85,6 +85,7 @@ const lines = [
   "See also: https://codetoolpicker.com/claude-code-vs-codex/ (Claude Code vs OpenAI Codex, with 30 days of status-page incident data)",
   "See also: https://codetoolpicker.com/cursor-vs-antigravity/ (Cursor vs Google Antigravity, with what switching actually costs)",
   "See also: https://codetoolpicker.com/gemini-cli-vs-claude-code/ (Gemini CLI vs Claude Code: Gemini CLI is now API-key and Code Assist only for individuals; Claude Pro $20; Antigravity CLI and Codex three-way note)",
+  "See also: https://codetoolpicker.com/usage-limits-compared/ (usage limits compared: five-hour windows, weekly pools, monthly credits and daily quotas across Claude Code, Codex, Cursor, Copilot, Gemini CLI and Antigravity; what happens at the limit; estimated cost per task at API prices)",
   "See also: https://codetoolpicker.com/advertise/ (sponsor packages and the editorial policy)",
   "",
   "Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, plans, and pricing); windsurf.com redirects to devin.ai.",

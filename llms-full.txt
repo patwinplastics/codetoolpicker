@@ -1,5 +1,5 @@
 # CodeToolPicker: full text
-Independent AI coding tool comparison. Source: https://codetoolpicker.com/ . Data checked 2026-10-22 on official vendor pricing pages; confirm prices on vendor sites.
+Independent AI coding tool comparison. Source: https://codetoolpicker.com/ . Data checked 2026-10-23 on official vendor pricing pages; confirm prices on vendor sites.
 
 Editorial policy: rankings are not for sale. Sponsors and affiliate links are labeled and never change recommendations, quiz logic, or comparison data.
 Contact (sponsorships, corrections): sponsors@codetoolpicker.com
@@ -15,6 +15,7 @@ See also: https://codetoolpicker.com/copilot-vs-claude-code/ (GitHub Copilot vs 
 See also: https://codetoolpicker.com/claude-code-vs-codex/ (Claude Code vs OpenAI Codex, with 30 days of status-page incident data)
 See also: https://codetoolpicker.com/cursor-vs-antigravity/ (Cursor vs Google Antigravity, with what switching actually costs)
 See also: https://codetoolpicker.com/gemini-cli-vs-claude-code/ (Gemini CLI vs Claude Code: Gemini CLI is now API-key and Code Assist only for individuals; Claude Pro $20; Antigravity CLI and Codex three-way note)
+See also: https://codetoolpicker.com/usage-limits-compared/ (usage limits compared: five-hour windows, weekly pools, monthly credits and daily quotas across Claude Code, Codex, Cursor, Copilot, Gemini CLI and Antigravity; what happens at the limit; estimated cost per task at API prices)
 See also: https://codetoolpicker.com/advertise/ (sponsor packages and the editorial policy)
 
 Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, plans, and pricing); windsurf.com redirects to devin.ai.
@@ -283,9 +284,10 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - Namecheap (https://www.namecheap.com): Popular registrar with hosting and email add-ons. Varies by TLD
 
 ## Pricing change log
+- 2026-10-23: Correction: GitHub Copilot Pro ($10) includes Claude Sonnet 5.5, Sonnet 5 and Haiku 5.5 but not Claude Opus 5.5, Fable 5.1, GPT-6.1 Sol or Gemini 4 Argon. Those start at Pro+ ($39). Our Oct 21 note said Opus 5.5 was on Pro; it isn't. Also published usage limits compared: https://codetoolpicker.com/usage-limits-compared/ (source: https://docs.github.com/en/copilot/get-started/plans)
 - 2026-10-22: Re-checked Cursor: plans unchanged (Free, Plus $8 Grok-only, Premium $30, Super $100, Ultra $200; $80/$300/$1,000/$2,000 a year; Teams $30/$100/$200 per seat). Confirmed Claude and other third-party models aren't on Free or Plus and are billed at API list price from prepaid credit on Premium and up. New to our data: on Teams and Enterprise, most third-party models add a Cursor Token Rate of $0.25 per million tokens. (source: https://cursor.com/docs/models-and-pricing)
 - 2026-10-22: Added Gemini CLI. Google stopped serving Gemini CLI for free, Google AI Pro and Ultra sign-ins on June 18, 2026 (moved to Antigravity CLI). It still works with paid Gemini API keys and Gemini Code Assist Standard (about $22.80/user/mo, $19 on a 12-month commitment) or Enterprise (about $54, $45 on 12 months). Claude Team now lists up to $500/month in pooled API credits. (source: https://developers.google.com/gemini-code-assist/docs/deprecations/code-assist-individuals)
-- 2026-10-21: Re-checked GitHub Copilot: unchanged (Free, Pro $10 with 1,500 AI credits, Pro+ $39 with 7,000, Max $100 with 20,000, Business $19/seat, Enterprise $39/seat). Copilot Pro and up now list Claude Opus 5.5 and can hand tasks to Anthropic's Claude agent (preview). (source: https://docs.github.com/en/copilot/get-started/plans)
+- 2026-10-21: Re-checked GitHub Copilot: unchanged (Free, Pro $10 with 1,500 AI credits, Pro+ $39 with 7,000, Max $100 with 20,000, Business $19/seat, Enterprise $39/seat). Copilot Pro+ and up list Claude Opus 5.5 (Pro gets Sonnet 5.5; corrected Oct 23), and Pro and up can hand tasks to Anthropic's Claude agent (preview). (source: https://docs.github.com/en/copilot/get-started/plans)
 - 2026-10-20: Added OpenAI Codex (Free, Go $8, Plus $20, Pro $100/$200/$500, Business $25/seat) and Google Antigravity (Free, Google AI Pro $19.99, Ultra $99.99/$199.99, Gemini Enterprise from $30/seat) to the picker, calculator and this guide. Re-checked Cursor: unchanged. (source: https://antigravity.google/pricing)
 - 2026-10-14: OpenAI retired GPT-5.5 from Codex for ChatGPT sign-in. API-key sessions weren't affected. (source: https://developers.openai.com/codex/pricing)
 - 2026-10-19: Re-verified all 26 plans on official pricing pages. Added annual prices: Lovable Pro $21/mo and Business $42/mo billed annually, Bolt Pro $18/mo and Teams $27/member billed annually. (source: https://lovable.dev/pricing)

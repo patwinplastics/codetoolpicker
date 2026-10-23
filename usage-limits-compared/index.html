@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name='impact-site-verification' value='83f48c6a-f7b9-45b3-8866-03f8600f0734'>
+  <title>AI Coding Tool Usage Limits Compared (Oct 2026): Real Cost per Task</title>
+  <meta name="description" content="Claude Code, Codex, Cursor, GitHub Copilot, Gemini CLI and Antigravity usage limits side by side, verified Oct 23, 2026: what each plan includes, when it resets, what happens at the limit, overage prices, and an estimated cost per task." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://codetoolpicker.com/usage-limits-compared/" />
+  <meta property="og:title" content="AI coding tool usage limits and real cost per task compared (Oct 2026)" />
+  <meta property="og:description" content="Five-hour windows, weekly pools, monthly credits and daily quotas: how Claude Code, Codex, Cursor, Copilot, Gemini CLI and Antigravity meter you, what happens at the limit, and what a task really costs at API prices. Verified Oct 23, 2026." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://codetoolpicker.com/usage-limits-compared/" />
+  <meta property="og:site_name" content="CodeToolPicker" />
+  <meta property="og:image" content="https://codetoolpicker.com/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@codetoolpicker" />
+  <meta name="twitter:image" content="https://codetoolpicker.com/og.png" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#0b0f14" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CodeToolPicker", "item": "https://codetoolpicker.com/"}, {"@type": "ListItem", "position": 2, "name": "Comparisons", "item": "https://codetoolpicker.com/#comparisons"}, {"@type": "ListItem", "position": 3, "name": "AI coding tool usage limits compared", "item": "https://codetoolpicker.com/usage-limits-compared/"}]}</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "AI coding tool usage limits and real cost per task compared (Oct 2026)",
+  "datePublished": "2026-10-23",
+  "dateModified": "2026-10-23",
+  "author": {
+    "@type": "Organization",
+    "name": "CodeToolPicker"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CodeToolPicker"
+  },
+  "mainEntityOfPage": "https://codetoolpicker.com/usage-limits-compared/"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which AI coding plan gives the most usage for $20?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nobody publishes a like-for-like number, so there is no honest single winner. OpenAI is the only vendor that publishes ranges for its $20 plan: ChatGPT Plus gets an estimated 15 to 160 GPT-6.1 Sol local messages per five hours in Codex. GitHub publishes a dollar budget instead: Copilot Pro at $10 includes 1,500 AI credits (worth $15 at $0.01 each) per month. Anthropic (Claude Pro $20) and Google (Google AI Pro $19.99 in Antigravity) publish only the reset rhythm, not the size of the allowance. Cursor publishes multipliers (Premium is 4x Plus) but not the size of the Plus pool."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens when I hit my Claude Code limit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Claude Code tells you whether you hit the five-hour session limit, the weekly limit, or a per-model (Opus or Sonnet) limit. You can wait for the reset, upgrade to Max, or turn on usage credits, which are billed at standard API rates. You can see your usage with /usage in Claude Code or under Settings > Usage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do Codex limits stop me mid-task?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "OpenAI says that when you reach a limit the current turn can finish. After that you can wait for the reset, buy ChatGPT credits on Plus and Pro, or switch Codex to an API key and pay API rates. OpenAI says the price of credits can vary by account, region and plan, so it doesn't publish one price. Check your usage with /status."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When do GitHub Copilot AI credits reset?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At 00:00 UTC on the first day of every calendar month, whatever your billing date is. Unused credits don't roll over. If you run out you can upgrade (you pay only the price difference), set a dollar budget for additional usage at $0.01 per credit, or wait for the reset."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does one AI coding task cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the model and the size of the task, and no vendor publishes a per-task price. Our estimate, at published API prices, for a medium task (1.5 million input tokens, 90% of them cached, and 25,000 output tokens) is about $0.69 on Claude Sonnet 5.5, GPT-6.1 Sol or Gemini 4 Argon (before Dec 1, 2026), about $1.37 on Claude Opus 5.5, and about $1.13 on Grok 4.7 in Cursor. Anthropic says the average Claude Code cost is about $13 per developer per active day. These are estimates; your token counts will differ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Copilot Pro include Claude Opus 5.5?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. GitHub's plans page lists Claude Opus 5.5 on Copilot Pro+, Max, Business and Enterprise, not on Copilot Pro. Copilot Pro at $10 includes Claude Sonnet 5.5, Sonnet 5 and Haiku 5.5, among others."
+      }
+    }
+  ]
+}
+  </script>
+  <style>
+    .wrap table td, .wrap table th { vertical-align: top; }
+    .note { font-size: .9em; color: var(--muted); }
+    article h2 { margin-top: 28px; }
+    .est { display:inline-block; font-size:.75em; font-weight:700; letter-spacing:.04em; text-transform:uppercase; padding:2px 8px; border-radius:999px; border:1px solid currentColor; margin-left:6px; vertical-align:middle; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo"><a href="../" style="color:inherit;text-decoration:none">CodeTool<span>Picker</span></a></div>
+      <nav>
+        <a href="../#quiz">Quiz</a>
+        <a href="../#compare">Compare</a>
+        <a href="../#comparisons">Guides</a>
+        <a href="../ai-coding-tool-pricing/">Pricing</a>
+        <a href="../advertise/">Advertise</a>
+      </nav>
+    </header>
+    <p class="crumbs"><a href="../">Home</a> › <a href="../#comparisons">Comparisons</a> › Usage limits compared</p>
+
+    <article>
+    <section class="hero">
+      <h1>AI coding tool usage limits and real cost per task (Oct 2026)</h1>
+      <p>Short answer: the six big AI coding tools meter you in four different ways. <strong>Claude Code</strong>, <strong>OpenAI Codex</strong> (Plus) and <strong>Google Antigravity</strong> (AI Pro) use a rolling <strong>five-hour window</strong> plus a weekly cap. <strong>Cursor</strong> gives you one <strong>weekly pool</strong>. <strong>GitHub Copilot</strong> gives you a <strong>monthly budget of AI credits</strong> worth $0.01 each. <strong>Gemini CLI</strong> on a Code Assist license has a <strong>daily request quota</strong>. Only GitHub publishes the allowance in dollars and only OpenAI publishes message ranges; Anthropic, Google (for Antigravity) and Cursor publish the reset rhythm but not the size. Once you go past the limit, almost everyone bills extra usage at the model's API price, so a medium agent task costs roughly the same $0.70 on Sonnet 5.5, GPT-6.1 Sol or Gemini 4 Argon wherever you run it (our estimate, assumptions below).</p>
+      <p class="updated">Last verified Oct 23, 2026 on each vendor's official pricing pages and docs (sources under every table). Limits change often; confirm with the linked sources before you buy.</p>
+      <div class="cta-row"><a class="btn btn-primary" href="#limits">Jump to the limits table</a> <a class="btn" href="#cost">Estimated cost per task</a> <a class="btn" href="#tips">Stretch your limits</a></div>
+    </section>
+
+    <section class="panel" id="limits" style="overflow-x:auto">
+      <h2>Plans, published limits and what happens at the limit</h2>
+      <p class="sub">"Not published" means the vendor doesn't give a number. We don't guess one.</p>
+      <table>
+        <thead><tr><th>Tool and plan</th><th>Price</th><th>Published limit</th><th>Resets</th><th>At the limit</th><th>Overage price</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Claude Code</strong>: Pro</td><td>$20/mo ($17/mo billed annually)</td><td>Not published as a number. At least 5x Claude Free per session. Shared across Claude chat (web, desktop, mobile) and Claude Code</td><td>Rolling five-hour session, plus weekly limits</td><td>Claude Code says which limit you hit (session, weekly, or Opus/Sonnet model limit). Wait, upgrade, or turn on usage credits</td><td>Usage credits at standard API rates (Sonnet 5.5 $2 in / $10 out, Opus 5.5 $4 / $20 per million tokens)</td></tr>
+          <tr><td><strong>Claude Code</strong>: Max</td><td>From $100/mo</td><td>5x or 20x Pro usage per session. Anthropic doesn't list a separate Max 20x price on its pricing page</td><td>Five-hour session plus weekly</td><td>Same as Pro</td><td>Usage credits at API rates</td></tr>
+          <tr><td><strong>Claude Code</strong>: Team</td><td>Standard $25/seat ($20 annual), Premium $125 ($100 annual)</td><td>Standard seats get more than Pro; Premium seats 5x Standard. Up to $500/mo pooled API credits</td><td>Five-hour session plus weekly</td><td>Same as Pro</td><td>Usage credits at API rates</td></tr>
+          <tr><td><strong>OpenAI Codex</strong>: Free and Go</td><td>$0 and $8/mo</td><td>Not published as a number. GPT-6 Luna in the desktop app (rolling out)</td><td>Not published</td><td>Wait for the reset, upgrade, or use an API key</td><td>API key at API rates</td></tr>
+          <tr><td><strong>OpenAI Codex</strong>: Plus</td><td>$20/mo</td><td>Estimated local messages per five hours: GPT-6.1 Sol 15 to 160, GPT-6 Luna 350 to 3,000, GPT-6 Astra 5 to 45. Weekly limits may also apply</td><td>Five-hour window, plus weekly</td><td>The current turn can finish. Then wait, buy ChatGPT credits, or switch to an API key</td><td>ChatGPT credits: OpenAI says the price "can vary by account, region, and plan" and doesn't publish one. API key: GPT-6.1 Sol $2 in / $10 out per million tokens</td></tr>
+          <tr><td><strong>OpenAI Codex</strong>: Pro</td><td>$100, $200 or $500/mo</td><td>Higher limits; OpenAI says Pro currently has no five-hour limit</td><td>Weekly</td><td>Same as Plus</td><td>Same as Plus</td></tr>
+          <tr><td><strong>OpenAI Codex</strong>: Business</td><td>$25/user monthly, $20 annual (2+ users). Premium seat $125 ($100 annual)</td><td>Standard seat: same ranges as Plus. Premium seat: 5x more usage, no five-hour limit</td><td>Five-hour plus weekly (Standard)</td><td>Wait for the reset, or use an API key</td><td>API key at API rates</td></tr>
+          <tr><td><strong>Cursor</strong>: Plus</td><td>$8/mo ($80/yr)</td><td>One pool for Cursor models (Grok 4.7, 4.6, 4.5, Composer 2.5) shared with Grok. Pool size not published</td><td>Weekly</td><td>Wait for the weekly reset, add prepaid credit, or upgrade. Cursor says requests are never downgraded</td><td>Cursor model rates: Grok 4.7 $2 in / $0.50 cached / $6 out; Composer 2.5 $0.50 / $0.20 / $2.50. No third-party models on Plus</td></tr>
+          <tr><td><strong>Cursor</strong>: Premium, Super, Ultra</td><td>$30, $100, $200/mo ($300, $1,000, $2,000/yr)</td><td>4x, 15x and 50x the Plus pool</td><td>Weekly</td><td>Same as Plus</td><td>Third-party models (Claude, GPT, Gemini) are never in the pool: billed at API list price from prepaid credit</td></tr>
+          <tr><td><strong>Cursor</strong>: Teams</td><td>$30, $100 or $200 per seat</td><td>Matches the seat's tier</td><td>Weekly</td><td>Prepaid credit, admin caps</td><td>API list price plus a $0.25 per million token Cursor Token Rate on eligible models</td></tr>
+          <tr><td><strong>GitHub Copilot</strong>: Free</td><td>$0</td><td>An allowance of AI credits (amount not published), auto model selection only, 2,000 code completions a month</td><td>Monthly</td><td>Upgrade or wait</td><td>None on Free</td></tr>
+          <tr><td><strong>GitHub Copilot</strong>: Pro</td><td>$10/mo</td><td>1,500 AI credits a month (1,000 base + 500 "flex"). Unlimited completions. Claude Sonnet 5.5 yes, Opus 5.5 no</td><td>00:00 UTC on the 1st of each month. No rollover</td><td>Upgrade (you pay only the price difference), set a dollar budget for extra usage, or wait</td><td>$0.01 per AI credit at each model's per-token rate</td></tr>
+          <tr><td><strong>GitHub Copilot</strong>: Pro+ and Max</td><td>$39 and $100/mo</td><td>7,000 (3,900 + 3,100 flex) and 20,000 (10,000 + 10,000 flex) AI credits. Adds Opus 5.5, Fable 5.1, GPT-6.1 Sol, Gemini 4 Argon</td><td>Monthly, 1st at 00:00 UTC</td><td>Same as Pro</td><td>$0.01 per credit</td></tr>
+          <tr><td><strong>GitHub Copilot</strong>: Business, Enterprise</td><td>$19 and $39 per user</td><td>1,900 and 3,900 credits per user, pooled across the organization</td><td>Monthly</td><td>Request more budget from your admin</td><td>$0.01 per credit</td></tr>
+          <tr><td><strong>Gemini CLI</strong>: API key</td><td>Pay per token</td><td>Google's quota page still lists a free key tier (250 requests a day, Flash only), but its transition notes only promise paid keys</td><td>Daily (free tier)</td><td>Rate limits only on paid keys</td><td>Gemini 4 Argon $2 in / $10 out per million tokens through Nov 30, 2026, then $4 / $20. Gemini 3.8 Flash $0.75 / $3.75 through Dec 31, 2026</td></tr>
+          <tr><td><strong>Gemini CLI</strong>: Code Assist Standard, Enterprise</td><td>About $22.80 and $54 per user/mo ($19 and $45 on 12 months)</td><td>1,500 and 2,000 model requests per user per day</td><td>Daily</td><td>Not documented. Use an API key for more</td><td>Not published for license quotas</td></tr>
+          <tr><td><strong>Google Antigravity</strong>: Free</td><td>$0</td><td>"Meaningful quota," not published as a number. Unlimited Tab and Command requests</td><td>Weekly</td><td>Wait for the weekly refresh</td><td>None</td></tr>
+          <tr><td><strong>Google Antigravity</strong>: Google AI Pro</td><td>$19.99/mo</td><td>Not published. Separate pools for Gemini models and for Claude/GPT models, each with a five-hour and a weekly limit</td><td>Every five hours, up to a weekly limit</td><td>If AI Credit Overages is set to Always, Google AI credits are used; if Never, you wait</td><td>Google AI credits, consumed at standard Gemini Enterprise and API pricing</td></tr>
+          <tr><td><strong>Google Antigravity</strong>: Google AI Ultra</td><td>$99.99 (5x Pro) or $199.99 (20x Pro)</td><td>Highest quota, not published as a number</td><td>Every five hours</td><td>Same as Pro</td><td>Google AI credits</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Sources, all checked Oct 23, 2026: <a href="https://claude.com/pricing" rel="noopener">claude.com/pricing</a> · <a href="https://code.claude.com/docs/en/costs" rel="noopener">Claude Code costs and limits</a> · <a href="https://platform.claude.com/docs/en/about-claude/pricing" rel="noopener">Claude API pricing</a> · <a href="https://developers.openai.com/codex/pricing" rel="noopener">Codex pricing</a> · <a href="https://developers.openai.com/api/docs/pricing" rel="noopener">OpenAI API pricing</a> · <a href="https://cursor.com/docs/models-and-pricing" rel="noopener">Cursor models and pricing</a> · <a href="https://docs.github.com/en/copilot/get-started/plans" rel="noopener">GitHub Copilot plans</a> · <a href="https://docs.github.com/en/copilot/concepts/billing/usage-based-billing-for-individuals" rel="noopener">Copilot usage-based billing</a> · <a href="https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing" rel="noopener">Copilot model pricing</a> · <a href="https://geminicli.com/docs/resources/quota-and-pricing/" rel="noopener">Gemini CLI quotas</a> · <a href="https://ai.google.dev/gemini-api/docs/pricing" rel="noopener">Gemini API pricing</a> · <a href="https://cloud.google.com/products/gemini/pricing" rel="noopener">Gemini Code Assist pricing</a> · <a href="https://antigravity.google/docs/plans" rel="noopener">Antigravity plans</a> · <a href="https://antigravity.google/docs/models" rel="noopener">Antigravity models</a>. Google lists Code Assist as an hourly fee; we converted at 8,760 hours a year divided by 12. US prices, before tax.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Which reset rhythm fits how you work</h2>
+      <ul>
+        <li><strong>You code in bursts every day:</strong> five-hour windows (Claude Pro, Codex Plus, Antigravity on Google AI Pro) suit you. Hit the wall, take a break, come back. The weekly cap is what stops all-day, every-day use.</li>
+        <li><strong>You have a few heavy days a week:</strong> Cursor's weekly pool lets you burn most of it on Tuesday. One heavy day can't take your whole month, but it can take your week.</li>
+        <li><strong>You want a dollar number:</strong> GitHub Copilot is the only one that tells you exactly what you get ($15 of usage on Pro, $70 on Pro+, $200 on Max). The catch: it resets once a month, so a big first week can leave you dry until the 1st. And a third of Pro's credits are "flex," which GitHub says can change "as the economics of AI evolve."</li>
+        <li><strong>You're on a company license:</strong> Code Assist's 1,500 or 2,000 requests a day is the most predictable quota here, but it counts requests, not tokens, and Google hasn't said what happens when you run out.</li>
+      </ul>
+    </section>
+
+    <section class="panel" id="cost" style="overflow-x:auto">
+      <h2>Estimated cost per task <span class="est">Estimate</span></h2>
+      <p><strong>This section is our estimate, not a vendor number.</strong> No vendor publishes a per-task price. We took three task sizes, assumed token counts, and priced them at each model's published API rate. That's also what you pay once you go past a plan's limit on Claude (usage credits), Codex (API key), Cursor (third-party models), Copilot (AI credits at provider list price) and Antigravity (Google AI credits).</p>
+      <table>
+        <thead><tr><th>Task size (assumption)</th><th>Example</th><th>Input tokens, all turns</th><th>Share cached</th><th>Output tokens</th></tr></thead>
+        <tbody>
+          <tr><td>Small</td><td>Fix one bug in one file</td><td>200,000</td><td>90%</td><td>4,000</td></tr>
+          <tr><td>Medium</td><td>Add a feature across 3 to 5 files, with tests</td><td>1,500,000</td><td>90%</td><td>25,000</td></tr>
+          <tr><td>Large</td><td>Multi-file refactor or a long agent session</td><td>6,000,000</td><td>90%</td><td>100,000</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Why input is so large: an agent resends the conversation, files and tool output on every turn, so input dominates and most of it is a cache hit. Formula: (uncached input x input price) + (cached input x cache-read price) + (output x output price). We left out cache-write charges (Anthropic charges extra to write the cache), long-context surcharges and fast modes, so real costs can be higher.</p>
+      <table>
+        <thead><tr><th>Model (where you'd use it)</th><th>Published API price per 1M tokens (in / cached / out)</th><th>Small</th><th>Medium</th><th>Large</th></tr></thead>
+        <tbody>
+          <tr><td>Claude Sonnet 5.5 (Claude Code, Copilot, Cursor Premium+)</td><td>$2 / $0.10 / $10</td><td>$0.10</td><td>$0.69</td><td>$2.74</td></tr>
+          <tr><td>Claude Opus 5.5 (Claude Code, Copilot Pro+, Cursor Premium+, Antigravity)</td><td>$4 / $0.20 / $20</td><td>$0.20</td><td>$1.37</td><td>$5.48</td></tr>
+          <tr><td>GPT-6.1 Sol (Codex, Copilot Pro+)</td><td>$2 / $0.10 / $10</td><td>$0.10</td><td>$0.69</td><td>$2.74</td></tr>
+          <tr><td>GPT-6 Luna (Codex, Copilot)</td><td>$0.10 / $0.01 / $0.50</td><td>under $0.01</td><td>$0.04</td><td>$0.16</td></tr>
+          <tr><td>Gemini 4 Argon, through Nov 30, 2026 (Antigravity, Gemini API)</td><td>$2 / $0.10 / $10</td><td>$0.10</td><td>$0.69</td><td>$2.74</td></tr>
+          <tr><td>Gemini 4 Argon, from Dec 1, 2026</td><td>$4 / $0.20 / $20</td><td>$0.20</td><td>$1.37</td><td>$5.48</td></tr>
+          <tr><td>Gemini 3.8 Flash, through Dec 31, 2026 (Gemini CLI, Copilot)</td><td>$0.75 / $0.075 / $3.75</td><td>$0.04</td><td>$0.31</td><td>$1.23</td></tr>
+          <tr><td>Grok 4.7 (Cursor pool)</td><td>$2 / $0.50 / $6</td><td>$0.15</td><td>$1.13</td><td>$4.50</td></tr>
+          <tr><td>Composer 2.5 (Cursor pool)</td><td>$0.50 / $0.20 / $2.50</td><td>$0.06</td><td>$0.41</td><td>$1.63</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Prices from <a href="https://platform.claude.com/docs/en/about-claude/pricing" rel="noopener">Claude API pricing</a>, <a href="https://developers.openai.com/api/docs/pricing" rel="noopener">OpenAI API pricing</a>, <a href="https://ai.google.dev/gemini-api/docs/pricing" rel="noopener">Gemini API pricing</a> and <a href="https://cursor.com/docs/models-and-pricing" rel="noopener">Cursor models and pricing</a>, checked Oct 23, 2026. GitHub's <a href="https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing" rel="noopener">Copilot model pricing</a> lists the same per-token rates for these Claude, GPT and Gemini models. Opus and Sonnet 5.5 cache reads are 5% of the input price; Grok 4.7's are 25%.</p>
+      <h3>What that means for each plan <span class="est">Estimate</span></h3>
+      <ul>
+        <li><strong>Copilot Pro ($10, 1,500 credits):</strong> about 22 medium tasks a month on Claude Sonnet 5.5 (68.5 credits each). Opus 5.5 isn't on Pro.</li>
+        <li><strong>Copilot Pro+ ($39, 7,000 credits):</strong> about 51 medium Opus 5.5 tasks, or about 100 on Sonnet 5.5. Max ($100, 20,000 credits): about 146 on Opus.</li>
+        <li><strong>Claude Code:</strong> Anthropic says the average enterprise cost is about $13 per developer per active day and 90% of users stay under $30. On our assumptions, $13 is about 19 medium Sonnet tasks or 9 on Opus. Past your Pro or Max limit, usage credits bill at these API rates.</li>
+        <li><strong>Codex:</strong> OpenAI says "a typical GPT-5.6 Sol task may use 2-15 credits," but it doesn't publish one price for credits, so we can't turn that into dollars. On an API key, GPT-6.1 Sol costs the same as Sonnet 5.5 on our assumptions.</li>
+        <li><strong>Cursor:</strong> Grok 4.7 has a cheaper output price than Sonnet 5.5, but its cache reads cost 5x as much ($0.50 vs $0.10), so in long, cache-heavy agent loops it comes out about 60% more expensive per task. It's inside your weekly pool, so you feel it as hitting the pool sooner, not as a bill.</li>
+        <li><strong>Antigravity:</strong> Gemini 4 Argon is the same price as Sonnet 5.5 until Nov 30, then doubles to Opus 5.5 pricing on Dec 1. If you pay for Google AI credit overages, expect the same per-task cost to double.</li>
+      </ul>
+      <p><strong>The honest takeaway:</strong> past the limit, the same model costs about the same everywhere. What you're really comparing is how big the included allowance is and how often it refills, and only GitHub and OpenAI put numbers on that.</p>
+    </section>
+
+    <section class="panel" id="tips">
+      <h2>How to stretch your limits</h2>
+      <h3>Everywhere</h3>
+      <ul>
+        <li><strong>Start a fresh session for each task.</strong> Every turn resends the whole conversation, so a long, unrelated history is the biggest hidden cost.</li>
+        <li><strong>Use the cheaper model for easy work.</strong> Opus 5.5 costs 2x Sonnet 5.5 per task on our estimate; Gemini 3.8 Flash and GPT-6 Luna cost a fraction.</li>
+        <li><strong>Keep instruction files short.</strong> CLAUDE.md, AGENTS.md and GEMINI.md load into every request.</li>
+        <li><strong>Turn off MCP servers you aren't using.</strong> Their tool definitions take up context on every turn.</li>
+        <li><strong>Be specific.</strong> "Fix the null check in auth.ts line 40" reads far fewer files than "fix the login bug."</li>
+      </ul>
+      <h3>Claude Code</h3>
+      <ul>
+        <li>Use <code>/clear</code> between tasks and <code>/compact</code> in long ones. Check usage with <code>/usage</code>.</li>
+        <li>Default to Sonnet; switch to Opus only for hard problems. Lower <code>/effort</code> for routine work.</li>
+        <li>Keep CLAUDE.md under 200 lines and move rarely needed instructions into skills, per Anthropic's docs.</li>
+        <li>Use plan mode before big changes, and subagents or hooks to keep noisy output out of the main context. Agent teams use about 7x the tokens of a single session, Anthropic says.</li>
+      </ul>
+      <h3>OpenAI Codex</h3>
+      <ul>
+        <li>Check what's left with <code>/status</code>. Keep AGENTS.md small and point Codex at specific files.</li>
+        <li>Fast mode uses 2.5x your included usage and Ultrafast 8x, per OpenAI. Leave them off unless you need the speed.</li>
+        <li>GPT-6 Luna's published range (350 to 3,000 messages per five hours on Plus) is about 20x GPT-6.1 Sol's, so use Luna for simple edits.</li>
+      </ul>
+      <h3>Cursor</h3>
+      <ul>
+        <li>Composer 2.5 costs about a third of Grok 4.7 per task on our estimate, so it stretches the weekly pool furthest.</li>
+        <li>Set a monthly cap on prepaid credit before you use Claude or GPT models on Premium and up.</li>
+      </ul>
+      <h3>GitHub Copilot</h3>
+      <ul>
+        <li>Use auto model selection: GitHub gives a 10% discount on it (30% on Max through Oct 28, 2026).</li>
+        <li>Completions and next edit suggestions are unlimited on paid plans and don't use credits, so lean on them for small edits.</li>
+        <li>Set a dollar budget so going over is a choice, and remember the reset is the 1st at 00:00 UTC, not your billing date.</li>
+      </ul>
+      <h3>Gemini CLI and Antigravity</h3>
+      <ul>
+        <li>In Gemini CLI, <code>/stats model</code> shows what you've used.</li>
+        <li>In Antigravity, Gemini and Claude/GPT models draw from separate pools. When one runs dry, switch families instead of waiting.</li>
+        <li>Leave AI Credit Overages on Never unless you want to pay per token.</li>
+      </ul>
+      <p class="note">Tips from <a href="https://code.claude.com/docs/en/costs" rel="noopener">Claude Code costs docs</a>, <a href="https://developers.openai.com/codex/pricing" rel="noopener">Codex pricing</a>, <a href="https://cursor.com/docs/models-and-pricing" rel="noopener">Cursor docs</a>, <a href="https://docs.github.com/en/copilot/concepts/billing/usage-based-billing-for-individuals" rel="noopener">Copilot billing docs</a>, <a href="https://geminicli.com/docs/resources/quota-and-pricing/" rel="noopener">Gemini CLI quotas</a> and <a href="https://antigravity.google/docs/models" rel="noopener">Antigravity models</a>, checked Oct 23, 2026.</p>
+    </section>
+    <!-- PRERENDER:try -->
+    <section class="panel try" id="try">
+      <h2>Ready to try one?</h2>
+      <p class="sub">Every tool here can be cancelled monthly, so the fastest way to decide is a real task on each.</p>
+      <div class="try-grid">
+        <div class="try-item">
+          <h3>Claude Code</h3>
+          <p class="meta"><strong>Start on:</strong> Pro $20. Start here. Includes Claude Code with usage limits; $17/mo if you pay $200 for the year.</p>
+          <div class="cta-row">
+            <a href="https://claude.com/product/claude-code" rel="noopener" class="btn btn-primary" data-link="claude-code">Get Claude Code &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-claude-code">All Claude Code plans</a>
+          </div>
+        </div>
+        <div class="try-item">
+          <h3>OpenAI Codex</h3>
+          <p class="meta"><strong>Start on:</strong> Plus $20. Most developers: Codex in the CLI, IDE extension, web and iOS, plus cloud tasks and automatic code review.</p>
+          <div class="cta-row">
+            <a href="https://developers.openai.com/codex" rel="noopener" class="btn btn-primary" data-link="codex">Try OpenAI Codex free &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-codex">All OpenAI Codex plans</a>
+          </div>
+        </div>
+        <div class="try-item">
+          <h3>GitHub Copilot</h3>
+          <p class="meta"><strong>Start on:</strong> Pro $10. The best value for most individuals: 1,500 AI credits and a choice of models including Claude and GPT. Verified teachers and popular open-source maintainers may get it free.</p>
+          <div class="cta-row">
+            <a href="https://github.com/features/copilot" rel="noopener" class="btn btn-primary" data-link="copilot">Try GitHub Copilot free &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-copilot">All GitHub Copilot plans</a>
+          </div>
+        </div></div>
+      
+    </section>
+    <!-- /PRERENDER:try -->
+
+    <section class="panel" id="faq">
+      <h2>FAQ</h2>
+      <h3>Which AI coding plan gives the most usage for $20?</h3>
+      <p>Nobody publishes a like-for-like number, so there is no honest single winner. OpenAI is the only vendor that publishes ranges for its $20 plan: ChatGPT Plus gets an estimated 15 to 160 GPT-6.1 Sol local messages per five hours in Codex. GitHub publishes a dollar budget instead: Copilot Pro at $10 includes 1,500 AI credits (worth $15 at $0.01 each) per month. Anthropic (Claude Pro $20) and Google (Google AI Pro $19.99 in Antigravity) publish only the reset rhythm, not the size of the allowance. Cursor publishes multipliers (Premium is 4x Plus) but not the size of the Plus pool.</p>
+      <h3>What happens when I hit my Claude Code limit?</h3>
+      <p>Claude Code tells you whether you hit the five-hour session limit, the weekly limit, or a per-model (Opus or Sonnet) limit. You can wait for the reset, upgrade to Max, or turn on usage credits, which are billed at standard API rates. You can see your usage with /usage in Claude Code or under Settings &gt; Usage.</p>
+      <h3>Do Codex limits stop me mid-task?</h3>
+      <p>OpenAI says that when you reach a limit the current turn can finish. After that you can wait for the reset, buy ChatGPT credits on Plus and Pro, or switch Codex to an API key and pay API rates. OpenAI says the price of credits can vary by account, region and plan, so it doesn&#x27;t publish one price. Check your usage with /status.</p>
+      <h3>When do GitHub Copilot AI credits reset?</h3>
+      <p>At 00:00 UTC on the first day of every calendar month, whatever your billing date is. Unused credits don&#x27;t roll over. If you run out you can upgrade (you pay only the price difference), set a dollar budget for additional usage at $0.01 per credit, or wait for the reset.</p>
+      <h3>How much does one AI coding task cost?</h3>
+      <p>It depends on the model and the size of the task, and no vendor publishes a per-task price. Our estimate, at published API prices, for a medium task (1.5 million input tokens, 90% of them cached, and 25,000 output tokens) is about $0.69 on Claude Sonnet 5.5, GPT-6.1 Sol or Gemini 4 Argon (before Dec 1, 2026), about $1.37 on Claude Opus 5.5, and about $1.13 on Grok 4.7 in Cursor. Anthropic says the average Claude Code cost is about $13 per developer per active day. These are estimates; your token counts will differ.</p>
+      <h3>Does Copilot Pro include Claude Opus 5.5?</h3>
+      <p>No. GitHub&#x27;s plans page lists Claude Opus 5.5 on Copilot Pro+, Max, Business and Enterprise, not on Copilot Pro. Copilot Pro at $10 includes Claude Sonnet 5.5, Sonnet 5 and Haiku 5.5, among others.</p>
+    </section>
+    <!-- PRERENDER:stack -->
+    <section class="panel stack" id="ship">
+      <h2>Ship your app: the rest of the stack</h2>
+      <p class="sub">Picked your AI coding tool? These are the usual next costs. Free tiers first, and prices checked Oct 20, 2026 on each vendor's pricing page.</p>
+      <div class="stack-grid">
+        <div class="stack-group">
+          <h3>Code review</h3>
+          <p class="meta">AI writes code fast; something should read it before it ships.</p>
+          <ul class="stack-list"><li><a href="https://www.coderabbit.ai" rel="noopener" data-link="coderabbit"><strong>CodeRabbit</strong></a><span>AI review on every pull request, in GitHub or GitLab</span><small>Free for public repos; Essentials $24/user/mo billed annually ($30 monthly)</small></li></ul>
+          <p class="meta tiny">Already paying for Copilot or Codex Plus? Both include AI pull request review, so try that first.</p>
+        </div>
+        <div class="stack-group">
+          <h3>Hosting</h3>
+          <p class="meta">Where your app lives once it works on your machine.</p>
+          <ul class="stack-list"><li><a href="https://vercel.com" rel="noopener" data-link="vercel"><strong>Vercel</strong></a><span>Next.js and front-end apps</span><small>Hobby free (personal, non-commercial); Pro $20/mo per developer seat</small></li><li><a href="https://www.netlify.com" rel="noopener" data-link="netlify"><strong>Netlify</strong></a><span>Static sites and front ends, unlimited Pro members</span><small>Free; Personal $9/mo; Pro $20/mo with unlimited members</small></li><li><a href="https://railway.com" rel="noopener" data-link="railway"><strong>Railway</strong></a><span>Back ends, workers and databases with no server setup</span><small>Free trial $5 credit; Hobby $5/mo incl. $5 usage; Pro $20/mo</small></li><li><a href="https://render.com" rel="noopener" data-link="render"><strong>Render</strong></a><span>Heroku-style web services, cron jobs and Postgres</span><small>Hobby $0 + compute; Pro $25/mo + compute</small></li></ul>
+          
+        </div>
+        <div class="stack-group">
+          <h3>Database and auth</h3>
+          <p class="meta">Most AI-built apps need a Postgres database and logins.</p>
+          <ul class="stack-list"><li><a href="https://supabase.com" rel="noopener" data-link="supabase"><strong>Supabase</strong></a><span>Postgres + auth + storage in one; Lovable and Bolt connect to it</span><small>Free (2 projects, pause after 1 week idle); Pro from $25/mo</small></li><li><a href="https://neon.com" rel="noopener" data-link="neon"><strong>Neon</strong></a><span>Serverless Postgres with branching, pay for what you use</span><small>Free (100 projects); paid plans usage-based</small></li></ul>
+          
+        </div>
+        <div class="stack-group">
+          <h3>Domain name</h3>
+          <p class="meta">A real domain for your app.</p>
+          <ul class="stack-list"><li><a href="https://www.cloudflare.com/products/registrar/" rel="noopener" data-link="cloudflare"><strong>Cloudflare Registrar</strong></a><span>Domains at cost with no markup</span><small>Wholesale price per TLD</small></li><li><a href="https://porkbun.com" rel="noopener" data-link="porkbun"><strong>Porkbun</strong></a><span>Cheap domains with free WHOIS privacy</span><small>Varies by TLD</small></li><li><a href="https://www.namecheap.com" rel="noopener" data-link="namecheap"><strong>Namecheap</strong></a><span>Popular registrar with hosting and email add-ons</span><small>Varies by TLD</small></li></ul>
+          
+        </div></div>
+      <p class="meta tiny">None of these links pay us today. If that changes, they'll be labeled "referral".</p>
+    </section>
+    <!-- /PRERENDER:stack -->
+
+    <section class="panel" id="related">
+      <h2>Related guides</h2>
+      <ul class="related">
+        <li><a href="../ai-coding-tool-pricing/">AI coding tool pricing<small>All 40 plans + cost calculator</small></a></li>
+        <li><a href="../claude-code-vs-codex/">Claude Code vs OpenAI Codex<small>Same prices, different limits and uptime</small></a></li>
+        <li><a href="../copilot-vs-claude-code/">GitHub Copilot vs Claude Code<small>$10 credits vs $20 flat</small></a></li>
+        <li><a href="../gemini-cli-vs-claude-code/">Gemini CLI vs Claude Code<small>Gemini CLI is API-key only for individuals now</small></a></li>
+        <li><a href="../cursor-vs-antigravity/">Cursor vs Google Antigravity<small>$19.99 Gemini + Claude vs $30 + API</small></a></li>
+        <li><a href="../claude-code-vs-cursor/">Claude Code vs Cursor<small>Terminal agent vs AI IDE</small></a></li>
+      </ul>
+    </section>
+
+    <aside class="sponsor" id="sponsor" aria-label="Sponsor slot">
+      <strong>Sponsor slot</strong> <span class="meta">(Sponsored placements are labeled and never affect rankings or verdicts)</span><br />
+      Reach developers comparing what Claude Code, Codex, Cursor, Copilot and Antigravity really cost to use.
+      <div style="margin-top:10px" class="meta">Founding sponsor rates available now. Email <a href="mailto:sponsors@codetoolpicker.com?subject=CodeToolPicker%20sponsorship">sponsors@codetoolpicker.com</a> &middot; <a href="../advertise/">See packages</a></div>
+    </aside>
+
+    <section class="panel" id="disclosure">
+      <h2>Editorial disclosure</h2>
+      <p><strong>Rankings are not for sale.</strong> Sponsored placements and affiliate links are always labeled, and they never change our recommendations, quiz results, prices, or comparison data. None of the links on this page are affiliate links: no vendor here pays us, and pricing source links are never affiliate links. <a href="../advertise/#policy">Editorial policy</a>.</p>
+    </section>
+    </article>
+
+    <footer>
+      <p><a href="../">← Back to the AI Coding Tool Picker</a> · <a href="../ai-coding-tool-pricing/">Pricing &amp; plans calculator</a></p>
+      <p>More comparisons: <a href="../lovable-vs-bolt/">Lovable vs Bolt</a> · <a href="../cursor-vs-windsurf/">Cursor vs Windsurf (Devin Desktop)</a> · <a href="../claude-code-vs-cursor/">Claude Code vs Cursor</a> · <a href="../claude-code-vs-codex/">Claude Code vs Codex</a> · <a href="../copilot-vs-claude-code/">Copilot vs Claude Code</a> · <a href="../gemini-cli-vs-claude-code/">Gemini CLI vs Claude Code</a> · <a href="../cursor-vs-antigravity/">Cursor vs Antigravity</a> · <a href="./">Usage limits compared</a> · <a href="../cursor-vs-copilot/">Cursor vs Copilot</a> · <a href="../switch-from-copilot-to-cursor/">Switch Copilot → Cursor</a> · <a href="../cursor-bundle-alternatives/">Cursor bundle alternatives</a></p>
+      <p>Not affiliated with Anthropic, OpenAI, Cursor, GitHub, Microsoft or Google.</p>
+      <p>Contact, sponsorships, and corrections: <a href="mailto:sponsors@codetoolpicker.com">sponsors@codetoolpicker.com</a> · <a href="../advertise/">Advertise with us</a></p>
+    </footer>
+  </div>
+
+</body>
+</html>

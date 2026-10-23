@@ -24,6 +24,7 @@ module.exports = function funnels(root) {
     "copilot-vs-claude-code/index.html": { base: "../", tools: ["copilot", "claude-code"], stack: DEV },
     "cursor-vs-antigravity/index.html": { base: "../", tools: ["cursor", "antigravity"], stack: DEV },
     "gemini-cli-vs-claude-code/index.html": { base: "../", tools: ["claude-code", "gemini-cli", "antigravity"], stack: DEV },
+    "usage-limits-compared/index.html": { base: "../", tools: ["claude-code", "codex", "copilot"], stack: DEV },
     "cursor-vs-copilot/index.html": { base: "../", tools: ["cursor", "copilot"], stack: DEV },
     "cursor-bundle-alternatives/index.html": { base: "../", tools: ["cursor", "claude-code", "copilot"], stack: DEV },
     "switch-from-copilot-to-cursor/index.html": { base: "../", tools: ["cursor"], stack: DEV },
