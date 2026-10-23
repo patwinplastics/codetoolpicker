@@ -90,5 +90,28 @@ module.exports = function funnels(root) {
     }
     fs.writeFileSync(file, html);
   }
+  // Analytics: GoatCounter (no cookies) on every HTML page, including pages not in PAGES
+  // (new pages get it automatically on the next build). Idempotent.
+  const GC = '<script data-goatcounter="https://codetoolpicker.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>';
+  const GC_NOTE = '<p class="meta" id="analytics-note">We use GoatCounter, a privacy-friendly counter with no cookies, to count visits.</p>';
+  const htmlFiles = [];
+  const walk = (dir) => {
+    for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+      if (e.name.startsWith(".") || e.name === "node_modules" || e.name === "scripts") continue;
+      const f = path.join(dir, e.name);
+      if (e.isDirectory()) walk(f);
+      else if (e.name.endsWith(".html")) htmlFiles.push(f);
+    }
+  };
+  walk(root);
+  for (const file of htmlFiles) {
+    let html = fs.readFileSync(file, "utf8");
+    const before = html;
+    html = html.split("\n").filter((l) => !l.includes("gc.zgo.at/count.js")).join("\n");
+    if (!/<\/body>/.test(html)) continue;
+    html = html.replace(/\n?<\/body>/, `\n  ${GC}\n</body>`);
+    if (!html.includes('id="analytics-note"')) html = html.replace(/(\n\s*)<\/footer>/, `$1  ${GC_NOTE}$1</footer>`);
+    if (html !== before) fs.writeFileSync(file, html);
+  }
   return Object.keys(PAGES).length;
 };
