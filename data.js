@@ -543,8 +543,8 @@ window.STACK = [
 // Advertise page checkout links. Paste a Stripe Payment Link (https://buy.stripe.com/...) to show a
 // "Pay by card" button for that package, then run `node scripts/prerender.js`. Empty = email only.
 window.CHECKOUT = {
-  "founding-full": "",     // Founding sponsor, all placements, $300/mo
-  "founding-guides": "",   // Founding sponsor, guide + pricing pages, $150/mo
-  featured: "",            // Featured listing, $99/mo
+  "founding-full": "https://buy.stripe.com/4gM7sE1nc0gU7v25v2dEs00",     // Founding sponsor, all placements, $300/mo
+  "founding-guides": "https://buy.stripe.com/8x2eV64zoaVy8z61eMdEs01",   // Founding sponsor, guide + pricing pages, $150/mo
+  featured: "https://buy.stripe.com/aFa00c4zo8Nq16EcXudEs03",            // Featured listing, $99/mo
   newsletter: ""           // Newsletter sponsorship, $49/issue (once the list launches)
 };
