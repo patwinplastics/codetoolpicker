@@ -1,5 +1,5 @@
 # CodeToolPicker: full text
-Independent AI coding tool comparison. Source: https://codetoolpicker.com/ . Data checked 2026-10-23 on official vendor pricing pages; confirm prices on vendor sites.
+Independent AI coding tool comparison. Source: https://codetoolpicker.com/ . Data checked 2026-10-26 on official vendor pricing pages; confirm prices on vendor sites.
 
 Editorial policy: rankings are not for sale. Sponsors and affiliate links are labeled and never change recommendations, quiz logic, or comparison data.
 Contact (sponsorships, corrections): sponsors@codetoolpicker.com
@@ -16,6 +16,7 @@ See also: https://codetoolpicker.com/claude-code-vs-codex/ (Claude Code vs OpenA
 See also: https://codetoolpicker.com/cursor-vs-antigravity/ (Cursor vs Google Antigravity, with what switching actually costs)
 See also: https://codetoolpicker.com/gemini-cli-vs-claude-code/ (Gemini CLI vs Claude Code: Gemini CLI is now API-key and Code Assist only for individuals; Claude Pro $20; Antigravity CLI and Codex three-way note)
 See also: https://codetoolpicker.com/usage-limits-compared/ (usage limits compared: five-hour windows, weekly pools, monthly credits and daily quotas across Claude Code, Codex, Cursor, Copilot, Gemini CLI and Antigravity; what happens at the limit; estimated cost per task at API prices)
+See also: https://codetoolpicker.com/codex-vs-cursor/ (OpenAI Codex vs Cursor: GPT-6.1 Sol in ChatGPT Plus $20 vs Cursor Plus $8 Grok-only; Cursor lists no GPT-6 models; the Codex extension runs inside Cursor; teams of 5; estimated cost per task by route)
 See also: https://codetoolpicker.com/advertise/ (sponsor packages and the editorial policy)
 
 Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, plans, and pricing); windsurf.com redirects to devin.ai.
@@ -203,7 +204,7 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - price Go: monthly $8/mo; annual Not listed; Lightweight Codex in the desktop app (GPT-6 Luna)
 - price Plus: monthly $20/mo; annual Not listed; All surfaces, cloud tasks, automatic code review, Slack
 - price Pro $100: monthly $100/mo; annual Not listed; No five-hour Codex limit right now (weekly limits apply); full GPT-6 Astra allowance
-- price Pro $200: monthly $200/mo; annual Not listed; More usage than Pro $100 (OpenAI doesn't publish the multiple)
+- price Pro $200: monthly $200/mo; annual Not listed; More usage than Pro $100 (OpenAI doesn't publish the multiple); new subscriptions get a lower allowance than before (Oct 2026)
 - price Pro $500: monthly $500/mo; annual Not listed; Adds Ultrafast mode
 - price Business (standard seat): monthly $25/seat/mo; annual $240/seat/yr (≈$20/seat/mo); $20/user/mo billed annually; 2+ users
 - which plan: Free: Try Codex on quick tasks in the desktop app. Availability is subject to rollout.
@@ -284,6 +285,7 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - Namecheap (https://www.namecheap.com): Popular registrar with hosting and email add-ons. Varies by TLD
 
 ## Pricing change log
+- 2026-10-26: Re-checked Cursor and OpenAI Codex. Cursor plans unchanged (Plus $8 Grok-only, Premium $30, Super $100, Ultra $200; Teams $30/$100/$200 per seat). Cursor's model list has no GPT-6 models: its newest OpenAI model is GPT-5.6 Sol at $4/$20 per million tokens (promo through Nov 21, 2026), vs GPT-6.1 Sol at $2/$10 on OpenAI's API. Codex plans unchanged (Free, Go $8, Plus $20, Pro $100/$200/$500, Business $25 or $20 annual). New Pro $200 subscriptions get a lower allowance than before (earlier subscribers keep the old one through Oct 29). Correction: Codex-only seats in ChatGPT Business are a legacy seat type, only for workspaces that added them before June 24, 2026. Published OpenAI Codex vs Cursor: https://codetoolpicker.com/codex-vs-cursor/ (source: https://help.openai.com/en/articles/8792828-chatgpt-business-overview)
 - 2026-10-23: Correction: GitHub Copilot Pro ($10) includes Claude Sonnet 5.5, Sonnet 5 and Haiku 5.5 but not Claude Opus 5.5, Fable 5.1, GPT-6.1 Sol or Gemini 4 Argon. Those start at Pro+ ($39). Our Oct 21 note said Opus 5.5 was on Pro; it isn't. Also published usage limits compared: https://codetoolpicker.com/usage-limits-compared/ (source: https://docs.github.com/en/copilot/get-started/plans)
 - 2026-10-22: Re-checked Cursor: plans unchanged (Free, Plus $8 Grok-only, Premium $30, Super $100, Ultra $200; $80/$300/$1,000/$2,000 a year; Teams $30/$100/$200 per seat). Confirmed Claude and other third-party models aren't on Free or Plus and are billed at API list price from prepaid credit on Premium and up. New to our data: on Teams and Enterprise, most third-party models add a Cursor Token Rate of $0.25 per million tokens. (source: https://cursor.com/docs/models-and-pricing)
 - 2026-10-22: Added Gemini CLI. Google stopped serving Gemini CLI for free, Google AI Pro and Ultra sign-ins on June 18, 2026 (moved to Antigravity CLI). It still works with paid Gemini API keys and Gemini Code Assist Standard (about $22.80/user/mo, $19 on a 12-month commitment) or Enterprise (about $54, $45 on 12 months). Claude Team now lists up to $500/month in pooled API credits. (source: https://developers.google.com/gemini-code-assist/docs/deprecations/code-assist-individuals)

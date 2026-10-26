@@ -31,7 +31,7 @@
   "@type": "Article",
   "headline": "Claude Code vs OpenAI Codex (Oct 2026): same prices, different limits",
   "datePublished": "2026-10-20",
-  "dateModified": "2026-10-20",
+  "dateModified": "2026-10-26",
   "author": {"@type": "Organization", "name": "CodeToolPicker"},
   "publisher": {"@type": "Organization", "name": "CodeToolPicker"},
   "mainEntityOfPage": "https://codetoolpicker.com/claude-code-vs-codex/"
@@ -55,7 +55,7 @@
     {"@type": "Question", "name": "Which is more reliable, Claude Code or Codex?",
      "acceptedAnswer": {"@type": "Answer", "text": "Based on each company's own status page from Sep 21 to Oct 20, 2026, Claude Code had 4 incidents totaling 4.3 hours, all labeled major, while Codex had 7 incidents totaling 49.4 hours, mostly degraded performance, including one 25-hour Work Mode incident in the ChatGPT desktop app and one 55-minute full outage. Incident hours aren't the same as downtime, and results swing a lot with the time window you pick."}},
     {"@type": "Question", "name": "Which is better for teams?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Seat prices are identical: $20/seat billed annually or $25 monthly for standard seats, and $100 or $125 for premium seats with 5x usage. Claude Team covers 2 to 150 people; ChatGPT Business covers 2 to 200 and also offers Codex-only seats with no fixed monthly fee that bill against workspace credits, which suits teams where only a few people code heavily. Pick by which models your team prefers."}}
+     "acceptedAnswer": {"@type": "Answer", "text": "Seat prices are identical: $20/seat billed annually or $25 monthly for standard seats, and $100 or $125 for premium seats with 5x usage. Claude Team covers 2 to 150 people; ChatGPT Business covers 2 to 200. Its old Codex-only seats with no fixed fee are now a legacy option, only for workspaces that added them before June 24, 2026; new teams choose Standard or Premium seats and can buy workspace credits for extra usage. Pick by which models your team prefers."}}
   ]
 }
   </script>
@@ -100,7 +100,7 @@
           <tr><td>Limits on the $20 plan</td><td>Rolling five-hour window plus weekly limits, shared with Claude chat</td><td>Rolling five-hour window plus weekly limits, shared with ChatGPT Work. OpenAI estimates 15 to 160 local GPT-6.1 Sol messages per five hours on Plus</td></tr>
           <tr><td>When you run out</td><td>Wait, upgrade to Max, or turn on usage credits at API rates</td><td>Wait, upgrade to Pro, or buy ChatGPT credits; you can also run local chats on an API key</td></tr>
           <tr><td>API-key mode</td><td>Pay-as-you-go through an Anthropic Console account</td><td>CLI, SDK and IDE extension at API prices; no cloud features (GitHub review, Slack)</td></tr>
-          <tr><td>Teams</td><td>Team: Standard $20/seat annual ($25 monthly), Premium $100 ($125 monthly) with 5x usage, 2 to 150 people. Enterprise $20/seat + API usage</td><td>Business: Standard $20/seat annual ($25 monthly), Premium $100 ($125 monthly) with 5x usage and no five-hour limit, 2 to 200 people. Plus Codex-only seats with no fixed fee, billed on workspace credits</td></tr>
+          <tr><td>Teams</td><td>Team: Standard $20/seat annual ($25 monthly), Premium $100 ($125 monthly) with 5x usage, 2 to 150 people. Enterprise $20/seat + API usage</td><td>Business: Standard $20/seat annual ($25 monthly), Premium $100 ($125 monthly) with 5x usage and no five-hour limit, 2 to 200 people. Codex-only seats are legacy (workspaces created before June 24, 2026)</td></tr>
           <tr><td>Project instructions</td><td>CLAUDE.md, or an existing AGENTS.md</td><td>AGENTS.md (nested files supported)</td></tr>
         </tbody>
       </table>
@@ -117,7 +117,7 @@
           <tr><td>4 standard + 1 premium (annual)</td><td>$180/mo</td><td>$180/mo</td></tr>
         </tbody>
       </table>
-      <p class="note">Same money either way. The real cost difference shows up in overage: Claude bills extra usage at API rates, and ChatGPT Business bills it as workspace credits. ChatGPT Business can also add Codex-only seats with no fixed fee for occasional coders.</p>
+      <p class="note">Same money either way. The real cost difference shows up in overage: Claude bills extra usage at API rates, and ChatGPT Business bills it as workspace credits. Codex-only seats with no fixed fee are now legacy (only workspaces that added them before June 24, 2026 keep them), so new teams pay per Standard or Premium seat.</p>
     </section>
 
 
@@ -188,7 +188,7 @@
         <li>You want to try a coding agent for free or $8 before paying $20.</li>
         <li>You hit five-hour limits a lot and are ready for $100+: Pro removes that cap.</li>
         <li>You want automatic PR reviews, cloud tasks from your phone, and Slack hand-offs included in your plan.</li>
-        <li>Your team has a few heavy coders and many light ones: Codex-only seats have no fixed fee.</li>
+        <li>Your team has one or two heavy coders: ChatGPT Business lets you mix Premium seats (no five-hour limit) with Standard seats.</li>
       </ul>
       <p><strong>Honest caveat:</strong> "$20" doesn't buy the same amount of work on both. Neither vendor publishes a fixed message count, and usage depends on model, context size and task. Both plans can be cancelled monthly, so the best test is one real week of your own work on each. Since both read <code>AGENTS.md</code>, switching costs you almost nothing. Weighing Gemini too? Gemini CLI no longer works with Google AI plans for individuals; see <a href="../gemini-cli-vs-claude-code/">Gemini CLI vs Claude Code</a>. Comparing an AI IDE instead? See <a href="../claude-code-vs-cursor/">Claude Code vs Cursor</a>, or let the <a href="../#quiz">quiz</a> decide.</p>
     </section>
@@ -232,7 +232,7 @@
       <h3>Which is more reliable, Claude Code or Codex?</h3>
       <p>Based on each company's own status page from Sep 21 to Oct 20, 2026, Claude Code had 4 incidents totaling 4.3 hours, all labeled major, while Codex had 7 incidents totaling 49.4 hours, mostly degraded performance, including one 25-hour Work Mode incident in the ChatGPT desktop app and one 55-minute full outage. Incident hours aren't the same as downtime, and results swing a lot with the time window you pick. See the <a href="#reliability">incident table</a>.</p>
       <h3>Which is better for teams?</h3>
-      <p>Seat prices are identical: $20/seat billed annually or $25 monthly for standard seats, and $100 or $125 for premium seats with 5x usage. Claude Team covers 2 to 150 people; ChatGPT Business covers 2 to 200 and also offers Codex-only seats with no fixed monthly fee that bill against workspace credits, which suits teams where only a few people code heavily. Pick by which models your team prefers.</p>
+      <p>Seat prices are identical: $20/seat billed annually or $25 monthly for standard seats, and $100 or $125 for premium seats with 5x usage. Claude Team covers 2 to 150 people; ChatGPT Business covers 2 to 200. Its old Codex-only seats with no fixed fee are now a legacy option, only for workspaces that added them before June 24, 2026; new teams choose Standard or Premium seats and can buy workspace credits for extra usage. Pick by which models your team prefers.</p>
     </section>
     <!-- PRERENDER:stack -->
     <section class="panel stack" id="ship">
@@ -270,7 +270,8 @@
     <section class="panel" id="related">
       <h2>Related guides</h2>
       <ul class="related">
-        <li><a href="../usage-limits-compared/">Usage limits compared<small>New: limits, resets and cost per task</small></a></li>
+        <li><a href="../codex-vs-cursor/">OpenAI Codex vs Cursor<small>New: GPT-6.1 Sol isn't in Cursor</small></a></li>
+        <li><a href="../usage-limits-compared/">Usage limits compared<small>Limits, resets and cost per task</small></a></li>
         <li><a href="../gemini-cli-vs-claude-code/">Gemini CLI vs Claude Code<small>Gemini CLI dropped Google AI plans</small></a></li>
         <li><a href="../copilot-vs-claude-code/">GitHub Copilot vs Claude Code<small>$10 credits vs $20 flat</small></a></li>
         <li><a href="../cursor-vs-antigravity/">Cursor vs Google Antigravity<small>$19.99 Gemini + Claude vs $30 + API</small></a></li>
@@ -295,7 +296,7 @@
 
     <footer>
       <p><a href="../">← Back to the AI Coding Tool Picker</a> · <a href="../ai-coding-tool-pricing/">Pricing &amp; plans calculator</a></p>
-      <p>More comparisons: <a href="../lovable-vs-bolt/">Lovable vs Bolt</a> · <a href="../cursor-vs-windsurf/">Cursor vs Windsurf (Devin Desktop)</a> · <a href="../claude-code-vs-cursor/">Claude Code vs Cursor</a> · <a href="./">Claude Code vs Codex</a> · <a href="../copilot-vs-claude-code/">Copilot vs Claude Code</a> · <a href="../gemini-cli-vs-claude-code/">Gemini CLI vs Claude Code</a> · <a href="../cursor-vs-antigravity/">Cursor vs Antigravity</a> · <a href="../usage-limits-compared/">Usage limits compared</a> · <a href="../cursor-vs-copilot/">Cursor vs Copilot</a> · <a href="../switch-from-copilot-to-cursor/">Switch Copilot → Cursor</a> · <a href="../cursor-bundle-alternatives/">Cursor bundle alternatives</a></p>
+      <p>More comparisons: <a href="../lovable-vs-bolt/">Lovable vs Bolt</a> · <a href="../cursor-vs-windsurf/">Cursor vs Windsurf (Devin Desktop)</a> · <a href="../claude-code-vs-cursor/">Claude Code vs Cursor</a> · <a href="./">Claude Code vs Codex</a> · <a href="../codex-vs-cursor/">Codex vs Cursor</a> · <a href="../copilot-vs-claude-code/">Copilot vs Claude Code</a> · <a href="../gemini-cli-vs-claude-code/">Gemini CLI vs Claude Code</a> · <a href="../cursor-vs-antigravity/">Cursor vs Antigravity</a> · <a href="../usage-limits-compared/">Usage limits compared</a> · <a href="../cursor-vs-copilot/">Cursor vs Copilot</a> · <a href="../switch-from-copilot-to-cursor/">Switch Copilot → Cursor</a> · <a href="../cursor-bundle-alternatives/">Cursor bundle alternatives</a></p>
       <p>Not affiliated with Anthropic or OpenAI.</p>
       <p>Contact, sponsorships, and corrections: <a href="mailto:sponsors@codetoolpicker.com">sponsors@codetoolpicker.com</a> · <a href="../advertise/">Advertise with us</a></p>
       <p class="meta" id="analytics-note">We use GoatCounter, a privacy-friendly counter with no cookies, to count visits.</p>

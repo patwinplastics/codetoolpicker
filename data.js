@@ -383,7 +383,7 @@ window.PRICING = {
       { name: "Go", monthly: 8, annual: null, note: "Lightweight Codex in the desktop app (GPT-6 Luna)" },
       { name: "Plus", monthly: 20, annual: null, note: "All surfaces, cloud tasks, automatic code review, Slack" },
       { name: "Pro $100", monthly: 100, annual: null, note: "No five-hour Codex limit right now (weekly limits apply); full GPT-6 Astra allowance" },
-      { name: "Pro $200", monthly: 200, annual: null, note: "More usage than Pro $100 (OpenAI doesn't publish the multiple)" },
+      { name: "Pro $200", monthly: 200, annual: null, note: "More usage than Pro $100 (OpenAI doesn't publish the multiple); new subscriptions get a lower allowance than before (Oct 2026)" },
       { name: "Pro $500", monthly: 500, annual: null, note: "Adds Ultrafast mode" },
       { name: "Business (standard seat)", monthly: 25, annual: 240, seat: true, note: "$20/user/mo billed annually; 2+ users" }
     ],
@@ -447,11 +447,13 @@ window.COMPARE_PAGES = {
   "claude-code|copilot": { url: "copilot-vs-claude-code/", label: "GitHub Copilot vs Claude Code" },
   "claude-code|codex": { url: "claude-code-vs-codex/", label: "Claude Code vs OpenAI Codex" },
   "antigravity|cursor": { url: "cursor-vs-antigravity/", label: "Cursor vs Google Antigravity" },
-  "claude-code|gemini-cli": { url: "gemini-cli-vs-claude-code/", label: "Gemini CLI vs Claude Code" }
+  "claude-code|gemini-cli": { url: "gemini-cli-vs-claude-code/", label: "Gemini CLI vs Claude Code" },
+  "codex|cursor": { url: "codex-vs-cursor/", label: "OpenAI Codex vs Cursor" }
 };
 
 // Dated pricing changes we track. Only sourced events.
 window.PRICE_LOG = [
+  { date: "2026-10-26", text: "Re-checked Cursor and OpenAI Codex. Cursor plans unchanged (Plus $8 Grok-only, Premium $30, Super $100, Ultra $200; Teams $30/$100/$200 per seat). Cursor's model list has no GPT-6 models: its newest OpenAI model is GPT-5.6 Sol at $4/$20 per million tokens (promo through Nov 21, 2026), vs GPT-6.1 Sol at $2/$10 on OpenAI's API. Codex plans unchanged (Free, Go $8, Plus $20, Pro $100/$200/$500, Business $25 or $20 annual). New Pro $200 subscriptions get a lower allowance than before (earlier subscribers keep the old one through Oct 29). Correction: Codex-only seats in ChatGPT Business are a legacy seat type, only for workspaces that added them before June 24, 2026. Published OpenAI Codex vs Cursor: https://codetoolpicker.com/codex-vs-cursor/", src: "https://help.openai.com/en/articles/8792828-chatgpt-business-overview" },
   { date: "2026-10-23", text: "Correction: GitHub Copilot Pro ($10) includes Claude Sonnet 5.5, Sonnet 5 and Haiku 5.5 but not Claude Opus 5.5, Fable 5.1, GPT-6.1 Sol or Gemini 4 Argon. Those start at Pro+ ($39). Our Oct 21 note said Opus 5.5 was on Pro; it isn't. Also published usage limits compared: https://codetoolpicker.com/usage-limits-compared/", src: "https://docs.github.com/en/copilot/get-started/plans" },
   { date: "2026-10-22", text: "Re-checked Cursor: plans unchanged (Free, Plus $8 Grok-only, Premium $30, Super $100, Ultra $200; $80/$300/$1,000/$2,000 a year; Teams $30/$100/$200 per seat). Confirmed Claude and other third-party models aren't on Free or Plus and are billed at API list price from prepaid credit on Premium and up. New to our data: on Teams and Enterprise, most third-party models add a Cursor Token Rate of $0.25 per million tokens.", src: "https://cursor.com/docs/models-and-pricing" },
   { date: "2026-10-22", text: "Added Gemini CLI. Google stopped serving Gemini CLI for free, Google AI Pro and Ultra sign-ins on June 18, 2026 (moved to Antigravity CLI). It still works with paid Gemini API keys and Gemini Code Assist Standard (about $22.80/user/mo, $19 on a 12-month commitment) or Enterprise (about $54, $45 on 12 months). Claude Team now lists up to $500/month in pooled API credits.", src: "https://developers.google.com/gemini-code-assist/docs/deprecations/code-assist-individuals" },
