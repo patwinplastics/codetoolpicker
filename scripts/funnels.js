@@ -22,6 +22,7 @@ module.exports = function funnels(root) {
     "claude-code-vs-cursor/index.html": { base: "../", tools: ["claude-code", "cursor"], stack: DEV },
     "claude-code-vs-codex/index.html": { base: "../", tools: ["claude-code", "codex"], stack: DEV },
     "codex-vs-cursor/index.html": { base: "../", tools: ["codex", "cursor"], stack: DEV },
+    "free-ai-coding-tools/index.html": { base: "../", tools: ["copilot", "antigravity", "codex", "windsurf", "bolt", "lovable"], stack: DEV },
     "copilot-vs-claude-code/index.html": { base: "../", tools: ["copilot", "claude-code"], stack: DEV },
     "cursor-vs-antigravity/index.html": { base: "../", tools: ["cursor", "antigravity"], stack: DEV },
     "gemini-cli-vs-claude-code/index.html": { base: "../", tools: ["claude-code", "gemini-cli", "antigravity"], stack: DEV },
