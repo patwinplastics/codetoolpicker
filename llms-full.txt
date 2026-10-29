@@ -1,5 +1,5 @@
 # CodeToolPicker: full text
-Independent AI coding tool comparison. Source: https://codetoolpicker.com/ . Data checked 2026-10-28 on official vendor pricing pages; confirm prices on vendor sites.
+Independent AI coding tool comparison. Source: https://codetoolpicker.com/ . Data checked 2026-10-29 on official vendor pricing pages; confirm prices on vendor sites.
 
 Editorial policy: rankings are not for sale. Sponsors and affiliate links are labeled and never change recommendations, quiz logic, or comparison data.
 Contact (sponsorships, corrections): sponsors@codetoolpicker.com
@@ -19,6 +19,7 @@ See also: https://codetoolpicker.com/usage-limits-compared/ (usage limits compar
 See also: https://codetoolpicker.com/codex-vs-cursor/ (OpenAI Codex vs Cursor: GPT-6.1 Sol in ChatGPT Plus $20 vs Cursor Plus $8 Grok-only; Cursor lists no GPT-6 models; the Codex extension runs inside Cursor; teams of 5; estimated cost per task by route)
 See also: https://codetoolpicker.com/free-ai-coding-tools/ (free AI coding tools: every free plan checked Oct 27, 2026, the catch on each, who trains on free-tier code, cheapest upgrades, and Antigravity Free losing Claude Sonnet/Opus 4.6 on Nov 2, 2026)
 See also: https://codetoolpicker.com/claude-code-alternatives/ (Claude Code alternatives checked Oct 28, 2026: which tools still give you Claude Opus 5.5 and Sonnet 5.5 and at what price, Copilot Pro $10 with Sonnet 5.5, Google AI Pro $19.99 and Kiro Pro $20 with Opus 5.5, Codex Plus $20 without Claude, open-source BYOK agents, tools that reuse your Claude plan limits, and teams of 5)
+See also: https://codetoolpicker.com/ai-coding-cost-per-task/ (what one AI coding task really costs, checked Oct 29, 2026: Artificial Analysis Coding Agent Index costs per hard task at API prices, Claude Code with Opus 5.5 $11.42, Sonnet 5.5 $13.30, Antigravity CLI with Gemini 4 Argon $11.73, Codex with GPT-6 Astra $7.04 and GPT-6.1 Sol $1.50; why everyday tasks cost $0.10 to $1.40; how to cut cost per task)
 See also: https://codetoolpicker.com/advertise/ (sponsor packages and the editorial policy)
 
 Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, plans, and pricing); windsurf.com redirects to devin.ai.
@@ -229,7 +230,7 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - website: https://antigravity.google
 - pricing source: https://antigravity.google/pricing
 - plan Free: $0/mo: Basic weekly limit, unlimited Tab and Command requests, Gemini 3.8 Flash
-- plan Google AI Pro: $19.99/mo: Quota refreshes every 5 hours up to a weekly limit; Gemini 4 Argon, Claude Opus/Sonnet 5.5 (paid, not trial)
+- plan Google AI Pro: $19.99/mo: Quota refreshes every 5 hours up to a weekly limit; Gemini 4 Argon on its own weekly-only quota; Claude Opus/Sonnet 5.5 (paid, not trial)
 - plan Google AI Ultra 5x: $99.99/mo: 5x the Pro quota
 - plan Google AI Ultra 20x: $199.99/mo: 20x the Pro quota, highest weekly limits
 - plan Gemini Enterprise: $30/mo: Teams via Google Cloud: Standard/Plus from $30/seat, or pay-as-you-go with $0 seat fee
@@ -240,7 +241,7 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - price Google AI Ultra 20x: monthly $199.99/mo; annual Not listed; 20x the Pro quota, highest weekly limits
 - price Gemini Enterprise (Standard/Plus): monthly $30/seat/mo; annual Not listed; From $30/seat via Google Cloud; a pay-as-you-go option has a $0 seat fee
 - which plan: Free: Try the agent with Gemini 3.8 Flash on a weekly quota. Claude Sonnet/Opus 4.6 and GPT-OSS 120B are on Free until Google removes them on Nov 2, 2026.
-- which plan: Google AI Pro $19.99: Most individuals: quota refreshes every five hours up to a weekly limit, with Gemini 4 Argon and Claude Opus/Sonnet 5.5. Gemini 4 Argon and the Claude 5.5 models need a paid plan, not the free trial.
+- which plan: Google AI Pro $19.99: Most individuals: quota refreshes every five hours up to a weekly limit, with Claude Opus/Sonnet 5.5. Gemini 4 Argon has its own weekly-only quota on Pro (no five-hour refresh). Claude 5.5 needs a paid plan, not the free trial; Argon works on paid Pro or a trial from an eligible premium device.
 - which plan: Google AI Ultra $99.99: Daily drivers: 5x the Pro quota and priority access.
 - which plan: Google AI Ultra $199.99: All-day agent use: 20x the Pro quota and the highest weekly limits.
 - which plan: Gemini Enterprise from $30/seat: Organizations on Google Cloud. Covers the Antigravity App, CLI and IDE extensions, not the standalone Antigravity IDE.
@@ -287,6 +288,7 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - Namecheap (https://www.namecheap.com): Popular registrar with hosting and email add-ons. Varies by TLD
 
 ## Pricing change log
+- 2026-10-29: Checked cost per task. Artificial Analysis Coding Agent Index v2.0: Claude Code with Opus 5.5 $11.42 a task at API prices, Sonnet 5.5 $13.30, Antigravity CLI with Gemini 4 Argon $11.73, Codex with GPT-6.1 Sol $1.50. Antigravity: Google AI Pro now has Gemini 4 Argon on a separate weekly-only quota (Google forum moderator, Oct 15). Kiro's pricing page still says Claude Sonnet 5 and Opus 5 while its models page lists Opus 5.5 and Sonnet 5.5 on all paid plans; we follow the models page. New: https://codetoolpicker.com/ai-coding-cost-per-task/ (source: https://artificialanalysis.ai/agents/coding-agents)
 - 2026-10-28: Checked every Claude Code alternative. Claude plans unchanged (Pro $20 or $17 annual, Max from $100, Team $25/$20 standard and $125/$100 premium seats). Kiro's models page lists Claude Opus 5.5 (2.0x credits) and Sonnet 5.5 (1.3x) on all paid plans; Kiro Free has Sonnet 4.5. Copilot Business and Enterprise include Claude Opus 5.5; Copilot Pro does not. OpenCode Go ($10) includes Claude Haiku 5.5 only. Zed Pro bills hosted models at API price plus 10%; Augment adds a 40% service fee; Warp Build is $20 ($18 annual) with $20 of usage at API rates. Full list: https://codetoolpicker.com/claude-code-alternatives/ (source: https://kiro.dev/docs/models/)
 - 2026-10-27: Checked every free plan. Google Antigravity's models page says Claude Sonnet 4.6, Claude Opus 4.6 and GPT-OSS-120b will be removed on Nov 2, 2026, leaving Gemini 3.8 Flash on Free and Google AI Plus; Claude Sonnet/Opus 5.5 stay on paid (non-trial) Google AI Pro. Copilot Free: 2,000 completions a month, auto model only. Codex Free: GPT-6 Luna in the desktop app, subject to rollout. Kiro Free: 50 credits with Claude Sonnet 4.5, rate limited. Full list: https://codetoolpicker.com/free-ai-coding-tools/ (source: https://antigravity.google/docs/models/)
 - 2026-10-26: Re-checked Cursor and OpenAI Codex. Cursor plans unchanged (Plus $8 Grok-only, Premium $30, Super $100, Ultra $200; Teams $30/$100/$200 per seat). Cursor's model list has no GPT-6 models: its newest OpenAI model is GPT-5.6 Sol at $4/$20 per million tokens (promo through Nov 21, 2026), vs GPT-6.1 Sol at $2/$10 on OpenAI's API. Codex plans unchanged (Free, Go $8, Plus $20, Pro $100/$200/$500, Business $25 or $20 annual). New Pro $200 subscriptions get a lower allowance than before (earlier subscribers keep the old one through Oct 29). Correction: Codex-only seats in ChatGPT Business are a legacy seat type, only for workspaces that added them before June 24, 2026. Published OpenAI Codex vs Cursor: https://codetoolpicker.com/codex-vs-cursor/ (source: https://help.openai.com/en/articles/8792828-chatgpt-business-overview)
