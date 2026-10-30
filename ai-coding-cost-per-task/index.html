@@ -31,7 +31,7 @@
   "@type": "Article",
   "headline": "What One AI Coding Task Really Costs (Oct 2026): Claude Code, Codex, Antigravity",
   "datePublished": "2026-10-29",
-  "dateModified": "2026-10-29",
+  "dateModified": "2026-10-30",
   "author": {"@type": "Organization", "name": "CodeToolPicker"},
   "publisher": {"@type": "Organization", "name": "CodeToolPicker"},
   "mainEntityOfPage": "https://codetoolpicker.com/ai-coding-cost-per-task/"
@@ -192,9 +192,10 @@
         <li><strong>On hard tasks, try the bigger model.</strong> Opus 5.5 finished in fewer tokens than Sonnet 5.5 and cost less per task.</li>
         <li><strong>Start fresh for each task.</strong> Every turn resends the conversation, so long sessions with old history pile up input tokens.</li>
         <li><strong>Watch long prompts on small models.</strong> Haiku 5.5's price jumps 5x past 100K tokens, and GPT-6 input doubles past 272K.</li>
+        <li><strong>Watch Claude Code background agents.</strong> While a background agent is running, Claude Code resends its full transcript about every 30 seconds to write a short status line (agent_summary). Users measured 16% to 26% of their spend going to it; Anthropic says it's about 2% of cost on average, and about 6% in the terminal. Anthropic shipped a cache fix in 2.1.311 and is working on a cheaper mode, but there's no supported off switch yet. Fewer background agents running at once is the practical fix.</li>
         <li><strong>Use a plan for heavy days.</strong> If you regularly run hour-long agent sessions, a subscription allowance is usually cheaper than paying API rates per task.</li>
       </ul>
-      <p class="note">Terra figures from <a href="https://artificialanalysis.ai/agents/coding-agents/comparisons/claude-code-vs-codex" rel="noopener">Artificial Analysis: Claude Code vs Codex</a>, checked Oct 29, 2026.</p>
+      <p class="note">Terra figures from <a href="https://artificialanalysis.ai/agents/coding-agents/comparisons/claude-code-vs-codex" rel="noopener">Artificial Analysis: Claude Code vs Codex</a>, checked Oct 29, 2026. Background agent figures from <a href="https://github.com/anthropics/claude-code/issues/86879" rel="noopener">GitHub issue #86879</a> and the <a href="https://news.ycombinator.com/item?id=50284255" rel="noopener">Hacker News thread</a> with Anthropic's reply, checked Oct 30, 2026.</p>
     </section>
     <!-- PRERENDER:try -->
     <section class="panel try" id="try">
@@ -266,7 +267,7 @@
         <div class="stack-group">
           <h3>Hosting</h3>
           <p class="meta">Where your app lives once it works on your machine.</p>
-          <ul class="stack-list"><li><a href="https://vercel.com" rel="noopener" data-link="vercel"><strong>Vercel</strong></a><span>Next.js and front-end apps</span><small>Hobby free (personal, non-commercial); Pro $20/mo per developer seat</small></li><li><a href="https://join.netlify.com/sfop8nkiwjbv" rel="sponsored nofollow noopener" data-link="netlify"><strong>Netlify</strong></a><span>Static sites and front ends, unlimited Pro members</span><small>Free; Personal $9/mo; Pro $20/mo with unlimited members</small></li><li><a href="https://railway.com" rel="noopener" data-link="railway"><strong>Railway</strong></a><span>Back ends, workers and databases with no server setup</span><small>Free trial $5 credit; Hobby $5/mo incl. $5 usage; Pro $20/mo</small></li><li><a href="https://render.com" rel="noopener" data-link="render"><strong>Render</strong></a><span>Heroku-style web services, cron jobs and Postgres</span><small>Hobby $0 + compute; Pro $25/mo + compute</small></li></ul>
+          <ul class="stack-list"><li><a href="https://vercel.com" rel="noopener" data-link="vercel"><strong>Vercel</strong></a><span>Next.js and front-end apps</span><small>Hobby free (personal, non-commercial); Pro $20/mo per developer seat</small></li><li><a href="https://join.netlify.com/sfop8nkiwjbv" rel="sponsored nofollow noopener" data-link="netlify"><strong>Netlify</strong> <span class="tag ref">referral</span></a><span>Static sites and front ends, unlimited Pro members</span><small>Free; Personal $9/mo; Pro $20/mo with unlimited members</small></li><li><a href="https://railway.com" rel="noopener" data-link="railway"><strong>Railway</strong></a><span>Back ends, workers and databases with no server setup</span><small>Free trial $5 credit; Hobby $5/mo incl. $5 usage; Pro $20/mo</small></li><li><a href="https://render.com" rel="noopener" data-link="render"><strong>Render</strong></a><span>Heroku-style web services, cron jobs and Postgres</span><small>Hobby $0 + compute; Pro $25/mo + compute</small></li></ul>
           
         </div>
         <div class="stack-group">
@@ -281,13 +282,14 @@
           <ul class="stack-list"><li><a href="https://www.cloudflare.com/products/registrar/" rel="noopener" data-link="cloudflare"><strong>Cloudflare Registrar</strong></a><span>Domains at cost with no markup</span><small>Wholesale price per TLD</small></li><li><a href="https://porkbun.com" rel="noopener" data-link="porkbun"><strong>Porkbun</strong></a><span>Cheap domains with free WHOIS privacy</span><small>Varies by TLD</small></li><li><a href="https://www.namecheap.com" rel="noopener" data-link="namecheap"><strong>Namecheap</strong></a><span>Popular registrar with hosting and email add-ons</span><small>Varies by TLD</small></li></ul>
           
         </div></div>
-      <p class="meta tiny">None of these links pay us today. If that changes, they'll be labeled "referral".</p>
+      <p class="meta tiny aff-note">Referral link: we may earn a commission at no extra cost to you. It never changes our picks.</p>
     </section>
     <!-- /PRERENDER:stack -->
 
     <section class="panel" id="related">
       <h2>Related guides</h2>
       <ul class="related">
+        <li><a href="../chatgpt-pro-codex-limits/">ChatGPT Pro Codex limits<small>New: the Pro 200 cut is canceled</small></a></li>
         <li><a href="../usage-limits-compared/">Usage limits compared<small>Limits, resets and our per-task estimate</small></a></li>
         <li><a href="../claude-code-alternatives/">Claude Code alternatives<small>Who still gives you Claude</small></a></li>
         <li><a href="../claude-code-vs-codex/">Claude Code vs OpenAI Codex<small>Limits, models and outages</small></a></li>
@@ -306,13 +308,13 @@
 
     <section class="panel" id="disclosure">
       <h2>Editorial disclosure</h2>
-      <p><strong>Rankings are not for sale.</strong> Sponsored placements and affiliate links are always labeled, and they never change our recommendations, quiz results, prices, or comparison data. None of the links on this page are affiliate links: no vendor here pays us, and pricing source links are never affiliate links. <a href="../advertise/#policy">Editorial policy</a>.</p>
+      <p><strong>Rankings are not for sale.</strong> Sponsored placements and affiliate links are always labeled, and they never change our recommendations, quiz results, prices, or comparison data. <strong>Links marked "referral" are affiliate links (Netlify):</strong> if you buy through them, we may earn a commission at no extra cost to you. Every other link is a plain link that pays us nothing, and pricing source links are never affiliate links. <a href="../advertise/#policy">Editorial policy</a>.</p>
     </section>
     </article>
 
     <footer>
       <p><a href="../">← Back to the AI Coding Tool Picker</a> · <a href="../ai-coding-tool-pricing/">Pricing &amp; plans calculator</a></p>
-      <p>More comparisons: <a href="./">Cost per task</a> · <a href="../claude-code-alternatives/">Claude Code alternatives</a> · <a href="../free-ai-coding-tools/">Free AI coding tools</a> · <a href="../lovable-vs-bolt/">Lovable vs Bolt</a> · <a href="../cursor-vs-windsurf/">Cursor vs Windsurf (Devin Desktop)</a> · <a href="../claude-code-vs-cursor/">Claude Code vs Cursor</a> · <a href="../claude-code-vs-codex/">Claude Code vs Codex</a> · <a href="../codex-vs-cursor/">Codex vs Cursor</a> · <a href="../copilot-vs-claude-code/">Copilot vs Claude Code</a> · <a href="../gemini-cli-vs-claude-code/">Gemini CLI vs Claude Code</a> · <a href="../cursor-vs-antigravity/">Cursor vs Antigravity</a> · <a href="../usage-limits-compared/">Usage limits compared</a> · <a href="../cursor-vs-copilot/">Cursor vs Copilot</a> · <a href="../switch-from-copilot-to-cursor/">Switch Copilot → Cursor</a> · <a href="../cursor-bundle-alternatives/">Cursor bundle alternatives</a></p>
+      <p>More comparisons: <a href="../chatgpt-pro-codex-limits/">ChatGPT Pro Codex limits</a> · <a href="./">Cost per task</a> · <a href="../claude-code-alternatives/">Claude Code alternatives</a> · <a href="../free-ai-coding-tools/">Free AI coding tools</a> · <a href="../lovable-vs-bolt/">Lovable vs Bolt</a> · <a href="../cursor-vs-windsurf/">Cursor vs Windsurf (Devin Desktop)</a> · <a href="../claude-code-vs-cursor/">Claude Code vs Cursor</a> · <a href="../claude-code-vs-codex/">Claude Code vs Codex</a> · <a href="../codex-vs-cursor/">Codex vs Cursor</a> · <a href="../copilot-vs-claude-code/">Copilot vs Claude Code</a> · <a href="../gemini-cli-vs-claude-code/">Gemini CLI vs Claude Code</a> · <a href="../cursor-vs-antigravity/">Cursor vs Antigravity</a> · <a href="../usage-limits-compared/">Usage limits compared</a> · <a href="../cursor-vs-copilot/">Cursor vs Copilot</a> · <a href="../switch-from-copilot-to-cursor/">Switch Copilot → Cursor</a> · <a href="../cursor-bundle-alternatives/">Cursor bundle alternatives</a></p>
       <p>Not affiliated with Artificial Analysis, Anthropic, GitHub, Google, OpenAI, DeepSeek, Cline, Kilo, OpenCode, Warp, Amp or Cognition.</p>
       <p>Contact, sponsorships, and corrections: <a href="mailto:sponsors@codetoolpicker.com">sponsors@codetoolpicker.com</a> · <a href="../advertise/">Advertise with us</a></p>
       <p class="meta" id="analytics-note">We use GoatCounter, a privacy-friendly counter with no cookies, to count visits.</p>

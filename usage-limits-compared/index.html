@@ -31,7 +31,7 @@
   "@type": "Article",
   "headline": "AI coding tool usage limits and real cost per task compared (Oct 2026)",
   "datePublished": "2026-10-23",
-  "dateModified": "2026-10-29",
+  "dateModified": "2026-10-30",
   "author": {
     "@type": "Organization",
     "name": "CodeToolPicker"
@@ -124,7 +124,7 @@
     <section class="hero">
       <h1>AI coding tool usage limits and real cost per task (Oct 2026)</h1>
       <p>Short answer: the six big AI coding tools meter you in four different ways. <strong>Claude Code</strong>, <strong>OpenAI Codex</strong> (Plus) and <strong>Google Antigravity</strong> (AI Pro) use a rolling <strong>five-hour window</strong> plus a weekly cap. <strong>Cursor</strong> gives you one <strong>weekly pool</strong>. <strong>GitHub Copilot</strong> gives you a <strong>monthly budget of AI credits</strong> worth $0.01 each. <strong>Gemini CLI</strong> on a Code Assist license has a <strong>daily request quota</strong>. Only GitHub publishes the allowance in dollars and only OpenAI publishes message ranges; Anthropic, Google (for Antigravity) and Cursor publish the reset rhythm but not the size. Once you go past the limit, almost everyone bills extra usage at the model's API price, so a medium agent task costs roughly the same $0.70 on Sonnet 5.5, GPT-6.1 Sol or Gemini 4 Argon wherever you run it (our estimate, assumptions below).</p>
-      <p class="updated">Last verified Oct 23, 2026 on each vendor's official pricing pages and docs (Artificial Analysis cost check and Antigravity Argon quota added Oct 29) (sources under every table). Limits change often; confirm with the linked sources before you buy.</p>
+      <p class="updated">Last verified Oct 23, 2026 on each vendor's official pricing pages and docs (Artificial Analysis cost check and Antigravity Argon quota added Oct 29; ChatGPT Pro changes added Oct 30) (sources under every table). Limits change often; confirm with the linked sources before you buy.</p>
       <div class="cta-row"><a class="btn btn-primary" href="#limits">Jump to the limits table</a> <a class="btn" href="#cost">Estimated cost per task</a> <a class="btn" href="#tips">Stretch your limits</a></div>
     </section>
 
@@ -139,8 +139,8 @@
           <tr><td><strong>Claude Code</strong>: Team</td><td>Standard $25/seat ($20 annual), Premium $125 ($100 annual)</td><td>Standard seats get more than Pro; Premium seats 5x Standard. Up to $500/mo pooled API credits</td><td>Five-hour session plus weekly</td><td>Same as Pro</td><td>Usage credits at API rates</td></tr>
           <tr><td><strong>OpenAI Codex</strong>: Free and Go</td><td>$0 and $8/mo</td><td>Not published as a number. GPT-6 Luna in the desktop app (rolling out)</td><td>Not published</td><td>Wait for the reset, upgrade, or use an API key</td><td>API key at API rates</td></tr>
           <tr><td><strong>OpenAI Codex</strong>: Plus</td><td>$20/mo</td><td>Estimated local messages per five hours: GPT-6.1 Sol 15 to 160, GPT-6 Luna 350 to 3,000, GPT-6 Astra 5 to 45. Weekly limits may also apply</td><td>Five-hour window, plus weekly</td><td>The current turn can finish. Then wait, buy ChatGPT credits, or switch to an API key</td><td>ChatGPT credits: OpenAI says the price "can vary by account, region, and plan" and doesn't publish one. API key: GPT-6.1 Sol $2 in / $10 out per million tokens</td></tr>
-          <tr><td><strong>OpenAI Codex</strong>: Pro</td><td>$100, $200 or $500/mo</td><td>Higher limits; OpenAI says Pro currently has no five-hour limit</td><td>Weekly</td><td>Same as Plus</td><td>Same as Plus</td></tr>
-          <tr><td><strong>OpenAI Codex</strong>: Business</td><td>$25/user monthly, $20 annual (2+ users). Premium seat $125 ($100 annual)</td><td>Standard seat: same ranges as Plus. Premium seat: 5x more usage, no five-hour limit</td><td>Five-hour plus weekly (Standard)</td><td>Wait for the reset, or use an API key</td><td>API key at API rates</td></tr>
+          <tr><td><strong>OpenAI Codex</strong>: Pro</td><td>$100, $200 or $500/mo</td><td>Higher limits; OpenAI says Pro currently has no five-hour limit. Pro $100 and $500 got 2x Work and Codex usage on Oct 29, 2026, and the planned Pro $200 cut was canceled (<a href="../chatgpt-pro-codex-limits/">what to do now</a>)</td><td>Weekly</td><td>Same as Plus</td><td>Same as Plus</td></tr>
+          <tr><td><strong>OpenAI Codex</strong>: Business</td><td>$25/user monthly, $20 annual (2+ users). Premium seat $125 ($100 annual)</td><td>Standard seat: same ranges as Plus. Premium seat: 5x more usage, no five-hour limit, and OpenAI says it's increasing as of Oct 29 (no figure)</td><td>Five-hour plus weekly (Standard)</td><td>Wait for the reset, or use an API key</td><td>API key at API rates</td></tr>
           <tr><td><strong>Cursor</strong>: Plus</td><td>$8/mo ($80/yr)</td><td>One pool for Cursor models (Grok 4.7, 4.6, 4.5, Composer 2.5) shared with Grok. Pool size not published</td><td>Weekly</td><td>Wait for the weekly reset, add prepaid credit, or upgrade. Cursor says requests are never downgraded</td><td>Cursor model rates: Grok 4.7 $2 in / $0.50 cached / $6 out; Composer 2.5 $0.50 / $0.20 / $2.50. No third-party models on Plus</td></tr>
           <tr><td><strong>Cursor</strong>: Premium, Super, Ultra</td><td>$30, $100, $200/mo ($300, $1,000, $2,000/yr)</td><td>4x, 15x and 50x the Plus pool</td><td>Weekly</td><td>Same as Plus</td><td>Third-party models (Claude, GPT, Gemini) are never in the pool: billed at API list price from prepaid credit</td></tr>
           <tr><td><strong>Cursor</strong>: Teams</td><td>$30, $100 or $200 per seat</td><td>Matches the seat's tier</td><td>Weekly</td><td>Prepaid credit, admin caps</td><td>API list price plus a $0.25 per million token Cursor Token Rate on eligible models</td></tr>
@@ -232,6 +232,7 @@
       <ul>
         <li>Check what's left with <code>/status</code>. Keep AGENTS.md small and point Codex at specific files.</li>
         <li>Fast mode uses 2.5x your included usage and Ultrafast 8x, per OpenAI. Leave them off unless you need the speed.</li>
+        <li>On Pro or Business, claim the monthly API credits (Settings, then Billing). They don't add signed-in Codex usage, but Codex run with an API key bills at API rates, so they can cover overflow. <a href="../chatgpt-pro-codex-limits/#todo">How it works</a>.</li>
         <li>GPT-6 Luna's published range (350 to 3,000 messages per five hours on Plus) is about 20x GPT-6.1 Sol's, so use Luna for simple edits.</li>
       </ul>
       <h3>Cursor</h3>
@@ -316,7 +317,7 @@
         <div class="stack-group">
           <h3>Hosting</h3>
           <p class="meta">Where your app lives once it works on your machine.</p>
-          <ul class="stack-list"><li><a href="https://vercel.com" rel="noopener" data-link="vercel"><strong>Vercel</strong></a><span>Next.js and front-end apps</span><small>Hobby free (personal, non-commercial); Pro $20/mo per developer seat</small></li><li><a href="https://join.netlify.com/sfop8nkiwjbv" rel="sponsored nofollow noopener" data-link="netlify"><strong>Netlify</strong></a><span>Static sites and front ends, unlimited Pro members</span><small>Free; Personal $9/mo; Pro $20/mo with unlimited members</small></li><li><a href="https://railway.com" rel="noopener" data-link="railway"><strong>Railway</strong></a><span>Back ends, workers and databases with no server setup</span><small>Free trial $5 credit; Hobby $5/mo incl. $5 usage; Pro $20/mo</small></li><li><a href="https://render.com" rel="noopener" data-link="render"><strong>Render</strong></a><span>Heroku-style web services, cron jobs and Postgres</span><small>Hobby $0 + compute; Pro $25/mo + compute</small></li></ul>
+          <ul class="stack-list"><li><a href="https://vercel.com" rel="noopener" data-link="vercel"><strong>Vercel</strong></a><span>Next.js and front-end apps</span><small>Hobby free (personal, non-commercial); Pro $20/mo per developer seat</small></li><li><a href="https://join.netlify.com/sfop8nkiwjbv" rel="sponsored nofollow noopener" data-link="netlify"><strong>Netlify</strong> <span class="tag ref">referral</span></a><span>Static sites and front ends, unlimited Pro members</span><small>Free; Personal $9/mo; Pro $20/mo with unlimited members</small></li><li><a href="https://railway.com" rel="noopener" data-link="railway"><strong>Railway</strong></a><span>Back ends, workers and databases with no server setup</span><small>Free trial $5 credit; Hobby $5/mo incl. $5 usage; Pro $20/mo</small></li><li><a href="https://render.com" rel="noopener" data-link="render"><strong>Render</strong></a><span>Heroku-style web services, cron jobs and Postgres</span><small>Hobby $0 + compute; Pro $25/mo + compute</small></li></ul>
           
         </div>
         <div class="stack-group">
@@ -331,14 +332,15 @@
           <ul class="stack-list"><li><a href="https://www.cloudflare.com/products/registrar/" rel="noopener" data-link="cloudflare"><strong>Cloudflare Registrar</strong></a><span>Domains at cost with no markup</span><small>Wholesale price per TLD</small></li><li><a href="https://porkbun.com" rel="noopener" data-link="porkbun"><strong>Porkbun</strong></a><span>Cheap domains with free WHOIS privacy</span><small>Varies by TLD</small></li><li><a href="https://www.namecheap.com" rel="noopener" data-link="namecheap"><strong>Namecheap</strong></a><span>Popular registrar with hosting and email add-ons</span><small>Varies by TLD</small></li></ul>
           
         </div></div>
-      <p class="meta tiny">None of these links pay us today. If that changes, they'll be labeled "referral".</p>
+      <p class="meta tiny aff-note">Referral link: we may earn a commission at no extra cost to you. It never changes our picks.</p>
     </section>
     <!-- /PRERENDER:stack -->
 
     <section class="panel" id="related">
       <h2>Related guides</h2>
       <ul class="related">
-        <li><a href="../ai-coding-cost-per-task/">What one coding task costs<small>New: $1.50 to $13 per hard task</small></a></li>
+        <li><a href="../chatgpt-pro-codex-limits/">ChatGPT Pro Codex limits<small>New: the Pro 200 cut is canceled</small></a></li>
+        <li><a href="../ai-coding-cost-per-task/">What one coding task costs<small>$1.50 to $13 per hard task</small></a></li>
         <li><a href="../claude-code-alternatives/">Claude Code alternatives<small>Who still gives you Claude</small></a></li>
         <li><a href="../free-ai-coding-tools/">Free AI coding tools<small>What's free, and what ends Nov 2</small></a></li>
         <li><a href="../codex-vs-cursor/">OpenAI Codex vs Cursor<small>GPT-6.1 Sol isn't in Cursor</small></a></li>
@@ -359,13 +361,13 @@
 
     <section class="panel" id="disclosure">
       <h2>Editorial disclosure</h2>
-      <p><strong>Rankings are not for sale.</strong> Sponsored placements and affiliate links are always labeled, and they never change our recommendations, quiz results, prices, or comparison data. None of the links on this page are affiliate links: no vendor here pays us, and pricing source links are never affiliate links. <a href="../advertise/#policy">Editorial policy</a>.</p>
+      <p><strong>Rankings are not for sale.</strong> Sponsored placements and affiliate links are always labeled, and they never change our recommendations, quiz results, prices, or comparison data. <strong>Links marked "referral" are affiliate links (Netlify):</strong> if you buy through them, we may earn a commission at no extra cost to you. Every other link is a plain link that pays us nothing, and pricing source links are never affiliate links. <a href="../advertise/#policy">Editorial policy</a>.</p>
     </section>
     </article>
 
     <footer>
       <p><a href="../">← Back to the AI Coding Tool Picker</a> · <a href="../ai-coding-tool-pricing/">Pricing &amp; plans calculator</a></p>
-      <p>More comparisons: <a href="../ai-coding-cost-per-task/">Cost per task</a> · <a href="../claude-code-alternatives/">Claude Code alternatives</a> · <a href="../free-ai-coding-tools/">Free AI coding tools</a> · <a href="../lovable-vs-bolt/">Lovable vs Bolt</a> · <a href="../cursor-vs-windsurf/">Cursor vs Windsurf (Devin Desktop)</a> · <a href="../claude-code-vs-cursor/">Claude Code vs Cursor</a> · <a href="../claude-code-vs-codex/">Claude Code vs Codex</a> · <a href="../codex-vs-cursor/">Codex vs Cursor</a> · <a href="../copilot-vs-claude-code/">Copilot vs Claude Code</a> · <a href="../gemini-cli-vs-claude-code/">Gemini CLI vs Claude Code</a> · <a href="../cursor-vs-antigravity/">Cursor vs Antigravity</a> · <a href="./">Usage limits compared</a> · <a href="../cursor-vs-copilot/">Cursor vs Copilot</a> · <a href="../switch-from-copilot-to-cursor/">Switch Copilot → Cursor</a> · <a href="../cursor-bundle-alternatives/">Cursor bundle alternatives</a></p>
+      <p>More comparisons: <a href="../chatgpt-pro-codex-limits/">ChatGPT Pro Codex limits</a> · <a href="../ai-coding-cost-per-task/">Cost per task</a> · <a href="../claude-code-alternatives/">Claude Code alternatives</a> · <a href="../free-ai-coding-tools/">Free AI coding tools</a> · <a href="../lovable-vs-bolt/">Lovable vs Bolt</a> · <a href="../cursor-vs-windsurf/">Cursor vs Windsurf (Devin Desktop)</a> · <a href="../claude-code-vs-cursor/">Claude Code vs Cursor</a> · <a href="../claude-code-vs-codex/">Claude Code vs Codex</a> · <a href="../codex-vs-cursor/">Codex vs Cursor</a> · <a href="../copilot-vs-claude-code/">Copilot vs Claude Code</a> · <a href="../gemini-cli-vs-claude-code/">Gemini CLI vs Claude Code</a> · <a href="../cursor-vs-antigravity/">Cursor vs Antigravity</a> · <a href="./">Usage limits compared</a> · <a href="../cursor-vs-copilot/">Cursor vs Copilot</a> · <a href="../switch-from-copilot-to-cursor/">Switch Copilot → Cursor</a> · <a href="../cursor-bundle-alternatives/">Cursor bundle alternatives</a></p>
       <p>Not affiliated with Anthropic, OpenAI, Cursor, GitHub, Microsoft or Google.</p>
       <p>Contact, sponsorships, and corrections: <a href="mailto:sponsors@codetoolpicker.com">sponsors@codetoolpicker.com</a> · <a href="../advertise/">Advertise with us</a></p>
       <p class="meta" id="analytics-note">We use GoatCounter, a privacy-friendly counter with no cookies, to count visits.</p>

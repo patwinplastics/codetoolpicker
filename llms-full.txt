@@ -1,5 +1,5 @@
 # CodeToolPicker: full text
-Independent AI coding tool comparison. Source: https://codetoolpicker.com/ . Data checked 2026-10-29 on official vendor pricing pages; confirm prices on vendor sites.
+Independent AI coding tool comparison. Source: https://codetoolpicker.com/ . Data checked 2026-10-30 on official vendor pricing pages; confirm prices on vendor sites.
 
 Editorial policy: rankings are not for sale. Sponsors and affiliate links are labeled and never change recommendations, quiz logic, or comparison data.
 Contact (sponsorships, corrections): sponsors@codetoolpicker.com
@@ -19,6 +19,7 @@ See also: https://codetoolpicker.com/usage-limits-compared/ (usage limits compar
 See also: https://codetoolpicker.com/codex-vs-cursor/ (OpenAI Codex vs Cursor: GPT-6.1 Sol in ChatGPT Plus $20 vs Cursor Plus $8 Grok-only; Cursor lists no GPT-6 models; the Codex extension runs inside Cursor; teams of 5; estimated cost per task by route)
 See also: https://codetoolpicker.com/free-ai-coding-tools/ (free AI coding tools: every free plan checked Oct 27, 2026, the catch on each, who trains on free-tier code, cheapest upgrades, and Antigravity Free losing Claude Sonnet/Opus 4.6 on Nov 2, 2026)
 See also: https://codetoolpicker.com/claude-code-alternatives/ (Claude Code alternatives checked Oct 28, 2026: which tools still give you Claude Opus 5.5 and Sonnet 5.5 and at what price, Copilot Pro $10 with Sonnet 5.5, Google AI Pro $19.99 and Kiro Pro $20 with Opus 5.5, Codex Plus $20 without Claude, open-source BYOK agents, tools that reuse your Claude plan limits, and teams of 5)
+See also: https://codetoolpicker.com/chatgpt-pro-codex-limits/ (ChatGPT Pro Codex limits, checked Oct 30, 2026: OpenAI canceled the planned Pro 200 cut on Oct 29 and doubled Work and Codex usage on Pro 100 and Pro 500; 20x to 10x multiples were never official; Pro gets $100/$200/$500 a month in API credits and Business $20/$100 per seat up to $500, which do not add signed-in Codex usage; what to do now and cheaper options)
 See also: https://codetoolpicker.com/ai-coding-cost-per-task/ (what one AI coding task really costs, checked Oct 29, 2026: Artificial Analysis Coding Agent Index costs per hard task at API prices, Claude Code with Opus 5.5 $11.42, Sonnet 5.5 $13.30, Antigravity CLI with Gemini 4 Argon $11.73, Codex with GPT-6 Astra $7.04 and GPT-6.1 Sol $1.50; why everyday tasks cost $0.10 to $1.40; how to cut cost per task)
 See also: https://codetoolpicker.com/advertise/ (sponsor packages and the editorial policy)
 
@@ -200,21 +201,21 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - plan Free: $0/mo: Limited Codex in the desktop app on GPT-6 Luna, subject to rollout
 - plan Go: $8/mo: Lightweight Codex in the desktop app on GPT-6 Luna
 - plan Plus: $20/mo: Web, CLI, IDE extension, iOS; cloud tasks, automatic code review, Slack
-- plan Pro: $100/mo: Pro at $100, $200 or $500; no five-hour Codex limit right now (weekly limits apply)
+- plan Pro: $100/mo: Pro at $100, $200 or $500; no five-hour Codex limit right now (weekly limits apply); $100 to $500 a month in API credits
 - plan Business: $25/mo: Per user; $20/user/mo billed annually, 2+ users
 - best for (badge): Cheapest way into a coding agent
 - price Free: monthly $0; annual $0; Limited Codex in the desktop app (GPT-6 Luna), subject to rollout
 - price Go: monthly $8/mo; annual Not listed; Lightweight Codex in the desktop app (GPT-6 Luna)
 - price Plus: monthly $20/mo; annual Not listed; All surfaces, cloud tasks, automatic code review, Slack
-- price Pro $100: monthly $100/mo; annual Not listed; No five-hour Codex limit right now (weekly limits apply); full GPT-6 Astra allowance
-- price Pro $200: monthly $200/mo; annual Not listed; More usage than Pro $100 (OpenAI doesn't publish the multiple); new subscriptions get a lower allowance than before (Oct 2026)
-- price Pro $500: monthly $500/mo; annual Not listed; Adds Ultrafast mode
+- price Pro $100: monthly $100/mo; annual Not listed; No five-hour Codex limit right now (weekly limits apply); full GPT-6 Astra allowance; Work and Codex allowance doubled Oct 29, 2026; $100/mo API credits
+- price Pro $200: monthly $200/mo; annual Not listed; More usage than Pro $100 (OpenAI doesn't publish the multiple); the planned Oct 30 cut is canceled, all Pro 200 accounts get the higher allowance; $200/mo API credits
+- price Pro $500: monthly $500/mo; annual Not listed; Adds Ultrafast mode; Work and Codex allowance doubled Oct 29, 2026; $500/mo API credits
 - price Business (standard seat): monthly $25/seat/mo; annual $240/seat/yr (≈$20/seat/mo); $20/user/mo billed annually; 2+ users
 - which plan: Free: Try Codex on quick tasks in the desktop app. Availability is subject to rollout.
 - which plan: Go $8: Light coding help in the desktop app only, on GPT-6 Luna.
 - which plan: Plus $20: Most developers: Codex in the CLI, IDE extension, web and iOS, plus cloud tasks and automatic code review.
-- which plan: Pro $100: If you hit five-hour limits: Pro plans currently have no five-hour Codex limit, only weekly limits.
-- which plan: Pro $200 / $500: All-day heavy use. $500 adds Ultrafast mode.
+- which plan: Pro $100: If you hit five-hour limits: Pro plans currently have no five-hour Codex limit, only weekly limits. Its allowance doubled on Oct 29, 2026, so try it before Pro $200.
+- which plan: Pro $200 / $500: All-day heavy use. $500 adds Ultrafast mode. Pro plans also include $100 to $500 a month in API credits, which don't add to signed-in Codex usage.
 - which plan: Business $25/seat: Teams of 2+: SAML SSO, admin controls, no training on business data by default. $20/seat billed annually.
 - not included: Usage beyond plan limits is paid with ChatGPT credits (Plus and up). Codex usage is shared with ChatGPT Work. API-key use is billed at API prices.
 - skip it if: You want Claude or Gemini models, or a full visual IDE. Codex on ChatGPT plans runs OpenAI models only.
@@ -273,7 +274,7 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 ## Ship your app: the rest of the stack (prices checked 2026-10-20)
 ### Hosting: Where your app lives once it works on your machine.
 - Vercel (https://vercel.com): Next.js and front-end apps. Hobby free (personal, non-commercial); Pro $20/mo per developer seat
-- Netlify (https://www.netlify.com): Static sites and front ends, unlimited Pro members. Free; Personal $9/mo; Pro $20/mo with unlimited members
+- Netlify (https://join.netlify.com/sfop8nkiwjbv): Static sites and front ends, unlimited Pro members. Free; Personal $9/mo; Pro $20/mo with unlimited members
 - Railway (https://railway.com): Back ends, workers and databases with no server setup. Free trial $5 credit; Hobby $5/mo incl. $5 usage; Pro $20/mo
 - Render (https://render.com): Heroku-style web services, cron jobs and Postgres. Hobby $0 + compute; Pro $25/mo + compute
 ### Database and auth: Most AI-built apps need a Postgres database and logins.
@@ -288,6 +289,7 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - Namecheap (https://www.namecheap.com): Popular registrar with hosting and email add-ons. Varies by TLD
 
 ## Pricing change log
+- 2026-10-30: Checked ChatGPT Pro Codex limits. OpenAI canceled the Pro 200 reduction it announced Sep 29: accounts on the higher Work and Codex allowance keep it, lower ones doubled to match, price stays $200. Pro 100 and Pro 500 now get 2x their previous Work and Codex allowance; Plus unchanged; Business Premium increasing (no figure). OpenAI publishes no multiples, so 20x to 10x was never official. Since Oct 28, eligible subscriptions get monthly API credits: Pro $100/$200/$500, Business $20 per Standard and $100 per Premium seat (max $500 per workspace); they don't add ChatGPT or signed-in Codex usage. Full story: https://codetoolpicker.com/chatgpt-pro-codex-limits/ (source: https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers)
 - 2026-10-29: Checked cost per task. Artificial Analysis Coding Agent Index v2.0: Claude Code with Opus 5.5 $11.42 a task at API prices, Sonnet 5.5 $13.30, Antigravity CLI with Gemini 4 Argon $11.73, Codex with GPT-6.1 Sol $1.50. Antigravity: Google AI Pro now has Gemini 4 Argon on a separate weekly-only quota (Google forum moderator, Oct 15). Kiro's pricing page still says Claude Sonnet 5 and Opus 5 while its models page lists Opus 5.5 and Sonnet 5.5 on all paid plans; we follow the models page. New: https://codetoolpicker.com/ai-coding-cost-per-task/ (source: https://artificialanalysis.ai/agents/coding-agents)
 - 2026-10-28: Checked every Claude Code alternative. Claude plans unchanged (Pro $20 or $17 annual, Max from $100, Team $25/$20 standard and $125/$100 premium seats). Kiro's models page lists Claude Opus 5.5 (2.0x credits) and Sonnet 5.5 (1.3x) on all paid plans; Kiro Free has Sonnet 4.5. Copilot Business and Enterprise include Claude Opus 5.5; Copilot Pro does not. OpenCode Go ($10) includes Claude Haiku 5.5 only. Zed Pro bills hosted models at API price plus 10%; Augment adds a 40% service fee; Warp Build is $20 ($18 annual) with $20 of usage at API rates. Full list: https://codetoolpicker.com/claude-code-alternatives/ (source: https://kiro.dev/docs/models/)
 - 2026-10-27: Checked every free plan. Google Antigravity's models page says Claude Sonnet 4.6, Claude Opus 4.6 and GPT-OSS-120b will be removed on Nov 2, 2026, leaving Gemini 3.8 Flash on Free and Google AI Plus; Claude Sonnet/Opus 5.5 stay on paid (non-trial) Google AI Pro. Copilot Free: 2,000 completions a month, auto model only. Codex Free: GPT-6 Luna in the desktop app, subject to rollout. Kiro Free: 50 credits with Claude Sonnet 4.5, rate limited. Full list: https://codetoolpicker.com/free-ai-coding-tools/ (source: https://antigravity.google/docs/models/)

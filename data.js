@@ -157,7 +157,7 @@ window.TOOL_DATA = [
       { name: "Free", price: 0, note: "Limited Codex in the desktop app on GPT-6 Luna, subject to rollout" },
       { name: "Go", price: 8, note: "Lightweight Codex in the desktop app on GPT-6 Luna" },
       { name: "Plus", price: 20, note: "Web, CLI, IDE extension, iOS; cloud tasks, automatic code review, Slack" },
-      { name: "Pro", price: 100, note: "Pro at $100, $200 or $500; no five-hour Codex limit right now (weekly limits apply)" },
+      { name: "Pro", price: 100, note: "Pro at $100, $200 or $500; no five-hour Codex limit right now (weekly limits apply); $100 to $500 a month in API credits" },
       { name: "Business", price: 25, note: "Per user; $20/user/mo billed annually, 2+ users" }
     ],
     strengths: ["Free and $8 entry tiers", "Cloud tasks and automatic GitHub code review on Plus", "No five-hour cap on Pro plans (weekly limits apply)", "Works with an API key in the CLI, SDK and IDE extension"],
@@ -382,9 +382,9 @@ window.PRICING = {
       { name: "Free", monthly: 0, annual: 0, note: "Limited Codex in the desktop app (GPT-6 Luna), subject to rollout" },
       { name: "Go", monthly: 8, annual: null, note: "Lightweight Codex in the desktop app (GPT-6 Luna)" },
       { name: "Plus", monthly: 20, annual: null, note: "All surfaces, cloud tasks, automatic code review, Slack" },
-      { name: "Pro $100", monthly: 100, annual: null, note: "No five-hour Codex limit right now (weekly limits apply); full GPT-6 Astra allowance" },
-      { name: "Pro $200", monthly: 200, annual: null, note: "More usage than Pro $100 (OpenAI doesn't publish the multiple); new subscriptions get a lower allowance than before (Oct 2026)" },
-      { name: "Pro $500", monthly: 500, annual: null, note: "Adds Ultrafast mode" },
+      { name: "Pro $100", monthly: 100, annual: null, note: "No five-hour Codex limit right now (weekly limits apply); full GPT-6 Astra allowance; Work and Codex allowance doubled Oct 29, 2026; $100/mo API credits" },
+      { name: "Pro $200", monthly: 200, annual: null, note: "More usage than Pro $100 (OpenAI doesn't publish the multiple); the planned Oct 30 cut is canceled, all Pro 200 accounts get the higher allowance; $200/mo API credits" },
+      { name: "Pro $500", monthly: 500, annual: null, note: "Adds Ultrafast mode; Work and Codex allowance doubled Oct 29, 2026; $500/mo API credits" },
       { name: "Business (standard seat)", monthly: 25, annual: 240, seat: true, note: "$20/user/mo billed annually; 2+ users" }
     ],
     extraCost: "Usage beyond plan limits is paid with ChatGPT credits (Plus and up). Codex usage is shared with ChatGPT Work. API-key use is billed at API prices.",
@@ -393,8 +393,8 @@ window.PRICING = {
       ["Free", "Try Codex on quick tasks in the desktop app. Availability is subject to rollout."],
       ["Go $8", "Light coding help in the desktop app only, on GPT-6 Luna."],
       ["Plus $20", "Most developers: Codex in the CLI, IDE extension, web and iOS, plus cloud tasks and automatic code review."],
-      ["Pro $100", "If you hit five-hour limits: Pro plans currently have no five-hour Codex limit, only weekly limits."],
-      ["Pro $200 / $500", "All-day heavy use. $500 adds Ultrafast mode."],
+      ["Pro $100", "If you hit five-hour limits: Pro plans currently have no five-hour Codex limit, only weekly limits. Its allowance doubled on Oct 29, 2026, so try it before Pro $200."],
+      ["Pro $200 / $500", "All-day heavy use. $500 adds Ultrafast mode. Pro plans also include $100 to $500 a month in API credits, which don't add to signed-in Codex usage."],
       ["Business $25/seat", "Teams of 2+: SAML SSO, admin controls, no training on business data by default. $20/seat billed annually."]
     ],
     skipIf: "You want Claude or Gemini models, or a full visual IDE. Codex on ChatGPT plans runs OpenAI models only."
@@ -453,6 +453,7 @@ window.COMPARE_PAGES = {
 
 // Dated pricing changes we track. Only sourced events.
 window.PRICE_LOG = [
+  { date: "2026-10-30", text: "Checked ChatGPT Pro Codex limits. OpenAI canceled the Pro 200 reduction it announced Sep 29: accounts on the higher Work and Codex allowance keep it, lower ones doubled to match, price stays $200. Pro 100 and Pro 500 now get 2x their previous Work and Codex allowance; Plus unchanged; Business Premium increasing (no figure). OpenAI publishes no multiples, so 20x to 10x was never official. Since Oct 28, eligible subscriptions get monthly API credits: Pro $100/$200/$500, Business $20 per Standard and $100 per Premium seat (max $500 per workspace); they don't add ChatGPT or signed-in Codex usage. Full story: https://codetoolpicker.com/chatgpt-pro-codex-limits/", src: "https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers" },
   { date: "2026-10-29", text: "Checked cost per task. Artificial Analysis Coding Agent Index v2.0: Claude Code with Opus 5.5 $11.42 a task at API prices, Sonnet 5.5 $13.30, Antigravity CLI with Gemini 4 Argon $11.73, Codex with GPT-6.1 Sol $1.50. Antigravity: Google AI Pro now has Gemini 4 Argon on a separate weekly-only quota (Google forum moderator, Oct 15). Kiro's pricing page still says Claude Sonnet 5 and Opus 5 while its models page lists Opus 5.5 and Sonnet 5.5 on all paid plans; we follow the models page. New: https://codetoolpicker.com/ai-coding-cost-per-task/", src: "https://artificialanalysis.ai/agents/coding-agents" },
   { date: "2026-10-28", text: "Checked every Claude Code alternative. Claude plans unchanged (Pro $20 or $17 annual, Max from $100, Team $25/$20 standard and $125/$100 premium seats). Kiro's models page lists Claude Opus 5.5 (2.0x credits) and Sonnet 5.5 (1.3x) on all paid plans; Kiro Free has Sonnet 4.5. Copilot Business and Enterprise include Claude Opus 5.5; Copilot Pro does not. OpenCode Go ($10) includes Claude Haiku 5.5 only. Zed Pro bills hosted models at API price plus 10%; Augment adds a 40% service fee; Warp Build is $20 ($18 annual) with $20 of usage at API rates. Full list: https://codetoolpicker.com/claude-code-alternatives/", src: "https://kiro.dev/docs/models/" },
   { date: "2026-10-27", text: "Checked every free plan. Google Antigravity's models page says Claude Sonnet 4.6, Claude Opus 4.6 and GPT-OSS-120b will be removed on Nov 2, 2026, leaving Gemini 3.8 Flash on Free and Google AI Plus; Claude Sonnet/Opus 5.5 stay on paid (non-trial) Google AI Pro. Copilot Free: 2,000 completions a month, auto model only. Codex Free: GPT-6 Luna in the desktop app, subject to rollout. Kiro Free: 50 credits with Claude Sonnet 4.5, rate limited. Full list: https://codetoolpicker.com/free-ai-coding-tools/", src: "https://antigravity.google/docs/models/" },
@@ -492,7 +493,7 @@ window.LINKS = {
   "gemini-cli": { name: "Gemini CLI", url: "https://geminicli.com", affiliate: false }, // no program (open source)
   // Ship your app: hosting
   vercel: { name: "Vercel", url: "https://vercel.com", affiliate: false },            // no program
-  netlify: { name: "Netlify", url: "https://www.netlify.com", affiliate: false },     // PartnerStack, 20% x 12 mo (apply)
+  netlify: { name: "Netlify", url: "https://join.netlify.com/sfop8nkiwjbv", affiliate: true }, // PartnerStack partner link (approved Oct 30, 2026)
   railway: { name: "Railway", url: "https://railway.com", affiliate: false },         // 15% x 12 mo (self-serve)
   render: { name: "Render", url: "https://render.com", affiliate: false },            // no program
   // Database

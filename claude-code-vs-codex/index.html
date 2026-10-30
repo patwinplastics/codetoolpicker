@@ -31,7 +31,7 @@
   "@type": "Article",
   "headline": "Claude Code vs OpenAI Codex (Oct 2026): same prices, different limits",
   "datePublished": "2026-10-20",
-  "dateModified": "2026-10-26",
+  "dateModified": "2026-10-30",
   "author": {"@type": "Organization", "name": "CodeToolPicker"},
   "publisher": {"@type": "Organization", "name": "CodeToolPicker"},
   "mainEntityOfPage": "https://codetoolpicker.com/claude-code-vs-codex/"
@@ -47,7 +47,7 @@
     {"@type": "Question", "name": "Does Codex have a free plan?",
      "acceptedAnswer": {"@type": "Answer", "text": "Yes, a limited one. OpenAI's Codex pricing page lists Free ($0) and Go ($8/month) with GPT-6 Luna at Standard speed in the desktop app, subject to rollout. The full set of surfaces (web, CLI, IDE extension, iOS) and cloud features like automatic code review start on Plus at $20/month. Claude Code has no free tier."}},
     {"@type": "Question", "name": "Which has better usage limits?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Neither publishes a fixed message count. On the $20 plans both use rolling five-hour windows plus weekly limits. The difference is at $100 and up: OpenAI says ChatGPT Pro plans currently have no five-hour limit for Codex (weekly limits still apply), while Claude Max gives 5x or 20x Pro usage per five-hour session. Claude Max also includes $100 to $200 a month in Claude Platform API credits."}},
+     "acceptedAnswer": {"@type": "Answer", "text": "Neither publishes a fixed message count. On the $20 plans both use rolling five-hour windows plus weekly limits. The difference is at $100 and up: OpenAI says ChatGPT Pro plans currently have no five-hour limit for Codex (weekly limits still apply), while Claude Max gives 5x or 20x Pro usage per five-hour session. Claude Max also includes $100 to $200 a month in Claude Platform API credits, and since Oct 28, 2026 ChatGPT Pro includes $100, $200 or $500 a month in OpenAI API credits. On Oct 29 OpenAI canceled a planned Pro $200 cut and doubled Work and Codex usage on Pro $100 and $500."}},
     {"@type": "Question", "name": "Can I use Codex or Claude Code with an API key instead of a subscription?",
      "acceptedAnswer": {"@type": "Answer", "text": "Yes, both. Codex with an API key works in the CLI, SDK and IDE extension at API prices, without cloud features like GitHub code review or Slack. Claude Code can switch to pay-as-you-go API credits through an Anthropic Console account."}},
     {"@type": "Question", "name": "Can Claude Code and Codex share project instructions?",
@@ -95,7 +95,7 @@
           <tr><td>What it is</td><td>Agentic coding tool: terminal CLI, VS Code and JetBrains extensions, desktop app, and the web</td><td>Coding agent in the ChatGPT desktop app, on the web (Codex cloud), in the CLI, an IDE extension, and on iOS</td></tr>
           <tr><td>Free tier</td><td>None: Claude Code isn't on Claude Free</td><td>Free ($0) and Go ($8/mo): limited Codex in the desktop app on GPT-6 Luna, subject to rollout</td></tr>
           <tr><td>Entry paid</td><td>Claude Pro $20/mo, or $17/mo billed annually ($200 up front)</td><td>ChatGPT Plus $20/mo: all surfaces, cloud tasks, automatic code review, Slack integration</td></tr>
-          <tr><td>Heavy use</td><td>Max from $100/mo: 5x or 20x Pro usage per five-hour session, plus $100 or $200 a month in API credits</td><td>Pro at $100, $200 or $500/mo. Pro plans currently have no five-hour limit (weekly limits still apply). Ultrafast mode on Pro $500 only</td></tr>
+          <tr><td>Heavy use</td><td>Max from $100/mo: 5x or 20x Pro usage per five-hour session, plus $100 or $200 a month in API credits</td><td>Pro at $100, $200 or $500/mo. Pro plans currently have no five-hour limit (weekly limits still apply). Ultrafast mode on Pro $500 only. Plus $100, $200 or $500 a month in API credits; Pro $100 and $500 usage doubled Oct 29 (<a href="../chatgpt-pro-codex-limits/">what changed</a>)</td></tr>
           <tr><td>Models in plan</td><td>Opus, Sonnet and Haiku on Pro and up. Fable via usage credits on Pro, up to 50% of weekly limits on Max</td><td>GPT-6.1 Sol, GPT-6 Sol and GPT-6 Luna on Plus, with limited GPT-6 Astra; full Astra allowance on Pro $100 and $200</td></tr>
           <tr><td>Limits on the $20 plan</td><td>Rolling five-hour window plus weekly limits, shared with Claude chat</td><td>Rolling five-hour window plus weekly limits, shared with ChatGPT Work. OpenAI estimates 15 to 160 local GPT-6.1 Sol messages per five hours on Plus</td></tr>
           <tr><td>When you run out</td><td>Wait, upgrade to Max, or turn on usage credits at API rates</td><td>Wait, upgrade to Pro, or buy ChatGPT credits; you can also run local chats on an API key</td></tr>
@@ -104,7 +104,7 @@
           <tr><td>Project instructions</td><td>CLAUDE.md, or an existing AGENTS.md</td><td>AGENTS.md (nested files supported)</td></tr>
         </tbody>
       </table>
-      <p class="note">Sources: <a href="https://claude.com/pricing" rel="noopener">claude.com/pricing</a> · <a href="https://code.claude.com/docs/en/overview" rel="noopener">Claude Code docs</a> · <a href="https://developers.openai.com/codex/pricing" rel="noopener">Codex pricing</a> · <a href="https://chatgpt.com/pricing" rel="noopener">chatgpt.com/pricing</a> · <a href="https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers" rel="noopener">ChatGPT Pro tiers</a> · <a href="https://help.openai.com/en/articles/8792828-chatgpt-business-overview" rel="noopener">ChatGPT Business overview</a>. Checked Oct 20, 2026. Claude lists Max as "from $100" without a separate Max 20x price, so we don't list one. OpenAI says Pro $200 includes more usage than Pro $100 but doesn't publish exact multiples on its pricing page, so we don't either.</p>
+      <p class="note">Sources: <a href="https://claude.com/pricing" rel="noopener">claude.com/pricing</a> · <a href="https://code.claude.com/docs/en/overview" rel="noopener">Claude Code docs</a> · <a href="https://developers.openai.com/codex/pricing" rel="noopener">Codex pricing</a> · <a href="https://chatgpt.com/pricing" rel="noopener">chatgpt.com/pricing</a> · <a href="https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers" rel="noopener">ChatGPT Pro tiers</a> · <a href="https://help.openai.com/en/articles/8792828-chatgpt-business-overview" rel="noopener">ChatGPT Business overview</a>. Checked Oct 20, 2026. Claude lists Max as "from $100" without a separate Max 20x price, so we don't list one. OpenAI says Pro $200 includes more usage than Pro $100 but doesn't publish exact multiples on its pricing page, so we don't either. ChatGPT Pro changes (canceled Pro $200 cut, doubled Pro $100 and $500, API credits) checked Oct 30, 2026 on the <a href="https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers" rel="noopener">Pro tiers page</a> and <a href="https://help.openai.com/en/articles/20001626-api-credits-benefit-for-eligible-chatgpt-subscriptions" rel="noopener">API credits page</a>.</p>
     </section>
 
     <section class="panel">
@@ -224,7 +224,7 @@
       <h3>Does Codex have a free plan?</h3>
       <p>Yes, a limited one. OpenAI's Codex pricing page lists Free ($0) and Go ($8/month) with GPT-6 Luna at Standard speed in the desktop app, subject to rollout. The full set of surfaces (web, CLI, IDE extension, iOS) and cloud features like automatic code review start on Plus at $20/month. Claude Code has no free tier.</p>
       <h3>Which has better usage limits?</h3>
-      <p>Neither publishes a fixed message count. On the $20 plans both use rolling five-hour windows plus weekly limits. The difference is at $100 and up: OpenAI says ChatGPT Pro plans currently have no five-hour limit for Codex (weekly limits still apply), while Claude Max gives 5x or 20x Pro usage per five-hour session. Claude Max also includes $100 to $200 a month in Claude Platform API credits.</p>
+      <p>Neither publishes a fixed message count. On the $20 plans both use rolling five-hour windows plus weekly limits. The difference is at $100 and up: OpenAI says ChatGPT Pro plans currently have no five-hour limit for Codex (weekly limits still apply), while Claude Max gives 5x or 20x Pro usage per five-hour session. Claude Max also includes $100 to $200 a month in Claude Platform API credits, and since Oct 28, 2026 ChatGPT Pro includes $100, $200 or $500 a month in OpenAI API credits. On Oct 29 OpenAI canceled a planned Pro $200 cut and doubled Work and Codex usage on Pro $100 and $500.</p>
       <h3>Can I use Codex or Claude Code with an API key instead of a subscription?</h3>
       <p>Yes, both. Codex with an API key works in the CLI, SDK and IDE extension at API prices, without cloud features like GitHub code review or Slack. Claude Code can switch to pay-as-you-go API credits through an Anthropic Console account.</p>
       <h3>Can Claude Code and Codex share project instructions?</h3>
@@ -248,7 +248,7 @@
         <div class="stack-group">
           <h3>Hosting</h3>
           <p class="meta">Where your app lives once it works on your machine.</p>
-          <ul class="stack-list"><li><a href="https://vercel.com" rel="noopener" data-link="vercel"><strong>Vercel</strong></a><span>Next.js and front-end apps</span><small>Hobby free (personal, non-commercial); Pro $20/mo per developer seat</small></li><li><a href="https://join.netlify.com/sfop8nkiwjbv" rel="sponsored nofollow noopener" data-link="netlify"><strong>Netlify</strong></a><span>Static sites and front ends, unlimited Pro members</span><small>Free; Personal $9/mo; Pro $20/mo with unlimited members</small></li><li><a href="https://railway.com" rel="noopener" data-link="railway"><strong>Railway</strong></a><span>Back ends, workers and databases with no server setup</span><small>Free trial $5 credit; Hobby $5/mo incl. $5 usage; Pro $20/mo</small></li><li><a href="https://render.com" rel="noopener" data-link="render"><strong>Render</strong></a><span>Heroku-style web services, cron jobs and Postgres</span><small>Hobby $0 + compute; Pro $25/mo + compute</small></li></ul>
+          <ul class="stack-list"><li><a href="https://vercel.com" rel="noopener" data-link="vercel"><strong>Vercel</strong></a><span>Next.js and front-end apps</span><small>Hobby free (personal, non-commercial); Pro $20/mo per developer seat</small></li><li><a href="https://join.netlify.com/sfop8nkiwjbv" rel="sponsored nofollow noopener" data-link="netlify"><strong>Netlify</strong> <span class="tag ref">referral</span></a><span>Static sites and front ends, unlimited Pro members</span><small>Free; Personal $9/mo; Pro $20/mo with unlimited members</small></li><li><a href="https://railway.com" rel="noopener" data-link="railway"><strong>Railway</strong></a><span>Back ends, workers and databases with no server setup</span><small>Free trial $5 credit; Hobby $5/mo incl. $5 usage; Pro $20/mo</small></li><li><a href="https://render.com" rel="noopener" data-link="render"><strong>Render</strong></a><span>Heroku-style web services, cron jobs and Postgres</span><small>Hobby $0 + compute; Pro $25/mo + compute</small></li></ul>
           
         </div>
         <div class="stack-group">
@@ -263,14 +263,15 @@
           <ul class="stack-list"><li><a href="https://www.cloudflare.com/products/registrar/" rel="noopener" data-link="cloudflare"><strong>Cloudflare Registrar</strong></a><span>Domains at cost with no markup</span><small>Wholesale price per TLD</small></li><li><a href="https://porkbun.com" rel="noopener" data-link="porkbun"><strong>Porkbun</strong></a><span>Cheap domains with free WHOIS privacy</span><small>Varies by TLD</small></li><li><a href="https://www.namecheap.com" rel="noopener" data-link="namecheap"><strong>Namecheap</strong></a><span>Popular registrar with hosting and email add-ons</span><small>Varies by TLD</small></li></ul>
           
         </div></div>
-      <p class="meta tiny">None of these links pay us today. If that changes, they'll be labeled "referral".</p>
+      <p class="meta tiny aff-note">Referral link: we may earn a commission at no extra cost to you. It never changes our picks.</p>
     </section>
     <!-- /PRERENDER:stack -->
 
     <section class="panel" id="related">
       <h2>Related guides</h2>
       <ul class="related">
-        <li><a href="../ai-coding-cost-per-task/">What one coding task costs<small>New: $1.50 to $13 per hard task</small></a></li>
+        <li><a href="../chatgpt-pro-codex-limits/">ChatGPT Pro Codex limits<small>New: the Pro 200 cut is canceled</small></a></li>
+        <li><a href="../ai-coding-cost-per-task/">What one coding task costs<small>$1.50 to $13 per hard task</small></a></li>
         <li><a href="../claude-code-alternatives/">Claude Code alternatives<small>Who still gives you Claude</small></a></li>
         <li><a href="../free-ai-coding-tools/">Free AI coding tools<small>What's free, and what ends Nov 2</small></a></li>
         <li><a href="../codex-vs-cursor/">OpenAI Codex vs Cursor<small>GPT-6.1 Sol isn't in Cursor</small></a></li>
@@ -293,13 +294,13 @@
 
     <section class="panel" id="disclosure">
       <h2>Editorial disclosure</h2>
-      <p><strong>Rankings are not for sale.</strong> Sponsored placements and affiliate links are always labeled, and they never change our recommendations, quiz results, prices, or comparison data. None of the links on this page are affiliate links: no vendor here pays us, and pricing source links are never affiliate links. <a href="../advertise/#policy">Editorial policy</a>.</p>
+      <p><strong>Rankings are not for sale.</strong> Sponsored placements and affiliate links are always labeled, and they never change our recommendations, quiz results, prices, or comparison data. <strong>Links marked "referral" are affiliate links (Netlify):</strong> if you buy through them, we may earn a commission at no extra cost to you. Every other link is a plain link that pays us nothing, and pricing source links are never affiliate links. <a href="../advertise/#policy">Editorial policy</a>.</p>
     </section>
     </article>
 
     <footer>
       <p><a href="../">← Back to the AI Coding Tool Picker</a> · <a href="../ai-coding-tool-pricing/">Pricing &amp; plans calculator</a></p>
-      <p>More comparisons: <a href="../ai-coding-cost-per-task/">Cost per task</a> · <a href="../claude-code-alternatives/">Claude Code alternatives</a> · <a href="../free-ai-coding-tools/">Free AI coding tools</a> · <a href="../lovable-vs-bolt/">Lovable vs Bolt</a> · <a href="../cursor-vs-windsurf/">Cursor vs Windsurf (Devin Desktop)</a> · <a href="../claude-code-vs-cursor/">Claude Code vs Cursor</a> · <a href="./">Claude Code vs Codex</a> · <a href="../codex-vs-cursor/">Codex vs Cursor</a> · <a href="../copilot-vs-claude-code/">Copilot vs Claude Code</a> · <a href="../gemini-cli-vs-claude-code/">Gemini CLI vs Claude Code</a> · <a href="../cursor-vs-antigravity/">Cursor vs Antigravity</a> · <a href="../usage-limits-compared/">Usage limits compared</a> · <a href="../cursor-vs-copilot/">Cursor vs Copilot</a> · <a href="../switch-from-copilot-to-cursor/">Switch Copilot → Cursor</a> · <a href="../cursor-bundle-alternatives/">Cursor bundle alternatives</a></p>
+      <p>More comparisons: <a href="../chatgpt-pro-codex-limits/">ChatGPT Pro Codex limits</a> · <a href="../ai-coding-cost-per-task/">Cost per task</a> · <a href="../claude-code-alternatives/">Claude Code alternatives</a> · <a href="../free-ai-coding-tools/">Free AI coding tools</a> · <a href="../lovable-vs-bolt/">Lovable vs Bolt</a> · <a href="../cursor-vs-windsurf/">Cursor vs Windsurf (Devin Desktop)</a> · <a href="../claude-code-vs-cursor/">Claude Code vs Cursor</a> · <a href="./">Claude Code vs Codex</a> · <a href="../codex-vs-cursor/">Codex vs Cursor</a> · <a href="../copilot-vs-claude-code/">Copilot vs Claude Code</a> · <a href="../gemini-cli-vs-claude-code/">Gemini CLI vs Claude Code</a> · <a href="../cursor-vs-antigravity/">Cursor vs Antigravity</a> · <a href="../usage-limits-compared/">Usage limits compared</a> · <a href="../cursor-vs-copilot/">Cursor vs Copilot</a> · <a href="../switch-from-copilot-to-cursor/">Switch Copilot → Cursor</a> · <a href="../cursor-bundle-alternatives/">Cursor bundle alternatives</a></p>
       <p>Not affiliated with Anthropic or OpenAI.</p>
       <p>Contact, sponsorships, and corrections: <a href="mailto:sponsors@codetoolpicker.com">sponsors@codetoolpicker.com</a> · <a href="../advertise/">Advertise with us</a></p>
       <p class="meta" id="analytics-note">We use GoatCounter, a privacy-friendly counter with no cookies, to count visits.</p>

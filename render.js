@@ -60,7 +60,7 @@
         <td>${g.agents || ""}</td>
         <td>${g.surface || t.formFactor}</td>
         <td>${g.team || ""}</td>
-        <td><a href="${l.href}" rel="${l.rel}" data-link="${t.id}">${t.freeTier ? "Try free" : "Get started"}</a>${l.aff ? " " + refTag : ""}</td>
+        <td><a href="${l.href}" rel="${l.rel}" data-link="${t.id}">${t.freeTier ? "Try free" : "Get started"}${l.aff ? " " + refTag : ""}</a></td>
       </tr>`;
   }
   // Verdict CTA panel for comparison pages: one "Try" button per tool with the plan we'd start on.
@@ -102,7 +102,7 @@
             const l = link(it.id);
             if (!l) return "";
             ids.push(it.id);
-            return `<li><a href="${l.href}" rel="${l.rel}" data-link="${it.id}"><strong>${l.name}</strong></a>${l.aff ? " " + refTag : ""}<span>${it.fit}</span><small>${it.price}</small></li>`;
+            return `<li><a href="${l.href}" rel="${l.rel}" data-link="${it.id}"><strong>${l.name}</strong>${l.aff ? " " + refTag : ""}</a><span>${it.fit}</span><small>${it.price}</small></li>`;
           }).join("")}</ul>
           ${g.note ? `<p class="meta tiny">${g.note}</p>` : ""}
         </div>`).join("");
