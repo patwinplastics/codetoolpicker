@@ -103,7 +103,7 @@
           <tr><td>What it is</td><td>AI assistant inside your editor and GitHub: completions, chat, agent mode, a cloud agent that opens pull requests, code review, the Copilot CLI and the Copilot app</td><td>Agentic coding tool: terminal CLI, VS Code and JetBrains extensions, desktop app, and the web</td></tr>
           <tr><td>Free tier</td><td>Copilot Free $0: limited chat and agent use, 2,000 completions a month, auto model selection only. Copilot Student free for verified students</td><td>None: Claude Code isn't on Claude Free</td></tr>
           <tr><td>Entry paid</td><td>Pro $10/mo: 1,500 AI credits a month (1,000 base + 500 flex)</td><td>Claude Pro $20/mo, or $17/mo billed annually ($200 up front)</td></tr>
-          <tr><td>Heavy use</td><td>Pro+ $39/mo with 7,000 credits; Max $100/mo with 20,000 credits and priority access to premium models</td><td>Max from $100/mo: 5x or 20x Pro usage per five-hour session, plus $100 or $200 a month in API credits</td></tr>
+          <tr><td>Heavy use</td><td>Pro+ $39/mo with 7,000 credits; Max $100/mo with 20,000 credits and priority access to premium models</td><td>Max $100/mo: 5x Pro usage per five-hour session, plus $100 a month in API credits. Ultra $200/mo: 10x Pro usage per week, no five-hour limit for verified accounts, plus $200 in API credits</td></tr>
           <tr><td>How usage is measured</td><td>AI credits (1 credit = $0.01) for chat, agents, CLI and code review, priced by model and tokens. Completions and next edit suggestions are unlimited on paid plans and don't use credits</td><td>Rolling five-hour window plus weekly limits, shared with Claude chat. No published message count</td></tr>
           <tr><td>Resets</td><td>Monthly</td><td>Every five hours, with a weekly cap</td></tr>
           <tr><td>When you run out</td><td>Set a dollar budget and continue at $0.01 per credit, switch to a cheaper model, or wait for next month</td><td>Wait, upgrade to Max, or turn on usage credits at API rates</td></tr>
@@ -114,14 +114,14 @@
           <tr><td>Project instructions</td><td>copilot-instructions.md, prompt files, and AGENTS.md</td><td>CLAUDE.md, or an existing AGENTS.md</td></tr>
         </tbody>
       </table>
-      <p class="note">Sources: <a href="https://github.com/features/copilot/plans" rel="noopener">Copilot plans</a> · <a href="https://docs.github.com/en/copilot/get-started/plans" rel="noopener">Copilot plan docs</a> · <a href="https://docs.github.com/en/copilot/concepts/agent-capabilities/about-agents/about-third-party-coding-agents" rel="noopener">Copilot third-party agents</a> · <a href="https://claude.com/pricing" rel="noopener">claude.com/pricing</a> · <a href="https://code.claude.com/docs/en/overview" rel="noopener">Claude Code docs</a>. Copilot checked Oct 21, 2026; Claude checked Oct 20, 2026. GitHub says flex allotments "may change over time," so the credit totals above can move. Claude lists Max as "from $100" without a separate Max 20x price, so we don't list one.</p>
+      <p class="note">Sources: <a href="https://github.com/features/copilot/plans" rel="noopener">Copilot plans</a> · <a href="https://docs.github.com/en/copilot/get-started/plans" rel="noopener">Copilot plan docs</a> · <a href="https://docs.github.com/en/copilot/concepts/agent-capabilities/about-agents/about-third-party-coding-agents" rel="noopener">Copilot third-party agents</a> · <a href="https://claude.com/pricing" rel="noopener">claude.com/pricing</a> · <a href="https://code.claude.com/docs/en/overview" rel="noopener">Claude Code docs</a>. Copilot checked Oct 21, 2026; Claude checked Oct 20, 2026. GitHub says flex allotments "may change over time," so the credit totals above can move. Anthropic renamed Max 5x to Max ($100) and Max 20x to Ultra ($200) on Oct 30, 2026; Claude plans re-checked Nov 2, 2026.</p>
     </section>
 
     <section class="panel">
       <h2>The real question: $10 of credits or $20 of five-hour windows?</h2>
       <p>Copilot Pro's 1,500 credits are worth $15 of usage at GitHub's own rate, and they last all month. A short question to a light model costs a fraction of a credit; GitHub says a long agent session on a frontier model across many files costs more. Claude Opus 5.5 isn't on Pro at all, so if you want Opus in agent mode you need Pro+ ($39, 7,000 credits). Even Sonnet 5.5 for hours a day can run through Pro's credits; our <a href="../usage-limits-compared/#cost">cost-per-task estimate</a> puts a medium Sonnet 5.5 agent task at about 69 credits, or roughly 22 a month on Pro.</p>
       <p>Claude Pro works the other way. You don't see a dollar meter; you hit a limit, wait for the five-hour window to roll over, and keep going, up to a weekly cap. That suits people who code in bursts every day. Neither company publishes how many Opus agent turns you actually get, so the honest test is one week of your normal work on each.</p>
-      <p><strong>Rule of thumb:</strong> mostly completions and quick chats in the editor, pick Copilot Pro and save $10. Several long Claude agent sessions a day, Claude Pro, or Max if you keep hitting the five-hour wall.</p>
+      <p><strong>Rule of thumb:</strong> mostly completions and quick chats in the editor, pick Copilot Pro and save $10. Several long Claude agent sessions a day, Claude Pro, or Max ($100) or Ultra ($200, no five-hour limit once verified) if you keep hitting the five-hour wall.</p>
     </section>
 
     <section class="panel" id="fusion">
@@ -159,7 +159,7 @@
         <li><strong>Built for long agent sessions.</strong> Limits reset every five hours instead of monthly, so a heavy day doesn't burn next week's budget.</li>
         <li><strong>The newest Claude models in the agent.</strong> Claude Code runs Anthropic's current models. Copilot's Claude cloud agent lists Opus 5 and Sonnet 5 but not Opus 5.5.</li>
         <li><strong>Terminal-first.</strong> It lives in your shell and works with any editor. Copilot has a CLI too, but its center of gravity is the IDE and GitHub.</li>
-        <li><strong>Max includes API credits.</strong> $100 or $200 a month in Claude Platform credits if you also build on the API.</li>
+        <li><strong>Max and Ultra include API credits.</strong> $100 or $200 a month in Claude Platform credits if you also build on the API.</li>
         <li><strong>Annual discount.</strong> Claude Pro is $17/mo billed annually.</li>
       </ul>
     </section>
@@ -268,7 +268,7 @@
         <li><a href="../claude-code-vs-codex/">Claude Code vs OpenAI Codex<small>Same prices, different limits and uptime</small></a></li>
         <li><a href="../cursor-vs-copilot/">Cursor vs GitHub Copilot<small>$8 Grok-only vs $10 multi-model</small></a></li>
         <li><a href="../claude-code-vs-cursor/">Claude Code vs Cursor<small>Terminal agent vs AI IDE</small></a></li>
-        <li><a href="../ai-coding-tool-pricing/">AI coding tool pricing<small>All 40 plans + cost calculator</small></a></li>
+        <li><a href="../ai-coding-tool-pricing/">AI coding tool pricing<small>All 41 plans + cost calculator</small></a></li>
         <li><a href="../cursor-bundle-alternatives/">Cursor's new bundle vs Claude Code and Copilot<small>Claude/GPT now cost extra in Cursor</small></a></li>
       </ul>
     </section>

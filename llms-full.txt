@@ -4,7 +4,7 @@ Independent AI coding tool comparison. Source: https://codetoolpicker.com/ . Dat
 Editorial policy: rankings are not for sale. Sponsors and affiliate links are labeled and never change recommendations, quiz logic, or comparison data.
 Contact (sponsorships, corrections): sponsors@codetoolpicker.com
 
-See also: https://codetoolpicker.com/ai-coding-tool-pricing/ (all 40 plans across 9 tools, which one you need, cost calculator, pricing change log)
+See also: https://codetoolpicker.com/ai-coding-tool-pricing/ (all 41 plans across 9 tools, which one you need, cost calculator, pricing change log)
 See also: https://codetoolpicker.com/cursor-bundle-alternatives/ (Cursor bundle vs Claude Code vs Copilot)
 See also: https://codetoolpicker.com/cursor-vs-copilot/ (Cursor vs GitHub Copilot)
 See also: https://codetoolpicker.com/switch-from-copilot-to-cursor/ (switch from Copilot to Cursor without losing your setup)
@@ -100,16 +100,18 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - website: https://claude.com/product/claude-code
 - pricing source: https://claude.com/pricing?mode=code
 - plan Pro: $20/mo: Claude Code included; $17/mo billed annually
-- plan Max 5x: $100/mo: 5x Pro usage
-- plan Max 20x: see vendor: 20x Pro usage; price not shown on claude.com/pricing (Max listed 'from $100')
+- plan Max: $100/mo: 5x Pro usage; $100/mo in API credits (was Max 5x)
+- plan Ultra: $200/mo: 10x Pro usage per week, no five-hour limit for verified accounts; $200/mo in API credits (was Max 20x, renamed Oct 30, 2026)
 - plan API: see vendor: Pay-as-you-go Console tokens
 - best for (badge): Best terminal coding agent
 - price Pro: monthly $20/mo; annual $200/yr (≈$17/mo); $17/mo billed annually ($200 up front)
-- price Max 5x: monthly $100/mo; annual Not listed; 5x Pro usage; Max 20x price not listed on claude.com/pricing
+- price Max: monthly $100/mo; annual Not listed; 5x Pro usage every 5 hours and every week; $100/mo in API credits; monthly only
+- price Ultra: monthly $200/mo; annual Not listed; 10x Pro usage per week, no five-hour limit for verified accounts; $200/mo in API credits; monthly only (was Max 20x)
 - price Team (standard seat): monthly $25/seat/mo; annual $240/seat/yr (≈$20/seat/mo); $20/seat/mo billed annually; teams of 2 to 150
 - price Team (premium seat): monthly $125/seat/mo; annual $1,200/seat/yr (≈$100/seat/mo); 5x standard usage; $100/seat/mo billed annually
 - which plan: Pro $20: Start here. Includes Claude Code with usage limits; $17/mo if you pay $200 for the year.
-- which plan: Max 5x from $100: If you hit Pro limits most days. 5x Pro usage plus priority access at busy times.
+- which plan: Max $100: If you hit Pro limits most days. 5x Pro usage plus priority access at busy times and $100 a month in API credits.
+- which plan: Ultra $200: All-day Claude Code users tired of the five-hour wall. 10x Pro usage per week, no five-hour limit once Anthropic verifies your account, and $200 a month in API credits.
 - which plan: Team $25/seat: Teams of 2 to 150: standard seats are $25/mo ($20 annual); premium seats with 5x usage are $125 ($100 annual). Team includes up to $500 a month in pooled API credits.
 - which plan: API (pay per token): Automation and CI. Example: Sonnet 5.5 is $2 per million input tokens and $10 per million output tokens.
 - not included: Usage limits apply and are shared with Claude chat. API use is billed per token.
@@ -289,6 +291,7 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - Namecheap (https://www.namecheap.com): Popular registrar with hosting and email add-ons. Varies by TLD
 
 ## Pricing change log
+- 2026-11-02: Re-checked Claude plans. On Oct 30, 2026 Anthropic renamed Max 5x to Max (still $100) and Max 20x to Ultra ($200, now shown on the pricing page). Ultra gives 10x Pro usage per week and drops the five-hour limit for verified accounts (newer accounts keep a temporary one until verified); weekly limits stay. Max includes $100 a month in API credits, Ultra $200. (source: https://claude.com/pricing)
 - 2026-11-02: Checked GitHub Copilot Fusion (GA Oct 28). Artificial Analysis Coding Agent Index: Copilot Fusion (max) scores 60 vs 62 for Claude Code with Opus 5.5, at $5.59 a task vs $11.42 (about 559 AI credits, 391 with the 30% Fusion discount through Nov 30). Fusion bills each model at its standard rate and only uses models in your plan. Also: tampered Claude Code extension 2.1.312/2.1.313 was served from Cursor's marketplace on Oct 29; npm, the VS Code Marketplace and Open VSX were not affected. https://codetoolpicker.com/ai-coding-cost-per-task/#fusion (source: https://artificialanalysis.ai/agents/coding-agents/comparisons/claude-code-vs-github-copilot)
 - 2026-10-30: Checked ChatGPT Pro Codex limits. OpenAI canceled the Pro 200 reduction it announced Sep 29: accounts on the higher Work and Codex allowance keep it, lower ones doubled to match, price stays $200. Pro 100 and Pro 500 now get 2x their previous Work and Codex allowance; Plus unchanged; Business Premium increasing (no figure). OpenAI publishes no multiples, so 20x to 10x was never official. Since Oct 28, eligible subscriptions get monthly API credits: Pro $100/$200/$500, Business $20 per Standard and $100 per Premium seat (max $500 per workspace); they don't add ChatGPT or signed-in Codex usage. Full story: https://codetoolpicker.com/chatgpt-pro-codex-limits/ (source: https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers)
 - 2026-10-29: Checked cost per task. Artificial Analysis Coding Agent Index v2.0: Claude Code with Opus 5.5 $11.42 a task at API prices, Sonnet 5.5 $13.30, Antigravity CLI with Gemini 4 Argon $11.73, Codex with GPT-6.1 Sol $1.50. Antigravity: Google AI Pro now has Gemini 4 Argon on a separate weekly-only quota (Google forum moderator, Oct 15). Kiro's pricing page still says Claude Sonnet 5 and Opus 5 while its models page lists Opus 5.5 and Sonnet 5.5 on all paid plans; we follow the models page. New: https://codetoolpicker.com/ai-coding-cost-per-task/ (source: https://artificialanalysis.ai/agents/coding-agents)

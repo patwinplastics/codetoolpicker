@@ -74,7 +74,7 @@ const lines = [
   "Editorial policy: rankings are not for sale. Sponsors and affiliate links are labeled and never change recommendations, quiz logic, or comparison data.",
   "Contact (sponsorships, corrections): sponsors@codetoolpicker.com",
   "",
-  "See also: https://codetoolpicker.com/ai-coding-tool-pricing/ (all 40 plans across 9 tools, which one you need, cost calculator, pricing change log)",
+  "See also: https://codetoolpicker.com/ai-coding-tool-pricing/ (all 41 plans across 9 tools, which one you need, cost calculator, pricing change log)",
   "See also: https://codetoolpicker.com/cursor-bundle-alternatives/ (Cursor bundle vs Claude Code vs Copilot)",
   "See also: https://codetoolpicker.com/cursor-vs-copilot/ (Cursor vs GitHub Copilot)",
   "See also: https://codetoolpicker.com/switch-from-copilot-to-cursor/ (switch from Copilot to Cursor without losing your setup)",

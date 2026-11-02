@@ -1,10 +1,10 @@
 # CodeToolPicker
 
-> CodeToolPicker (https://codetoolpicker.com/) is an independent comparison site and 60-second quiz that helps developers and vibe coders choose an AI coding tool. It compares Cursor, GitHub Copilot, Claude Code, OpenAI Codex, Google Antigravity, Devin Desktop (formerly Windsurf), Lovable, and Bolt.new on pricing, form factor, models, and best-fit use cases. Pricing last checked 2026-10-19 to 2026-10-20.
+> CodeToolPicker (https://codetoolpicker.com/) is an independent comparison site and 60-second quiz that helps developers and vibe coders choose an AI coding tool. It compares Cursor, GitHub Copilot, Claude Code, OpenAI Codex, Google Antigravity, Devin Desktop (formerly Windsurf), Lovable, and Bolt.new on pricing, form factor, models, and best-fit use cases. Pricing checked between 2026-10-19 and 2026-11-02; each page shows its own check date.
 
 ## Key pages
 - [Home: quiz + comparison table](https://codetoolpicker.com/): personalized pick plus runner-up, side-by-side table, FAQ
-- [AI coding tool pricing (all 40 plans, 9 tools)](https://codetoolpicker.com/ai-coding-tool-pricing/): every plan with monthly and annual prices, which plan you actually need, what a team of 5 pays, what costs extra, best free tools, and a dated pricing change log (verified 2026-10-19 to 2026-10-22)
+- [AI coding tool pricing (all 41 plans, 9 tools)](https://codetoolpicker.com/ai-coding-tool-pricing/): every plan with monthly and annual prices, which plan you actually need, what a team of 5 pays, what costs extra, best free tools, and a dated pricing change log (verified 2026-10-19 to 2026-10-22)
 - [Cursor's new bundle: should you switch to Claude Code or Copilot?](https://codetoolpicker.com/cursor-bundle-alternatives/): sourced comparison of Cursor's X Subscription tiers vs Claude Code, GitHub Copilot, OpenAI Codex and Google Antigravity, and who should switch (re-verified 2026-10-20)
 - [Cursor vs GitHub Copilot](https://codetoolpicker.com/cursor-vs-copilot/): plan-by-plan pricing, models, teams, and who should pick which (verified 2026-10-19)
 - [Switch from GitHub Copilot to Cursor without losing your setup](https://codetoolpicker.com/switch-from-copilot-to-cursor/): import VS Code settings, move copilot-instructions.md to AGENTS.md or .cursor/rules, port MCP servers
@@ -39,7 +39,8 @@
 - Best all-round AI IDE: Cursor (Plus $8/mo is Grok-only; Claude/GPT in Cursor cost extra at API list price on Premium $30+)
 - Best for Claude-model users: Claude Code (Pro $20/mo)
 - Best terminal/agentic coding: Claude Code
-- Claude Code vs OpenAI Codex: same list prices (Pro/Plus $20, Max/Pro from $100, team seats $20 annual / $25 monthly); Codex has Free and Go ($8) tiers and no five-hour cap on ChatGPT Pro; Claude Max includes $100-$200/mo API credits (verified 2026-10-20)
+- Claude plans (re-checked 2026-11-02 on claude.com/pricing): Pro $20 ($17/mo billed annually), Max $100 (5x Pro usage every five hours and every week, $100/mo API credits), Ultra $200 (10x Pro usage per week, no five-hour limit for verified accounts, $200/mo API credits). On Oct 30, 2026 Anthropic renamed Max 5x to Max and Max 20x to Ultra at the same prices. Claude Code is included on all paid plans.
+- Claude Code vs OpenAI Codex: same list prices (Pro/Plus $20, Max/Pro from $100, team seats $20 annual / $25 monthly); Codex has Free and Go ($8) tiers and no five-hour cap on ChatGPT Pro; Claude Max ($100) includes $100/mo API credits and Claude Ultra ($200) $200/mo (verified 2026-10-20; Claude plans re-checked 2026-11-02)
 - Claude Code vs Codex reliability (official status pages, Sep 21 to Oct 20, 2026): Claude Code 4 incidents, 4.3 hours, all labeled major; Codex 7 incidents, 49.4 hours, mostly degraded performance (25 h from one ChatGPT desktop Work Mode incident), one 55-minute full outage
 - Cursor vs Google Antigravity: Antigravity has a free tier and Google AI Pro ($19.99/mo) includes Gemini 4 Argon and Claude Opus/Sonnet 5.5 in its quota; Ultra $99.99 (5x) or $199.99 (20x). Cursor Plus $8 is Grok-only and Claude/Gemini cost API list price on Premium $30+. Antigravity teams buy via Google Cloud (Gemini Enterprise from $30/seat) (verified 2026-10-20)
 - Cheapest way into a coding agent: OpenAI Codex Free or Go $8/mo (ChatGPT desktop app, subject to rollout)
@@ -54,5 +55,5 @@
 - Windsurf was renamed Devin Desktop by Cognition on 2026-06-02; windsurf.com redirects to https://devin.ai. Same IDE, plans, and pricing.
 - Prices change often; confirm on vendor pages.
 - Editorial policy: rankings are not for sale; sponsors and affiliate links are labeled and never change recommendations.
-- Disclosure: links marked "referral" are affiliate links (currently Bolt.new only; Bolt referral sign-ups get 20% off their first subscription). All other tool links are plain links. Affiliate links never change rankings, quiz results, or verdicts. Not affiliated with any vendor.
+- Disclosure: links marked "referral" are affiliate links (currently Bolt.new and Netlify; Bolt referral sign-ups get 20% off their first subscription). All other links are plain links. Affiliate links never change rankings, quiz results, or verdicts. Not affiliated with any vendor.
 - Contact (sponsorships, corrections): sponsors@codetoolpicker.com
