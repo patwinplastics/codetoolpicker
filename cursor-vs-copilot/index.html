@@ -84,6 +84,14 @@
       <div class="cta-row"><a class="btn btn-primary" href="../#quiz">Not sure? Take the 60-second picker quiz</a> <a class="btn" href="../#compare">See all 6 tools</a></div>
     </section>
 
+    <section class="panel" id="extension-check">
+      <h2>Using Claude Code inside Cursor? Check your extension</h2>
+      <p>On Oct 29, 2026, from about 09:27 to 20:35 UTC (2:27am to 1:35pm PT), Cursor's own extension marketplace served tampered copies of Anthropic's Claude Code extension, <code>anthropic.claude-code</code> versions 2.1.312 and 2.1.313, to macOS and Windows users. Anthropic didn't build them. Cursor says the code collected host details, tried to add an attacker's SSH key and open a reverse SSH tunnel, and set up persistence that can keep running after you uninstall the extension. Sophos, citing Cursor, puts it at up to 5,000 affected users.</p>
+      <p>Not affected, per Anthropic and Microsoft: the Claude Code CLI on npm, the extension on Microsoft's VS Code Marketplace, and Open VSX. If you installed or updated Claude Code in Cursor that day, run the check script in Cursor's notice, remove the SSH key and persistence it lists, and rotate any credentials that machine could reach. Anthropic skipped straight to 2.1.314 to avoid confusion.</p>
+      <p class="note">Sources: <a href="https://cursor.com/blog/claude-code-extension-security-notice" rel="noopener">Cursor's security notice</a>, <a href="https://www.microsoft.com/en-us/security/blog/2026/10/30/inside-malicious-claude-code-branded-cursor-extension-persistent-ssh-backdoor/" rel="noopener">Microsoft Security blog</a>, <a href="https://www.stepsecurity.io/blog/claude-code-extension-trojanized" rel="noopener">StepSecurity</a> (with Anthropic's clarification) and <a href="https://www.sophos.com/en-us/blog/malicious-claude-code-extension-distributed-through-cursor-marketplace" rel="noopener">Sophos</a>, checked Nov 2, 2026.</p>
+    </section>
+
+
     <section class="panel" style="overflow-x:auto">
       <h2>Side by side</h2>
       <table>

@@ -31,7 +31,7 @@
   "@type": "Article",
   "headline": "GitHub Copilot vs Claude Code (Oct 2026): $10 credits vs $20 flat",
   "datePublished": "2026-10-21",
-  "dateModified": "2026-10-23",
+  "dateModified": "2026-11-02",
   "author": {"@type": "Organization", "name": "CodeToolPicker"},
   "publisher": {"@type": "Organization", "name": "CodeToolPicker"},
   "mainEntityOfPage": "https://codetoolpicker.com/copilot-vs-claude-code/"
@@ -87,6 +87,14 @@
       <div class="cta-row"><a class="btn btn-primary" href="../#quiz">Not sure? Take the 60-second picker quiz</a> <a class="btn" href="../ai-coding-tool-pricing/">See every AI coding plan</a></div>
     </section>
 
+    <section class="panel" id="extension-check">
+      <h2>Using Claude Code inside Cursor? Check your extension</h2>
+      <p>On Oct 29, 2026, from about 09:27 to 20:35 UTC (2:27am to 1:35pm PT), Cursor's own extension marketplace served tampered copies of Anthropic's Claude Code extension, <code>anthropic.claude-code</code> versions 2.1.312 and 2.1.313, to macOS and Windows users. Anthropic didn't build them. Cursor says the code collected host details, tried to add an attacker's SSH key and open a reverse SSH tunnel, and set up persistence that can keep running after you uninstall the extension. Sophos, citing Cursor, puts it at up to 5,000 affected users.</p>
+      <p>Not affected, per Anthropic and Microsoft: the Claude Code CLI on npm, the extension on Microsoft's VS Code Marketplace, and Open VSX. If you installed or updated Claude Code in Cursor that day, run the check script in Cursor's notice, remove the SSH key and persistence it lists, and rotate any credentials that machine could reach. Anthropic skipped straight to 2.1.314 to avoid confusion.</p>
+      <p class="note">Sources: <a href="https://cursor.com/blog/claude-code-extension-security-notice" rel="noopener">Cursor's security notice</a>, <a href="https://www.microsoft.com/en-us/security/blog/2026/10/30/inside-malicious-claude-code-branded-cursor-extension-persistent-ssh-backdoor/" rel="noopener">Microsoft Security blog</a>, <a href="https://www.stepsecurity.io/blog/claude-code-extension-trojanized" rel="noopener">StepSecurity</a> (with Anthropic's clarification) and <a href="https://www.sophos.com/en-us/blog/malicious-claude-code-extension-distributed-through-cursor-marketplace" rel="noopener">Sophos</a>, checked Nov 2, 2026.</p>
+    </section>
+
+
     <section class="panel" style="overflow-x:auto">
       <h2>Side by side</h2>
       <table>
@@ -114,6 +122,13 @@
       <p>Copilot Pro's 1,500 credits are worth $15 of usage at GitHub's own rate, and they last all month. A short question to a light model costs a fraction of a credit; GitHub says a long agent session on a frontier model across many files costs more. Claude Opus 5.5 isn't on Pro at all, so if you want Opus in agent mode you need Pro+ ($39, 7,000 credits). Even Sonnet 5.5 for hours a day can run through Pro's credits; our <a href="../usage-limits-compared/#cost">cost-per-task estimate</a> puts a medium Sonnet 5.5 agent task at about 69 credits, or roughly 22 a month on Pro.</p>
       <p>Claude Pro works the other way. You don't see a dollar meter; you hit a limit, wait for the five-hour window to roll over, and keep going, up to a weekly cap. That suits people who code in bursts every day. Neither company publishes how many Opus agent turns you actually get, so the honest test is one week of your normal work on each.</p>
       <p><strong>Rule of thumb:</strong> mostly completions and quick chats in the editor, pick Copilot Pro and save $10. Several long Claude agent sessions a day, Claude Pro, or Max if you keep hitting the five-hour wall.</p>
+    </section>
+
+    <section class="panel" id="fusion">
+      <h2>New: Copilot Fusion gets close to Claude Code for half the cost</h2>
+      <p>Since Oct 28, 2026, Copilot can pick models for you with Copilot Fusion. On Artificial Analysis's Coding Agent Index, Fusion (max) scored 60 to Claude Code with Opus 5.5's 62, at $5.59 a hard task vs $11.42. It won on terminal tasks and lost on real repo changes and repo Q&amp;A. In Copilot terms that's about 559 AI credits a hard task, or about 391 with the 30% Fusion discount through Nov 30, so Pro's 1,500 credits cover only a few of those and Pro+ about 12 to 17.</p>
+      <p>One thing to know before you switch on Pro: Fusion only routes to models in your plan, and Opus 5.5 starts at Pro+. Full numbers on our <a href="../ai-coding-cost-per-task/#fusion">cost per task page</a>.</p>
+      <p class="note">Sources: <a href="https://artificialanalysis.ai/agents/coding-agents/comparisons/claude-code-vs-github-copilot" rel="noopener">Artificial Analysis: Claude Code vs GitHub Copilot</a> and <a href="https://docs.github.com/en/copilot/concepts/models/copilot-fusion" rel="noopener">About Copilot Fusion</a>, checked Nov 2, 2026.</p>
     </section>
 
     <section class="panel">

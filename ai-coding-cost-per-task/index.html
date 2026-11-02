@@ -31,7 +31,7 @@
   "@type": "Article",
   "headline": "What One AI Coding Task Really Costs (Oct 2026): Claude Code, Codex, Antigravity",
   "datePublished": "2026-10-29",
-  "dateModified": "2026-10-30",
+  "dateModified": "2026-11-02",
   "author": {"@type": "Organization", "name": "CodeToolPicker"},
   "publisher": {"@type": "Organization", "name": "CodeToolPicker"},
   "mainEntityOfPage": "https://codetoolpicker.com/ai-coding-cost-per-task/"
@@ -117,7 +117,7 @@
     <article>
     <section class="hero">
       <h1>What one AI coding task really costs (Oct 2026)</h1>
-      <p>Short answer: an everyday task, like adding a feature across a few files, is usually <strong>under $1.50 at API prices</strong>, by our estimate. A hard task is a different story. Artificial Analysis ran 290 tough benchmark tasks through each coding agent and measured <strong>$11.42 a task for Claude Code with Opus 5.5</strong>, $13.30 with Sonnet 5.5, $11.73 for Antigravity CLI with Gemini 4 Argon and <strong>$1.50 for Codex with GPT-6.1 Sol</strong>. The thing that moves the bill most isn't the price per token. It's how many tokens the agent burns to finish.</p>
+      <p>Short answer: an everyday task, like adding a feature across a few files, is usually <strong>under $1.50 at API prices</strong>, by our estimate. A hard task is a different story. Artificial Analysis ran 290 tough benchmark tasks through each coding agent and measured <strong>$11.42 a task for Claude Code with Opus 5.5</strong>, $13.30 with Sonnet 5.5, $11.73 for Antigravity CLI with Gemini 4 Argon and <strong>$1.50 for Codex with GPT-6.1 Sol</strong>. New on Oct 28: GitHub Copilot Fusion scored 60, two points behind Claude Code, for <strong>$5.59 a task</strong>. The thing that moves the bill most isn't the price per token. It's how many tokens the agent burns to finish.</p>
       <p class="updated">Benchmark figures from Artificial Analysis's Coding Agent Index v2.0 and API prices from each vendor's pricing page, all checked Oct 29, 2026. Anything we worked out ourselves is labeled as an estimate.</p>
       <div class="cta-row"><a class="btn btn-primary" href="#measured">See the measured costs</a> <a class="btn" href="#why">Why it's not $0.69</a> <a class="btn" href="#cut">Cut your cost per task</a></div>
     </section>
@@ -129,6 +129,7 @@
         <thead><tr><th>Agent and model (effort)</th><th>Index score</th><th>Cost per task</th><th>Tokens per task</th><th>Time per task</th><th>Works out to, per 1M tokens</th><th>List price per 1M tokens (in / out)</th></tr></thead>
         <tbody>
           <tr><td>Claude Code, Claude Opus 5.5 (max)</td><td>62</td><td>$11.42</td><td>14.5M</td><td>1.0 h</td><td>$0.79</td><td>$4 / $20</td></tr>
+          <tr><td>GitHub Copilot CLI, Copilot Fusion (max)</td><td>60</td><td>$5.59</td><td>7.3M</td><td>36.1 min</td><td>$0.77</td><td>Billed per model it uses, 30% off through Nov 30</td></tr>
           <tr><td>Claude Code, Claude Sonnet 5.5 (max)</td><td>59</td><td>$13.30</td><td>24.1M</td><td>1.3 h</td><td>$0.55</td><td>$2 / $10</td></tr>
           <tr><td>Codex, GPT-6 Astra (max)</td><td>55</td><td>$7.04</td><td>3.2M</td><td>24.8 min</td><td>$2.20</td><td>$10 / $50</td></tr>
           <tr><td>Codex, GPT-6.1 Sol (max)</td><td>54</td><td>$1.50</td><td>3.9M</td><td>23.7 min</td><td>$0.38</td><td>$2 / $10</td></tr>
@@ -138,8 +139,29 @@
           <tr><td>Codex, GPT-6 Luna (max)</td><td>31</td><td>$0.16</td><td>8.9M</td><td>21.3 min</td><td>$0.02</td><td>$0.10 / $0.50</td></tr>
         </tbody>
       </table>
-      <p class="note">Index score, cost, tokens and time from Artificial Analysis: <a href="https://artificialanalysis.ai/agents/coding-agents" rel="noopener">Coding Agent Index</a>, <a href="https://artificialanalysis.ai/agents/coding-agents/comparisons/claude-code-vs-codex" rel="noopener">Claude Code vs Codex</a> and <a href="https://artificialanalysis.ai/agents/coding-agents/comparisons/antigravity-cli-vs-claude-code" rel="noopener">Antigravity CLI vs Claude Code</a>, checked Oct 29, 2026. "Works out to" is our math: cost per task divided by tokens per task. List prices from <a href="https://platform.claude.com/docs/en/about-claude/pricing" rel="noopener">Claude API pricing</a>, <a href="https://developers.openai.com/api/docs/pricing" rel="noopener">OpenAI API pricing</a> and <a href="https://ai.google.dev/gemini-api/docs/pricing" rel="noopener">Gemini API pricing</a>. The Claude Code runs use Anthropic's default fallback, so a different model can finish an attempt after a safety refusal.</p>
+      <p class="note">Index score, cost, tokens and time from Artificial Analysis: <a href="https://artificialanalysis.ai/agents/coding-agents" rel="noopener">Coding Agent Index</a>, <a href="https://artificialanalysis.ai/agents/coding-agents/comparisons/claude-code-vs-codex" rel="noopener">Claude Code vs Codex</a>, <a href="https://artificialanalysis.ai/agents/coding-agents/comparisons/antigravity-cli-vs-claude-code" rel="noopener">Antigravity CLI vs Claude Code</a> (checked Oct 29, 2026) and <a href="https://artificialanalysis.ai/agents/coding-agents/comparisons/claude-code-vs-github-copilot" rel="noopener">Claude Code vs GitHub Copilot</a> (checked Nov 2, 2026). "Works out to" is our math: cost per task divided by tokens per task. List prices from <a href="https://platform.claude.com/docs/en/about-claude/pricing" rel="noopener">Claude API pricing</a>, <a href="https://developers.openai.com/api/docs/pricing" rel="noopener">OpenAI API pricing</a> and <a href="https://ai.google.dev/gemini-api/docs/pricing" rel="noopener">Gemini API pricing</a>. The Claude Code runs use Anthropic's default fallback, so a different model can finish an attempt after a safety refusal.</p>
       <p>What the tasks are: 100 real software tasks on open-source repos from Cognition's FrontierCode v1.1, graded on whether a maintainer would merge the change; 66 terminal tasks from Terminal-Bench 4.0; and 124 questions about code repos from Scale AI's SWE-Atlas-QnA, regraded by Artificial Analysis. So think "a gnarly ticket," not "rename this variable."</p>
+    </section>
+
+    <section class="panel" id="fusion">
+      <h2>Copilot Fusion: near Claude Code, half the cost per task</h2>
+      <p>GitHub made Copilot Fusion generally available on Oct 28, 2026. Instead of picking a model, you pick an effort level (Standard, High or Max) and Copilot routes each step to models from Anthropic and OpenAI, sometimes drafting with one and checking with another. Artificial Analysis ran Fusion (max) through Copilot CLI on the same index:</p>
+      <ul>
+        <li><strong>Score 60 vs 62</strong> for Claude Code with Opus 5.5 (max). Devin Fusion with Opus 5.5 and GPT-6 Luna also scored 62, at $8.00 a task.</li>
+        <li><strong>$5.59 a task vs $11.42</strong>, on about half the tokens (7.3M vs 14.5M) and in 36 minutes instead of an hour.</li>
+        <li><strong>Uneven by test.</strong> Fusion led Terminal-Bench 4.0 (71 vs 63) but trailed on real repo changes (FrontierCode 51 vs 56) and repo Q&amp;A (57 vs 66). Close overall doesn't mean better at everything.</li>
+      </ul>
+      <h3>What that is in Copilot credits <span class="est">Estimate</span></h3>
+      <table>
+        <thead><tr><th>Plan</th><th>Monthly AI credits</th><th>Hard Fusion (max) tasks at $5.59</th><th>With 30% off, through Nov 30</th></tr></thead>
+        <tbody>
+          <tr><td>Copilot Pro, $10</td><td>1,500</td><td>About 2.7</td><td>About 3.8</td></tr>
+          <tr><td>Copilot Pro+, $39</td><td>7,000</td><td>About 12.5</td><td>About 17.9</td></tr>
+          <tr><td>Copilot Max, $100</td><td>20,000</td><td>About 35.8</td><td>About 51</td></tr>
+        </tbody>
+      </table>
+      <p><strong>The catch:</strong> Fusion only uses models in your plan, and Copilot Pro doesn't include Claude Opus 5.5 (it starts at Pro+). Artificial Analysis doesn't say which plan it tested on, so on Pro your mix, score and cost may differ. And these are hour-long benchmark tasks; everyday edits cost far fewer credits. Our math: cost per task times 100 credits per dollar.</p>
+      <p class="note">Sources: <a href="https://artificialanalysis.ai/articles/github-copilot-fusion-orchestrates-anthropic-and-openai-models-to-balance-performance-and-cost" rel="noopener">Artificial Analysis on Copilot Fusion</a>, <a href="https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion/" rel="noopener">GitHub changelog</a>, <a href="https://docs.github.com/en/copilot/concepts/models/copilot-fusion" rel="noopener">About Copilot Fusion</a> and <a href="https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing" rel="noopener">Copilot billing for individuals</a>, checked Nov 2, 2026.</p>
     </section>
 
     <section class="panel" id="why">
@@ -179,7 +201,7 @@
       <ul>
         <li><strong>Paying per token</strong> (your own key in Cline, Kilo Code, OpenCode or Aider, Claude usage credits past your limit, or a Codex API key): $20 covers less than 2 benchmark-size Opus 5.5 tasks in Claude Code, or about 13 GPT-6.1 Sol tasks in Codex. Everyday tasks cost far less, about $0.69 each on Sonnet 5.5 by our estimate.</li>
         <li><strong>Claude Code for work:</strong> across enterprise deployments, Anthropic says the average Claude Code cost is about $13 per developer per active day, and 90% of users stay under $30. $13 is about one benchmark-size Opus task, or about 19 of our medium Sonnet tasks.</li>
-        <li><strong>GitHub Copilot:</strong> AI credits are $0.01 each at the provider's list price. Pro+ has 7,000 credits ($70 of usage). If a Copilot run burned as many tokens as Claude Code did on the benchmark, that's about 6 hard Opus 5.5 tasks. Artificial Analysis didn't test the same setup in Copilot, so this is a rough guide only.</li>
+        <li><strong>GitHub Copilot:</strong> AI credits are $0.01 each. A benchmark-size Copilot Fusion (max) task at $5.59 is about 559 credits, or about 391 with the 30% Fusion discount through Nov 30. That's roughly 2 to 3 hard tasks on Pro's 1,500 credits, 12 to 17 on Pro+ (7,000) and 35 to 51 on Max (20,000). See the <a href="#fusion">Fusion section</a> for the catch on Pro.</li>
         <li><strong>Usage-priced plans</strong> like Warp Build or Amp Megawatt include $20 of usage at API rates, so the same math applies: lots of small tasks, or one or two huge ones.</li>
       </ul>
       <p class="note">Plan prices and credits from our <a href="../usage-limits-compared/">usage limits page</a> and <a href="../claude-code-alternatives/">Claude Code alternatives</a>, checked Oct 23 to 28, 2026. Anthropic's daily cost figure is from <a href="https://code.claude.com/docs/en/costs" rel="noopener">Claude Code costs docs</a>.</p>
@@ -248,6 +270,8 @@
       <p>Per token, yes, it's half the price. Per hard task, not on Artificial Analysis's benchmark: Claude Code with Sonnet 5.5 used 24.1 million tokens and cost $13.30 a task, while Opus 5.5 used 14.5 million and cost $11.42, with a higher score.</p>
       <h3>Which coding agent is cheapest per task?</h3>
       <p>Among strong setups on Artificial Analysis's index, Codex with GPT-6.1 Sol: a score of 54 for $1.50 a task. Cheaper options score lower, such as Codex with DeepSeek V4.1 Flash (47, $0.39) or GPT-6 Luna (31, $0.16). Checked Oct 29, 2026.</p>
+      <h3>Is GitHub Copilot Fusion cheaper than Claude Code?</h3>
+      <p>Per hard task on Artificial Analysis's index, yes: Copilot Fusion (max) cost $5.59 a task vs $11.42 for Claude Code with Opus 5.5, with a score of 60 vs 62 (checked Nov 2, 2026). In Copilot that's about 559 AI credits, or about 391 with the 30% Fusion discount through Nov 30. Fusion only uses models in your plan, and Copilot Pro doesn't include Opus 5.5.</p>
       <h3>Do I pay these prices on a Claude, ChatGPT or Google AI subscription?</h3>
       <p>No. Those figures are pay-per-token API prices. On Claude Pro or Max, ChatGPT Plus or Google AI Pro, usage comes out of your plan's allowance. You pay API rates when you use your own API key (for example in Cline, Kilo Code, OpenCode or Aider), buy Claude usage credits past your limit, or use a Codex API key.</p>
       <h3>How much does Gemini 4 Argon cost per task?</h3>
