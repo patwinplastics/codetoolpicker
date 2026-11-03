@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name='impact-site-verification' value='83f48c6a-f7b9-45b3-8866-03f8600f0734'>
+  <title>Jules Is Shutting Down (Nov 11 Deadline): Best Jules Alternatives, Compared</title>
+  <meta name="description" content="Google Jules goes read-only after Nov 11, 2026 and shuts down Dec 31. What to export, why Antigravity isn&#x27;t a drop-in replacement yet, and hosted background agents compared: Copilot $10, Codex and Claude Code $20, Cursor $30, Devin $20." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://codetoolpicker.com/jules-alternatives/" />
+  <meta property="og:title" content="Jules shuts down Dec 31 (last sessions Nov 11). Where to move your background coding agent" />
+  <meta property="og:description" content="Antigravity has no Google-hosted runs yet and no separate task pool. Cheapest hosted replacement: Copilot Pro $10. Codex and Claude Code do it for $20. Plus how to export and move your Jules setup." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://codetoolpicker.com/jules-alternatives/" />
+  <meta property="og:site_name" content="CodeToolPicker" />
+  <meta property="og:image" content="https://codetoolpicker.com/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@codetoolpicker" />
+  <meta name="twitter:image" content="https://codetoolpicker.com/og.png" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#0b0f14" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CodeToolPicker", "item": "https://codetoolpicker.com/"}, {"@type": "ListItem", "position": 2, "name": "Comparisons", "item": "https://codetoolpicker.com/#comparisons"}, {"@type": "ListItem", "position": 3, "name": "Jules alternatives", "item": "https://codetoolpicker.com/jules-alternatives/"}]}</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Jules Is Shutting Down (Nov 11 Deadline): Best Jules Alternatives, Compared",
+  "datePublished": "2026-11-03",
+  "dateModified": "2026-11-03",
+  "author": {"@type": "Organization", "name": "CodeToolPicker"},
+  "publisher": {"@type": "Organization", "name": "CodeToolPicker"},
+  "mainEntityOfPage": "https://codetoolpicker.com/jules-alternatives/"
+}
+  </script>
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "When does Jules shut down?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Google says Jules winds down on Dec 31, 2026. You can keep finishing sessions until Nov 11, 2026. After that Jules is read-only until the end of the year. Google's notice doesn't give an hour or time zone."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Will I lose my code when Jules shuts down?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. Your code, branches and pull requests already live in GitHub and stay there. What you lose without an export is the stuff inside Jules: settings, environment variables, scheduled tasks, memories, setup scripts and session history. Google's export saves all of it to a local jules-export folder."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is Google Antigravity a drop-in replacement for Jules?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Not yet. Google says it's bringing Jules-style remote background runs to Antigravity, but today Antigravity has no Google-hosted cloud sandbox, so agents run on your machine or a VM you keep on. It also has no separate task pool: background work uses the same plan quota as the rest of your Antigravity use."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What's the cheapest hosted replacement for Jules?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "GitHub Copilot Pro at $10 a month. Paid Copilot plans get Copilot in the cloud, which works on a task in a cloud sandbox or GitHub Actions and opens a pull request. Model use comes out of 1,500 monthly AI credits. Codex on ChatGPT Plus and Claude Code on Claude Pro do the same for $20."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is there a free alternative to Jules?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Not a hosted one from the big vendors, as of Nov 3, 2026. Copilot Free doesn't include Copilot in the cloud, Codex Free is desktop-app only, Cursor Free and Plus don't include Cloud Agents, and Claude Code has no free plan. Antigravity Free can run agents and automations, but on your own computer."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Can I import my Jules export into another tool?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "We found no tool that imports it directly. Copy memories into your repo's AGENTS.md or CLAUDE.md, move setup scripts into the new tool's environment setup, put environment variables in its secrets store, and rebuild scheduled tasks one at a time."
+   }
+  }
+ ]
+}
+  </script>
+  <style>
+    .wrap table td, .wrap table th { vertical-align: top; }
+    .note { font-size: .9em; color: var(--muted); }
+    article h2 { margin-top: 28px; }
+    .alt h3 { margin-top: 22px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo"><a href="../" style="color:inherit;text-decoration:none">CodeTool<span>Picker</span></a></div>
+      <nav>
+        <a href="../#quiz">Quiz</a>
+        <a href="../#compare">Compare</a>
+        <a href="../#comparisons">Guides</a>
+        <a href="../ai-coding-tool-pricing/">Pricing</a>
+        <a href="../advertise/">Advertise</a>
+      </nav>
+    </header>
+    <p class="crumbs"><a href="../">Home</a> › <a href="../#comparisons">Comparisons</a> › Jules alternatives</p>
+
+    <article>
+    <section class="hero">
+      <h1>Jules is shutting down: where to move your background coding agent</h1>
+      <p>Short answer: Google is winding down Jules. <strong>Nov 11, 2026 is the last day to finish sessions</strong>, then Jules goes read-only, and it shuts down on <strong>Dec 31, 2026</strong>. Google points people to Antigravity, but there's a catch: Antigravity doesn't run your agent on Google's machines yet, and it has no separate task pool like Jules did. If you want a hosted agent that keeps working with your laptop closed, the cheapest one we found is <strong>GitHub Copilot Pro at $10/mo</strong>. Codex (ChatGPT Plus) and Claude Code (Claude Pro) do it for $20.</p>
+      <p class="updated">Checked Nov 3, 2026 on each vendor's own pages: <a href="https://jules.google/docs/changelog/2026-10-29/" rel="noopener">Jules turndown notice</a>, <a href="https://jules.google/docs/usage-limits" rel="noopener">Jules plans</a>, <a href="https://antigravity.google/docs/plans" rel="noopener">Antigravity plans</a>, <a href="https://docs.github.com/en/copilot/get-started/plans" rel="noopener">Copilot plans</a>, <a href="https://developers.openai.com/codex/pricing" rel="noopener">Codex pricing</a>, <a href="https://code.claude.com/docs/en/claude-code-on-the-web" rel="noopener">Claude Code cloud docs</a>, <a href="https://cursor.com/docs/cloud-agent" rel="noopener">Cursor Cloud Agents docs</a> and <a href="https://devin.ai/pricing" rel="noopener">Devin pricing</a>. Anything only reported elsewhere is labeled.</p>
+      <div class="cta-row"><a class="btn btn-primary" href="#dates">Dates and what to do this week</a> <a class="btn" href="#table">Replacements compared</a> <a class="btn" href="#antigravity">The Antigravity catch</a> <a class="btn" href="#pick">Our picks</a></div>
+    </section>
+
+    <section class="panel" id="dates">
+      <h2>The dates, and what to do before Nov 11</h2>
+      <table>
+        <thead><tr><th>Date (2026)</th><th>What happens</th><th>What to do</th></tr></thead>
+        <tbody>
+          <tr><td>Oct 29</td><td>Google announces the Jules turndown</td><td>Nothing yet, but don't start big new tasks in Jules</td></tr>
+          <tr><td><strong>Until Nov 11</strong></td><td>You can still finish sessions</td><td>Wrap up open tasks, merge or close their pull requests, then run the export</td></tr>
+          <tr><td>After Nov 11</td><td>Jules is read-only</td><td>You can still look and export, but no new work</td></tr>
+          <tr><td>Dec 31</td><td>Jules winds down</td><td>Make sure your export is done and checked well before this</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Google's notice doesn't give an hour or time zone for either date, so don't leave it to the last evening.</p>
+      <h3>What survives and what doesn't</h3>
+      <ul>
+        <li><strong>Your code is fine.</strong> Code, branches and pull requests already live in GitHub and stay there.</li>
+        <li><strong>Jules-only stuff goes away</strong> unless you export it: account settings, environment variables, scheduled tasks, connected repos, memories, setup scripts, and every session's prompt, plan, activity log and patches.</li>
+        <li><strong>How to export:</strong> Google's notice says to install Jules Tools (<code>npm install -g @google/jules</code>), run <code>jules login</code>, then paste Google's export prompt into a CLI coding agent such as Claude Code. It saves everything to <code>~/jules-export</code>.</li>
+        <li><strong>Careful with one file:</strong> the export includes <code>env-variables.json</code> with your real environment variable values. Keep that folder private and out of any repo.</li>
+        <li><strong>No import on the other side.</strong> We found no tool, Antigravity included, that imports a Jules export. You'll copy the useful parts by hand (see <a href="#move">moving your setup</a>).</li>
+      </ul>
+      <p class="note">Source: <a href="https://jules.google/docs/changelog/2026-10-29/" rel="noopener">Jules Turndown, Oct 29, 2026</a>. Coverage: <a href="https://www.theverge.com/tech/1022729/google-is-sunsetting-its-ai-coding-agent-jules" rel="noopener">The Verge</a>.</p>
+    </section>
+
+    <section class="panel" id="table" style="overflow-x:auto">
+      <h2>Jules replacements compared</h2>
+      <p>What Jules did well: you handed it a task, it worked in Google's cloud on its own VM, and you came back to a pull request. So the real question for each replacement is: <strong>does it run in the vendor's cloud while your laptop is off, and what plan do you need?</strong></p>
+      <table>
+        <thead><tr><th>Tool</th><th>Runs in the vendor's cloud?</th><th>Cheapest plan with it</th><th>Where you start tasks</th><th>How usage is counted</th><th>Catch</th></tr></thead>
+        <tbody>
+          <tr><td><strong>GitHub Copilot</strong> (Copilot in the cloud)</td><td>Yes, cloud sandbox or GitHub Actions</td><td>Pro $10/mo (not Free)</td><td>github.com, GitHub Mobile, issues and PRs, the Copilot app, VS Code, CLI</td><td>Model use comes out of AI credits (1,500 a month on Pro). Cloud compute comes from your GitHub account allowance, separate from credits</td><td>GitHub repos only. Actions-based sessions stop at 59 minutes</td></tr>
+          <tr><td><strong>OpenAI Codex</strong> (Codex cloud)</td><td>Yes</td><td>ChatGPT Plus $20/mo (Free and Go are desktop app only)</td><td>Web, iOS, <code>@codex</code> on GitHub issues and PRs, Slack, Linear</td><td>Shares your Plus allowance with local Codex and ChatGPT Work. OpenAI says cloud tasks may use more of it than local messages</td><td>No cloud tasks if you sign in with an API key</td></tr>
+          <tr><td><strong>Claude Code</strong> (cloud sessions)</td><td>Yes, on Anthropic's VMs</td><td>Claude Pro $20/mo ($17 billed annually)</td><td>claude.ai/code, the Claude app, Desktop app, <code>claude --cloud</code> in your terminal, cloud scheduled tasks</td><td>Counts toward your normal Claude limits. No separate charge for the VM</td><td>Cloning and PRs need GitHub. Parallel sessions burn your limits faster</td></tr>
+          <tr><td><strong>Cursor</strong> (Cloud Agents)</td><td>Yes, isolated VMs</td><td>Premium $30/mo (Free and Plus don't include them)</td><td>cursor.com/agents, iOS app, desktop, Slack, <code>@cursor</code> on GitHub, Linear, API</td><td>Your plan's usage at the chosen model's rate. You set a spend limit on first use</td><td>Claude and GPT models cost API list price on top of the plan</td></tr>
+          <tr><td><strong>Devin</strong> (Devin Cloud)</td><td>Yes</td><td>Devin Pro $20/mo</td><td>Devin, Slack and Teams, Linear and Jira, GitHub, GitLab, Bitbucket</td><td>Daily and weekly allowance, extra usage at API prices</td><td>Allowance isn't published as a number</td></tr>
+          <tr><td><strong>Google Antigravity</strong></td><td><strong>No Google-hosted sandbox yet.</strong> Runs on your machine or a VM you pay for</td><td>Free tier exists; Google AI Pro $19.99/mo for the higher quota</td><td>Antigravity app, CLI, IDE, and the web via Remote Control to your own machine</td><td>Shared plan quota: five-hour refresh plus a weekly cap on Pro. No separate task pool</td><td>See <a href="#antigravity">the Antigravity catch</a></td></tr>
+        </tbody>
+      </table>
+      <p class="note">Sources: <a href="https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent" rel="noopener">GitHub docs</a> (paid plans get Copilot in the cloud since Oct 28, 2026), <a href="https://docs.github.com/en/copilot/get-started/plans" rel="noopener">Copilot plans</a>, <a href="https://developers.openai.com/codex/pricing" rel="noopener">Codex pricing</a>, <a href="https://code.claude.com/docs/en/claude-code-on-the-web" rel="noopener">Claude Code cloud sessions</a>, <a href="https://cursor.com/docs/cloud-agent" rel="noopener">Cursor Cloud Agents</a>, <a href="https://devin.ai/pricing" rel="noopener">Devin pricing</a>, <a href="https://antigravity.google/docs/plans" rel="noopener">Antigravity plans</a>. All checked Nov 3, 2026.</p>
+    </section>
+
+    <section class="panel" id="antigravity">
+      <h2>The Antigravity catch</h2>
+      <p>Google's own line is that it's "bringing our learnings from Jules into Antigravity" to get "autonomous remote background task execution" (Google's post, <a href="https://www.theverge.com/tech/1022729/google-is-sunsetting-its-ai-coding-agent-jules" rel="noopener">quoted by The Verge</a>). That's a plan, not a shipped feature. Here's what's true today:</p>
+      <ul>
+        <li><strong>No Google-hosted cloud runs.</strong> In a reply on Google's AI Developers Forum, Google says Antigravity "does not currently offer a turnkey, Google-hosted cloud sandbox" and that the request is logged with the product team. The workaround it suggests is running the Antigravity CLI on your own always-on Linux VM with <code>agy remote-control start</code> and steering it from antigravity.google. That VM is yours to pay for and keep secure. (<a href="https://discuss.ai.google.dev/t/can-we-just-run-antigravity-on-the-cloud/186485" rel="noopener">forum thread</a>, <a href="https://antigravity.google/docs/remote-control/" rel="noopener">Remote Control docs</a>)</li>
+        <li><strong>No separate Jules-style allowance.</strong> Jules had its own task limits: 15 tasks a day and 3 at once on the free plan, 100 a day and 15 at once with Google AI Pro, 300 a day and 60 at once with Ultra (<a href="https://jules.google/docs/usage-limits" rel="noopener">Jules plans page</a>). In Antigravity, Google's forum reply says all agent work, including parallel subagents, draws from the same plan quota. So background work now competes with your normal coding.</li>
+        <li><strong>Scheduled jobs do carry over, sort of.</strong> Antigravity Automations (previously called scheduled tasks) start agent conversations on a timer, on every plan. They run where Antigravity runs, so for "while I sleep" jobs you still need a machine that stays on.</li>
+        <li><strong>Overages are opt-in.</strong> Pro and Ultra can buy AI credits for usage past the quota. Keep the AI Credit Overages setting on Never if you don't want surprise charges.</li>
+      </ul>
+      <p><strong>Our take:</strong> if you already pay for Google AI Pro and mostly used Jules for small chores, Antigravity is fine, especially if you have a home server or cheap VM to leave running. If you liked that Jules just ran somewhere else with nothing to babysit, Antigravity isn't that yet. This is our opinion, not Google guidance.</p>
+      <p class="note">Unconfirmed: whether Google AI Pro or Ultra subscribers get anything back for losing Jules. A user asked on Google's forum; the reply explained the quota but didn't mention compensation. Google's pages don't say either way.</p>
+    </section>
+
+    <section class="panel" id="pick">
+      <h2>Our picks, by how you used Jules</h2>
+      <ul>
+        <li><strong>"Fix this issue and open a PR" on GitHub:</strong> GitHub Copilot Pro ($10). You can assign work from an issue, and Agent Merge's "Watch and fix" can keep a PR green by fixing failing checks and merge conflicts. Cheapest hosted option we found.</li>
+        <li><strong>Bigger tasks, best model quality per dollar:</strong> Codex on ChatGPT Plus ($20) or Claude Code on Claude Pro ($20). Both run in the vendor's cloud and let you pull the session back to your terminal (<code>claude --teleport</code> for Claude Code).</li>
+        <li><strong>You already live in Cursor:</strong> Cloud Agents, but only from Premium ($30) up. They work with GitHub, GitLab, Bitbucket and Azure DevOps, which helps if you're not on GitHub.</li>
+        <li><strong>Lots of parallel tickets from Slack, Linear or Jira:</strong> Devin Pro ($20) or Cursor Cloud Agents.</li>
+        <li><strong>Recurring jobs (weekly dependency bumps, nightly triage):</strong> Claude Code cloud scheduled tasks, Copilot automations (eligible private and internal repos), or Antigravity Automations on a machine you keep on.</li>
+        <li><strong>You were on Jules Free and want to stay at $0:</strong> honestly, there isn't a free hosted replacement among the big tools. Copilot Free doesn't get Copilot in the cloud, Codex Free is desktop-app only, Cursor Free and Plus don't include Cloud Agents, and Claude Code has no free plan. Antigravity Free works if your own computer does the running.</li>
+      </ul>
+      <h3>Want to build your own background agent?</h3>
+      <p>Cursor's <a href="https://cursor.com/blog/agent-sdk" rel="noopener">Agent SDK</a> is now generally available (SDK 0.3.0, Oct 23, 2026, per its <a href="https://cursor.com/docs/agent-sdk/changelog" rel="noopener">changelog</a>). You define an agent as a folder of code, test it with evals, and run <code>agent-sdk deploy</code> to host it on Cursor or run it on your own infrastructure. Templates include a PR autofixer and a Linear or Jira triager, which covers a lot of what people used Jules for. Cursor's announcement doesn't list separate pricing for hosted SDK agents, so check before you rely on it.</p>
+    </section>
+
+    <section class="panel" id="move">
+      <h2>Moving your Jules setup to the new tool</h2>
+      <p>Open <code>~/jules-export</code> and copy over just the parts that still matter:</p>
+      <table>
+        <thead><tr><th>In your Jules export</th><th>Where it goes</th></tr></thead>
+        <tbody>
+          <tr><td>Memories (<code>repos/&lt;repo&gt;/memories.md</code>)</td><td>Your repo's instruction file: <code>AGENTS.md</code> for Codex and Cursor, <code>CLAUDE.md</code> for Claude Code, Copilot's custom instructions. Edit them down; old memories can be stale</td></tr>
+          <tr><td>Setup script and test command</td><td>Codex cloud environment setup script, Claude Code cloud environment setup script, Cursor's <code>.cursor/environment.json</code>, or Copilot's GitHub Actions setup</td></tr>
+          <tr><td><code>env-variables.json</code></td><td>The new tool's secrets store (Cursor's Secrets tab, Claude Code cloud environment variables, GitHub repo secrets). Never commit it</td></tr>
+          <tr><td>Scheduled tasks</td><td>Recreate them one at a time as Claude Code cloud scheduled tasks, Copilot automations or Antigravity Automations, and test each once before you trust it</td></tr>
+          <tr><td>Session summaries and patches</td><td>Keep them as a record. Anything unfinished: paste the plan into a new task on your new tool</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Export layout from Google's notice. File names on the destination side are from each vendor's docs linked above; check your plan supports the feature before you rebuild around it.</p>
+    </section>
+
+    <section class="panel" id="unknowns">
+      <h2>What we couldn't confirm</h2>
+      <ul>
+        <li>The exact hour and time zone of the Nov 11 and Dec 31 cutoffs. Google doesn't say.</li>
+        <li>When, or whether, Antigravity gets Google-hosted background runs. Google says it's working on it.</li>
+        <li>Any refund or extra quota for Google AI Pro and Ultra subscribers who lose Jules.</li>
+        <li>Devin's and Antigravity's allowances as numbers. Neither vendor publishes them.</li>
+      </ul>
+    </section>
+    <!-- PRERENDER:try -->
+    <section class="panel try" id="try">
+      <h2>Ready to try one?</h2>
+      <p class="sub">Every tool here can be cancelled monthly, so the fastest way to decide is a real task on each.</p>
+      <div class="try-grid">
+        <div class="try-item">
+          <h3>GitHub Copilot</h3>
+          <p class="meta"><strong>Start on:</strong> Pro $10. The best value for most individuals: 1,500 AI credits and a choice of models including Claude and GPT. Verified teachers and popular open-source maintainers may get it free.</p>
+          <div class="cta-row">
+            <a href="https://github.com/features/copilot" rel="noopener" class="btn btn-primary" data-link="copilot">Try GitHub Copilot free &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-copilot">All GitHub Copilot plans</a>
+          </div>
+        </div>
+        <div class="try-item">
+          <h3>OpenAI Codex</h3>
+          <p class="meta"><strong>Start on:</strong> Plus $20. Most developers: Codex in the CLI, IDE extension, web and iOS, plus cloud tasks and automatic code review.</p>
+          <div class="cta-row">
+            <a href="https://developers.openai.com/codex" rel="noopener" class="btn btn-primary" data-link="codex">Try OpenAI Codex free &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-codex">All OpenAI Codex plans</a>
+          </div>
+        </div>
+        <div class="try-item">
+          <h3>Claude Code</h3>
+          <p class="meta"><strong>Start on:</strong> Pro $20. Start here. Includes Claude Code with usage limits; $17/mo if you pay $200 for the year.</p>
+          <div class="cta-row">
+            <a href="https://claude.com/product/claude-code" rel="noopener" class="btn btn-primary" data-link="claude-code">Get Claude Code &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-claude-code">All Claude Code plans</a>
+          </div>
+        </div>
+        <div class="try-item">
+          <h3>Cursor</h3>
+          <p class="meta"><strong>Start on:</strong> Premium $30. Cursor's pick for new AI users. Needed for cloud agents, Bugbot code reviews, and any Claude or GPT use (billed extra).</p>
+          <div class="cta-row">
+            <a href="https://cursor.com" rel="noopener" class="btn btn-primary" data-link="cursor">Try Cursor free &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-cursor">All Cursor plans</a>
+          </div>
+        </div>
+        <div class="try-item">
+          <h3>Google Antigravity</h3>
+          <p class="meta"><strong>Start on:</strong> Google AI Pro $19.99. Most individuals: quota refreshes every five hours up to a weekly limit, with Claude Opus/Sonnet 5.5. Gemini 4 Argon has its own weekly-only quota on Pro (no five-hour refresh). Claude 5.5 needs a paid plan, not the free trial; Argon works on paid Pro or a trial from an eligible premium device.</p>
+          <div class="cta-row">
+            <a href="https://antigravity.google" rel="noopener" class="btn btn-primary" data-link="antigravity">Try Google Antigravity free &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-antigravity">All Google Antigravity plans</a>
+          </div>
+        </div></div>
+      
+    </section>
+    <!-- /PRERENDER:try -->
+
+    <section class="panel" id="faq">
+      <h2>FAQ</h2>
+      <h3>When does Jules shut down?</h3>
+      <p>Google says Jules winds down on Dec 31, 2026. You can keep finishing sessions until Nov 11, 2026. After that Jules is read-only until the end of the year. Google's notice doesn't give an hour or time zone.</p>
+      <h3>Will I lose my code when Jules shuts down?</h3>
+      <p>No. Your code, branches and pull requests already live in GitHub and stay there. What you lose without an export is the stuff inside Jules: settings, environment variables, scheduled tasks, memories, setup scripts and session history. Google's export saves all of it to a local jules-export folder.</p>
+      <h3>Is Google Antigravity a drop-in replacement for Jules?</h3>
+      <p>Not yet. Google says it's bringing Jules-style remote background runs to Antigravity, but today Antigravity has no Google-hosted cloud sandbox, so agents run on your machine or a VM you keep on. It also has no separate task pool: background work uses the same plan quota as the rest of your Antigravity use.</p>
+      <h3>What's the cheapest hosted replacement for Jules?</h3>
+      <p>GitHub Copilot Pro at $10 a month. Paid Copilot plans get Copilot in the cloud, which works on a task in a cloud sandbox or GitHub Actions and opens a pull request. Model use comes out of 1,500 monthly AI credits. Codex on ChatGPT Plus and Claude Code on Claude Pro do the same for $20.</p>
+      <h3>Is there a free alternative to Jules?</h3>
+      <p>Not a hosted one from the big vendors, as of Nov 3, 2026. Copilot Free doesn't include Copilot in the cloud, Codex Free is desktop-app only, Cursor Free and Plus don't include Cloud Agents, and Claude Code has no free plan. Antigravity Free can run agents and automations, but on your own computer.</p>
+      <h3>Can I import my Jules export into another tool?</h3>
+      <p>We found no tool that imports it directly. Copy memories into your repo's AGENTS.md or CLAUDE.md, move setup scripts into the new tool's environment setup, put environment variables in its secrets store, and rebuild scheduled tasks one at a time.</p>
+    </section>
+    <!-- PRERENDER:stack -->
+    <section class="panel stack" id="ship">
+      <h2>Ship your app: the rest of the stack</h2>
+      <p class="sub">Picked your AI coding tool? These are the usual next costs. Free tiers first, and prices checked Oct 20, 2026 on each vendor's pricing page.</p>
+      <div class="stack-grid">
+        <div class="stack-group">
+          <h3>Code review</h3>
+          <p class="meta">AI writes code fast; something should read it before it ships.</p>
+          <ul class="stack-list"><li><a href="https://www.coderabbit.ai" rel="noopener" data-link="coderabbit"><strong>CodeRabbit</strong></a><span>AI review on every pull request, in GitHub or GitLab</span><small>Free for public repos; Essentials $24/user/mo billed annually ($30 monthly)</small></li></ul>
+          <p class="meta tiny">Already paying for Copilot or Codex Plus? Both include AI pull request review, so try that first.</p>
+        </div>
+        <div class="stack-group">
+          <h3>Hosting</h3>
+          <p class="meta">Where your app lives once it works on your machine.</p>
+          <ul class="stack-list"><li><a href="https://vercel.com" rel="noopener" data-link="vercel"><strong>Vercel</strong></a><span>Next.js and front-end apps</span><small>Hobby free (personal, non-commercial); Pro $20/mo per developer seat</small></li><li><a href="https://join.netlify.com/sfop8nkiwjbv" rel="sponsored nofollow noopener" data-link="netlify"><strong>Netlify</strong> <span class="tag ref">referral</span></a><span>Static sites and front ends, unlimited Pro members</span><small>Free; Personal $9/mo; Pro $20/mo with unlimited members</small></li><li><a href="https://railway.com" rel="noopener" data-link="railway"><strong>Railway</strong></a><span>Back ends, workers and databases with no server setup</span><small>Free trial $5 credit; Hobby $5/mo incl. $5 usage; Pro $20/mo</small></li><li><a href="https://render.com" rel="noopener" data-link="render"><strong>Render</strong></a><span>Heroku-style web services, cron jobs and Postgres</span><small>Hobby $0 + compute; Pro $25/mo + compute</small></li></ul>
+          
+        </div>
+        <div class="stack-group">
+          <h3>Database and auth</h3>
+          <p class="meta">Most AI-built apps need a Postgres database and logins.</p>
+          <ul class="stack-list"><li><a href="https://supabase.com" rel="noopener" data-link="supabase"><strong>Supabase</strong></a><span>Postgres + auth + storage in one; Lovable and Bolt connect to it</span><small>Free (2 projects, pause after 1 week idle); Pro from $25/mo</small></li><li><a href="https://neon.com" rel="noopener" data-link="neon"><strong>Neon</strong></a><span>Serverless Postgres with branching, pay for what you use</span><small>Free (100 projects); paid plans usage-based</small></li></ul>
+          
+        </div>
+        <div class="stack-group">
+          <h3>Domain name</h3>
+          <p class="meta">A real domain for your app.</p>
+          <ul class="stack-list"><li><a href="https://www.cloudflare.com/products/registrar/" rel="noopener" data-link="cloudflare"><strong>Cloudflare Registrar</strong></a><span>Domains at cost with no markup</span><small>Wholesale price per TLD</small></li><li><a href="https://porkbun.com" rel="noopener" data-link="porkbun"><strong>Porkbun</strong></a><span>Cheap domains with free WHOIS privacy</span><small>Varies by TLD</small></li><li><a href="https://www.namecheap.com" rel="noopener" data-link="namecheap"><strong>Namecheap</strong></a><span>Popular registrar with hosting and email add-ons</span><small>Varies by TLD</small></li></ul>
+          
+        </div></div>
+      <p class="meta tiny aff-note">Referral link: we may earn a commission at no extra cost to you. It never changes our picks.</p>
+    </section>
+    <!-- /PRERENDER:stack -->
+
+    <section class="panel" id="related">
+      <h2>Related guides</h2>
+      <ul class="related">
+        <li><a href="../cursor-vs-antigravity/">Cursor vs Google Antigravity<small>$19.99 for Gemini + Claude vs $30 + API prices</small></a></li>
+        <li><a href="../claude-code-alternatives/">Claude Code alternatives<small>Who still gives you Claude</small></a></li>
+        <li><a href="../copilot-vs-claude-code/">Copilot vs Claude Code<small>$10 credits vs $20 five-hour limits</small></a></li>
+        <li><a href="../codex-vs-cursor/">OpenAI Codex vs Cursor<small>GPT-6.1 Sol in Codex vs Cursor's model list</small></a></li>
+        <li><a href="../usage-limits-compared/">Usage limits compared<small>Limits, resets and our per-task estimate</small></a></li>
+        <li><a href="../free-ai-coding-tools/">Free AI coding tools<small>What's free, and what ends Nov 18</small></a></li>
+        <li><a href="../ai-coding-tool-pricing/">AI coding tool pricing<small>All 41 plans + cost calculator</small></a></li>
+      </ul>
+    </section>
+
+    <aside class="sponsor" id="sponsor" aria-label="Sponsor slot">
+      <strong>Sponsor slot</strong> <span class="meta">(Sponsored placements are labeled and never affect rankings or verdicts)</span><br />
+      Reach developers picking a new background coding agent before Jules goes read-only.
+      <div style="margin-top:10px" class="meta">Founding sponsor rates available now. Email <a href="mailto:sponsors@codetoolpicker.com?subject=CodeToolPicker%20sponsorship">sponsors@codetoolpicker.com</a> &middot; <a href="../advertise/">See packages</a></div>
+    </aside>
+
+    <section class="panel" id="disclosure">
+      <h2>Editorial disclosure</h2>
+      <p><strong>Rankings are not for sale.</strong> Sponsored placements and affiliate links are always labeled, and they never change our recommendations, quiz results, prices, or comparison data. <strong>Links marked "referral" are affiliate links (Netlify):</strong> if you buy through them, we may earn a commission at no extra cost to you. Every other link is a plain link that pays us nothing, and pricing source links are never affiliate links. <a href="../advertise/#policy">Editorial policy</a>.</p>
+    </section>
+    </article>
+
+    <footer>
+      <p><a href="../">← Back to the AI Coding Tool Picker</a> · <a href="../ai-coding-tool-pricing/">Pricing &amp; plans calculator</a></p>
+      <p>More comparisons: <a href="./">Jules alternatives</a> · <a href="../chatgpt-pro-codex-limits/">ChatGPT Pro Codex limits</a> · <a href="../ai-coding-cost-per-task/">Cost per task</a> · <a href="../claude-code-alternatives/">Claude Code alternatives</a> · <a href="../free-ai-coding-tools/">Free AI coding tools</a> · <a href="../lovable-vs-bolt/">Lovable vs Bolt</a> · <a href="../cursor-vs-windsurf/">Cursor vs Windsurf (Devin Desktop)</a> · <a href="../claude-code-vs-cursor/">Claude Code vs Cursor</a> · <a href="../claude-code-vs-codex/">Claude Code vs Codex</a> · <a href="../codex-vs-cursor/">Codex vs Cursor</a> · <a href="../copilot-vs-claude-code/">Copilot vs Claude Code</a> · <a href="../gemini-cli-vs-claude-code/">Gemini CLI vs Claude Code</a> · <a href="../cursor-vs-antigravity/">Cursor vs Antigravity</a> · <a href="../usage-limits-compared/">Usage limits compared</a> · <a href="../cursor-vs-copilot/">Cursor vs Copilot</a> · <a href="../switch-from-copilot-to-cursor/">Switch Copilot → Cursor</a> · <a href="../cursor-bundle-alternatives/">Cursor bundle alternatives</a></p>
+      <p>Not affiliated with Google, OpenAI, Anthropic, GitHub, Cursor or Cognition.</p>
+      <p>Contact, sponsorships, and corrections: <a href="mailto:sponsors@codetoolpicker.com">sponsors@codetoolpicker.com</a> · <a href="../advertise/">Advertise with us</a></p>
+      <p class="meta" id="analytics-note">We use GoatCounter, a privacy-friendly counter with no cookies, to count visits.</p>
+    </footer>
+  </div>
+  <script data-goatcounter="https://codetoolpicker.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
