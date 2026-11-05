@@ -22,6 +22,7 @@ module.exports = function funnels(root) {
     "claude-code-vs-cursor/index.html": { base: "../", tools: ["claude-code", "cursor"], stack: DEV },
     "claude-code-vs-codex/index.html": { base: "../", tools: ["claude-code", "codex"], stack: DEV },
     "codex-vs-cursor/index.html": { base: "../", tools: ["codex", "cursor"], stack: DEV },
+    "cursor-openai-cutoff/index.html": { base: "../", tools: ["cursor", "codex", "copilot", "claude-code"], stack: DEV },
     "claude-max-vs-ultra/index.html": { base: "../", tools: ["claude-code", "codex", "copilot", "antigravity", "cursor"], stack: DEV },
     "jules-alternatives/index.html": { base: "../", tools: ["copilot", "codex", "claude-code", "cursor", "antigravity"], stack: DEV },
     "chatgpt-pro-codex-limits/index.html": { base: "../", tools: ["codex", "claude-code", "copilot", "antigravity"], stack: DEV },
