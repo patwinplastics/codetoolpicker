@@ -85,15 +85,15 @@ window.TOOL_DATA = [
     startingPaid: 20,
     freeTier: true,
     plans: [
-      { name: "Free", price: 0, note: "Light agent quota, unlimited Tab and inline edits" },
-      { name: "Pro", price: 20, note: "Increased quotas + frontier models, Devin Cloud access" },
+      { name: "Free", price: 0, note: "Light agent quota, unlimited Tab and inline edits. SWE-2 Flash Medium on Desktop and CLI." },
+      { name: "Pro", price: 20, note: "Increased quotas + frontier models, Devin Cloud access. SWE-2 Flash is Desktop and CLI only." },
       { name: "Max", price: 200, note: "Significantly higher quotas" },
       { name: "Teams", price: 80, note: "$80/mo team plan + $40/mo per full dev seat, up to 200 users" }
     ],
     strengths: ["Agent Command Center (local + cloud agents)", "Devin Cloud included on paid plans", "Competitive Pro price", "Extra usage at API price"],
     limits: ["Quotas can bite power users", "Renamed from Windsurf in June 2026; some docs and extensions still say Windsurf"],
     formFactor: "Desktop IDE",
-    models: "Frontier OpenAI, Claude, Gemini, SpaceXAI + open-source and SWE models",
+    models: "Frontier OpenAI, Claude, Gemini, SpaceXAI + open-source and SWE models, including SWE-2 Flash on Desktop and CLI (not Devin Cloud)",
     affiliate: false,
     sponsorFit: "medium"
   },
@@ -327,16 +327,16 @@ window.PRICING = {
     start: 1,
     bestBadge: "Best for running many agents",
     plans: [
-      { name: "Free", monthly: 0, annual: 0, note: "Light agent quota, unlimited Tab" },
-      { name: "Pro", monthly: 20, annual: null, note: "Higher quotas, frontier models, Devin Cloud" },
+      { name: "Free", monthly: 0, annual: 0, note: "Light agent quota, unlimited Tab. SWE-2 Flash Medium on Desktop/CLI." },
+      { name: "Pro", monthly: 20, annual: null, note: "Higher quotas, frontier models, Devin Cloud. SWE-2 Flash is Desktop/CLI only." },
       { name: "Max", monthly: 200, annual: null, note: "Significantly higher quotas" },
       { name: "Teams", monthly: 40, annual: null, seat: true, base: 80, note: "$80/mo team plan + $40/mo per full dev seat, up to 200 users" }
     ],
-    extraCost: "Extra usage beyond quotas is billed at API pricing. Quotas aren't published as numbers.",
-    glance: { free: "Yes: light agent quota, unlimited Tab and inline edits", models: "Frontier OpenAI, Claude, Gemini + SWE-2 (Pro+)", agents: "Local agents; Devin Cloud agents on Pro+", surface: "Own desktop IDE (formerly Windsurf)", team: "$80/mo + $40/seat" },
+    extraCost: "Extra usage beyond quotas is billed at API pricing. Quotas aren't published as numbers. SWE-2 Flash (Desktop and CLI only, not Cloud) is free until Dec 4, 2026 18:00 UTC, then $0.10 per million input tokens and $0.50 per million output tokens.",
+    glance: { free: "Yes: light agent quota, unlimited Tab and inline edits", models: "Frontier OpenAI, Claude, Gemini + SWE-2 (Pro+); SWE-2 Flash on Desktop/CLI (free until Dec 4)", agents: "Local agents; Devin Cloud agents on Pro+", surface: "Own desktop IDE (formerly Windsurf)", team: "$80/mo + $40/seat" },
     guide: [
-      ["Free", "Unlimited Tab completions and inline edits with a light agent quota."],
-      ["Pro $20", "Most individuals: higher quotas, frontier models, SWE-2, and Devin Cloud agents."],
+      ["Free", "Unlimited Tab completions and inline edits with a light agent quota. SWE-2 Flash Medium is on Free (Desktop and CLI, free until Dec 4, 2026 per docs)."],
+      ["Pro $20", "Most individuals: higher quotas, frontier models, SWE-2, SWE-2 Flash on Desktop and CLI (not Cloud), and Devin Cloud agents."],
       ["Max $200", "Significantly higher quotas for all-day agent use."],
       ["Teams $80 + $40/seat", "Up to 200 users with their own quota per full seat."]
     ],
@@ -455,6 +455,7 @@ window.COMPARE_PAGES = {
 
 // Dated pricing changes we track. Only sourced events.
 window.PRICE_LOG = [
+  { date: "2026-11-06", text: "Cognition launched SWE-2 Flash on Nov 4, 2026 for Devin Desktop and Devin CLI (not Devin Cloud). Docs: free until Dec 4, 2026 18:00 UTC, then $0.10/M input, $0.01/M cache reads, $0.125/M cache writes, $0.50/M output (Medium, High and Max share that rate). Medium is on Free; High and Max need a paid plan. SWE-2 stays free on self-serve Desktop/CLI through Nov 30, 2026 (not cloud), then list price $3.00/M input, $15.00/M output, $0.30/M cache input. Devin plan prices re-checked Nov 6 and unchanged (Free $0, Pro $20, Max $200, Teams $80 + $40/seat). Full story: https://codetoolpicker.com/swe-2-flash-vs-swe-2/", src: "https://docs.devin.ai/desktop/models" },
   { date: "2026-11-05", text: "Re-checked Cursor and OpenAI ahead of OpenAI's proposed Nov 12, 2026 shutoff of OpenAI models in Cursor (still not confirmed; Cursor may end access sooner). Cursor plans unchanged (Plus $8, Premium $30, Super $100, Ultra $200); its newest OpenAI model is still GPT-5.6 Sol at $4/$20 per million tokens, promo through Nov 21. OpenAI API: GPT-6.1 Sol $2/$10, GPT-6.1 Terra $1/$5. Your own OpenAI key in Cursor covers local Chat and Agent only and needs Premium or a legacy plan. Codex Plus $20 includes GPT-6.1 Sol and Terra. Copilot Pro $10 includes GPT-6.1 Terra; GPT-6.1 Sol starts at Pro+ $39. Full story: https://codetoolpicker.com/cursor-openai-cutoff/", src: "https://help.openai.com/en/articles/20001506-using-openai-models-in-cursor" },
   { date: "2026-11-04", text: "Re-checked every $100 and $200 coding plan. Claude unchanged (Max $100: 5x Pro every five hours and every week; Ultra $200: 10x Pro weekly, no five-hour limit for verified accounts). Anthropic's docs say the Max/Ultra API credits ($100/$200 a month) don't apply to interactive Claude Code or usage credits. Copilot Max $100 lists $200 in AI credits: $100 base plus a $100 flex allotment GitHub says may change. Kiro tiers are 1,000/2,000/5,000/10,000 credits for $20/$40/$100/$200, and since Nov 1, 2026 a first upgrade from Free gets the rest of the month on Pro free plus 500 trial credits (was a $20 credit). Cursor, Google AI Ultra, ChatGPT Pro and Devin Max prices unchanged. Full story: https://codetoolpicker.com/claude-max-vs-ultra/", src: "https://claude.com/pricing" },
   { date: "2026-11-03", text: "Google is shutting down Jules: sessions can be finished until Nov 11, 2026, then Jules is read-only, and it winds down Dec 31. Jules had its own task limits (15/day free, 100/day on Google AI Pro, 300/day on Ultra); Antigravity, which Google points users to, has no Google-hosted cloud runs yet and uses the shared plan quota. Also: Antigravity's models page now says Claude Sonnet 4.6, Claude Opus 4.6 and GPT-OSS-120b will be removed on Nov 18, 2026 (was Nov 2). Copilot plan prices and credits re-checked, unchanged. Full story: https://codetoolpicker.com/jules-alternatives/", src: "https://jules.google/docs/changelog/2026-10-29/" },

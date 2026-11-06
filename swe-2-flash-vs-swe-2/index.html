@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name='impact-site-verification' value='83f48c6a-f7b9-45b3-8866-03f8600f0734'>
+  <title>SWE-2 Flash vs SWE-2 (Nov 2026): When the Cheap Model Is Enough, and the Price After Dec 4</title>
+  <meta name="description" content="Checked Nov 6, 2026: SWE-2 Flash is free in Devin Desktop and CLI until Dec 4, 2026 18:00 UTC, then $0.10/M input and $0.50/M output. SWE-2 is free on self-serve Desktop/CLI through Nov 30, then $3/$15. Flash does not run in Devin Cloud." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://codetoolpicker.com/swe-2-flash-vs-swe-2/" />
+  <meta property="og:title" content="SWE-2 Flash vs SWE-2: when the cheap model is enough" />
+  <meta property="og:description" content="Flash is free in Devin Desktop and CLI until Dec 4, 2026 18:00 UTC, then about $0.04 per medium task vs about $1.23 for SWE-2. It does not run in Devin Cloud. Medium effort is on Free." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://codetoolpicker.com/swe-2-flash-vs-swe-2/" />
+  <meta property="og:site_name" content="CodeToolPicker" />
+  <meta property="og:image" content="https://codetoolpicker.com/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@codetoolpicker" />
+  <meta name="twitter:image" content="https://codetoolpicker.com/og.png" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#0b0f14" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CodeToolPicker", "item": "https://codetoolpicker.com/"}, {"@type": "ListItem", "position": 2, "name": "Comparisons", "item": "https://codetoolpicker.com/#comparisons"}, {"@type": "ListItem", "position": 3, "name": "SWE-2 Flash vs SWE-2", "item": "https://codetoolpicker.com/swe-2-flash-vs-swe-2/"}]}</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "SWE-2 Flash vs SWE-2 (Nov 2026): When the Cheap Model Is Enough, and the Price After Dec 4",
+  "datePublished": "2026-11-06",
+  "dateModified": "2026-11-06",
+  "author": {"@type": "Organization", "name": "CodeToolPicker"},
+  "publisher": {"@type": "Organization", "name": "CodeToolPicker"},
+  "mainEntityOfPage": "https://codetoolpicker.com/swe-2-flash-vs-swe-2/"
+}
+  </script>
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "What is SWE-2 Flash?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Cognition launched SWE-2 Flash on Nov 4, 2026. It is a smaller coding model (276B total parameters, 12B active, based on Inkling-Small) for Devin Desktop and Devin CLI. It does not run in Devin Cloud. SWE-2 is 2.8T total and 104B active. Cognition says Flash is about 3x the speed and one-fifth the price of SWE-2. The speed figure is a simulated replay at 200 vs 60 tokens per second, not a live production benchmark."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is SWE-2 Flash free?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Devin docs say SWE-2 Flash is free until Dec 4, 2026 at 18:00 UTC. After that, Medium, High and Max all cost $0.10 per million input tokens, $0.01 per million cache reads, $0.125 per million cache writes, and $0.50 per million output tokens. Full SWE-2 is separately free on self-serve Desktop and CLI through Nov 30, 2026, and that free window does not apply to Devin Cloud. After Nov 30, SWE-2 list pricing is $3.00 per million input, $15.00 per million output, and $0.30 per million cache input."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Does SWE-2 Flash work in Devin Cloud?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. Devin's models docs say SWE-2 Flash is available in Devin Desktop and Devin CLI, not in Devin Cloud. Cloud agents still need another model, such as SWE-2 or a frontier model on a paid plan."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "When should I use Flash instead of SWE-2?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Use Flash for everyday agent work on Desktop or CLI: reviews, docs, and routine features. Cognition's own evals put Flash essentially even with SWE-2 on FrontierCode 2.0 (24.0 vs 23.8) and SWE-Bench Pro v2 Hard (89.9 vs 90.6). Keep SWE-2 for harder tasks. SWE-2 scores higher on Terminal-Bench 4.0 (27.3 vs 20.0) and DeepSWE 1.1 (73.0 vs 60.1). Those are vendor evals. Through Nov 30, 2026 both are free on self-serve Desktop and CLI, so the quality gap costs nothing until then."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "How much does one task cost after the free window?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "On our medium-task estimate (1.5M input tokens with 90% cached, plus 25K output tokens, cache writes left out), SWE-2 Flash is about $0.04 and SWE-2 list pricing is about $1.23. That is about 30 times, because the published self-serve rates are one-thirtieth, not the one-fifth in Cognition's blog. This is an estimate. Real tasks vary, and quota use inside a plan can differ from these extra-usage rates."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Can I use SWE-2 Flash on the Free plan?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Medium effort, yes. Devin docs say SWE-2 Flash Medium is on the Free plan, and High and Max need a paid plan. All three variants share the same token price after Dec 4. We could not confirm that the Free plan includes full SWE-2. The pricing page lists free SWE-2 under Pro."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Are the SWE-2 Flash weights public?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. Cognition says it is not sharing the weights publicly yet, because the same cybersecurity skill that raised ExploitBench from 11.3% on the Inkling-Small base to 34.8% on Flash can be misused. It says it is building a program to share the weights with trusted industry partners and research labs. That is from the Nov 4, 2026 blog. Program details were not published as of Nov 6."
+   }
+  }
+ ]
+}
+  </script>
+  <style>
+    .wrap table td, .wrap table th { vertical-align: top; }
+    .note { font-size: .9em; color: var(--muted); }
+    article h2 { margin-top: 28px; }
+    .alt h3 { margin-top: 22px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo"><a href="../" style="color:inherit;text-decoration:none">CodeTool<span>Picker</span></a></div>
+      <nav>
+        <a href="../#quiz">Quiz</a>
+        <a href="../#compare">Compare</a>
+        <a href="../#comparisons">Guides</a>
+        <a href="../ai-coding-tool-pricing/">Pricing</a>
+        <a href="../advertise/">Advertise</a>
+      </nav>
+    </header>
+    <p class="crumbs"><a href="../">Home</a> › <a href="../#comparisons">Comparisons</a> › SWE-2 Flash vs SWE-2</p>
+
+    <article>
+    <section class="hero">
+      <h1>SWE-2 Flash vs SWE-2: when the cheap model is enough</h1>
+      <p>Short answer: use <strong>SWE-2 Flash</strong> for everyday work in Devin Desktop and the Devin CLI (reviews, docs, routine features), and keep <strong>SWE-2</strong> for harder tasks. Flash does not run in Devin Cloud. Both are free on self-serve Desktop and CLI right now: SWE-2 through Nov 30, 2026, Flash until Dec 4, 2026 at 18:00 UTC. After those windows, Flash is $0.10 per million input tokens and $0.50 per million output, versus $3.00 and $15.00 for SWE-2. On our medium-task estimate that is about <strong>$0.04 vs about $1.23</strong>. Cognition's blog says Flash is one-fifth the price and 3x the speed. The 3x figure is a simulated replay. The one-fifth does not match these self-serve list rates, which are one-thirtieth. Medium effort is on the Free plan. High and Max need a paid plan.</p>
+      <p class="updated">Checked Nov 6, 2026 on <a href="https://cognition.com/blog/swe-2-flash" rel="noopener">Cognition's Nov 4 announcement</a>, <a href="https://docs.devin.ai/desktop/models" rel="noopener">Devin Desktop model docs</a> (the docs page itself says rates as of Nov 5), and <a href="https://devin.ai/pricing" rel="noopener">devin.ai/pricing</a>. Plan prices on that pricing page were unchanged (Free $0, Pro $20, Max $200, Teams $80 + $40/seat). Our own math is labeled as an estimate. Benchmark scores below are Cognition's, not an independent eval.</p>
+      <div class="cta-row"><a class="btn btn-primary" href="#shipped">What shipped</a> <a class="btn" href="#compare">Flash vs SWE-2</a> <a class="btn" href="#pick">When to pick which</a> <a class="btn" href="#cost">Cost per task</a></div>
+    </section>
+
+    <section class="panel" id="shipped">
+      <h2>What shipped, and who can use it</h2>
+      <p>On Nov 4, 2026 Cognition launched SWE-2 Flash, a smaller coding model for the work it says agents already do a lot of: automations, code review, feature development, and documentation. It is built on Inkling-Small from Thinking Machines: <strong>276B total parameters, 12B active</strong>. SWE-2 is <strong>2.8T total, 104B active</strong>.</p>
+      <p>Where it runs is the first filter. Devin's docs say Flash is in <strong>Devin Desktop and Devin CLI only</strong>. It is <strong>not in Devin Cloud</strong>. If the job has to run while your laptop is off, Flash is not the model. Cloud sessions still use SWE-2 or another model your plan allows.</p>
+      <p>Effort is the second filter. Flash comes in Medium, High, and Max. <strong>Medium is on the Free plan. High and Max need a paid plan.</strong> After the free window, docs say all three variants cost the same token rates.</p>
+      <table>
+        <thead><tr><th>Date</th><th>What changes</th><th>Who it applies to</th></tr></thead>
+        <tbody>
+          <tr><td>Nov 4, 2026</td><td>SWE-2 Flash launches</td><td>Devin Desktop and Devin CLI</td></tr>
+          <tr><td>Through Nov 30, 2026</td><td>SWE-2 is free. Docs don't give a time of day.</td><td>Self-serve Desktop and CLI. Not Devin Cloud.</td></tr>
+          <tr><td>Nov 18, 2026, 18:00 UTC</td><td>Enterprise Flash 25% discount ends. After that, Flash uses the same token rates as self-serve.</td><td>Enterprise plans billed in ACUs</td></tr>
+          <tr><td>Dec 4, 2026, 18:00 UTC</td><td>Flash free window ends</td><td>Self-serve. Enterprise discount already ended Nov 18.</td></tr>
+          <tr><td>Through Dec 31, 2026 (Pacific time)</td><td>Enterprise SWE-2 stays at a promo rate, then list price</td><td>Enterprise ACU plans. See the cost section.</td></tr>
+        </tbody>
+      </table>
+      <p class="note">The pricing page we checked on Nov 6 still says "SWE-2, our latest model" and lists "Free use of SWE-2" under Pro, with no Flash line and no Nov 30 end date. The dates and the "not in Devin Cloud" line are on the <a href="https://docs.devin.ai/desktop/models" rel="noopener">models docs</a>, not on the pricing page. If those two pages disagree, trust the docs for model rates and the pricing page for plan stickers.</p>
+    </section>
+
+    <section class="panel" id="compare" style="overflow-x:auto">
+      <h2>Flash vs SWE-2</h2>
+      <table>
+        <thead><tr><th></th><th>SWE-2 Flash</th><th>SWE-2</th></tr></thead>
+        <tbody>
+          <tr><td>Size (Cognition)</td><td>276B total, 12B active. Base model: Inkling-Small.</td><td>2.8T total, 104B active</td></tr>
+          <tr><td>Where it runs</td><td>Devin Desktop and Devin CLI. Not Devin Cloud.</td><td>Desktop, CLI, and Devin Cloud (the free window is Desktop/CLI only)</td></tr>
+          <tr><td>Speed</td><td colspan="2">Blog claim: Flash is 3x SWE-2. The demo is a simulated replay of one Terminal-Bench task at 200 vs 60 tokens per second (200/60 is about 3.3x). Not a live production benchmark.</td></tr>
+          <tr><td>Price claim</td><td colspan="2">Blog claim: one-fifth the price of SWE-2. Self-serve list rates below are one-thirtieth. See the cost section for why both numbers can be true.</td></tr>
+          <tr><td>Free until</td><td>Dec 4, 2026, 18:00 UTC (self-serve)</td><td>Through Nov 30, 2026 on self-serve Desktop and CLI. Not cloud.</td></tr>
+          <tr><td>Self-serve rate after that</td><td>$0.10/M input, $0.01/M cache reads, $0.125/M cache writes, $0.50/M output. Same for Medium, High, and Max.</td><td>$3.00/M input, $15.00/M output, $0.30/M cache input. Docs don't list a separate cache-write rate.</td></tr>
+          <tr><td>Free plan ($0)</td><td>Medium only</td><td>Not confirmed. The pricing page puts "Free use of SWE-2" on Pro.</td></tr>
+          <tr><td>Paid plans</td><td>High and Max, plus Medium</td><td>Pro $20, Max $200, Teams. Cloud included on paid plans.</td></tr>
+          <tr><td>Weights</td><td>Not public. Partner access program in progress. See below.</td><td>Not discussed as a public-weights release in this announcement</td></tr>
+        </tbody>
+      </table>
+      <h3>Cognition's scores, Flash vs SWE-2</h3>
+      <p>These are from the announcement table. They are vendor evals. Cognition doesn't say which effort level (Medium, High, or Max) produced them. A higher number is better.</p>
+      <table>
+        <thead><tr><th>Eval</th><th>SWE-2 Flash</th><th>SWE-2</th><th>How to read it</th></tr></thead>
+        <tbody>
+          <tr><td>FrontierCode 2.0</td><td>24.0</td><td>23.8</td><td>Essentially a tie. Flash is a hair ahead.</td></tr>
+          <tr><td>SWE-Bench Pro v2 Hard</td><td>89.9</td><td>90.6</td><td>Close. Not a reason to pay SWE-2 rates by itself.</td></tr>
+          <tr><td>Terminal-Bench 2.1</td><td>89.2</td><td>92.8</td><td>SWE-2 ahead, but both are high.</td></tr>
+          <tr><td>Terminal-Bench 4.0</td><td>20.0</td><td>27.3</td><td>The clearest gap. Harder terminal work still favors SWE-2.</td></tr>
+          <tr><td>DeepSWE 1.1</td><td>60.1</td><td>73.0</td><td>SWE-2 ahead by a wide margin on this agent eval.</td></tr>
+          <tr><td>ExploitBench</td><td>34.8</td><td>36.1</td><td>Close to SWE-2. The base model, Inkling-Small, scored 11.3.</td></tr>
+        </tbody>
+      </table>
+      <p>On the same table, Flash's FrontierCode 2.0 score (24.0) beats the open-weight models Cognition listed and beats GPT-6 Luna (21.9). Claude Haiku 5.5 scores 27.7. We are not treating that as a reason to switch tools. It is context for "Flash is not a toy model," and it is still Cognition's eval.</p>
+      <p><strong>Weights are not public.</strong> Cognition says it raised ExploitBench from 11.3% on the base model to 34.8% by training for cybersecurity work, and that the same skill can be used in attacks. Because of that, it is not releasing the weights publicly. It says it is building a program to share them with trusted industry partners and research labs, with more in a few weeks. That is from the Nov 4 blog, not a rumor. As of Nov 6 we have not seen the program's rules.</p>
+      <p class="note">Source: <a href="https://cognition.com/blog/swe-2-flash" rel="noopener">Introducing SWE-2 Flash</a>, Nov 4, 2026. Availability and prices: <a href="https://docs.devin.ai/desktop/models" rel="noopener">Devin models docs</a>, checked Nov 6, 2026.</p>
+    </section>
+
+    <section class="panel" id="pick">
+      <h2>When to pick Flash, and when to stay on SWE-2</h2>
+      <p>This is our reading of Cognition's blog and the docs, not Cognition's product advice. Try the hard task on Flash once before you assume you need SWE-2. Until Nov 30 that test is free on self-serve Desktop and CLI either way.</p>
+      <table>
+        <thead><tr><th>The job</th><th>Pick</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td>Reviews, docs, routine features, automations on Desktop or CLI</td><td><strong>Flash</strong></td><td>This is the work Cognition says it built Flash for. Scores are close on FrontierCode 2.0 and SWE-Bench Pro hard.</td></tr>
+          <tr><td>A task Flash stalls on, or a long terminal / agent run</td><td><strong>SWE-2</strong></td><td>Vendor scores drop off on Terminal-Bench 4.0 and DeepSWE. Switch up for that task, not for the whole day.</td></tr>
+          <tr><td>Now through Nov 30, self-serve Desktop or CLI</td><td>SWE-2 for hard work, Flash when you want speed</td><td>Both token rates are $0 in this window, so the quality gap is free. Speed is the reason to use Flash early.</td></tr>
+          <tr><td>Dec 1 through Dec 4, 18:00 UTC</td><td>Flash, unless the task is hard</td><td>SWE-2 list pricing has started. Flash is still free.</td></tr>
+          <tr><td>After Dec 4, 18:00 UTC</td><td>Flash by default, SWE-2 when Flash fails</td><td>About $0.04 vs about $1.23 on our medium-task estimate. A failed Flash run plus one SWE-2 retry can still be cheaper than SWE-2 for everything.</td></tr>
+          <tr><td>Devin Cloud, or any job that must run with the laptop off</td><td>Not Flash</td><td>Flash is Desktop and CLI only. Use SWE-2 or another cloud model. SWE-2's free window does not cover cloud.</td></tr>
+          <tr><td>You are on the Free plan</td><td>Flash Medium</td><td>High and Max need Pro, Max, or Teams. The quota is still "light," and Cognition doesn't publish the number.</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Devin's models page, as of Nov 5 and still up on Nov 6, recommends <strong>Fusion</strong> for most users: a frontier lead model plus a cheaper sidekick, each billed at its own rate. We didn't price Fusion pairings, and we don't have an Artificial Analysis number for Flash. If you already like Fusion, Flash is an extra cheap in-house option, not a reason to turn Fusion off without a test.</p>
+    </section>
+
+    <section class="panel" id="cost" style="overflow-x:auto">
+      <h2>What one task costs (estimate)</h2>
+      <p>Same medium agent task we use across the site: 1.5M input tokens with 90% cached, plus 25K output tokens. Cache writes are left out, same as our other estimates. Real tasks vary a lot (see <a href="../ai-coding-cost-per-task/">cost per task</a>). Docs also say quota consumption inside a plan can differ from these extra-usage rates, so a task inside your allowance may not cost this in dollars.</p>
+      <table>
+        <thead><tr><th>Model</th><th>When</th><th>Input / cache read / output, per 1M</th><th>Est. per medium task</th></tr></thead>
+        <tbody>
+          <tr><td>SWE-2 Flash</td><td>Until Dec 4, 2026, 18:00 UTC (self-serve)</td><td>$0</td><td>$0</td></tr>
+          <tr><td>SWE-2 Flash</td><td>After that</td><td>$0.10 / $0.01 / $0.50</td><td>about $0.04</td></tr>
+          <tr><td>SWE-2</td><td>Through Nov 30, 2026, self-serve Desktop and CLI</td><td>$0 (not cloud)</td><td>$0 on Desktop/CLI</td></tr>
+          <tr><td>SWE-2</td><td>After Nov 30, list price</td><td>$3.00 / $0.30 / $15.00</td><td>about $1.23</td></tr>
+        </tbody>
+      </table>
+      <p>The arithmetic, so you can check it: 10% of 1.5M at the input rate, 90% of 1.5M at the cached-token rate, and 0.025M at the output rate. For Flash that cached rate is the cache-read price ($0.01/M). For SWE-2 the docs publish one cache-input price ($0.30/M) and no separate cache-write price, so we use $0.30 for the cached 90%.</p>
+      <ul>
+        <li><strong>Flash:</strong> 0.15M x $0.10 + 1.35M x $0.01 + 0.025M x $0.50 = $0.015 + $0.0135 + $0.0125 = <strong>$0.041</strong>, about $0.04.</li>
+        <li><strong>SWE-2:</strong> 0.15M x $3.00 + 1.35M x $0.30 + 0.025M x $15.00 = $0.45 + $0.405 + $0.375 = <strong>$1.23</strong>.</li>
+      </ul>
+      <p>That is about <strong>30 times</strong>, not 5. Each self-serve list rate is one-thirtieth of SWE-2's ($0.10 vs $3.00, $0.01 vs $0.30, $0.50 vs $15.00), so the estimate scales the same way.</p>
+      <p>If the uncached 0.15M tokens are also written to cache once, Flash's $0.125/M cache-write rate adds about $0.02, for about $0.06. SWE-2's docs list a cache-input rate and don't list a separate cache-write rate, so we can't add the same line for SWE-2.</p>
+      <h3>Why the blog says one-fifth</h3>
+      <p>Cognition's announcement says Flash is "one-fifth the price" of SWE-2. It doesn't say which price. The self-serve list rates are one-thirtieth, so that claim does not describe the sticker on the self-serve tab.</p>
+      <p>On the enterprise (ACU) tab of the same docs page, SWE-2 is $0.50/M input, $2.50/M output, and $0.05/M cache reads through Dec 31, 2026 (Pacific time), then the $3 / $15 / $0.30 list price. Flash's listed rate is exactly one-fifth of that promo ($0.10, $0.50, and $0.01). Enterprise Flash is an extra 25% off until Nov 18, 2026 at 18:00 UTC, so it is cheaper than one-fifth during that discount. <strong>Our reading, not Cognition's explanation:</strong> "one-fifth" lines up with enterprise promo SWE-2 versus Flash's list rate. Self-serve customers should budget the one-thirtieth list rates after the free windows, not the blog's fraction.</p>
+      <p class="note">We couldn't confirm whether "free" means the model also skips your daily and weekly quota, or only that extra usage bills at $0. The docs introduce the rate table as extra-usage pricing and say quota consumption can differ. Set a spend limit before Dec 4 if you expect to go past the allowance.</p>
+    </section>
+
+    <section class="panel" id="plans">
+      <h2>Which Devin plan, if Flash is the reason you're looking</h2>
+      <p>Plan stickers re-checked Nov 6, 2026 on <a href="https://devin.ai/pricing" rel="noopener">devin.ai/pricing</a>. They match what we already publish. We did not re-check every other tool on this site.</p>
+      <table>
+        <thead><tr><th>Plan</th><th>Price</th><th>What it means for Flash and SWE-2</th></tr></thead>
+        <tbody>
+          <tr><td>Free</td><td>$0</td><td>Flash Medium on Desktop and CLI. High and Max are locked. Light agent quota, unlimited Tab and inline edits. We could not confirm SWE-2 on Free.</td></tr>
+          <tr><td>Pro</td><td>$20/mo</td><td>The plan most individuals need if they want Flash High or Max, frontier models, and Devin Cloud. Cloud still can't use Flash. Pricing page lists free SWE-2 here. Docs limit that free window to Desktop and CLI through Nov 30.</td></tr>
+          <tr><td>Max</td><td>$200/mo</td><td>Same models as Pro, with "significantly higher quotas." No published multiplier. Buy this if you hit Pro's allowance, not because Flash requires it.</td></tr>
+          <tr><td>Teams</td><td>$80/mo + $40 per full dev seat</td><td>Up to 200 users. Everything in Pro, plus admin tools. Same Flash limitation: Desktop and CLI, not Cloud.</td></tr>
+          <tr><td>Enterprise</td><td>Talk to Cognition</td><td>Different promo clock. Flash is 25% off until Nov 18, 2026 18:00 UTC. SWE-2 promo rates run through Dec 31, 2026 (Pacific). Confirm the tab your contract uses (ACUs vs legacy credits) before you quote a task cost.</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Quotas are still not published as numbers. Extra usage past the allowance bills at API pricing. Full plan notes: <a href="../ai-coding-tool-pricing/#plans-windsurf">Devin Desktop plans</a>.</p>
+    </section>
+
+    <section class="panel" id="unknowns">
+      <h2>What we couldn't confirm</h2>
+      <ul>
+        <li><strong>Which effort level the benchmark table used.</strong> Medium, High, and Max may not score the same. The blog doesn't say.</li>
+        <li><strong>Live speed.</strong> 200 vs 60 tokens per second is a simulated replay of one shortened Terminal-Bench transcript. It is not a production benchmark.</li>
+        <li><strong>What "one-fifth the price" measures.</strong> Self-serve list rates are one-thirtieth. The enterprise SWE-2 promo is five times Flash's list rate. Cognition doesn't say which comparison it means.</li>
+        <li><strong>Whether "free" skips the quota.</strong> Docs price extra usage, and they say quota use can differ from those rates.</li>
+        <li><strong>SWE-2 on the Free plan.</strong> Pricing page puts free SWE-2 on Pro. Docs say SWE-2 is free for self-serve plans on Desktop and CLI through Nov 30, which might include Free. We didn't see a Free-plan model list that settles it.</li>
+        <li><strong>A separate SWE-2 cache-write price.</strong> Docs list "cache input" at $0.30/M. Flash lists cache reads and cache writes separately.</li>
+        <li><strong>An independent cost or quality number.</strong> We did not use Artificial Analysis for Flash. We have not seen a public third-party score for this model.</li>
+        <li><strong>The weight-sharing program.</strong> Announced as in progress on Nov 4, with details "in a few weeks." Not published as of Nov 6. Weights are not public.</li>
+      </ul>
+    </section>
+    <!-- PRERENDER:try -->
+    <section class="panel try" id="try">
+      <h2>Ready to try one?</h2>
+      <p class="sub">Every tool here can be cancelled monthly, so the fastest way to decide is a real task on each.</p>
+      <div class="try-grid">
+        <div class="try-item">
+          <h3>Devin Desktop</h3>
+          <p class="meta"><strong>Start on:</strong> Pro $20. Most individuals: higher quotas, frontier models, SWE-2, SWE-2 Flash on Desktop and CLI (not Cloud), and Devin Cloud agents.</p>
+          <div class="cta-row">
+            <a href="https://devin.ai" rel="noopener" class="btn btn-primary" data-link="windsurf">Try Devin Desktop free &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-windsurf">All Devin Desktop plans</a>
+          </div>
+        </div>
+        <div class="try-item">
+          <h3>Cursor</h3>
+          <p class="meta"><strong>Start on:</strong> Premium $30. Cursor's pick for new AI users. Needed for cloud agents, Bugbot code reviews, and any Claude or GPT use (billed extra).</p>
+          <div class="cta-row">
+            <a href="https://cursor.com" rel="noopener" class="btn btn-primary" data-link="cursor">Try Cursor free &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-cursor">All Cursor plans</a>
+          </div>
+        </div>
+        <div class="try-item">
+          <h3>OpenAI Codex</h3>
+          <p class="meta"><strong>Start on:</strong> Plus $20. Most developers: Codex in the CLI, IDE extension, web and iOS, plus cloud tasks and automatic code review.</p>
+          <div class="cta-row">
+            <a href="https://developers.openai.com/codex" rel="noopener" class="btn btn-primary" data-link="codex">Try OpenAI Codex free &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-codex">All OpenAI Codex plans</a>
+          </div>
+        </div>
+        <div class="try-item">
+          <h3>Claude Code</h3>
+          <p class="meta"><strong>Start on:</strong> Pro $20. Start here. Includes Claude Code with usage limits; $17/mo if you pay $200 for the year.</p>
+          <div class="cta-row">
+            <a href="https://claude.com/product/claude-code" rel="noopener" class="btn btn-primary" data-link="claude-code">Get Claude Code &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-claude-code">All Claude Code plans</a>
+          </div>
+        </div></div>
+      
+    </section>
+    <!-- /PRERENDER:try -->
+
+    <section class="panel" id="faq">
+      <h2>FAQ</h2>
+      <h3>What is SWE-2 Flash?</h3>
+      <p>Cognition launched SWE-2 Flash on Nov 4, 2026. It is a smaller coding model (276B total parameters, 12B active, based on Inkling-Small) for Devin Desktop and Devin CLI. It does not run in Devin Cloud. SWE-2 is 2.8T total and 104B active. Cognition says Flash is about 3x the speed and one-fifth the price of SWE-2. The speed figure is a simulated replay at 200 vs 60 tokens per second, not a live production benchmark.</p>
+      <h3>Is SWE-2 Flash free?</h3>
+      <p>Devin docs say SWE-2 Flash is free until Dec 4, 2026 at 18:00 UTC. After that, Medium, High and Max all cost $0.10 per million input tokens, $0.01 per million cache reads, $0.125 per million cache writes, and $0.50 per million output tokens. Full SWE-2 is separately free on self-serve Desktop and CLI through Nov 30, 2026, and that free window does not apply to Devin Cloud. After Nov 30, SWE-2 list pricing is $3.00 per million input, $15.00 per million output, and $0.30 per million cache input.</p>
+      <h3>Does SWE-2 Flash work in Devin Cloud?</h3>
+      <p>No. Devin's models docs say SWE-2 Flash is available in Devin Desktop and Devin CLI, not in Devin Cloud. Cloud agents still need another model, such as SWE-2 or a frontier model on a paid plan.</p>
+      <h3>When should I use Flash instead of SWE-2?</h3>
+      <p>Use Flash for everyday agent work on Desktop or CLI: reviews, docs, and routine features. Cognition's own evals put Flash essentially even with SWE-2 on FrontierCode 2.0 (24.0 vs 23.8) and SWE-Bench Pro v2 Hard (89.9 vs 90.6). Keep SWE-2 for harder tasks. SWE-2 scores higher on Terminal-Bench 4.0 (27.3 vs 20.0) and DeepSWE 1.1 (73.0 vs 60.1). Those are vendor evals. Through Nov 30, 2026 both are free on self-serve Desktop and CLI, so the quality gap costs nothing until then.</p>
+      <h3>How much does one task cost after the free window?</h3>
+      <p>On our medium-task estimate (1.5M input tokens with 90% cached, plus 25K output tokens, cache writes left out), SWE-2 Flash is about $0.04 and SWE-2 list pricing is about $1.23. That is about 30 times, because the published self-serve rates are one-thirtieth, not the one-fifth in Cognition's blog. This is an estimate. Real tasks vary, and quota use inside a plan can differ from these extra-usage rates.</p>
+      <h3>Can I use SWE-2 Flash on the Free plan?</h3>
+      <p>Medium effort, yes. Devin docs say SWE-2 Flash Medium is on the Free plan, and High and Max need a paid plan. All three variants share the same token price after Dec 4. We could not confirm that the Free plan includes full SWE-2. The pricing page lists free SWE-2 under Pro.</p>
+      <h3>Are the SWE-2 Flash weights public?</h3>
+      <p>No. Cognition says it is not sharing the weights publicly yet, because the same cybersecurity skill that raised ExploitBench from 11.3% on the Inkling-Small base to 34.8% on Flash can be misused. It says it is building a program to share the weights with trusted industry partners and research labs. That is from the Nov 4, 2026 blog. Program details were not published as of Nov 6.</p>
+    </section>
+    <!-- PRERENDER:stack -->
+    <section class="panel stack" id="ship">
+      <h2>Ship your app: the rest of the stack</h2>
+      <p class="sub">Picked your AI coding tool? These are the usual next costs. Free tiers first, and prices checked Oct 20, 2026 on each vendor's pricing page.</p>
+      <div class="stack-grid">
+        <div class="stack-group">
+          <h3>Code review</h3>
+          <p class="meta">AI writes code fast; something should read it before it ships.</p>
+          <ul class="stack-list"><li><a href="https://www.coderabbit.ai" rel="noopener" data-link="coderabbit"><strong>CodeRabbit</strong></a><span>AI review on every pull request, in GitHub or GitLab</span><small>Free for public repos; Essentials $24/user/mo billed annually ($30 monthly)</small></li></ul>
+          <p class="meta tiny">Already paying for Copilot or Codex Plus? Both include AI pull request review, so try that first.</p>
+        </div>
+        <div class="stack-group">
+          <h3>Hosting</h3>
+          <p class="meta">Where your app lives once it works on your machine.</p>
+          <ul class="stack-list"><li><a href="https://vercel.com" rel="noopener" data-link="vercel"><strong>Vercel</strong></a><span>Next.js and front-end apps</span><small>Hobby free (personal, non-commercial); Pro $20/mo per developer seat</small></li><li><a href="https://join.netlify.com/sfop8nkiwjbv" rel="sponsored nofollow noopener" data-link="netlify"><strong>Netlify</strong> <span class="tag ref">referral</span></a><span>Static sites and front ends, unlimited Pro members</span><small>Free; Personal $9/mo; Pro $20/mo with unlimited members</small></li><li><a href="https://railway.com" rel="noopener" data-link="railway"><strong>Railway</strong></a><span>Back ends, workers and databases with no server setup</span><small>Free trial $5 credit; Hobby $5/mo incl. $5 usage; Pro $20/mo</small></li><li><a href="https://render.com" rel="noopener" data-link="render"><strong>Render</strong></a><span>Heroku-style web services, cron jobs and Postgres</span><small>Hobby $0 + compute; Pro $25/mo + compute</small></li></ul>
+          
+        </div>
+        <div class="stack-group">
+          <h3>Database and auth</h3>
+          <p class="meta">Most AI-built apps need a Postgres database and logins.</p>
+          <ul class="stack-list"><li><a href="https://supabase.com" rel="noopener" data-link="supabase"><strong>Supabase</strong></a><span>Postgres + auth + storage in one; Lovable and Bolt connect to it</span><small>Free (2 projects, pause after 1 week idle); Pro from $25/mo</small></li><li><a href="https://neon.com" rel="noopener" data-link="neon"><strong>Neon</strong></a><span>Serverless Postgres with branching, pay for what you use</span><small>Free (100 projects); paid plans usage-based</small></li></ul>
+          
+        </div>
+        <div class="stack-group">
+          <h3>Domain name</h3>
+          <p class="meta">A real domain for your app.</p>
+          <ul class="stack-list"><li><a href="https://www.cloudflare.com/products/registrar/" rel="noopener" data-link="cloudflare"><strong>Cloudflare Registrar</strong></a><span>Domains at cost with no markup</span><small>Wholesale price per TLD</small></li><li><a href="https://porkbun.com" rel="noopener" data-link="porkbun"><strong>Porkbun</strong></a><span>Cheap domains with free WHOIS privacy</span><small>Varies by TLD</small></li><li><a href="https://www.namecheap.com" rel="noopener" data-link="namecheap"><strong>Namecheap</strong></a><span>Popular registrar with hosting and email add-ons</span><small>Varies by TLD</small></li></ul>
+          
+        </div></div>
+      <p class="meta tiny aff-note">Referral link: we may earn a commission at no extra cost to you. It never changes our picks.</p>
+    </section>
+    <!-- /PRERENDER:stack -->
+
+    <section class="panel" id="related">
+      <h2>Related guides</h2>
+      <ul class="related">
+        <li><a href="../cursor-vs-windsurf/">Cursor vs Devin Desktop<small>IDE, agents, and team pricing</small></a></li>
+        <li><a href="../ai-coding-cost-per-task/">What one coding task costs<small>Why hard tasks cost more than this estimate</small></a></li>
+        <li><a href="../free-ai-coding-tools/">Free AI coding tools<small>What the free tiers actually include</small></a></li>
+        <li><a href="../jules-alternatives/">Jules alternatives<small>Hosted cloud agents, which Flash is not</small></a></li>
+        <li><a href="../claude-max-vs-ultra/">Claude Max vs Ultra<small>What $100 vs $200 buys, including Devin Max</small></a></li>
+        <li><a href="../usage-limits-compared/">Usage limits compared<small>The medium-task estimate, other tools</small></a></li>
+        <li><a href="../ai-coding-tool-pricing/">AI coding tool pricing<small>All plans, including Devin</small></a></li>
+      </ul>
+    </section>
+
+    <aside class="sponsor" id="sponsor" aria-label="Sponsor slot">
+      <strong>Sponsor slot</strong> <span class="meta">(Sponsored placements are labeled and never affect rankings or verdicts)</span><br />
+      Reach Devin users deciding whether SWE-2 Flash is enough before the free window ends Dec 4.
+      <div style="margin-top:10px" class="meta">Founding sponsor rates available now. Email <a href="mailto:sponsors@codetoolpicker.com?subject=CodeToolPicker%20sponsorship">sponsors@codetoolpicker.com</a> &middot; <a href="../advertise/">See packages</a></div>
+    </aside>
+
+    <section class="panel" id="disclosure">
+      <h2>Editorial disclosure</h2>
+      <p><strong>Rankings are not for sale.</strong> Sponsored placements and affiliate links are always labeled, and they never change our recommendations, quiz results, prices, or comparison data. <strong>Links marked "referral" are affiliate links (Netlify):</strong> if you buy through them, we may earn a commission at no extra cost to you. Every other link is a plain link that pays us nothing, and pricing source links are never affiliate links. <a href="../advertise/#policy">Editorial policy</a>.</p>
+    </section>
+    </article>
+
+    <footer>
+      <p><a href="../">← Back to the AI Coding Tool Picker</a> · <a href="../ai-coding-tool-pricing/">Pricing &amp; plans calculator</a></p>
+      <p>More comparisons: <a href="./">SWE-2 Flash vs SWE-2</a> · <a href="../cursor-openai-cutoff/">GPT in Cursor after Nov 12</a> · <a href="../claude-max-vs-ultra/">Claude Max vs Ultra</a> · <a href="../jules-alternatives/">Jules alternatives</a> · <a href="../chatgpt-pro-codex-limits/">ChatGPT Pro Codex limits</a> · <a href="../ai-coding-cost-per-task/">Cost per task</a> · <a href="../claude-code-alternatives/">Claude Code alternatives</a> · <a href="../free-ai-coding-tools/">Free AI coding tools</a> · <a href="../lovable-vs-bolt/">Lovable vs Bolt</a> · <a href="../cursor-vs-windsurf/">Cursor vs Windsurf (Devin Desktop)</a> · <a href="../claude-code-vs-cursor/">Claude Code vs Cursor</a> · <a href="../claude-code-vs-codex/">Claude Code vs Codex</a> · <a href="../codex-vs-cursor/">Codex vs Cursor</a> · <a href="../copilot-vs-claude-code/">Copilot vs Claude Code</a> · <a href="../gemini-cli-vs-claude-code/">Gemini CLI vs Claude Code</a> · <a href="../cursor-vs-antigravity/">Cursor vs Antigravity</a> · <a href="../usage-limits-compared/">Usage limits compared</a> · <a href="../cursor-vs-copilot/">Cursor vs Copilot</a> · <a href="../switch-from-copilot-to-cursor/">Switch Copilot → Cursor</a> · <a href="../cursor-bundle-alternatives/">Cursor bundle alternatives</a></p>
+      <p>Not affiliated with Anthropic, OpenAI, GitHub, Google, Cursor, xAI, AWS (Kiro) or Cognition (Devin).</p>
+      <p>Contact, sponsorships, and corrections: <a href="mailto:sponsors@codetoolpicker.com">sponsors@codetoolpicker.com</a> · <a href="../advertise/">Advertise with us</a></p>
+      <p class="meta" id="analytics-note">We use GoatCounter, a privacy-friendly counter with no cookies, to count visits.</p>
+    </footer>
+  </div>
+  <script data-goatcounter="https://codetoolpicker.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

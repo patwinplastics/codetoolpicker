@@ -19,7 +19,7 @@ See also: https://codetoolpicker.com/usage-limits-compared/ (usage limits compar
 See also: https://codetoolpicker.com/codex-vs-cursor/ (OpenAI Codex vs Cursor: GPT-6.1 Sol in ChatGPT Plus $20 vs Cursor Plus $8 Grok-only; Cursor lists no GPT-6 models; the Codex extension runs inside Cursor; teams of 5; estimated cost per task by route)
 See also: https://codetoolpicker.com/free-ai-coding-tools/ (free AI coding tools: every free plan checked Oct 27, 2026, the catch on each, who trains on free-tier code, cheapest upgrades, and Antigravity Free losing Claude Sonnet/Opus 4.6 on Nov 18, 2026)
 See also: https://codetoolpicker.com/claude-code-alternatives/ (Claude Code alternatives checked Oct 28, 2026: which tools still give you Claude Opus 5.5 and Sonnet 5.5 and at what price, Copilot Pro $10 with Sonnet 5.5, Google AI Pro $19.99 and Kiro Pro $20 with Opus 5.5, Codex Plus $20 without Claude, open-source BYOK agents, tools that reuse your Claude plan limits, and teams of 5)
-See also: https://codetoolpicker.com/cursor-openai-cutoff/ (GPT in Cursor after Nov 12, checked Nov 5, 2026: OpenAI's proposed shutoff of OpenAI models in Cursor; Tab unaffected; Agent, Auto, Cloud Agents, Automations and the CLI lose Cursor-supplied GPT; your own OpenAI key or a gateway only covers local Chat and Agent on Premium $30+ or legacy plans; the Codex extension inside Cursor keeps GPT-6.1 Sol on ChatGPT Plus $20)
+See also: https://codetoolpicker.com/swe-2-flash-vs-swe-2/ (SWE-2 Flash vs SWE-2, checked Nov 6, 2026: Cognition's Nov 4 model for Devin Desktop and CLI, not Devin Cloud; free until Dec 4, 2026 18:00 UTC, then $0.10/$0.01/$0.125/$0.50 per million input, cache read, cache write, and output; SWE-2 free on self-serve Desktop/CLI through Nov 30, then $3/$15/$0.30; Medium on Free, High and Max need a paid plan; medium-task estimate about $0.04 vs about $1.23; blog says 3x speed and one-fifth the price, speed demo is a simulated 200 vs 60 tok/s replay, self-serve list rates are one-thirtieth)
 See also: https://codetoolpicker.com/claude-max-vs-ultra/ (Claude Max vs Ultra, checked Nov 4, 2026: Ultra $200 is 10x Pro per week with no five-hour limit for verified accounts vs Max $100 at 5x Pro every five hours and every week; the $100/$200 monthly API credits do not work in Claude Code; which limit you hit decides the plan; what going from $100 to $200 buys in Codex, Cursor, Google Antigravity, Kiro, Copilot and Devin)
 See also: https://codetoolpicker.com/jules-alternatives/ (Jules alternatives, checked Nov 3, 2026: Google Jules is read-only after Nov 11, 2026 and shuts down Dec 31; what to export; Antigravity has no Google-hosted cloud runs yet and no separate task pool; hosted background agents compared: Copilot Pro $10, Codex on ChatGPT Plus $20, Claude Code cloud sessions on Claude Pro $20, Cursor Cloud Agents from Premium $30, Devin Pro $20; Cursor Agent SDK GA)
 See also: https://codetoolpicker.com/chatgpt-pro-codex-limits/ (ChatGPT Pro Codex limits, checked Oct 30, 2026: OpenAI canceled the planned Pro 200 cut on Oct 29 and doubled Work and Codex usage on Pro 100 and Pro 500; 20x to 10x multiples were never official; Pro gets $100/$200/$500 a month in API credits and Business $20/$100 per seat up to $500, which do not add signed-in Codex usage; what to do now and cheaper options)
@@ -124,26 +124,26 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - tagline: Cognition's AI IDE (formerly Windsurf) with an Agent Command Center for local and cloud Devin agents
 - category: ai-ide
 - formFactor: Desktop IDE
-- models: Frontier OpenAI, Claude, Gemini, SpaceXAI + open-source and SWE models
+- models: Frontier OpenAI, Claude, Gemini, SpaceXAI + open-source and SWE models, including SWE-2 Flash on Desktop and CLI (not Devin Cloud)
 - bestFor: Engineers who want a Cursor-class IDE that manages many local and cloud agents
 - strengths: ["Agent Command Center (local + cloud agents)","Devin Cloud included on paid plans","Competitive Pro price","Extra usage at API price"]
 - limits: ["Quotas can bite power users","Renamed from Windsurf in June 2026; some docs and extensions still say Windsurf"]
 - website: https://devin.ai
 - pricing source: https://devin.ai/pricing
-- plan Free: $0/mo: Light agent quota, unlimited Tab and inline edits
-- plan Pro: $20/mo: Increased quotas + frontier models, Devin Cloud access
+- plan Free: $0/mo: Light agent quota, unlimited Tab and inline edits. SWE-2 Flash Medium on Desktop and CLI.
+- plan Pro: $20/mo: Increased quotas + frontier models, Devin Cloud access. SWE-2 Flash is Desktop and CLI only.
 - plan Max: $200/mo: Significantly higher quotas
 - plan Teams: $80/mo: $80/mo team plan + $40/mo per full dev seat, up to 200 users
 - best for (badge): Best for running many agents
-- price Free: monthly $0; annual $0; Light agent quota, unlimited Tab
-- price Pro: monthly $20/mo; annual Not listed; Higher quotas, frontier models, Devin Cloud
+- price Free: monthly $0; annual $0; Light agent quota, unlimited Tab. SWE-2 Flash Medium on Desktop/CLI.
+- price Pro: monthly $20/mo; annual Not listed; Higher quotas, frontier models, Devin Cloud. SWE-2 Flash is Desktop/CLI only.
 - price Max: monthly $200/mo; annual Not listed; Significantly higher quotas
 - price Teams: monthly $80/mo + $40/seat/mo; annual Not listed; $80/mo team plan + $40/mo per full dev seat, up to 200 users
-- which plan: Free: Unlimited Tab completions and inline edits with a light agent quota.
-- which plan: Pro $20: Most individuals: higher quotas, frontier models, SWE-2, and Devin Cloud agents.
+- which plan: Free: Unlimited Tab completions and inline edits with a light agent quota. SWE-2 Flash Medium is on Free (Desktop and CLI, free until Dec 4, 2026 per docs).
+- which plan: Pro $20: Most individuals: higher quotas, frontier models, SWE-2, SWE-2 Flash on Desktop and CLI (not Cloud), and Devin Cloud agents.
 - which plan: Max $200: Significantly higher quotas for all-day agent use.
 - which plan: Teams $80 + $40/seat: Up to 200 users with their own quota per full seat.
-- not included: Extra usage beyond quotas is billed at API pricing. Quotas aren't published as numbers.
+- not included: Extra usage beyond quotas is billed at API pricing. Quotas aren't published as numbers. SWE-2 Flash (Desktop and CLI only, not Cloud) is free until Dec 4, 2026 18:00 UTC, then $0.10 per million input tokens and $0.50 per million output tokens.
 - skip it if: You need predictable heavy usage on a fixed budget. Quotas aren't published as numbers, and overages bill at API pricing.
 
 ## Lovable
@@ -294,6 +294,7 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - Namecheap (https://www.namecheap.com): Popular registrar with hosting and email add-ons. Varies by TLD
 
 ## Pricing change log
+- 2026-11-06: Cognition launched SWE-2 Flash on Nov 4, 2026 for Devin Desktop and Devin CLI (not Devin Cloud). Docs: free until Dec 4, 2026 18:00 UTC, then $0.10/M input, $0.01/M cache reads, $0.125/M cache writes, $0.50/M output (Medium, High and Max share that rate). Medium is on Free; High and Max need a paid plan. SWE-2 stays free on self-serve Desktop/CLI through Nov 30, 2026 (not cloud), then list price $3.00/M input, $15.00/M output, $0.30/M cache input. Devin plan prices re-checked Nov 6 and unchanged (Free $0, Pro $20, Max $200, Teams $80 + $40/seat). Full story: https://codetoolpicker.com/swe-2-flash-vs-swe-2/ (source: https://docs.devin.ai/desktop/models)
 - 2026-11-05: Re-checked Cursor and OpenAI ahead of OpenAI's proposed Nov 12, 2026 shutoff of OpenAI models in Cursor (still not confirmed; Cursor may end access sooner). Cursor plans unchanged (Plus $8, Premium $30, Super $100, Ultra $200); its newest OpenAI model is still GPT-5.6 Sol at $4/$20 per million tokens, promo through Nov 21. OpenAI API: GPT-6.1 Sol $2/$10, GPT-6.1 Terra $1/$5. Your own OpenAI key in Cursor covers local Chat and Agent only and needs Premium or a legacy plan. Codex Plus $20 includes GPT-6.1 Sol and Terra. Copilot Pro $10 includes GPT-6.1 Terra; GPT-6.1 Sol starts at Pro+ $39. Full story: https://codetoolpicker.com/cursor-openai-cutoff/ (source: https://help.openai.com/en/articles/20001506-using-openai-models-in-cursor)
 - 2026-11-04: Re-checked every $100 and $200 coding plan. Claude unchanged (Max $100: 5x Pro every five hours and every week; Ultra $200: 10x Pro weekly, no five-hour limit for verified accounts). Anthropic's docs say the Max/Ultra API credits ($100/$200 a month) don't apply to interactive Claude Code or usage credits. Copilot Max $100 lists $200 in AI credits: $100 base plus a $100 flex allotment GitHub says may change. Kiro tiers are 1,000/2,000/5,000/10,000 credits for $20/$40/$100/$200, and since Nov 1, 2026 a first upgrade from Free gets the rest of the month on Pro free plus 500 trial credits (was a $20 credit). Cursor, Google AI Ultra, ChatGPT Pro and Devin Max prices unchanged. Full story: https://codetoolpicker.com/claude-max-vs-ultra/ (source: https://claude.com/pricing)
 - 2026-11-03: Google is shutting down Jules: sessions can be finished until Nov 11, 2026, then Jules is read-only, and it winds down Dec 31. Jules had its own task limits (15/day free, 100/day on Google AI Pro, 300/day on Ultra); Antigravity, which Google points users to, has no Google-hosted cloud runs yet and uses the shared plan quota. Also: Antigravity's models page now says Claude Sonnet 4.6, Claude Opus 4.6 and GPT-OSS-120b will be removed on Nov 18, 2026 (was Nov 2). Copilot plan prices and credits re-checked, unchanged. Full story: https://codetoolpicker.com/jules-alternatives/ (source: https://jules.google/docs/changelog/2026-10-29/)
