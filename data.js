@@ -272,7 +272,7 @@ window.PRICING = {
     guide: [
       ["Free", "Try the editor and agent before paying."],
       ["Plus $8", "Only if Grok models are enough for you. Cursor itself recommends Plus for social creators with limited AI usage."],
-      ["Premium $30", "Cursor's pick for new AI users. Needed for cloud agents, Bugbot code reviews, and any Claude or GPT use (billed extra)."],
+      ["Premium $30", "Cursor's pick for new AI users. Needed for cloud agents (including Live Apps, which build and host web apps), Bugbot code reviews, and any Claude or GPT use (billed extra)."],
       ["Super $100", "Cursor's pick for daily agent users: 15x Plus usage plus priority access at peak times."],
       ["Ultra $200", "Power users: 50x Plus usage and earliest access to new models."],
       ["Teams $30+/seat", "Centralized billing, SSO, usage analytics, team-wide privacy settings. Third-party models cost API price plus a $0.25 per million token Cursor Token Rate (cheap models like Claude Haiku 5.5 and Gemini Flash are exempt)."]
@@ -347,8 +347,8 @@ window.PRICING = {
     bestBadge: "Best for non-coders and groups",
     plans: [
       { name: "Free", monthly: 0, annual: 0, note: "5 credits/day (up to 30/mo)" },
-      { name: "Pro", monthly: 25, annual: 252, note: "100 monthly credits + daily grants; $21/mo billed annually" },
-      { name: "Business", monthly: 50, annual: 504, note: "SSO, team workspace; $42/mo billed annually" }
+      { name: "Pro", monthly: 25, annual: 250, note: "100 monthly credits + daily grants; $21/mo billed annually" },
+      { name: "Business", monthly: 50, annual: 500, note: "SSO, team workspace; $42/mo billed annually" }
     ],
     extraCost: "Not priced per seat: every plan includes unlimited users sharing one credit balance. On-demand credits cost extra.",
     glance: { free: "Yes: 5 credits/day (up to 30/mo)", models: "Managed by Lovable (you don't pick)", agents: "Chat-to-app builder with hosting", surface: "Browser app builder", team: "$50/mo, unlimited users" },
@@ -455,6 +455,7 @@ window.COMPARE_PAGES = {
 
 // Dated pricing changes we track. Only sourced events.
 window.PRICE_LOG = [
+  { date: "2026-11-09", text: "Cursor launched Live Apps on Nov 5, 2026: a cloud agent builds a web app, provisions Postgres, adds Cursor sign-in, hosts it and publishes after security checks. It needs a plan with cloud agents (Premium $30 and up, Teams, Enterprise or legacy paid; not Free or Plus $8). Cursor has not published hosting or database limits or prices. Cursor plan prices unchanged. Re-checked Lovable and Bolt: Lovable Pro $25 and Business $50 unchanged; correction: annual billing is $250 and $500 a year (we had $252 and $504). Bolt Pro $25 ($18/mo annual) and Teams $30/member unchanged. Full story: https://codetoolpicker.com/cursor-live-apps-vs-lovable-bolt/", src: "https://cursor.com/docs/cloud-agent/apps" },
   { date: "2026-11-06", text: "Cognition launched SWE-2 Flash on Nov 4, 2026 for Devin Desktop and Devin CLI (not Devin Cloud). Docs: free until Dec 4, 2026 18:00 UTC, then $0.10/M input, $0.01/M cache reads, $0.125/M cache writes, $0.50/M output (Medium, High and Max share that rate). Medium is on Free; High and Max need a paid plan. SWE-2 stays free on self-serve Desktop/CLI through Nov 30, 2026 (not cloud), then list price $3.00/M input, $15.00/M output, $0.30/M cache input. Devin plan prices re-checked Nov 6 and unchanged (Free $0, Pro $20, Max $200, Teams $80 + $40/seat). Full story: https://codetoolpicker.com/swe-2-flash-vs-swe-2/", src: "https://docs.devin.ai/desktop/models" },
   { date: "2026-11-05", text: "Re-checked Cursor and OpenAI ahead of OpenAI's proposed Nov 12, 2026 shutoff of OpenAI models in Cursor (still not confirmed; Cursor may end access sooner). Cursor plans unchanged (Plus $8, Premium $30, Super $100, Ultra $200); its newest OpenAI model is still GPT-5.6 Sol at $4/$20 per million tokens, promo through Nov 21. OpenAI API: GPT-6.1 Sol $2/$10, GPT-6.1 Terra $1/$5. Your own OpenAI key in Cursor covers local Chat and Agent only and needs Premium or a legacy plan. Codex Plus $20 includes GPT-6.1 Sol and Terra. Copilot Pro $10 includes GPT-6.1 Terra; GPT-6.1 Sol starts at Pro+ $39. Full story: https://codetoolpicker.com/cursor-openai-cutoff/", src: "https://help.openai.com/en/articles/20001506-using-openai-models-in-cursor" },
   { date: "2026-11-04", text: "Re-checked every $100 and $200 coding plan. Claude unchanged (Max $100: 5x Pro every five hours and every week; Ultra $200: 10x Pro weekly, no five-hour limit for verified accounts). Anthropic's docs say the Max/Ultra API credits ($100/$200 a month) don't apply to interactive Claude Code or usage credits. Copilot Max $100 lists $200 in AI credits: $100 base plus a $100 flex allotment GitHub says may change. Kiro tiers are 1,000/2,000/5,000/10,000 credits for $20/$40/$100/$200, and since Nov 1, 2026 a first upgrade from Free gets the rest of the month on Pro free plus 500 trial credits (was a $20 credit). Cursor, Google AI Ultra, ChatGPT Pro and Devin Max prices unchanged. Full story: https://codetoolpicker.com/claude-max-vs-ultra/", src: "https://claude.com/pricing" },

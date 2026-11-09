@@ -23,6 +23,7 @@ module.exports = function funnels(root) {
     "claude-code-vs-codex/index.html": { base: "../", tools: ["claude-code", "codex"], stack: DEV },
     "codex-vs-cursor/index.html": { base: "../", tools: ["codex", "cursor"], stack: DEV },
     "cursor-openai-cutoff/index.html": { base: "../", tools: ["cursor", "codex", "copilot", "claude-code"], stack: DEV },
+    "cursor-live-apps-vs-lovable-bolt/index.html": { base: "../", tools: ["cursor", "lovable", "bolt"], stack: BUILDER },
     "swe-2-flash-vs-swe-2/index.html": { base: "../", tools: ["windsurf", "cursor", "codex", "claude-code"], stack: DEV },
     "claude-max-vs-ultra/index.html": { base: "../", tools: ["claude-code", "codex", "copilot", "antigravity", "cursor"], stack: DEV },
     "jules-alternatives/index.html": { base: "../", tools: ["copilot", "codex", "claude-code", "cursor", "antigravity"], stack: DEV },
