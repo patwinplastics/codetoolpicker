@@ -128,6 +128,52 @@ for (const g of window.STACK) {
 lines.push("", "## Pricing change log");
 for (const e of window.PRICE_LOG) lines.push(`- ${e.date}: ${e.text} (source: ${e.src})`);
 fs.writeFileSync(path.join(root, "llms-full.txt"), lines.join("\n") + "\n");
+function ensureIcons(rootDir) {
+  const tags = [
+    '<link rel="icon" href="/favicon-48x48.png" sizes="48x48" type="image/png" />',
+    '<link rel="icon" href="/favicon-96x96.png" sizes="96x96" type="image/png" />',
+    '<link rel="icon" href="/icon-192.png" sizes="192x192" type="image/png" />',
+    '<link rel="icon" href="/favicon.svg" type="image/svg+xml" />',
+    '<link rel="icon" href="/favicon.ico" sizes="48x48" />',
+    '<link rel="apple-touch-icon" href="/apple-touch-icon.png" />',
+    '<link rel="manifest" href="/site.webmanifest" />',
+  ];
+  const block = "  " + tags.join("\n  ") + "\n";
+  let updated = 0;
+  const walk = (dir) => {
+    for (const name of fs.readdirSync(dir)) {
+      if (name === ".git" || name === "node_modules") continue;
+      const pth = path.join(dir, name);
+      const st = fs.statSync(pth);
+      if (st.isDirectory()) walk(pth);
+      else if (name.endsWith(".html")) {
+        let html = fs.readFileSync(pth, "utf8");
+        const orig = html;
+        // Rebuild on every run so new pages picked up by prerender get the same tags.
+        const linkRe = /\n?[ \t]*<link rel="(?:icon|apple-touch-icon|shortcut icon|manifest)"[^>]*>[ \t]*/gi;
+        html = html.replace(linkRe, "");
+        if (/[ \t]*<meta name="theme-color"/i.test(html)) {
+          html = html.replace(/[ \t]*<meta name="theme-color"/i, block + '  <meta name="theme-color"');
+        } else if (/[ \t]*<link rel="stylesheet"/i.test(html)) {
+          html = html.replace(/[ \t]*<link rel="stylesheet"/i, block + '  <link rel="stylesheet"');
+        } else if (/<\/head>/i.test(html)) {
+          html = html.replace(/<\/head>/i, block + "</head>");
+        } else {
+          throw new Error(`ensureIcons: no insertion point in ${path.relative(rootDir, pth)}`);
+        }
+        if (html !== orig) {
+          fs.writeFileSync(pth, html);
+          updated++;
+        }
+      }
+    }
+  };
+  walk(rootDir);
+  return updated;
+}
+
 const n = require(path.join(__dirname, "funnels.js"))(root);
+const iconsUpdated = ensureIcons(root);
 console.log(`funnels wired on ${n} pages`);
+console.log(`icon tags updated on ${iconsUpdated} pages`);
 console.log(`prerendered ${tools.length} tools, checked ${checked}`);
