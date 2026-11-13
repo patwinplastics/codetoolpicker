@@ -30,7 +30,12 @@ fs.writeFileSync(idx, html);
 // ---- Pricing guide page (ai-coding-tool-pricing/) ----
 const fmtYear = (pl) => (pl.annual == null ? "Not listed" : pl.annual === 0 ? "$0" : `$${pl.annual.toLocaleString("en-US")}${pl.seat ? "/seat" : ""}/yr (≈$${Math.ceil(pl.annual / 12)}${pl.seat ? "/seat" : ""}/mo)`);
 const num = (n) => (n % 1 ? n.toFixed(2) : String(n));
-const fmtMonth = (pl) => (pl.monthly === 0 ? "$0" : `${pl.base ? `$${pl.base}/mo + ` : ""}$${num(pl.monthly)}${pl.seat ? "/seat" : ""}/mo`);
+const fmtMonth = (pl) => {
+  if (pl.monthly === 0) return "$0";
+  const seat = pl.seat ? "/seat" : "";
+  if (pl.minimum != null) return `$${num(pl.minimum)}/mo minimum; $${num(pl.monthly)}${seat}/mo`;
+  return `${pl.base ? `$${pl.base}/mo + ` : ""}$${num(pl.monthly)}${seat}/mo`;
+};
 const planSections = tools.map((t) => {
   const p = P[t.id];
   return `

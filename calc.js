@@ -48,10 +48,16 @@
     const r = state.rows[id];
     const p = P[id].plans.find((x) => x.name === r.plan);
     const seats = p.seat ? r.seats : 1;
-    const baseFee = p.base || 0;
-    const monthlyBilled = (p.monthly * seats + baseFee) * 12;
+    const seatCost = (p.monthly || 0) * seats;
+    // minimum: floor (Devin Teams). base: flat add-on, if ever used.
+    const monthly = p.minimum != null ? Math.max(p.minimum, seatCost) : seatCost + (p.base || 0);
+    const monthlyBilled = monthly * 12;
     let yearly = monthlyBilled, annualUsed = false;
-    if (state.bill === "annual" && p.annual != null) { yearly = p.annual * seats + baseFee * 12; annualUsed = true; }
+    if (state.bill === "annual" && p.annual != null) {
+      const annualSeats = p.annual * seats;
+      yearly = p.minimum != null ? Math.max(p.minimum * 12, annualSeats) : annualSeats + (p.base || 0) * 12;
+      annualUsed = true;
+    }
     return { p, seats, yearly, perMonth: yearly / 12, monthlyBilled, annualUsed };
   }
 

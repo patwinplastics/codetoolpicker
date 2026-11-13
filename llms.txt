@@ -68,7 +68,7 @@
 - Best for non-coders building full apps: Lovable or Bolt.new (both Pro $25/mo; Bolt $18/mo billed annually, Lovable $21/mo)
 - Cheapest paid plans: Cursor Plus $8/mo (Grok only) and Codex Go $8/mo (desktop app only). Cheapest with Claude + GPT included: GitHub Copilot Pro $10/mo
 - Best free options: GitHub Copilot Free (2,000 completions/mo), Google Antigravity Free (unlimited Tab, weekly agent quota), and Devin Desktop Free (unlimited Tab, light agent quota). Claude Code has no free tier
-- Cheapest for a team of 5 (monthly billing): Lovable Business $50/mo total (unlimited users); Copilot Business $95; Claude Team $125; ChatGPT Business (Codex) $125; Antigravity via Gemini Enterprise from $150; Cursor Teams $150; Bolt Teams $150; Devin Desktop Teams $280
+- Cheapest for a team of 5 (monthly billing): Lovable Business $50/mo total (unlimited users); Copilot Business $95; Claude Team $125; ChatGPT Business (Codex) $125; Antigravity via Gemini Enterprise from $150; Cursor Teams $150; Bolt Teams $150; Devin Desktop Teams $200
 
 ## Notes
 - Windsurf was renamed Devin Desktop by Cognition on 2026-06-02; windsurf.com redirects to https://devin.ai. Same IDE, plans, and pricing.

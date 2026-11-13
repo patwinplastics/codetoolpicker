@@ -144,7 +144,7 @@ Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02 (same IDE, p
 - price Free: monthly $0; annual $0; Light agent quota, unlimited Tab. SWE-2 Flash Medium on Desktop/CLI.
 - price Pro: monthly $20/mo; annual Not listed; Higher quotas, frontier models, Devin Cloud. SWE-2 Flash is Desktop/CLI only.
 - price Max: monthly $200/mo; annual Not listed; Significantly higher quotas
-- price Teams: monthly $80/mo + $40/seat/mo; annual Not listed; $80/mo minimum + $40/mo per full seat, up to 100 users (5 full seats = $200; flex seats free)
+- price Teams: monthly $80/mo minimum; $40/seat/mo; annual Not listed; $80/mo minimum; $40/mo per full seat, up to 100 users (5 full seats = $200; flex seats free)
 - which plan: Free: Unlimited Tab completions and inline edits with a light agent quota. SWE-2 Flash Medium is on Free (Desktop and CLI, free until Dec 4, 2026 per docs).
 - which plan: Pro $20: Most individuals: higher quotas, frontier models, SWE-2, SWE-2 Flash on Desktop and CLI (not Cloud), and Devin Cloud agents.
 - which plan: Max $200: Significantly higher quotas for all-day agent use.

@@ -251,7 +251,7 @@ window.QUIZ = [
 // Every number re-checked 2026-10-19 on: cursor.com/pricing + docs.x.ai/x-subscription/pricing (Cursor annual + team seats),
 // docs.github.com/en/copilot/get-started/plans, claude.com/pricing, devin.ai/pricing, lovable.dev/pricing (yearly toggle), bolt.new/pricing.
 // monthly = price per month (per seat if seat:true) on monthly billing. annual = total per year (per seat if seat:true) on annual billing,
-// or null when the vendor doesn't publish an annual price. base = flat monthly fee on top of seats (Devin Teams).
+// or null when the vendor doesn't publish an annual price. minimum = monthly floor (Devin Teams: max(minimum, monthly * full seats); flex seats are free and are not in the seat count). base = unused flat add-on on top of seats.
 // Codex, Google Antigravity and Cursor re-checked 2026-10-20 on developers.openai.com/codex/pricing, antigravity.google/pricing,
 // antigravity.google/docs/plans, antigravity.google/docs/models, gemini.google/subscriptions and cursor.com/pricing.
 window.PRICING_CHECKED = "2026-10-22";
@@ -330,10 +330,10 @@ window.PRICING = {
       { name: "Free", monthly: 0, annual: 0, note: "Light agent quota, unlimited Tab. SWE-2 Flash Medium on Desktop/CLI." },
       { name: "Pro", monthly: 20, annual: null, note: "Higher quotas, frontier models, Devin Cloud. SWE-2 Flash is Desktop/CLI only." },
       { name: "Max", monthly: 200, annual: null, note: "Significantly higher quotas" },
-      { name: "Teams", monthly: 40, annual: null, seat: true, base: 80, note: "$80/mo minimum + $40/mo per full seat, up to 100 users (5 full seats = $200; flex seats free)" }
+      { name: "Teams", monthly: 40, annual: null, seat: true, minimum: 80, note: "$80/mo minimum; $40/mo per full seat, up to 100 users (5 full seats = $200; flex seats free)" }
     ],
     extraCost: "Extra usage beyond quotas is billed at API pricing. Quotas aren't published as numbers. SWE-2 Flash (Desktop and CLI only, not Cloud) is free until Dec 4, 2026 18:00 UTC, then $0.10 per million input tokens and $0.50 per million output tokens.",
-    glance: { free: "Yes: light agent quota, unlimited Tab and inline edits", models: "Frontier OpenAI, Claude, Gemini + SWE-2 (Pro+); SWE-2 Flash on Desktop/CLI (free until Dec 4)", agents: "Local agents; Devin Cloud agents on Pro+", surface: "Own desktop IDE (formerly Windsurf)", team: "$80/mo + $40/seat" },
+    glance: { free: "Yes: light agent quota, unlimited Tab and inline edits", models: "Frontier OpenAI, Claude, Gemini + SWE-2 (Pro+); SWE-2 Flash on Desktop/CLI (free until Dec 4)", agents: "Local agents; Devin Cloud agents on Pro+", surface: "Own desktop IDE (formerly Windsurf)", team: "$80/mo min; $40/seat" },
     guide: [
       ["Free", "Unlimited Tab completions and inline edits with a light agent quota. SWE-2 Flash Medium is on Free (Desktop and CLI, free until Dec 4, 2026 per docs)."],
       ["Pro $20", "Most individuals: higher quotas, frontier models, SWE-2, SWE-2 Flash on Desktop and CLI (not Cloud), and Devin Cloud agents."],
