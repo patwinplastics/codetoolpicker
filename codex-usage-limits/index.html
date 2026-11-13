@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name='impact-site-verification' value='83f48c6a-f7b9-45b3-8866-03f8600f0734'>
+  <title>Codex Usage Limits Explained (Nov 2026): Plans, 5-Hour and Weekly Limits, the Banked Reset</title>
+  <meta name="description" content="Checked Nov 13, 2026: Codex is not going unlimited. What Free, Go, Plus, Pro and Business get, how the 5-hour and weekly windows work, what the Nov 12 banked reset is and when to redeem it, the December shared ChatGPT limit, and how it compares to Claude Code and Copilot." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://codetoolpicker.com/codex-usage-limits/" />
+  <meta property="og:title" content="Codex usage limits explained: no, it didn't go unlimited" />
+  <meta property="og:description" content="No, Codex didn't go unlimited. Nov 12 brought a banked reset you redeem yourself. Plus has 5-hour and weekly limits, Pro is weekly only (10x, 20x, 50x Plus per OpenAI's Codex lead), and in December ChatGPT and Codex start sharing one allowance." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://codetoolpicker.com/codex-usage-limits/" />
+  <meta property="og:site_name" content="CodeToolPicker" />
+  <meta property="og:image" content="https://codetoolpicker.com/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@codetoolpicker" />
+  <meta name="twitter:image" content="https://codetoolpicker.com/og.png" />
+  <link rel="icon" href="/favicon-48x48.png" sizes="48x48" type="image/png" />
+  <link rel="icon" href="/favicon-96x96.png" sizes="96x96" type="image/png" />
+  <link rel="icon" href="/icon-192.png" sizes="192x192" type="image/png" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#0b0f14" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CodeToolPicker", "item": "https://codetoolpicker.com/"}, {"@type": "ListItem", "position": 2, "name": "Comparisons", "item": "https://codetoolpicker.com/#comparisons"}, {"@type": "ListItem", "position": 3, "name": "Codex usage limits explained", "item": "https://codetoolpicker.com/codex-usage-limits/"}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Codex Usage Limits Explained (Nov 2026): Plans, 5-Hour and Weekly Limits, the Banked Reset", "datePublished": "2026-11-13", "dateModified": "2026-11-13", "author": {"@type": "Organization", "name": "CodeToolPicker"}, "publisher": {"@type": "Organization", "name": "CodeToolPicker"}, "mainEntityOfPage": "https://codetoolpicker.com/codex-usage-limits/"}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is Codex unlimited now?", "acceptedAnswer": {"@type": "Answer", "text": "No. The \"Codex gets unlimited usage tomorrow\" post that went around on Nov 11 and 12, 2026 had no OpenAI source. What actually happened on Thursday, Nov 12: Codex lead Tibo Sottiaux said a banked reset had been activated and would land in accounts soon. That's a one-time refill you redeem yourself, not a bigger or unlimited plan. OpenAI's pricing page still says weekly limits may apply."}}, {"@type": "Question", "name": "What is a Codex banked reset?", "acceptedAnswer": {"@type": "Answer", "text": "A free, one-time reset saved to your account. Getting one doesn't refill anything. You redeem it later in Settings > Usage & billing on desktop, Usage settings on the web, or /usage then Redeem reset in the CLI. It only works once at least one covered allowance is below 80% remaining, and it expires, so check the date shown in your account."}}, {"@type": "Question", "name": "What does a banked reset restore?", "acceptedAnswer": {"@type": "Answer", "text": "On Plus and Business Standard, the 5-hour and weekly allowances. On Pro 100, Pro 200 and Pro 500, the weekly allowance (Pro has no 5-hour limit). On Go, the monthly allowance. Each covered allowance below 100% goes back to 100%, and that period restarts, so your next refresh date moves."}}, {"@type": "Question", "name": "How much Codex do I get on ChatGPT Plus?", "acceptedAnswer": {"@type": "Answer", "text": "OpenAI doesn't publish a fixed number. Its estimate for Plus is 15 to 160 local GPT-6.1 Sol messages per 5-hour window, 35 to 285 on GPT-6.1 Terra, 350 to 3,000 on GPT-6 Luna and 5 to 45 on GPT-6 Astra, with weekly limits on top. Cloud tasks use more."}}, {"@type": "Question", "name": "How much more does ChatGPT Pro get?", "acceptedAnswer": {"@type": "Answer", "text": "Pro plans have no 5-hour limit, only a weekly allowance. On Nov 8, 2026 Tibo Sottiaux posted that Pro 100 is 10x Plus, Pro 200 is 20x and Pro 500 is 50x with Ultrafast. That's from his X post; OpenAI's help page only says Pro 200 includes more than Pro 100 and Pro 500 the most."}}, {"@type": "Question", "name": "Will ChatGPT chat start using my Codex limit on Dec 1?", "acceptedAnswer": {"@type": "Answer", "text": "OpenAI says that starting in December, Plus, Pro and Business usage will be shared across ChatGPT and Codex and measured in tokens, with Instant chat not counting. It has not published an exact date. We found no OpenAI source for Dec 1 specifically."}}, {"@type": "Question", "name": "Do ChatGPT dots stop having extra limits on Nov 18?", "acceptedAnswer": {"@type": "Answer", "text": "Not confirmed. Nov 18 is a real date for Enterprise, Edu and Healthcare workspaces: their free dots preview ends and billing starts. For Pro and Business Premium, OpenAI said on Oct 29 that extended dot limits continue \"for now,\" with no end date published."}}]}</script>
+  <style>
+    .wrap table td, .wrap table th { vertical-align: top; }
+    .note { font-size: .9em; color: var(--muted); }
+    article h2 { margin-top: 28px; }
+    .picker select { background: var(--card); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 6px 8px; max-width: 100%; }
+    .picker label { display: block; margin: 10px 0 4px; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo"><a href="../" style="color:inherit;text-decoration:none">CodeTool<span>Picker</span></a></div>
+      <nav>
+        <a href="../#quiz">Quiz</a>
+        <a href="../#compare">Compare</a>
+        <a href="../#comparisons">Guides</a>
+        <a href="../ai-coding-tool-pricing/">Pricing</a>
+        <a href="../advertise/">Advertise</a>
+      </nav>
+    </header>
+    <p class="crumbs"><a href="../">Home</a> › <a href="../#comparisons">Comparisons</a> › Codex usage limits explained</p>
+
+    <article>
+    <section class="hero">
+      <h1>Codex usage limits explained (Nov 2026): no, it didn't go unlimited</h1>
+      <p>Short answer: <strong>Codex is not unlimited</strong>, and nothing from OpenAI ever said it would be. What landed on Thursday, Nov 12 was a <strong>banked reset</strong>: a one-time refill that sits in your account until you redeem it. Your plan is the same size it was on Monday. <strong>Plus</strong> ($20) still has a 5-hour window and a weekly limit. <strong>Pro</strong> ($100, $200, $500) has only a weekly limit, and OpenAI's Codex lead says it's 10x, 20x and 50x Plus. The change that actually matters is coming <strong>in December</strong>, when ChatGPT and Codex start sharing one token-based allowance on Plus, Pro and Business. Our advice: hold the reset until you hit a wall, and check its expiry today.</p>
+      <p class="updated">Checked Nov 13, 2026 on OpenAI's <a href="https://developers.openai.com/codex/pricing" rel="noopener">Codex pricing page</a>, the help articles on <a href="https://help.openai.com/en/articles/20001498-how-resets-work-in-codex" rel="noopener">Codex resets</a>, <a href="https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex" rel="noopener">5-hour and weekly windows</a>, <a href="https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits" rel="noopener">the December shared limit</a>, <a href="https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers" rel="noopener">Pro tiers</a>, <a href="https://help.openai.com/en/articles/20001507-paid-weekly-work-and-codex-rate-limit-resets" rel="noopener">paid resets</a> and <a href="https://help.openai.com/en/articles/20001530-getting-started-with-your-dot" rel="noopener">dots</a>, plus posts on X by Codex lead <a href="https://x.com/thsottiaux" rel="noopener">Tibo Sottiaux</a>. Anything we couldn't confirm with OpenAI is labeled.</p>
+      <div class="cta-row"><a class="btn btn-primary" href="#picker">What should I do right now?</a> <a class="btn" href="#rumor">The "unlimited" rumor</a> <a class="btn" href="#plans">Limits by plan</a> <a class="btn" href="#december">December change</a> <a class="btn" href="#tips">Stretch your limit</a></div>
+    </section>
+
+    <section class="panel" id="rumor" style="overflow-x:auto">
+      <h2>"Codex goes unlimited tomorrow": what actually happened</h2>
+      <table>
+        <thead><tr><th>When (ET)</th><th>What was posted</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Nov 11, 1:55 AM</td><td>Tibo: "It's been a while without resets. Maybe I should come back out of the basement." Two minutes later: "<a href="https://x.com/thsottiaux/status/2120410480204525936" rel="noopener">Thursday is feeling codexy to me. Perhaps also a good time for a banked reset.</a>"</td><td>A hint. "Perhaps" was the key word.</td></tr>
+          <tr><td>Nov 11, 11:08 PM</td><td>A non-OpenAI account: "<a href="https://x.com/LDT0545/status/2120730452159775005" rel="noopener">Codex gets unlimited usage tomorrow.</a> Are you switching or sticking with Claude Code?" (over 340,000 views)</td><td><strong>False.</strong> No source given, and no OpenAI account or page said anything like it.</td></tr>
+          <tr><td>Nov 12, 4:59 PM</td><td>Tibo: "<a href="https://x.com/thsottiaux/status/2120999993079451919" rel="noopener">We shipped some good updates to dots today and the banked reset has been activated and should land in everyones accounts sometime soon!</a>"</td><td><strong>Confirmed</strong>, by OpenAI's Codex lead. A banked reset, not a plan change.</td></tr>
+          <tr><td>Nov 13</td><td>OpenAI's pricing page still says "Weekly limits may also apply." Plus usage is unchanged.</td><td>Nothing went unlimited.</td></tr>
+        </tbody>
+      </table>
+      <p class="note">What Tibo's Nov 12 post didn't say: which plans, how many resets, or when they expire. "Everyone's accounts" is his wording. Delivery is gradual, so an empty Usage page an hour later doesn't mean you were skipped. One reset tracker reported its test account's reset expires Dec 12; that's their account, so check the date on yours. Reset trackers say it's the first Codex reset since Nov 1.</p>
+    </section>
+
+    <section class="panel" id="banked">
+      <h2>How the banked reset works (and when to use it)</h2>
+      <ul>
+        <li><strong>Getting it doesn't refill anything.</strong> It's saved for later. History shows "Reset received" when it lands and "Reset used" when you redeem it.</li>
+        <li><strong>You can't use it early.</strong> At least one allowance it covers must be <strong>below 80% remaining</strong>. Otherwise you get "Your usage does not need a reset right now" and it stays saved.</li>
+        <li><strong>What it restores:</strong> Plus and Business Standard get the 5-hour and weekly allowances back. Pro 100, 200 and 500 get the weekly allowance. Go gets its monthly allowance. Anything below 100% goes back to 100%.</li>
+        <li><strong>It moves your schedule.</strong> A restored period restarts, so your next weekly refresh shifts. If your weekly limit was due to refresh Friday and you redeem on Tuesday, the next refresh is the following Tuesday.</li>
+        <li><strong>Where:</strong> desktop app Settings &gt; Usage &amp; billing, Usage settings on the web, or <code>/usage</code> then <strong>Redeem reset</strong> in the Codex CLI. Not in the mobile app.</li>
+        <li><strong>Codex can spend it for you.</strong> The desktop setting "Allow your assistant to use resets" lets it redeem once your main 5-hour or weekly allowance is at 10% or less. Turn it off if you want to pick the moment.</li>
+        <li><strong>A global reset can overlap it.</strong> If OpenAI later does an automatic reset, it doesn't give back a banked reset you already spent, and the two don't stack past 100%.</li>
+      </ul>
+      <p><strong>Our take:</strong> on Plus, save it for a day you hit the <em>weekly</em> limit, since a 5-hour wall clears itself in hours. On Pro, redeem it when your weekly allowance is low and the refresh is still days away. Either way, don't let it expire unused. Source: <a href="https://help.openai.com/en/articles/20001498-how-resets-work-in-codex" rel="noopener">How resets work in Codex</a>.</p>
+    </section>
+
+    <section class="panel" id="plans" style="overflow-x:auto">
+      <h2>Codex limits by ChatGPT plan</h2>
+      <table>
+        <thead><tr><th>Plan</th><th>Price</th><th>Windows</th><th>How much</th><th>Past the limit</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Free</th><td>$0</td><td>Not published</td><td>GPT-6 Luna in the desktop app, subject to rollout. No Codex Cloud</td><td>Wait, upgrade, or use an API key</td></tr>
+          <tr><th scope="row">Go</th><td>$8/mo</td><td>Monthly allowance (per OpenAI's reset article)</td><td>GPT-6 Luna in the desktop app for "lightweight coding tasks." No Codex Cloud. Size not published</td><td>Wait, upgrade, or use an API key</td></tr>
+          <tr><th scope="row">Plus</th><td>$20/mo</td><td><strong>5-hour plus weekly</strong></td><td>OpenAI's estimate per 5 hours: 15 to 160 local GPT-6.1 Sol messages, 35 to 285 on Terra, 350 to 3,000 on Luna, 5 to 45 on Astra. Weekly size not published</td><td>Buy credits, buy an instant reset (some accounts), or use an API key</td></tr>
+          <tr><th scope="row">Business Standard seat</th><td>$25/user ($20 annual)</td><td>5-hour plus weekly</td><td>Same estimates as Plus</td><td>Workspace credits where available, or an API key</td></tr>
+          <tr><th scope="row">Pro 100</th><td>$100/mo</td><td><strong>Weekly only</strong></td><td>10x Plus, per Tibo on Nov 8 (reported, not on OpenAI's help pages)</td><td>Buy credits or an instant reset</td></tr>
+          <tr><th scope="row">Pro 200</th><td>$200/mo</td><td>Weekly only</td><td>20x Plus, per Tibo</td><td>Same</td></tr>
+          <tr><th scope="row">Pro 500</th><td>$500/mo</td><td>Weekly only</td><td>50x Plus, per Tibo. Only plan with Ultrafast</td><td>Same</td></tr>
+          <tr><th scope="row">Business Premium seat</th><td>$125/user ($100 annual)</td><td>No 5-hour limit</td><td>5x a Standard seat; raised on Oct 29 by an amount OpenAI didn't state</td><td>Workspace credits</td></tr>
+        </tbody>
+      </table>
+      <p class="note">OpenAI says its message ranges "are not fixed message limits": model, context, reasoning, tools, caching and speed all change how fast you burn through. Cloud tasks use more than local ones. If you hit a limit mid-turn, Codex finishes that turn. Tibo's multiples are from <a href="https://x.com/thsottiaux/status/2119296267545419987" rel="noopener">his Nov 8 post</a>; OpenAI's <a href="https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers" rel="noopener">Pro tiers page</a> only says Pro 200 includes more than Pro 100 and Pro 500 the most. Sources: <a href="https://developers.openai.com/codex/pricing" rel="noopener">Codex pricing</a>, <a href="https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex" rel="noopener">5-hour and weekly windows</a>, <a href="https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan" rel="noopener">Using Codex with your ChatGPT plan</a>. Business prices from our <a href="../claude-code-vs-codex/">Claude Code vs Codex</a> page.</p>
+      <h3>How the two windows work</h3>
+      <ul>
+        <li><strong>The 5-hour window isn't a clock.</strong> A new one starts with your first Work or Codex message after the last one ended. You can hit it in 40 minutes.</li>
+        <li><strong>You need room in both.</strong> A fresh 5-hour window does nothing if your weekly limit is spent.</li>
+        <li><strong>It's one pool already.</strong> Codex, ChatGPT Work, ChatGPT for Excel and Workspace Agents share it today. Switching models doesn't refill it.</li>
+        <li><strong>Check it:</strong> <code>/status</code> in the CLI, or Settings &gt; Usage.</li>
+      </ul>
+    </section>
+
+    <section class="panel picker" id="picker">
+      <h2>What should I do right now?</h2>
+      <p>Pick your plan and where you're at. Runs in your browser; nothing is sent anywhere.</p>
+      <label for="cl-plan">Your plan</label>
+      <select id="cl-plan">
+        <option value="free">Free or Go</option>
+        <option value="plus" selected>Plus ($20)</option>
+        <option value="bstd">Business Standard seat</option>
+        <option value="pro100">Pro 100</option>
+        <option value="pro200">Pro 200</option>
+        <option value="pro500">Pro 500</option>
+        <option value="bprem">Business Premium seat</option>
+      </select>
+      <label for="cl-sit">What's going on</label>
+      <select id="cl-sit">
+        <option value="five">I hit the 5-hour limit</option>
+        <option value="week">I hit the weekly limit</option>
+        <option value="often">I hit limits most weeks</option>
+        <option value="reset" selected>I have a banked reset and don't know when to use it</option>
+        <option value="dec">I'm worried about December</option>
+      </select>
+      <div id="cl-out" aria-live="polite" style="margin-top:14px"></div>
+      <p class="note">Advice is our opinion based on OpenAI's published rules, checked Nov 13, 2026.</p>
+    </section>
+
+    <section class="panel" id="december">
+      <h2>The real change: ChatGPT and Codex share one limit in December</h2>
+      <p>OpenAI's help center: "Starting in December, Plus, Pro, and Business plans' usage allowance will be shared across ChatGPT and Codex." Usage will be measured in tokens, so a long document analysis in chat can eat into your Codex week. <strong>Instant chat won't count.</strong> OpenAI says it expects "most users won't need to wait for their usage to reset more often than they do now," and you'll see the combined number in Settings &gt; Usage.</p>
+      <ul>
+        <li><strong>Confirmed:</strong> December, Plus, Pro and Business, token-based, Instant excluded. Source: <a href="https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits" rel="noopener">Understanding ChatGPT and Codex usage limits</a>.</li>
+        <li><strong>Not confirmed:</strong> the <strong>Dec 1</strong> date going around. OpenAI's page says only "starting in December." It also hasn't said how big the shared allowance will be or whether Free, Go, Enterprise or Edu change.</li>
+        <li><strong>What to do:</strong> if you use Thinking models in chat a lot <em>and</em> lean on Codex, watch your usage page in the first December week before you buy anything. Moving routine chat to Instant should keep it off your Codex budget.</li>
+      </ul>
+      <h3>Do dots lose their extra limits on Nov 18?</h3>
+      <p><strong>Unconfirmed for Pro.</strong> Nov 18 is real for Enterprise, Edu and Healthcare workspaces: their free dots preview ends and billing begins, and dots turn on by default unless an admin opts out (<a href="https://help.openai.com/en/articles/20001530-getting-started-with-your-dot" rel="noopener">OpenAI help</a>). For Pro and Business Premium, OpenAI said on Oct 29 it would keep extended dot limits "for now," with dot usage separate from your default usage (<a href="https://x.com/thsottiaux/status/2115850175868727621" rel="noopener">Tibo's post</a>). We found no OpenAI source that ends that on Nov 18.</p>
+    </section>
+
+    <section class="panel" id="tips">
+      <h2>7 ways to make your Codex limit last</h2>
+      <ol>
+        <li><strong>Use Luna or Terra for routine work.</strong> On Plus, OpenAI's estimate is 350 to 3,000 Luna messages per 5 hours vs 15 to 160 on GPT-6.1 Sol. Terra sits in between at 35 to 285. Save Sol and Astra for the hard stuff.</li>
+        <li><strong>Turn off Fast mode.</strong> It uses your included allowance at 2.5x the Standard rate. Ultrafast on Pro 500 is 8x.</li>
+        <li><strong>Run it locally.</strong> Cloud tasks can use more allowance than local messages.</li>
+        <li><strong>Trim the context.</strong> Point Codex at the files that matter, keep AGENTS.md short (nest them in big repos), and disable MCP servers you aren't using. Every MCP server adds context to every message.</li>
+        <li><strong>Start fresh after compaction loops.</strong> If you see "Context automatically compacted" with no progress, stop and start a new chat with a short summary. (It won't reset your limit, but it stops the bleed.)</li>
+        <li><strong>Keep an API key as overflow.</strong> Any plan can run extra local chats on an API key at API prices. GPT-6.1 Sol is $2 in and $10 out per million tokens. Pro and Business subscribers can claim monthly API credits for this; <a href="../chatgpt-pro-codex-limits/">how that works</a>.</li>
+        <li><strong>Don't buy an instant reset by reflex.</strong> On eligible Plus and Pro accounts it applies the moment you pay, even with usage left, can't be saved, and pulls next week's allowance forward rather than adding to it. OpenAI shows the price at checkout only, and refunds are generally not offered (<a href="https://help.openai.com/en/articles/20001507-paid-weekly-work-and-codex-rate-limit-resets" rel="noopener">source</a>).</li>
+      </ol>
+      <p class="note">Tips 1 to 4 and 6 are from OpenAI's <a href="https://developers.openai.com/codex/pricing" rel="noopener">pricing FAQ</a> and help center. The ordering and the "use a key as overflow" framing are ours.</p>
+    </section>
+
+    <section class="panel" id="compare" style="overflow-x:auto">
+      <h2>Codex vs Claude Code vs Copilot limits</h2>
+      <table>
+        <thead><tr><th></th><th>Codex (ChatGPT)</th><th>Claude Code</th><th>GitHub Copilot</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Entry paid plan</th><td>Plus $20: 5-hour plus weekly. Ranges published per model</td><td>Pro $20 ($17 annual): 5-hour plus weekly. Size not published</td><td>Pro $10: 1,500 AI credits a month (about $15 of usage)</td></tr>
+          <tr><th scope="row">~$100</th><td>Pro 100: weekly only, 10x Plus (per Tibo)</td><td>Max $100: 5x Pro, 5-hour plus weekly</td><td>Max $100: 20,000 credits a month</td></tr>
+          <tr><th scope="row">~$200</th><td>Pro 200: weekly only, 20x Plus (per Tibo)</td><td>Ultra $200: 10x Pro per week</td><td>No $200 plan</td></tr>
+          <tr><th scope="row">Resets</th><td>Weekly (plus 5-hour on Plus). Occasional free banked or global resets</td><td>Rolling 5-hour session plus weekly</td><td>1st of the month, 00:00 UTC. No rollover</td></tr>
+          <tr><th scope="row">Past the limit</th><td>Credits, instant reset, or API key</td><td>Usage credits at API rates</td><td>$0.01 per credit at model rates</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Don't compare the multiples across vendors: "10x Plus" and "5x Claude Pro" are measured against different base plans, and neither OpenAI nor Anthropic publishes the base size. Only GitHub gives you a dollar figure. Claude and Copilot figures are from our <a href="../usage-limits-compared/">usage limits compared</a> page (checked Oct 23, 2026) and <a href="../claude-max-vs-ultra/">Claude Max vs Ultra</a>.</p>
+    </section>
+
+    <section class="panel" id="unknowns">
+      <h2>What we couldn't confirm</h2>
+      <ul>
+        <li><strong>Codex going unlimited.</strong> No OpenAI source. Treat it as false.</li>
+        <li><strong>The exact day of the December merge.</strong> OpenAI says "starting in December"; Dec 1 is unconfirmed.</li>
+        <li><strong>Dots' extra limits ending Nov 18 for Pro.</strong> Only the Enterprise, Edu and Healthcare preview ends that day.</li>
+        <li><strong>Expiry and eligibility of the Nov 12 reset.</strong> Not in Tibo's post. Check your own Usage page.</li>
+        <li><strong>The Pro multiples on OpenAI's own pages.</strong> 10x, 20x and 50x come from Tibo's Nov 8 post on X; the help center doesn't list them.</li>
+      </ul>
+    </section>
+    <!-- PRERENDER:try -->
+    <section class="panel try" id="try">
+      <h2>Ready to try one?</h2>
+      <p class="sub">Every tool here can be cancelled monthly, so the fastest way to decide is a real task on each.</p>
+      <div class="try-grid">
+        <div class="try-item">
+          <h3>OpenAI Codex</h3>
+          <p class="meta"><strong>Start on:</strong> Plus $20. Most developers: Codex in the CLI, IDE extension, web and iOS, plus cloud tasks and automatic code review.</p>
+          <div class="cta-row">
+            <a href="https://developers.openai.com/codex" rel="noopener" class="btn btn-primary" data-link="codex">Try OpenAI Codex free &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-codex">All OpenAI Codex plans</a>
+          </div>
+        </div>
+        <div class="try-item">
+          <h3>Claude Code</h3>
+          <p class="meta"><strong>Start on:</strong> Pro $20. Start here. Includes Claude Code with usage limits; $17/mo if you pay $200 for the year.</p>
+          <div class="cta-row">
+            <a href="https://claude.com/product/claude-code" rel="noopener" class="btn btn-primary" data-link="claude-code">Get Claude Code &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-claude-code">All Claude Code plans</a>
+          </div>
+        </div>
+        <div class="try-item">
+          <h3>GitHub Copilot</h3>
+          <p class="meta"><strong>Start on:</strong> Pro $10. The best value for most individuals: 1,500 AI credits and a choice of models including Claude and GPT. Verified teachers and popular open-source maintainers may get it free.</p>
+          <div class="cta-row">
+            <a href="https://github.com/features/copilot" rel="noopener" class="btn btn-primary" data-link="copilot">Try GitHub Copilot free &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-copilot">All GitHub Copilot plans</a>
+          </div>
+        </div></div>
+      
+    </section>
+    <!-- /PRERENDER:try -->
+
+    <section class="panel" id="faq">
+      <h2>FAQ</h2>
+      <h3>Is Codex unlimited now?</h3>
+      <p>No. The "Codex gets unlimited usage tomorrow" post that went around on Nov 11 and 12, 2026 had no OpenAI source. What actually happened on Thursday, Nov 12: Codex lead Tibo Sottiaux said a banked reset had been activated and would land in accounts soon. That's a one-time refill you redeem yourself, not a bigger or unlimited plan. OpenAI's pricing page still says weekly limits may apply.</p>
+      <h3>What is a Codex banked reset?</h3>
+      <p>A free, one-time reset saved to your account. Getting one doesn't refill anything. You redeem it later in Settings &gt; Usage &amp; billing on desktop, Usage settings on the web, or /usage then Redeem reset in the CLI. It only works once at least one covered allowance is below 80% remaining, and it expires, so check the date shown in your account.</p>
+      <h3>What does a banked reset restore?</h3>
+      <p>On Plus and Business Standard, the 5-hour and weekly allowances. On Pro 100, Pro 200 and Pro 500, the weekly allowance (Pro has no 5-hour limit). On Go, the monthly allowance. Each covered allowance below 100% goes back to 100%, and that period restarts, so your next refresh date moves.</p>
+      <h3>How much Codex do I get on ChatGPT Plus?</h3>
+      <p>OpenAI doesn't publish a fixed number. Its estimate for Plus is 15 to 160 local GPT-6.1 Sol messages per 5-hour window, 35 to 285 on GPT-6.1 Terra, 350 to 3,000 on GPT-6 Luna and 5 to 45 on GPT-6 Astra, with weekly limits on top. Cloud tasks use more.</p>
+      <h3>How much more does ChatGPT Pro get?</h3>
+      <p>Pro plans have no 5-hour limit, only a weekly allowance. On Nov 8, 2026 Tibo Sottiaux posted that Pro 100 is 10x Plus, Pro 200 is 20x and Pro 500 is 50x with Ultrafast. That's from his X post; OpenAI's help page only says Pro 200 includes more than Pro 100 and Pro 500 the most.</p>
+      <h3>Will ChatGPT chat start using my Codex limit on Dec 1?</h3>
+      <p>OpenAI says that starting in December, Plus, Pro and Business usage will be shared across ChatGPT and Codex and measured in tokens, with Instant chat not counting. It has not published an exact date. We found no OpenAI source for Dec 1 specifically.</p>
+      <h3>Do ChatGPT dots stop having extra limits on Nov 18?</h3>
+      <p>Not confirmed. Nov 18 is a real date for Enterprise, Edu and Healthcare workspaces: their free dots preview ends and billing starts. For Pro and Business Premium, OpenAI said on Oct 29 that extended dot limits continue "for now," with no end date published.</p>
+    </section>
+    <!-- PRERENDER:stack -->
+    <section class="panel stack" id="ship">
+      <h2>Ship your app: the rest of the stack</h2>
+      <p class="sub">Picked your AI coding tool? These are the usual next costs. Free tiers first, and prices checked Oct 20, 2026 on each vendor's pricing page.</p>
+      <div class="stack-grid">
+        <div class="stack-group">
+          <h3>Code review</h3>
+          <p class="meta">AI writes code fast; something should read it before it ships.</p>
+          <ul class="stack-list"><li><a href="https://www.coderabbit.ai" rel="noopener" data-link="coderabbit"><strong>CodeRabbit</strong></a><span>AI review on every pull request, in GitHub or GitLab</span><small>Free for public repos; Essentials $24/user/mo billed annually ($30 monthly)</small></li></ul>
+          <p class="meta tiny">Already paying for Copilot or Codex Plus? Both include AI pull request review, so try that first.</p>
+        </div>
+        <div class="stack-group">
+          <h3>Hosting</h3>
+          <p class="meta">Where your app lives once it works on your machine.</p>
+          <ul class="stack-list"><li><a href="https://vercel.com" rel="noopener" data-link="vercel"><strong>Vercel</strong></a><span>Next.js and front-end apps</span><small>Hobby free (personal, non-commercial); Pro $20/mo per developer seat</small></li><li><a href="https://join.netlify.com/sfop8nkiwjbv" rel="sponsored nofollow noopener" data-link="netlify"><strong>Netlify</strong> <span class="tag ref">referral</span></a><span>Static sites and front ends, unlimited Pro members</span><small>Free; Personal $9/mo; Pro $20/mo with unlimited members</small></li><li><a href="https://railway.com" rel="noopener" data-link="railway"><strong>Railway</strong></a><span>Back ends, workers and databases with no server setup</span><small>Free trial $5 credit; Hobby $5/mo incl. $5 usage; Pro $20/mo</small></li><li><a href="https://render.com" rel="noopener" data-link="render"><strong>Render</strong></a><span>Heroku-style web services, cron jobs and Postgres</span><small>Hobby $0 + compute; Pro $25/mo + compute</small></li></ul>
+          
+        </div>
+        <div class="stack-group">
+          <h3>Database and auth</h3>
+          <p class="meta">Most AI-built apps need a Postgres database and logins.</p>
+          <ul class="stack-list"><li><a href="https://supabase.com" rel="noopener" data-link="supabase"><strong>Supabase</strong></a><span>Postgres + auth + storage in one; Lovable and Bolt connect to it</span><small>Free (2 projects, pause after 1 week idle); Pro from $25/mo</small></li><li><a href="https://neon.com" rel="noopener" data-link="neon"><strong>Neon</strong></a><span>Serverless Postgres with branching, pay for what you use</span><small>Free (100 projects); paid plans usage-based</small></li></ul>
+          
+        </div>
+        <div class="stack-group">
+          <h3>Domain name</h3>
+          <p class="meta">A real domain for your app.</p>
+          <ul class="stack-list"><li><a href="https://www.cloudflare.com/products/registrar/" rel="noopener" data-link="cloudflare"><strong>Cloudflare Registrar</strong></a><span>Domains at cost with no markup</span><small>Wholesale price per TLD</small></li><li><a href="https://porkbun.com" rel="noopener" data-link="porkbun"><strong>Porkbun</strong></a><span>Cheap domains with free WHOIS privacy</span><small>Varies by TLD</small></li><li><a href="https://www.namecheap.com" rel="noopener" data-link="namecheap"><strong>Namecheap</strong></a><span>Popular registrar with hosting and email add-ons</span><small>Varies by TLD</small></li></ul>
+          
+        </div></div>
+      <p class="meta tiny aff-note">Referral link: we may earn a commission at no extra cost to you. It never changes our picks.</p>
+    </section>
+    <!-- /PRERENDER:stack -->
+
+    <section class="panel" id="related">
+      <h2>Related guides</h2>
+      <ul class="related">
+        <li><a href="../chatgpt-pro-codex-limits/">ChatGPT Pro Codex limits<small>Pro 100 vs 200 vs 500, API credits</small></a></li>
+        <li><a href="../usage-limits-compared/">Usage limits compared<small>Claude, Codex, Cursor, Copilot</small></a></li>
+        <li><a href="../claude-code-vs-codex/">Claude Code vs Codex<small>Same prices, different limits</small></a></li>
+        <li><a href="../codex-vs-cursor/">Codex vs Cursor<small>GPT-6.1 Sol for $20</small></a></li>
+        <li><a href="../ai-coding-cost-per-task/">What one coding task costs<small>Model by model</small></a></li>
+        <li><a href="../claude-max-vs-ultra/">Claude Max vs Ultra<small>Which limit you hit decides it</small></a></li>
+        <li><a href="../ai-coding-tool-pricing/">AI coding tool pricing<small>Every plan in one place</small></a></li>
+      </ul>
+    </section>
+
+    <aside class="sponsor" id="sponsor" aria-label="Sponsor slot">
+      <strong>Sponsor slot</strong> <span class="meta">(Sponsored placements are labeled and never affect rankings or verdicts)</span><br />
+      Reach developers deciding which coding agent plan to pay for.
+      <div style="margin-top:10px" class="meta">Founding sponsor rates available now. Email <a href="mailto:sponsors@codetoolpicker.com?subject=CodeToolPicker%20sponsorship">sponsors@codetoolpicker.com</a> &middot; <a href="../advertise/">See packages</a></div>
+    </aside>
+
+    <section class="panel" id="disclosure">
+      <h2>Editorial disclosure</h2>
+      <p><strong>Rankings are not for sale.</strong> Sponsored placements and affiliate links are always labeled, and they never change our recommendations, quiz results, prices, or comparison data. <strong>Links marked "referral" are affiliate links (Netlify):</strong> if you buy through them, we may earn a commission at no extra cost to you. Every other link is a plain link that pays us nothing, and pricing source links are never affiliate links. <a href="../advertise/#policy">Editorial policy</a>.</p>
+    </section>
+    </article>
+
+    <footer>
+      <p><a href="../">← Back to the AI Coding Tool Picker</a> · <a href="../ai-coding-tool-pricing/">Pricing &amp; plans calculator</a></p>
+      <p>More comparisons: <a href="./">Codex usage limits explained</a> · <a href="../codex-usage-limits/">Codex usage limits explained</a> · <a href="../claude-code-secrets-check/">Claude Code secrets check</a> · <a href="../claude-fable-5-2-vs-opus-5-5/">Claude Fable 5.2 vs Opus 5.5</a> · <a href="../jetbrains-air-subscriptions/">JetBrains Air: which subscription</a> · <a href="../cursor-live-apps-vs-lovable-bolt/">Cursor Live Apps vs Lovable vs Bolt</a> · <a href="../swe-2-flash-vs-swe-2/">SWE-2 Flash vs SWE-2</a> · <a href="../cursor-openai-cutoff/">GPT in Cursor after Nov 12</a> · <a href="../claude-max-vs-ultra/">Claude Max vs Ultra</a> · <a href="../jules-alternatives/">Jules alternatives</a> · <a href="../chatgpt-pro-codex-limits/">ChatGPT Pro Codex limits</a> · <a href="../ai-coding-cost-per-task/">Cost per task</a> · <a href="../claude-code-alternatives/">Claude Code alternatives</a> · <a href="../free-ai-coding-tools/">Free AI coding tools</a> · <a href="../lovable-vs-bolt/">Lovable vs Bolt</a> · <a href="../cursor-vs-windsurf/">Cursor vs Windsurf (Devin Desktop)</a> · <a href="../claude-code-vs-cursor/">Claude Code vs Cursor</a> · <a href="../claude-code-vs-codex/">Claude Code vs Codex</a> · <a href="../codex-vs-cursor/">Codex vs Cursor</a> · <a href="../copilot-vs-claude-code/">Copilot vs Claude Code</a> · <a href="../gemini-cli-vs-claude-code/">Gemini CLI vs Claude Code</a> · <a href="../cursor-vs-antigravity/">Cursor vs Antigravity</a> · <a href="../usage-limits-compared/">Usage limits compared</a> · <a href="../cursor-vs-copilot/">Cursor vs Copilot</a> · <a href="../switch-from-copilot-to-cursor/">Switch Copilot → Cursor</a> · <a href="../cursor-bundle-alternatives/">Cursor bundle alternatives</a></p>
+      <p>Not affiliated with OpenAI, Anthropic, GitHub or Microsoft.</p>
+      <p>Contact, sponsorships, and corrections: <a href="mailto:sponsors@codetoolpicker.com">sponsors@codetoolpicker.com</a> · <a href="../advertise/">Advertise with us</a></p>
+      <p class="meta" id="analytics-note">We use GoatCounter, a privacy-friendly counter with no cookies, to count visits.</p>
+    </footer>
+  </div>
+  <script>
+  (function () {
+    var pro = { pro100: "Pro 100", pro200: "Pro 200", pro500: "Pro 500" };
+    function advise(p, s) {
+      var isPro = !!pro[p], fiveH = (p === "plus" || p === "bstd");
+      if (p === "free") {
+        if (s === "reset") return "On Go, a banked reset restores your monthly allowance once less than 80% is left. OpenAI's reset article doesn't list Free, so check Settings to see if you got one.";
+        if (s === "dec") return "OpenAI's December change names Plus, Pro and Business. It hasn't said anything about Free or Go.";
+        return "Free and Go only get GPT-6 Luna in the desktop app. If you hit limits most weeks, Plus at $20 is the step up: 5-hour windows, GPT-6.1 Sol, CLI, IDE and Codex Cloud. Or try GitHub Copilot Pro at $10 for a fixed monthly budget.";
+      }
+      if (s === "five") {
+        if (!fiveH) return "Your plan has no 5-hour limit, so what you hit is the weekly allowance. See \"I hit the weekly limit\".";
+        return "Wait it out: the window restarts with your first message after it ends, usually within a few hours. Don't spend your banked reset on this unless your weekly allowance is also low. Meanwhile, switch routine work to GPT-6 Luna or Terra and turn off Fast mode.";
+      }
+      if (s === "week") {
+        if (p === "bprem") return "Your seat has no 5-hour limit. OpenAI's reset article doesn't list Business Premium among the plans a banked reset restores, so check Settings > Usage for what's available, and ask your admin about workspace credits or an API key for overflow.";
+        return "This is what a banked reset is for. If you have one: Settings > Usage & billing, or /usage then Redeem reset in the CLI. It restarts your weekly period, so your refresh date moves. No reset? Compare buying credits with an instant reset" + (p === "bstd" ? " (instant resets aren't offered on Business; ask your admin about workspace credits)" : "") + ", or run a few local chats on an API key.";
+      }
+      if (s === "often") {
+        if (p === "plus") return "Pro 100 is 10x Plus with no 5-hour limit, per OpenAI's Codex lead, for $100. If you only overflow a little, an API key for the extra chats may cost less. Also compare Claude Max $100 and Copilot Pro+ $39 on our usage limits page.";
+        if (p === "bstd") return "A Business Premium seat is 5x a Standard seat with no 5-hour limit. Or add an API key for overflow.";
+        if (p === "pro100") return "Pro 200 is 20x Plus vs 10x on Pro 100 (per Tibo). Before you double your bill, check whether you're on Fast mode (2.5x usage) or running everything on Sol or Astra.";
+        if (p === "pro200") return "Pro 500 is 50x Plus (per Tibo) and adds Ultrafast, but Ultrafast burns allowance at 8x. Most people are better off with Pro 200 plus an API key for spikes.";
+        if (p === "pro500") return "You're on the biggest personal plan. Use Standard speed, not Ultrafast (8x), and claim your $500 monthly API credits as overflow.";
+        return "Use workspace credits or an API key for overflow, and keep heavy users on Premium seats.";
+      }
+      if (s === "reset") {
+        if (p === "bprem") return "OpenAI's reset article lists Go, Plus, Business Standard and Pro, not Business Premium. If Settings > Usage shows a reset on your seat, it can only be used once a covered allowance is below 80% remaining, and it expires.";
+        var what = fiveH ? "your 5-hour and weekly allowances" : (isPro ? "your weekly allowance" : "the allowances your seat has");
+        return "Hold it. It restores " + what + ", but only once one of them is below 80% remaining, and it restarts that period. Best moment: you're low on the weekly allowance and the refresh is days away. Check the expiry in Settings > Usage & billing, and turn off \"Allow your assistant to use resets\" if you want to choose the moment yourself.";
+      }
+      if (s === "dec") {
+        if (p === "bprem" || p === "bstd" || isPro || p === "plus") return "Starting in December, ChatGPT and Codex share your allowance, measured in tokens. Instant chat won't count. Do routine chat in Instant, watch Settings > Usage in the first week, and don't change plans until you've seen a week of real numbers. The exact start date isn't published.";
+      }
+      return "Check Settings > Usage for your current allowance and reset times.";
+    }
+    function run() {
+      var p = document.getElementById("cl-plan").value, s = document.getElementById("cl-sit").value;
+      var o = document.getElementById("cl-out");
+      o.textContent = "";
+      var d = document.createElement("div"); d.className = "panel"; var q = document.createElement("p"); q.textContent = advise(p, s); d.appendChild(q); o.appendChild(d);
+    }
+    document.getElementById("cl-plan").addEventListener("change", run);
+    document.getElementById("cl-sit").addEventListener("change", run);
+    run();
+  })();
+  </script>
+  <script data-goatcounter="https://codetoolpicker.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
