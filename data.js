@@ -88,7 +88,7 @@ window.TOOL_DATA = [
       { name: "Free", price: 0, note: "Light agent quota, unlimited Tab and inline edits. SWE-2 Flash Medium on Desktop and CLI." },
       { name: "Pro", price: 20, note: "Increased quotas + frontier models, Devin Cloud access. SWE-2 Flash is Desktop and CLI only." },
       { name: "Max", price: 200, note: "Significantly higher quotas" },
-      { name: "Teams", price: 80, note: "$80/mo team plan + $40/mo per full dev seat, up to 200 users" }
+      { name: "Teams", price: 80, note: "$80/mo minimum + $40/mo per full seat, up to 100 users (5 full seats = $200; flex seats free)" }
     ],
     strengths: ["Agent Command Center (local + cloud agents)", "Devin Cloud included on paid plans", "Competitive Pro price", "Extra usage at API price"],
     limits: ["Quotas can bite power users", "Renamed from Windsurf in June 2026; some docs and extensions still say Windsurf"],
@@ -330,7 +330,7 @@ window.PRICING = {
       { name: "Free", monthly: 0, annual: 0, note: "Light agent quota, unlimited Tab. SWE-2 Flash Medium on Desktop/CLI." },
       { name: "Pro", monthly: 20, annual: null, note: "Higher quotas, frontier models, Devin Cloud. SWE-2 Flash is Desktop/CLI only." },
       { name: "Max", monthly: 200, annual: null, note: "Significantly higher quotas" },
-      { name: "Teams", monthly: 40, annual: null, seat: true, base: 80, note: "$80/mo team plan + $40/mo per full dev seat, up to 200 users" }
+      { name: "Teams", monthly: 40, annual: null, seat: true, base: 80, note: "$80/mo minimum + $40/mo per full seat, up to 100 users (5 full seats = $200; flex seats free)" }
     ],
     extraCost: "Extra usage beyond quotas is billed at API pricing. Quotas aren't published as numbers. SWE-2 Flash (Desktop and CLI only, not Cloud) is free until Dec 4, 2026 18:00 UTC, then $0.10 per million input tokens and $0.50 per million output tokens.",
     glance: { free: "Yes: light agent quota, unlimited Tab and inline edits", models: "Frontier OpenAI, Claude, Gemini + SWE-2 (Pro+); SWE-2 Flash on Desktop/CLI (free until Dec 4)", agents: "Local agents; Devin Cloud agents on Pro+", surface: "Own desktop IDE (formerly Windsurf)", team: "$80/mo + $40/seat" },
@@ -338,7 +338,7 @@ window.PRICING = {
       ["Free", "Unlimited Tab completions and inline edits with a light agent quota. SWE-2 Flash Medium is on Free (Desktop and CLI, free until Dec 4, 2026 per docs)."],
       ["Pro $20", "Most individuals: higher quotas, frontier models, SWE-2, SWE-2 Flash on Desktop and CLI (not Cloud), and Devin Cloud agents."],
       ["Max $200", "Significantly higher quotas for all-day agent use."],
-      ["Teams $80 + $40/seat", "Up to 200 users with their own quota per full seat."]
+      ["Teams $80 + $40/seat", "Up to 100 members. $80 is a monthly minimum (5 full seats = $200). Flex seats are free. SSO, 3-tier cost controls, centralized billing (checked Nov 13, 2026)."]
     ],
     skipIf: "You need predictable heavy usage on a fixed budget. Quotas aren't published as numbers, and overages bill at API pricing."
   },
@@ -455,6 +455,7 @@ window.COMPARE_PAGES = {
 
 // Dated pricing changes we track. Only sourced events.
 window.PRICE_LOG = [
+  { date: "2026-11-13", text: "Cognition updated the Devin Teams plan on Nov 12, 2026 (re-checked Nov 13). Teams is limited to 100 members, down from 200 (accounts already over 100 keep current members but cannot add more until they are under 100). The $80/month figure is a minimum, not an add-on on top of every seat: 0 or 1 full seat still costs $80 (the rest is prepaid on-demand credits); 2 full seats cost $80; 5 full seats cost $200. Full seats remain $40/month with a Pro-equivalent quota; flex seats are free and share on-demand credits; every seat includes Devin Desktop. Teams adds SAML/OIDC SSO, cost controls with 3 usage tiers, centralized billing, 2 concurrent Free-mode SWE-2 cloud sessions per user, and a standard BAA on request. Cognition also said it is retiring quota seats in 30 days and that free SWE-2 in Devin Desktop and CLI is now a permanent part of Teams, Pro and Max; the models docs (tables dated Nov 9) still say SWE-2 is free on self-serve Desktop/CLI through Nov 30, 2026, then $3/$15/$0.30. Individual list prices unchanged: Free $0, Pro $20, Max $200. Full story: https://codetoolpicker.com/devin-vs-windsurf/", src: "https://devin.ai/blog/devin-teams-plan" },
   { date: "2026-11-13", text: "Codex limits check: Codex did not become unlimited. On Nov 12, 2026 OpenAI activated a banked reset (one-time, redeemed by you, expires). Plus is unchanged (5-hour window plus weekly limit). Pro plans have no 5-hour limit; OpenAI's Codex lead posted Nov 8 that Pro 100, 200 and 500 are 10x, 20x and 50x Plus. OpenAI says that starting in December, Plus, Pro and Business usage will be shared across ChatGPT and Codex and measured in tokens (Instant chat excluded); no exact date published. Plan prices unchanged. Full story: https://codetoolpicker.com/codex-usage-limits/", src: "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits" },
   { date: "2026-11-11", text: "Anthropic released Claude Fable 5.2 on Nov 9, 2026 at $8 input and $40 output per million tokens (Fable 5.1 was $10/$50), twice Opus 5.5 ($4/$20); cache reads $0.20 on both. Claude Pro and Team standard seats get Fable included until Nov 16, 2026 at 11:59 PM PT (up to 50% of weekly limits), then it runs on usage credits again; Max, Ultra and Team premium include it up to 50% of weekly limits. Claude plan prices unchanged. GitHub Copilot now lists Fable 5.2 (replacing 5.1) on Pro+ and up at provider list price. Full story: https://codetoolpicker.com/claude-fable-5-2-vs-opus-5-5/", src: "https://support.claude.com/en/articles/17506494-claude-fable-5-2-launch-offers" },
   { date: "2026-11-10", text: "GitHub Copilot became a built-in agent in JetBrains Air on Nov 3, 2026. Local tasks in JetBrains IDEs and Air Teams cloud tasks bill to your Copilot plan, not JetBrains AI credits; Air cannot show or cap Copilot usage. Checked JetBrains AI plans: AI Pro $10 (10 credits at $1 each) and AI Ultimate $30 (35 credits) for individuals; Air Business plan $20 per AI seat a month, credits extra. Copilot plans unchanged (Pro $10 with 1,500 credits, Pro+ $39 with 7,000). Full story: https://codetoolpicker.com/jetbrains-air-subscriptions/", src: "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air/" },

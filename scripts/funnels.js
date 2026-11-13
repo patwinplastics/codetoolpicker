@@ -19,6 +19,7 @@ module.exports = function funnels(root) {
     "ai-coding-tool-pricing/index.html": { base: "../", stack: DEV },
     "lovable-vs-bolt/index.html": { base: "../", tools: ["lovable", "bolt"], stack: BUILDER },
     "cursor-vs-windsurf/index.html": { base: "../", tools: ["cursor", "windsurf"], stack: DEV },
+    "devin-vs-windsurf/index.html": { base: "../", tools: ["windsurf", "cursor"], stack: DEV },
     "claude-code-vs-cursor/index.html": { base: "../", tools: ["claude-code", "cursor"], stack: DEV },
     "claude-code-vs-codex/index.html": { base: "../", tools: ["claude-code", "codex"], stack: DEV },
     "codex-vs-cursor/index.html": { base: "../", tools: ["codex", "cursor"], stack: DEV },

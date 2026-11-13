@@ -79,6 +79,7 @@ const lines = [
   "See also: https://codetoolpicker.com/cursor-vs-copilot/ (Cursor vs GitHub Copilot)",
   "See also: https://codetoolpicker.com/switch-from-copilot-to-cursor/ (switch from Copilot to Cursor without losing your setup)",
   "See also: https://codetoolpicker.com/lovable-vs-bolt/ (Lovable vs Bolt.new)",
+  "See also: https://codetoolpicker.com/devin-vs-windsurf/ (Devin vs Windsurf, checked Nov 13, 2026: Cognition acquired Windsurf July 14, 2025 and renamed it Devin Desktop June 2, 2026; one price list, Teams $80 minimum + $40/full seat up to 100 members, 5 full seats $200; IDE vs Devin Cloud)",
   "See also: https://codetoolpicker.com/cursor-vs-windsurf/ (Cursor vs Windsurf, now Devin Desktop)",
   "See also: https://codetoolpicker.com/claude-code-vs-cursor/ (Claude Code vs Cursor)",
   "See also: https://codetoolpicker.com/copilot-vs-claude-code/ (GitHub Copilot vs Claude Code: $10 credits vs $20 five-hour limits, teams of 5)",
