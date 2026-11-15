@@ -25,6 +25,7 @@ module.exports = function funnels(root) {
     "codex-vs-cursor/index.html": { base: "../", tools: ["codex", "cursor"], stack: DEV },
     "cursor-openai-cutoff/index.html": { base: "../", tools: ["cursor", "codex", "copilot", "claude-code"], stack: DEV },
     "codex-usage-limits/index.html": { base: "../", tools: ["codex", "claude-code", "copilot"], stack: DEV },
+    "claude-code-down-backup/index.html": { base: "../", tools: ["codex", "cursor", "copilot", "windsurf", "antigravity", "gemini-cli", "claude-code"], stack: DEV },
     "claude-code-secrets-check/index.html": { base: "../", stack: DEV },
     "claude-fable-5-2-vs-opus-5-5/index.html": { base: "../", tools: ["claude-code", "copilot", "cursor"], stack: DEV },
     "jetbrains-air-subscriptions/index.html": { base: "../", tools: ["copilot", "codex", "claude-code", "cursor"], stack: DEV },

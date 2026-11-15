@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name='impact-site-verification' value='83f48c6a-f7b9-45b3-8866-03f8600f0734'>
+  <title>Claude Code Is Down? Your Backup Plan (Nov 2026)</title>
+  <meta name="description" content="Two Claude outages on Nov 13, 2026: logins from 4:58 to 6:58 AM ET, then the API and Claude Code from 8:09 to 10:38 AM ET. How to check status.claude.com, tell a local problem from an outage, and switch to Codex, Cursor, Copilot, Devin, Gemini or Aider." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://codetoolpicker.com/claude-code-down-backup/" />
+  <meta property="og:title" content="Claude Code is down? Your backup plan" />
+  <meta property="og:description" content="Two Anthropic outages on Nov 13 hit Claude logins, then the API and Claude Code. How to check status fast, tell a local problem from an outage, and which backup to switch to." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://codetoolpicker.com/claude-code-down-backup/" />
+  <meta property="og:site_name" content="CodeToolPicker" />
+  <meta property="og:image" content="https://codetoolpicker.com/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@codetoolpicker" />
+  <meta name="twitter:title" content="Claude Code is down? Your backup plan" />
+  <meta name="twitter:description" content="Two Anthropic outages on Nov 13 hit Claude logins, then the API and Claude Code. How to check status fast and which backup to switch to." />
+  <meta name="twitter:image" content="https://codetoolpicker.com/og.png" />
+  <link rel="icon" href="/favicon-48x48.png" sizes="48x48" type="image/png" />
+  <link rel="icon" href="/favicon-96x96.png" sizes="96x96" type="image/png" />
+  <link rel="icon" href="/icon-192.png" sizes="192x192" type="image/png" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#0b0f14" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CodeToolPicker", "item": "https://codetoolpicker.com/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://codetoolpicker.com/#comparisons"}, {"@type": "ListItem", "position": 3, "name": "Claude Code is down? Your backup plan", "item": "https://codetoolpicker.com/claude-code-down-backup/"}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Claude Code Is Down? Your Backup Plan (Nov 2026)", "datePublished": "2026-11-15", "dateModified": "2026-11-15", "author": {"@type": "Organization", "name": "CodeToolPicker"}, "publisher": {"@type": "Organization", "name": "CodeToolPicker"}, "mainEntityOfPage": "https://codetoolpicker.com/claude-code-down-backup/"}</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "When was Claude Code down on Nov 13, 2026?", "acceptedAnswer": {"@type": "Answer", "text": "Anthropic's status page logged two separate incidents. Logins to Claude.ai and Claude Code failed from 4:58 AM to 6:58 AM ET (09:58 to 11:58 UTC). A second incident, opened at 8:09 AM ET and resolved at 10:38 AM ET (13:09 to 15:38 UTC), brought elevated errors to claude.ai, the Claude API and Claude Code. Anthropic has not published a root cause for either incident."}},
+    {"@type": "Question", "name": "How do I check if Claude Code is down?", "acceptedAnswer": {"@type": "Answer", "text": "Open status.claude.com (status.anthropic.com serves the same page) and look at Claude Code, the Claude API (api.anthropic.com) and claude.ai separately. They do not always fail together. Times on that page are in UTC."}},
+    {"@type": "Question", "name": "How can I tell a local Claude Code problem from an outage?", "acceptedAnswer": {"@type": "Answer", "text": "If the status page shows an incident on Claude Code or the Claude API, it is not just you. If the status page is green, try claude.ai in a browser, another network, a restart, and a second machine. A failure limited to one repo or one laptop is more likely local. During the Nov 13 login incident the API was not listed as affected; during the later incident the API and Claude Code failed together."}},
+    {"@type": "Question", "name": "What is the fastest backup if Claude Code is down?", "acceptedAnswer": {"@type": "Answer", "text": "The fastest backup is a tool you already have installed and signed into, using a model that does not go through Anthropic. Codex CLI is the closest terminal swap if you have a ChatGPT plan. Cursor, Copilot, Devin Desktop and Antigravity also work if you pick a non-Claude model. Aider is a fast CLI option if you already have an API key from another provider."}},
+    {"@type": "Question", "name": "Will Cursor or Copilot still work during a Claude outage?", "acceptedAnswer": {"@type": "Answer", "text": "Possibly, if you use a non-Claude model. Cursor Plus includes Grok models. Copilot and Antigravity also offer non-Claude models. We have not confirmed how those products route their Claude models, so treat any Claude path as possibly affected when the Anthropic API is down."}},
+    {"@type": "Question", "name": "How do I keep a Claude Code backup ready?", "acceptedAnswer": {"@type": "Answer", "text": "Install a second CLI now and sign in once, keep an API key at another provider with a spending cap, and put shared project rules in AGENTS.md. Claude Code can read a repository's AGENTS.md in place of CLAUDE.md, and Codex, Cursor and Copilot also read AGENTS.md."}}
+  ]
+}
+  </script>
+  <style>
+    .wrap table td, .wrap table th { vertical-align: top; }
+    .note { font-size: .9em; color: var(--muted); }
+    article h2 { margin-top: 28px; }
+    .picker select { background: var(--card); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 6px 8px; max-width: 100%; }
+    .picker label { display: block; margin: 10px 0 4px; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo"><a href="../" style="color:inherit;text-decoration:none">CodeTool<span>Picker</span></a></div>
+      <nav>
+        <a href="../#quiz">Quiz</a>
+        <a href="../#compare">Compare</a>
+        <a href="../#comparisons">Guides</a>
+        <a href="../ai-coding-tool-pricing/">Pricing</a>
+        <a href="../advertise/">Advertise</a>
+      </nav>
+    </header>
+    <p class="crumbs"><a href="../">Home</a> › <a href="../#comparisons">Guides</a> › Claude Code is down? Your backup plan</p>
+
+    <article>
+    <section class="hero">
+      <h1>Claude Code is down? <span class="hl">Here's your backup plan</span></h1>
+      <p><strong>Short answer:</strong> check <a href="https://status.claude.com/" rel="noopener">status.claude.com</a> first (<a href="https://status.anthropic.com/" rel="noopener">status.anthropic.com</a> serves the same page). If Claude Code or the Claude API is actually down, switch to a tool that can run a <strong>non-Claude</strong> model. The fastest option is whatever you already have signed in: Codex CLI if you have ChatGPT, Cursor or Copilot with a non-Claude model, Devin Desktop, Antigravity with Gemini, or Aider with an API key from another provider. Install that backup on a quiet day, not during the outage.</p>
+      <p class="updated">Checked Nov 15, 2026 against Anthropic's status page history for Nov 13, official pricing and docs for the backup tools, and Claude Code's memory docs. Times below are Eastern Time, converted from the UTC stamps Anthropic published. Anthropic has not published a root cause for either Nov 13 incident.</p>
+      <div class="cta-row"><a class="btn btn-primary" href="#picker">Which backup fits?</a> <a class="btn" href="#status">Check status</a> <a class="btn" href="#nov13">What happened Nov 13</a> <a class="btn" href="#ready">Keep a backup ready</a></div>
+    </section>
+
+    <section class="panel" id="nov13">
+      <h2>What happened on Nov 13, 2026</h2>
+      <p>Anthropic's status page logged two separate incidents that morning, then a later purchasing issue that did not take Claude Code down. All times are ET.</p>
+      <div class="table-scroll"><table>
+        <thead><tr><th>Incident</th><th>When (ET)</th><th>What Anthropic said was affected</th></tr></thead>
+        <tbody>
+          <tr><td>Login / authentication</td><td>4:58 AM to 6:58 AM. A fix was deployed at 6:05 AM. Opened 09:58 UTC, resolved 11:58 UTC.</td><td>Users authenticating to Claude.ai and Claude Code. The status title also named platform.claude.com. The resolved note mentioned claude.ai and Claude Cowork. The Claude API was not listed as affected on this incident.</td></tr>
+          <tr><td>Elevated errors, including the API</td><td>8:09 AM to 10:38 AM. Opened 13:09 UTC, resolved 15:38 UTC. Errors were described as back to normal at 10:33 AM (15:33 UTC) while Anthropic kept monitoring.</td><td>claude.ai, the Claude API and Claude Code, later including connectors (Docs and Sheets), Claude Security, Claude Managed Agents, Claude in Meetings, and the mobile apps. At 10:33 AM Anthropic said scheduled tasks and routines could run more than two hours late and some runs were skipped, and that adding a new connector was temporarily unavailable.</td></tr>
+        </tbody>
+      </table></div>
+      <p>Those two are the Claude Code outages. Later the same calendar day, from 9:34 PM to 11:03 PM ET (18:34 to 20:03 PT on Nov 13, posted under Nov 14 UTC), Anthropic logged elevated purchasing errors on claude.ai. It said core functionality was not affected, and the issue was marked resolved. A separate Microsoft 365 connector incident, caused by a Microsoft 365 service issue, ran from Nov 12 into Nov 13 and is not the same event.</p>
+      <p class="note">Sources: <a href="https://status.claude.com/" rel="noopener">status.claude.com</a> past incidents, re-read Nov 15, 2026. We did not find a public root-cause post for either morning incident. As of that check, Claude Code and the Claude API were listed Operational. claude.ai still showed degraded performance, and a Sign in with Apple issue on the Claude iOS app (mainly new accounts, first posted Nov 14) was still being investigated. Check the status page for the current picture.</p>
+    </section>
+
+    <section class="panel" id="status">
+      <h2>How to check status fast</h2>
+      <ol>
+        <li>Open <a href="https://status.claude.com/" rel="noopener">status.claude.com</a>. <a href="https://status.anthropic.com/" rel="noopener">status.anthropic.com</a> served the same Claude Status page when we fetched both on Nov 15.</li>
+        <li>Look at the components separately: <strong>Claude Code</strong>, <strong>Claude API (api.anthropic.com)</strong>, and <strong>claude.ai</strong>. On Nov 13 they did not always fail together. A login problem can leave the API up; an API problem can take Claude Code with it.</li>
+        <li>Read the latest incident, not just the colored dots. Anthropic posts updates in <strong>UTC</strong>. Eastern Time is UTC minus 5 in November (so 13:09 UTC is 8:09 AM ET).</li>
+        <li>If you use Claude in another product, check that product's status too. We have not confirmed whether Cursor, Copilot or Antigravity's Claude models failed during the API incident, so treat any Claude path as possibly affected until you see it working.</li>
+        <li>User-report sites such as Downdetector can hint that people are having trouble, but they are not a confirmation of cause or of which component is down. Use Anthropic's page as the source of record.</li>
+      </ol>
+    </section>
+
+    <section class="panel" id="local">
+      <h2>Local problem, or an outage?</h2>
+      <ul>
+        <li><strong>The status page shows an open incident</strong> on Claude Code or the Claude API. It is not just you. Switch to a backup, or wait it out. During the 8:09 AM ET incident, anything talking to the Anthropic API was in the same boat, including Claude Code.</li>
+        <li><strong>The status page is green,</strong> but Claude Code fails. Try claude.ai in a browser. If chat works and the CLI does not, it is more likely a local or CLI-only problem, or an incident that has not been posted yet. Restart the CLI, sign out and back in, try another network, and try a second machine if you have one.</li>
+        <li><strong>Only one repo or one laptop fails.</strong> That is usually local: permissions, a bad config, a VPN or firewall, a sandbox, or a saved secret that no longer works. Our <a href="../claude-code-secrets-check/">settings.local.json checker</a> is worth a look if an allow rule might be the cause.</li>
+        <li><strong>Login fails, but you already have an API key session open.</strong> On Nov 13 the morning incident was described as an authentication problem, and the Claude API was not listed as affected. An already authenticated API-key workflow might still have worked. We did not independently confirm that, and it would not have helped during the later API incident.</li>
+      </ul>
+    </section>
+
+    <section class="panel picker" id="picker">
+      <h2>Which backup fits my setup?</h2>
+      <p>Pick what you already have, and what the status page is showing. Runs in your browser; nothing is sent anywhere.</p>
+      <label for="cb-have">What I already have ready</label>
+      <select id="cb-have">
+        <option value="codex" selected>Codex CLI or ChatGPT, already signed in</option>
+        <option value="cursor">Cursor, already installed</option>
+        <option value="copilot">GitHub Copilot in VS Code or JetBrains</option>
+        <option value="devin">Devin Desktop (Windsurf)</option>
+        <option value="antigravity">Antigravity or a Gemini API key</option>
+        <option value="aider">Aider or another BYOK CLI, with a non-Anthropic key</option>
+        <option value="none">Only Claude Code; nothing else is set up</option>
+      </select>
+      <label for="cb-sit">What is going on</label>
+      <select id="cb-sit">
+        <option value="api" selected>Status page says the Claude API or Claude Code is failing</option>
+        <option value="login">Status page says logins are failing, API not listed</option>
+        <option value="green">Status page looks fine, but my CLI is broken</option>
+        <option value="ready">I just want a backup for next time</option>
+      </select>
+      <div id="cb-out" aria-live="polite" style="margin-top:14px"></div>
+      <p class="note">Advice is our opinion, based on vendor status pages, pricing and docs checked Nov 15, 2026. Plan prices below come from CodeToolPicker's tool data and the official pages linked in each row.</p>
+    </section>
+
+    <section class="panel" id="backups" style="overflow-x:auto">
+      <h2>Backups, ranked by how fast you can switch</h2>
+      <p>Speed is mostly about what is already on your machine. A tool you still have to install and pay for is slower than one you can open now. During an Anthropic API outage, pick a <strong>non-Claude</strong> model. A second Claude frontend will not help if the API itself is down.</p>
+      <div class="table-scroll"><table>
+        <thead><tr><th>Backup</th><th>How fast if you already have it</th><th>Entry price and free tier</th><th>What to watch</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><a href="https://developers.openai.com/codex" rel="noopener" data-link="codex">OpenAI Codex CLI</a></td>
+            <td>Fastest terminal swap: same kind of workflow as Claude Code. If the CLI is already installed, you can keep working in the same repo in a minute.</td>
+            <td>Free tier: limited Codex in the ChatGPT desktop app on GPT-6 Luna. Go $8, Plus $20, Pro $100 / $200 / $500, Business $25/seat ($20/seat billed annually, 2+ users). From our Codex plan data, last recorded with the Nov 13 usage-limits check.</td>
+            <td>OpenAI models only on ChatGPT plans. Plus has a 5-hour window plus a weekly limit. Details: <a href="../codex-usage-limits/">Codex usage limits explained</a>.</td>
+          </tr>
+          <tr>
+            <td><a href="https://cursor.com" rel="noopener" data-link="cursor">Cursor</a></td>
+            <td>Fast if the IDE is already open. Switch the model away from Claude and keep editing.</td>
+            <td>Free tier yes. Plus $8/mo ($80/yr) is Grok-only. Premium $30, Super $100, Ultra $200. Teams from $30/seat. From our Cursor plan data, last verified Oct 2026.</td>
+            <td>On Plus, Grok and Composer do not depend on Anthropic, which is the point during a Claude API outage. On Premium and up, Claude is billed at API list price and may fail if Anthropic is down. Do not pick Claude as your backup model.</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/features/copilot" rel="noopener" data-link="copilot">GitHub Copilot</a></td>
+            <td>Fast if it is already in VS Code, JetBrains or GitHub. Stay in your current editor and switch to a non-Claude model if needed.</td>
+            <td>Free tier yes (limited credits, auto model). Pro $10 (1,500 AI credits/mo), Pro+ $39 (7,000), Max $100 (20,000), Business $19/seat, Enterprise $39/seat. From our Copilot plan data, last verified Oct 21, 2026.</td>
+            <td>Pro includes Claude Sonnet 5.5. We have not confirmed how Copilot routes that Claude path, so treat it as possibly affected when the Anthropic API is down, and use another model in the selector.</td>
+          </tr>
+          <tr>
+            <td><a href="https://devin.ai" rel="noopener" data-link="windsurf">Devin Desktop</a> (formerly Windsurf)</td>
+            <td>Fast if the IDE is already installed. Use SWE-2 or another non-Claude model in Desktop or the Devin CLI.</td>
+            <td>Free $0 (light agent quota, unlimited Tab and inline edits). Pro $20, Max $200, Teams $80/month minimum plus $40 per full seat (5 full seats = $200). Re-checked Nov 15, 2026. See <a href="../devin-vs-windsurf/">Devin vs Windsurf</a>.</td>
+            <td>Pro also lists Claude among frontier models, so skip Claude during an API outage. SWE-2 is Cognition's own model. The blog and pricing page list free SWE-2 on paid Desktop/CLI with no end date; the models docs still say that window ends Nov 30, 2026.</td>
+          </tr>
+          <tr>
+            <td><a href="https://antigravity.google" rel="noopener" data-link="antigravity">Google Antigravity</a> / <a href="https://geminicli.com" rel="noopener" data-link="gemini-cli">Gemini CLI</a></td>
+            <td>Fast if Antigravity is already installed, or if you already have a Gemini API key. Use Gemini, not the Claude models in Antigravity.</td>
+            <td>Antigravity: Free tier yes; Google AI Pro $19.99, Ultra $99.99 or $199.99. Gemini CLI: no free "Sign in with Google" path for individuals since June 18, 2026 (Google moved those users to the Antigravity CLI). Gemini CLI is pay-per-token with a Gemini API key, or Code Assist Standard about $22.80/user/mo and Enterprise about $54/user/mo. From our plan data, last verified Oct 2026. See <a href="../gemini-cli-vs-claude-code/">Gemini CLI vs Claude Code</a>.</td>
+            <td>Antigravity Pro includes Claude Opus and Sonnet 5.5. Those are a poor backup during an Anthropic API outage. Gemini CLI is not a one-click swap if you only have a Google AI plan and have never set up an API key.</td>
+          </tr>
+          <tr>
+            <td><a href="https://aider.chat" rel="noopener">Aider</a> (plain link, not an affiliate)</td>
+            <td>Fast if it is already installed and you already have a key from another provider. Slower if you are creating a new API account during the outage.</td>
+            <td>The tool is free and open source. You pay the model provider per token. Official docs say it can connect to OpenAI, Gemini, DeepSeek, local models, OpenRouter and others, as well as Anthropic.</td>
+            <td>An Anthropic key in Aider will not help if the Claude API is down. Keep a key at another provider, with a spending cap, before you need it. Aider's public "best models" list may lag current model names; check its docs when you set it up.</td>
+          </tr>
+        </tbody>
+      </table></div>
+      <p class="note">Prices are monthly unless noted, in USD, and should be confirmed on the vendor page before you buy. Full plan tables: <a href="../ai-coding-tool-pricing/">AI coding tool pricing</a>. If you still want Claude itself on another product once Anthropic is back, see <a href="../claude-code-alternatives/">Claude Code alternatives</a>.</p>
+    </section>
+
+    <section class="panel" id="ready">
+      <h2>Keep a backup ready, before the next outage</h2>
+      <ul>
+        <li><strong>Install a second CLI now and sign in once.</strong> Codex CLI is the closest terminal-shaped swap if you already pay for ChatGPT Plus or higher. Aider is the cheapest if you are willing to bring your own key. Devin CLI or Antigravity also work if that is already your other tool. The goal is that the next outage costs you a minute, not an account signup.</li>
+        <li><strong>Keep a non-Anthropic API key</strong> (OpenAI, Gemini, or another provider Aider or your CLI already supports), with a spending cap you will notice. Do not paste that key into a chat, a ticket, or a <code>settings.local.json</code> allow rule. A second Anthropic key is not a backup for an API outage.</li>
+        <li><strong>Put shared project rules in <code>AGENTS.md</code>.</strong> Claude Code's docs say it can read a repository's <code>AGENTS.md</code> in place of <code>CLAUDE.md</code>. Codex, Cursor and GitHub Copilot also read <code>AGENTS.md</code>. Gemini CLI uses <code>GEMINI.md</code>, so copy the same rules there if that is your Google backup. Keep the file short; these tools load it into every request.</li>
+        <li><strong>Decide the non-Claude model in advance</strong> in Cursor, Copilot or Antigravity, so you are not hunting through a model picker while the clock is running.</li>
+        <li><strong>Bookmark <a href="https://status.claude.com/" rel="noopener">status.claude.com</a></strong> and, if you also rely on Codex, <a href="https://status.openai.com/" rel="noopener">status.openai.com</a>. Two status pages take less time than guessing.</li>
+      </ul>
+    </section>
+    <!-- PRERENDER:try -->
+    <section class="panel try" id="try">
+      <h2>Ready to try one?</h2>
+      <p class="sub">Every tool here can be cancelled monthly, so the fastest way to decide is a real task on each.</p>
+      <div class="try-grid">
+        <div class="try-item">
+          <h3>OpenAI Codex</h3>
+          <p class="meta"><strong>Start on:</strong> Plus $20. Most developers: Codex in the CLI, IDE extension, web and iOS, plus cloud tasks and automatic code review.</p>
+          <div class="cta-row">
+            <a href="https://developers.openai.com/codex" rel="noopener" class="btn btn-primary" data-link="codex">Try OpenAI Codex free &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-codex">All OpenAI Codex plans</a>
+          </div>
+        </div>
+        <div class="try-item">
+          <h3>Cursor</h3>
+          <p class="meta"><strong>Start on:</strong> Premium $30. Cursor's pick for new AI users. Needed for cloud agents (including Live Apps, which build and host web apps), Bugbot code reviews, and any Claude or GPT use (billed extra).</p>
+          <div class="cta-row">
+            <a href="https://cursor.com" rel="noopener" class="btn btn-primary" data-link="cursor">Try Cursor free &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-cursor">All Cursor plans</a>
+          </div>
+        </div>
+        <div class="try-item">
+          <h3>GitHub Copilot</h3>
+          <p class="meta"><strong>Start on:</strong> Pro $10. The best value for most individuals: 1,500 AI credits and a choice of models including Claude and GPT. Verified teachers and popular open-source maintainers may get it free.</p>
+          <div class="cta-row">
+            <a href="https://github.com/features/copilot" rel="noopener" class="btn btn-primary" data-link="copilot">Try GitHub Copilot free &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-copilot">All GitHub Copilot plans</a>
+          </div>
+        </div>
+        <div class="try-item">
+          <h3>Devin Desktop</h3>
+          <p class="meta"><strong>Start on:</strong> Pro $20. Most individuals: higher quotas, frontier models, SWE-2, SWE-2 Flash on Desktop and CLI (not Cloud), and Devin Cloud agents.</p>
+          <div class="cta-row">
+            <a href="https://devin.ai" rel="noopener" class="btn btn-primary" data-link="windsurf">Try Devin Desktop free &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-windsurf">All Devin Desktop plans</a>
+          </div>
+        </div>
+        <div class="try-item">
+          <h3>Google Antigravity</h3>
+          <p class="meta"><strong>Start on:</strong> Google AI Pro $19.99. Most individuals: quota refreshes every five hours up to a weekly limit, with Claude Opus/Sonnet 5.5. Gemini 4 Argon has its own weekly-only quota on Pro (no five-hour refresh). Claude 5.5 needs a paid plan, not the free trial; Argon works on paid Pro or a trial from an eligible premium device.</p>
+          <div class="cta-row">
+            <a href="https://antigravity.google" rel="noopener" class="btn btn-primary" data-link="antigravity">Try Google Antigravity free &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-antigravity">All Google Antigravity plans</a>
+          </div>
+        </div>
+        <div class="try-item">
+          <h3>Gemini CLI</h3>
+          <p class="meta"><strong>Start on:</strong> Gemini API key (pay per token). Individuals since June 18, 2026: bring a paid Gemini API key and pay per token. Good for scripts and CI. Gemini 3.1 Pro Preview is $2 in / $12 out per million tokens.</p>
+          <div class="cta-row">
+            <a href="https://geminicli.com" rel="noopener" class="btn btn-primary" data-link="gemini-cli">Get Gemini CLI &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-gemini-cli">All Gemini CLI plans</a>
+          </div>
+        </div>
+        <div class="try-item">
+          <h3>Claude Code</h3>
+          <p class="meta"><strong>Start on:</strong> Pro $20. Start here. Includes Claude Code with usage limits; $17/mo if you pay $200 for the year.</p>
+          <div class="cta-row">
+            <a href="https://claude.com/product/claude-code" rel="noopener" class="btn btn-primary" data-link="claude-code">Get Claude Code &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-claude-code">All Claude Code plans</a>
+          </div>
+        </div></div>
+      
+    </section>
+    <!-- /PRERENDER:try -->
+
+    <section class="panel" id="faq">
+      <h2>FAQ</h2>
+      <h3>When was Claude Code down on Nov 13, 2026?</h3>
+      <p>Two incidents, per <a href="https://status.claude.com/" rel="noopener">status.claude.com</a>. Logins to Claude.ai and Claude Code failed from 4:58 AM to 6:58 AM ET (09:58 to 11:58 UTC). Elevated errors on claude.ai, the Claude API and Claude Code ran from 8:09 AM to 10:38 AM ET (13:09 to 15:38 UTC). Anthropic has not published a root cause for either one.</p>
+      <h3>How do I check if Claude Code is down?</h3>
+      <p>Open status.claude.com. status.anthropic.com served the same page when we checked on Nov 15. Look at Claude Code, the Claude API and claude.ai separately, and read the incident updates. Timestamps are in UTC.</p>
+      <h3>How can I tell a local problem from an outage?</h3>
+      <p>An open incident on Claude Code or the API means it is not just you. A green status page plus a failure limited to one machine or one repo is more likely local. Try the website, another network, a restart, and a second computer before you assume a silent outage.</p>
+      <h3>What is the fastest backup?</h3>
+      <p>Whatever you already have signed in, as long as you can pick a non-Claude model. Codex CLI is the closest terminal swap. Cursor, Copilot, Devin Desktop, Antigravity and Aider are all fine if they are already set up. Starting from zero, Codex on a ChatGPT plan or Aider with an existing non-Anthropic key is usually quicker than buying and learning a new IDE in the middle of an outage.</p>
+      <h3>Will Cursor or Copilot still work?</h3>
+      <p>Possibly, if you use a non-Claude model. We have not confirmed how those products route their Claude models, so treat any Claude path as possibly affected when the Anthropic API is down.</p>
+      <h3>Can I point Claude Code at another model during an outage?</h3>
+      <p>Claude Code is a Claude product. During the Nov 13 API incident it was listed as affected alongside the API, so it is the wrong place to wait out an Anthropic failure. Use a different tool until the status page recovers.</p>
+      <h3>How do I keep a backup ready?</h3>
+      <p>Install a second CLI and sign in once, keep an API key at another provider with a cap, and store shared rules in <code>AGENTS.md</code>. Claude Code can read that file in place of <code>CLAUDE.md</code>.</p>
+    </section>
+    <!-- PRERENDER:stack -->
+    <section class="panel stack" id="ship">
+      <h2>Ship your app: the rest of the stack</h2>
+      <p class="sub">Picked your AI coding tool? These are the usual next costs. Free tiers first, and prices checked Oct 20, 2026 on each vendor's pricing page.</p>
+      <div class="stack-grid">
+        <div class="stack-group">
+          <h3>Code review</h3>
+          <p class="meta">AI writes code fast; something should read it before it ships.</p>
+          <ul class="stack-list"><li><a href="https://www.coderabbit.ai" rel="noopener" data-link="coderabbit"><strong>CodeRabbit</strong></a><span>AI review on every pull request, in GitHub or GitLab</span><small>Free for public repos; Essentials $24/user/mo billed annually ($30 monthly)</small></li></ul>
+          <p class="meta tiny">Already paying for Copilot or Codex Plus? Both include AI pull request review, so try that first.</p>
+        </div>
+        <div class="stack-group">
+          <h3>Hosting</h3>
+          <p class="meta">Where your app lives once it works on your machine.</p>
+          <ul class="stack-list"><li><a href="https://vercel.com" rel="noopener" data-link="vercel"><strong>Vercel</strong></a><span>Next.js and front-end apps</span><small>Hobby free (personal, non-commercial); Pro $20/mo per developer seat</small></li><li><a href="https://join.netlify.com/sfop8nkiwjbv" rel="sponsored nofollow noopener" data-link="netlify"><strong>Netlify</strong> <span class="tag ref">referral</span></a><span>Static sites and front ends, unlimited Pro members</span><small>Free; Personal $9/mo; Pro $20/mo with unlimited members</small></li><li><a href="https://railway.com" rel="noopener" data-link="railway"><strong>Railway</strong></a><span>Back ends, workers and databases with no server setup</span><small>Free trial $5 credit; Hobby $5/mo incl. $5 usage; Pro $20/mo</small></li><li><a href="https://render.com" rel="noopener" data-link="render"><strong>Render</strong></a><span>Heroku-style web services, cron jobs and Postgres</span><small>Hobby $0 + compute; Pro $25/mo + compute</small></li></ul>
+          
+        </div>
+        <div class="stack-group">
+          <h3>Database and auth</h3>
+          <p class="meta">Most AI-built apps need a Postgres database and logins.</p>
+          <ul class="stack-list"><li><a href="https://supabase.com" rel="noopener" data-link="supabase"><strong>Supabase</strong></a><span>Postgres + auth + storage in one; Lovable and Bolt connect to it</span><small>Free (2 projects, pause after 1 week idle); Pro from $25/mo</small></li><li><a href="https://neon.com" rel="noopener" data-link="neon"><strong>Neon</strong></a><span>Serverless Postgres with branching, pay for what you use</span><small>Free (100 projects); paid plans usage-based</small></li></ul>
+          
+        </div>
+        <div class="stack-group">
+          <h3>Domain name</h3>
+          <p class="meta">A real domain for your app.</p>
+          <ul class="stack-list"><li><a href="https://www.cloudflare.com/products/registrar/" rel="noopener" data-link="cloudflare"><strong>Cloudflare Registrar</strong></a><span>Domains at cost with no markup</span><small>Wholesale price per TLD</small></li><li><a href="https://porkbun.com" rel="noopener" data-link="porkbun"><strong>Porkbun</strong></a><span>Cheap domains with free WHOIS privacy</span><small>Varies by TLD</small></li><li><a href="https://www.namecheap.com" rel="noopener" data-link="namecheap"><strong>Namecheap</strong></a><span>Popular registrar with hosting and email add-ons</span><small>Varies by TLD</small></li></ul>
+          
+        </div></div>
+      <p class="meta tiny aff-note">Referral link: we may earn a commission at no extra cost to you. It never changes our picks.</p>
+    </section>
+    <!-- /PRERENDER:stack -->
+
+    <section class="panel" id="related">
+      <h2>Related guides</h2>
+      <ul class="related">
+        <li><a href="../claude-code-alternatives/">Claude Code alternatives<small>Who still gives you Claude, and what it costs</small></a></li>
+        <li><a href="../claude-code-vs-codex/">Claude Code vs Codex<small>Same $20 starting price, plus older incident data</small></a></li>
+        <li><a href="../codex-usage-limits/">Codex usage limits explained<small>Plus windows, Pro weekly limits, the banked reset</small></a></li>
+        <li><a href="../copilot-vs-claude-code/">Copilot vs Claude Code<small>$10 credits vs $20 session limits</small></a></li>
+        <li><a href="../gemini-cli-vs-claude-code/">Gemini CLI vs Claude Code<small>Gemini CLI is API-key or Code Assist only</small></a></li>
+        <li><a href="../claude-code-vs-cursor/">Claude Code vs Cursor<small>Terminal agent vs AI IDE</small></a></li>
+        <li><a href="../usage-limits-compared/">Usage limits compared<small>Windows, pools, credits and quotas</small></a></li>
+        <li><a href="../claude-code-secrets-check/">Did Claude Code save your password?<small>Check settings.local.json in your browser</small></a></li>
+        <li><a href="../ai-coding-tool-pricing/">AI coding tool pricing<small>All 41 plans, calculator</small></a></li>
+      </ul>
+    </section>
+
+    <aside class="sponsor" id="sponsor" aria-label="Sponsor slot">
+      <strong>Sponsor slot</strong> <span class="meta">(Sponsored placements are labeled and never affect rankings or verdicts)</span><br />
+      Reach developers looking for a backup when their coding agent is down.
+      <div style="margin-top:10px" class="meta">Founding sponsor rates available now. Email <a href="mailto:sponsors@codetoolpicker.com?subject=CodeToolPicker%20sponsorship">sponsors@codetoolpicker.com</a> &middot; <a href="../advertise/">See packages</a></div>
+    </aside>
+
+    <section class="panel" id="disclosure">
+      <h2>Editorial disclosure</h2>
+      <p><strong>Rankings are not for sale.</strong> Sponsored placements and affiliate links are always labeled, and they never change our recommendations, quiz results, prices, or comparison data. <strong>Links marked "referral" are affiliate links (Netlify):</strong> if you buy through them, we may earn a commission at no extra cost to you. Every other link is a plain link that pays us nothing, and pricing source links are never affiliate links. <a href="../advertise/#policy">Editorial policy</a>.</p>
+    </section>
+    </article>
+
+    <footer>
+      <p><a href="../">← Back to the AI Coding Tool Picker</a> · <a href="../ai-coding-tool-pricing/">Pricing &amp; plans calculator</a></p>
+      <p>More comparisons: <a href="../claude-code-alternatives/">Claude Code alternatives</a> · <a href="../claude-code-vs-codex/">Claude Code vs Codex</a> · <a href="../codex-usage-limits/">Codex usage limits explained</a> · <a href="../copilot-vs-claude-code/">Copilot vs Claude Code</a> · <a href="../gemini-cli-vs-claude-code/">Gemini CLI vs Claude Code</a> · <a href="../usage-limits-compared/">Usage limits compared</a> · <a href="../claude-code-secrets-check/">Claude Code secrets check</a></p>
+      <p>Not affiliated with Anthropic, OpenAI, GitHub, Microsoft, Google, Cognition or the Aider project.</p>
+      <p>Contact, sponsorships, and corrections: <a href="mailto:sponsors@codetoolpicker.com">sponsors@codetoolpicker.com</a> · <a href="../advertise/">Advertise with us</a></p>
+      <p class="meta" id="analytics-note">We use GoatCounter, a privacy-friendly counter with no cookies, to count visits.</p>
+    </footer>
+  </div>
+  <script>
+    (function () {
+      var answers = {
+        "codex|api": "<p><strong>Stay in the terminal and open Codex.</strong> The Anthropic API is the common point of failure, so do not wait inside Claude Code. Codex uses OpenAI models, which is the point. If you hit a Codex limit, see <a href=\"../codex-usage-limits/\">Codex usage limits</a>.</p>",
+        "codex|login": "<p><strong>Codex is still the easy swap,</strong> and you may not need it. The Nov 13 login incident did not list the Claude API as affected, so an already working API-key Claude session might still run. We did not independently confirm that. If you cannot sign in to Claude Code, open Codex and keep going.</p>",
+        "codex|green": "<p><strong>Treat it as local first.</strong> Try claude.ai, another network, and a restart. If only this machine fails, Codex is a way to keep working while you debug Claude Code, not proof of an outage.</p>",
+        "codex|ready": "<p><strong>You are in good shape.</strong> Keep Codex signed in, keep <code>AGENTS.md</code> in the repo (Codex and Claude Code can both read it), and bookmark <a href=\"https://status.claude.com/\" rel=\"noopener\">status.claude.com</a> and <a href=\"https://status.openai.com/\" rel=\"noopener\">status.openai.com</a>.</p>",
+        "cursor|api": "<p><strong>Stay in Cursor and switch off Claude.</strong> On Plus, use Grok or Composer. On Premium and up, pick a non-Claude model; Cursor's Claude path is billed at API list price and may fail if Anthropic is down. We have not confirmed how Cursor routes Claude.</p>",
+        "cursor|login": "<p><strong>Open Cursor and keep working.</strong> A Claude.ai login failure does not automatically take Cursor down. If you were using Claude inside Cursor, switch to Grok or another non-Claude model until you can sign in again.</p>",
+        "cursor|green": "<p><strong>Check whether this is just the Claude Code CLI.</strong> If Cursor still talks to other models, the problem is likely local to Claude Code. Use Cursor for the task, then debug the CLI.</p>",
+        "cursor|ready": "<p><strong>Pick a non-Claude default before you need it.</strong> Plus at $8 is already a Grok-only plan. Keep <code>AGENTS.md</code> in the repo so Cursor and Claude Code share the same rules.</p>",
+        "copilot|api": "<p><strong>Stay in your editor, but do not rely on Copilot's Claude models.</strong> Pro includes Claude Sonnet 5.5, and we have not confirmed how that path is routed. Switch to another model in the selector and keep going. Copilot Pro is $10/mo if you still need to start a plan.</p>",
+        "copilot|login": "<p><strong>Copilot should keep working</strong> as a separate login. If you were on a Claude model, switch it as a precaution, then check <a href=\"https://status.claude.com/\" rel=\"noopener\">status.claude.com</a>.</p>",
+        "copilot|green": "<p><strong>Use Copilot in the editor while you debug the CLI.</strong> A green status page plus a CLI-only failure is more often local. Try another network and a restart before you assume an outage.</p>",
+        "copilot|ready": "<p><strong>Know which non-Claude model you will pick,</strong> and keep <code>AGENTS.md</code> in the repo. Copilot also reads that file, alongside copilot-instructions.md.</p>",
+        "devin|api": "<p><strong>Open Devin Desktop or the Devin CLI and pick a non-Claude model,</strong> such as SWE-2. Pro is $20 and includes Desktop and Devin Cloud. Skip Claude in the model list until Anthropic recovers. <a href=\"../devin-vs-windsurf/\">Devin vs Windsurf</a>.</p>",
+        "devin|login": "<p><strong>Devin is a separate login,</strong> so you can keep working in the IDE. If you had been using Claude inside Devin, switch to SWE-2 or another non-Claude model.</p>",
+        "devin|green": "<p><strong>Use Devin to keep moving,</strong> and treat the Claude Code failure as local until the status page says otherwise.</p>",
+        "devin|ready": "<p><strong>Keep Devin Desktop signed in</strong> and decide which non-Claude model you will use. Free $0 is enough to try Tab and light agent use; Pro is $20.</p>",
+        "antigravity|api": "<p><strong>Use Gemini, not Claude.</strong> Antigravity Pro includes Claude Opus and Sonnet 5.5, which is the wrong backup during an Anthropic API outage. If you only have a Gemini API key, Gemini CLI can run in the terminal. Individuals can no longer use Gemini CLI with a Google AI plan login; that path moved to the Antigravity CLI on June 18, 2026.</p>",
+        "antigravity|login": "<p><strong>Antigravity or Gemini CLI can keep you working</strong> on Gemini models. A Claude login failure should not block that, unless you were using Antigravity's Claude models.</p>",
+        "antigravity|green": "<p><strong>Use Gemini in Antigravity or the CLI</strong> while you debug Claude Code locally.</p>",
+        "antigravity|ready": "<p><strong>Prefer Antigravity if you are on a Google AI plan.</strong> Gemini CLI needs a Gemini API key or a Code Assist seat, not a Pro or Ultra login. Put the same rules in <code>GEMINI.md</code> and <code>AGENTS.md</code>.</p>",
+        "aider|api": "<p><strong>Run Aider with your non-Anthropic key.</strong> If the only key you have is Anthropic's, it will fail for the same reason Claude Code is failing. OpenAI, Gemini, DeepSeek, OpenRouter or a local model are the point of this backup.</p>",
+        "aider|login": "<p><strong>Aider can keep working</strong> on whatever key you already have. An Anthropic key might still work if this is only a Claude.ai / Claude Code login problem (unconfirmed; the Nov 13 morning incident did not list the API). A non-Anthropic key is the safer default.</p>",
+        "aider|green": "<p><strong>Aider is a useful second CLI</strong> while you debug a local Claude Code problem, as long as the key you are using is not the thing that broke.</p>",
+        "aider|ready": "<p><strong>Install Aider once and store a non-Anthropic key with a spending cap.</strong> The tool is free; you pay the provider. Keep shared rules in <code>AGENTS.md</code> even if you also keep <code>CLAUDE.md</code>.</p>",
+        "none|api": "<p><strong>You will be slower this time, so pick the smallest install.</strong> If you already pay for ChatGPT, install the Codex CLI. If you already have an OpenAI or Gemini API key, install <a href=\"https://aider.chat\" rel=\"noopener\">Aider</a>. If you have neither, Cursor Free or Plus ($8, Grok-only) or Copilot Free/Pro ($10) get you an editor backup, but account signup during an outage is the slow path. Then do the <a href=\"#ready\">ready-for-next-time</a> steps when things are calm.</p>",
+        "none|login": "<p><strong>Same advice as an API outage, with one caveat:</strong> the Nov 13 login incident did not list the Claude API as affected, so a Console API-key tool might still have worked. If you cannot sign in to Claude Code and you have no other tool, install Codex or Aider and keep going.</p>",
+        "none|green": "<p><strong>Debug local first</strong> (website, network, restart, second machine) before you create a new paid account. If you still need to keep working, Codex or Aider is a smaller install than a new IDE.</p>",
+        "none|ready": "<p><strong>Do this now, not during the next incident:</strong> install Codex CLI or Aider, sign in or add a non-Anthropic API key with a cap, put project rules in <code>AGENTS.md</code>, and bookmark <a href=\"https://status.claude.com/\" rel=\"noopener\">status.claude.com</a>. Details in <a href=\"#ready\">keep a backup ready</a>.</p>"
+      };
+      var have = document.getElementById("cb-have");
+      var sit = document.getElementById("cb-sit");
+      var out = document.getElementById("cb-out");
+      function render() {
+        out.innerHTML = answers[have.value + "|" + sit.value] || "";
+      }
+      if (have && sit && out) {
+        have.addEventListener("change", render);
+        sit.addEventListener("change", render);
+        render();
+      }
+    })();
+  </script>
+  <script data-goatcounter="https://codetoolpicker.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
