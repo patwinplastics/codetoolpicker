@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name='impact-site-verification' value='83f48c6a-f7b9-45b3-8866-03f8600f0734'>
+  <title>TokenEconomizer: Will It Cut Your Claude Code or Codex Bill? (Nov 2026)</title>
+  <meta name="description" content="TokenEconomizer, checked Nov 17, 2026: Microsoft&#x27;s free plugin cut coding agent costs 18.4 to 30.9% in its tests. Who it helps, who it doesn&#x27;t, the version catch, and a savings calculator." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://codetoolpicker.com/tokeneconomizer-claude-code-codex/" />
+  <meta property="og:title" content="TokenEconomizer for Claude Code and Codex" />
+  <meta property="og:description" content="Microsoft and UC Berkeley&#x27;s free plugin cut Claude Code, Codex and Copilot CLI costs 18 to 31% on repeat work. The catch: today&#x27;s Claude Code, Codex and Copilot CLI are newer than it was tested on." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://codetoolpicker.com/tokeneconomizer-claude-code-codex/" />
+  <meta property="og:site_name" content="CodeToolPicker" />
+  <meta property="og:image" content="https://codetoolpicker.com/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@codetoolpicker" />
+  <meta name="twitter:title" content="TokenEconomizer for Claude Code and Codex" />
+  <meta name="twitter:description" content="Microsoft and UC Berkeley&#x27;s free plugin cut Claude Code, Codex and Copilot CLI costs 18 to 31% on repeat work. The catch: today&#x27;s Claude Code, Codex and Copilot CLI are newer than it was tested on." />
+  <meta name="twitter:image" content="https://codetoolpicker.com/og.png" />
+  <link rel="icon" href="/favicon-48x48.png" sizes="48x48" type="image/png" />
+  <link rel="icon" href="/favicon-96x96.png" sizes="96x96" type="image/png" />
+  <link rel="icon" href="/icon-192.png" sizes="192x192" type="image/png" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#0b0f14" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CodeToolPicker", "item": "https://codetoolpicker.com/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://codetoolpicker.com/#comparisons"}, {"@type": "ListItem", "position": 3, "name": "TokenEconomizer for Claude Code and Codex", "item": "https://codetoolpicker.com/tokeneconomizer-claude-code-codex/"}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TokenEconomizer: Will It Cut Your Claude Code or Codex Bill? (Nov 2026)", "datePublished": "2026-11-17", "dateModified": "2026-11-17", "author": {"@type": "Organization", "name": "CodeToolPicker"}, "publisher": {"@type": "Organization", "name": "CodeToolPicker"}, "mainEntityOfPage": "https://codetoolpicker.com/tokeneconomizer-claude-code-codex/"}</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is TokenEconomizer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A free, open-source (MIT) plugin from UC Berkeley, Microsoft Research and Microsoft Security, released with a Microsoft Research post on Nov 16, 2026. It learns from your past coding agent sessions in a repository and uses that to waste fewer tokens in later sessions, without changing the agent or the model. It has three parts: tool pruning (leaves out tools you never use in that repo), a loop guard (spots a turn stuck on the same failure and nudges it), and micro-skills (one-line repo facts, off by default)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does TokenEconomizer save?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In the researchers' tests on 277 SWE-Bench bug-fix tasks across six repositories, mean cost per task fell 18.4% to 30.9% across five agent and model combinations, and success rate rose in four of the five. Savings were smaller on web development (16.0% to 21.2%) and on security audits where every task was a new repository (6.4% to 19.6%). These are the authors' benchmark numbers, not our tests."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does TokenEconomizer work with Claude Code, Codex, Cursor and Copilot?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fully supported: Claude Code, Codex, GitHub Copilot CLI and Pi. Experimental: Cursor Agent, Grok Build, opencode, Hermes Agent, Antigravity CLI and Factory Droid. There is also a GitHub Copilot in VS Code install path. On Cursor Agent, session cost is not available, and on Antigravity CLI tool pruning is not available."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which versions does TokenEconomizer support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As of Nov 17, 2026 its README lists Claude Code 2.1.300 to 2.1.310, Codex 0.153.1 to 0.164.0 and Copilot CLI 1.0.83 to 1.0.102, and says newer versions have not been tested. The current releases on npm are newer: Claude Code 2.1.326, Codex 0.169.0 and Copilot CLI 1.0.112. If a part of the plugin fails, the session carries on as if it were not installed, so a silent failure looks like no savings. Check /tokeneconomizer:status."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does TokenEconomizer save money on a Claude Pro or ChatGPT Plus subscription?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not in dollars: your subscription price stays the same. What it can do is stretch your limits. If a task uses 25% fewer tokens, the same 5-hour or weekly allowance fits about 1.33 times as much work. On pay-per-token setups (an API key, Copilot credits, Cursor's prepaid credit for third-party models) the savings show up on the bill."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does TokenEconomizer cost anything to run?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The plugin is free and needs no API key of its own. With the default settings it only calls a model when a turn looks stuck (a judge call and a short redirect), through your own agent's CLI, so that small cost is billed to your existing plan or key. The researchers say their reported savings already subtract the plugin's own model calls. Micro-skills adds more calls and is off by default."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is TokenEconomizer safe to install?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It runs from a local clone, keeps what it learns on your machine (under ~/.tokeneconomizer), and its model calls are not sent file contents or your prompts, per its README. On Claude Code it writes deny rules into the repo's .claude/settings.local.json and adds settings files it creates to .git/info/exclude. That is the same file where Claude Code can save secrets from 'don't ask again', so it is worth checking that file is not committed."
+      }
+    }
+  ]
+}
+  </script>
+  <style>
+    .wrap table td, .wrap table th { vertical-align: top; }
+    .note { font-size: .9em; color: var(--muted); }
+    article h2 { margin-top: 28px; }
+    .picker select, .picker input { background: var(--card); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 6px 8px; max-width: 100%; }
+    .picker label { display: block; margin: 10px 0 4px; font-weight: 600; }
+    .calc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 4px 16px; }
+    .big { font-size: 1.35rem; font-weight: 700; }
+    pre { overflow-x: auto; background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 10px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo"><a href="../" style="color:inherit;text-decoration:none">CodeTool<span>Picker</span></a></div>
+      <nav>
+        <a href="../#quiz">Quiz</a>
+        <a href="../#compare">Compare</a>
+        <a href="../#comparisons">Guides</a>
+        <a href="../ai-coding-tool-pricing/">Pricing</a>
+        <a href="../advertise/">Advertise</a>
+      </nav>
+    </header>
+    <p class="crumbs"><a href="../">Home</a> › <a href="../#comparisons">Guides</a> › TokenEconomizer for Claude Code and Codex</p>
+
+    <article>
+    <section class="hero">
+      <h1>TokenEconomizer: will it cut <span class="hl">your agent bill?</span></h1>
+      <p><strong>Short answer:</strong> probably yes, if you work in the <strong>same repo day after day</strong> with Claude Code, Codex or Copilot CLI. Microsoft Research and UC Berkeley's free plugin cut mean cost per task by <strong>18.4% to 30.9%</strong> in their tests, and success rates mostly went up. If you jump to a new repo every day, expect much less. And there's a catch nobody is mentioning: <strong>the current Claude Code (2.1.326), Codex (0.169.0) and Copilot CLI (1.0.112) are all newer than the versions the plugin says it was tested on.</strong></p>
+      <p class="updated">Checked Nov 17, 2026 against the <a href="https://www.microsoft.com/en-us/research/blog/tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient/" rel="noopener">Microsoft Research post (Nov 16)</a>, the <a href="https://github.com/microsoft/TokenEconomizer" rel="noopener">TokenEconomizer repo</a> and its <a href="https://github.com/microsoft/TokenEconomizer/blob/main/plugin/README.md" rel="noopener">plugin README</a>, and the npm registry for current agent versions. Savings figures are the researchers' own benchmark results, not our tests.</p>
+      <div class="cta-row"><a class="btn btn-primary" href="#calc">What would I save?</a> <a class="btn" href="#catch">The version catch</a> <a class="btn" href="#install">Install it</a> <a class="btn" href="#diy">Free tricks without it</a></div>
+    </section>
+
+    <section class="panel" id="what">
+      <h2>What it actually does</h2>
+      <p>Coding agents start every session from scratch. The researchers profiled Claude Code on 60 SWE-Bench tasks and found three kinds of waste:</p>
+      <ul>
+        <li><strong>Relearning the repo.</strong> Once a repo had five finished tasks, 30% of tool calls repeated something from an earlier task in that repo.</li>
+        <li><strong>Paying for tools it never uses.</strong> The agent got 23 tool descriptions on every turn, and 16 were never called.</li>
+        <li><strong>Getting stuck.</strong> The 17% of tasks that failed ate 32% of the spend.</li>
+      </ul>
+      <p>TokenEconomizer reads each finished session's log and fixes those three, using only hooks and settings the agent already has:</p>
+      <div class="table-scroll"><table>
+        <thead><tr><th>Part</th><th>What it does</th><th>Default</th><th>Extra model calls?</th></tr></thead>
+        <tbody>
+          <tr><td>Tool pruning</td><td>Leaves out tools, packages or MCP servers that went unused in this repo (after about 10 prompts over 2+ sessions, or 5 sessions). Core run-command and edit tools always stay. <code>toolprune restore</code> gives them back.</td><td>On</td><td>None</td></tr>
+          <tr><td>Loop guard</td><td>When a turn keeps hitting the same failure, a judge model checks if it is stuck. If it is at least 70% sure, the agent gets a short "try another way" note. It never stops a turn itself.</td><td>On</td><td>Only on turns that look stuck (about 1,500-token prompts)</td></tr>
+          <tr><td>Micro-skills</td><td>One-line repo facts (like the right test command) added at session start once three sessions confirm them.</td><td>Off</td><td>Yes, every 3 sessions</td></tr>
+        </tbody>
+      </table></div>
+      <p class="note">Its model calls go through your own agent's CLI (<code>claude -p</code>, <code>codex exec</code>, <code>copilot -p</code>), so they bill to your existing plan or key. The README says those calls are not sent file contents or your prompts. What it learns stays on your machine. License: MIT.</p>
+    </section>
+
+    <section class="panel" id="results">
+      <h2>The numbers, per agent</h2>
+      <div class="table-scroll"><table>
+        <thead><tr><th>Agent + model (SWE-Bench, 277 tasks)</th><th>Cost per task</th><th>Pass@1</th></tr></thead>
+        <tbody>
+          <tr><td>Claude Code + Opus 4.8</td><td><strong>30.9% lower</strong></td><td>-1.0 point</td></tr>
+          <tr><td>Codex + GPT-5.6 Sol</td><td>26.1% lower</td><td>+1.6</td></tr>
+          <tr><td>Codex + GPT-5.6 Terra</td><td>24.7% lower</td><td>+0.9</td></tr>
+          <tr><td>Claude Code + Sonnet 5</td><td>23.6% lower</td><td>+1.3</td></tr>
+          <tr><td>Copilot CLI + Sonnet 5</td><td>18.4% lower</td><td>+2.6</td></tr>
+        </tbody>
+      </table></div>
+      <ul>
+        <li><strong>Cheaper in all 30 repo and agent combinations</strong> they tested.</li>
+        <li><strong>Web development</strong> (Web-Bench, sequential tasks in one app): 16.0% to 21.2% lower.</li>
+        <li><strong>Security audits, a new repo every task:</strong> 6.4% to 19.6% lower. Less history, less to learn from.</li>
+        <li><strong>It gets worse before it gets better.</strong> Early tasks can cost more while it learns. With Claude Code, every repo was cheaper overall by the sixth task.</li>
+        <li><strong>Turning down reasoning effort</strong> saved as much or more in their tests, but success rates dropped a lot. TokenEconomizer did not have that trade-off.</li>
+      </ul>
+      <p class="note">Note the models: these runs used Opus 4.8, Sonnet 5 and GPT-5.6, not today's Opus 5.5, Fable 5.2 or GPT-6.1. Source: <a href="https://www.microsoft.com/en-us/research/blog/tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient/" rel="noopener">Microsoft Research</a> and the repo README.</p>
+    </section>
+
+    <section class="panel picker" id="calc">
+      <h2>What would it save you?</h2>
+      <p class="sub">A rough estimate from the researchers' numbers. Everything runs in your browser.</p>
+      <div class="calc-grid">
+        <div><label for="te-pay">How you pay</label>
+          <select id="te-pay">
+            <option value="usage">Per token or credits (API key, Copilot credits, Cursor credit)</option>
+            <option value="sub">Flat subscription (Claude Pro/Max, ChatGPT Plus/Pro)</option>
+          </select></div>
+        <div><label for="te-spend">Monthly spend (USD)</label><input id="te-spend" type="number" min="0" step="5" value="100" /></div>
+        <div><label for="te-combo">Agent and model</label>
+          <select id="te-combo">
+            <option value="30.9">Claude Code + Opus</option>
+            <option value="23.6" selected>Claude Code + Sonnet</option>
+            <option value="26.1">Codex + GPT (Sol-class)</option>
+            <option value="24.7">Codex + GPT (Terra-class)</option>
+            <option value="18.4">Copilot CLI</option>
+          </select></div>
+        <div><label for="te-work">How you work</label>
+          <select id="te-work">
+            <option value="same">Same repo most days (bug fixes, features)</option>
+            <option value="web">One web app, feature after feature</option>
+            <option value="new">A different repo most days</option>
+          </select></div>
+      </div>
+      <div id="te-out" style="margin-top:14px" aria-live="polite"></div>
+      <p class="note">Benchmark tasks are not your tasks. Treat this as a ceiling-ish guess, and check real numbers with <code>/tokeneconomizer:status</code> after a week.</p>
+    </section>
+
+    <section class="panel" id="catch">
+      <h2>The catch: your agent is probably too new</h2>
+      <p>The plugin's README (checked Nov 17, 2026) lists the versions it was tested on. The latest releases on npm today are past every range:</p>
+      <div class="table-scroll"><table>
+        <thead><tr><th>Agent</th><th>Tested range</th><th>Latest on npm (Nov 17)</th></tr></thead>
+        <tbody>
+          <tr><td>Claude Code</td><td>2.1.300 to 2.1.310</td><td><strong>2.1.326</strong></td></tr>
+          <tr><td>Codex</td><td>0.153.1 to 0.164.0</td><td><strong>0.169.0</strong></td></tr>
+          <tr><td>Copilot CLI</td><td>1.0.83 to 1.0.102</td><td><strong>1.0.112</strong></td></tr>
+          <tr><td>Cursor Agent</td><td>3.24.9 and cursor-agent 2026.11.05 (experimental)</td><td>Not checked</td></tr>
+        </tbody>
+      </table></div>
+      <p>"Not tested" is not "broken". But two things make it matter:</p>
+      <ul>
+        <li><strong>It fails quietly by design.</strong> If any part breaks, your session carries on as if it were not installed. Safe, but a silent failure just looks like "no savings".</li>
+        <li><strong>Claude Code 2.1.326 changed hooks and settings.</strong> Its Nov 16 release notes (<a href="https://ai-tracker.rootstudio.io/news/2026-11-16-claude-code-2-1-326" rel="noopener">summary</a>) say a hook's <code>"decision": "block"</code> now holds in more cases and Code Mode can now run with agent teams. The plugin leans on hooks and settings files, so this is exactly the kind of change to watch.</li>
+      </ul>
+      <p><strong>What to do:</strong> after installing, run <code>/tokeneconomizer:status</code> (Codex: <code>$tokeneconomizer:status</code>) and confirm it shows session costs, not an error. Or check from a terminal for free: <code>~/.tokeneconomizer/bin/te --host claude status</code>. The repo was updated today, so the version table may catch up soon.</p>
+    </section>
+
+    <section class="panel" id="who">
+      <h2>Who should install it</h2>
+      <ul>
+        <li><strong>Yes:</strong> you pay per token (API key, Copilot credits, Cursor's prepaid credit for Claude or GPT) and live in one or two repos. This is where the 18 to 31% shows up as money.</li>
+        <li><strong>Yes, for limits:</strong> you hit Claude Code's 5-hour window or Codex's weekly limit. 25% fewer tokens means about 1.33x as much work before the wall. Your bill does not change.</li>
+        <li><strong>Maybe:</strong> you use Cursor Agent or Antigravity CLI. Support is experimental, Cursor shows no session cost, and Antigravity CLI gets no tool pruning.</li>
+        <li><strong>Skip for now:</strong> you hop between new repos all day, or you can't run Python 3.10+. Gains need history in the same repo.</li>
+      </ul>
+    </section>
+
+    <section class="panel" id="install">
+      <h2>Install it (Claude Code and Codex)</h2>
+      <p>Needs Python 3.10+. Keep the clone where it is: the plugin runs from it.</p>
+      <pre><code>git clone https://github.com/microsoft/TokenEconomizer.git
+
+# Claude Code
+claude plugin marketplace add /path/to/TokenEconomizer
+claude plugin install tokeneconomizer@tokeneconomizer
+# then inside Claude Code, once per machine:
+#   /tokeneconomizer:status
+#   /tokeneconomizer:toolprune refresh-catalog
+
+# Codex
+codex plugin marketplace add /path/to/TokenEconomizer
+codex plugin add tokeneconomizer@tokeneconomizer
+# trust the folder and hooks, restart Codex, then:
+#   $tokeneconomizer:status</code></pre>
+      <ul>
+        <li><strong>Don't skip <code>refresh-catalog</code></strong> on Claude Code. The README says without it the plugin only sees the few tools Claude Code defers. Run it again after Claude Code updates.</li>
+        <li><strong>Each slash command costs one model turn.</strong> The same commands are free from a terminal via <code>~/.tokeneconomizer/bin/te</code>.</li>
+        <li><strong>Want to approve what it removes?</strong> <code>/tokeneconomizer:config set toolprune=propose</code>, then <code>toolprune apply</code>.</li>
+        <li><strong>Try it for one session first:</strong> <code>claude --plugin-dir /path/to/TokenEconomizer/plugin</code>.</li>
+        <li><strong>Heads up:</strong> on Claude Code, its deny rules go in your repo's <code>.claude/settings.local.json</code>. That is the same file where "don't ask again" can save passwords. <a href="../claude-code-secrets-check/">Check that file isn't in git</a>.</li>
+      </ul>
+      <p class="note">Copilot CLI, Copilot in VS Code, Cursor, Pi and the experimental agents have their own steps in the <a href="https://github.com/microsoft/TokenEconomizer/blob/main/plugin/README.md" rel="noopener">plugin README</a>.</p>
+    </section>
+
+    <section class="panel" id="diy">
+      <h2>Free tricks that work without the plugin</h2>
+      <p>The plugin automates three habits. You can do a manual version today on any agent:</p>
+      <ul>
+        <li><strong>Write down the boring facts.</strong> Test command, build command, the folder that matters. Put them in <code>AGENTS.md</code> or <code>CLAUDE.md</code> so the agent stops rediscovering them. That is micro-skills by hand.</li>
+        <li><strong>Turn off MCP servers you don't use in this repo.</strong> Every loaded tool's description rides along on every turn. In the study, 16 of 23 tools were never called.</li>
+        <li><strong>Kill loops early.</strong> If the agent hits the same error three times, stop it and give it a new direction. Failed tasks were 17% of tasks but 32% of spend.</li>
+        <li><strong>Don't switch models mid-session.</strong> You lose the prompt cache and pay full price to reload context. See <a href="../claude-fable-5-2-vs-opus-5-5/">Fable 5.2 vs Opus 5.5</a>.</li>
+        <li><strong>Use the cheap model for routine work.</strong> Our <a href="../ai-coding-cost-per-task/">cost per task guide</a> shows how far apart models are.</li>
+      </ul>
+    </section>
+
+    <section class="panel" id="unknowns">
+      <h2>What we could not confirm</h2>
+      <ul>
+        <li>Whether the plugin works correctly on Claude Code 2.1.326, Codex 0.169.0 or Copilot CLI 1.0.112. The README says newer versions have not been tested. We have not run it ourselves.</li>
+        <li>Savings on today's models (Opus 5.5, Fable 5.2, GPT-6.1). The study used Opus 4.8, Sonnet 5 and GPT-5.6.</li>
+        <li>Savings on your own repos and tasks. SWE-Bench is Python bug fixes in six open-source projects.</li>
+        <li>The repo's badge says Apache 2.0, but its LICENSE file and GitHub both say MIT. We went with MIT.</li>
+      </ul>
+    </section>
+    <!-- PRERENDER:try -->
+    <section class="panel try" id="try">
+      <h2>Ready to try one?</h2>
+      <p class="sub">Every tool here can be cancelled monthly, so the fastest way to decide is a real task on each.</p>
+      <div class="try-grid">
+        <div class="try-item">
+          <h3>Claude Code</h3>
+          <p class="meta"><strong>Start on:</strong> Pro $20. Start here. Includes Claude Code with usage limits; $17/mo if you pay $200 for the year.</p>
+          <div class="cta-row">
+            <a href="https://claude.com/product/claude-code" rel="noopener" class="btn btn-primary" data-link="claude-code">Get Claude Code &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-claude-code">All Claude Code plans</a>
+          </div>
+        </div>
+        <div class="try-item">
+          <h3>OpenAI Codex</h3>
+          <p class="meta"><strong>Start on:</strong> Plus $20. Most developers: Codex in the CLI, IDE extension, web and iOS, plus cloud tasks and automatic code review.</p>
+          <div class="cta-row">
+            <a href="https://developers.openai.com/codex" rel="noopener" class="btn btn-primary" data-link="codex">Try OpenAI Codex free &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-codex">All OpenAI Codex plans</a>
+          </div>
+        </div>
+        <div class="try-item">
+          <h3>GitHub Copilot</h3>
+          <p class="meta"><strong>Start on:</strong> Pro $10. The best value for most individuals: 1,500 AI credits and a choice of models including Claude and GPT. Verified teachers and popular open-source maintainers may get it free.</p>
+          <div class="cta-row">
+            <a href="https://github.com/features/copilot" rel="noopener" class="btn btn-primary" data-link="copilot">Try GitHub Copilot free &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-copilot">All GitHub Copilot plans</a>
+          </div>
+        </div></div>
+      
+    </section>
+    <!-- /PRERENDER:try -->
+
+    <section class="panel" id="faq">
+      <h2>FAQ</h2>
+      <h3>What is TokenEconomizer?</h3>
+      <p>A free, open-source (MIT) plugin from UC Berkeley, Microsoft Research and Microsoft Security, released with a Microsoft Research post on Nov 16, 2026. It learns from your past coding agent sessions in a repository and uses that to waste fewer tokens in later sessions, without changing the agent or the model. It has three parts: tool pruning (leaves out tools you never use in that repo), a loop guard (spots a turn stuck on the same failure and nudges it), and micro-skills (one-line repo facts, off by default).</p>
+      <h3>How much does TokenEconomizer save?</h3>
+      <p>In the researchers&#x27; tests on 277 SWE-Bench bug-fix tasks across six repositories, mean cost per task fell 18.4% to 30.9% across five agent and model combinations, and success rate rose in four of the five. Savings were smaller on web development (16.0% to 21.2%) and on security audits where every task was a new repository (6.4% to 19.6%). These are the authors&#x27; benchmark numbers, not our tests.</p>
+      <h3>Does TokenEconomizer work with Claude Code, Codex, Cursor and Copilot?</h3>
+      <p>Fully supported: Claude Code, Codex, GitHub Copilot CLI and Pi. Experimental: Cursor Agent, Grok Build, opencode, Hermes Agent, Antigravity CLI and Factory Droid. There is also a GitHub Copilot in VS Code install path. On Cursor Agent, session cost is not available, and on Antigravity CLI tool pruning is not available.</p>
+      <h3>Which versions does TokenEconomizer support?</h3>
+      <p>As of Nov 17, 2026 its README lists Claude Code 2.1.300 to 2.1.310, Codex 0.153.1 to 0.164.0 and Copilot CLI 1.0.83 to 1.0.102, and says newer versions have not been tested. The current releases on npm are newer: Claude Code 2.1.326, Codex 0.169.0 and Copilot CLI 1.0.112. If a part of the plugin fails, the session carries on as if it were not installed, so a silent failure looks like no savings. Check /tokeneconomizer:status.</p>
+      <h3>Does TokenEconomizer save money on a Claude Pro or ChatGPT Plus subscription?</h3>
+      <p>Not in dollars: your subscription price stays the same. What it can do is stretch your limits. If a task uses 25% fewer tokens, the same 5-hour or weekly allowance fits about 1.33 times as much work. On pay-per-token setups (an API key, Copilot credits, Cursor&#x27;s prepaid credit for third-party models) the savings show up on the bill.</p>
+      <h3>Does TokenEconomizer cost anything to run?</h3>
+      <p>The plugin is free and needs no API key of its own. With the default settings it only calls a model when a turn looks stuck (a judge call and a short redirect), through your own agent&#x27;s CLI, so that small cost is billed to your existing plan or key. The researchers say their reported savings already subtract the plugin&#x27;s own model calls. Micro-skills adds more calls and is off by default.</p>
+      <h3>Is TokenEconomizer safe to install?</h3>
+      <p>It runs from a local clone, keeps what it learns on your machine (under ~/.tokeneconomizer), and its model calls are not sent file contents or your prompts, per its README. On Claude Code it writes deny rules into the repo&#x27;s .claude/settings.local.json and adds settings files it creates to .git/info/exclude. That is the same file where Claude Code can save secrets from &#x27;don&#x27;t ask again&#x27;, so it is worth checking that file is not committed.</p>
+    </section>
+    <!-- PRERENDER:stack -->
+    <section class="panel stack" id="ship">
+      <h2>Ship your app: the rest of the stack</h2>
+      <p class="sub">Picked your AI coding tool? These are the usual next costs. Free tiers first, and prices checked Oct 20, 2026 on each vendor's pricing page.</p>
+      <div class="stack-grid">
+        <div class="stack-group">
+          <h3>Code review</h3>
+          <p class="meta">AI writes code fast; something should read it before it ships.</p>
+          <ul class="stack-list"><li><a href="https://www.coderabbit.ai" rel="noopener" data-link="coderabbit"><strong>CodeRabbit</strong></a><span>AI review on every pull request, in GitHub or GitLab</span><small>Free for public repos; Essentials $24/user/mo billed annually ($30 monthly)</small></li></ul>
+          <p class="meta tiny">Already paying for Copilot or Codex Plus? Both include AI pull request review, so try that first.</p>
+        </div>
+        <div class="stack-group">
+          <h3>Hosting</h3>
+          <p class="meta">Where your app lives once it works on your machine.</p>
+          <ul class="stack-list"><li><a href="https://vercel.com" rel="noopener" data-link="vercel"><strong>Vercel</strong></a><span>Next.js and front-end apps</span><small>Hobby free (personal, non-commercial); Pro $20/mo per developer seat</small></li><li><a href="https://join.netlify.com/sfop8nkiwjbv" rel="sponsored nofollow noopener" data-link="netlify"><strong>Netlify</strong> <span class="tag ref">referral</span></a><span>Static sites and front ends, unlimited Pro members</span><small>Free; Personal $9/mo; Pro $20/mo with unlimited members</small></li><li><a href="https://railway.com" rel="noopener" data-link="railway"><strong>Railway</strong></a><span>Back ends, workers and databases with no server setup</span><small>Free trial $5 credit; Hobby $5/mo incl. $5 usage; Pro $20/mo</small></li><li><a href="https://render.com" rel="noopener" data-link="render"><strong>Render</strong></a><span>Heroku-style web services, cron jobs and Postgres</span><small>Hobby $0 + compute; Pro $25/mo + compute</small></li></ul>
+          
+        </div>
+        <div class="stack-group">
+          <h3>Database and auth</h3>
+          <p class="meta">Most AI-built apps need a Postgres database and logins.</p>
+          <ul class="stack-list"><li><a href="https://supabase.com" rel="noopener" data-link="supabase"><strong>Supabase</strong></a><span>Postgres + auth + storage in one; Lovable and Bolt connect to it</span><small>Free (2 projects, pause after 1 week idle); Pro from $25/mo</small></li><li><a href="https://neon.com" rel="noopener" data-link="neon"><strong>Neon</strong></a><span>Serverless Postgres with branching, pay for what you use</span><small>Free (100 projects); paid plans usage-based</small></li></ul>
+          
+        </div>
+        <div class="stack-group">
+          <h3>Domain name</h3>
+          <p class="meta">A real domain for your app.</p>
+          <ul class="stack-list"><li><a href="https://www.cloudflare.com/products/registrar/" rel="noopener" data-link="cloudflare"><strong>Cloudflare Registrar</strong></a><span>Domains at cost with no markup</span><small>Wholesale price per TLD</small></li><li><a href="https://porkbun.com" rel="noopener" data-link="porkbun"><strong>Porkbun</strong></a><span>Cheap domains with free WHOIS privacy</span><small>Varies by TLD</small></li><li><a href="https://www.namecheap.com" rel="noopener" data-link="namecheap"><strong>Namecheap</strong></a><span>Popular registrar with hosting and email add-ons</span><small>Varies by TLD</small></li></ul>
+          
+        </div></div>
+      <p class="meta tiny aff-note">Referral link: we may earn a commission at no extra cost to you. It never changes our picks.</p>
+    </section>
+    <!-- /PRERENDER:stack -->
+
+    <section class="panel" id="related">
+      <h2>Related guides</h2>
+      <ul class="related">
+        <li><a href="../usage-limits-compared/">Usage limits compared<small>Windows, pools, credits and quotas</small></a></li>
+        <li><a href="../codex-usage-limits/">Codex usage limits explained<small>5-hour and weekly windows, the December change</small></a></li>
+        <li><a href="../claude-max-vs-ultra/">Claude Max vs Ultra<small>When the bigger Claude plan pays off</small></a></li>
+        <li><a href="../ai-coding-cost-per-task/">What one AI coding task costs<small>Cost per hard task across models</small></a></li>
+        <li><a href="../claude-code-secrets-check/">Claude Code secrets check<small>Is your settings.local.json leaking?</small></a></li>
+        <li><a href="../claude-code-vs-codex/">Claude Code vs Codex<small>Which agent to pay for</small></a></li>
+        <li><a href="../ai-coding-tool-pricing/">AI coding tool pricing<small>All plans, calculator</small></a></li>
+      </ul>
+    </section>
+
+    <aside class="sponsor" id="sponsor" aria-label="Sponsor slot">
+      <strong>Sponsor slot</strong> <span class="meta">(Sponsored placements are labeled and never affect rankings or verdicts)</span><br />
+      Reach developers actively trying to cut what their coding agent costs.
+      <div style="margin-top:10px" class="meta">Founding sponsor rates available now. Email <a href="mailto:sponsors@codetoolpicker.com?subject=CodeToolPicker%20sponsorship">sponsors@codetoolpicker.com</a> &middot; <a href="../advertise/">See packages</a></div>
+    </aside>
+
+    <section class="panel" id="disclosure">
+      <h2>Editorial disclosure</h2>
+      <p><strong>Rankings are not for sale.</strong> Sponsored placements and affiliate links are always labeled, and they never change our recommendations, quiz results, prices, or comparison data. <strong>Links marked "referral" are affiliate links (Netlify):</strong> if you buy through them, we may earn a commission at no extra cost to you. Every other link is a plain link that pays us nothing, and pricing source links are never affiliate links. <a href="../advertise/#policy">Editorial policy</a>.</p>
+    </section>
+    </article>
+
+    <footer>
+      <p><a href="../">← Back to the AI Coding Tool Picker</a> · <a href="../ai-coding-tool-pricing/">Pricing &amp; plans calculator</a></p>
+      <p>More guides: <a href="../usage-limits-compared/">Usage limits compared</a> · <a href="../codex-usage-limits/">Codex usage limits</a> · <a href="../claude-code-vs-codex/">Claude Code vs Codex</a> · <a href="../ai-coding-cost-per-task/">Cost per task</a></p>
+      <p>Not affiliated with Microsoft, GitHub, Anthropic, OpenAI or Anysphere (Cursor). TokenEconomizer is a Microsoft and UC Berkeley open-source project.</p>
+      <p>Contact, sponsorships, and corrections: <a href="mailto:sponsors@codetoolpicker.com">sponsors@codetoolpicker.com</a> · <a href="../advertise/">Advertise with us</a></p>
+      <p class="meta" id="analytics-note">We use GoatCounter, a privacy-friendly counter with no cookies, to count visits.</p>
+    </footer>
+  </div>
+  <script>
+    (function () {
+      var pay = document.getElementById("te-pay"), spend = document.getElementById("te-spend"), combo = document.getElementById("te-combo"), work = document.getElementById("te-work"), out = document.getElementById("te-out");
+      if (!pay || !out) return;
+      function money(n) { return "$" + (Math.round(n * 100) / 100).toFixed(n >= 100 ? 0 : 2); }
+      function calc() {
+        var s = Math.max(0, parseFloat(spend.value) || 0), c = parseFloat(combo.value), lo, hi, label;
+        if (work.value === "same") { lo = c; hi = c; label = "the researchers' result for this agent on repeat bug-fix work in one repo"; }
+        else if (work.value === "web") { lo = 16.0; hi = 21.2; label = "their web development range (one app, task after task)"; }
+        else { lo = 6.4; hi = 19.6; label = "their new-repo-every-task range (security audits)"; }
+        var rng = lo === hi ? lo.toFixed(1) + "%" : lo.toFixed(1) + "% to " + hi.toFixed(1) + "%";
+        var h;
+        if (pay.value === "usage") {
+          var a = s * lo / 100, b = s * hi / 100;
+          h = '<p class="big">About ' + (lo === hi ? money(a) : money(a) + " to " + money(b)) + " a month</p><p>That is " + rng + " of " + money(s) + ", based on " + label + ". About " + (lo === hi ? money(a * 12) : money(a * 12) + " to " + money(b * 12)) + " a year.</p>";
+        } else {
+          var m1 = 1 / (1 - lo / 100), m2 = 1 / (1 - hi / 100);
+          h = '<p class="big">Same bill, about ' + (lo === hi ? m1.toFixed(2) + "x" : m1.toFixed(2) + "x to " + m2.toFixed(2) + "x") + " more work per limit window</p><p>A flat plan costs " + money(s) + " either way. Cutting tokens " + rng + " (" + label + ") lets the same 5-hour or weekly allowance stretch further. Worth it if you hit your limits; little point if you never do.</p>";
+        }
+        h += '<p class="note">Expect the first few sessions in a repo to cost a bit more while it learns. In the study every repo was cheaper overall by the sixth task.</p>';
+        out.innerHTML = h;
+      }
+      [pay, spend, combo, work].forEach(function (el) { el.addEventListener("input", calc); el.addEventListener("change", calc); });
+      calc();
+    })();
+  </script>
+
+  <script data-goatcounter="https://codetoolpicker.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
