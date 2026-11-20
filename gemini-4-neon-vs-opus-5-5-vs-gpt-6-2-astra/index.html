@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name='impact-site-verification' value='83f48c6a-f7b9-45b3-8866-03f8600f0734'>
+  <title>Gemini 4 Neon vs Opus 5.5 vs GPT-6.2 Astra: Cost per Coding Task (Nov 2026)</title>
+  <meta name="description" content="Gemini 4 Neon vs Claude Opus 5.5 vs GPT-6.2 Astra, checked Nov 20, 2026: Neon scored 59 on Artificial Analysis' coding agent index at $6.86 a task vs Opus 5.5 at 58 and $12.61. Where each runs, a cost-per-task calculator and a picker." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://codetoolpicker.com/gemini-4-neon-vs-opus-5-5-vs-gpt-6-2-astra/" />
+  <meta property="og:title" content="Gemini 4 Neon vs Opus 5.5 vs GPT-6.2 Astra for coding" />
+  <meta property="og:description" content="Neon ties Opus 5.5 on Artificial Analysis' coding agent test at about half the cost per task. Astra costs more per token but less per task. Calculator inside." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://codetoolpicker.com/gemini-4-neon-vs-opus-5-5-vs-gpt-6-2-astra/" />
+  <meta property="og:site_name" content="CodeToolPicker" />
+  <meta property="og:image" content="https://codetoolpicker.com/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@codetoolpicker" />
+  <meta name="twitter:title" content="Gemini 4 Neon vs Opus 5.5 vs GPT-6.2 Astra for coding" />
+  <meta name="twitter:description" content="Neon ties Opus 5.5 on Artificial Analysis' coding agent test at about half the cost per task. Astra costs more per token but less per task. Calculator inside." />
+  <meta name="twitter:image" content="https://codetoolpicker.com/og.png" />
+  <link rel="icon" href="/favicon-48x48.png" sizes="48x48" type="image/png" />
+  <link rel="icon" href="/favicon-96x96.png" sizes="96x96" type="image/png" />
+  <link rel="icon" href="/icon-192.png" sizes="192x192" type="image/png" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#0b0f14" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CodeToolPicker", "item": "https://codetoolpicker.com/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://codetoolpicker.com/#comparisons"}, {"@type": "ListItem", "position": 3, "name": "Gemini 4 Neon vs Opus 5.5 vs GPT-6.2 Astra", "item": "https://codetoolpicker.com/gemini-4-neon-vs-opus-5-5-vs-gpt-6-2-astra/"}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Gemini 4 Neon vs Opus 5.5 vs GPT-6.2 Astra: Cost per Coding Task (Nov 2026)", "datePublished": "2026-11-20", "dateModified": "2026-11-20", "author": {"@type": "Organization", "name": "CodeToolPicker"}, "publisher": {"@type": "Organization", "name": "CodeToolPicker"}, "mainEntityOfPage": "https://codetoolpicker.com/gemini-4-neon-vs-opus-5-5-vs-gpt-6-2-astra/"}</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Gemini 4 Neon better than Claude Opus 5.5 for coding?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On Artificial Analysis' Coding Agent Index v2.1 (checked Nov 20, 2026), Neon at xhigh in Antigravity CLI scored 59 (58.6) and Opus 5.5 at max in Claude Code scored 58 (58.2). That is a tie in practice. The real gap is cost and time: $6.86 and 30.5 minutes per task for Neon vs $12.61 and about 65 minutes for Opus 5.5, at API list prices."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does Gemini 4 Neon cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gemini API paid tier: $3 per million input tokens, $0.15 cached input, $15 output (thinking tokens count as output), flat across its 1M-token context. No free API tier. GitHub Copilot and Cursor bill the same $3/$15 list price. Claude Opus 5.5 is $4/$20 and GPT-6.2 Astra is $8/$40."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is GPT-6.2 Astra more expensive than Neon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Per token, yes: $8/$40 vs $3/$15. Per task, no: Artificial Analysis measured Codex with Astra at max at $5.12 a task (score 53) and at xhigh at $3.20 (score 53), because Astra used about 3 to 4.7M tokens per task vs 13.8M for Neon. Neon scores 6 points higher, though."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I use Gemini 4 Neon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gemini API (paid tier) and AI Studio, Google Antigravity on paid Google AI Pro ($19.99) and Ultra (it is the default model there, with a 512K context window in Antigravity), GitHub Copilot Pro+, Max, Business and Enterprise, Cursor on Premium and up from prepaid credit, and the Gemini app on Pro and Ultra."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will Neon be cheaper than Gemini 4 Carbon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "From Dec 1, 2026, yes per token: Carbon goes from $2/$10 to $4/$20 while Neon stays $3/$15. Until Nov 30, Carbon is cheaper per token. On Artificial Analysis' coding agent test Neon already cost less per task ($6.86 vs $9.75) and scored higher (59 vs 55)."
+      }
+    }
+  ]
+}
+  </script>
+  <style>
+    .wrap table td, .wrap table th { vertical-align: top; }
+    .note { font-size: .9em; color: var(--muted); }
+    article h2 { margin-top: 28px; }
+    .picker select, .picker input { background: var(--card); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 6px 8px; max-width: 100%; }
+    .picker label { display: block; margin: 10px 0 4px; font-weight: 600; }
+    .calc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 4px 16px; }
+    .big { font-size: 1.35rem; font-weight: 700; }
+    tr.hi td { font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo"><a href="../" style="color:inherit;text-decoration:none">CodeTool<span>Picker</span></a></div>
+      <nav>
+        <a href="../#quiz">Quiz</a>
+        <a href="../#compare">Compare</a>
+        <a href="../#comparisons">Guides</a>
+        <a href="../ai-coding-tool-pricing/">Pricing</a>
+        <a href="../advertise/">Advertise</a>
+      </nav>
+    </header>
+    <p class="crumbs"><a href="../">Home</a> › <a href="../#comparisons">Guides</a> › Gemini 4 Neon vs Opus 5.5 vs GPT-6.2 Astra</p>
+
+    <article>
+    <section class="hero">
+      <h1>Gemini 4 Neon vs Opus 5.5 vs GPT-6.2 Astra: <span class="hl">what one coding task costs</span></h1>
+      <p><strong>Short answer:</strong> Google's new <strong>Gemini 4 Neon ties Claude Opus 5.5</strong> on Artificial Analysis' independent coding agent test (59 vs 58) at <strong>about half the cost per task</strong> ($6.86 vs $12.61) and in <strong>about half the time</strong> (30.5 vs roughly 65 minutes). If you pay per token and want top-tier agent results, Neon is now the cheapest way to get them.</p>
+      <p>Two catches. <strong>Claude Fable 5.2 at high effort</strong> scored the same 58 for $7.51, so Neon's edge over Anthropic is smaller than the Opus headline suggests. And <strong>GPT-6.2 Astra</strong> costs more per token ($8/$40 vs $3/$15) but <strong>less per task</strong> ($5.12 at max, $3.20 at xhigh), because Neon burns roughly three times the tokens. Astra scores 6 points lower, though.</p>
+      <p class="updated">Checked Nov 20, 2026 against <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/" rel="noopener">Google's Neon announcement (Nov 18)</a>, the <a href="https://ai.google.dev/gemini-api/docs/pricing" rel="noopener">Gemini API pricing page</a>, the <a href="https://deepmind.google/models/model-cards/gemini-4-neon/" rel="noopener">Neon model card</a>, Artificial Analysis' <a href="https://artificialanalysis.ai/articles/gemini-4-neon-intelligence-gain" rel="noopener">Neon write-up</a>, <a href="https://artificialanalysis.ai/agents/coding-agents/comparisons/antigravity-cli-vs-claude-code" rel="noopener">Antigravity CLI vs Claude Code results</a> and <a href="https://artificialanalysis.ai/agents/coding-agents/codex" rel="noopener">Codex results</a>, the <a href="https://antigravity.google/blog/gemini-4-neon-in-google-antigravity/" rel="noopener">Antigravity blog</a> and <a href="https://antigravity.google/docs/models/" rel="noopener">models docs</a>, the <a href="https://github.blog/changelog/2026-11-18-gemini-4-neon-in-github-copilot/" rel="noopener">GitHub changelog</a> and <a href="https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing" rel="noopener">Copilot models and pricing</a>, and <a href="https://cursor.com/docs/models/gemini-4-neon" rel="noopener">Cursor's Neon docs</a>. Benchmark numbers are Artificial Analysis' or the vendors' own, not our tests.</p>
+      <div class="cta-row"><a class="btn btn-primary" href="#pick">Pick for me</a> <a class="btn" href="#results">Measured cost per task</a> <a class="btn" href="#calc">Calculator</a> <a class="btn" href="#where">Where each runs</a></div>
+    </section>
+
+    <section class="panel" id="glance">
+      <h2>The three at a glance</h2>
+      <div class="table-scroll"><table>
+        <thead><tr><th></th><th>Gemini 4 Neon</th><th>Claude Opus 5.5</th><th>GPT-6.2 Astra</th></tr></thead>
+        <tbody>
+          <tr><td>Released</td><td>Nov 18, 2026</td><td>Not new (on our pages since Oct 2026)</td><td>Nov 17, 2026</td></tr>
+          <tr><td>API price per 1M tokens (input / cached / output)</td><td><strong>$3 / $0.15 / $15</strong></td><td>$4 / $0.20 / $20</td><td>$8 / $0.40 / $40 (2x input, 1.5x output over 272K)</td></tr>
+          <tr><td>AA Coding Agent Index v2.1 (best run)</td><td><strong>59</strong> (xhigh, Antigravity CLI)</td><td>58 (max, Claude Code)</td><td>53 (max or xhigh, Codex)</td></tr>
+          <tr><td>Measured cost per task</td><td>$6.86</td><td>$12.61</td><td>$5.12 (max), $3.20 (xhigh)</td></tr>
+          <tr><td>Measured time per task</td><td>30.5 min</td><td>about 65 min (AA lists 1.1 h)</td><td>25.1 min (max), 16.5 min (xhigh)</td></tr>
+          <tr><td>Tokens per task</td><td>13.8M</td><td>15.9M</td><td>4.67M (max), 3.09M (xhigh)</td></tr>
+          <tr><td>Cheapest subscription that includes it</td><td>Google AI Pro $19.99 (Antigravity)</td><td>Claude plans for Claude Code; Google AI Pro $19.99 in Antigravity</td><td>ChatGPT Plus $20 (Codex)</td></tr>
+          <tr><td>Context window</td><td>1M in the API, 512K in Antigravity</td><td>1M</td><td>Not checked for this page</td></tr>
+        </tbody>
+      </table></div>
+      <p class="note">Sources: prices from the <a href="https://ai.google.dev/gemini-api/docs/pricing" rel="noopener">Gemini API pricing page</a> and <a href="https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing" rel="noopener">GitHub's Copilot models and pricing</a> (same list prices for Opus 5.5 and Astra); index, cost, time and tokens from Artificial Analysis (<a href="https://artificialanalysis.ai/agents/coding-agents/comparisons/antigravity-cli-vs-claude-code" rel="noopener">Antigravity CLI vs Claude Code</a>, <a href="https://artificialanalysis.ai/agents/coding-agents/codex" rel="noopener">Codex</a>), checked Nov 20, 2026. AA's cost is pay-per-token API cost, not what a subscription charges you. Context sizes for Opus 5.5 from <a href="https://artificialanalysis.ai/models/comparisons/gemini-4-neon-vs-claude-opus-5-5" rel="noopener">AA's model comparison</a>.</p>
+    </section>
+
+    <section class="panel" id="results">
+      <h2>Measured cost per coding task</h2>
+      <p>Artificial Analysis runs each model in its own lab's agent (Neon in Antigravity CLI, Claude in Claude Code, GPT in Codex) on three benchmarks: FrontierCode-AA 2.0, Terminal-Bench 4.1 and SWE-Atlas-QnA-AA. That makes it a test of model plus harness together, which is how you'd actually use them.</p>
+      <div class="table-scroll"><table>
+        <thead><tr><th>Agent + model (effort)</th><th>Index</th><th>Cost / task</th><th>Time / task</th><th>Tokens / task</th></tr></thead>
+        <tbody>
+          <tr class="hi"><td>Antigravity CLI + Gemini 4 Neon (xhigh)</td><td>59</td><td>$6.86</td><td>30.5 min</td><td>13.8M</td></tr>
+          <tr><td>Claude Code + Claude Fable 5.2 (xhigh)</td><td>58</td><td>$15.47</td><td>53.3 min</td><td>9.75M</td></tr>
+          <tr><td>Claude Code + Claude Fable 5.2 (high)</td><td>58</td><td>$7.51</td><td>31.3 min</td><td>5.12M</td></tr>
+          <tr class="hi"><td>Claude Code + Claude Opus 5.5 (max)</td><td>58</td><td>$12.61</td><td>1.1 h</td><td>15.9M</td></tr>
+          <tr><td>Antigravity CLI + Gemini 4 Carbon (high)</td><td>55</td><td>$9.75</td><td>33.6 min</td><td>15.4M</td></tr>
+          <tr class="hi"><td>Codex + GPT-6.2 Astra (max)</td><td>53</td><td>$5.12</td><td>25.1 min</td><td>4.67M</td></tr>
+          <tr><td>Codex + GPT-6.2 Astra (xhigh)</td><td>53</td><td>$3.20</td><td>16.5 min</td><td>3.09M</td></tr>
+          <tr><td>Antigravity CLI + Gemini 4 Hydrogen (xhigh)</td><td>52</td><td>$4.45</td><td>32.1 min</td><td>18.5M</td></tr>
+          <tr><td>Codex + GPT-6.2 Sol (xhigh)</td><td>50</td><td>$0.90</td><td>12.6 min</td><td>3.26M</td></tr>
+        </tbody>
+      </table></div>
+      <p class="note">Source: Artificial Analysis Coding Agent Index v2.1, <a href="https://artificialanalysis.ai/agents/coding-agents/comparisons/antigravity-cli-vs-claude-code" rel="noopener">Antigravity CLI vs Claude Code</a> and <a href="https://artificialanalysis.ai/agents/coding-agents/codex" rel="noopener">Codex</a> pages, checked Nov 20, 2026. Unrounded: Neon 58.6 (per Google), Fable 5.2 xhigh 58.5 and Opus 5.5 max 58.2 (per third-party trackers of AA's data). AA's last version (v2.0, Oct 29) had Opus 5.5 at $11.42, so these numbers move between versions.</p>
+      <p><strong>What this means:</strong></p>
+      <ul>
+        <li><strong>Neon vs Opus 5.5:</strong> same score within a point, 46% lower cost per task, and less than half the wall time. That part of the hype holds up.</li>
+        <li><strong>Neon vs Fable 5.2 (high):</strong> same score, $6.86 vs $7.51, about the same time. If you already live in Claude Code, Fable at high is nearly as cheap.</li>
+        <li><strong>Neon vs Astra:</strong> Astra is the cheaper and faster agent per task, but 6 points lower. Per-token price is the wrong number to compare here.</li>
+        <li><strong>Neon is chatty.</strong> 177 turns per task vs 95 for Fable 5.2 (xhigh), and AA's general index page calls Neon at xhigh "very verbose" (283M output tokens on that suite vs a 65.4M median). Its cost advantage comes from lower token prices, not from using fewer tokens.</li>
+      </ul>
+    </section>
+
+    <section class="panel picker" id="pick">
+      <h2>Which one should you use?</h2>
+      <p class="sub">Two questions. Runs in your browser.</p>
+      <div class="calc-grid">
+        <div><label for="pk-plan">What you already pay for</label>
+          <select id="pk-plan">
+            <option value="gpro">Google AI Pro ($19.99) or Ultra</option>
+            <option value="claude">Claude Pro or Max (Claude Code)</option>
+            <option value="chatgpt">ChatGPT Plus or Pro (Codex)</option>
+            <option value="copilotplus">GitHub Copilot Pro+, Max, Business or Enterprise</option>
+            <option value="copilotpro">GitHub Copilot Pro ($10) or Free</option>
+            <option value="cursor">Cursor</option>
+            <option value="api">Nothing yet, or an API key</option>
+          </select></div>
+        <div><label for="pk-pri">What matters most</label>
+          <select id="pk-pri">
+            <option value="score">Best results on hard agent tasks</option>
+            <option value="cost">Lowest cost per task</option>
+            <option value="speed">Fastest finish</option>
+          </select></div>
+      </div>
+      <div id="pk-out" style="margin-top:14px" aria-live="polite"></div>
+    </section>
+
+    <section class="panel picker" id="calc">
+      <h2>Cost per task calculator</h2>
+      <p class="sub">Pay-per-token prices (API, Copilot usage billing, Cursor prepaid credit). Runs in your browser.</p>
+      <div class="calc-grid">
+        <div><label for="c-mode">Estimate from</label>
+          <select id="c-mode"><option value="aa">Artificial Analysis measured cost per task</option><option value="tok">My own token counts</option></select></div>
+        <div><label for="c-n">Tasks per month</label><input id="c-n" type="number" min="0" step="5" value="40" /></div>
+        <div class="tok"><label for="c-in">Input tokens per task (thousands)</label><input id="c-in" type="number" min="0" step="50" value="1000" /></div>
+        <div class="tok"><label for="c-cache">Share of input that's cached (%)</label><input id="c-cache" type="number" min="0" max="100" step="5" value="90" /></div>
+        <div class="tok"><label for="c-out">Output tokens per task, incl. thinking (thousands)</label><input id="c-out" type="number" min="0" step="5" value="30" /></div>
+        <div class="tok"><label for="c-scale">Adjust for each model's token appetite?</label>
+          <select id="c-scale"><option value="no">No, same tokens for all</option><option value="yes">Yes, scale by AA tokens per task (Neon = 1x)</option></select></div>
+      </div>
+      <div id="c-out-box" style="margin-top:14px" aria-live="polite"></div>
+      <p class="note">"Copilot credits" uses $0.01 per credit, so Copilot Pro+'s 7,000 monthly credits are $70 of list-price usage. Measured mode uses each lab's own agent; the same model in Copilot or Cursor may use more or fewer tokens. Token mode leaves out cache-write fees (Claude and OpenAI charge them) and the over-272K surcharge on Astra and Sol. Carbon's price is $2/$10 through Nov 30 and $4/$20 from Dec 1, 2026.</p>
+    </section>
+
+    <section class="panel" id="where">
+      <h2>Where each one runs</h2>
+      <div class="table-scroll"><table>
+        <thead><tr><th>Where</th><th>Gemini 4 Neon</th><th>Claude Opus 5.5</th><th>GPT-6.2 Astra</th></tr></thead>
+        <tbody>
+          <tr><td>Google Antigravity (app, CLI, IDE extensions)</td><td><strong>Yes</strong>, paid Google AI Pro ($19.99) and Ultra, plus Gemini Enterprise. Default model for new chats. Orchestrator (Neon) pairs it with Hydrogen. 512K context.</td><td>Yes, Google AI Pro (paid, not trial) and Ultra</td><td>No</td></tr>
+          <tr><td>Claude Code</td><td>No</td><td><strong>Yes</strong>, on Claude plans or an API key</td><td>No</td></tr>
+          <tr><td>OpenAI Codex</td><td>No</td><td>No</td><td><strong>Yes</strong>, ChatGPT Plus ($20) and up (not Free or Go)</td></tr>
+          <tr><td>GitHub Copilot</td><td>Pro+ ($39), Max, Business, Enterprise at $3/$15 list price (GA Nov 18, gradual rollout)</td><td>Pro+ and up at list price</td><td>Pro+ and up at list price</td></tr>
+          <tr><td>Cursor</td><td>Yes, outside included usage: prepaid credit at $3/$15 on The X Subscription (Premium $30 and up), or the Other Models pool on legacy plans</td><td>Yes, Premium and up at API price</td><td>No (Cursor listed no GPT-6 models at our Nov 18 check)</td></tr>
+          <tr><td>API</td><td><code>gemini-4-neon</code>, paid tier only, thinking levels low / medium / high (default) / xhigh</td><td>Anthropic API</td><td>OpenAI API</td></tr>
+        </tbody>
+      </table></div>
+      <p class="note">Sources: <a href="https://antigravity.google/docs/models/" rel="noopener">Antigravity models docs</a>, <a href="https://antigravity.google/blog/gemini-4-neon-in-google-antigravity/" rel="noopener">Antigravity blog (Nov 18)</a>, <a href="https://github.blog/changelog/2026-11-18-gemini-4-neon-in-github-copilot/" rel="noopener">GitHub changelog (Nov 18)</a>, <a href="https://cursor.com/docs/models/gemini-4-neon" rel="noopener">Cursor Neon docs</a>, <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/" rel="noopener">Google's announcement</a>. Opus 5.5 and Astra availability from our <a href="../claude-fable-5-2-vs-opus-5-5/" rel="noopener">Fable vs Opus</a> and <a href="../gpt-6-2-astra-vs-sol/" rel="noopener">Astra vs Sol</a> guides.</p>
+      <p><strong>The plan angle:</strong> Google AI Pro at $19.99 now gives you Neon, Claude Opus 5.5 and Sonnet 5.5 in one Antigravity quota. Google doesn't publish quota numbers, so we can't say how many Neon tasks that covers. On Copilot Pro+, $70 of credits is roughly 10 tasks of AA's size on Neon or 5 on Opus 5.5, if Copilot's agent uses similar token counts (unverified).</p>
+    </section>
+
+    <section class="panel" id="carbon">
+      <h2>Neon vs Carbon after Dec 1</h2>
+      <p>Gemini 4 Carbon (and Argon) go from $2/$10 to <strong>$4/$20 per million tokens on Dec 1, 2026</strong>. Neon stays at $3/$15, so from Dec 1 Neon is 25% cheaper per token than Google's flagship. Until Nov 30, Carbon is still cheaper per token.</p>
+      <p>On Artificial Analysis' coding agent test Neon already wins both ways: 59 vs 55, and $6.86 vs $9.75 a task. Google's model card says Neon is adapted from Carbon. Unless you're on Google AI Ultra and need Carbon's long-horizon depth, there's little reason to pick Carbon over Neon for coding after Dec 1. More: <a href="../gemini-4-carbon-vs-hydrogen/" rel="noopener">Gemini 4 Carbon vs Hydrogen</a>.</p>
+    </section>
+
+    <section class="panel" id="verdict">
+      <h2>Verdict</h2>
+      <ul>
+        <li><strong>Paying per token for hard agent work:</strong> Neon in Antigravity CLI. Same results as Opus 5.5 at about half the cost.</li>
+        <li><strong>On a Claude plan:</strong> don't switch just for this. Try Fable 5.2 at high effort, which matched Opus 5.5 at $7.51 a task.</li>
+        <li><strong>On a budget:</strong> Codex with GPT-6.2 Astra at xhigh ($3.20, score 53) or Sol at xhigh ($0.90, score 50). Most daily tasks don't need a 59.</li>
+        <li><strong>Cheapest way to try Neon on a subscription:</strong> Google AI Pro at $19.99 in Antigravity.</li>
+        <li><strong>Copilot Pro+ users:</strong> Neon is now the cheaper pick per token of the three. Just don't expect AA's numbers to carry over exactly, since AA didn't test Copilot's agent with Neon.</li>
+      </ul>
+    </section>
+
+    <section class="panel" id="unknowns">
+      <h2>What we couldn't confirm</h2>
+      <ul>
+        <li><strong>How fast Neon uses Antigravity quota.</strong> Google publishes no quota numbers, for Neon or Orchestrator (Neon).</li>
+        <li><strong>Cost in Copilot and Cursor.</strong> The list price is the same, but AA only measured Neon in Antigravity CLI. Other agents may use more or fewer tokens.</li>
+        <li><strong>CursorBench.</strong> Google's model card lists Neon at 65.4% vs Opus 5.5 at 58.1% on CursorBench 4.1, and Cursor posted 63.7% for Neon at default effort. That's Cursor's in-house benchmark, not independently checked.</li>
+        <li><strong>"#1 on the coding agent index."</strong> True when we checked, but by 0.1 to 0.4 points over Fable 5.2 and Opus 5.5. Treat it as a tie.</li>
+        <li><strong>Carbon's $9.75.</strong> AA's table doesn't say whether that uses Carbon's current $2/$10 or the Dec 1 $4/$20 price.</li>
+      </ul>
+    </section>
+    <!-- PRERENDER:try -->
+    <section class="panel try" id="try">
+      <h2>Ready to try one?</h2>
+      <p class="sub">Every tool here can be cancelled monthly, so the fastest way to decide is a real task on each.</p>
+      <div class="try-grid">
+        <div class="try-item">
+          <h3>Google Antigravity</h3>
+          <p class="meta"><strong>Start on:</strong> Google AI Pro $19.99. Most individuals: quota refreshes every five hours up to a weekly limit, with Claude Opus/Sonnet 5.5. Gemini 4 Argon has its own weekly-only quota on Pro (no five-hour refresh). Claude 5.5 needs a paid plan, not the free trial; Argon works on paid Pro or a trial from an eligible premium device.</p>
+          <div class="cta-row">
+            <a href="https://antigravity.google" rel="noopener" class="btn btn-primary" data-link="antigravity">Try Google Antigravity free &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-antigravity">All Google Antigravity plans</a>
+          </div>
+        </div>
+        <div class="try-item">
+          <h3>Claude Code</h3>
+          <p class="meta"><strong>Start on:</strong> Pro $20. Start here. Includes Claude Code with usage limits; $17/mo if you pay $200 for the year.</p>
+          <div class="cta-row">
+            <a href="https://claude.com/product/claude-code" rel="noopener" class="btn btn-primary" data-link="claude-code">Get Claude Code &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-claude-code">All Claude Code plans</a>
+          </div>
+        </div>
+        <div class="try-item">
+          <h3>OpenAI Codex</h3>
+          <p class="meta"><strong>Start on:</strong> Plus $20. Most developers: Codex in the CLI, IDE extension, web and iOS, plus cloud tasks and automatic code review.</p>
+          <div class="cta-row">
+            <a href="https://developers.openai.com/codex" rel="noopener" class="btn btn-primary" data-link="codex">Try OpenAI Codex free &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-codex">All OpenAI Codex plans</a>
+          </div>
+        </div>
+        <div class="try-item">
+          <h3>GitHub Copilot</h3>
+          <p class="meta"><strong>Start on:</strong> Pro $10. The best value for most individuals: 1,500 AI credits and a choice of models including Claude and GPT. Verified teachers and popular open-source maintainers may get it free.</p>
+          <div class="cta-row">
+            <a href="https://github.com/features/copilot" rel="noopener" class="btn btn-primary" data-link="copilot">Try GitHub Copilot free &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-copilot">All GitHub Copilot plans</a>
+          </div>
+        </div></div>
+      
+    </section>
+    <!-- /PRERENDER:try -->
+
+    <section class="panel" id="faq">
+      <h2>FAQ</h2>
+      <h3>Is Gemini 4 Neon better than Claude Opus 5.5 for coding?</h3>
+      <p>On Artificial Analysis' Coding Agent Index v2.1 (checked Nov 20, 2026), Neon at xhigh in Antigravity CLI scored 59 (58.6) and Opus 5.5 at max in Claude Code scored 58 (58.2). That is a tie in practice. The real gap is cost and time: $6.86 and 30.5 minutes per task for Neon vs $12.61 and about 65 minutes for Opus 5.5, at API list prices.</p>
+      <h3>How much does Gemini 4 Neon cost?</h3>
+      <p>Gemini API paid tier: $3 per million input tokens, $0.15 cached input, $15 output (thinking tokens count as output), flat across its 1M-token context. No free API tier. GitHub Copilot and Cursor bill the same $3/$15 list price. Claude Opus 5.5 is $4/$20 and GPT-6.2 Astra is $8/$40.</p>
+      <h3>Is GPT-6.2 Astra more expensive than Neon?</h3>
+      <p>Per token, yes: $8/$40 vs $3/$15. Per task, no: Artificial Analysis measured Codex with Astra at max at $5.12 a task (score 53) and at xhigh at $3.20 (score 53), because Astra used about 3 to 4.7M tokens per task vs 13.8M for Neon. Neon scores 6 points higher, though.</p>
+      <h3>Where can I use Gemini 4 Neon?</h3>
+      <p>Gemini API (paid tier) and AI Studio, Google Antigravity on paid Google AI Pro ($19.99) and Ultra (it is the default model there, with a 512K context window in Antigravity), GitHub Copilot Pro+, Max, Business and Enterprise, Cursor on Premium and up from prepaid credit, and the Gemini app on Pro and Ultra.</p>
+      <h3>Will Neon be cheaper than Gemini 4 Carbon?</h3>
+      <p>From Dec 1, 2026, yes per token: Carbon goes from $2/$10 to $4/$20 while Neon stays $3/$15. Until Nov 30, Carbon is cheaper per token. On Artificial Analysis' coding agent test Neon already cost less per task ($6.86 vs $9.75) and scored higher (59 vs 55).</p>
+    </section>
+    <!-- PRERENDER:stack -->
+    <section class="panel stack" id="ship">
+      <h2>Ship your app: the rest of the stack</h2>
+      <p class="sub">Picked your AI coding tool? These are the usual next costs. Free tiers first, and prices checked Oct 20, 2026 on each vendor's pricing page.</p>
+      <div class="stack-grid">
+        <div class="stack-group">
+          <h3>Code review</h3>
+          <p class="meta">AI writes code fast; something should read it before it ships.</p>
+          <ul class="stack-list"><li><a href="https://www.coderabbit.ai" rel="noopener" data-link="coderabbit"><strong>CodeRabbit</strong></a><span>AI review on every pull request, in GitHub or GitLab</span><small>Free for public repos; Essentials $24/user/mo billed annually ($30 monthly)</small></li></ul>
+          <p class="meta tiny">Already paying for Copilot or Codex Plus? Both include AI pull request review, so try that first.</p>
+        </div>
+        <div class="stack-group">
+          <h3>Hosting</h3>
+          <p class="meta">Where your app lives once it works on your machine.</p>
+          <ul class="stack-list"><li><a href="https://vercel.com" rel="noopener" data-link="vercel"><strong>Vercel</strong></a><span>Next.js and front-end apps</span><small>Hobby free (personal, non-commercial); Pro $20/mo per developer seat</small></li><li><a href="https://join.netlify.com/sfop8nkiwjbv" rel="sponsored nofollow noopener" data-link="netlify"><strong>Netlify</strong> <span class="tag ref">referral</span></a><span>Static sites and front ends, unlimited Pro members</span><small>Free; Personal $9/mo; Pro $20/mo with unlimited members</small></li><li><a href="https://railway.com" rel="noopener" data-link="railway"><strong>Railway</strong></a><span>Back ends, workers and databases with no server setup</span><small>Free trial $5 credit; Hobby $5/mo incl. $5 usage; Pro $20/mo</small></li><li><a href="https://render.com" rel="noopener" data-link="render"><strong>Render</strong></a><span>Heroku-style web services, cron jobs and Postgres</span><small>Hobby $0 + compute; Pro $25/mo + compute</small></li></ul>
+          
+        </div>
+        <div class="stack-group">
+          <h3>Database and auth</h3>
+          <p class="meta">Most AI-built apps need a Postgres database and logins.</p>
+          <ul class="stack-list"><li><a href="https://supabase.com" rel="noopener" data-link="supabase"><strong>Supabase</strong></a><span>Postgres + auth + storage in one; Lovable and Bolt connect to it</span><small>Free (2 projects, pause after 1 week idle); Pro from $25/mo</small></li><li><a href="https://neon.com" rel="noopener" data-link="neon"><strong>Neon</strong></a><span>Serverless Postgres with branching, pay for what you use</span><small>Free (100 projects); paid plans usage-based</small></li></ul>
+          
+        </div>
+        <div class="stack-group">
+          <h3>Domain name</h3>
+          <p class="meta">A real domain for your app.</p>
+          <ul class="stack-list"><li><a href="https://www.cloudflare.com/products/registrar/" rel="noopener" data-link="cloudflare"><strong>Cloudflare Registrar</strong></a><span>Domains at cost with no markup</span><small>Wholesale price per TLD</small></li><li><a href="https://porkbun.com" rel="noopener" data-link="porkbun"><strong>Porkbun</strong></a><span>Cheap domains with free WHOIS privacy</span><small>Varies by TLD</small></li><li><a href="https://www.namecheap.com" rel="noopener" data-link="namecheap"><strong>Namecheap</strong></a><span>Popular registrar with hosting and email add-ons</span><small>Varies by TLD</small></li></ul>
+          
+        </div></div>
+      <p class="meta tiny aff-note">Referral link: we may earn a commission at no extra cost to you. It never changes our picks.</p>
+    </section>
+    <!-- /PRERENDER:stack -->
+
+    <section class="panel" id="related">
+      <h2>Related guides</h2>
+      <ul class="related">
+        <li><a href="../gemini-4-carbon-vs-hydrogen/">Gemini 4 Carbon vs Hydrogen<small>The Dec 1 price doubling, and where each runs</small></a></li>
+        <li><a href="../gpt-6-2-astra-vs-sol/">GPT-6.2 Astra vs Sol<small>Which one to code with in Codex</small></a></li>
+        <li><a href="../claude-fable-5-2-vs-opus-5-5/">Claude Fable 5.2 vs Opus 5.5<small>Is 2x the price worth it?</small></a></li>
+        <li><a href="../ai-coding-cost-per-task/">What one AI coding task costs<small>Cost per task across models</small></a></li>
+        <li><a href="../cursor-vs-antigravity/">Cursor vs Antigravity<small>Where Gemini 4 runs best</small></a></li>
+        <li><a href="../mai-code-2-vs-code-2-flash/">MAI Code 2 vs Code 2 Flash<small>Microsoft's cheap Copilot models</small></a></li>
+        <li><a href="../claude-code-alternatives/">Claude Code alternatives<small>Where else you get Opus 5.5</small></a></li>
+        <li><a href="../usage-limits-compared/">Usage limits compared<small>How far each plan goes</small></a></li>
+      </ul>
+    </section>
+
+    <aside class="sponsor" id="sponsor" aria-label="Sponsor slot">
+      <strong>Sponsor slot</strong> <span class="meta">(Sponsored placements are labeled and never affect rankings or verdicts)</span><br />
+      Reach developers comparing frontier coding models this week.
+      <div style="margin-top:10px" class="meta">Founding sponsor rates available now. Email <a href="mailto:sponsors@codetoolpicker.com?subject=CodeToolPicker%20sponsorship">sponsors@codetoolpicker.com</a> &middot; <a href="../advertise/">See packages</a></div>
+    </aside>
+
+    <section class="panel" id="disclosure">
+      <h2>Editorial disclosure</h2>
+      <p><strong>Rankings are not for sale.</strong> Sponsored placements and affiliate links are always labeled, and they never change our recommendations, quiz results, prices, or comparison data. <strong>Links marked "referral" are affiliate links (Netlify):</strong> if you buy through them, we may earn a commission at no extra cost to you. Every other link is a plain link that pays us nothing, and pricing source links are never affiliate links. <a href="../advertise/#policy">Editorial policy</a>.</p>
+    </section>
+    </article>
+
+    <footer>
+      <p><a href="../">← Back to the AI Coding Tool Picker</a> · <a href="../ai-coding-tool-pricing/">Pricing &amp; plans calculator</a></p>
+      <p>More guides: <a href="../ai-coding-cost-per-task/">Cost per task</a> · <a href="../gemini-4-carbon-vs-hydrogen/">Gemini 4 Carbon vs Hydrogen</a> · <a href="../gpt-6-2-astra-vs-sol/">GPT-6.2 Astra vs Sol</a> · <a href="../cursor-vs-antigravity/">Cursor vs Antigravity</a></p>
+      <p>Not affiliated with Google, Anthropic, OpenAI, GitHub, Microsoft, Artificial Analysis or Anysphere (Cursor).</p>
+      <p>Contact, sponsorships, and corrections: <a href="mailto:sponsors@codetoolpicker.com">sponsors@codetoolpicker.com</a> · <a href="../advertise/">Advertise with us</a></p>
+      <p class="meta" id="analytics-note">We use GoatCounter, a privacy-friendly counter with no cookies, to count visits.</p>
+    </footer>
+  </div>
+  <script>
+    (function () {
+      var plan = document.getElementById("pk-plan"), pri = document.getElementById("pk-pri"), out = document.getElementById("pk-out");
+      if (!plan || !out) return;
+      var R = {
+        "gpro|score": ["Gemini 4 Neon in Antigravity", "It's already in your plan and is the default model. Set thinking to Extra (xhigh in the CLI) for hard tasks: that's the setup that scored 59."],
+        "gpro|cost": ["Orchestrator (Neon)", "Neon plans, Hydrogen does the edits and tests. Google says this stretches your quota further. Quota numbers aren't published."],
+        "gpro|speed": ["Gemini 4 Neon at High or Medium", "Extra thinking is what made Neon slow on Artificial Analysis' general suite. Default High is a good middle."],
+        "claude|score": ["Stay on Claude Code", "Opus 5.5 at max and Fable 5.2 at high both scored 58, a point behind Neon. Not worth switching tools for."],
+        "claude|cost": ["Claude Fable 5.2 at high effort", "Same 58 as Opus 5.5 at max, but $7.51 a task instead of $12.61, and half the time. Check how it counts against your plan limits."],
+        "claude|speed": ["Fable 5.2 at high, not Opus 5.5 at max", "About 31 minutes per task vs about 65 on Artificial Analysis' runs."],
+        "chatgpt|score": ["GPT-6.2 Astra, or add Google AI Pro for Neon", "Astra at max scored 53, 6 points under Neon. If hard agent tasks are your main work, $19.99 for Google AI Pro gets you Neon in Antigravity."],
+        "chatgpt|cost": ["GPT-6.2 Astra at xhigh or Sol at xhigh", "$3.20 and $0.90 a task at API prices, scores 53 and 50. Cheaper than Neon per task."],
+        "chatgpt|speed": ["GPT-6.2 Astra at xhigh", "16.5 minutes a task, the fastest of the strong runs here."],
+        "copilotplus|score": ["Gemini 4 Neon in the model picker", "List price $3/$15, cheaper per token than Opus 5.5 ($4/$20) and Astra ($8/$40). Rollout is gradual, so it may not show yet."],
+        "copilotplus|cost": ["Neon for hard work, a cheaper model for the rest", "Each Neon task of AA's size is about 686 credits at list price. Use a lighter model for small edits."],
+        "copilotplus|speed": ["Try Neon, then compare with Astra", "In their own agents Astra was faster per task. Copilot's agent wasn't tested, so time a real task on each."],
+        "copilotpro|score": ["Not on your plan", "Neon, Opus 5.5 and Astra start at Copilot Pro+ ($39). Google AI Pro ($19.99) is the cheaper way to get Neon."],
+        "copilotpro|cost": ["Not on your plan", "Cheapest route to Neon: a Gemini API key (pay per task) or Google AI Pro at $19.99."],
+        "copilotpro|speed": ["Not on your plan", "Neon needs Copilot Pro+ or higher."],
+        "cursor|score": ["Gemini 4 Neon from prepaid credit", "Billed at $3/$15 outside included usage, on Premium ($30) and up. Opus 5.5 is $4/$20 there. Astra isn't in Cursor."],
+        "cursor|cost": ["Neon over Opus 5.5 in Cursor", "Same billing route, 25% lower token price. Cursor says Neon at default effort sets its cost-performance frontier on CursorBench (Cursor's own test)."],
+        "cursor|speed": ["Neon at default effort", "Leave it on High; xhigh is slower and costs more."],
+        "api|score": ["Gemini 4 Neon via the API in Antigravity CLI", "Top score, $6.86 a task in AA's runs. Or Google AI Pro at $19.99 if you'd rather have a flat fee."],
+        "api|cost": ["GPT-6.2 Sol or Astra in Codex", "$0.90 to $3.20 a task at xhigh. Neon is about 2x Astra xhigh per task."],
+        "api|speed": ["GPT-6.2 Astra in Codex", "16.5 to 25 minutes a task vs 30.5 for Neon in AA's runs."]
+      };
+      function pick() {
+        var r = R[plan.value + "|" + pri.value];
+        out.innerHTML = '<p class="big">' + r[0] + '</p><p>' + r[1] + '</p>';
+      }
+      [plan, pri].forEach(function (el) { el.addEventListener("change", pick); });
+      pick();
+    })();
+    (function () {
+      var ids = ["c-mode", "c-n", "c-in", "c-cache", "c-out", "c-scale"], el = {};
+      ids.forEach(function (i) { el[i] = document.getElementById(i); });
+      var box = document.getElementById("c-out-box");
+      if (!box) return;
+      // AA = measured $/task (Coding Agent Index v2.1, Nov 20, 2026); t = tokens per task (millions)
+      var M = [
+        { n: "Gemini 4 Neon (xhigh)", i: 3, c: 0.15, o: 15, aa: 6.86, t: 13.8, s: 59 },
+        { n: "Claude Opus 5.5 (max)", i: 4, c: 0.20, o: 20, aa: 12.61, t: 15.9, s: 58 },
+        { n: "Claude Fable 5.2 (high)", i: 8, c: 0.20, o: 40, aa: 7.51, t: 5.12, s: 58 },
+        { n: "GPT-6.2 Astra (max)", i: 8, c: 0.40, o: 40, aa: 5.12, t: 4.67, s: 53 },
+        { n: "GPT-6.2 Astra (xhigh)", i: 8, c: 0.40, o: 40, aa: 3.20, t: 3.09, s: 53 },
+        { n: "Gemini 4 Carbon (high), through Nov 30", i: 2, c: 0.10, o: 10, aa: null, t: 15.4, s: 55 },
+        { n: "Gemini 4 Carbon (high), from Dec 1", na: "Gemini 4 Carbon (high)", i: 4, c: 0.20, o: 20, aa: 9.75, t: 15.4, s: 55 },
+        { n: "GPT-6.2 Sol (xhigh)", i: 2, c: 0.10, o: 10, aa: 0.90, t: 3.26, s: 50 }
+      ];
+      function money(n) { return "$" + (n >= 100 ? Math.round(n).toLocaleString() : n.toFixed(2)); }
+      function calc() {
+        var mode = el["c-mode"].value, n = Math.max(0, parseFloat(el["c-n"].value) || 0);
+        Array.prototype.forEach.call(document.querySelectorAll("#calc .tok"), function (d) { d.style.display = mode === "tok" ? "" : "none"; });
+        var inp = Math.max(0, parseFloat(el["c-in"].value) || 0) * 1000, cp = Math.min(100, Math.max(0, parseFloat(el["c-cache"].value) || 0)) / 100;
+        var outp = Math.max(0, parseFloat(el["c-out"].value) || 0) * 1000, sc = el["c-scale"].value === "yes";
+        var rows = M.map(function (m) {
+          var per;
+          if (mode === "aa") { if (m.aa == null) return ""; per = m.aa; }
+          else {
+            var k = sc ? m.t / 13.8 : 1;
+            per = ((inp * (1 - cp) * m.i) + (inp * cp * m.c) + (outp * m.o)) * k / 1e6;
+          }
+          return '<tr><td>' + (mode === "aa" && m.na ? m.na : m.n) + '</td><td>' + m.s + '</td><td>' + money(per) + '</td><td>' + money(per * n) + '</td><td>' + Math.round(per * 100).toLocaleString() + '</td></tr>';
+        }).join("");
+        box.innerHTML = '<div class="table-scroll"><table><thead><tr><th>Model</th><th>AA index</th><th>Per task</th><th>Per month</th><th>Copilot credits per task</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
+      }
+      ids.forEach(function (i) { el[i].addEventListener("input", calc); el[i].addEventListener("change", calc); });
+      calc();
+    })();
+  </script>
+  <script data-goatcounter="https://codetoolpicker.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

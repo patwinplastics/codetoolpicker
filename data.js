@@ -179,7 +179,7 @@ window.TOOL_DATA = [
     freeTier: true,
     plans: [
       { name: "Free", price: 0, note: "Basic weekly limit, unlimited Tab and Command requests, Gemini 3.8 Flash" },
-      { name: "Google AI Pro", price: 19.99, note: "Quota refreshes every 5 hours up to a weekly limit; Gemini 4 Argon on its own weekly-only quota; Claude Opus/Sonnet 5.5 (paid, not trial)" },
+      { name: "Google AI Pro", price: 19.99, note: "Quota refreshes every 5 hours up to a weekly limit; Gemini 4 Neon and Orchestrator (Neon) since Nov 18, 2026; Gemini 4 Argon on its own weekly-only quota; Claude Opus/Sonnet 5.5 (paid, not trial)" },
       { name: "Google AI Ultra 5x", price: 99.99, note: "5x the Pro quota" },
       { name: "Google AI Ultra 20x", price: 199.99, note: "20x the Pro quota, highest weekly limits" },
       { name: "Gemini Enterprise", price: 30, note: "Teams via Google Cloud: Standard/Plus from $30/seat, or pay-as-you-go with $0 seat fee" }
@@ -187,7 +187,7 @@ window.TOOL_DATA = [
     strengths: ["Claude Opus and Sonnet 5.5 included in the $19.99 Pro quota", "Free tier with unlimited Tab completions", "Agent app, own IDE, CLI, and extensions for VS Code, JetBrains, Zed and Xcode"],
     limits: ["Quotas aren't published as numbers", "No bring-your-own API key", "Individual plans need a personal Google account; teams go through Google Cloud", "Gemini 4 Argon isn't in the standalone Antigravity IDE (App, CLI and extensions only)"],
     formFactor: "Agent app + IDE + CLI",
-    models: "Gemini 4 Argon, Gemini 4 Hydrogen (paid Pro and Ultra), Gemini 4 Carbon (Ultra only) and 3.8 Flash, plus Claude Opus/Sonnet 5.5 on Pro and Ultra",
+    models: "Gemini 4 Neon (Nov 18, 2026; default model on paid Pro and Ultra), Gemini 4 Argon, Gemini 4 Hydrogen (paid Pro and Ultra), Gemini 4 Carbon (Ultra only) and 3.8 Flash, plus Claude Opus/Sonnet 5.5 on Pro and Ultra",
     affiliate: false,
   },
   {
@@ -412,9 +412,9 @@ window.PRICING = {
       { name: "Gemini Enterprise (Standard/Plus)", monthly: 30, annual: null, seat: true, note: "From $30/seat via Google Cloud; a pay-as-you-go option has a $0 seat fee" }
     ],
     extraCost: "Usage beyond your quota needs purchased AI credits at Gemini Enterprise consumption prices (you choose Never or Always). Paid tiers are Google AI subscriptions, so you can't buy Antigravity on its own.",
-    glance: { free: "Yes: basic weekly limit, unlimited Tab, Gemini 3.8 Flash", models: "Gemini 4 Argon + Claude Opus/Sonnet 5.5 inside the plan quota (Pro+)", agents: "Agent-first: multi-agent app, scheduled tasks, CLI, SDK", surface: "Own agent app + IDE, CLI, extensions for VS Code, JetBrains, Zed, Xcode", team: "From $30/seat via Google Cloud" },
+    glance: { free: "Yes: basic weekly limit, unlimited Tab, Gemini 3.8 Flash", models: "Gemini 4 Neon and Argon + Claude Opus/Sonnet 5.5 inside the plan quota (Pro+)", agents: "Agent-first: multi-agent app, scheduled tasks, CLI, SDK", surface: "Own agent app + IDE, CLI, extensions for VS Code, JetBrains, Zed, Xcode", team: "From $30/seat via Google Cloud" },
     guide: [
-      ["Free", "Try the agent with Gemini 3.8 Flash on a weekly quota. Claude Sonnet/Opus 4.6 and GPT-OSS 120B are on Free until Google removes them on Nov 18, 2026."],
+      ["Free", "Try the agent with Gemini 3.8 Flash on a weekly quota. Claude Sonnet/Opus 4.6 and GPT-OSS 120B are on Free until Google removes them on Nov 30, 2026 (date moved from Nov 18 in Google's models docs)."],
       ["Google AI Pro $19.99", "Most individuals: quota refreshes every five hours up to a weekly limit, with Claude Opus/Sonnet 5.5. Gemini 4 Argon has its own weekly-only quota on Pro (no five-hour refresh). Claude 5.5 needs a paid plan, not the free trial; Argon works on paid Pro or a trial from an eligible premium device."],
       ["Google AI Ultra $99.99", "Daily drivers: 5x the Pro quota and priority access."],
       ["Google AI Ultra $199.99", "All-day agent use: 20x the Pro quota and the highest weekly limits."],
@@ -455,6 +455,7 @@ window.COMPARE_PAGES = {
 
 // Dated pricing changes we track. Only sourced events.
 window.PRICE_LOG = [
+  { date: "2026-11-20", text: "Google released Gemini 4 Neon on Nov 18, 2026: Gemini API paid tier only, $3 input / $0.15 cached / $15 output per million tokens, flat across 1M context. Same list price in GitHub Copilot (Pro+, Max, Business, Enterprise) and Cursor (prepaid credit, Premium and up). In Antigravity on paid Google AI Pro ($19.99) and Ultra, where it is the default model (512K context) and Orchestrator (Neon) pairs it with Hydrogen. Artificial Analysis Coding Agent Index v2.1: Antigravity CLI + Neon (xhigh) 59 at $6.86 a task vs Claude Code + Opus 5.5 (max) 58 at $12.61 and Codex + GPT-6.2 Astra (max) 53 at $5.12. From Dec 1 Neon is 25% cheaper per token than Gemini 4 Carbon ($4 / $20). Full story: https://codetoolpicker.com/gemini-4-neon-vs-opus-5-5-vs-gpt-6-2-astra/", src: "https://ai.google.dev/gemini-api/docs/pricing" },
   { date: "2026-11-19", text: "Microsoft released MAI Code 2 and MAI Code 2 Flash in GitHub Copilot on Nov 17, 2026. Copilot per million tokens: MAI Code 2 $0.50 input / $0.025 cached / $2.50 output, Flash $0.05 / $0.005 / $0.25, both 50% promotional rates until May 17, 2027, then $1 / $0.05 / $5 and $0.10 / $0.01 / $0.50. MAI Code 2 on Pro, Pro+, Max, Business and Enterprise; Flash also on Free and Student (auto model selection only). Legacy annual premium-request multipliers: MAI Code 2 1x, Flash 0.33x. Gemini 4 Neon added Nov 18 at $3 / $15 on Pro+ and up. Full story: https://codetoolpicker.com/mai-code-2-vs-code-2-flash/", src: "https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing" },
   { date: "2026-11-18", text: "OpenAI released GPT-6.2 Astra and GPT-6.2 Sol on Nov 17, 2026 in ChatGPT Work, Codex and the API (not regular Chat). API per million tokens: Astra $8 input / $0.40 cached / $40 output (GPT-6 Astra was $10 / $1 / $50); Sol $2 / $0.10 / $10, unchanged from GPT-6.1 Sol. ChatGPT plans: Plus, Pro, Enterprise and Edu (Business listed in docs, not in the launch post); Free and Go stay on GPT-6 Luna. Plus estimates per 5 hours: Astra 6-50, Sol 17-180 local messages. Ultrafast: Sol on Pro $200, both on Pro $500. GitHub Copilot added both on Pro+, Max, Business and Enterprise at list price. Cursor still lists no GPT-6 models. Full story: https://codetoolpicker.com/gpt-6-2-astra-vs-sol/", src: "https://learn.chatgpt.com/docs/pricing" },
   { date: "2026-11-16", text: "New guide: Gemini 4 Carbon vs Hydrogen for coding. Gemini API prices (checked Nov 16, 2026): Hydrogen (released Nov 12) $1.50 input / $7.50 output / $0.075 cached per million tokens, with a free tier; Carbon (released Nov 10) and Argon $2 / $10 / $0.10 through Nov 30, 2026, then $4 / $20 / $0.20 from Dec 1, the same per-token price as Claude Opus 5.5. Cursor and Copilot docs say they follow the Dec 1 Carbon price. Antigravity: Carbon on Google AI Ultra only, Hydrogen on paid Pro and Ultra, Orchestrator (Argon) on Pro and Orchestrator (Carbon) on Ultra; Antigravity CLI 1.5.8 adds both with a GEMINI_API_KEY. Copilot: Carbon on Pro+, Max, Business, Enterprise; Hydrogen on Pro and up; GitHub retires Gemini 4 Argon and Gemini 3.8 Flash (plus Claude Fable 5, Haiku 4.5, Grok 4.6, Kimi K3) on Dec 14, 2026, suggesting Carbon and Hydrogen. Cursor: both on Premium and up from prepaid credit. Full story: https://codetoolpicker.com/gemini-4-carbon-vs-hydrogen/", src: "https://ai.google.dev/gemini-api/docs/pricing" },
