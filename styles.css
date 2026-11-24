@@ -273,3 +273,51 @@ table.glance th[scope="row"] { position: sticky; left: 0; background: var(--card
 .pkg .cta-row { margin-top: auto; }
 .pkg .badge { align-self: flex-start; }
 .featured-pkg { border-color: #2f6b58; box-shadow: 0 0 0 1px #2f6b58 inset; }
+
+/* ---- Homepage guide cards (generated from guides.js) ---- */
+#comparisons .sub { margin-bottom: 14px; }
+.g-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 18px; }
+.g-chip { font: inherit; font-size: .88rem; cursor: pointer; color: var(--text); background: var(--bg2); border: 1px solid var(--border); border-radius: 999px; padding: 6px 12px; transition: border-color .15s, background .15s; }
+.g-chip span { color: var(--muted); font-size: .78rem; margin-left: 2px; }
+.g-chip:hover { border-color: var(--gc, var(--accent)); }
+.g-chip.is-on { background: var(--gc, var(--accent)); border-color: var(--gc, var(--accent)); color: #071018; font-weight: 700; }
+.g-chip.is-on span { color: rgba(7,16,24,.7); }
+.g-chip:focus-visible, .g-card:focus-visible { outline: 3px solid var(--accent2); outline-offset: 3px; }
+.g-pricing { --gc: #6ee7b7; } .g-models { --gc: #c4b5fd; } .g-versus { --gc: #60a5fa; }
+.g-limits { --gc: #fbbf24; } .g-news { --gc: #fb7185; } .g-alternatives { --gc: #67e8f9; }
+.g-featured, .g-grid { display: grid; gap: 14px; }
+.g-featured { grid-template-columns: repeat(4, 1fr); margin-bottom: 14px; }
+.g-grid { grid-template-columns: repeat(4, 1fr); }
+.g-card { position: relative; display: flex; flex-direction: column; gap: 8px; min-height: 150px; padding: 16px; border-radius: var(--radius); background: var(--card); border: 1px solid var(--border); border-top: 3px solid var(--gc); color: var(--text); text-decoration: none; transition: transform .15s, border-color .15s, box-shadow .15s; }
+.g-card:hover { text-decoration: none; transform: translateY(-3px); border-color: var(--gc); box-shadow: 0 10px 28px rgba(0,0,0,.4); }
+.g-card[hidden], .g-empty[hidden] { display: none !important; }
+.g-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.g-cat { font-size: .72rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--gc); }
+.g-new { font-size: .68rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; color: #071018; background: #fbbf24; border-radius: 999px; padding: 2px 8px; }
+.g-title { font-size: 1.02rem; font-weight: 700; line-height: 1.25; letter-spacing: -.01em; }
+.g-hook { color: var(--muted); font-size: .9rem; line-height: 1.35; }
+.g-foot { margin-top: auto; display: flex; align-items: center; justify-content: space-between; padding-top: 4px; }
+.g-logos { display: flex; gap: 4px; }
+.g-logo { display: inline-grid; place-items: center; min-width: 26px; height: 26px; padding: 0 5px; border-radius: 7px; font-size: .68rem; font-weight: 800; letter-spacing: -.02em; box-shadow: 0 0 0 2px var(--card); }
+.g-go { color: var(--gc); font-weight: 700; transition: transform .15s; }
+.g-card:hover .g-go { transform: translateX(4px); }
+.g-feat { min-height: 250px; padding: 18px; background: linear-gradient(160deg, color-mix(in srgb, var(--gc) 22%, var(--card)) 0%, var(--card) 70%); border-top-width: 1px; border-color: color-mix(in srgb, var(--gc) 45%, var(--border)); }
+.g-art { font-size: 2.6rem; line-height: 1; margin: 6px 0 2px; filter: drop-shadow(0 6px 14px rgba(0,0,0,.35)); }
+.g-feat .g-title { font-size: 1.18rem; }
+.g-feat .g-hook { color: var(--text); font-size: 1rem; font-weight: 600; }
+.g-more-row { text-align: center; margin-top: 18px; }
+.g-empty { color: var(--muted); text-align: center; }
+.g-js.g-collapsed:not(.g-filtered) .g-more { display: none; }
+.g-filtered .g-more-row { display: none; }
+@media (max-width: 960px) { .g-featured, .g-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) {
+  .g-featured { grid-template-columns: 1fr; }
+  .g-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .g-card { min-height: 0; padding: 13px; }
+  .g-feat { min-height: 0; }
+  .g-art { font-size: 1.9rem; margin: 0; }
+  .g-grid .g-title { font-size: .92rem; }
+  .g-grid .g-hook { font-size: .82rem; }
+  .g-chips { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; margin-right: -4px; }
+  .g-chip { flex: none; }
+}

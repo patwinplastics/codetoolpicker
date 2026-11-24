@@ -7,6 +7,7 @@ const root = path.join(__dirname, "..");
 global.window = {};
 require(path.join(root, "data.js"));
 require(path.join(root, "render.js"));
+require(path.join(root, "guides.js")); // homepage guide cards; see field docs at the top of guides.js
 const tools = window.TOOL_DATA;
 const R = window.CTP_RENDER;
 const P = window.PRICING;
@@ -25,6 +26,7 @@ const put = (name, content) => {
 };
 put("cards", cards);
 put("table", table);
+put("guides", window.CTP_GUIDES.render(checked));
 fs.writeFileSync(idx, html);
 
 // ---- Pricing guide page (ai-coding-tool-pricing/) ----
