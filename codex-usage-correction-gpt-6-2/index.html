@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name='impact-site-verification' value='83f48c6a-f7b9-45b3-8866-03f8600f0734'>
+  <title>Codex limits hitting sooner? The GPT-6.2 usage fix explained</title>
+  <meta name="description" content="Checked Nov 25, 2026: OpenAI emailed Codex users that some GPT-6.2 Astra and Sol requests, including Ultrafast, used less allowance than intended. Price unchanged. No figure published. Estimator and backups." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://codetoolpicker.com/codex-usage-correction-gpt-6-2/" />
+  <meta property="og:title" content="Codex limits hitting sooner? The GPT-6.2 usage fix" />
+  <meta property="og:description" content="The subscription price is the same. The public rate card is the same. The email says some GPT-6.2 Astra and Sol requests were undercounted, so limits may hit sooner. OpenAI has not published how much changed." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://codetoolpicker.com/codex-usage-correction-gpt-6-2/" />
+  <meta property="og:site_name" content="CodeToolPicker" />
+  <meta property="og:image" content="https://codetoolpicker.com/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@codetoolpicker" />
+  <meta name="twitter:title" content="Codex limits hitting sooner? The GPT-6.2 usage fix" />
+  <meta name="twitter:description" content="Price unchanged. Public GPT-6.2 estimates unchanged. The email says the meter was too low, and OpenAI has not published how much." />
+  <meta name="twitter:image" content="https://codetoolpicker.com/og.png" />
+  <link rel="icon" href="/favicon-48x48.png" sizes="48x48" type="image/png" />
+  <link rel="icon" href="/favicon-96x96.png" sizes="96x96" type="image/png" />
+  <link rel="icon" href="/icon-192.png" sizes="192x192" type="image/png" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#0b0f14" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CodeToolPicker", "item": "https://codetoolpicker.com/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://codetoolpicker.com/#comparisons"}, {"@type": "ListItem", "position": 3, "name": "Codex limits hitting sooner?", "item": "https://codetoolpicker.com/codex-usage-correction-gpt-6-2/"}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Codex limits hitting sooner? The GPT-6.2 usage fix explained", "datePublished": "2026-11-25", "dateModified": "2026-11-25", "author": {"@type": "Organization", "name": "CodeToolPicker"}, "publisher": {"@type": "Organization", "name": "CodeToolPicker"}, "mainEntityOfPage": "https://codetoolpicker.com/codex-usage-correction-gpt-6-2/"}</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Did OpenAI raise the Codex subscription price?", "acceptedAnswer": {"@type": "Answer", "text": "The email says the subscription price is not changing. Checked Nov 25, 2026, ChatGPT Plus is still $20, Pro is still $100, $200 and $500, and Business Standard is still $25 a seat ($20 billed yearly)."}},
+    {"@type": "Question", "name": "How much tighter are GPT-6.2 Codex limits now?", "acceptedAnswer": {"@type": "Answer", "text": "OpenAI has not published how much changed (as of Nov 25, 2026). The email says some GPT-6.2 Astra and Sol requests, including Ultrafast, used less allowance than intended, and that with the correction you may reach your limit sooner. It gives no percentage, no start date, and no word on whether usage already recorded was restated."}},
+    {"@type": "Question", "name": "Did the published GPT-6.2 message estimates change?", "acceptedAnswer": {"@type": "Answer", "text": "No. On Nov 25, 2026 the Codex pricing page still estimates 6 to 50 local GPT-6.2 Astra messages and 17 to 180 GPT-6.2 Sol messages per five hours on Plus and Standard Business. Fast is still 2x and Ultrafast is still 6x on included usage for those two models. Those are the same figures we published on Nov 18."}},
+    {"@type": "Question", "name": "Does Ultrafast cost more after the correction?", "acceptedAnswer": {"@type": "Answer", "text": "The published Ultrafast multiplier did not change. For GPT-6.2 Astra and Sol, Ultrafast still draws included Work and Codex allowance at 6x Standard. Purchased credits stay at a promotional 3x Standard through February 28, 2027, then 6x. Ultrafast is on Pro $500 for both models and on Pro $200 for Sol only. It is not on Plus, Pro $100, or Business."}},
+    {"@type": "Question", "name": "What should I do if Codex is out today?", "acceptedAnswer": {"@type": "Answer", "text": "Check Settings, then Usage, for the reset time. If a banked reset is still listed, redeem it once a covered allowance is under 80 percent. For a same-day backup, Claude Code Pro is $20, GitHub Copilot Pro is $10, Cursor Premium is $30 (Plus at $8 is Grok only), and Google AI Pro for Antigravity is $19.99. Prices are from this site's tool data."}}
+  ]
+}
+  </script>
+  <style>
+    .wrap table td, .wrap table th { vertical-align: top; }
+    .note { font-size: .9em; color: var(--muted); }
+    article h2 { margin-top: 28px; }
+    .picker select, .picker input { background: var(--card); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 6px 8px; max-width: 100%; width: 100%; }
+    .picker label { display: block; margin: 10px 0 4px; font-weight: 600; }
+    .calc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 4px 16px; }
+    .facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 8px 0 0; }
+    .fact { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 14px; }
+    .fact h2, .fact h3 { font-size: 1.02rem; margin: 8px 0 6px; }
+    .fact p { margin: 0; color: var(--muted); font-size: .92rem; }
+    .fact .k { font-size: .72rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+    .fact.warn { border-color: #f59e0b; }
+    .verdict { font-size: 1.15rem; font-weight: 800; color: var(--text); margin: 8px 0 6px; }
+    .quote { margin: 0; padding: 12px 14px; border-left: 3px solid var(--accent, #34d399); background: var(--card); border-radius: 0 10px 10px 0; }
+    @media (max-width: 900px) { .facts { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 560px) { .facts { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo"><a href="../" style="color:inherit;text-decoration:none">CodeTool<span>Picker</span></a></div>
+      <nav>
+        <a href="../#quiz">Quiz</a>
+        <a href="../#compare">Compare</a>
+        <a href="../#comparisons">Guides</a>
+        <a href="../ai-coding-tool-pricing/">Pricing</a>
+        <a href="../advertise/">Advertise</a>
+      </nav>
+    </header>
+    <p class="crumbs"><a href="../">Home</a> › <a href="../#comparisons">Guides</a> › Codex limits hitting sooner?</p>
+
+    <article>
+    <section class="hero">
+      <h1>Codex limits hitting sooner? <span class="hl">The GPT-6.2 usage fix</span></h1>
+      <p><strong>Short answer:</strong> the subscription price is the same, and the public rate card still shows the same GPT-6.2 estimates. An OpenAI email says some Astra and Sol requests, Ultrafast included, <strong>used less of your allowance than intended</strong>. That count is corrected, so you may hit the limit sooner. <strong>OpenAI has not published how much changed (as of Nov 25).</strong></p>
+      <p class="updated">Checked Nov 25, 2026. Email text is from screenshots readers posted on X, not from an OpenAI web page. Rates are from the <a href="https://learn.chatgpt.com/docs/pricing" rel="noopener">Codex pricing page</a> and the <a href="https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex" rel="noopener">Work and Codex help article</a>. The <a href="https://learn.chatgpt.com/docs/changelog" rel="noopener">changelog</a> still tops out at Codex CLI 0.172.0 on Nov 24.</p>
+      <div class="cta-row"><a class="btn btn-primary" href="#estimator">Will I run out this week?</a> <a class="btn" href="#stretch">Stretch the limit</a> <a class="btn" href="#backup">If you're out today</a> <a class="btn" href="#rates">Old vs new rates</a></div>
+    </section>
+
+    <section class="panel" id="snapshot">
+      <h2>The four things that matter</h2>
+      <div class="facts">
+        <div class="fact">
+          <div class="k"><span class="badge">Email</span></div>
+          <h3>What changed</h3>
+          <p>Some GPT-6.2 Astra and Sol requests, including Ultrafast, counted for less allowance than OpenAI intended. The meter is corrected. You may hit your limit sooner.</p>
+        </div>
+        <div class="fact">
+          <div class="k"><span class="badge best">Official</span></div>
+          <h3>What stayed the same</h3>
+          <p>Subscription price. Plus estimates: Astra 6 to 50, Sol 17 to 180 local messages per 5 hours. Fast 2x. Ultrafast 6x on included GPT-6.2 usage.</p>
+        </div>
+        <div class="fact warn">
+          <div class="k"><span class="badge">Unconfirmed</span></div>
+          <h3>What's unknown</h3>
+          <p>OpenAI has not published how much changed (as of Nov 25). No start date. No share of requests. No word on whether old usage was restated.</p>
+        </div>
+        <div class="fact">
+          <div class="k"><span class="badge money">Now</span></div>
+          <h3>What to do</h3>
+          <p>Open Settings &gt; Usage before a long run. Routine work on Sol. Ultrafast off. Redeem a banked reset if one is still listed.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel picker" id="estimator">
+      <h2>Will I run out this week?</h2>
+      <p class="sub">Uses the published estimates, the ones OpenAI still prints. Runs in your browser. Nothing is sent anywhere.</p>
+      <div class="calc-grid">
+        <div><label for="e-plan">Plan</label>
+          <select id="e-plan">
+            <option value="plus" selected>Plus ($20)</option>
+            <option value="pro100">Pro $100</option>
+            <option value="pro200">Pro $200</option>
+            <option value="pro500">Pro $500</option>
+            <option value="bstd">Business Standard ($25/seat)</option>
+            <option value="bprem">Business Premium ($125/seat)</option>
+          </select></div>
+        <div><label for="e-model">Model</label>
+          <select id="e-model">
+            <option value="62a" selected>GPT-6.2 Astra</option>
+            <option value="62s">GPT-6.2 Sol</option>
+            <option value="6a">GPT-6 Astra (older)</option>
+            <option value="61s">GPT-6.1 Sol (older)</option>
+            <option value="61t">GPT-6.1 Terra</option>
+            <option value="6s">GPT-6 Sol</option>
+            <option value="6l">GPT-6 Luna</option>
+          </select></div>
+        <div><label for="e-speed">Speed</label>
+          <select id="e-speed">
+            <option value="std" selected>Standard</option>
+            <option value="fast">Fast</option>
+            <option value="ultra">Ultrafast</option>
+          </select></div>
+        <div><label for="e-sess">Sessions per day</label>
+          <input id="e-sess" type="number" min="0" max="24" step="1" value="2" /></div>
+        <div><label for="e-msg">Local messages per session</label>
+          <input id="e-msg" type="number" min="0" max="500" step="1" value="8" /></div>
+        <div><label for="e-days">Days you code this week</label>
+          <input id="e-days" type="number" min="0" max="7" step="1" value="5" /></div>
+      </div>
+      <div id="e-out" style="margin-top:14px" aria-live="polite"></div>
+    </section>
+
+    <section class="panel" id="email">
+      <h2>What the email actually says</h2>
+      <p class="sub">Subject line: "An update to Codex usage." The same three sentences show up in screenshots posted on X on Nov 25, including <a href="https://x.com/Im_IrushiK/status/2125562918389583973" rel="noopener">this one</a> (timestamped 10:07 p.m., timezone not in the crop) and <a href="https://x.com/CodexUpdate/status/2125427689460785413" rel="noopener">this one</a>. Codex Update is a commentary account, not OpenAI.</p>
+      <blockquote class="quote">
+        <p>Some GPT-6.2 Astra and Sol requests in Codex used less of your allowance than intended, including in Ultrafast mode.</p>
+        <p>With this correction, you may notice that you are reaching your usage limit sooner.</p>
+        <p>Your subscription price is not changing. You can review your remaining usage and reset times in Settings &gt; Usage.</p>
+      </blockquote>
+      <div class="table-scroll" style="margin-top:14px"><table>
+        <thead><tr><th>The email says</th><th>The email does not say</th></tr></thead>
+        <tbody>
+          <tr><td>Some Astra and Sol requests, Ultrafast included</td><td>How many requests, or what share</td></tr>
+          <tr><td>They used less allowance than intended</td><td>A percentage, a multiplier, or a token gap</td></tr>
+          <tr><td>You may reach the limit sooner</td><td>That already-recorded usage was clawed back, or that only new requests change</td></tr>
+          <tr><td>The subscription price stays the same</td><td>A start date. GPT-6.2 launched Nov 17, so it cannot be older than that, and OpenAI has not said the whole stretch was affected</td></tr>
+        </tbody>
+      </table></div>
+      <p class="note">User reports, not a measurement: some Pro users say a weekly limit is draining much faster than last week. The email gives them no number to check that against. Treat any personal percentage you see on X as one account's guess.</p>
+    </section>
+
+    <section class="panel" id="rates">
+      <h2>Published rates: old vs new</h2>
+      <p class="sub">Same page, same rows. We read <a href="https://learn.chatgpt.com/docs/pricing" rel="noopener">learn.chatgpt.com/docs/pricing</a> (also served at developers.openai.com/codex/pricing) on Nov 25. The Nov 18 column is what we published the week GPT-6.2 launched.</p>
+      <div class="table-scroll"><table>
+        <thead><tr><th></th><th>Nov 18</th><th>Nov 25</th></tr></thead>
+        <tbody>
+          <tr><td>Plus and Standard Business, GPT-6.2 Astra, local messages per 5 hours</td><td>6 to 50</td><td><strong>6 to 50</strong></td></tr>
+          <tr><td>Plus and Standard Business, GPT-6.2 Sol, local messages per 5 hours</td><td>17 to 180</td><td><strong>17 to 180</strong></td></tr>
+          <tr><td>Fast, GPT-6.2, included usage</td><td>2x Standard</td><td><strong>2x Standard</strong></td></tr>
+          <tr><td>Ultrafast, GPT-6.2, included usage</td><td>6x Standard</td><td><strong>6x Standard</strong></td></tr>
+          <tr><td>Ultrafast, GPT-6.2, purchased credits</td><td>3x through Feb 28, 2027, then 6x</td><td><strong>3x through Feb 28, 2027, then 6x</strong></td></tr>
+          <tr><td>Plus / Pro $100 / $200 / $500</td><td>$20 / $100 / $200 / $500</td><td><strong>Same</strong></td></tr>
+        </tbody>
+      </table></div>
+      <p class="note">OpenAI has not published how much changed (as of Nov 25). These ranges are estimates, not caps. Pro plans have no 5-hour limit. Weekly limits "may also apply," and the weekly size is still unpublished. Older models on the same page: Fast 2.5x included, Ultrafast 8x on GPT-6 Astra and GPT-6.1 Sol.</p>
+    </section>
+
+    <section class="panel" id="stretch">
+      <h2>Stretch your limit</h2>
+      <div class="table-scroll"><table>
+        <thead><tr><th>Move</th><th>Why it helps</th><th>Grounded in</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Sol for routine work, Astra for the hard bug</strong></td><td>On Plus, OpenAI's estimate is 17 to 180 Sol messages per 5 hours vs 6 to 50 Astra. About three Sol turns per Astra turn.</td><td><a href="https://learn.chatgpt.com/docs/pricing" rel="noopener">Pricing page</a>, unchanged today. More on <a href="../gpt-6-2-astra-vs-sol/">Astra vs Sol</a>.</td></tr>
+          <tr><td><strong>Turn Ultrafast off</strong></td><td>GPT-6.2 Ultrafast draws included allowance at 6x Standard. On Pro $200 it is Sol only. It is off on Plus, Pro $100, and Business, credits included.</td><td>Pricing page and the <a href="https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex" rel="noopener">Work and Codex article</a>.</td></tr>
+          <tr><td><strong>Turn Fast off, unless the Business promo applies</strong></td><td>Fast is 2x on GPT-6.2 included usage, 2.5x on the older models in the table. That cuts the message estimate in half on 6.2.</td><td>Pricing page. Business exception below.</td></tr>
+          <tr><td><strong>Business Fast promo</strong></td><td>Tibo posted Nov 24 that ChatGPT Business teams get Fast "at no extra charge" through Dec 31. The pricing page still says 2x. What the promo draws is unconfirmed. Plus and Pro are not in that post.</td><td><a href="https://x.com/thsottiaux/status/2125299248782778588" rel="noopener">Tibo, Nov 24</a>. Staff post, separate from the email.</td></tr>
+          <tr><td><strong>Banked reset, if you still have one</strong></td><td>The Nov 12 reset is one-time. Getting it does not refill anything. Redeem it in Settings &gt; Usage, or <code>/usage</code> then Redeem reset, once a covered allowance is under 80% left. It expires on the date in your account, so check before you assume it is still there. It does not raise the plan. Business teams got a separate banked reset on Nov 24.</td><td><a href="https://help.openai.com/en/articles/20001498-how-resets-work-in-codex" rel="noopener">How resets work</a> and our <a href="../codex-usage-limits/">limits page</a>.</td></tr>
+          <tr><td><strong>Lower the reasoning effort</strong></td><td>OpenAI says the reasoning level changes how fast a turn uses the allowance. In Work, the slider is on Default. Save high effort for the turn that is actually stuck.</td><td>Pricing page ("reasoning") and the Work and Codex article.</td></tr>
+          <tr><td><strong>Stay local, and shrink the context</strong></td><td>Cloud tasks can use more than a local message. The pricing FAQ says to trim prompts, nest AGENTS.md, and turn off MCP servers you are not using.</td><td>Pricing page FAQ.</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <section class="panel" id="backup">
+      <h2>If you're out today</h2>
+      <p class="sub">A same-day backup while Codex refills. Prices are filled from this site's tool data (<code>data.js</code>), the same numbers as the <a href="../ai-coding-tool-pricing/">pricing guide</a>. Links use the site's link map.</p>
+      <div class="table-scroll"><table id="backup-table">
+        <thead><tr><th>Backup</th><th>Plan</th><th>Price from our data</th><th>Why this one</th></tr></thead>
+        <tbody>
+          <tr data-tool="claude-code" data-plan="Pro">
+            <td><a href="https://claude.com/product/claude-code" rel="noopener" data-link="claude-code">Claude Code</a></td>
+            <td>Pro</td>
+            <td class="bp-price">$20/mo. $17/mo billed annually ($200 up front)</td>
+            <td>Claude in the terminal today. There is no free Claude Code. <a href="../claude-code-vs-codex/">Vs Codex</a>.</td>
+          </tr>
+          <tr data-tool="copilot" data-plan="Pro">
+            <td><a href="https://github.com/features/copilot" rel="noopener" data-link="copilot">GitHub Copilot</a></td>
+            <td>Pro</td>
+            <td class="bp-price">$10/mo. 1,500 AI credits/mo</td>
+            <td>Models included in the credits. Free exists (2,000 completions/mo, auto model only) and is a thin backup for agent work.</td>
+          </tr>
+          <tr data-tool="cursor" data-plan="Premium">
+            <td><a href="https://cursor.com" rel="noopener" data-link="cursor">Cursor</a></td>
+            <td>Premium</td>
+            <td class="bp-price">$30/mo. 4x Plus usage; Claude/GPT billed extra at API list price</td>
+            <td>Plus is $8 and Grok only, so it does not replace a GPT-6.2 session. Premium is the plan that can run Claude or GPT, billed extra.</td>
+          </tr>
+          <tr data-tool="antigravity" data-plan="Google AI Pro">
+            <td><a href="https://antigravity.google" rel="noopener" data-link="antigravity">Google Antigravity</a></td>
+            <td>Google AI Pro</td>
+            <td class="bp-price">$19.99/mo. Quota refreshes every 5 hours up to a weekly limit; Claude 5.5 models on paid (not trial) plans</td>
+            <td>Gemini and Claude 5.5 in one quota. A free tier exists, with a smaller weekly limit.</td>
+          </tr>
+        </tbody>
+      </table></div>
+      <p class="note" id="backup-note">If JavaScript is on, those price cells are rewritten from <code>data.js</code> so they stay tied to the pricing guide. Codex itself can also keep going on an API key at API prices. That does not use the ChatGPT allowance. <a href="../claude-code-down-backup/">Same idea, from the other direction</a>.</p>
+    </section>
+
+    <section class="panel" id="december">
+      <h2>December is a separate change</h2>
+      <p>OpenAI's usage-limits article, updated within the last day when we checked, still says that <strong>starting in December</strong> Plus, Pro, and Business share one allowance across ChatGPT and Codex, measured in tokens. Instant chat stays outside that pool. A small group may see it early. The article still lists no token budget and no exact date.</p>
+      <p class="note">Source: <a href="https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits" rel="noopener">Understanding ChatGPT and Codex usage limits</a>. That page does not mention the GPT-6.2 undercount. Our earlier write-up: <a href="../codex-usage-limits/">Codex usage limits explained</a>.</p>
+    </section>
+
+    <section class="panel" id="unknowns">
+      <h2>What we couldn't confirm</h2>
+      <ul>
+        <li><strong>The size of the correction.</strong> OpenAI has not published how much changed (as of Nov 25). Do not plan the week on a percentage from a screenshot thread.</li>
+        <li><strong>The start date.</strong> GPT-6.2 Astra and Sol launched Nov 17, so the miss cannot be older than that. OpenAI has not said all eight days were affected.</li>
+        <li><strong>Past usage vs new requests.</strong> "You may notice that you are reaching your usage limit sooner" reads like a forward change. The email does not say that recorded usage was restated.</li>
+        <li><strong>A public OpenAI post.</strong> On Nov 25 the changelog's latest entry is still Codex CLI 0.172.0 from Nov 24, about terminal features. The pricing page does not mention a correction. We did not find a post from @thsottiaux about this email. His Nov 24 post is the Business reset and Fast promo only.</li>
+        <li><strong>What "no extra charge" means for Business Fast.</strong> Not on the pricing page or the help article we read.</li>
+        <li><strong>Pro weekly drains.</strong> User reports only. We did not read anyone's usage dashboard.</li>
+        <li><strong>Whether your Nov 12 reset is still live.</strong> Expiry is per account. Open the Usage page.</li>
+      </ul>
+    </section>
+
+    <section class="panel" id="sources">
+      <h2>Sources</h2>
+      <p class="sub">Checked Nov 25, 2026.</p>
+      <ul>
+        <li><a href="https://x.com/Im_IrushiK/status/2125562918389583973" rel="noopener">Email screenshot</a> and <a href="https://x.com/CodexUpdate/status/2125427689460785413" rel="noopener">a second copy of the same wording</a>. The email itself is not on an OpenAI page we could open.</li>
+        <li><a href="https://learn.chatgpt.com/docs/pricing" rel="noopener">Codex pricing</a> (developers.openai.com/codex/pricing serves the same page). Message estimates and speed multipliers, unchanged vs Nov 18.</li>
+        <li><a href="https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex" rel="noopener">ChatGPT Work and Codex</a>. Ultrafast plan rules, 6x included, 3x credits through Feb 28, 2027.</li>
+        <li><a href="https://learn.chatgpt.com/docs/changelog" rel="noopener">ChatGPT and Codex changelog</a>. Latest entry Nov 24, CLI 0.172.0. No usage-correction note.</li>
+        <li><a href="https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits" rel="noopener">Shared ChatGPT and Codex limits in December</a>. No token budgets.</li>
+        <li><a href="https://x.com/thsottiaux/status/2125299248782778588" rel="noopener">Tibo (@thsottiaux), Nov 24, 18:43 UTC</a>. Business banked reset and Fast at no extra charge through Dec 31. Does not mention the undercount.</li>
+        <li><a href="https://help.openai.com/en/articles/20001498-how-resets-work-in-codex" rel="noopener">How resets work in Codex</a>. Redeem under 80% remaining.</li>
+        <li><a href="https://openai.com/index/introducing-gpt-6-2-astra-sol/" rel="noopener">GPT-6.2 launch, Nov 17</a>. Bounds how far back the miss can go.</li>
+      </ul>
+    </section>
+
+    <section class="panel" id="faq">
+      <h2>FAQ</h2>
+      <h3>Did OpenAI raise the Codex subscription price?</h3>
+      <p>The email says the subscription price is not changing. Plus is still $20, Pro is still $100, $200, and $500, Business Standard is still $25 a seat ($20 billed yearly).</p>
+      <h3>How much tighter are GPT-6.2 Codex limits now?</h3>
+      <p>OpenAI has not published how much changed (as of Nov 25). The email says some Astra and Sol requests, including Ultrafast, used less allowance than intended, and that you may reach the limit sooner. No percentage, no start date, no word on recorded usage.</p>
+      <h3>Did the published GPT-6.2 message estimates change?</h3>
+      <p>They show the same numbers as Nov 18: 6 to 50 Astra and 17 to 180 Sol local messages per 5 hours on Plus and Standard Business. Fast 2x, Ultrafast 6x on included GPT-6.2 usage.</p>
+      <h3>Does Ultrafast cost more after the correction?</h3>
+      <p>The published multiplier is still 6x on included allowance, and 3x on purchased credits through Feb 28, 2027. Ultrafast is on Pro $500 for both models and on Pro $200 for Sol only. Plus, Pro $100, and Business do not get it.</p>
+      <h3>What should I do if Codex is out today?</h3>
+      <p>Check Settings &gt; Usage for the reset time. Redeem a banked reset if one is listed and a covered allowance is under 80%. Same-day backups, at the prices in our tool data: Claude Code Pro $20, Copilot Pro $10, Cursor Premium $30, Antigravity on Google AI Pro $19.99.</p>
+    </section>
+    <!-- PRERENDER:try -->
+    <section class="panel try" id="try">
+      <h2>Ready to try one?</h2>
+      <p class="sub">Every tool here can be cancelled monthly, so the fastest way to decide is a real task on each.</p>
+      <div class="try-grid">
+        <div class="try-item">
+          <h3>OpenAI Codex</h3>
+          <p class="meta"><strong>Start on:</strong> Plus $20. Most developers: Codex in the CLI, IDE extension, web and iOS, plus cloud tasks and automatic code review.</p>
+          <div class="cta-row">
+            <a href="https://developers.openai.com/codex" rel="noopener" class="btn btn-primary" data-link="codex">Try OpenAI Codex free &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-codex">All OpenAI Codex plans</a>
+          </div>
+        </div>
+        <div class="try-item">
+          <h3>Claude Code</h3>
+          <p class="meta"><strong>Start on:</strong> Pro $20. Start here. Includes Claude Code with usage limits; $17/mo if you pay $200 for the year.</p>
+          <div class="cta-row">
+            <a href="https://claude.com/product/claude-code" rel="noopener" class="btn btn-primary" data-link="claude-code">Get Claude Code &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-claude-code">All Claude Code plans</a>
+          </div>
+        </div>
+        <div class="try-item">
+          <h3>GitHub Copilot</h3>
+          <p class="meta"><strong>Start on:</strong> Pro $10. The best value for most individuals: 1,500 AI credits and a choice of models including Claude and GPT. Verified teachers and popular open-source maintainers may get it free.</p>
+          <div class="cta-row">
+            <a href="https://github.com/features/copilot" rel="noopener" class="btn btn-primary" data-link="copilot">Try GitHub Copilot free &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-copilot">All GitHub Copilot plans</a>
+          </div>
+        </div>
+        <div class="try-item">
+          <h3>Cursor</h3>
+          <p class="meta"><strong>Start on:</strong> Premium $30. Cursor's pick for new AI users. Needed for cloud agents (including Live Apps, which build and host web apps), Bugbot code reviews, and any Claude or GPT use (billed extra).</p>
+          <div class="cta-row">
+            <a href="https://cursor.com" rel="noopener" class="btn btn-primary" data-link="cursor">Try Cursor free &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-cursor">All Cursor plans</a>
+          </div>
+        </div>
+        <div class="try-item">
+          <h3>Google Antigravity</h3>
+          <p class="meta"><strong>Start on:</strong> Google AI Pro $19.99. Most individuals: quota refreshes every five hours up to a weekly limit, with Claude Opus/Sonnet 5.5. Gemini 4 Argon has its own weekly-only quota on Pro (no five-hour refresh). Claude 5.5 needs a paid plan, not the free trial; Argon works on paid Pro or a trial from an eligible premium device.</p>
+          <div class="cta-row">
+            <a href="https://antigravity.google" rel="noopener" class="btn btn-primary" data-link="antigravity">Try Google Antigravity free &rarr;</a>
+            <a class="btn" href="../ai-coding-tool-pricing/#plans-antigravity">All Google Antigravity plans</a>
+          </div>
+        </div></div>
+      
+    </section>
+    <!-- /PRERENDER:try -->
+    <!-- PRERENDER:stack -->
+    <section class="panel stack" id="ship">
+      <h2>Ship your app: the rest of the stack</h2>
+      <p class="sub">Picked your AI coding tool? These are the usual next costs. Free tiers first, and prices checked Oct 20, 2026 on each vendor's pricing page.</p>
+      <div class="stack-grid">
+        <div class="stack-group">
+          <h3>Code review</h3>
+          <p class="meta">AI writes code fast; something should read it before it ships.</p>
+          <ul class="stack-list"><li><a href="https://www.coderabbit.ai" rel="noopener" data-link="coderabbit"><strong>CodeRabbit</strong></a><span>AI review on every pull request, in GitHub or GitLab</span><small>Free for public repos; Essentials $24/user/mo billed annually ($30 monthly)</small></li></ul>
+          <p class="meta tiny">Already paying for Copilot or Codex Plus? Both include AI pull request review, so try that first.</p>
+        </div>
+        <div class="stack-group">
+          <h3>Hosting</h3>
+          <p class="meta">Where your app lives once it works on your machine.</p>
+          <ul class="stack-list"><li><a href="https://vercel.com" rel="noopener" data-link="vercel"><strong>Vercel</strong></a><span>Next.js and front-end apps</span><small>Hobby free (personal, non-commercial); Pro $20/mo per developer seat</small></li><li><a href="https://join.netlify.com/sfop8nkiwjbv" rel="sponsored nofollow noopener" data-link="netlify"><strong>Netlify</strong> <span class="tag ref">referral</span></a><span>Static sites and front ends, unlimited Pro members</span><small>Free; Personal $9/mo; Pro $20/mo with unlimited members</small></li><li><a href="https://railway.com" rel="noopener" data-link="railway"><strong>Railway</strong></a><span>Back ends, workers and databases with no server setup</span><small>Free trial $5 credit; Hobby $5/mo incl. $5 usage; Pro $20/mo</small></li><li><a href="https://render.com" rel="noopener" data-link="render"><strong>Render</strong></a><span>Heroku-style web services, cron jobs and Postgres</span><small>Hobby $0 + compute; Pro $25/mo + compute</small></li></ul>
+          
+        </div>
+        <div class="stack-group">
+          <h3>Database and auth</h3>
+          <p class="meta">Most AI-built apps need a Postgres database and logins.</p>
+          <ul class="stack-list"><li><a href="https://supabase.com" rel="noopener" data-link="supabase"><strong>Supabase</strong></a><span>Postgres + auth + storage in one; Lovable and Bolt connect to it</span><small>Free (2 projects, pause after 1 week idle); Pro from $25/mo</small></li><li><a href="https://neon.com" rel="noopener" data-link="neon"><strong>Neon</strong></a><span>Serverless Postgres with branching, pay for what you use</span><small>Free (100 projects); paid plans usage-based</small></li></ul>
+          
+        </div>
+        <div class="stack-group">
+          <h3>Domain name</h3>
+          <p class="meta">A real domain for your app.</p>
+          <ul class="stack-list"><li><a href="https://www.cloudflare.com/products/registrar/" rel="noopener" data-link="cloudflare"><strong>Cloudflare Registrar</strong></a><span>Domains at cost with no markup</span><small>Wholesale price per TLD</small></li><li><a href="https://porkbun.com" rel="noopener" data-link="porkbun"><strong>Porkbun</strong></a><span>Cheap domains with free WHOIS privacy</span><small>Varies by TLD</small></li><li><a href="https://www.namecheap.com" rel="noopener" data-link="namecheap"><strong>Namecheap</strong></a><span>Popular registrar with hosting and email add-ons</span><small>Varies by TLD</small></li></ul>
+          
+        </div></div>
+      <p class="meta tiny aff-note">Referral link: we may earn a commission at no extra cost to you. It never changes our picks.</p>
+    </section>
+    <!-- /PRERENDER:stack -->
+
+    <section class="panel" id="related">
+      <h2>Related guides</h2>
+      <ul class="related">
+        <li><a href="../codex-usage-limits/">Codex usage limits explained<small>5-hour and weekly windows, the Nov 12 reset</small></a></li>
+        <li><a href="../gpt-6-2-astra-vs-sol/">GPT-6.2 Astra vs Sol<small>About 3 Sol messages per Astra message</small></a></li>
+        <li><a href="../claude-code-vs-codex/">Claude Code vs Codex<small>Same $20 starting price</small></a></li>
+        <li><a href="../chatgpt-pro-codex-limits/">ChatGPT Pro Codex limits<small>Pro 100, 200, and 500</small></a></li>
+        <li><a href="../chatgpt-business-1-seat-codex/">1-seat ChatGPT Business<small>Standard matches Plus on Codex</small></a></li>
+        <li><a href="../claude-code-down-backup/">Claude Code down? Backup plan<small>The same switch, the other way</small></a></li>
+      </ul>
+    </section>
+
+    <aside class="sponsor" id="sponsor" aria-label="Sponsor slot">
+      <strong>Sponsor slot</strong> <span class="meta">(Sponsored placements are labeled and never affect rankings or verdicts)</span><br />
+      Reach developers deciding what to do when a Codex limit hits.
+      <div style="margin-top:10px" class="meta">Founding sponsor rates available now. Email <a href="mailto:sponsors@codetoolpicker.com?subject=CodeToolPicker%20sponsorship">sponsors@codetoolpicker.com</a> &middot; <a href="../advertise/">See packages</a></div>
+    </aside>
+
+    <section class="panel" id="disclosure">
+      <h2>Editorial disclosure</h2>
+      <p><strong>Rankings are not for sale.</strong> Sponsored placements and affiliate links are always labeled, and they never change our recommendations, quiz results, prices, or comparison data. <strong>Links marked "referral" are affiliate links (Netlify):</strong> if you buy through them, we may earn a commission at no extra cost to you. Every other link is a plain link that pays us nothing, and pricing source links are never affiliate links. <a href="../advertise/#policy">Editorial policy</a>.</p>
+    </section>
+    </article>
+
+    <footer>
+      <p><a href="../">← Back to the AI Coding Tool Picker</a> · <a href="../ai-coding-tool-pricing/">Pricing &amp; plans calculator</a></p>
+      <p>More guides: <a href="../codex-usage-limits/">Codex usage limits</a> · <a href="../gpt-6-2-astra-vs-sol/">Astra vs Sol</a> · <a href="../claude-code-vs-codex/">Claude Code vs Codex</a></p>
+      <p>Not affiliated with OpenAI, Anthropic, GitHub, or Anysphere (Cursor).</p>
+      <p>Contact, sponsorships, and corrections: <a href="mailto:sponsors@codetoolpicker.com">sponsors@codetoolpicker.com</a> · <a href="../advertise/">Advertise with us</a></p>
+      <p class="meta" id="analytics-note">We use GoatCounter, a privacy-friendly counter with no cookies, to count visits.</p>
+    </footer>
+  </div>
+  <script src="../data.js"></script>
+  <script>
+    (function () {
+      var MODELS = {
+        "62a": { name: "GPT-6.2 Astra", lo: 6, hi: 50, fast: 2, ultra: 6 },
+        "62s": { name: "GPT-6.2 Sol", lo: 17, hi: 180, fast: 2, ultra: 6 },
+        "6a": { name: "GPT-6 Astra", lo: 5, hi: 45, fast: 2.5, ultra: 8 },
+        "61s": { name: "GPT-6.1 Sol", lo: 15, hi: 160, fast: 2.5, ultra: 8 },
+        "61t": { name: "GPT-6.1 Terra", lo: 35, hi: 285, fast: 2.5, ultra: 0 },
+        "6s": { name: "GPT-6 Sol", lo: 15, hi: 150, fast: 2.5, ultra: 0 },
+        "6l": { name: "GPT-6 Luna", lo: 350, hi: 3000, fast: 2.5, ultra: 0 }
+      };
+      var PLANS = {
+        plus: { five: true, relNote: "Plus uses a 5-hour window plus a weekly limit. The weekly size is not published." },
+        bstd: { five: true, relNote: "Business Standard uses the same 5-hour estimates as Plus, plus a weekly limit." },
+        bprem: { five: false, relNote: "Business Premium is 5x a Standard seat with no 5-hour limit, from our Nov 23 check of OpenAI's pages. That 5x is not a message count." },
+        pro100: { five: false, relNote: "Tibo posted on Nov 8 that Pro 100 is 10x Plus. That multiple is not on OpenAI's help page, and it is not a message count." },
+        pro200: { five: false, relNote: "Tibo posted on Nov 8 that Pro 200 is 20x Plus. Not on the help page. Ultrafast on this plan is GPT-6.2 Sol only." },
+        pro500: { five: false, relNote: "Tibo posted on Nov 8 that Pro 500 is 50x Plus. Not on the help page. Ultrafast is available here." }
+      };
+      function ultraOk(plan, key) {
+        var m = MODELS[key];
+        if (!m.ultra) return false;
+        if (plan === "pro500") return true;
+        if (plan === "pro200" && key === "62s") return true;
+        return false;
+      }
+      function fmt(n) {
+        if (!isFinite(n)) return "?";
+        var r = Math.round(n * 10) / 10;
+        if (Math.abs(r - Math.round(r)) < 0.05) return Math.round(r).toLocaleString();
+        return r.toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+      }
+      function run() {
+        var plan = document.getElementById("e-plan").value;
+        var key = document.getElementById("e-model").value;
+        var speed = document.getElementById("e-speed").value;
+        var sessions = Math.max(0, parseFloat(document.getElementById("e-sess").value) || 0);
+        var per = Math.max(0, parseFloat(document.getElementById("e-msg").value) || 0);
+        var days = Math.max(0, parseFloat(document.getElementById("e-days").value) || 0);
+        var P = PLANS[plan], M = MODELS[key];
+        var extra = "";
+        var mult = 1;
+        var speedLabel = "Standard";
+        if (speed === "fast") {
+          mult = M.fast;
+          speedLabel = "Fast (" + M.fast + "x)";
+          if (plan === "bstd" || plan === "bprem") {
+            extra = "Business note: on Nov 24 Tibo said Fast is \"at no extra charge\" for ChatGPT Business through Dec 31. The pricing page still lists Fast at " + M.fast + "x. This estimate uses the published multiplier. What the promo draws is unconfirmed.";
+          }
+        } else if (speed === "ultra") {
+          if (!ultraOk(plan, key)) {
+            speedLabel = "Standard, because Ultrafast is not available here";
+            mult = 1;
+            extra = !M.ultra
+              ? "Ultrafast is not offered on " + M.name + ". Showing Standard."
+              : (plan === "pro200"
+                ? "On Pro $200, Ultrafast is GPT-6.2 Sol only. Showing Standard for this model."
+                : "Ultrafast is not on Plus, Pro $100, or Business, including if you buy credits. Showing Standard.");
+          } else {
+            mult = M.ultra;
+            speedLabel = "Ultrafast (" + M.ultra + "x on included usage)";
+          }
+        }
+        var lo = M.lo / mult, hi = M.hi / mult;
+        var day = sessions * per;
+        var week = day * days;
+        var verdict, detail;
+        if (day <= 0) {
+          verdict = "Enter a pace";
+          detail = "Set sessions per day and local messages per session. A session with no size is not a forecast.";
+        } else if (P.five && day > hi) {
+          verdict = "Likely to hit the 5-hour wall today";
+          detail = "Your day is " + fmt(day) + " local messages. Even the high end of one window is about " + fmt(hi) + " at this speed.";
+        } else if (P.five && day > lo) {
+          verdict = "You might hit the 5-hour wall today";
+          detail = "Your day is " + fmt(day) + " messages. A heavy task lands near " + fmt(lo) + ", a light one near " + fmt(hi) + ". OpenAI publishes a range because the task changes the burn.";
+        } else if (P.five) {
+          verdict = "Today fits in one 5-hour window";
+          detail = "Your day is " + fmt(day) + " messages, under the low end (" + fmt(lo) + "). A long context or a cloud task can still cost more than one local message.";
+        } else {
+          verdict = "No 5-hour wall on this plan";
+          detail = "Your day is " + fmt(day) + " messages. One Plus window at this speed is about " + fmt(lo) + " to " + fmt(hi) + ", so the day is roughly " + fmt(hi ? day / hi : NaN) + " to " + fmt(lo ? day / lo : NaN) + " Plus windows. " + P.relNote;
+        }
+        var weekText = P.five
+          ? "About " + fmt(week) + " local messages over the " + fmt(days) + " days you entered. That number is your pace, not a limit. OpenAI has not published the weekly message count, and has not published the corrected rate. A fresh 5-hour window does nothing if the week is already spent."
+          : "The weekly pool is the limit on this plan, and OpenAI still does not publish it as messages. " + P.relNote + " Some Pro users say a weekly limit is draining faster since the correction. That is a user report, not a figure from OpenAI.";
+        document.getElementById("e-out").innerHTML =
+          '<div class="facts">' +
+          '<div class="fact"><div class="k">Verdict</div><p class="verdict">' + verdict + '</p><p>' + detail + '</p></div>' +
+          '<div class="fact"><div class="k">One 5-hour window</div><p class="verdict">' + fmt(lo) + ' to ' + fmt(hi) + '</p><p>' + M.name + ' at ' + speedLabel + '. Published Plus and Standard Business estimate. ' + (P.five ? "This plan uses that window." : "This plan has no 5-hour window. Shown so you can compare.") + '</p></div>' +
+          '<div class="fact"><div class="k">Your pace</div><p class="verdict">' + fmt(day) + ' / day</p><p>' + fmt(sessions) + ' sessions times ' + fmt(per) + ' messages. About ' + fmt(week) + ' across the days you entered.</p></div>' +
+          '<div class="fact warn"><div class="k">This week</div><p>' + weekText + '</p></div>' +
+          '</div>' +
+          (extra ? '<p class="note">' + extra + '</p>' : '') +
+          '<p class="note"><strong>Estimate only.</strong> OpenAI has not published the corrected rate (as of Nov 25, 2026). These ranges are the intended estimates still on the pricing page. They match what we published on Nov 18. Last week\'s burn was the undercounted one, so this tool does not treat last week as the new normal.</p>';
+      }
+      ["e-plan", "e-model", "e-speed", "e-sess", "e-msg", "e-days"].forEach(function (id) {
+        var el = document.getElementById(id);
+        el.addEventListener("input", run);
+        el.addEventListener("change", run);
+      });
+      run();
+    })();
+    (function () {
+      var P = window.PRICING;
+      if (!P) return;
+      function money(pl) {
+        var n = pl.monthly;
+        var s = n === 0 ? "Free" : "$" + (n % 1 ? n.toFixed(2) : String(n)) + (pl.seat ? "/seat" : "") + "/mo";
+        if (pl.note) s += ". " + pl.note;
+        return s;
+      }
+      var rows = document.querySelectorAll("#backup-table tr[data-tool]");
+      var mismatch = [];
+      rows.forEach(function (tr) {
+        var tool = P[tr.getAttribute("data-tool")];
+        var name = tr.getAttribute("data-plan");
+        var plan = tool && tool.plans.filter(function (p) { return p.name === name; })[0];
+        var cell = tr.querySelector(".bp-price");
+        if (!plan || !cell) { mismatch.push(name || "?"); return; }
+        var next = money(plan);
+        if (cell.textContent.trim() !== next) mismatch.push(name);
+        cell.textContent = next;
+      });
+      var note = document.getElementById("backup-note");
+      if (note && mismatch.length) note.textContent = "Price cells were refreshed from data.js (" + mismatch.join(", ") + " had drifted).";
+    })();
+  </script>
+  <script data-goatcounter="https://codetoolpicker.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

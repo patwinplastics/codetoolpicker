@@ -37,6 +37,7 @@ window.TOOL_BADGES = {
 };
 
 window.GUIDES = [
+  { slug: "codex-usage-correction-gpt-6-2", title: "Codex limits hitting sooner?", hook: "Price unchanged. Ultrafast is still 6x.", cat: "limits", tools: ["codex"], date: "2026-11-25", icon: "⏳" },
   { slug: "copilot-cli-vs-claude-code-vs-codex-cli", title: "Copilot CLI vs Claude Code vs Codex", hook: "Same model, 21 matchups. Scores tie. Bills don't.", cat: "versus", tools: ["copilot", "claude", "codex"], date: "2026-11-24", icon: "⚔️" },
   { slug: "chatgpt-business-1-seat-codex", title: "1-seat ChatGPT Business for Codex?", hook: "$25 a month for the same Codex as Plus", cat: "pricing", tools: ["codex"], date: "2026-11-23", icon: "💼" },
   { slug: "gemini-subscription-dec-2", title: "Gemini sub on Dec 2: what's real", hook: "\"First step\" is not a promise. What's confirmed.", cat: "news", tools: ["gemini", "claude", "codex"], date: "2026-11-22", icon: "📅" },

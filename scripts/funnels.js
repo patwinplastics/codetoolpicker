@@ -31,6 +31,7 @@ module.exports = function funnels(root) {
     "gemini-4-neon-vs-opus-5-5-vs-gpt-6-2-astra/index.html": { base: "../", tools: ["antigravity", "claude-code", "codex", "copilot"], stack: DEV },
     "mai-code-2-vs-code-2-flash/index.html": { base: "../", tools: ["copilot", "cursor", "claude-code"], stack: DEV },
     "gpt-6-2-astra-vs-sol/index.html": { base: "../", tools: ["codex", "copilot", "cursor"], stack: DEV },
+    "codex-usage-correction-gpt-6-2/index.html": { base: "../", tools: ["codex", "claude-code", "copilot", "cursor", "antigravity"], stack: DEV },
     "tokeneconomizer-claude-code-codex/index.html": { base: "../", tools: ["claude-code", "codex", "copilot"], stack: DEV },
     "gemini-4-carbon-vs-hydrogen/index.html": { base: "../", tools: ["copilot", "antigravity", "cursor"], stack: DEV },
     "claude-code-down-backup/index.html": { base: "../", tools: ["codex", "cursor", "copilot", "windsurf", "antigravity", "gemini-cli", "claude-code"], stack: DEV },
