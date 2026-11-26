@@ -4,23 +4,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name='impact-site-verification' value='83f48c6a-f7b9-45b3-8866-03f8600f0734'>
-  <title>Same Model, Different Harness: Copilot CLI vs Claude Code vs Codex CLI (Nov 2026)</title>
-  <meta name="description" content="GitHub's new Harnesses view runs Copilot CLI, Claude Code and Codex CLI on the same model at the same effort. The scores barely move; the cost per task does. All 21 matched results, what they mean, and a cost calculator. Checked Nov 24, 2026." />
-  <meta name="robots" content="index,follow" />
+  <title>Copilot CLI vs Claude Code vs Codex CLI (Nov 2026)</title>
+  <meta name="description" content="GitHub ran Copilot CLI, Claude Code and Codex CLI on the same model. Scores barely move; cost per task does. 21 matched results and a calculator. Nov 24, 2026." />
+<meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://codetoolpicker.com/copilot-cli-vs-claude-code-vs-codex-cli/" />
-  <meta property="og:title" content="Same model, different harness: Copilot CLI vs Claude Code vs Codex CLI" />
-  <meta property="og:description" content="GitHub ran its CLI against Claude Code and Codex CLI on the same models. Scores mostly tie. With Claude models Copilot CLI usually cost more; with GPT models it usually cost less. All 21 results." />
-  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Copilot CLI vs Claude Code vs Codex CLI (Nov 2026)" />
+  <meta property="og:description" content="GitHub ran Copilot CLI, Claude Code and Codex CLI on the same model. Scores barely move; cost per task does. 21 matched results and a calculator. Nov 24, 2026." />
+<meta property="og:type" content="article" />
   <meta property="og:url" content="https://codetoolpicker.com/copilot-cli-vs-claude-code-vs-codex-cli/" />
   <meta property="og:site_name" content="CodeToolPicker" />
   <meta property="og:image" content="https://codetoolpicker.com/og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="CodeToolPicker: Copilot CLI vs Claude Code vs Codex CLI harness comparison" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@codetoolpicker" />
-  <meta name="twitter:title" content="Same model, different harness: Copilot CLI vs Claude Code vs Codex CLI" />
-  <meta name="twitter:description" content="GitHub ran its CLI against Claude Code and Codex CLI on the same models. Scores mostly tie. With Claude models Copilot CLI usually cost more; with GPT models it usually cost less. All 21 results." />
-  <meta name="twitter:image" content="https://codetoolpicker.com/og.png" />
+  <meta name="twitter:title" content="Copilot CLI vs Claude Code vs Codex CLI (Nov 2026)" />
+  <meta name="twitter:description" content="GitHub ran Copilot CLI, Claude Code and Codex CLI on the same model. Scores barely move; cost per task does. 21 matched results and a calculator. Nov 24, 2026." />
+<meta name="twitter:image" content="https://codetoolpicker.com/og.png" />
   <link rel="icon" href="/favicon-48x48.png" sizes="48x48" type="image/png" />
   <link rel="icon" href="/favicon-96x96.png" sizes="96x96" type="image/png" />
   <link rel="icon" href="/icon-192.png" sizes="192x192" type="image/png" />
@@ -30,8 +31,9 @@
   <link rel="manifest" href="/site.webmanifest" />
   <meta name="theme-color" content="#0b0f14" />
   <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../ui.css" />
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CodeToolPicker", "item": "https://codetoolpicker.com/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://codetoolpicker.com/#comparisons"}, {"@type": "ListItem", "position": 3, "name": "Copilot CLI vs Claude Code vs Codex CLI, same model", "item": "https://codetoolpicker.com/copilot-cli-vs-claude-code-vs-codex-cli/"}]}</script>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Same Model, Different Harness: Copilot CLI vs Claude Code vs Codex CLI (Nov 2026)", "datePublished": "2026-11-24", "dateModified": "2026-11-24", "author": {"@type": "Organization", "name": "CodeToolPicker"}, "publisher": {"@type": "Organization", "name": "CodeToolPicker"}, "mainEntityOfPage": "https://codetoolpicker.com/copilot-cli-vs-claude-code-vs-codex-cli/"}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org","@type": "Article","headline": "Copilot CLI vs Claude Code vs Codex CLI (Nov 2026)","datePublished": "2026-11-24","dateModified": "2026-11-24","author": {"@type": "Organization","name": "CodeToolPicker","url": "https://codetoolpicker.com/"},"publisher": {"@type": "Organization","name": "CodeToolPicker","url": "https://codetoolpicker.com/","logo": {"@type": "ImageObject","url": "https://codetoolpicker.com/apple-touch-icon.png"}},"mainEntityOfPage": "https://codetoolpicker.com/copilot-cli-vs-claude-code-vs-codex-cli/","image": "https://codetoolpicker.com/og.png"}</script>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -103,14 +105,30 @@
     <article>
     <section class="hero">
       <h1>Same Model, Different Harness: <span class="hl">Copilot CLI vs Claude Code vs Codex CLI</span></h1>
-      <p><strong>Short answer:</strong> on GitHub's new Harnesses view, putting the same model in a different agent barely changes how many tasks get solved. In 20 of 21 matched pairs the gap was 4 points or less. What changes is the bill. With <strong>Claude models</strong>, Copilot CLI usually cost <strong>more</strong> per task than Claude Code (7% to 21% more in 6 of 9 pairs). With <strong>GPT models</strong>, Copilot CLI cost <strong>less</strong> than Codex CLI in 11 of 12 pairs (2% to 55% less).</p>
-      <p>So the model you pick still decides most of the result. The harness is a cost and workflow choice. And keep in mind who ran the test: GitHub, on its own product, with Codex CLI's costs estimated from API prices.</p>
+      <!-- UI:tldr -->
+      <div class="ui-tldr g-versus">
+        <div class="ui-tldr-main">
+          <p class="ui-kicker">TL;DR · 🥊 Head-to-head</p>
+          <p class="ui-win"><span aria-hidden="true">🏆</span> Pick the model, not the harness</p>
+          <p class="ui-verdict">Same model, different agent: scores barely move. The bill does.</p>
+          <div class="ui-stats"><div class="ui-stat"><b>20 of 21</b><span>pairs within 4 points</span></div><div class="ui-stat"><b>7 to 21%</b><span>Copilot CLI costlier than Claude Code (6 of 9)</span></div><div class="ui-stat"><b>2 to 55%</b><span>Copilot CLI cheaper than Codex CLI (11 of 12)</span></div></div>
+          <div class="cta-row ui-tldr-cta"><a class="btn btn-primary" href="#calc" data-ui-open>🧮 Open the calculator</a></div>
+        </div>
+        <img class="ui-tldr-art" src="../img/cat-head-to-head-sm.webp" srcset="../img/cat-head-to-head-sm.webp 480w, ../img/cat-head-to-head.webp 960w" sizes="(max-width: 700px) 92vw, 300px" width="480" height="270" alt="Head-to-head guide illustration: abstract glowing code editor windows" fetchpriority="high" />
+      </div>
+      <!-- /UI:tldr --><!-- UI:folds -->
+      <details class="ui-full"><summary>Read the full short answer</summary>
+        <p><strong>Short answer:</strong> on GitHub's new Harnesses view, putting the same model in a different agent barely changes how many tasks get solved. In 20 of 21 matched pairs the gap was 4 points or less. What changes is the bill. With <strong>Claude models</strong>, Copilot CLI usually cost <strong>more</strong> per task than Claude Code (7% to 21% more in 6 of 9 pairs). With <strong>GPT models</strong>, Copilot CLI cost <strong>less</strong> than Codex CLI in 11 of 12 pairs (2% to 55% less).</p>
+        <p>So the model you pick still decides most of the result. The harness is a cost and workflow choice. And keep in mind who ran the test: GitHub, on its own product, with Codex CLI's costs estimated from API prices.</p>
+      </details><!-- /UI:folds -->
       <p class="updated">Checked Nov 24, 2026 on the <a href="https://benchmarks.github.com/" rel="noopener">GitHub Copilot benchmarks site</a> (Harnesses view, data archive dated Nov 16, 2026, marked public preview), GitHub's <a href="https://github.blog/changelog/2026-11-17-github-copilot-benchmarks-site-adds-harness-comparisons/" rel="noopener">Nov 17 changelog</a>, GitHub's June 25 <a href="https://github.blog/ai-and-ml/github-copilot/evaluating-performance-and-efficiency-of-the-github-copilot-agentic-harness-across-models-and-tasks/" rel="noopener">harness evaluation post</a>, and <a href="https://docs.github.com/en/copilot/get-started/plans" rel="noopener">GitHub Copilot plans</a> for AI credit allowances.</p>
       <div class="cta-row"><a class="btn btn-primary" href="#results">All 21 results</a> <a class="btn" href="#takeaways">What it means</a> <a class="btn" href="#calc">Cost calculator</a> <a class="btn" href="#caveats">Caveats</a></div>
     </section>
+    <!-- UI:jump --><nav class="ui-jump" aria-label="On this page"><div class="ui-jump-in"><a href="#what" class="ui-chip">What GitHub actually measured</a><a href="#results" class="ui-chip">All 21 matched results</a><a href="#takeaways" class="ui-chip">What it means for…</a><a href="#calc" class="ui-chip ui-chip-calc">🧮 What would a month…</a><a href="#caveats" class="ui-chip">Caveats worth reading</a><a href="#unknowns" class="ui-chip">What we couldn't confirm</a><a href="#try" class="ui-chip">Try one</a><a href="#faq" class="ui-chip">FAQ</a></div><button type="button" class="ui-expand" hidden>Expand all</button></nav><!-- /UI:jump -->
 
-    <section class="panel" id="what">
-      <h2>What GitHub actually measured</h2>
+    <section class="panel ui-acc" id="what">
+      <details class="ui-d" open><summary class="ui-sum"><h2>What GitHub actually measured</h2><span class="ui-tags"></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
       <ul>
         <li><strong>Same model, same effort.</strong> GitHub's changelog says the view "compares GitHub Copilot CLI with Claude Code and Codex CLI using the same model at the same reasoning effort." Only exact model pairs at <strong>medium</strong> reasoning effort are shown. Copilot-only setups like Copilot Fusion are left out.</li>
         <li><strong>Copilot CLI vs the model maker's own agent.</strong> Claude models are compared with Claude Code; OpenAI models with Codex CLI. There is no Claude Code vs Codex CLI pairing, because they never run the same model.</li>
@@ -119,56 +137,60 @@
         <li><strong>Versions tested:</strong> Copilot CLI 1.0.105 to 1.0.112, Claude Code 2.1.317 to 2.1.325, Codex CLI 0.166.0 to 0.169.0.</li>
         <li><strong>Codex CLI costs are estimates.</strong> GitHub's notes say Codex CLI "logs token usage but not cost," so its costs are estimated from OpenAI's public API prices at standard short-context rates, and "actual billed amounts may differ."</li>
       </ul>
+    </div></details>
     </section>
 
-    <section class="panel" id="results">
-      <h2>All 21 matched results</h2>
+    <section class="panel ui-acc" id="results">
+      <details class="ui-d"><summary class="ui-sum"><h2>All 21 matched results</h2><span class="ui-tags"><span class="ui-tag">Table</span></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
       <p class="sub">Figures from GitHub's published data. "Difference" is Copilot CLI minus the other harness, in percentage points. Brackets are approximate 95% intervals that we recomputed from GitHub's per-run numbers using the site's own bootstrap method. <span class="yes">Green</span> means the interval favors Copilot CLI, <span class="no">red</span> means it favors the other harness, <span class="maybe">yellow</span> means it crosses zero, so call it a tie.</p>
 
       <h3>DeepSWE 1.1 <span class="note">(113 software engineering tasks, 3 to 5 runs per setup)</span></h3>
-      <div class="table-scroll"><table>
+      <div class="table-scroll"><table class="ui-stack">
         <thead><tr><th>Model (medium effort)</th><th>Compared with</th><th>Solved: Copilot CLI vs other</th><th>Difference</th><th>Cost per task: Copilot CLI vs other</th><th>Copilot CLI cost</th></tr></thead>
         <tbody>
-          <tr><td><strong>Claude Opus 5.5</strong></td><td>Claude Code</td><td>72.0% vs 69.0%</td><td><span class="yes">+3 pp</span> <span class="note">(0.7 to 5.5)</span></td><td>$1.65 vs $1.65</td><td><span class="maybe">same</span> <span class="note">(-2% to 2%)</span></td></tr>
-          <tr><td><strong>Claude Sonnet 5.5</strong></td><td>Claude Code</td><td>63.4% vs 59.8%</td><td><span class="yes">+3.5 pp</span> <span class="note">(1.4 to 5.8)</span></td><td>$0.40 vs $0.37</td><td><span class="no">8% pricier</span> <span class="note">(-10% to -6%)</span></td></tr>
-          <tr><td><strong>Claude Haiku 5.5</strong></td><td>Claude Code</td><td>55.9% vs 52.6%</td><td><span class="maybe">+3.4 pp</span> <span class="note">(0 to 7.1)</span></td><td>$0.36 vs $0.31</td><td><span class="no">16% pricier</span> <span class="note">(-23% to -8%)</span></td></tr>
-          <tr><td><strong>GPT-6.1 Sol</strong></td><td>Codex CLI</td><td>72.9% vs 74.2%</td><td><span class="maybe">&minus;1.2 pp</span> <span class="note">(-3.2 to 0.7)</span></td><td>$0.54 vs $0.59</td><td><span class="yes">9% cheaper</span> <span class="note">(7% to 11%)</span></td></tr>
-          <tr><td><strong>GPT-6 Astra</strong></td><td>Codex CLI</td><td>73.6% vs 72.2%</td><td><span class="maybe">+1.4 pp</span> <span class="note">(-0.5 to 3.2)</span></td><td>$3.27 vs $3.44</td><td><span class="yes">5% cheaper</span> <span class="note">(2% to 7%)</span></td></tr>
-          <tr><td><strong>GPT-6.1 Terra</strong></td><td>Codex CLI</td><td>69.0% vs 69.2%</td><td><span class="maybe">&minus;0.2 pp</span> <span class="note">(-3.7 to 4.1)</span></td><td>$0.28 vs $0.30</td><td><span class="yes">7% cheaper</span> <span class="note">(2% to 11%)</span></td></tr>
-          <tr><td><strong>GPT-6 Luna</strong></td><td>Codex CLI</td><td>49.4% vs 36.6%</td><td><span class="yes">+12.7 pp</span> <span class="note">(9.4 to 16.3)</span></td><td>$0.08 vs $0.06</td><td><span class="no">47% pricier</span> <span class="note">(-53% to -42%)</span></td></tr>
+          <tr><td data-label="Model (medium effort)"><strong>Claude Opus 5.5</strong></td><td data-label="Compared with">Claude Code</td><td data-label="Solved: Copilot CLI vs other">72.0% vs 69.0%</td><td data-label="Difference"><span class="yes">+3 pp</span> <span class="note">(0.7 to 5.5)</span></td><td data-label="Cost per task: Copilot CLI vs other">$1.65 vs $1.65</td><td data-label="Copilot CLI cost"><span class="maybe">same</span> <span class="note">(-2% to 2%)</span></td></tr>
+          <tr><td data-label="Model (medium effort)"><strong>Claude Sonnet 5.5</strong></td><td data-label="Compared with">Claude Code</td><td data-label="Solved: Copilot CLI vs other">63.4% vs 59.8%</td><td data-label="Difference"><span class="yes">+3.5 pp</span> <span class="note">(1.4 to 5.8)</span></td><td data-label="Cost per task: Copilot CLI vs other">$0.40 vs $0.37</td><td data-label="Copilot CLI cost"><span class="no">8% pricier</span> <span class="note">(-10% to -6%)</span></td></tr>
+          <tr><td data-label="Model (medium effort)"><strong>Claude Haiku 5.5</strong></td><td data-label="Compared with">Claude Code</td><td data-label="Solved: Copilot CLI vs other">55.9% vs 52.6%</td><td data-label="Difference"><span class="maybe">+3.4 pp</span> <span class="note">(0 to 7.1)</span></td><td data-label="Cost per task: Copilot CLI vs other">$0.36 vs $0.31</td><td data-label="Copilot CLI cost"><span class="no">16% pricier</span> <span class="note">(-23% to -8%)</span></td></tr>
+          <tr><td data-label="Model (medium effort)"><strong>GPT-6.1 Sol</strong></td><td data-label="Compared with">Codex CLI</td><td data-label="Solved: Copilot CLI vs other">72.9% vs 74.2%</td><td data-label="Difference"><span class="maybe">&minus;1.2 pp</span> <span class="note">(-3.2 to 0.7)</span></td><td data-label="Cost per task: Copilot CLI vs other">$0.54 vs $0.59</td><td data-label="Copilot CLI cost"><span class="yes">9% cheaper</span> <span class="note">(7% to 11%)</span></td></tr>
+          <tr><td data-label="Model (medium effort)"><strong>GPT-6 Astra</strong></td><td data-label="Compared with">Codex CLI</td><td data-label="Solved: Copilot CLI vs other">73.6% vs 72.2%</td><td data-label="Difference"><span class="maybe">+1.4 pp</span> <span class="note">(-0.5 to 3.2)</span></td><td data-label="Cost per task: Copilot CLI vs other">$3.27 vs $3.44</td><td data-label="Copilot CLI cost"><span class="yes">5% cheaper</span> <span class="note">(2% to 7%)</span></td></tr>
+          <tr><td data-label="Model (medium effort)"><strong>GPT-6.1 Terra</strong></td><td data-label="Compared with">Codex CLI</td><td data-label="Solved: Copilot CLI vs other">69.0% vs 69.2%</td><td data-label="Difference"><span class="maybe">&minus;0.2 pp</span> <span class="note">(-3.7 to 4.1)</span></td><td data-label="Cost per task: Copilot CLI vs other">$0.28 vs $0.30</td><td data-label="Copilot CLI cost"><span class="yes">7% cheaper</span> <span class="note">(2% to 11%)</span></td></tr>
+          <tr><td data-label="Model (medium effort)"><strong>GPT-6 Luna</strong></td><td data-label="Compared with">Codex CLI</td><td data-label="Solved: Copilot CLI vs other">49.4% vs 36.6%</td><td data-label="Difference"><span class="yes">+12.7 pp</span> <span class="note">(9.4 to 16.3)</span></td><td data-label="Cost per task: Copilot CLI vs other">$0.08 vs $0.06</td><td data-label="Copilot CLI cost"><span class="no">47% pricier</span> <span class="note">(-53% to -42%)</span></td></tr>
         </tbody>
       </table></div>
       <h3>Terminal-Bench 4.0 <span class="note">(66 terminal tasks, 3 to 5 runs per setup)</span></h3>
-      <div class="table-scroll"><table>
+      <div class="table-scroll"><table class="ui-stack">
         <thead><tr><th>Model (medium effort)</th><th>Compared with</th><th>Solved: Copilot CLI vs other</th><th>Difference</th><th>Cost per task: Copilot CLI vs other</th><th>Copilot CLI cost</th></tr></thead>
         <tbody>
-          <tr><td><strong>Claude Opus 5.5</strong></td><td>Claude Code</td><td>48.8% vs 48.2%</td><td><span class="maybe">+0.6 pp</span> <span class="note">(-3.6 to 4.5)</span></td><td>$3.51 vs $3.03</td><td><span class="maybe">16% pricier</span> <span class="note">(-34% to 0%)</span></td></tr>
-          <tr><td><strong>Claude Sonnet 5.5</strong></td><td>Claude Code</td><td>28.5% vs 24.8%</td><td><span class="maybe">+3.6 pp</span> <span class="note">(-1.2 to 8.2)</span></td><td>$0.87 vs $0.78</td><td><span class="no">12% pricier</span> <span class="note">(-22% to -3%)</span></td></tr>
-          <tr><td><strong>Claude Haiku 5.5</strong></td><td>Claude Code</td><td>14.2% vs 14.5%</td><td><span class="maybe">&minus;0.3 pp</span> <span class="note">(-3.6 to 3.3)</span></td><td>$0.76 vs $0.63</td><td><span class="no">21% pricier</span> <span class="note">(-34% to -7%)</span></td></tr>
-          <tr><td><strong>GPT-6 Astra</strong></td><td>Codex CLI</td><td>49.7% vs 51.2%</td><td><span class="maybe">&minus;1.5 pp</span> <span class="note">(-5.8 to 2.7)</span></td><td>$3.65 vs $3.82</td><td><span class="maybe">4% cheaper</span> <span class="note">(-2% to 9%)</span></td></tr>
-          <tr><td><strong>GPT-6.1 Sol</strong></td><td>Codex CLI</td><td>47.3% vs 47.9%</td><td><span class="maybe">&minus;0.6 pp</span> <span class="note">(-4.5 to 3.3)</span></td><td>$0.63 vs $0.67</td><td><span class="maybe">7% cheaper</span> <span class="note">(-3% to 15%)</span></td></tr>
-          <tr><td><strong>GPT-6.1 Terra</strong></td><td>Codex CLI</td><td>38.2% vs 36.1%</td><td><span class="maybe">+2.1 pp</span> <span class="note">(-2.4 to 7.3)</span></td><td>$0.33 vs $0.44</td><td><span class="yes">26% cheaper</span> <span class="note">(18% to 32%)</span></td></tr>
-          <tr><td><strong>GPT-6 Luna</strong></td><td>Codex CLI</td><td>6.1% vs 5.2%</td><td><span class="maybe">+0.9 pp</span> <span class="note">(-1.5 to 3.3)</span></td><td>$0.09 vs $0.14</td><td><span class="yes">40% cheaper</span> <span class="note">(25% to 50%)</span></td></tr>
+          <tr><td data-label="Model (medium effort)"><strong>Claude Opus 5.5</strong></td><td data-label="Compared with">Claude Code</td><td data-label="Solved: Copilot CLI vs other">48.8% vs 48.2%</td><td data-label="Difference"><span class="maybe">+0.6 pp</span> <span class="note">(-3.6 to 4.5)</span></td><td data-label="Cost per task: Copilot CLI vs other">$3.51 vs $3.03</td><td data-label="Copilot CLI cost"><span class="maybe">16% pricier</span> <span class="note">(-34% to 0%)</span></td></tr>
+          <tr><td data-label="Model (medium effort)"><strong>Claude Sonnet 5.5</strong></td><td data-label="Compared with">Claude Code</td><td data-label="Solved: Copilot CLI vs other">28.5% vs 24.8%</td><td data-label="Difference"><span class="maybe">+3.6 pp</span> <span class="note">(-1.2 to 8.2)</span></td><td data-label="Cost per task: Copilot CLI vs other">$0.87 vs $0.78</td><td data-label="Copilot CLI cost"><span class="no">12% pricier</span> <span class="note">(-22% to -3%)</span></td></tr>
+          <tr><td data-label="Model (medium effort)"><strong>Claude Haiku 5.5</strong></td><td data-label="Compared with">Claude Code</td><td data-label="Solved: Copilot CLI vs other">14.2% vs 14.5%</td><td data-label="Difference"><span class="maybe">&minus;0.3 pp</span> <span class="note">(-3.6 to 3.3)</span></td><td data-label="Cost per task: Copilot CLI vs other">$0.76 vs $0.63</td><td data-label="Copilot CLI cost"><span class="no">21% pricier</span> <span class="note">(-34% to -7%)</span></td></tr>
+          <tr><td data-label="Model (medium effort)"><strong>GPT-6 Astra</strong></td><td data-label="Compared with">Codex CLI</td><td data-label="Solved: Copilot CLI vs other">49.7% vs 51.2%</td><td data-label="Difference"><span class="maybe">&minus;1.5 pp</span> <span class="note">(-5.8 to 2.7)</span></td><td data-label="Cost per task: Copilot CLI vs other">$3.65 vs $3.82</td><td data-label="Copilot CLI cost"><span class="maybe">4% cheaper</span> <span class="note">(-2% to 9%)</span></td></tr>
+          <tr><td data-label="Model (medium effort)"><strong>GPT-6.1 Sol</strong></td><td data-label="Compared with">Codex CLI</td><td data-label="Solved: Copilot CLI vs other">47.3% vs 47.9%</td><td data-label="Difference"><span class="maybe">&minus;0.6 pp</span> <span class="note">(-4.5 to 3.3)</span></td><td data-label="Cost per task: Copilot CLI vs other">$0.63 vs $0.67</td><td data-label="Copilot CLI cost"><span class="maybe">7% cheaper</span> <span class="note">(-3% to 15%)</span></td></tr>
+          <tr><td data-label="Model (medium effort)"><strong>GPT-6.1 Terra</strong></td><td data-label="Compared with">Codex CLI</td><td data-label="Solved: Copilot CLI vs other">38.2% vs 36.1%</td><td data-label="Difference"><span class="maybe">+2.1 pp</span> <span class="note">(-2.4 to 7.3)</span></td><td data-label="Cost per task: Copilot CLI vs other">$0.33 vs $0.44</td><td data-label="Copilot CLI cost"><span class="yes">26% cheaper</span> <span class="note">(18% to 32%)</span></td></tr>
+          <tr><td data-label="Model (medium effort)"><strong>GPT-6 Luna</strong></td><td data-label="Compared with">Codex CLI</td><td data-label="Solved: Copilot CLI vs other">6.1% vs 5.2%</td><td data-label="Difference"><span class="maybe">+0.9 pp</span> <span class="note">(-1.5 to 3.3)</span></td><td data-label="Cost per task: Copilot CLI vs other">$0.09 vs $0.14</td><td data-label="Copilot CLI cost"><span class="yes">40% cheaper</span> <span class="note">(25% to 50%)</span></td></tr>
         </tbody>
       </table></div>
       <h3>Terminal-Bench-Science 0.1 <span class="note">(70 science research tasks, 3 to 5 runs per setup)</span></h3>
-      <div class="table-scroll"><table>
+      <div class="table-scroll"><table class="ui-stack">
         <thead><tr><th>Model (medium effort)</th><th>Compared with</th><th>Solved: Copilot CLI vs other</th><th>Difference</th><th>Cost per task: Copilot CLI vs other</th><th>Copilot CLI cost</th></tr></thead>
         <tbody>
-          <tr><td><strong>Claude Opus 5.5</strong></td><td>Claude Code</td><td>44.6% vs 40.6%</td><td><span class="maybe">+4 pp</span> <span class="note">(-1.1 to 9.1)</span></td><td>$6.64 vs $8.40</td><td><span class="yes">21% cheaper</span> <span class="note">(14% to 27%)</span></td></tr>
-          <tr><td><strong>Claude Sonnet 5.5</strong></td><td>Claude Code</td><td>13.7% vs 12.3%</td><td><span class="maybe">+1.4 pp</span> <span class="note">(-2 to 5.1)</span></td><td>$1.50 vs $1.39</td><td><span class="maybe">7% pricier</span> <span class="note">(-16% to 2%)</span></td></tr>
-          <tr><td><strong>Claude Haiku 5.5</strong></td><td>Claude Code</td><td>3.6% vs 1.9%</td><td><span class="yes">+1.7 pp</span> <span class="note">(0.5 to 3.1)</span></td><td>$0.09 vs $0.59</td><td><span class="yes">85% cheaper</span> <span class="note">(84% to 86%)</span></td></tr>
-          <tr><td><strong>GPT-6 Astra</strong></td><td>Codex CLI</td><td>58.0% vs 57.4%</td><td><span class="maybe">+0.6 pp</span> <span class="note">(-4.3 to 6)</span></td><td>$9.15 vs $12.01</td><td><span class="yes">24% cheaper</span> <span class="note">(17% to 29%)</span></td></tr>
-          <tr><td><strong>GPT-6.1 Sol</strong></td><td>Codex CLI</td><td>52.3% vs 52.3%</td><td><span class="maybe">0 pp</span> <span class="note">(-4 to 3.7)</span></td><td>$1.94 vs $1.98</td><td><span class="maybe">2% cheaper</span> <span class="note">(-10% to 12%)</span></td></tr>
-          <tr><td><strong>GPT-6.1 Terra</strong></td><td>Codex CLI</td><td>32.9% vs 36.3%</td><td><span class="maybe">&minus;3.4 pp</span> <span class="note">(-8.9 to 1.4)</span></td><td>$0.86 vs $1.74</td><td><span class="yes">51% cheaper</span> <span class="note">(42% to 57%)</span></td></tr>
-          <tr><td><strong>GPT-6 Luna</strong></td><td>Codex CLI</td><td>2.3% vs 2.3%</td><td><span class="maybe">0 pp</span> <span class="note">(-2.9 to 2.6)</span></td><td>$0.09 vs $0.20</td><td><span class="yes">55% cheaper</span> <span class="note">(47% to 60%)</span></td></tr>
+          <tr><td data-label="Model (medium effort)"><strong>Claude Opus 5.5</strong></td><td data-label="Compared with">Claude Code</td><td data-label="Solved: Copilot CLI vs other">44.6% vs 40.6%</td><td data-label="Difference"><span class="maybe">+4 pp</span> <span class="note">(-1.1 to 9.1)</span></td><td data-label="Cost per task: Copilot CLI vs other">$6.64 vs $8.40</td><td data-label="Copilot CLI cost"><span class="yes">21% cheaper</span> <span class="note">(14% to 27%)</span></td></tr>
+          <tr><td data-label="Model (medium effort)"><strong>Claude Sonnet 5.5</strong></td><td data-label="Compared with">Claude Code</td><td data-label="Solved: Copilot CLI vs other">13.7% vs 12.3%</td><td data-label="Difference"><span class="maybe">+1.4 pp</span> <span class="note">(-2 to 5.1)</span></td><td data-label="Cost per task: Copilot CLI vs other">$1.50 vs $1.39</td><td data-label="Copilot CLI cost"><span class="maybe">7% pricier</span> <span class="note">(-16% to 2%)</span></td></tr>
+          <tr><td data-label="Model (medium effort)"><strong>Claude Haiku 5.5</strong></td><td data-label="Compared with">Claude Code</td><td data-label="Solved: Copilot CLI vs other">3.6% vs 1.9%</td><td data-label="Difference"><span class="yes">+1.7 pp</span> <span class="note">(0.5 to 3.1)</span></td><td data-label="Cost per task: Copilot CLI vs other">$0.09 vs $0.59</td><td data-label="Copilot CLI cost"><span class="yes">85% cheaper</span> <span class="note">(84% to 86%)</span></td></tr>
+          <tr><td data-label="Model (medium effort)"><strong>GPT-6 Astra</strong></td><td data-label="Compared with">Codex CLI</td><td data-label="Solved: Copilot CLI vs other">58.0% vs 57.4%</td><td data-label="Difference"><span class="maybe">+0.6 pp</span> <span class="note">(-4.3 to 6)</span></td><td data-label="Cost per task: Copilot CLI vs other">$9.15 vs $12.01</td><td data-label="Copilot CLI cost"><span class="yes">24% cheaper</span> <span class="note">(17% to 29%)</span></td></tr>
+          <tr><td data-label="Model (medium effort)"><strong>GPT-6.1 Sol</strong></td><td data-label="Compared with">Codex CLI</td><td data-label="Solved: Copilot CLI vs other">52.3% vs 52.3%</td><td data-label="Difference"><span class="maybe">0 pp</span> <span class="note">(-4 to 3.7)</span></td><td data-label="Cost per task: Copilot CLI vs other">$1.94 vs $1.98</td><td data-label="Copilot CLI cost"><span class="maybe">2% cheaper</span> <span class="note">(-10% to 12%)</span></td></tr>
+          <tr><td data-label="Model (medium effort)"><strong>GPT-6.1 Terra</strong></td><td data-label="Compared with">Codex CLI</td><td data-label="Solved: Copilot CLI vs other">32.9% vs 36.3%</td><td data-label="Difference"><span class="maybe">&minus;3.4 pp</span> <span class="note">(-8.9 to 1.4)</span></td><td data-label="Cost per task: Copilot CLI vs other">$0.86 vs $1.74</td><td data-label="Copilot CLI cost"><span class="yes">51% cheaper</span> <span class="note">(42% to 57%)</span></td></tr>
+          <tr><td data-label="Model (medium effort)"><strong>GPT-6 Luna</strong></td><td data-label="Compared with">Codex CLI</td><td data-label="Solved: Copilot CLI vs other">2.3% vs 2.3%</td><td data-label="Difference"><span class="maybe">0 pp</span> <span class="note">(-2.9 to 2.6)</span></td><td data-label="Cost per task: Copilot CLI vs other">$0.09 vs $0.20</td><td data-label="Copilot CLI cost"><span class="yes">55% cheaper</span> <span class="note">(47% to 60%)</span></td></tr>
         </tbody>
       </table></div>
       <p class="note">GPT-6 Astra and GPT-6.1 Sol are what GitHub tested, not the newer GPT-6.2 versions. Claude Haiku 5.5 on Terminal-Bench-Science had only 4 Copilot runs and 3 Claude Code runs, and both scored under 4%, so the 85% cost gap there means little.</p>
+    </div></details>
     </section>
 
-    <section class="panel" id="takeaways">
-      <h2>What it means for you</h2>
+    <section class="panel ui-acc" id="takeaways">
+      <details class="ui-d"><summary class="ui-sum"><h2>What it means for you</h2><span class="ui-tags"></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
       <ul>
         <li><strong>Model first, harness second.</strong> Going from Claude Haiku 5.5 to Opus 5.5 inside the same harness moved DeepSWE scores by about 16 points. Switching harness on the same model moved them by 3.5 points at most, except GPT-6 Luna.</li>
         <li><strong>Claude Code is the cheaper home for Claude models, mostly.</strong> Copilot CLI solved a few more DeepSWE tasks with every Claude model (intervals above zero for Opus and Sonnet), but cost 7% to 21% more per task in 6 of 9 Claude pairs. The big exception: Opus 5.5 on Terminal-Bench-Science, where Copilot CLI was 21% cheaper ($6.64 vs $8.40).</li>
@@ -177,10 +199,12 @@
         <li><strong>On a flat plan, cost per task means limits, not dollars.</strong> If you pay for Claude Pro or Max or ChatGPT Plus or Pro, a cheaper harness doesn't lower your bill. It may stretch your usage limits, if the plan meters roughly by tokens. On Copilot (AI credits at $0.01 each) or an API key, cost per task is real money.</li>
         <li><strong>The cheapest move is often a smaller model.</strong> GPT-6.1 Terra in Copilot CLI solved 69.0% of DeepSWE at $0.28 a task. Claude Opus 5.5 solved 72.0% at $1.65. That's about 6x the cost for 3 more points.</li>
       </ul>
+    </div></details>
     </section>
 
-    <section class="panel picker" id="calc">
-      <h2>What would a month of tasks cost in each harness?</h2>
+    <section class="panel picker ui-acc" id="calc">
+      <details class="ui-d" open><summary class="ui-sum"><h2>What would a month of tasks cost in each harness?</h2><span class="ui-tags"><span class="ui-tag ui-tag-calc">Interactive</span></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
       <p class="sub">Runs in your browser. Uses GitHub's mean cost per task for the model and benchmark you pick. Real tasks vary a lot in size, so treat this as a ratio, not a forecast. Nothing is sent anywhere.</p>
       <div class="calc-grid">
         <div><label for="hc-model">Model</label>
@@ -204,10 +228,12 @@
       </div>
       <div id="hc-out" style="margin-top:14px" aria-live="polite"></div>
       <p class="note">Copilot credit math uses $0.01 per credit and GitHub's plan allowances: Pro 1,500, Pro+ 7,000, Max 20,000 AI credits a month (checked Nov 24, 2026). Not every model is on every Copilot plan; check the model picker for yours.</p>
+    </div></details>
     </section>
 
-    <section class="panel" id="caveats">
-      <h2>Caveats worth reading</h2>
+    <section class="panel ui-acc" id="caveats">
+      <details class="ui-d"><summary class="ui-sum"><h2>Caveats worth reading</h2><span class="ui-tags"></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
       <ul>
         <li><strong>GitHub graded its own product.</strong> We haven't seen a matching harness comparison from Anthropic or OpenAI. GitHub's own June write-up called the results "effective parity" because most gaps sit inside run-to-run noise.</li>
         <li><strong>Medium effort only.</strong> Most people run Opus or Astra at high or max effort for hard work. Gaps at other effort levels aren't published.</li>
@@ -216,15 +242,18 @@
         <li><strong>The data is marked provisional</strong> and in public preview, and agent versions keep changing. Copilot CLI shipped several versions during the test window.</li>
         <li><strong>Older model versions.</strong> GitHub tested GPT-6 Astra and GPT-6.1 Sol, not GPT-6.2. Gemini models aren't in the harness view.</li>
       </ul>
+    </div></details>
     </section>
 
-    <section class="panel" id="unknowns">
-      <h2>What we couldn't confirm</h2>
+    <section class="panel ui-acc" id="unknowns">
+      <details class="ui-d"><summary class="ui-sum"><h2>What we couldn't confirm</h2><span class="ui-tags"></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
       <ul>
         <li><strong>The exact intervals GitHub shows.</strong> We recomputed them from the per-run data embedded in GitHub's site with the same method. They should match closely, but we did not compare every bar by eye.</li>
         <li><strong>How these costs map to subscription limits.</strong> Anthropic and OpenAI don't publish how many tokens a Claude or ChatGPT plan includes, so "cheaper per task" can't be turned into "X more tasks per week" on those plans.</li>
         <li><strong>Higher effort results.</strong> GitHub publishes high and max effort scores for Copilot CLI, but not matched against Claude Code or Codex CLI.</li>
       </ul>
+    </div></details>
     </section>
     <!-- PRERENDER:try -->
     <section class="panel try" id="try">
@@ -259,16 +288,22 @@
     </section>
     <!-- /PRERENDER:try -->
 
-    <section class="panel" id="faq">
-      <h2>FAQ</h2>
-      <h3>Is Copilot CLI better than Claude Code with the same model?</h3>
+    <section class="panel ui-acc" id="faq">
+      <details class="ui-d" open><summary class="ui-sum"><h2>FAQ</h2><span class="ui-tags"><span class="ui-tag">4 questions</span></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
+      
+      <details class="ui-faq"><summary><h3>Is Copilot CLI better than Claude Code with the same model?</h3></summary><div class="ui-faq-a">
       <p>On GitHub's own benchmark site (Nov 17, 2026 data), Copilot CLI solved slightly more tasks than Claude Code with Claude Opus, Sonnet and Haiku 5.5 on DeepSWE 1.1 (about 3 to 3.5 points), but on Terminal-Bench 4.0 the scores were within noise. Copilot CLI cost the same per task with Opus 5.5 on DeepSWE and 7% to 21% more in 6 of the other 8 Claude pairs. GitHub ran the test on its own product, so treat it as one data point.</p>
-      <h3>Is Copilot CLI cheaper than Codex CLI with the same GPT model?</h3>
+      </div></details>
+      <details class="ui-faq"><summary><h3>Is Copilot CLI cheaper than Codex CLI with the same GPT model?</h3></summary><div class="ui-faq-a">
       <p>In 11 of 12 GPT pairs on GitHub's benchmark site, Copilot CLI had a lower cost per task than Codex CLI, from 2% to 55% lower, while resolution rates stayed within a few points. The exception was GPT-6 Luna on DeepSWE 1.1, where Copilot CLI solved 12.7 points more but cost 47% more. GitHub says Codex CLI does not log cost, so its costs are GitHub's estimates from OpenAI's public API prices.</p>
-      <h3>Does the harness matter more than the model?</h3>
+      </div></details>
+      <details class="ui-faq"><summary><h3>Does the harness matter more than the model?</h3></summary><div class="ui-faq-a">
       <p>Not for the score. In GitHub's 21 matched pairs, switching harness moved resolution by 4 points or less in 20 of them, while switching between the models GitHub tested moved it by up to about 55 points (Claude Haiku 5.5 to Opus 5.5 alone is about 16 points on DeepSWE 1.1). The harness mattered more for cost: the same model cost up to 85% less or 47% more per task depending on the harness.</p>
-      <h3>Do these costs apply if I pay for Claude Pro, Max or ChatGPT Plus?</h3>
-      <p>Not directly. The costs are list-price token costs per task. On a flat subscription you pay the same monthly price either way, so a cheaper harness means your usage limits last longer, not a smaller bill. On GitHub Copilot, where usage is billed in AI credits at $0.01 each, and on API keys, cost per task maps to real money.</p>
+      </div></details>
+      <details class="ui-faq"><summary><h3>Do these costs apply if I pay for Claude Pro, Max or ChatGPT Plus?</h3></summary><div class="ui-faq-a">
+      <p>Not directly. The costs are list-price token costs per task. On a flat subscription you pay the same monthly price either way, so a cheaper harness means your usage limits last longer, not a smaller bill. On GitHub Copilot, where usage is billed in AI credits at $0.01 each, and on API keys, cost per task maps to real money.</p></div></details>
+    </div></details>
     </section>
     <!-- PRERENDER:stack -->
     <section class="panel stack" id="ship">
@@ -303,8 +338,9 @@
     </section>
     <!-- /PRERENDER:stack -->
 
-    <section class="panel" id="related">
-      <h2>Related guides</h2>
+    <section class="panel ui-acc" id="related">
+      <details class="ui-d"><summary class="ui-sum"><h2>Related guides</h2><span class="ui-tags"></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
       <ul class="related">
         <li><a href="../copilot-vs-claude-code/">GitHub Copilot vs Claude Code<small>Plans, models and who should pick which</small></a></li>
         <li><a href="../claude-code-vs-codex/">Claude Code vs Codex<small>Plan by plan, limits and reliability</small></a></li>
@@ -314,6 +350,7 @@
         <li><a href="../usage-limits-compared/">Usage limits compared<small>How far each plan goes</small></a></li>
         <li><a href="../ai-coding-tool-pricing/">AI coding tool pricing<small>Every plan, plus the price change log</small></a></li>
       </ul>
+    </div></details>
     </section>
 
     <aside class="sponsor" id="sponsor" aria-label="Sponsor slot">
@@ -322,9 +359,11 @@
       <div style="margin-top:10px" class="meta">Founding sponsor rates available now. Email <a href="mailto:sponsors@codetoolpicker.com?subject=CodeToolPicker%20sponsorship">sponsors@codetoolpicker.com</a> &middot; <a href="../advertise/">See packages</a></div>
     </aside>
 
-    <section class="panel" id="disclosure">
-      <h2>Editorial disclosure</h2>
+    <section class="panel ui-acc" id="disclosure">
+      <details class="ui-d"><summary class="ui-sum"><h2>Editorial disclosure</h2><span class="ui-tags"></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
       <p><strong>Rankings are not for sale.</strong> Sponsored placements and affiliate links are always labeled, and they never change our recommendations, quiz results, prices, or comparison data. <strong>Links marked "referral" are affiliate links (Netlify):</strong> if you buy through them, we may earn a commission at no extra cost to you. Every other link is a plain link that pays us nothing, and pricing source links are never affiliate links. <a href="../advertise/#policy">Editorial policy</a>.</p>
+    </div></details>
     </section>
     </article>
 
@@ -361,6 +400,7 @@
       calc();
     })();
   </script>
+  <script src="../ui.js" defer></script>
   <script data-goatcounter="https://codetoolpicker.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

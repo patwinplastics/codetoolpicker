@@ -98,7 +98,8 @@ module.exports = function funnels(root) {
     const disc = `<p><strong>Rankings are not for sale.</strong> Sponsored placements and affiliate links are always labeled, and they never change our recommendations, quiz results, prices, or comparison data. ${affs.length
       ? `<strong>Links marked "referral" are affiliate links (${list(affs)}):</strong> if you buy through them, we may earn a commission at no extra cost to you. Every other link is a plain link that pays us nothing`
       : "None of the links on this page are affiliate links: no vendor here pays us"}, and pricing source links are never affiliate links. <a href="${base}advertise/#policy">Editorial policy</a>.</p>`;
-    html = html.replace(/(<section class="panel" id="disclosure"[^>]*>\s*<h2>Editorial disclosure<\/h2>\s*)<p>[\s\S]*?<\/p>/, `$1${disc}`);
+    // tolerant of the accordion markup from scripts/enhance.js and the <details> on the homepage
+    html = html.replace(/(<section class="panel[^"]*" id="disclosure"[^>]*>[\s\S]*?<h2[^>]*>Editorial disclosure[^<]*<\/h2>[\s\S]*?)<p>[\s\S]*?<\/p>/, (m, a) => a + disc);
     if (rel === "index.html") {
       const allAff = Object.values(L).filter((l) => l.affiliate).map((l) => l.name);
       html = html.replace(/<p>CodeToolPicker is an independent comparison site\.[\s\S]*?<\/p>/, `<p>CodeToolPicker is an independent comparison site. ${allAff.length ? `${list(allAff)} buttons are referral links (marked "referral"), so we may earn a commission at no extra cost to you.` : ""} Other tool links are plain links. Cursor, GitHub Copilot, Claude Code and most IDE vendors don't offer public affiliate programs.</p>`);

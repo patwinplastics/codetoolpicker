@@ -40,7 +40,7 @@
         <div class="price">${money(t.startingPaid)} <small>starting paid${t.freeTier ? " · free tier" : " · no free tier"}</small></div>
         <p class="meta"><strong>Best for:</strong> ${t.bestFor}</p>
         <ul class="list">${t.strengths.slice(0, 3).map((s) => `<li>${s}</li>`).join("")}</ul>
-        ${p.skipIf ? `<p class="skip"><strong>Skip it if:</strong> ${p.skipIf}</p>` : ""}
+        ${p.skipIf ? `<details class="skip-d"><summary>Skip it if…</summary><p class="skip">${p.skipIf}</p></details>` : ""}
         <div class="actions">
           ${tryBtn(t.id, `${t.freeTier ? "Try" : "Get"} ${short(t.name)}${t.freeTier ? " free" : ""}`, "btn-primary")}
           <a class="btn" href="${base}ai-coding-tool-pricing/#plans-${t.id}">Which plan?</a>
@@ -54,13 +54,13 @@
     return `
       <tr>
         <th scope="row"><a href="#tool-${t.id}">${short(t.name)}</a></th>
-        <td>${g.free || (t.freeTier ? "Yes" : "No")}</td>
-        <td>${money(t.startingPaid)}</td>
-        <td>${g.models || t.models}</td>
-        <td>${g.agents || ""}</td>
-        <td>${g.surface || t.formFactor}</td>
-        <td>${g.team || ""}</td>
-        <td><a href="${l.href}" rel="${l.rel}" data-link="${t.id}">${t.freeTier ? "Try free" : "Get started"}${l.aff ? " " + refTag : ""}</a></td>
+        <td data-label="Free tier">${g.free || (t.freeTier ? "Yes" : "No")}</td>
+        <td data-label="Starting paid">${money(t.startingPaid)}</td>
+        <td data-label="Models included">${g.models || t.models}</td>
+        <td data-label="Agents">${g.agents || ""}</td>
+        <td data-label="Works in">${g.surface || t.formFactor}</td>
+        <td data-label="Teams from">${g.team || ""}</td>
+        <td data-label="Get started"><a href="${l.href}" rel="${l.rel}" data-link="${t.id}">${t.freeTier ? "Try free" : "Get started"}${l.aff ? " " + refTag : ""}</a></td>
       </tr>`;
   }
   // Verdict CTA panel for comparison pages: one "Try" button per tool with the plan we'd start on.

@@ -4,21 +4,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name='impact-site-verification' value='83f48c6a-f7b9-45b3-8866-03f8600f0734'>
-  <title>Did Claude Code Save Your Password? Free settings.local.json Check (Nov 2026)</title>
-  <meta name="description" content="Claude Code's &quot;don't ask again&quot; can save passwords and tokens in .claude/settings.local.json, and Apiiro found 1,122 public copies with secrets on GitHub. Free in-browser checker, 4 git commands, and what to rotate. No fix shipped as of Nov 12, 2026." />
-  <meta name="robots" content="index,follow" />
+  <title>Did Claude Code Save Your Password? Free Check</title>
+  <meta name="description" content="Claude Code's &quot;don't ask again&quot; can save passwords in .claude/settings.local.json. Apiiro found 1,122 public copies. Free checker, git commands, and what to rotate." />
+<meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://codetoolpicker.com/claude-code-secrets-check/" />
-  <meta property="og:title" content="Did Claude Code save your password? Check your repo in 2 minutes" />
-  <meta property="og:description" content="&quot;Yes, and don't ask again&quot; can write your password into .claude/settings.local.json. 1,122 public GitHub copies held secrets. Free in-browser checker plus the 4 git commands to run." />
-  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Did Claude Code Save Your Password? Free Check" />
+  <meta property="og:description" content="Claude Code's &quot;don't ask again&quot; can save passwords in .claude/settings.local.json. Apiiro found 1,122 public copies. Free checker, git commands, and what to rotate." />
+<meta property="og:type" content="article" />
   <meta property="og:url" content="https://codetoolpicker.com/claude-code-secrets-check/" />
   <meta property="og:site_name" content="CodeToolPicker" />
   <meta property="og:image" content="https://codetoolpicker.com/og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="CodeToolPicker: check settings.local.json for saved secrets" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@codetoolpicker" />
   <meta name="twitter:image" content="https://codetoolpicker.com/og.png" />
+  <meta name="twitter:title" content="Did Claude Code Save Your Password? Free Check" />
+  <meta name="twitter:description" content="Claude Code's &quot;don't ask again&quot; can save passwords in .claude/settings.local.json. Apiiro found 1,122 public copies. Free checker, git commands, and what to rotate." />
   <link rel="icon" href="/favicon-48x48.png" sizes="48x48" type="image/png" />
   <link rel="icon" href="/favicon-96x96.png" sizes="96x96" type="image/png" />
   <link rel="icon" href="/icon-192.png" sizes="192x192" type="image/png" />
@@ -28,8 +31,9 @@
   <link rel="manifest" href="/site.webmanifest" />
   <meta name="theme-color" content="#0b0f14" />
   <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../ui.css" />
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CodeToolPicker", "item": "https://codetoolpicker.com/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://codetoolpicker.com/#comparisons"}, {"@type": "ListItem", "position": 3, "name": "Claude Code secrets check", "item": "https://codetoolpicker.com/claude-code-secrets-check/"}]}</script>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Did Claude Code Save Your Password? Free settings.local.json Check (Nov 2026)", "datePublished": "2026-11-12", "dateModified": "2026-11-12", "author": {"@type": "Organization", "name": "CodeToolPicker"}, "publisher": {"@type": "Organization", "name": "CodeToolPicker"}, "mainEntityOfPage": "https://codetoolpicker.com/claude-code-secrets-check/"}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org","@type": "Article","headline": "Did Claude Code Save Your Password? Free Check","datePublished": "2026-11-12","dateModified": "2026-11-17","author": {"@type": "Organization","name": "CodeToolPicker","url": "https://codetoolpicker.com/"},"publisher": {"@type": "Organization","name": "CodeToolPicker","url": "https://codetoolpicker.com/","logo": {"@type": "ImageObject","url": "https://codetoolpicker.com/apple-touch-icon.png"}},"mainEntityOfPage": "https://codetoolpicker.com/claude-code-secrets-check/","image": "https://codetoolpicker.com/og.png"}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Where is Claude Code's settings.local.json?", "acceptedAnswer": {"@type": "Answer", "text": "In the .claude folder at the root of your git repo: .claude/settings.local.json. If you start Claude Code in a subfolder, it still reads and writes the file at the repository root."}}, {"@type": "Question", "name": "Does \"Yes, and don't ask again\" save my password?", "acceptedAnswer": {"@type": "Answer", "text": "It can. The approval becomes an allow rule, and when the prompt offered the exact command, the rule is the command text, including any password, token or connection string you typed into it."}}, {"@type": "Question", "name": "Isn't the file gitignored already?", "acceptedAnswer": {"@type": "Answer", "text": "Only on the computer where Claude Code first wrote it, through your global git excludes. The repo's own .gitignore isn't changed, and ignore rules don't apply to a file that's already tracked."}}, {"@type": "Question", "name": "Is it safe to paste my file into the checker?", "acceptedAnswer": {"@type": "Answer", "text": "The checker is plain JavaScript that runs in your browser tab. It doesn't send what you paste anywhere. If you'd rather not paste it at all, open the file and read the allow list yourself, looking for anything after =, -p, : in a URL, or an auth header."}}, {"@type": "Question", "name": "Has Anthropic fixed it?", "acceptedAnswer": {"@type": "Answer", "text": "Not as of Nov 12, 2026. Anthropic said it's looking into it, including built-in secret scanning, but no release we found changes how allow rules are saved."}}, {"@type": "Question", "name": "Do Cursor, Codex or Copilot have the same problem?", "acceptedAnswer": {"@type": "Answer", "text": "This research covered Claude Code. Apiiro advises treating every agent's settings folder like a .env file, and we haven't verified how each tool stores approvals, so check those folders too."}}]}</script>
   <style>
     .note { font-size: .9em; color: var(--muted); }
@@ -55,13 +59,29 @@
     <article>
     <section class="hero">
       <h1>Did Claude Code save your password? Check your repo in 2 minutes</h1>
-      <p>Short answer: when you pick <strong>"Yes, and don't ask again"</strong> on a shell command in Claude Code, it saves that command as an allow rule in <code>.claude/settings.local.json</code>. If the command had a password or token in it, <strong>the secret is now in that file in plain text</strong>. Claude Code keeps the file out of git only through your own computer's global git ignore, not the repo's <code>.gitignore</code>, so it gets committed on a new machine, in a container, or in a folder that became a repo later. Security firm Apiiro found <strong>1,122 public copies on GitHub holding secrets</strong>. As of Nov 12, 2026, Claude Code has not shipped a fix. Paste your file into the checker below, then run the four git commands.</p>
+      <!-- UI:tldr -->
+      <div class="ui-tldr g-news">
+        <div class="ui-tldr-main">
+          <p class="ui-kicker">TL;DR · 📰 News</p>
+          <p class="ui-win"><span aria-hidden="true">🏆</span> Check your repo now</p>
+          <p class="ui-verdict">Always-allow rules can save passwords in plain text in .claude/settings.local.json. Paste it in the checker below.</p>
+          <div class="ui-stats"><div class="ui-stat"><b>1,122</b><span>public repos with secrets</span></div><div class="ui-stat"><b>2 min</b><span>to check</span></div><div class="ui-stat"><b>4</b><span>git commands</span></div><div class="ui-stat"><b>0</b><span>fixes shipped (Nov 12)</span></div></div>
+          <div class="cta-row ui-tldr-cta"><a class="btn btn-primary" href="#checker" data-ui-open>🧮 Open the calculator</a></div>
+        </div>
+        <img class="ui-tldr-art" src="../img/cat-news-sm.webp" srcset="../img/cat-news-sm.webp 480w, ../img/cat-news.webp 960w" sizes="(max-width: 700px) 92vw, 300px" width="480" height="270" alt="News guide illustration: abstract glowing code editor windows" fetchpriority="high" />
+      </div>
+      <!-- /UI:tldr --><!-- UI:folds -->
+      <details class="ui-full"><summary>Read the full short answer</summary>
+        <p>Short answer: when you pick <strong>"Yes, and don't ask again"</strong> on a shell command in Claude Code, it saves that command as an allow rule in <code>.claude/settings.local.json</code>. If the command had a password or token in it, <strong>the secret is now in that file in plain text</strong>. Claude Code keeps the file out of git only through your own computer's global git ignore, not the repo's <code>.gitignore</code>, so it gets committed on a new machine, in a container, or in a folder that became a repo later. Security firm Apiiro found <strong>1,122 public copies on GitHub holding secrets</strong>. As of Nov 12, 2026, Claude Code has not shipped a fix. Paste your file into the checker below, then run the four git commands.</p>
+      </details><!-- /UI:folds -->
       <p class="updated">Checked Nov 12, 2026 on <a href="https://code.claude.com/docs/en/settings" rel="noopener">Claude Code's settings docs</a>, the <a href="https://code.claude.com/docs/en/changelog" rel="noopener">Claude Code changelog</a>, <a href="https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/" rel="noopener">Ars Technica (Nov 9)</a> and <a href="https://about.gitlab.com/blog/prevent-leaks-from-claude-code-dont-ask-again-file/" rel="noopener">GitLab's guide</a>. Counts are Apiiro's own research (published Nov 5, updated Nov 8). Apiiro sells security tools and did not test whether the secrets still work.</p>
       <div class="cta-row"><a class="btn btn-primary" href="#checker">Check my file</a> <a class="btn" href="#git">The 4 git commands</a> <a class="btn" href="#rotate">Found one? Do this</a> <a class="btn" href="#habits">Stop it happening</a></div>
     </section>
+    <!-- UI:jump --><nav class="ui-jump" aria-label="On this page"><div class="ui-jump-in"><a href="#what" class="ui-chip">What's going on</a><a href="#checker" class="ui-chip ui-chip-calc">🧮 Free checker</a><a href="#git" class="ui-chip">The 4 git commands</a><a href="#rotate" class="ui-chip">Found a secret? Rotate…</a><a href="#habits" class="ui-chip">Stop it happening again</a><a href="#anthropic" class="ui-chip">What Anthropic has said,…</a><a href="#faq" class="ui-chip">FAQ</a></div><button type="button" class="ui-expand" hidden>Expand all</button></nav><!-- /UI:jump -->
 
-    <section class="panel" id="what">
-      <h2>What's going on</h2>
+    <section class="panel ui-acc" id="what">
+      <details class="ui-d" open><summary class="ui-sum"><h2>What's going on</h2><span class="ui-tags"></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
       <ul>
         <li><strong>The save.</strong> Claude's docs say that when you choose "Yes, and don't ask again" for a Bash command, "Claude Code saves that approval as an allow rule in .claude/settings.local.json." Sometimes the rule is a pattern like <code>Bash(npm test:*)</code>. Sometimes it's the exact command, password and all.</li>
         <li><strong>The leak.</strong> The first time Claude Code writes the file, it adds <code>**/.claude/settings.local.json</code> to your <em>global</em> git excludes. That protects one laptop. It doesn't travel with the repo, it doesn't cover a file that's already tracked, and it doesn't exist on a fresh machine, CI runner or teammate's clone.</li>
@@ -69,19 +89,23 @@
         <li><strong>Scanners missed a lot.</strong> Of the roughly 1,100 files, 215 were caught by neither gitleaks nor TruffleHog. A password after <code>PGPASSWORD=</code> or <code>sshpass -p</code> looks like an ordinary word to a scanner.</li>
         <li><strong>Deleting the file isn't enough.</strong> Old versions in git history held 734 secrets that weren't in any current copy, and forks kept copies after the originals were cleaned.</li>
       </ul>
+    </div></details>
     </section>
 
-    <section class="panel" id="checker">
-      <h2>Free checker: paste your settings.local.json</h2>
+    <section class="panel ui-acc" id="checker">
+      <details class="ui-d" open><summary class="ui-sum"><h2>Free checker: paste your settings.local.json</h2><span class="ui-tags"><span class="ui-tag ui-tag-calc">Interactive</span></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
       <p>Open <code>.claude/settings.local.json</code> in your project, copy everything, and paste it here. <strong>It runs entirely in your browser. Nothing is sent anywhere.</strong> It flags allow rules that look like they hold a password, token, key or connection string, and masks what it finds.</p>
       <textarea id="ctp-in" rows="9" spellcheck="false" style="width:100%;box-sizing:border-box;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;padding:10px;border-radius:8px;border:1px solid var(--line,#2a3340);background:var(--card,#0f151c);color:inherit" placeholder='{ "permissions": { "allow": [ "Bash(npm test:*)" ] } }'></textarea>
       <div class="cta-row" style="margin-top:10px"><button class="btn btn-primary" id="ctp-run" type="button">Check it</button> <button class="btn" id="ctp-demo" type="button">Load a fake example</button> <button class="btn" id="ctp-clear" type="button">Clear</button></div>
       <div id="ctp-out" aria-live="polite" style="margin-top:12px"></div>
       <p class="note">What it looks for: private keys, AWS, GitHub, GitLab, npm, Slack, Stripe, Square, OpenAI/Anthropic-style keys, JWTs (Supabase service-role keys are JWTs), passwords in <code>NAME=value</code> prefixes, <code>sshpass -p</code>, <code>mysql -p</code>, <code>--password</code>, <code>curl -u user:pass</code>, <code>user:pass@</code> in URLs, and auth headers. Values that start with <code>$</code> (environment variables) are treated as safe. A clean result is not proof: read each rule yourself.</p>
+    </div></details>
     </section>
 
-    <section class="panel" id="git">
-      <h2>The 4 git commands (run in each repo you push)</h2>
+    <section class="panel ui-acc" id="git">
+      <details class="ui-d"><summary class="ui-sum"><h2>The 4 git commands (run in each repo you push)</h2><span class="ui-tags"></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
       <p><strong>1. Is the file tracked right now?</strong></p>
       <pre><code>git ls-files | grep -E '(^|/)\.claude/settings(\.local)?\.json$'</code></pre>
       <p><strong>2. Was it ever committed, on any branch, in any folder?</strong> Any output means it's in your history even if you deleted it.</p>
@@ -93,10 +117,12 @@ git add .gitignore &amp;&amp; git commit -m "Stop tracking Claude Code local set
       <p><strong>4. Find every copy on your machine</strong> so you can read each allow list:</p>
       <pre><code>find ~ -path '*/.claude/settings.local.json' 2&gt;/dev/null</code></pre>
       <p class="note">Also look at the shared <code>.claude/settings.json</code> that teams commit on purpose. Apiiro found secrets in 298 of 76,011 public copies of it.</p>
+    </div></details>
     </section>
 
-    <section class="panel" id="rotate">
-      <h2>Found a secret? Rotate first, clean up second</h2>
+    <section class="panel ui-acc" id="rotate">
+      <details class="ui-d"><summary class="ui-sum"><h2>Found a secret? Rotate first, clean up second</h2><span class="ui-tags"></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
       <ol>
         <li><strong>Revoke or rotate the credential</strong> with whoever issued it (database, AWS, GitHub, Supabase, and so on). This is the step that actually protects you. Start with anything pointing at a public server: database passwords and SSH logins give direct access.</li>
         <li><strong>Check the provider's logs</strong> for use you don't recognize.</li>
@@ -104,10 +130,12 @@ git add .gitignore &amp;&amp; git commit -m "Stop tracking Claude Code local set
         <li><strong>Scrub history only if you need to.</strong> Once a secret is revoked, rewriting history is often unnecessary. If you do, GitHub's guide uses <code>git-filter-repo</code>, and forks keep their own copies, so check those too.</li>
         <li><strong>Delete the bad rule</strong> from the allow list (or run <code>/permissions</code> in Claude Code) so it doesn't get copied somewhere else.</li>
       </ol>
+    </div></details>
     </section>
 
-    <section class="panel" id="habits">
-      <h2>Stop it happening again</h2>
+    <section class="panel ui-acc" id="habits">
+      <details class="ui-d"><summary class="ui-sum"><h2>Stop it happening again</h2><span class="ui-tags"></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
       <ul>
         <li><strong>Never type a secret into a command Claude runs.</strong> Use an environment variable, like <code>psql "$DATABASE_URL"</code>, so the saved rule holds <code>$DATABASE_URL</code>, not the password.</li>
         <li><strong>Pick plain "Yes" when a command has a secret in it.</strong> Save "don't ask again" for patterns like <code>Bash(npm run:*)</code>.</li>
@@ -115,32 +143,43 @@ git add .gitignore &amp;&amp; git commit -m "Stop tracking Claude Code local set
         <li><strong>Turn on secret scanning and push protection</strong> on GitHub or GitLab. Anthropic's Claude Code lead recommended it, and it's free on public GitHub repos. Just remember it misses passwords with no known format.</li>
         <li><strong>Treat agent folders like <code>.env</code>.</strong> Apiiro's advice covers <code>.claude/</code>, <code>.cursor/</code>, <code>.gemini/</code> and similar folders. We haven't checked how each of those tools stores standing approvals, so review them instead of assuming they're clean.</li>
       </ul>
+    </div></details>
     </section>
 
-    <section class="panel" id="anthropic">
-      <h2>What Anthropic has said, and what's changed</h2>
+    <section class="panel ui-acc" id="anthropic">
+      <details class="ui-d"><summary class="ui-sum"><h2>What Anthropic has said, and what's changed</h2><span class="ui-tags"></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
       <ul>
         <li><strong>Nov 7:</strong> On Hacker News, Claude Code lead Boris Cherny said "Historically Claude Code has not done secret scrubbing" and the team is "looking into what we can do to prevent this," naming auto mode catching it and built-in secret scanning as ideas. He also said the file is gitignored when Claude creates it, so these copies were likely made by hand and checked in.</li>
         <li><strong>Apiiro's data pushes back on that:</strong> in 539 of 1,105 repos it traced, a commit co-authored by Claude changed the file. That doesn't prove Claude pushed every secret.</li>
         <li><strong>Auto mode isn't a full fix either.</strong> When a commenter pointed out sensitive commands can still be saved in auto mode, Cherny called it a "good catch."</li>
         <li><strong>As of Nov 12, 2026:</strong> we found no Claude Code changelog entry that stops secrets from being saved in allow rules. The older bug reports (the first from August 2025) were closed by a bot as inactive. We'll update this page when a fix ships.</li>
       </ul>
+    </div></details>
     </section>
 
-    <section class="panel" id="faq">
-      <h2>FAQ</h2>
-      <h3>Where is Claude Code's settings.local.json?</h3>
+    <section class="panel ui-acc" id="faq">
+      <details class="ui-d" open><summary class="ui-sum"><h2>FAQ</h2><span class="ui-tags"><span class="ui-tag">6 questions</span></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
+      
+      <details class="ui-faq"><summary><h3>Where is Claude Code's settings.local.json?</h3></summary><div class="ui-faq-a">
       <p>In the <code>.claude</code> folder at the root of your git repo: <code>.claude/settings.local.json</code>. If you start Claude Code in a subfolder, it still reads and writes the file at the repository root.</p>
-      <h3>Does "Yes, and don't ask again" save my password?</h3>
+      </div></details>
+      <details class="ui-faq"><summary><h3>Does "Yes, and don't ask again" save my password?</h3></summary><div class="ui-faq-a">
       <p>It can. The approval becomes an allow rule, and when the prompt offered the exact command, the rule is the command text, including any password, token or connection string you typed into it.</p>
-      <h3>Isn't the file gitignored already?</h3>
+      </div></details>
+      <details class="ui-faq"><summary><h3>Isn't the file gitignored already?</h3></summary><div class="ui-faq-a">
       <p>Only on the computer where Claude Code first wrote it, through your global git excludes. The repo's own <code>.gitignore</code> isn't changed, and ignore rules don't apply to a file that's already tracked.</p>
-      <h3>Is it safe to paste my file into the checker?</h3>
+      </div></details>
+      <details class="ui-faq"><summary><h3>Is it safe to paste my file into the checker?</h3></summary><div class="ui-faq-a">
       <p>The checker is plain JavaScript that runs in your browser tab. It doesn't send what you paste anywhere. If you'd rather not paste it at all, open the file and read the allow list yourself, looking for anything after <code>=</code>, <code>-p</code>, <code>:</code> in a URL, or an auth header.</p>
-      <h3>Has Anthropic fixed it?</h3>
+      </div></details>
+      <details class="ui-faq"><summary><h3>Has Anthropic fixed it?</h3></summary><div class="ui-faq-a">
       <p>Not as of Nov 12, 2026. Anthropic said it's looking into it, including built-in secret scanning, but no release we found changes how allow rules are saved.</p>
-      <h3>Do Cursor, Codex or Copilot have the same problem?</h3>
-      <p>This research covered Claude Code. Apiiro advises treating every agent's settings folder like a <code>.env</code> file, and we haven't verified how each tool stores approvals, so check those folders too.</p>
+      </div></details>
+      <details class="ui-faq"><summary><h3>Do Cursor, Codex or Copilot have the same problem?</h3></summary><div class="ui-faq-a">
+      <p>This research covered Claude Code. Apiiro advises treating every agent's settings folder like a <code>.env</code> file, and we haven't verified how each tool stores approvals, so check those folders too.</p></div></details>
+    </div></details>
     </section>
     <!-- PRERENDER:stack -->
     <section class="panel stack" id="ship">
@@ -175,8 +214,9 @@ git add .gitignore &amp;&amp; git commit -m "Stop tracking Claude Code local set
     </section>
     <!-- /PRERENDER:stack -->
 
-    <section class="panel" id="related">
-      <h2>Related guides</h2>
+    <section class="panel ui-acc" id="related">
+      <details class="ui-d"><summary class="ui-sum"><h2>Related guides</h2><span class="ui-tags"></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
       <ul class="related">
         <li><a href="../tokeneconomizer-claude-code-codex/">TokenEconomizer: cut your agent bill?<small>Microsoft's free plugin, 18 to 31% in tests</small></a></li>
                 <li><a href="../claude-code-down-backup/">Claude Code is down? Your backup plan<small>Nov 13 outages, status check, and a non-Claude swap</small></a></li>
@@ -188,6 +228,7 @@ git add .gitignore &amp;&amp; git commit -m "Stop tracking Claude Code local set
         <li><a href="../copilot-vs-claude-code/">Copilot vs Claude Code<small>Credits vs session limits</small></a></li>
         <li><a href="../usage-limits-compared/">Usage limits compared<small>Claude, Codex and Copilot</small></a></li>
       </ul>
+    </div></details>
     </section>
 
     <aside class="sponsor" id="sponsor" aria-label="Sponsor slot">
@@ -196,9 +237,11 @@ git add .gitignore &amp;&amp; git commit -m "Stop tracking Claude Code local set
       <div style="margin-top:10px" class="meta">Founding sponsor rates available now. Email <a href="mailto:sponsors@codetoolpicker.com?subject=CodeToolPicker%20sponsorship">sponsors@codetoolpicker.com</a> &middot; <a href="../advertise/">See packages</a></div>
     </aside>
 
-    <section class="panel" id="disclosure">
-      <h2>Editorial disclosure</h2>
+    <section class="panel ui-acc" id="disclosure">
+      <details class="ui-d"><summary class="ui-sum"><h2>Editorial disclosure</h2><span class="ui-tags"></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
       <p><strong>Rankings are not for sale.</strong> Sponsored placements and affiliate links are always labeled, and they never change our recommendations, quiz results, prices, or comparison data. <strong>Links marked "referral" are affiliate links (Netlify):</strong> if you buy through them, we may earn a commission at no extra cost to you. Every other link is a plain link that pays us nothing, and pricing source links are never affiliate links. <a href="../advertise/#policy">Editorial policy</a>.</p>
+    </div></details>
     </section>
     </article>
 
@@ -283,6 +326,7 @@ git add .gitignore &amp;&amp; git commit -m "Stop tracking Claude Code local set
     });
   })();
   </script>
+  <script src="../ui.js" defer></script>
   <script data-goatcounter="https://codetoolpicker.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

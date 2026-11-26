@@ -4,20 +4,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name='impact-site-verification' value='83f48c6a-f7b9-45b3-8866-03f8600f0734'>
-  <title>Cursor vs GitHub Copilot (Oct 2026): Pricing, Models, and Which to Pick</title>
-  <meta name="description" content="Cursor vs GitHub Copilot, verified Oct 19, 2026: Cursor Plus $8 (Grok-only) vs Copilot Pro $10 (Claude and GPT in credits). Plans, models, form factor, teams, and an honest verdict." />
-  <meta name="robots" content="index,follow" />
+  <title>Cursor vs GitHub Copilot 2026: Prices, Models, Verdict</title>
+  <meta name="description" content="Cursor is a standalone AI IDE; Plus at $8 is Grok-only. Copilot Pro at $10 includes Claude and GPT in your editor. Prices, models, and which to pick." />
+<meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://codetoolpicker.com/cursor-vs-copilot/" />
-  <meta property="og:title" content="Cursor vs GitHub Copilot (Oct 2026)" />
-  <meta property="og:description" content="Plans, models, and who should pick which. Verified on official pricing pages Oct 19, 2026." />
-  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Cursor vs GitHub Copilot 2026: Prices, Models, Verdict" />
+  <meta property="og:description" content="Cursor is a standalone AI IDE; Plus at $8 is Grok-only. Copilot Pro at $10 includes Claude and GPT in your editor. Prices, models, and which to pick." />
+<meta property="og:type" content="article" />
   <meta property="og:url" content="https://codetoolpicker.com/cursor-vs-copilot/" />
   <meta property="og:site_name" content="CodeToolPicker" />
   <meta property="og:image" content="https://codetoolpicker.com/og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="CodeToolPicker: Cursor vs GitHub Copilot comparison" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@codetoolpicker" />
   <meta name="twitter:image" content="https://codetoolpicker.com/og.png" />
+  <meta name="twitter:title" content="Cursor vs GitHub Copilot 2026: Prices, Models, Verdict" />
+  <meta name="twitter:description" content="Cursor is a standalone AI IDE; Plus at $8 is Grok-only. Copilot Pro at $10 includes Claude and GPT in your editor. Prices, models, and which to pick." />
   <link rel="icon" href="/favicon-48x48.png" sizes="48x48" type="image/png" />
   <link rel="icon" href="/favicon-96x96.png" sizes="96x96" type="image/png" />
   <link rel="icon" href="/icon-192.png" sizes="192x192" type="image/png" />
@@ -27,18 +31,32 @@
   <link rel="manifest" href="/site.webmanifest" />
   <meta name="theme-color" content="#0b0f14" />
   <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../ui.css" />
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CodeToolPicker", "item": "https://codetoolpicker.com/"}, {"@type": "ListItem", "position": 2, "name": "Comparisons", "item": "https://codetoolpicker.com/#comparisons"}, {"@type": "ListItem", "position": 3, "name": "Cursor vs GitHub Copilot", "item": "https://codetoolpicker.com/cursor-vs-copilot/"}]}</script>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Cursor vs GitHub Copilot (Oct 2026): pricing, models, and which to pick",
-    "datePublished": "2026-10-19",
-    "dateModified": "2026-10-19",
-    "author": { "@type": "Organization", "name": "CodeToolPicker" },
-    "publisher": { "@type": "Organization", "name": "CodeToolPicker" },
-    "mainEntityOfPage": "https://codetoolpicker.com/cursor-vs-copilot/"
-  }
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Cursor vs GitHub Copilot 2026: Prices, Models, Verdict",
+  "datePublished": "2026-10-19",
+  "dateModified": "2026-11-24",
+  "author": {
+    "@type": "Organization",
+    "name": "CodeToolPicker",
+    "url": "https://codetoolpicker.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CodeToolPicker",
+    "url": "https://codetoolpicker.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://codetoolpicker.com/apple-touch-icon.png"
+    }
+  },
+  "mainEntityOfPage": "https://codetoolpicker.com/cursor-vs-copilot/",
+  "image": "https://codetoolpicker.com/og.png"
+}
   </script>
   <script type="application/ld+json">
   {
@@ -83,74 +101,107 @@
     <article>
     <section class="hero">
       <h1>Cursor vs GitHub Copilot (Oct 2026)</h1>
-      <p>Short answer: <strong>Copilot</strong> is the cheaper way to get Claude and GPT inside the editor you already use. <strong>Cursor</strong> is the stronger agent-first IDE, and its $8 Plus plan is the cheapest paid option if you're fine with Grok models. Details below.</p>
+      <!-- UI:tldr -->
+      <div class="ui-tldr g-versus">
+        <div class="ui-tldr-main">
+          <p class="ui-kicker">TL;DR · 🥊 Head-to-head</p>
+          <p class="ui-win"><span aria-hidden="true">🏆</span> Copilot for Claude and GPT</p>
+          <p class="ui-verdict">Copilot is the cheaper way to get Claude and GPT in your editor. Cursor is the stronger agent IDE.</p>
+          <div class="ui-stats"><div class="ui-stat"><b>$10</b><span>Copilot Pro</span></div><div class="ui-stat"><b>$8</b><span>Cursor Plus, Grok only</span></div><div class="ui-stat"><b>$30</b><span>Cursor Premium</span></div></div>
+          <div class="cta-row ui-tldr-cta"><a class="btn btn-primary" href="#ui-pick" data-ui-open>🎯 Pick for me</a> <a class="btn" href="#verdict-who-should-pick-which" data-ui-open>Jump to the verdict</a></div>
+        </div>
+        <img class="ui-tldr-art" src="../img/cat-head-to-head-sm.webp" srcset="../img/cat-head-to-head-sm.webp 480w, ../img/cat-head-to-head.webp 960w" sizes="(max-width: 700px) 92vw, 300px" width="480" height="270" alt="Head-to-head guide illustration: abstract glowing code editor windows" fetchpriority="high" />
+      </div>
+      <!-- /UI:tldr --><!-- UI:folds -->
+      <details class="ui-full"><summary>Read the full short answer</summary>
+        <p>Short answer: <strong>Copilot</strong> is the cheaper way to get Claude and GPT inside the editor you already use. <strong>Cursor</strong> is the stronger agent-first IDE, and its $8 Plus plan is the cheapest paid option if you're fine with Grok models. Details below.</p>
+      </details>
+      <details class="ui-updates"><summary><span class="ui-dot"></span>3 updates since this was published</summary>
+        <p class="note"><strong>New Nov 3, 2026:</strong> GitHub Copilot now runs inside JetBrains Air on your Copilot plan, next to Codex, Claude Code and Cursor. <a href="../jetbrains-air-subscriptions/">Which subscription to bring to Air</a>.</p>
+        <p class="note"><strong>New Nov 5, 2026:</strong> Cursor cloud agents can now build, host and share web apps (Live Apps), on Premium $30 and up. <a href="../cursor-live-apps-vs-lovable-bolt/">How it compares with Lovable and Bolt</a>.</p>
+        <p class="note"><strong>Heads up (Nov 5, 2026):</strong> OpenAI plans to stop supplying GPT models to Cursor, with a proposed shutoff of Nov 12, 2026. Tab isn't affected; Agent, Auto, Cloud Agents and the CLI lose GPT unless you add your own key (local Chat and Agent only, Premium and up) or use the Codex extension inside Cursor. <a href="../cursor-openai-cutoff/">What breaks and how to keep GPT</a>.</p>
+      </details><!-- /UI:folds -->
       <p class="updated">Prices verified on official pricing pages Oct 19, 2026. Prices change often; confirm with the linked sources.</p>
-      <p class="note"><strong>New Nov 3, 2026:</strong> GitHub Copilot now runs inside JetBrains Air on your Copilot plan, next to Codex, Claude Code and Cursor. <a href="../jetbrains-air-subscriptions/">Which subscription to bring to Air</a>.</p>
-      <p class="note"><strong>New Nov 5, 2026:</strong> Cursor cloud agents can now build, host and share web apps (Live Apps), on Premium $30 and up. <a href="../cursor-live-apps-vs-lovable-bolt/">How it compares with Lovable and Bolt</a>.</p>
-      <p class="note"><strong>Heads up (Nov 5, 2026):</strong> OpenAI plans to stop supplying GPT models to Cursor, with a proposed shutoff of Nov 12, 2026. Tab isn't affected; Agent, Auto, Cloud Agents and the CLI lose GPT unless you add your own key (local Chat and Agent only, Premium and up) or use the Codex extension inside Cursor. <a href="../cursor-openai-cutoff/">What breaks and how to keep GPT</a>.</p>
       <div class="cta-row"><a class="btn btn-primary" href="../#quiz">Not sure? Take the 60-second picker quiz</a> <a class="btn" href="../#compare">See all 9 tools</a></div>
     </section>
+    <!-- UI:jump --><nav class="ui-jump" aria-label="On this page"><div class="ui-jump-in"><a href="#extension-check" class="ui-chip">Using Claude Code inside…</a><a href="#side-by-side" class="ui-chip">Side by side</a><a href="#where-cursor-wins" class="ui-chip">Where Cursor wins</a><a href="#verdict-who-should-pick-which" class="ui-chip">🏆 Verdict</a><a href="#try" class="ui-chip">Try one</a><a href="#faq" class="ui-chip">FAQ</a></div><button type="button" class="ui-expand" hidden>Expand all</button></nav><!-- /UI:jump -->
 
-    <section class="panel" id="extension-check">
-      <h2>Using Claude Code inside Cursor? Check your extension</h2>
+    <section class="panel ui-acc" id="extension-check">
+      <details class="ui-d"><summary class="ui-sum"><h2>Using Claude Code inside Cursor? Check your extension</h2><span class="ui-tags"></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
       <p>On Oct 29, 2026, from about 09:27 to 20:35 UTC (2:27am to 1:35pm PT), Cursor's own extension marketplace served tampered copies of Anthropic's Claude Code extension, <code>anthropic.claude-code</code> versions 2.1.312 and 2.1.313, to macOS and Windows users. Anthropic didn't build them. Cursor says the code collected host details, tried to add an attacker's SSH key and open a reverse SSH tunnel, and set up persistence that can keep running after you uninstall the extension. Sophos, citing Cursor, puts it at up to 5,000 affected users.</p>
       <p>Not affected, per Anthropic and Microsoft: the Claude Code CLI on npm, the extension on Microsoft's VS Code Marketplace, and Open VSX. If you installed or updated Claude Code in Cursor that day, run the check script in Cursor's notice, remove the SSH key and persistence it lists, and rotate any credentials that machine could reach. Anthropic skipped straight to 2.1.314 to avoid confusion.</p>
       <p class="note">Sources: <a href="https://cursor.com/blog/claude-code-extension-security-notice" rel="noopener">Cursor's security notice</a>, <a href="https://www.microsoft.com/en-us/security/blog/2026/10/30/inside-malicious-claude-code-branded-cursor-extension-persistent-ssh-backdoor/" rel="noopener">Microsoft Security blog</a>, <a href="https://www.stepsecurity.io/blog/claude-code-extension-trojanized" rel="noopener">StepSecurity</a> (with Anthropic's clarification) and <a href="https://www.sophos.com/en-us/blog/malicious-claude-code-extension-distributed-through-cursor-marketplace" rel="noopener">Sophos</a>, checked Nov 2, 2026.</p>
+    </div></details>
     </section>
 
 
-    <section class="panel" style="overflow-x:auto">
-      <h2>Side by side</h2>
-      <table>
+    <section id="side-by-side" class="panel ui-acc" style="overflow-x:auto">
+      <details class="ui-d" open><summary class="ui-sum"><h2>Side by side</h2><span class="ui-tags"><span class="ui-tag">Table</span></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
+      <table class="ui-stack">
         <thead><tr><th></th><th>Cursor</th><th>GitHub Copilot</th></tr></thead>
         <tbody>
-          <tr><td>What it is</td><td>Its own AI-first desktop IDE (built on VS Code) with agents and cloud agents</td><td>Extension for VS Code, JetBrains and other editors, plus GitHub, CLI and app</td></tr>
-          <tr><td>Free tier</td><td>Free: limited usage</td><td>Free: limited AI credits, auto model only, 2,000 completions/mo</td></tr>
-          <tr><td>Entry paid</td><td>Plus $8/mo ($80/yr), <strong>Grok models only</strong></td><td>Pro $10/mo, 1,500 AI credits/mo</td></tr>
-          <tr><td>Mid tier</td><td>Premium $30/mo ($300/yr), 4x Plus usage</td><td>Pro+ $39/mo, 7,000 AI credits/mo</td></tr>
-          <tr><td>Top individual</td><td>Super $100/mo (15x Plus), Ultra $200/mo (50x Plus)</td><td>Max $100/mo, 20,000 AI credits/mo</td></tr>
-          <tr><td>Claude / GPT models</td><td>Premium and up only, billed separately at API list price from first use</td><td>Included in credits on paid plans (selection of models; premium models on higher tiers)</td></tr>
-          <tr><td>Included models</td><td>Grok + Composer</td><td>Selection of models, including Claude and GPT families</td></tr>
-          <tr><td>Completions</td><td>Tab completions in the IDE</td><td>Unlimited on paid plans</td></tr>
-          <tr><td>Teams</td><td>From $30/seat (Premium/Super/Ultra seats)</td><td>Business $19/seat (1,900 credits), Enterprise $39/seat (3,900 credits)</td></tr>
-          <tr><td>Usage model</td><td>One weekly usage pool shared with Grok</td><td>Monthly AI credits; heavy agent use can run them out</td></tr>
+          <tr><td>What it is</td><td data-label="Cursor">Its own AI-first desktop IDE (built on VS Code) with agents and cloud agents</td><td data-label="GitHub Copilot">Extension for VS Code, JetBrains and other editors, plus GitHub, CLI and app</td></tr>
+          <tr><td>Free tier</td><td data-label="Cursor">Free: limited usage</td><td data-label="GitHub Copilot">Free: limited AI credits, auto model only, 2,000 completions/mo</td></tr>
+          <tr><td>Entry paid</td><td data-label="Cursor">Plus $8/mo ($80/yr), <strong>Grok models only</strong></td><td data-label="GitHub Copilot">Pro $10/mo, 1,500 AI credits/mo</td></tr>
+          <tr><td>Mid tier</td><td data-label="Cursor">Premium $30/mo ($300/yr), 4x Plus usage</td><td data-label="GitHub Copilot">Pro+ $39/mo, 7,000 AI credits/mo</td></tr>
+          <tr><td>Top individual</td><td data-label="Cursor">Super $100/mo (15x Plus), Ultra $200/mo (50x Plus)</td><td data-label="GitHub Copilot">Max $100/mo, 20,000 AI credits/mo</td></tr>
+          <tr><td>Claude / GPT models</td><td data-label="Cursor">Premium and up only, billed separately at API list price from first use</td><td data-label="GitHub Copilot">Included in credits on paid plans (selection of models; premium models on higher tiers)</td></tr>
+          <tr><td>Included models</td><td data-label="Cursor">Grok + Composer</td><td data-label="GitHub Copilot">Selection of models, including Claude and GPT families</td></tr>
+          <tr><td>Completions</td><td data-label="Cursor">Tab completions in the IDE</td><td data-label="GitHub Copilot">Unlimited on paid plans</td></tr>
+          <tr><td>Teams</td><td data-label="Cursor">From $30/seat (Premium/Super/Ultra seats)</td><td data-label="GitHub Copilot">Business $19/seat (1,900 credits), Enterprise $39/seat (3,900 credits)</td></tr>
+          <tr><td>Usage model</td><td data-label="Cursor">One weekly usage pool shared with Grok</td><td data-label="GitHub Copilot">Monthly AI credits; heavy agent use can run them out</td></tr>
         </tbody>
       </table>
       <p class="note">Sources: <a href="https://cursor.com/pricing" rel="noopener">cursor.com/pricing</a> · <a href="https://docs.x.ai/x-subscription/pricing" rel="noopener">X Subscription pricing docs</a> · <a href="https://docs.github.com/en/copilot/get-started/plans" rel="noopener">GitHub Copilot plans</a>. Checked Oct 19, 2026. Legacy Cursor Pro/Pro+ plans continue for existing subscribers; we couldn't verify their current price on an official page, so they aren't listed.</p>
+    </div></details>
     </section>
 
-    <section class="panel">
-      <h2>Where Cursor wins</h2>
+    <section id="where-cursor-wins" class="panel ui-acc">
+      <details class="ui-d"><summary class="ui-sum"><h2>Where Cursor wins</h2><span class="ui-tags"></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
+      <div class="ui-cards ui-cards-2">
+        <div class="ui-card"><p class="ui-card-h" aria-hidden="true">Where Cursor wins</p>
       <ul>
         <li><strong>Agent-first IDE.</strong> Cursor is built around agents, including cloud agents, rather than adding chat to an existing editor.</li>
         <li><strong>Cheapest paid entry.</strong> Plus is $8/month, $2 less than Copilot Pro, if Grok and Cursor's Composer models cover your work.</li>
         <li><strong>Premium extras.</strong> Premium ($30) adds cloud agents and automations, code hosting, and AI code reviews (Bugbot).</li>
         <li><strong>Familiar if you use VS Code.</strong> It's based on the VS Code codebase and can import your extensions, themes, settings and keybindings.</li>
       </ul>
-      <h2>Where Copilot wins</h2>
+      </div>
+        <div class="ui-card"><h2>Where Copilot wins</h2>
       <ul>
         <li><strong>Claude and GPT for less.</strong> Pro ($10) includes a selection of models in its credits. In Cursor, the same model families need Premium ($30+) plus API list price.</li>
         <li><strong>No editor switch.</strong> Works in VS Code, JetBrains and more, so mixed-editor teams can standardize on one tool.</li>
         <li><strong>GitHub teams.</strong> Business at $19/seat is cheaper than Cursor's $30 seats, with admin controls and deep GitHub integration.</li>
         <li><strong>Watch out:</strong> credits run out on heavy agent use, and Copilot is less of a standalone agent IDE than Cursor.</li>
       </ul>
+    </div>
+      </div></div></details>
     </section>
 
-    <section class="panel">
-      <h2>Verdict: who should pick which</h2>
-      <h3>Pick Cursor if…</h3>
-      <ul>
+    <section id="verdict-who-should-pick-which" class="panel ui-acc">
+      <details class="ui-d" open><summary class="ui-sum"><h2>Verdict: who should pick which</h2><span class="ui-tags"></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
+      
+      <div class="ui-cards ui-cards-2">
+        <div class="ui-card ui-pickcard"><h3>Pick Cursor if…</h3>
+      <ul data-pick="Cursor">
         <li>You code daily and want the strongest agent workflows in a full IDE.</li>
         <li>You're happy on Grok/Composer models ($8 Plus), or you'll pay Premium + API price for Claude/GPT.</li>
         <li>You want cloud agents and AI code review in the same tool.</li>
       </ul>
-      <h3>Pick GitHub Copilot if…</h3>
-      <ul>
+      </div>
+        <div class="ui-card ui-pickcard"><h3>Pick GitHub Copilot if…</h3>
+      <ul data-pick="GitHub Copilot">
         <li>Claude and GPT are your daily drivers and you want the lowest price.</li>
         <li>You or your team use JetBrains or several editors, or already live on GitHub.</li>
         <li>You want predictable per-seat team pricing ($19 Business).</li>
       </ul>
-      <p>Already on Copilot and leaning Cursor? Read <a href="../switch-from-copilot-to-cursor/">how to switch from Copilot to Cursor without losing your setup</a>. Also weighing Claude Code? See <a href="../cursor-bundle-alternatives/">Cursor vs Claude Code vs Copilot</a>, or let the <a href="../#quiz">quiz</a> decide in about a minute.</p>
+      <p>Already on Copilot and leaning Cursor? Read <a href="../switch-from-copilot-to-cursor/">how to switch from Copilot to Cursor without losing your setup</a>. Also weighing Claude Code? See <a href="../cursor-bundle-alternatives/">Cursor vs Claude Code vs Copilot</a>, or let the <a href="../#quiz">quiz</a> decide in about a minute.</p></div>
+      </div>
+    </div></details>
     </section>
     <!-- PRERENDER:try -->
     <section class="panel try" id="try">
@@ -177,20 +228,28 @@
     </section>
     <!-- /PRERENDER:try -->
 
-    <section class="panel" id="faq">
-      <h2>FAQ</h2>
-      <h3>Is Cursor or GitHub Copilot cheaper?</h3>
+    <section class="panel ui-acc" id="faq">
+      <details class="ui-d" open><summary class="ui-sum"><h2>FAQ</h2><span class="ui-tags"><span class="ui-tag">6 questions</span></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
+      
+      <details class="ui-faq"><summary><h3>Is Cursor or GitHub Copilot cheaper?</h3></summary><div class="ui-faq-a">
       <p>Cursor Plus is the cheapest paid plan at $8/month, but it includes Grok models only. GitHub Copilot Pro is $10/month with 1,500 AI credits and a selection of models including Claude and GPT. If you want Claude or GPT, Copilot is cheaper: in Cursor those models need Premium ($30/month) or higher and are billed separately at API list price.</p>
-      <h3>Can I use Claude and GPT models in Cursor?</h3>
+      </div></details>
+      <details class="ui-faq"><summary><h3>Can I use Claude and GPT models in Cursor?</h3></summary><div class="ui-faq-a">
       <p>Yes, on Premium ($30/month) and above. Third-party models such as Claude and GPT are not part of Cursor's included usage; they are billed separately at API list price from the first use. Cursor Plus ($8/month) is Grok-only.</p>
-      <h3>Does GitHub Copilot work in my current editor?</h3>
+      </div></details>
+      <details class="ui-faq"><summary><h3>Does GitHub Copilot work in my current editor?</h3></summary><div class="ui-faq-a">
       <p>Yes. Copilot is an extension for VS Code, JetBrains IDEs and other editors, and also works on GitHub itself. Cursor is its own desktop IDE built on the VS Code codebase, so you switch editors to use it.</p>
-      <h3>Do Cursor and GitHub Copilot have free tiers?</h3>
+      </div></details>
+      <details class="ui-faq"><summary><h3>Do Cursor and GitHub Copilot have free tiers?</h3></summary><div class="ui-faq-a">
       <p>Both do. Cursor Free has limited usage. Copilot Free has limited AI credits, uses the auto model only, and includes 2,000 completions per month.</p>
-      <h3>Which is better for teams, Cursor or Copilot?</h3>
+      </div></details>
+      <details class="ui-faq"><summary><h3>Which is better for teams, Cursor or Copilot?</h3></summary><div class="ui-faq-a">
       <p>Copilot Business is $19 per seat per month (1,900 credits) and Enterprise is $39 per seat (3,900 credits), with admin controls and deep GitHub integration. Cursor team seats start at $30 per seat. Teams already on GitHub usually find Copilot cheaper and easier to roll out; teams that want an agent-first IDE with cloud agents often prefer Cursor.</p>
-      <h3>Can I switch from Copilot to Cursor without losing my setup?</h3>
-      <p>Mostly, yes. Cursor can import VS Code extensions, themes, settings and keybindings in one click, and an <code>AGENTS.md</code> file in your repo is read by both Copilot agents and Cursor. Copilot instruction files need to be copied into <code>AGENTS.md</code> or Cursor <code>.mdc</code> rules. <a href="../switch-from-copilot-to-cursor/">Step-by-step switching guide</a>.</p>
+      </div></details>
+      <details class="ui-faq"><summary><h3>Can I switch from Copilot to Cursor without losing my setup?</h3></summary><div class="ui-faq-a">
+      <p>Mostly, yes. Cursor can import VS Code extensions, themes, settings and keybindings in one click, and an <code>AGENTS.md</code> file in your repo is read by both Copilot agents and Cursor. Copilot instruction files need to be copied into <code>AGENTS.md</code> or Cursor <code>.mdc</code> rules. <a href="../switch-from-copilot-to-cursor/">Step-by-step switching guide</a>.</p></div></details>
+    </div></details>
     </section>
     <!-- PRERENDER:stack -->
     <section class="panel stack" id="ship">
@@ -225,8 +284,9 @@
     </section>
     <!-- /PRERENDER:stack -->
 
-    <section class="panel" id="related">
-      <h2>Related guides</h2>
+    <section class="panel ui-acc" id="related">
+      <details class="ui-d"><summary class="ui-sum"><h2>Related guides</h2><span class="ui-tags"></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
       <ul class="related">
         <li><a href="../copilot-cli-vs-claude-code-vs-codex-cli/">Copilot CLI vs Claude Code vs Codex CLI<small>New: same model, different harness, per GitHub's data</small></a></li>
         <li><a href="../mai-code-2-vs-code-2-flash/">MAI Code 2 vs Code 2 Flash<small>Microsoft's cheap Copilot models, and the May 2027 catch</small></a></li>
@@ -252,6 +312,7 @@
         <li><a href="../switch-from-copilot-to-cursor/">Switch from Copilot to Cursor<small>Settings, rules, MCP</small></a></li>
         <li><a href="../claude-code-vs-cursor/">Claude Code vs Cursor<small>Terminal agent vs AI IDE</small></a></li>
       </ul>
+    </div></details>
     </section>
 
     <aside class="sponsor" id="sponsor" aria-label="Sponsor slot">
@@ -260,9 +321,11 @@
       <div style="margin-top:10px" class="meta">Founding sponsor rates available now. Email <a href="mailto:sponsors@codetoolpicker.com?subject=CodeToolPicker%20sponsorship">sponsors@codetoolpicker.com</a> &middot; <a href="../advertise/">See packages</a></div>
     </aside>
 
-    <section class="panel" id="disclosure">
-      <h2>Editorial disclosure</h2>
+    <section class="panel ui-acc" id="disclosure">
+      <details class="ui-d"><summary class="ui-sum"><h2>Editorial disclosure</h2><span class="ui-tags"></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
       <p><strong>Rankings are not for sale.</strong> Sponsored placements and affiliate links are always labeled, and they never change our recommendations, quiz results, prices, or comparison data. <strong>Links marked "referral" are affiliate links (Netlify):</strong> if you buy through them, we may earn a commission at no extra cost to you. Every other link is a plain link that pays us nothing, and pricing source links are never affiliate links. <a href="../advertise/#policy">Editorial policy</a>.</p>
+    </div></details>
     </section>
     </article>
 
@@ -274,6 +337,7 @@
       <p class="meta" id="analytics-note">We use GoatCounter, a privacy-friendly counter with no cookies, to count visits.</p>
     </footer>
   </div>
+  <script src="../ui.js" defer></script>
   <script data-goatcounter="https://codetoolpicker.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

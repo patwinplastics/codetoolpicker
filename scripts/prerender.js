@@ -198,3 +198,5 @@ const iconsUpdated = ensureIcons(root);
 console.log(`funnels wired on ${n} pages`);
 console.log(`icon tags updated on ${iconsUpdated} pages`);
 console.log(`prerendered ${tools.length} tools, checked ${checked}`);
+// Last step: TL;DR cards, jump chips, accordions on every guide page (see scripts/enhance.js).
+require(path.join(__dirname, "enhance.js")).run();

@@ -4,21 +4,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name='impact-site-verification' value='83f48c6a-f7b9-45b3-8866-03f8600f0734'>
-  <title>Gemini CLI vs Claude Code (Oct 2026): Gemini CLI Dropped Google AI Plans</title>
-  <meta name="description" content="Gemini CLI vs Claude Code, verified Oct 22, 2026: since June 18 Gemini CLI no longer takes free, Google AI Pro or Ultra sign-ins, so individuals need a paid API key. Claude Pro is $20. Open source, models, agents, teams of 5, plus Codex and Antigravity CLI." />
-  <meta name="robots" content="index,follow" />
+  <title>Gemini CLI vs Claude Code 2026: API Key vs $20 Plan</title>
+  <meta name="description" content="Gemini CLI dropped Google AI plans for individuals. It now needs an API key or Code Assist. Claude Code stays on Claude Pro from $20. Checked Oct 2026." />
+<meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://codetoolpicker.com/gemini-cli-vs-claude-code/" />
-  <meta property="og:title" content="Gemini CLI vs Claude Code (Oct 2026): what changed and which to pick" />
-  <meta property="og:description" content="Google moved free, AI Pro and Ultra users from Gemini CLI to the closed-source Antigravity CLI on June 18, 2026. Gemini CLI is still open source but now runs on paid API keys and Code Assist licenses. Claude Code starts at $20. Verified Oct 22, 2026." />
-  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Gemini CLI vs Claude Code 2026: API Key vs $20 Plan" />
+  <meta property="og:description" content="Gemini CLI dropped Google AI plans for individuals. It now needs an API key or Code Assist. Claude Code stays on Claude Pro from $20. Checked Oct 2026." />
+<meta property="og:type" content="article" />
   <meta property="og:url" content="https://codetoolpicker.com/gemini-cli-vs-claude-code/" />
   <meta property="og:site_name" content="CodeToolPicker" />
   <meta property="og:image" content="https://codetoolpicker.com/og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="CodeToolPicker: Gemini CLI vs Claude Code comparison" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@codetoolpicker" />
   <meta name="twitter:image" content="https://codetoolpicker.com/og.png" />
+  <meta name="twitter:title" content="Gemini CLI vs Claude Code 2026: API Key vs $20 Plan" />
+  <meta name="twitter:description" content="Gemini CLI dropped Google AI plans for individuals. It now needs an API key or Code Assist. Claude Code stays on Claude Pro from $20. Checked Oct 2026." />
   <link rel="icon" href="/favicon-48x48.png" sizes="48x48" type="image/png" />
   <link rel="icon" href="/favicon-96x96.png" sizes="96x96" type="image/png" />
   <link rel="icon" href="/icon-192.png" sizes="192x192" type="image/png" />
@@ -28,23 +31,31 @@
   <link rel="manifest" href="/site.webmanifest" />
   <meta name="theme-color" content="#0b0f14" />
   <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../ui.css" />
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CodeToolPicker", "item": "https://codetoolpicker.com/"}, {"@type": "ListItem", "position": 2, "name": "Comparisons", "item": "https://codetoolpicker.com/#comparisons"}, {"@type": "ListItem", "position": 3, "name": "Gemini CLI vs Claude Code", "item": "https://codetoolpicker.com/gemini-cli-vs-claude-code/"}]}</script>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Gemini CLI vs Claude Code (Oct 2026): what changed and which to pick",
+  "headline": "Gemini CLI vs Claude Code 2026: API Key vs $20 Plan",
   "datePublished": "2026-10-22",
-  "dateModified": "2026-11-02",
+  "dateModified": "2026-11-22",
   "author": {
     "@type": "Organization",
-    "name": "CodeToolPicker"
+    "name": "CodeToolPicker",
+    "url": "https://codetoolpicker.com/"
   },
   "publisher": {
     "@type": "Organization",
-    "name": "CodeToolPicker"
+    "name": "CodeToolPicker",
+    "url": "https://codetoolpicker.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://codetoolpicker.com/apple-touch-icon.png"
+    }
   },
-  "mainEntityOfPage": "https://codetoolpicker.com/gemini-cli-vs-claude-code/"
+  "mainEntityOfPage": "https://codetoolpicker.com/gemini-cli-vs-claude-code/",
+  "image": "https://codetoolpicker.com/og.png"
 }
   </script>
   <script type="application/ld+json">
@@ -134,13 +145,29 @@
     <article>
     <section class="hero">
       <h1>Gemini CLI vs Claude Code (Oct 2026)</h1>
-      <p>Short answer: for most individual developers, <strong>Claude Code is the simpler pick</strong>, because Gemini CLI no longer works with a Google subscription. On June 18, 2026, Google stopped serving Gemini CLI for free users and for Google AI Pro and Ultra subscribers, and moved them to its closed-source <strong>Antigravity CLI</strong>. Gemini CLI still exists, still ships weekly releases and is still open source (Apache 2.0), but individuals now run it with a paid Gemini API key, billed per token. Choose <strong>Claude Code</strong> (Claude Pro $20/mo, $17 billed yearly) for a terminal agent on a flat plan. Choose <strong>Gemini CLI</strong> if you need open-source code you can audit or fork, your company already has Gemini Code Assist licenses, or you want pay-per-token Gemini in scripts and CI. Want Gemini in your terminal on a $19.99 plan? That is Antigravity CLI now.</p>
+      <!-- UI:tldr -->
+      <div class="ui-tldr g-versus">
+        <div class="ui-tldr-main">
+          <p class="ui-kicker">TL;DR · 🥊 Head-to-head</p>
+          <p class="ui-win"><span aria-hidden="true">🏆</span> Claude Code for most</p>
+          <p class="ui-verdict">Gemini CLI no longer works with Google subscriptions. Individuals pay per token with an API key.</p>
+          <div class="ui-stats"><div class="ui-stat"><b>$20</b><span>Claude Pro ($17 yearly)</span></div><div class="ui-stat"><b>Jun 18</b><span>Gemini CLI left Google plans</span></div><div class="ui-stat"><b>$19.99</b><span>Antigravity CLI plan</span></div></div>
+          <div class="cta-row ui-tldr-cta"><a class="btn btn-primary" href="#ui-pick" data-ui-open>🎯 Pick for me</a> <a class="btn" href="#verdict-who-should-pick-which" data-ui-open>Jump to the verdict</a></div>
+        </div>
+        <img class="ui-tldr-art" src="../img/cat-head-to-head-sm.webp" srcset="../img/cat-head-to-head-sm.webp 480w, ../img/cat-head-to-head.webp 960w" sizes="(max-width: 700px) 92vw, 300px" width="480" height="270" alt="Head-to-head guide illustration: abstract glowing code editor windows" fetchpriority="high" />
+      </div>
+      <!-- /UI:tldr --><!-- UI:folds -->
+      <details class="ui-full"><summary>Read the full short answer</summary>
+        <p>Short answer: for most individual developers, <strong>Claude Code is the simpler pick</strong>, because Gemini CLI no longer works with a Google subscription. On June 18, 2026, Google stopped serving Gemini CLI for free users and for Google AI Pro and Ultra subscribers, and moved them to its closed-source <strong>Antigravity CLI</strong>. Gemini CLI still exists, still ships weekly releases and is still open source (Apache 2.0), but individuals now run it with a paid Gemini API key, billed per token. Choose <strong>Claude Code</strong> (Claude Pro $20/mo, $17 billed yearly) for a terminal agent on a flat plan. Choose <strong>Gemini CLI</strong> if you need open-source code you can audit or fork, your company already has Gemini Code Assist licenses, or you want pay-per-token Gemini in scripts and CI. Want Gemini in your terminal on a $19.99 plan? That is Antigravity CLI now.</p>
+      </details><!-- /UI:folds -->
       <p class="updated">Verified on Google's and Anthropic's official pricing pages, docs and announcements, Oct 22, 2026. Prices change often; confirm with the linked sources.</p>
       <div class="cta-row"><a class="btn btn-primary" href="../#quiz">Not sure? Take the 60-second picker quiz</a> <a class="btn" href="../ai-coding-tool-pricing/#calc">Compare costs in the calculator</a></div>
     </section>
+    <!-- UI:jump --><nav class="ui-jump" aria-label="On this page"><div class="ui-jump-in"><a href="#what-happened-to-gemini-cli" class="ui-chip">What happened to Gemini…</a><a href="#side-by-side" class="ui-chip">Side by side</a><a href="#what-you-d-actually-pay-as-an-individual" class="ui-chip">What you'd actually pay…</a><a href="#what-a-team-of-5-pays" class="ui-chip">Team of 5</a><a href="#where-gemini-cli-wins" class="ui-chip">Where Gemini CLI wins</a><a href="#claude-code-codex-or-gemini-the-three-wa" class="ui-chip">&quot;Claude Code, Codex, or…</a><a href="#verdict-who-should-pick-which" class="ui-chip">🏆 Verdict</a><a href="#try" class="ui-chip">Try one</a><a href="#faq" class="ui-chip">FAQ</a></div><button type="button" class="ui-expand" hidden>Expand all</button></nav><!-- /UI:jump -->
 
-    <section class="panel">
-      <h2>What happened to Gemini CLI</h2>
+    <section id="what-happened-to-gemini-cli" class="panel ui-acc">
+      <details class="ui-d" open><summary class="ui-sum"><h2>What happened to Gemini CLI</h2><span class="ui-tags"></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
       <ul>
         <li><strong>May 19, 2026:</strong> Google announced Antigravity CLI and said Gemini CLI would stop serving consumer accounts. Its reason: users now want "multiple agents communicating with each other," so Google is putting its effort into one platform, Antigravity.</li>
         <li><strong>June 18, 2026:</strong> Gemini CLI and the Gemini Code Assist IDE extensions stopped serving requests for Gemini Code Assist for individuals (the free tier), Google AI Pro and Google AI Ultra. Sign in with Google no longer works for those accounts.</li>
@@ -150,65 +177,76 @@
         <li><strong>The replacement is closed source:</strong> Antigravity CLI (command <code>agy</code>) is written in Go. Its GitHub repo holds a README, changelog, examples and a demo GIF, with no source code and no license. Google says it imports your Gemini CLI skills, MCP servers and agents and reads existing GEMINI.md files, but admits there is no 1:1 feature parity yet.</li>
       </ul>
       <p class="note">Sources: <a href="https://developers.googleblog.com/en/an-important-update-transitioning-gemini-cli-to-antigravity-cli/" rel="noopener">Google Developers Blog (May 19, 2026)</a> · <a href="https://developers.google.com/gemini-code-assist/docs/deprecations/code-assist-individuals" rel="noopener">Code Assist consumer deprecation</a> · <a href="https://github.com/google-gemini/gemini-cli/discussions/28017" rel="noopener">Gemini CLI team notice (June 18, 2026)</a> · <a href="https://github.com/google-gemini/gemini-cli" rel="noopener">Gemini CLI repo</a> · <a href="https://github.com/google-antigravity/antigravity-cli" rel="noopener">Antigravity CLI repo</a> · <a href="https://github.com/google-gemini/gemini-cli/discussions/20632" rel="noopener">Gemini CLI team on Antigravity bans (Feb 27, 2026)</a> · <a href="https://testingcatalog.net/google-clarifies-antigravity-bans-wont-nuke-your-whole-google-account/" rel="noopener">TestingCatalog on the updated Antigravity terms (Sep 10, 2026)</a>. Heads up: some Gemini CLI docs pages, like the authentication guide, still recommend Sign in with Google for personal accounts. The banner on every docs page and Google's deprecation notice say otherwise, and we go with those.</p>
+    </div></details>
     </section>
 
-    <section class="panel" style="overflow-x:auto">
-      <h2>Side by side</h2>
-      <table>
+    <section id="side-by-side" class="panel ui-acc" style="overflow-x:auto">
+      <details class="ui-d"><summary class="ui-sum"><h2>Side by side</h2><span class="ui-tags"><span class="ui-tag">Table</span></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
+      <table class="ui-stack">
         <thead><tr><th></th><th>Gemini CLI (Google)</th><th>Claude Code (Anthropic)</th></tr></thead>
         <tbody>
-          <tr><td>What it is</td><td>Open-source terminal agent for Gemini models, with IDE integration and a headless mode for scripts</td><td>Agentic coding tool: terminal CLI, VS Code (also installs in Cursor) and JetBrains extensions, desktop app, web and mobile</td></tr>
-          <tr><td>Open source</td><td>Yes, Apache 2.0</td><td>No. Public repo for issues and plugins; license is "All rights reserved," use under Anthropic's terms</td></tr>
-          <tr><td>Free tier</td><td>No longer for Google sign-in. Google's quota page still lists a free API key tier (250 requests a day, Flash only), but Google's transition notes only promise paid keys</td><td>None: Claude Free doesn't include Claude Code</td></tr>
-          <tr><td>Flat monthly plan for individuals</td><td>None since June 18, 2026. Google AI Plus, Pro and Ultra aren't accepted</td><td>Pro $20/mo ($17/mo billed annually); Max $100/mo (5x Pro usage) or Ultra $200/mo (10x Pro weekly usage, no five-hour limit for verified accounts)</td></tr>
-          <tr><td>Pay per token (API key)</td><td>Gemini 3.1 Pro Preview $2 in / $12 out per million tokens (prompts up to 200K). Gemini 3.8 Flash $0.75 / $3.75 through Dec 31, 2026, then $1.50 / $7.50</td><td>Sonnet 5.5 $2 / $10, Opus 5.5 $4 / $20, Haiku 5.5 $0.10 / $0.50 (prompts up to 100K) per million tokens, via an Anthropic Console account</td></tr>
-          <tr><td>Teams</td><td>Gemini Code Assist via Google Cloud: Standard about $22.80/user/mo ($19 on a 12-month commitment), Enterprise about $54 ($45)</td><td>Team: Standard $25/seat ($20 annual), Premium $125 ($100 annual) with 5x usage, 2 to 150 people, up to $500/mo pooled API credits. Enterprise $20/seat + API usage, 20-seat minimum</td></tr>
-          <tr><td>How limits work</td><td>Code Assist Standard 1,500 and Enterprise 2,000 model requests per user per day; API keys are limited by your spend and rate limits</td><td>Rolling five-hour window plus weekly limits, shared with Claude chat. No published message count</td></tr>
-          <tr><td>Models</td><td>Gemini only. Auto routing across Gemini 3 or Gemini 2.5 models, or pick one manually. Not optimized for Gemini 4 Argon, per Google</td><td>Claude only: Opus, Sonnet and Haiku on Pro and up; Fable via usage credits on Pro, up to 50% of weekly limits on Max and Ultra</td></tr>
-          <tr><td>Agent features</td><td>Subagents and plan mode (both marked experimental), checkpointing and rewind, hooks, agent skills, extensions, MCP, sandboxing, web search and fetch, GEMINI.md context files</td><td>Parallel and background agents, skills, hooks, plugins, MCP, CLAUDE.md or AGENTS.md, auto memory, scheduled tasks, GitHub Actions and GitLab CI, Agent SDK</td></tr>
-          <tr><td>Install</td><td>npm, npx, Homebrew, MacPorts</td><td>Native installer, Homebrew, WinGet, apt, dnf, apk</td></tr>
+          <tr><td>What it is</td><td data-label="Gemini CLI (Google)">Open-source terminal agent for Gemini models, with IDE integration and a headless mode for scripts</td><td data-label="Claude Code (Anthropic)">Agentic coding tool: terminal CLI, VS Code (also installs in Cursor) and JetBrains extensions, desktop app, web and mobile</td></tr>
+          <tr><td>Open source</td><td data-label="Gemini CLI (Google)">Yes, Apache 2.0</td><td data-label="Claude Code (Anthropic)">No. Public repo for issues and plugins; license is "All rights reserved," use under Anthropic's terms</td></tr>
+          <tr><td>Free tier</td><td data-label="Gemini CLI (Google)">No longer for Google sign-in. Google's quota page still lists a free API key tier (250 requests a day, Flash only), but Google's transition notes only promise paid keys</td><td data-label="Claude Code (Anthropic)">None: Claude Free doesn't include Claude Code</td></tr>
+          <tr><td>Flat monthly plan for individuals</td><td data-label="Gemini CLI (Google)">None since June 18, 2026. Google AI Plus, Pro and Ultra aren't accepted</td><td data-label="Claude Code (Anthropic)">Pro $20/mo ($17/mo billed annually); Max $100/mo (5x Pro usage) or Ultra $200/mo (10x Pro weekly usage, no five-hour limit for verified accounts)</td></tr>
+          <tr><td>Pay per token (API key)</td><td data-label="Gemini CLI (Google)">Gemini 3.1 Pro Preview $2 in / $12 out per million tokens (prompts up to 200K). Gemini 3.8 Flash $0.75 / $3.75 through Dec 31, 2026, then $1.50 / $7.50</td><td data-label="Claude Code (Anthropic)">Sonnet 5.5 $2 / $10, Opus 5.5 $4 / $20, Haiku 5.5 $0.10 / $0.50 (prompts up to 100K) per million tokens, via an Anthropic Console account</td></tr>
+          <tr><td>Teams</td><td data-label="Gemini CLI (Google)">Gemini Code Assist via Google Cloud: Standard about $22.80/user/mo ($19 on a 12-month commitment), Enterprise about $54 ($45)</td><td data-label="Claude Code (Anthropic)">Team: Standard $25/seat ($20 annual), Premium $125 ($100 annual) with 5x usage, 2 to 150 people, up to $500/mo pooled API credits. Enterprise $20/seat + API usage, 20-seat minimum</td></tr>
+          <tr><td>How limits work</td><td data-label="Gemini CLI (Google)">Code Assist Standard 1,500 and Enterprise 2,000 model requests per user per day; API keys are limited by your spend and rate limits</td><td data-label="Claude Code (Anthropic)">Rolling five-hour window plus weekly limits, shared with Claude chat. No published message count</td></tr>
+          <tr><td>Models</td><td data-label="Gemini CLI (Google)">Gemini only. Auto routing across Gemini 3 or Gemini 2.5 models, or pick one manually. Not optimized for Gemini 4 Argon, per Google</td><td data-label="Claude Code (Anthropic)">Claude only: Opus, Sonnet and Haiku on Pro and up; Fable via usage credits on Pro, up to 50% of weekly limits on Max and Ultra</td></tr>
+          <tr><td>Agent features</td><td data-label="Gemini CLI (Google)">Subagents and plan mode (both marked experimental), checkpointing and rewind, hooks, agent skills, extensions, MCP, sandboxing, web search and fetch, GEMINI.md context files</td><td data-label="Claude Code (Anthropic)">Parallel and background agents, skills, hooks, plugins, MCP, CLAUDE.md or AGENTS.md, auto memory, scheduled tasks, GitHub Actions and GitLab CI, Agent SDK</td></tr>
+          <tr><td>Install</td><td data-label="Gemini CLI (Google)">npm, npx, Homebrew, MacPorts</td><td data-label="Claude Code (Anthropic)">Native installer, Homebrew, WinGet, apt, dnf, apk</td></tr>
         </tbody>
       </table>
       <p class="note">Sources: <a href="https://geminicli.com/docs/resources/quota-and-pricing/" rel="noopener">Gemini CLI quotas and pricing</a> · <a href="https://geminicli.com/docs/cli/model/" rel="noopener">Gemini CLI model selection</a> · <a href="https://geminicli.com/docs/" rel="noopener">Gemini CLI docs</a> · <a href="https://ai.google.dev/gemini-api/docs/pricing" rel="noopener">Gemini API pricing</a> · <a href="https://cloud.google.com/products/gemini/pricing" rel="noopener">Gemini Code Assist pricing</a> · <a href="https://claude.com/pricing" rel="noopener">claude.com/pricing</a> · <a href="https://code.claude.com/docs/en/overview" rel="noopener">Claude Code docs</a> · <a href="https://github.com/anthropics/claude-code/blob/main/LICENSE.md" rel="noopener">Claude Code license</a>. All checked Oct 22, 2026. Google lists Code Assist as an hourly license fee ($0.031232877/hour for Standard on a monthly commitment, $0.026027397 on 12 months; $0.073972603 and $0.061643836 for Enterprise); we converted at 8,760 hours a year divided by 12. Anthropic renamed Max 5x to Max ($100) and Max 20x to Ultra ($200) on Oct 30, 2026; Claude plans re-checked Nov 2, 2026.</p>
+    </div></details>
     </section>
 
-    <section class="panel">
-      <h2>What you'd actually pay as an individual</h2>
-      <table>
+    <section id="what-you-d-actually-pay-as-an-individual" class="panel ui-acc">
+      <details class="ui-d"><summary class="ui-sum"><h2>What you'd actually pay as an individual</h2><span class="ui-tags"><span class="ui-tag">Table</span></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
+      <table class="ui-stack">
         <thead><tr><th>You want</th><th>Gemini CLI</th><th>Claude Code</th><th>Antigravity CLI (Google's replacement)</th></tr></thead>
         <tbody>
-          <tr><td>A terminal agent for $0</td><td>Not reliably: free API key tier is unclear</td><td>Not available</td><td>Free tier with a basic weekly limit on Gemini 3.8 Flash</td></tr>
-          <tr><td>A flat ~$20 plan</td><td>Not available</td><td>Claude Pro $20 ($17 billed yearly)</td><td>Google AI Pro $19.99: Gemini 4 Argon plus Claude Opus and Sonnet 5.5 (paid plans, not the free trial)</td></tr>
-          <tr><td>Heavy daily use</td><td>Whatever your API usage costs</td><td>Max $100 or Ultra $200</td><td>Google AI Ultra $99.99 (5x Pro) or $199.99 (20x Pro)</td></tr>
-          <tr><td>Scripts and CI</td><td>Gemini API key, per token</td><td>Anthropic Console API key, per token</td><td>Not offered with your own key (no bring-your-own-key support)</td></tr>
+          <tr><td data-label="You want">A terminal agent for $0</td><td data-label="Gemini CLI">Not reliably: free API key tier is unclear</td><td data-label="Claude Code">Not available</td><td data-label="Antigravity CLI (Google's replacement)">Free tier with a basic weekly limit on Gemini 3.8 Flash</td></tr>
+          <tr><td data-label="You want">A flat ~$20 plan</td><td data-label="Gemini CLI">Not available</td><td data-label="Claude Code">Claude Pro $20 ($17 billed yearly)</td><td data-label="Antigravity CLI (Google's replacement)">Google AI Pro $19.99: Gemini 4 Argon plus Claude Opus and Sonnet 5.5 (paid plans, not the free trial)</td></tr>
+          <tr><td data-label="You want">Heavy daily use</td><td data-label="Gemini CLI">Whatever your API usage costs</td><td data-label="Claude Code">Max $100 or Ultra $200</td><td data-label="Antigravity CLI (Google's replacement)">Google AI Ultra $99.99 (5x Pro) or $199.99 (20x Pro)</td></tr>
+          <tr><td data-label="You want">Scripts and CI</td><td data-label="Gemini CLI">Gemini API key, per token</td><td data-label="Claude Code">Anthropic Console API key, per token</td><td data-label="Antigravity CLI (Google's replacement)">Not offered with your own key (no bring-your-own-key support)</td></tr>
         </tbody>
       </table>
       <p class="note">Antigravity prices from <a href="https://gemini.google/subscriptions/" rel="noopener">gemini.google/subscriptions</a>, <a href="https://antigravity.google/docs/plans" rel="noopener">Antigravity plans</a> and <a href="https://antigravity.google/docs/models" rel="noopener">Antigravity models</a>, checked Oct 22, 2026 (US prices). Gemini 4 Argon on the API is $2 in / $10 out per million tokens through Nov 30, 2026 and doubles to $4 / $20 on Dec 1, the same as Claude Opus 5.5's $4 / $20. None of these vendors publish how many agent turns a plan buys.</p>
+    </div></details>
     </section>
 
-    <section class="panel">
-      <h2>What a team of 5 pays</h2>
-      <table>
+    <section id="what-a-team-of-5-pays" class="panel ui-acc">
+      <details class="ui-d"><summary class="ui-sum"><h2>What a team of 5 pays</h2><span class="ui-tags"><span class="ui-tag">Table</span></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
+      <table class="ui-stack">
         <thead><tr><th>Setup</th><th>Monthly commitment</th><th>Annual / 12-month</th><th>What you get</th></tr></thead>
         <tbody>
-          <tr><td>Gemini CLI via Code Assist Standard</td><td>About $114/mo</td><td>About $95/mo ($1,140/yr)</td><td>1,500 Gemini CLI requests per user per day, Code Assist in VS Code and IntelliJ, enterprise-grade security and Gen AI indemnification</td></tr>
-          <tr><td>Gemini CLI via Code Assist Enterprise</td><td>About $270/mo</td><td>About $225/mo ($2,700/yr)</td><td>2,000 requests per user per day, code customization on your private repos, Gemini Cloud Assist</td></tr>
-          <tr><td>Claude Team, 5 standard seats</td><td>$125/mo</td><td>$100/mo ($1,200/yr)</td><td>Claude Code on every surface plus Claude chat, SSO, up to $500/mo pooled API credits; no training on your content by default</td></tr>
-          <tr><td>Claude Team, 4 standard + 1 premium</td><td>$225/mo</td><td>$180/mo</td><td>One heavy user gets 5x standard usage</td></tr>
+          <tr><td data-label="Setup">Gemini CLI via Code Assist Standard</td><td data-label="Monthly commitment">About $114/mo</td><td data-label="Annual / 12-month">About $95/mo ($1,140/yr)</td><td data-label="What you get">1,500 Gemini CLI requests per user per day, Code Assist in VS Code and IntelliJ, enterprise-grade security and Gen AI indemnification</td></tr>
+          <tr><td data-label="Setup">Gemini CLI via Code Assist Enterprise</td><td data-label="Monthly commitment">About $270/mo</td><td data-label="Annual / 12-month">About $225/mo ($2,700/yr)</td><td data-label="What you get">2,000 requests per user per day, code customization on your private repos, Gemini Cloud Assist</td></tr>
+          <tr><td data-label="Setup">Claude Team, 5 standard seats</td><td data-label="Monthly commitment">$125/mo</td><td data-label="Annual / 12-month">$100/mo ($1,200/yr)</td><td data-label="What you get">Claude Code on every surface plus Claude chat, SSO, up to $500/mo pooled API credits; no training on your content by default</td></tr>
+          <tr><td data-label="Setup">Claude Team, 4 standard + 1 premium</td><td data-label="Monthly commitment">$225/mo</td><td data-label="Annual / 12-month">$180/mo</td><td data-label="What you get">One heavy user gets 5x standard usage</td></tr>
         </tbody>
       </table>
       <p class="note">On price, Code Assist Standard on a 12-month commitment ($95) edges out Claude Team annual ($100). The catch: Google says Code Assist Standard and Enterprise are on "a separate deprecation schedule," so ask your Google rep about the roadmap before a one-year commitment. Try other team sizes in the <a href="../ai-coding-tool-pricing/#calc">cost calculator</a>.</p>
+    </div></details>
     </section>
 
-    <section class="panel">
-      <h2>Where Gemini CLI wins</h2>
+    <section id="where-gemini-cli-wins" class="panel ui-acc">
+      <details class="ui-d"><summary class="ui-sum"><h2>Where Gemini CLI wins</h2><span class="ui-tags"></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
+      <div class="ui-cards ui-cards-2">
+        <div class="ui-card"><p class="ui-card-h" aria-hidden="true">Where Gemini CLI wins</p>
       <ul>
         <li><strong>Open source.</strong> Apache 2.0: you can read, audit and fork the agent harness. Claude Code and Antigravity CLI are both closed.</li>
         <li><strong>Cheapest per seat for Google Cloud teams.</strong> About $19/user/month on a 12-month Code Assist Standard commitment, with a published daily request quota.</li>
         <li><strong>Predictable daily quota.</strong> 1,500 or 2,000 requests per user per day on Code Assist, instead of limits nobody publishes as numbers.</li>
         <li><strong>Cheap Flash models for automation.</strong> Gemini 3.8 Flash is $0.75 in / $3.75 out per million tokens through Dec 31, 2026, handy for headless jobs in CI.</li>
       </ul>
-      <h2>Where Claude Code wins</h2>
+      </div>
+        <div class="ui-card"><h2>Where Claude Code wins</h2>
       <ul>
         <li><strong>A real consumer plan.</strong> $20 a month ($17 billed yearly) covers Claude Code and Claude chat. Gemini CLI has no individual plan anymore.</li>
         <li><strong>Google's newest model isn't Gemini CLI's focus.</strong> Google itself says Gemini CLI isn't optimized for Gemini 4 Argon. Claude Code runs Anthropic's current models, including Opus 5.5.</li>
@@ -216,37 +254,48 @@
         <li><strong>Less product risk.</strong> Gemini CLI already lost its consumer users once, and its paid licenses are on an unpublished deprecation schedule.</li>
         <li><strong>Team extras.</strong> Claude Team includes chat, Claude Code and up to $500 a month in pooled API credits.</li>
       </ul>
+    </div>
+      </div></div></details>
     </section>
 
-    <section class="panel">
-      <h2>"Claude Code, Codex, or Gemini?" The three-way answer</h2>
+    <section id="claude-code-codex-or-gemini-the-three-wa" class="panel ui-acc">
+      <details class="ui-d"><summary class="ui-sum"><h2>"Claude Code, Codex, or Gemini?" The three-way answer</h2><span class="ui-tags"></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
       <ul>
         <li><strong>Claude Code:</strong> Claude Pro $20, limits reset every five hours with a weekly cap, Claude models only.</li>
         <li><strong>OpenAI Codex:</strong> the same $20 on ChatGPT Plus, plus Free and Go ($8) tiers in the desktop app. Pro plans ($100, $200 or $500) currently have no five-hour Codex limit, only weekly limits. OpenAI models only. Full comparison: <a href="../claude-code-vs-codex/">Claude Code vs OpenAI Codex</a>.</li>
         <li><strong>Gemini:</strong> for a subscription, that now means Antigravity CLI on Google AI Pro ($19.99), which is also the only one of the three that puts Gemini 4 Argon and Claude Opus and Sonnet 5.5 in one plan. Gemini CLI is the pay-per-token or company-license route. See <a href="../cursor-vs-antigravity/">Cursor vs Google Antigravity</a> for more on Antigravity's plans.</li>
       </ul>
       <p class="note">Codex prices checked Oct 22, 2026 on <a href="https://developers.openai.com/codex/pricing" rel="noopener">developers.openai.com/codex/pricing</a>.</p>
+    </div></details>
     </section>
 
-    <section class="panel">
-      <h2>Verdict: who should pick which</h2>
-      <h3>Pick Gemini CLI if…</h3>
-      <ul>
+    <section id="verdict-who-should-pick-which" class="panel ui-acc">
+      <details class="ui-d" open><summary class="ui-sum"><h2>Verdict: who should pick which</h2><span class="ui-tags"></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
+      
+      <div class="ui-cards">
+        <div class="ui-card ui-pickcard"><h3>Pick Gemini CLI if…</h3>
+      <ul data-pick="Gemini CLI">
         <li>Your company already pays for Gemini Code Assist Standard or Enterprise. You have Gemini CLI included with a daily quota.</li>
         <li>You need an open-source agent you can audit, fork or embed.</li>
         <li>You want Gemini in scripts and CI and are happy paying per token with an API key.</li>
       </ul>
-      <h3>Pick Claude Code if…</h3>
-      <ul>
+      </div>
+        <div class="ui-card ui-pickcard"><h3>Pick Claude Code if…</h3>
+      <ul data-pick="Claude Code">
         <li>You're an individual and want a terminal agent on a flat monthly price.</li>
         <li>You want the strongest Claude models in the agent and to use it from the terminal, your IDE, desktop or the web.</li>
         <li>You're buying for a small team that wants chat and coding in one seat.</li>
       </ul>
-      <h3>Pick Antigravity CLI instead if…</h3>
-      <ul>
+      </div>
+        <div class="ui-card ui-pickcard"><h3>Pick Antigravity CLI instead if…</h3>
+      <ul data-pick="Antigravity CLI">
         <li>You came to this page wanting "Gemini CLI on my Google AI Pro plan." That product is Antigravity CLI now: $19.99 with Gemini 4 Argon and Claude 5.5 models, or a free tier. It's closed source and its quotas aren't published as numbers.</li>
       </ul>
-      <p><strong>Honest caveat:</strong> nobody publishes how much real agent work $20 buys, so the only fair test is a week of your own tasks. Claude Pro and Google AI Pro are both month to month. Or let the <a href="../#quiz">quiz</a> decide.</p>
+      <p><strong>Honest caveat:</strong> nobody publishes how much real agent work $20 buys, so the only fair test is a week of your own tasks. Claude Pro and Google AI Pro are both month to month. Or let the <a href="../#quiz">quiz</a> decide.</p></div>
+      </div>
+    </div></details>
     </section>
     <!-- PRERENDER:try -->
     <section class="panel try" id="try">
@@ -281,22 +330,31 @@
     </section>
     <!-- /PRERENDER:try -->
 
-    <section class="panel" id="faq">
-      <h2>FAQ</h2>
-      <h3>Is Gemini CLI still free?</h3>
+    <section class="panel ui-acc" id="faq">
+      <details class="ui-d" open><summary class="ui-sum"><h2>FAQ</h2><span class="ui-tags"><span class="ui-tag">7 questions</span></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
+      
+      <details class="ui-faq"><summary><h3>Is Gemini CLI still free?</h3></summary><div class="ui-faq-a">
       <p>Not for individuals with a Google account. On June 18, 2026, Google stopped serving Gemini CLI for the free Gemini Code Assist for individuals tier and for Google AI Pro and Ultra subscribers, and moved those users to Antigravity CLI. Gemini CLI itself is still free, open-source software (Apache 2.0), but to use it you now need a paid Gemini API key (billed per token), Vertex AI, or a Gemini Code Assist Standard or Enterprise license. Google&#x27;s quota page still lists a free API key tier (250 requests a day, Flash models only), but Google&#x27;s transition notes only promise access with paid keys, so don&#x27;t plan around it.</p>
-      <h3>Can I use my Google AI Pro or Ultra subscription with Gemini CLI?</h3>
+      </div></details>
+      <details class="ui-faq"><summary><h3>Can I use my Google AI Pro or Ultra subscription with Gemini CLI?</h3></summary><div class="ui-faq-a">
       <p>No, not since June 18, 2026. Google says Sign in with Google no longer works in Gemini CLI or the Gemini Code Assist IDE extensions for Google AI Pro and Ultra. Your subscription now covers Antigravity CLI (agy) instead: Google AI Pro is $19.99/month and Ultra is $99.99 or $199.99/month. Google AI Plus was never supported in Gemini CLI.</p>
-      <h3>Is Gemini CLI or Claude Code cheaper?</h3>
+      </div></details>
+      <details class="ui-faq"><summary><h3>Is Gemini CLI or Claude Code cheaper?</h3></summary><div class="ui-faq-a">
       <p>For an individual who wants a flat monthly price, Claude Code: Claude Pro is $20/month ($17/month billed annually) and Gemini CLI has no subscription option for individuals anymore. With API keys, both bill per token: Gemini 3.1 Pro Preview is $2 per million input tokens and $12 per million output tokens (prompts up to 200K), Gemini 3.8 Flash is $0.75 and $3.75 through Dec 31, 2026, and Claude Sonnet 5.5 is $2 and $10. For a team of 5, Gemini Code Assist Standard works out to about $114/month on monthly commitment or $95/month on a 12-month commitment, versus $125 or $100 for Claude Team standard seats. Prices checked Oct 22, 2026.</p>
-      <h3>Are Gemini CLI and Claude Code open source?</h3>
+      </div></details>
+      <details class="ui-faq"><summary><h3>Are Gemini CLI and Claude Code open source?</h3></summary><div class="ui-faq-a">
       <p>Gemini CLI is: it&#x27;s on GitHub under the Apache 2.0 license, with over 107,000 stars and a new release (v0.65.0) on Oct 20, 2026. Claude Code is not: its GitHub repository is public for issues and plugins, but the license reads &#x27;All rights reserved&#x27; and use is governed by Anthropic&#x27;s terms. Antigravity CLI, Gemini CLI&#x27;s successor for individuals, is also closed source: its repository has a README, changelog, examples and a demo GIF, but no source code or license.</p>
-      <h3>What&#x27;s the difference between Gemini CLI and Antigravity CLI?</h3>
+      </div></details>
+      <details class="ui-faq"><summary><h3>What&#x27;s the difference between Gemini CLI and Antigravity CLI?</h3></summary><div class="ui-faq-a">
       <p>Gemini CLI is the original open-source TypeScript terminal agent, now for API-key, Vertex AI and Code Assist license users. Antigravity CLI (command: agy) is Google&#x27;s closed-source replacement, written in Go, sharing its agent harness with the Antigravity desktop app. It works with the Antigravity free tier and Google AI Pro and Ultra, runs Gemini 4 Argon and, on paid Pro and Ultra, Claude Opus and Sonnet 5.5. Google says it imports Gemini CLI skills, MCP servers and agents and reads existing GEMINI.md files, but admits there isn&#x27;t 1:1 feature parity.</p>
-      <h3>Which is better for a team of 5?</h3>
+      </div></details>
+      <details class="ui-faq"><summary><h3>Which is better for a team of 5?</h3></summary><div class="ui-faq-a">
       <p>If your company already buys Google Cloud, Gemini Code Assist Standard is the cheaper seat: about $22.80 per user per month on monthly commitment ($114 for 5) or $19 on a 12-month commitment ($95 for 5), with 1,500 Gemini CLI requests per user per day plus Code Assist in VS Code and IntelliJ. Claude Team costs $125/month for 5 standard seats ($100 billed annually) and adds Claude chat, Claude Code on every surface and up to $500 a month in pooled API credits. Google says Code Assist Standard and Enterprise are on a separate deprecation schedule, so ask your Google rep before you commit for a year.</p>
-      <h3>Can I move my Gemini CLI setup to Claude Code?</h3>
-      <p>Mostly by hand. Claude Code reads CLAUDE.md, or an existing AGENTS.md, so you can copy your GEMINI.md instructions into one of those. MCP servers need to be added again in Claude Code&#x27;s own config, and hooks, skills and custom commands use different formats. If you&#x27;d rather stay with Google, Antigravity CLI imports Gemini CLI skills, MCP servers and agents automatically and keeps reading GEMINI.md.</p>
+      </div></details>
+      <details class="ui-faq"><summary><h3>Can I move my Gemini CLI setup to Claude Code?</h3></summary><div class="ui-faq-a">
+      <p>Mostly by hand. Claude Code reads CLAUDE.md, or an existing AGENTS.md, so you can copy your GEMINI.md instructions into one of those. MCP servers need to be added again in Claude Code&#x27;s own config, and hooks, skills and custom commands use different formats. If you&#x27;d rather stay with Google, Antigravity CLI imports Gemini CLI skills, MCP servers and agents automatically and keeps reading GEMINI.md.</p></div></details>
+    </div></details>
     </section>
     <!-- PRERENDER:stack -->
     <section class="panel stack" id="ship">
@@ -331,8 +389,9 @@
     </section>
     <!-- /PRERENDER:stack -->
 
-    <section class="panel" id="related">
-      <h2>Related guides</h2>
+    <section class="panel ui-acc" id="related">
+      <details class="ui-d"><summary class="ui-sum"><h2>Related guides</h2><span class="ui-tags"></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
       <ul class="related">
         <li><a href="../gemini-subscription-dec-2/">Gemini subscription on Dec 2<small>New: what's confirmed vs the Claude Code rumor</small></a></li>
         <li><a href="../gemini-4-neon-vs-opus-5-5-vs-gpt-6-2-astra/">Gemini 4 Neon vs Opus 5.5 vs GPT-6.2 Astra<small>New: same score as Opus 5.5 at half the cost per task</small></a></li>
@@ -357,6 +416,7 @@
         <li><a href="../claude-code-vs-cursor/">Claude Code vs Cursor<small>Terminal agent vs AI IDE</small></a></li>
         <li><a href="../ai-coding-tool-pricing/">AI coding tool pricing<small>All 41 plans + cost calculator</small></a></li>
       </ul>
+    </div></details>
     </section>
 
     <aside class="sponsor" id="sponsor" aria-label="Sponsor slot">
@@ -365,9 +425,11 @@
       <div style="margin-top:10px" class="meta">Founding sponsor rates available now. Email <a href="mailto:sponsors@codetoolpicker.com?subject=CodeToolPicker%20sponsorship">sponsors@codetoolpicker.com</a> &middot; <a href="../advertise/">See packages</a></div>
     </aside>
 
-    <section class="panel" id="disclosure">
-      <h2>Editorial disclosure</h2>
+    <section class="panel ui-acc" id="disclosure">
+      <details class="ui-d"><summary class="ui-sum"><h2>Editorial disclosure</h2><span class="ui-tags"></span><span class="ui-chev" aria-hidden="true"></span></summary>
+      <div class="ui-body">
       <p><strong>Rankings are not for sale.</strong> Sponsored placements and affiliate links are always labeled, and they never change our recommendations, quiz results, prices, or comparison data. <strong>Links marked "referral" are affiliate links (Netlify):</strong> if you buy through them, we may earn a commission at no extra cost to you. Every other link is a plain link that pays us nothing, and pricing source links are never affiliate links. <a href="../advertise/#policy">Editorial policy</a>.</p>
+    </div></details>
     </section>
     </article>
 
@@ -379,6 +441,7 @@
       <p class="meta" id="analytics-note">We use GoatCounter, a privacy-friendly counter with no cookies, to count visits.</p>
     </footer>
   </div>
+  <script src="../ui.js" defer></script>
   <script data-goatcounter="https://codetoolpicker.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
