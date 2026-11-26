@@ -167,7 +167,7 @@
           <div class="cta-row">${R.tryBtn(t.id, `Try ${R.short(t.name)}`)}</div>
           ${R.disclosure([t.id])}
         </div>`).join("")}
-        <div class="cta-row qz-cmp">${cmp ? `<a class="btn" href="${cmp.url}">Compare: ${cmp.label}</a>` : ""}<button class="btn" type="button" id="quiz-vs">${R.short(top.name)} vs ${R.short(second.name)} side by side</button></div>
+        <div class="cta-row qz-cmp">${cmp ? `<a class="btn" href="${cmp.url}">Compare: ${cmp.label} &rarr;</a>` : `<button class="btn" type="button" id="quiz-vs">${R.short(top.name)} vs ${R.short(second.name)} side by side</button>`}</div>
       </div>
       </div>
       <p class="meta" style="margin-top:12px">Next: <a href="#ship">what hosting, a database and a domain will cost</a> once your app works.</p>
@@ -181,7 +181,8 @@
       if (window.CTP_CALC) window.CTP_CALC.select(top.id);
       document.getElementById("cost").scrollIntoView({ behavior: "smooth" });
     });
-    document.getElementById("quiz-vs").addEventListener("click", () => {
+    const vsBtn = document.getElementById("quiz-vs");
+    if (vsBtn) vsBtn.addEventListener("click", () => {
       if (window.CTP_VS) window.CTP_VS.set(top.id, second.id);
       document.getElementById("compare").scrollIntoView({ behavior: "smooth" });
     });
