@@ -37,6 +37,7 @@ window.TOOL_BADGES = {
 };
 
 window.GUIDES = [
+  { slug: "gpt-6-2-limits-40-percent-faster", title: "GPT-6.2 limits: 40% faster now", hook: "Astra burns 40% faster, Sol 25%. Free reset.", cat: "limits", tools: ["codex"], date: "2026-11-26", icon: "🔥" },
   { slug: "codex-usage-correction-gpt-6-2", title: "Codex limits hitting sooner?", hook: "Price unchanged. Ultrafast is still 6x.", cat: "limits", tools: ["codex"], date: "2026-11-25", icon: "⏳" },
   { slug: "copilot-cli-vs-claude-code-vs-codex-cli", title: "Copilot CLI vs Claude Code vs Codex", hook: "Same model, 21 matchups. Scores tie. Bills don't.", cat: "versus", tools: ["copilot", "claude", "codex"], date: "2026-11-24", icon: "⚔️" },
   { slug: "chatgpt-business-1-seat-codex", title: "1-seat ChatGPT Business for Codex?", hook: "$25 a month for the same Codex as Plus", cat: "pricing", tools: ["codex"], date: "2026-11-23", icon: "💼" },
