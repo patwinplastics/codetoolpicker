@@ -100,7 +100,7 @@
       "name": "Which is better for teams?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "On list price, Cursor is cheaper per seat: team seats start at $30 (Premium), and you can mix Premium, Super and Ultra seats. Devin Desktop Teams has an $80/month minimum plus $40/month per full dev seat, up to 100 users (five full seats are $200), with centralized billing, SAML or OIDC SSO and 3-tier cost controls (checked Nov 13, 2026). Devin includes Claude, GPT and Gemini in each seat's quota; Cursor bills them at API price."
+        "text": "It depends on team size and usage. Cursor team seats start at $30 (Premium), each with its own usage pool, and you can mix Premium, Super and Ultra seats. Since Nov 18, 2026, Devin Desktop Teams is a flat $80 a month for up to 100 members, paid in as shared on-demand credits with no per-seat fee, plus SAML or OIDC SSO and 3-tier cost controls (checked Nov 26, 2026). On list price Devin is cheaper for three or more people, but busy teams will top up Devin credits. Cursor bills Claude, GPT and Gemini at API price on top."
       }
     },
     {
@@ -151,12 +151,12 @@
       <!-- /UI:tldr --><!-- UI:folds -->
       <details class="ui-full"><summary>Read the full short answer</summary>
         <p>Windsurf is now <strong>Devin Desktop</strong>: Cognition renamed it on June 2, 2026 and kept the same plans and pricing. Short answer: <strong>Devin Desktop</strong> is the cheaper way to use Claude, GPT and Gemini in an AI IDE ($20 Pro with frontier models in the quota). <strong>Cursor</strong> is cheapest if Grok models work for you ($8 Plus), and its per-seat team pricing costs less. Details below.</p>
-        <p>Comparing Devin the cloud agent to Windsurf the IDE? They are now one product family, not rivals. <a href="../devin-vs-windsurf/">Devin vs Windsurf</a> covers the acquisition, the rename, and current Teams pricing (checked Nov 13, 2026).</p>
+        <p>Comparing Devin the cloud agent to Windsurf the IDE? They are now one product family, not rivals. <a href="../devin-vs-windsurf/">Devin vs Windsurf</a> covers the acquisition, the rename, and current Teams pricing (checked Nov 26, 2026).</p>
       </details>
       <details class="ui-updates"><summary><span class="ui-dot"></span>1 update since this was published</summary>
         <p class="note"><strong>Heads up (Nov 5, 2026):</strong> OpenAI plans to stop supplying GPT models to Cursor, with a proposed shutoff of Nov 12, 2026. Tab isn't affected; Agent, Auto, Cloud Agents and the CLI lose GPT unless you add your own key (local Chat and Agent only, Premium and up) or use the Codex extension inside Cursor. <a href="../cursor-openai-cutoff/">What breaks and how to keep GPT</a>.</p>
       </details><!-- /UI:folds -->
-      <p class="updated">Prices verified on official pricing pages and docs Oct 19, 2026. Prices change often; confirm with the linked sources.</p>
+      <p class="updated">Prices verified on official pricing pages and docs Oct 19, 2026. Prices change often; confirm with the linked sources. Plan prices re-checked on the official pricing pages <span data-pricing-checked>Nov 26, 2026</span>.</p>
       <div class="cta-row"><a class="btn btn-primary" href="../#quiz">Not sure? Take the 60-second picker quiz</a> <a class="btn" href="../#compare">See all 9 tools</a></div>
     </section>
     <!-- UI:jump --><nav class="ui-jump" aria-label="On this page"><div class="ui-jump-in"><a href="#extension-check" class="ui-chip">Using Claude Code inside…</a><a href="#side-by-side" class="ui-chip">Side by side</a><a href="#where-cursor-wins" class="ui-chip">Where Cursor wins</a><a href="#verdict-who-should-pick-which" class="ui-chip">🏆 Verdict</a><a href="#try" class="ui-chip">Try one</a><a href="#faq" class="ui-chip">FAQ</a></div><button type="button" class="ui-expand" hidden>Expand all</button></nav><!-- /UI:jump -->
@@ -185,13 +185,13 @@
           <tr><td>Claude / GPT models</td><td data-label="Cursor">Premium and up only, billed separately at API list price from first use</td><td data-label="Devin Desktop (formerly Windsurf)">Included in Pro's quota; extra usage beyond it is bought at API pricing</td></tr>
           <tr><td>Usage refresh</td><td data-label="Cursor">One weekly usage pool shared with Grok</td><td data-label="Devin Desktop (formerly Windsurf)">Allowance refreshes daily and weekly</td></tr>
           <tr><td>Other agents</td><td data-label="Cursor">Cursor's own agents; Claude Code has an official extension for Cursor</td><td data-label="Devin Desktop (formerly Windsurf)">Runs ACP-compatible agents (Codex, Claude Agent, OpenCode, in-house agents) alongside Devin</td></tr>
-          <tr><td>Teams</td><td data-label="Cursor">From $30/seat (Premium, Super or Ultra seats, mix and match)</td><td data-label="Devin Desktop (formerly Windsurf)">$80/mo minimum + $40/mo per full dev seat, up to 100 users</td></tr>
+          <tr><td>Teams</td><td data-label="Cursor">From $30/seat (Premium, Super or Ultra seats, mix and match)</td><td data-label="Devin Desktop (formerly Windsurf)">$80/mo flat in shared credits, up to 100 members (no per-seat fee since Nov 18, 2026)</td></tr>
           <tr><td>Switching in</td><td data-label="Cursor">Imports VS Code extensions, settings and keybindings</td><td data-label="Devin Desktop (formerly Windsurf)">Imports VS Code or Cursor settings; backwards-compatible with Windsurf and VS Code extensions and keybindings</td></tr>
         </tbody>
       </table>
       <p class="note">Sources: <a href="https://cursor.com/pricing" rel="noopener">cursor.com/pricing</a> · <a href="https://docs.x.ai/x-subscription/pricing" rel="noopener">X Subscription pricing docs</a> · <a href="https://devin.ai/pricing" rel="noopener">devin.ai/pricing</a> · <a href="https://devin.ai/blog/windsurf-is-now-devin-desktop" rel="noopener">Windsurf is now Devin Desktop (Cognition, June 2, 2026)</a> · <a href="https://docs.devin.ai/desktop/getting-started" rel="noopener">Devin Desktop docs</a> · <a href="https://cursor.com/docs/configuration/migrations/vscode" rel="noopener">Cursor VS Code import docs</a> · <a href="https://code.claude.com/docs/en/overview" rel="noopener">Claude Code docs</a>. Checked Oct 19, 2026. Devin's pricing page doesn't list annual prices, so none are shown.</p>
       <p class="note"><strong>Update Nov 6, 2026:</strong> Cognition shipped SWE-2 Flash for Devin Desktop and CLI (not Devin Cloud). Flash is free until Dec 4, 2026 18:00 UTC. SWE-2's self-serve Desktop/CLI free window runs through Nov 30. The Oct 19 table above was not re-checked. Details: <a href="../swe-2-flash-vs-swe-2/">SWE-2 Flash vs SWE-2</a>.</p>
-      <p class="note"><strong>Update Nov 13, 2026:</strong> Cognition cut the Teams cap from 200 to 100 members on Nov 12 and documented $80 as a monthly minimum, so five full seats are $200, not $280. Teams now includes SAML/OIDC SSO and 3-tier cost controls. Details: <a href="../devin-vs-windsurf/">Devin vs Windsurf</a>.</p>
+      <p class="note"><strong>Update Nov 13, 2026:</strong> Cognition cut the Teams cap from 200 to 100 members on Nov 12 and documented $80 as a monthly minimum, so five full seats are $200, not $280. Teams now includes SAML/OIDC SSO and 3-tier cost controls. Details: <a href="../devin-vs-windsurf/">Devin vs Windsurf</a>. <strong>Update Nov 26, 2026:</strong> since Nov 18, Devin Teams is a flat $80 a month in shared on-demand credits, with no $40 per-seat fee.</p>
       <p class="note"><strong>Update Nov 15, 2026:</strong> The Nov 6 note above still matches the models docs, which say SWE-2 is free on self-serve Desktop and CLI through Nov 30, 2026. Cognition's Nov 12 Teams blog and the current pricing page list free SWE-2 on Pro, Max and Teams with no end date. We are not treating the Nov 30 cutoff as cancelled until the docs catch up. Details: <a href="../devin-vs-windsurf/#caveats">Devin vs Windsurf, caveats</a>.</p>
     </div></details>
     </section>
@@ -203,7 +203,7 @@
         <div class="ui-card"><p class="ui-card-h" aria-hidden="true">Where Cursor wins</p>
       <ul>
         <li><strong>Cheapest paid entry.</strong> Plus is $8/month if Grok and Cursor's own models cover your work.</li>
-        <li><strong>Cheaper teams on list price.</strong> One Premium seat is $30. Devin Teams is $40 per full seat with an $80 monthly minimum: $80 for one full seat, $200 for five, vs $150 for five Cursor Premium seats.</li>
+        <li><strong>Per-seat usage you can predict.</strong> One Premium seat is $30 with its own usage pool. Devin Teams is now a flat $80 a month in shared credits (cheaper on paper for three or more people), but everyone draws from one pool and heavy use means buying more credits.</li>
         <li><strong>Premium extras.</strong> Premium adds cloud agents and automations, code hosting, and AI code reviews (Bugbot).</li>
         <li><strong>More tiers in between.</strong> $30 and $100 steps between entry and $200, where Devin jumps straight from $20 to $200.</li>
       </ul>
@@ -284,7 +284,7 @@
       <p>Yes. Devin Desktop's onboarding can import VS Code or Cursor settings and keybindings, and it's backwards-compatible with Windsurf and VS Code extensions. Cursor can import VS Code extensions, themes, settings and keybindings. Cursor also reads AGENTS.md files for agent instructions.</p>
       </div></details>
       <details class="ui-faq"><summary><h3>Which is better for teams?</h3></summary><div class="ui-faq-a">
-      <p>On list price, Cursor is cheaper per seat: team seats start at $30 (Premium), and you can mix Premium, Super and Ultra seats. Devin Desktop Teams has an $80/month minimum plus $40/month per full dev seat, up to 100 users (five full seats are $200), with centralized billing, SAML or OIDC SSO and 3-tier cost controls (checked Nov 13, 2026). Devin includes Claude, GPT and Gemini in each seat's quota; Cursor bills them at API price.</p>
+      <p>It depends on team size and usage. Cursor team seats start at $30 (Premium), each with its own usage pool, and you can mix Premium, Super and Ultra seats. Since Nov 18, 2026, Devin Desktop Teams is a flat $80 a month for up to 100 members, paid in as shared on-demand credits with no per-seat fee, plus SAML or OIDC SSO and 3-tier cost controls (checked Nov 26, 2026). On list price Devin is cheaper for three or more people, but busy teams will top up Devin credits. Cursor bills Claude, GPT and Gemini at API price on top.</p>
       </div></details>
       <details class="ui-faq"><summary><h3>What happened to Windsurf's Cascade agent?</h3></summary><div class="ui-faq-a">
       <p>Devin Local replaced Cascade as the primary local agent. Cognition rewrote it from scratch in Rust with the same capabilities and settings, and says it's up to 30% more token-efficient. The legacy Cascade agent stayed available through July 1, 2026 for migration.</p></div></details>

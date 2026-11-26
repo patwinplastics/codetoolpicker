@@ -147,7 +147,7 @@
       <details class="ui-full"><summary>Read the full short answer</summary>
         <p><strong>Short answer:</strong> use <strong>Hydrogen</strong> for everyday edits, tests, debugging and agent loops. It is the cheap, fast one ($1.50 in / $7.50 out per million tokens on the API, with a free tier). Save <strong>Carbon</strong> for the hard jobs: big refactors, migrations, root-cause hunts and architecture. And plan for <strong>December 1, 2026</strong>: that is when Carbon and Argon go from $2 / $10 to <strong>$4 / $20</strong> per million tokens, which is exactly what Claude Opus 5.5 costs per token.</p>
       </details><!-- /UI:folds -->
-      <p class="updated">Checked Nov 16, 2026 against Google's Carbon and Hydrogen announcements, the Gemini API pricing page, the Antigravity blog, models docs and CLI releases, GitHub's changelog and Copilot pricing docs, and Cursor's model docs. Benchmark numbers below are Google's own claims, not our tests.</p>
+      <p class="updated">Checked Nov 16, 2026 against Google's Carbon and Hydrogen announcements, the Gemini API pricing page, the Antigravity blog, models docs and CLI releases, GitHub's changelog and Copilot pricing docs, and Cursor's model docs. Benchmark numbers below are Google's own claims, not our tests. <strong>Re-checked Nov 26, 2026:</strong> Antigravity now lists Carbon on paid Google AI Pro (not just Ultra) and Hydrogen on every plan, including Free. Argon and Gemini 3.8 Flash leave Antigravity on Nov 30, 2026.</p>
       <div class="cta-row"><a class="btn btn-primary" href="#calc">What does a task cost?</a> <a class="btn" href="#where">Where can I use each?</a> <a class="btn" href="#dec">What changes in December</a> <a class="btn" href="#picker">Which one should I pick?</a></div>
     </section>
     <!-- UI:jump --><nav class="ui-jump" aria-label="On this page"><div class="ui-jump-in"><a href="#compare" class="ui-chip">Carbon vs Hydrogen vs…</a><a href="#dec" class="ui-chip">What changes in December</a><a href="#where" class="ui-chip">Where you can use…</a><a href="#calc" class="ui-chip ui-chip-calc">🧮 What does one coding…</a><a href="#picker" class="ui-chip ui-chip-calc">🧮 Which one should I…</a><a href="#tips" class="ui-chip">How to use them…</a><a href="#unknowns" class="ui-chip">What we could not…</a><a href="#try" class="ui-chip">Try one</a><a href="#faq" class="ui-chip">FAQ</a></div><button type="button" class="ui-expand" hidden>Expand all</button></nav><!-- /UI:jump -->
@@ -192,7 +192,7 @@
       <div class="table-scroll"><table>
         <thead><tr><th>Where</th><th>Hydrogen</th><th>Carbon</th><th>How it is billed</th></tr></thead>
         <tbody>
-          <tr><td>Google Antigravity (app, CLI, IDE extensions)</td><td>Paid Google AI Pro ($19.99) and Ultra</td><td>Google AI Ultra only ($99.99 or $199.99)</td><td>Your plan's quota. Orchestrator (Argon) on Pro; Orchestrator (Carbon) on Ultra.</td></tr>
+          <tr><td>Google Antigravity (app, CLI, IDE extensions)</td><td>Every plan, including Free (as of Nov 26, 2026)</td><td>Paid Google AI Pro ($19.99) and Ultra (Ultra only at launch; Pro added by Nov 26, 2026)</td><td>Your plan's quota. Orchestrator on Pro and Ultra, with a Neon, Carbon or Argon planner.</td></tr>
           <tr><td>Antigravity CLI with a <code>GEMINI_API_KEY</code></td><td>Yes (since CLI 1.5.8, Nov 13)</td><td>Yes (since CLI 1.5.8)</td><td>Gemini API per-token prices above</td></tr>
           <tr><td>GitHub Copilot</td><td>Pro ($10) and up</td><td>Pro+ ($39), Max, Business, Enterprise</td><td>AI credits at provider list price ($0.01 per credit). Rollout is gradual. Business and Enterprise admins can turn models off.</td></tr>
           <tr><td>Cursor</td><td>Premium ($30) and up</td><td>Premium ($30) and up</td><td>Prepaid credit at API rates, outside the included pool. Plus and Free do not include third-party models.</td></tr>
@@ -286,7 +286,7 @@
         </div>
         <div class="try-item">
           <h3>Google Antigravity</h3>
-          <p class="meta"><strong>Start on:</strong> Google AI Pro $19.99. Most individuals: quota refreshes every five hours up to a weekly limit, with Claude Opus/Sonnet 5.5. Gemini 4 Argon has its own weekly-only quota on Pro (no five-hour refresh). Claude 5.5 needs a paid plan, not the free trial; Argon works on paid Pro or a trial from an eligible premium device.</p>
+          <p class="meta"><strong>Start on:</strong> Google AI Pro $19.99. Most individuals: quota refreshes every five hours up to a weekly limit, with Gemini 4 Neon, Carbon and Hydrogen plus Claude Opus/Sonnet 5.5. Claude 5.5 needs a paid plan, not the free trial; Neon and Carbon work on paid Pro or a trial from an eligible premium device. Gemini 4 Argon leaves on Nov 30, 2026.</p>
           <div class="cta-row">
             <a href="https://antigravity.google" rel="noopener" class="btn btn-primary" data-link="antigravity">Try Google Antigravity free &rarr;</a>
             <a class="btn" href="../ai-coding-tool-pricing/#plans-antigravity">All Google Antigravity plans</a>
@@ -445,7 +445,7 @@
         "cursor-plus|hard": "<p><strong>You would need Cursor Premium ($30) plus prepaid credit,</strong> Copilot Pro+ ($39), Google AI Ultra, or a Gemini API key to use Carbon.</p>",
         "cursor-plus|bulk": "<p><strong>Get a Gemini API key</strong> and use Hydrogen, with Batch or Flex for anything that can wait. Cursor Plus cannot run Gemini 4.</p>",
         "gpro|daily": "<p><strong>Use Hydrogen in Antigravity.</strong> It is included on paid Google AI Pro. Orchestrator (Argon) is the other Pro option for longer tasks.</p>",
-        "gpro|hard": "<p><strong>Carbon is Ultra-only in Antigravity.</strong> On Pro, use Orchestrator (Argon) or Argon directly. If you only need Carbon now and then, a Gemini API key in Antigravity CLI is cheaper than upgrading to Ultra ($99.99).</p>",
+        "gpro|hard": "<p><strong>Carbon is now on paid Google AI Pro in Antigravity</strong> (it was Ultra only at launch; Google's docs list it on Pro as of Nov 26, 2026). Use Carbon, or Orchestrator with Carbon as the planner, for hard tasks. Argon leaves Antigravity on Nov 30, 2026.</p>",
         "gpro|bulk": "<p><strong>Hydrogen.</strong> For scripted or CI runs, Antigravity CLI with a Gemini API key keeps your plan quota free for interactive work.</p>",
         "gultra|daily": "<p><strong>Hydrogen, or Orchestrator (Carbon)</strong> if you want Carbon's planning without paying Carbon's quota on every step. Google says Orchestrator used 24% less quota for near-Carbon results.</p>",
         "gultra|hard": "<p><strong>Carbon,</strong> or <code>/swarm</code> (preview) for very large jobs. Swarms run many agents that all draw on your quota, so watch usage.</p>",

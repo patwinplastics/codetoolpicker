@@ -1,4 +1,4 @@
-// Pricing verified 2026-10-19 on official pages; Antigravity, Codex and Cursor re-checked 2026-10-20; Cursor, Claude, Antigravity re-checked and Gemini CLI added 2026-10-22 (cursor.com/pricing, cursor.com/docs/models-and-pricing, geminicli.com/docs quota page, developers.google.com Code Assist deprecation, cloud.google.com/products/gemini/pricing, ai.google.dev/gemini-api/docs/pricing) (antigravity.google/pricing + docs/plans + docs/models, gemini.google/subscriptions, developers.openai.com/codex/pricing, docs.x.ai/x-subscription/pricing, docs.github.com Copilot plans, claude.com/pricing, devin.ai/pricing, bolt.new/pricing, lovable.dev/pricing).
+// Pricing verified 2026-10-19 on official pages; Antigravity, Codex and Cursor re-checked 2026-10-20; Cursor, Claude, Antigravity re-checked and Gemini CLI added 2026-10-22 (cursor.com/pricing, cursor.com/docs/models-and-pricing, geminicli.com/docs quota page, developers.google.com Code Assist deprecation, cloud.google.com/products/gemini/pricing, ai.google.dev/gemini-api/docs/pricing) (antigravity.google/pricing + docs/plans + docs/models, gemini.google/subscriptions, developers.openai.com/codex/pricing, docs.x.ai/x-subscription/pricing, docs.github.com Copilot plans, claude.com/pricing, devin.ai/pricing, bolt.new/pricing, lovable.dev/pricing). Full recheck of all 9 tools and every plan 2026-11-26 on the same official pages plus docs.devin.ai/admin/billing/self-serve, devin.ai/blog/devin-teams-plan, docs.devin.ai/desktop/models, cursor.com/docs/models-and-pricing, support.claude.com Team plan article, help.openai.com Business sign-up, developers.google.com Code Assist deprecation.
 // Note: Windsurf was renamed Devin Desktop by Cognition on 2026-06-02; windsurf.com now redirects to devin.ai. id stays "windsurf" for quiz/anchor stability.
 window.TOOL_DATA = [
   {
@@ -88,7 +88,7 @@ window.TOOL_DATA = [
       { name: "Free", price: 0, note: "Light agent quota, unlimited Tab and inline edits. SWE-2 Flash Medium on Desktop and CLI." },
       { name: "Pro", price: 20, note: "Increased quotas + frontier models, Devin Cloud access. SWE-2 Flash is Desktop and CLI only." },
       { name: "Max", price: 200, note: "Significantly higher quotas" },
-      { name: "Teams", price: 80, note: "$80/mo minimum + $40/mo per full seat, up to 100 users (5 full seats = $200; flex seats free)" }
+      { name: "Teams", price: 80, note: "Flat $80/mo, added to a shared on-demand credit pool; up to 100 members, no per-seat fee (since Nov 18, 2026)" }
     ],
     strengths: ["Agent Command Center (local + cloud agents)", "Devin Cloud included on paid plans", "Competitive Pro price", "Extra usage at API price"],
     limits: ["Quotas can bite power users", "Renamed from Windsurf in June 2026; some docs and extensions still say Windsurf"],
@@ -178,16 +178,16 @@ window.TOOL_DATA = [
     startingPaid: 19.99,
     freeTier: true,
     plans: [
-      { name: "Free", price: 0, note: "Basic weekly limit, unlimited Tab and Command requests, Gemini 3.8 Flash" },
-      { name: "Google AI Pro", price: 19.99, note: "Quota refreshes every 5 hours up to a weekly limit; Gemini 4 Neon and Orchestrator (Neon) since Nov 18, 2026; Gemini 4 Argon on its own weekly-only quota; Claude Opus/Sonnet 5.5 (paid, not trial)" },
+      { name: "Free", price: 0, note: "Weekly quota, unlimited Tab and Command requests, Gemini 4 Hydrogen (Gemini 3.8 Flash until Nov 30, 2026)" },
+      { name: "Google AI Pro", price: 19.99, note: "Quota refreshes every 5 hours up to a weekly limit; Gemini 4 Neon, Carbon and Hydrogen plus Orchestrator; Gemini 4 Argon until Nov 30, 2026; Claude Opus/Sonnet 5.5 (paid, not trial)" },
       { name: "Google AI Ultra 5x", price: 99.99, note: "5x the Pro quota" },
       { name: "Google AI Ultra 20x", price: 199.99, note: "20x the Pro quota, highest weekly limits" },
       { name: "Gemini Enterprise", price: 30, note: "Teams via Google Cloud: Standard/Plus from $30/seat, or pay-as-you-go with $0 seat fee" }
     ],
     strengths: ["Claude Opus and Sonnet 5.5 included in the $19.99 Pro quota", "Free tier with unlimited Tab completions", "Agent app, own IDE, CLI, and extensions for VS Code, JetBrains, Zed and Xcode"],
-    limits: ["Quotas aren't published as numbers", "No bring-your-own API key", "Individual plans need a personal Google account; teams go through Google Cloud", "Gemini 4 Argon isn't in the standalone Antigravity IDE (App, CLI and extensions only)"],
+    limits: ["Quotas aren't published as numbers", "No bring-your-own API key", "Individual plans need a personal Google account; teams go through Google Cloud", "Gemini 4 Argon, Gemini 3.8 Flash, GPT-OSS-120b and Claude 4.6 leave Antigravity on Nov 30, 2026"],
     formFactor: "Agent app + IDE + CLI",
-    models: "Gemini 4 Neon (Nov 18, 2026; default model on paid Pro and Ultra), Gemini 4 Argon, Gemini 4 Hydrogen (paid Pro and Ultra), Gemini 4 Carbon (Ultra only) and 3.8 Flash, plus Claude Opus/Sonnet 5.5 on Pro and Ultra",
+    models: "Gemini 4 Hydrogen on every plan (default on Free); Gemini 4 Neon (default on paid Pro and Ultra) and Gemini 4 Carbon on paid Pro and Ultra; Claude Opus/Sonnet 5.5 on paid Pro and Ultra. Gemini 4 Argon and 3.8 Flash leave Nov 30, 2026",
     affiliate: false,
   },
   {
@@ -254,7 +254,8 @@ window.QUIZ = [
 // or null when the vendor doesn't publish an annual price. minimum = monthly floor (Devin Teams: max(minimum, monthly * full seats); flex seats are free and are not in the seat count). base = unused flat add-on on top of seats.
 // Codex, Google Antigravity and Cursor re-checked 2026-10-20 on developers.openai.com/codex/pricing, antigravity.google/pricing,
 // antigravity.google/docs/plans, antigravity.google/docs/models, gemini.google/subscriptions and cursor.com/pricing.
-window.PRICING_CHECKED = "2026-10-22";
+// Full recheck of every plan for all 9 tools 2026-11-26 (see the header comment). Devin Teams is now flat (no seat, no minimum).
+window.PRICING_CHECKED = "2026-11-26";
 window.PRICING = {
   cursor: {
     start: 2,
@@ -330,15 +331,15 @@ window.PRICING = {
       { name: "Free", monthly: 0, annual: 0, note: "Light agent quota, unlimited Tab. SWE-2 Flash Medium on Desktop/CLI." },
       { name: "Pro", monthly: 20, annual: null, note: "Higher quotas, frontier models, Devin Cloud. SWE-2 Flash is Desktop/CLI only." },
       { name: "Max", monthly: 200, annual: null, note: "Significantly higher quotas" },
-      { name: "Teams", monthly: 40, annual: null, seat: true, minimum: 80, note: "$80/mo minimum; $40/mo per full seat, up to 100 users (5 full seats = $200; flex seats free)" }
+      { name: "Teams", monthly: 80, annual: null, note: "Flat $80/mo for the whole team, paid in as shared on-demand credits; up to 100 members; no per-seat fee since Nov 18, 2026" }
     ],
     extraCost: "Extra usage beyond quotas is billed at API pricing. Quotas aren't published as numbers. SWE-2 Flash (Desktop and CLI only, not Cloud) is free until Dec 4, 2026 18:00 UTC, then $0.10 per million input tokens and $0.50 per million output tokens.",
-    glance: { free: "Yes: light agent quota, unlimited Tab and inline edits", models: "Frontier OpenAI, Claude, Gemini + SWE-2 (Pro+); SWE-2 Flash on Desktop/CLI (free until Dec 4)", agents: "Local agents; Devin Cloud agents on Pro+", surface: "Own desktop IDE (formerly Windsurf)", team: "$80/mo min; $40/seat" },
+    glance: { free: "Yes: light agent quota, unlimited Tab and inline edits", models: "Frontier OpenAI, Claude, Gemini + SWE-2 (Pro+); SWE-2 Flash on Desktop/CLI (free until Dec 4)", agents: "Local agents; Devin Cloud agents on Pro+", surface: "Own desktop IDE (formerly Windsurf)", team: "$80/mo flat, up to 100 members" },
     guide: [
       ["Free", "Unlimited Tab completions and inline edits with a light agent quota. SWE-2 Flash Medium is on Free (Desktop and CLI, free until Dec 4, 2026 per docs)."],
       ["Pro $20", "Most individuals: higher quotas, frontier models, SWE-2, SWE-2 Flash on Desktop and CLI (not Cloud), and Devin Cloud agents."],
       ["Max $200", "Significantly higher quotas for all-day agent use."],
-      ["Teams $80 + $40/seat", "Up to 100 members. $80 is a monthly minimum (5 full seats = $200). Flex seats are free. SSO, 3-tier cost controls, centralized billing (checked Nov 13, 2026)."]
+      ["Teams $80/mo flat", "Up to 100 members sharing one pool of on-demand credits (the $80 goes into the pool each month; top up as needed). No per-seat fee since Nov 18, 2026. Each member gets 2 free concurrent SWE-2 cloud sessions, plus SSO and 3-tier cost controls (checked Nov 26, 2026)."]
     ],
     skipIf: "You need predictable heavy usage on a fixed budget. Quotas aren't published as numbers, and overages bill at API pricing."
   },
@@ -405,17 +406,17 @@ window.PRICING = {
     start: 1,
     bestBadge: "Most models in a $20 plan",
     plans: [
-      { name: "Free", monthly: 0, annual: 0, note: "Basic weekly limit, unlimited Tab and Command requests" },
-      { name: "Google AI Pro", monthly: 19.99, annual: null, note: "Quota refreshes every 5 hours up to a weekly limit; Claude 5.5 models on paid (not trial) plans" },
+      { name: "Free", monthly: 0, annual: 0, note: "Weekly quota, unlimited Tab and Command requests, Gemini 4 Hydrogen" },
+      { name: "Google AI Pro", monthly: 19.99, annual: null, note: "Quota refreshes every 5 hours up to a weekly limit; Gemini 4 Neon and Carbon; Claude 5.5 models on paid (not trial) plans" },
       { name: "Google AI Ultra 5x", monthly: 99.99, annual: null, note: "5x the Pro quota, priority access" },
       { name: "Google AI Ultra 20x", monthly: 199.99, annual: null, note: "20x the Pro quota, highest weekly limits" },
       { name: "Gemini Enterprise (Standard/Plus)", monthly: 30, annual: null, seat: true, note: "From $30/seat via Google Cloud; a pay-as-you-go option has a $0 seat fee" }
     ],
     extraCost: "Usage beyond your quota needs purchased AI credits at Gemini Enterprise consumption prices (you choose Never or Always). Paid tiers are Google AI subscriptions, so you can't buy Antigravity on its own.",
-    glance: { free: "Yes: basic weekly limit, unlimited Tab, Gemini 3.8 Flash", models: "Gemini 4 Neon and Argon + Claude Opus/Sonnet 5.5 inside the plan quota (Pro+)", agents: "Agent-first: multi-agent app, scheduled tasks, CLI, SDK", surface: "Own agent app + IDE, CLI, extensions for VS Code, JetBrains, Zed, Xcode", team: "From $30/seat via Google Cloud" },
+    glance: { free: "Yes: weekly quota, unlimited Tab, Gemini 4 Hydrogen", models: "Gemini 4 Neon, Carbon and Hydrogen + Claude Opus/Sonnet 5.5 inside the plan quota (paid Pro+)", agents: "Agent-first: multi-agent app, scheduled tasks, CLI, SDK", surface: "Own agent app + IDE, CLI, extensions for VS Code, JetBrains, Zed, Xcode", team: "From $30/seat via Google Cloud" },
     guide: [
-      ["Free", "Try the agent with Gemini 3.8 Flash on a weekly quota. Claude Sonnet/Opus 4.6 and GPT-OSS 120B are on Free until Google removes them on Nov 30, 2026 (date moved from Nov 18 in Google's models docs)."],
-      ["Google AI Pro $19.99", "Most individuals: quota refreshes every five hours up to a weekly limit, with Claude Opus/Sonnet 5.5. Gemini 4 Argon has its own weekly-only quota on Pro (no five-hour refresh). Claude 5.5 needs a paid plan, not the free trial; Argon works on paid Pro or a trial from an eligible premium device."],
+      ["Free", "Try the agent on a weekly quota with Gemini 4 Hydrogen, now the default Free model. Gemini 3.8 Flash, Claude Sonnet/Opus 4.6 and GPT-OSS 120B are on Free until Google removes them on Nov 30, 2026."],
+      ["Google AI Pro $19.99", "Most individuals: quota refreshes every five hours up to a weekly limit, with Gemini 4 Neon, Carbon and Hydrogen plus Claude Opus/Sonnet 5.5. Claude 5.5 needs a paid plan, not the free trial; Neon and Carbon work on paid Pro or a trial from an eligible premium device. Gemini 4 Argon leaves on Nov 30, 2026."],
       ["Google AI Ultra $99.99", "Daily drivers: 5x the Pro quota and priority access."],
       ["Google AI Ultra $199.99", "All-day agent use: 20x the Pro quota and the highest weekly limits."],
       ["Gemini Enterprise from $30/seat", "Organizations on Google Cloud. Covers the Antigravity App, CLI and IDE extensions, not the standalone Antigravity IDE."]
@@ -455,6 +456,8 @@ window.COMPARE_PAGES = {
 
 // Dated pricing changes we track. Only sourced events.
 window.PRICE_LOG = [
+  { date: "2026-11-26", text: "Full pricing recheck of all 9 tools and every plan on the official pages. Two changes. 1) Devin Desktop (formerly Windsurf) Teams is now a flat $80 a month for the whole team, paid in as shared on-demand credits, for up to 100 members. The $40 per full seat fee is gone (Cognition's pricing page changed Nov 17-18, 2026; its billing docs now say every Teams subscription is a flat $80/month). Before, five full seats cost $200 a month; now the plan price is $80 and heavier teams top up credits. 2) Google Antigravity's models docs now list Gemini 4 Hydrogen on every plan, as the default model on Free and Google AI Plus, and Gemini 4 Carbon on paid Google AI Pro (it was Ultra only). Gemini 4 Argon, Gemini 3.8 Flash, GPT-OSS-120b and Claude 4.6 are all listed as leaving on Nov 30, 2026. Unchanged: Cursor (Free, Plus $8, Premium $30, Super $100, Ultra $200, Teams from $30/seat; $80/$300/$1,000/$2,000 a year), GitHub Copilot (Pro $10 with 1,500 credits, Pro+ $39 with 7,000, Max $100 with 20,000, Business $19, Enterprise $39), Claude (Pro $20 or $17 yearly, Max $100, Ultra $200, Team $25/$20 and $125/$100), Codex/ChatGPT (Go $8, Plus $20, Pro $100/$200/$500, Business $25 or $20 yearly), Antigravity plan prices ($19.99, $99.99, $199.99, Enterprise from $30/seat), Gemini Code Assist (about $22.80 and $54 per user), Lovable (Pro $25, Business $50), Bolt (Pro $25, Teams $30/member), Devin Free/Pro/Max ($0/$20/$200).", src: "https://docs.devin.ai/admin/billing/self-serve" },
+  { date: "2026-11-26", text: "Devin Desktop model prices, from Cognition's models docs: SWE-2 stays free in Desktop and CLI on self-serve plans through Nov 30, 2026, then costs $0.50 input / $2.50 output / $0.05 cache reads per million tokens from Dec 1 to Dec 31, 2026, then list price $3 / $15 / $0.30. SWE-2 Flash is still free until Dec 4, 2026 18:00 UTC, then $0.10 / $0.50. Cognition's Nov 12 Teams post calls free SWE-2 in Desktop and CLI a permanent part of Teams, Pro and Max, so the docs and the blog still disagree.", src: "https://docs.devin.ai/desktop/models" },
   { date: "2026-11-26", text: "GPT-6.2 Codex usage correction, now with numbers. OpenAI Codex lead Tibo Sottiaux posted on Nov 25, 2026 (9:50 PM ET) that a billing mistake at the GPT-6.2 launch incorrectly discounted Astra and Sol usage for most users. Compared to the prior week, you reach limits 40% faster on GPT-6.2 Astra and 25% faster on Sol. Other models were not affected and past usage is not charged. Everyone on Go, Plus, Pro and Business gets one banked reset (online Nov 26, 2:26 AM ET). Plan prices and the pricing page estimates (6-50 Astra, 17-180 Sol per 5 hours on Plus) are unchanged. Full story: https://codetoolpicker.com/gpt-6-2-limits-40-percent-faster/", src: "https://x.com/thsottiaux/status/2125784147889393806" },
   { date: "2026-11-25", text: "Codex usage correction, from an OpenAI email readers posted on X (subject \"An update to Codex usage\"). The email says some GPT-6.2 Astra and Sol requests in Codex used less allowance than intended, including Ultrafast, that this is corrected so you may hit limits sooner, and that the subscription price is not changing. It gives no amount and no start date. Re-checked the Codex pricing page the same day: Plus and Standard Business estimates are still 6-50 local GPT-6.2 Astra messages and 17-180 Sol per 5 hours; Fast is still 2x and Ultrafast still 6x on included GPT-6.2 usage. Plan prices unchanged. The changelog's latest entry is still Codex CLI 0.172.0 on Nov 24, with no correction note. OpenAI has not published how much changed. Full story: https://codetoolpicker.com/codex-usage-correction-gpt-6-2/", src: "https://x.com/Im_IrushiK/status/2125562918389583973" },
   { date: "2026-11-23", text: "ChatGPT Business can now start with 1 paid seat, per OpenAI's Business overview, sign-up and billing help pages (updated Nov 22-23); the single-seat article still says availability is limited and the Business and Codex pricing pages still say 2+ users. Prices unchanged: Standard $25/mo or $20 billed yearly, Premium $125 or $100. For Codex, Standard gets the same 5-hour estimates as Plus ($20); Premium is 5x Standard with no 5-hour limit. Pro 100 ($100) is 10x Plus per OpenAI's Codex lead. Full story: https://codetoolpicker.com/chatgpt-business-1-seat-codex/", src: "https://help.openai.com/en/articles/8792828-chatgpt-business-overview" },

@@ -86,7 +86,7 @@ const lines = [
   "See also: https://codetoolpicker.com/cursor-vs-copilot/ (Cursor vs GitHub Copilot)",
   "See also: https://codetoolpicker.com/switch-from-copilot-to-cursor/ (switch from Copilot to Cursor without losing your setup)",
   "See also: https://codetoolpicker.com/lovable-vs-bolt/ (Lovable vs Bolt.new)",
-  "See also: https://codetoolpicker.com/devin-vs-windsurf/ (Devin vs Windsurf, re-checked Nov 15, 2026: Cognition acquired Windsurf July 14, 2025 and renamed it Devin Desktop June 2, 2026; one price list, Teams $80 minimum + $40/full seat up to 100 members, 5 full seats $200; IDE vs Devin Cloud; Nov 12 Teams admin changes; SWE-2 free-until conflict with docs; Devin Apps launched Nov 13)",
+  "See also: https://codetoolpicker.com/devin-vs-windsurf/ (Devin vs Windsurf, re-checked Nov 26, 2026: Cognition acquired Windsurf July 14, 2025 and renamed it Devin Desktop June 2, 2026; one price list, Teams a flat $80/month in shared credits for up to 100 members since Nov 18 (no $40 seat fee); IDE vs Devin Cloud; Nov 12 Teams admin changes; SWE-2 free-until conflict with docs; Devin Apps launched Nov 13)",
   "See also: https://codetoolpicker.com/cursor-vs-windsurf/ (Cursor vs Windsurf, now Devin Desktop)",
   "See also: https://codetoolpicker.com/claude-code-vs-cursor/ (Claude Code vs Cursor)",
   "See also: https://codetoolpicker.com/copilot-vs-claude-code/ (GitHub Copilot vs Claude Code: $10 credits vs $20 five-hour limits, teams of 5)",
@@ -107,7 +107,7 @@ const lines = [
   "See also: https://codetoolpicker.com/mai-code-2-vs-code-2-flash/ (MAI Code 2 vs Code 2 Flash in GitHub Copilot, checked Nov 19, 2026: launched Nov 17; Copilot per 1M tokens MAI Code 2 $0.50/$0.025/$2.50 and Flash $0.05/$0.005/$0.25 at a 50% promo until May 17, 2027, then $1/$0.05/$5 and $0.10/$0.01/$0.50; Code 2 on Pro, Pro+, Max, Business, Enterprise; Flash also Free and Student (auto model selection only); legacy annual multipliers 1x and 0.33x; Microsoft says not yet tuned for very long-horizon agent work; Flash in limited Foundry preview; credits calculator)",
   "See also: https://codetoolpicker.com/gpt-6-2-astra-vs-sol/ (GPT-6.2 Astra vs Sol for coding, checked Nov 18, 2026: launched Nov 17 in ChatGPT Work, Codex and the API, not regular Chat; Plus estimates 6-50 Astra vs 17-180 Sol local messages per 5 hours; API Astra $8/$0.40/$40, Sol $2/$0.10/$10 per million tokens; Copilot Pro+, Max, Business, Enterprise at list price; not in Cursor, which lists no GPT-6 models; no GPT-6.2 Luna)",
   "See also: https://codetoolpicker.com/tokeneconomizer-claude-code-codex/ (TokenEconomizer for Claude Code and Codex, checked Nov 17, 2026: free MIT plugin from UC Berkeley and Microsoft Research; tool pruning and a loop guard on by default; 18.4-30.9% lower mean cost per task in the researchers' SWE-Bench tests, less on web dev and new repos; tested on Claude Code 2.1.300-2.1.310, Codex 0.153.1-0.164.0, Copilot CLI 1.0.83-1.0.102 while current releases are 2.1.326, 0.169.0, 1.0.112; subscriptions save no dollars but stretch limits; savings calculator)",
-  "See also: https://codetoolpicker.com/gemini-4-carbon-vs-hydrogen/ (Gemini 4 Carbon vs Hydrogen for coding, checked Nov 16, 2026: Hydrogen $1.50/$7.50 per million tokens with an API free tier, for everyday coding; Carbon and Argon $2/$10 through Nov 30, then $4/$20 from Dec 1, the same per-token price as Claude Opus 5.5; Carbon in Antigravity on Google AI Ultra only, Hydrogen on paid Pro and Ultra; Copilot Carbon on Pro+ and up, Hydrogen on Pro and up; Cursor Premium and up via prepaid credit; Copilot retires Argon and Gemini 3.8 Flash Dec 14 (replacements Carbon and Hydrogen); cost-per-task calculator)",
+  "See also: https://codetoolpicker.com/gemini-4-carbon-vs-hydrogen/ (Gemini 4 Carbon vs Hydrogen for coding, checked Nov 16, 2026: Hydrogen $1.50/$7.50 per million tokens with an API free tier, for everyday coding; Carbon and Argon $2/$10 through Nov 30, then $4/$20 from Dec 1, the same per-token price as Claude Opus 5.5; Carbon in Antigravity on Google AI Ultra at launch (paid Pro too as of Nov 26), Hydrogen on every plan as of Nov 26; Copilot Carbon on Pro+ and up, Hydrogen on Pro and up; Cursor Premium and up via prepaid credit; Copilot retires Argon and Gemini 3.8 Flash Dec 14 (replacements Carbon and Hydrogen); cost-per-task calculator)",
   "See also: https://codetoolpicker.com/claude-code-down-backup/ (Claude Code is down? Your backup plan, checked Nov 15, 2026: two Nov 13 incidents, logins 4:58-6:58 AM ET and API plus Claude Code 8:09-10:38 AM ET, root cause unpublished; how to check status.claude.com; local vs outage; backups ranked by switch speed: Codex, Cursor, Copilot, Devin Desktop, Antigravity/Gemini CLI, Aider with a non-Anthropic key; keep AGENTS.md and a second CLI ready)",
   "See also: https://codetoolpicker.com/claude-code-secrets-check/ (Claude Code secrets check: \"don't ask again\" can save passwords and tokens in .claude/settings.local.json (checked Nov 12, 2026); Apiiro found 1,122 of 104,185 public GitHub copies with secrets (1,379 distinct; 215 files missed by gitleaks and TruffleHog); Claude Code only adds the file to your global git excludes, not the repo .gitignore; free in-browser checker, 4 git commands, rotate first; no fix shipped as of Nov 12)",
   "See also: https://codetoolpicker.com/claude-fable-5-2-vs-opus-5-5/ (Claude Fable 5.2 vs Opus 5.5 in Claude Code, checked Nov 11, 2026: Fable 5.2 is $8/$40 per million vs Opus 5.5 $4/$20, cache reads $0.20 on both; Claude Pro gets Fable included only until Nov 16, 2026 11:59 PM PT, then usage credits; Max and Ultra include it up to 50% of weekly limits plus 1 to 3 resets; needs Claude Code 2.1.321+; keep Opus as default, use Fable for root-cause hunts, outages, architecture and big migrations; switching mid-session loses the cache; Copilot Pro+ and Cursor bill it at list price)",
@@ -193,6 +193,29 @@ function ensureIcons(rootDir) {
   return updated;
 }
 
+// "Prices verified" stamps: every <span data-pricing-checked>...</span> on any page shows window.PRICING_CHECKED.
+// Only bump PRICING_CHECKED in data.js after a real recheck of every plan on the official pages.
+function stampChecked(rootDir) {
+  const [y, m, d] = window.PRICING_CHECKED.split("-").map(Number);
+  const label = new Date(Date.UTC(y, m - 1, d)).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
+  let count = 0;
+  const walk = (dir) => {
+    for (const name of fs.readdirSync(dir)) {
+      if (name === ".git" || name === "node_modules") continue;
+      const pth = path.join(dir, name);
+      if (fs.statSync(pth).isDirectory()) walk(pth);
+      else if (name.endsWith(".html")) {
+        const html = fs.readFileSync(pth, "utf8");
+        const out = html.replace(/<span data-pricing-checked>[^<]*<\/span>/g, () => (count++, `<span data-pricing-checked>${label}</span>`));
+        if (out !== html) fs.writeFileSync(pth, out);
+      }
+    }
+  };
+  walk(rootDir);
+  return { label, count };
+}
+const stamped = stampChecked(root);
+console.log(`pricing-checked stamp ${stamped.label} on ${stamped.count} spots`);
 const n = require(path.join(__dirname, "funnels.js"))(root);
 const iconsUpdated = ensureIcons(root);
 console.log(`funnels wired on ${n} pages`);
