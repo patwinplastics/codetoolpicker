@@ -31,6 +31,7 @@
   <link rel="manifest" href="/site.webmanifest" />
   <meta name="theme-color" content="#0b0f14" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="ui.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -139,10 +140,12 @@
       </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero hero-split">
+      <div class="hero-copy">
       <p class="eyebrow">Independent · Prices verified Oct 19 to 22, 2026</p>
       <h1>Find the right AI coding tool <span class="hl">and the right plan</span> in 60 seconds.</h1>
-      <p>Cursor, GitHub Copilot, Claude Code, OpenAI Codex, Google Antigravity, Gemini CLI, Devin Desktop (Windsurf), Lovable and Bolt, compared on what you'd actually pay. Every price is checked against the official pricing page, and every tool gets an honest "skip it if".</p>
+      <p>Real prices from official pages. An honest "skip it if" for every tool.</p>
+      <ul class="hero-tools" aria-label="Tools compared"><li>Cursor</li><li>GitHub Copilot</li><li>Claude Code</li><li>OpenAI Codex</li><li>Google Antigravity</li><li>Gemini CLI</li><li>Devin Desktop (Windsurf)</li><li>Lovable</li><li>Bolt</li></ul>
       <div class="cta-row">
         <a class="btn btn-primary btn-lg" href="#quiz">Take the 60-second quiz</a>
         <a class="btn btn-lg" href="#cost">Calculate my monthly cost</a>
@@ -153,11 +156,13 @@
         <li><strong>3</strong> questions</li>
         <li>Rankings <strong>not for sale</strong></li>
       </ul>
+      </div>
+      <div class="hero-art"><img src="img/hero.webp" width="1280" height="720" alt="Illustration: stacked glowing code editor windows linked to an AI network, a price tag and a rising bar chart" fetchpriority="high" decoding="async" /></div>
     </section>
 
     <section class="panel" id="quiz">
       <h2>Quick picker</h2>
-      <p class="sub">Three questions. One recommended tool, plus a runner-up.</p>
+      <p class="sub">Three taps. Watch the ranking move live, then get your best fit and a runner-up.</p>
       <div id="quiz-body"></div>
       <div class="result" id="quiz-result"></div>
     </section>
@@ -201,6 +206,7 @@
         <button class="chip" data-filter="agent">Agents</button>
         <button class="chip" data-filter="builder">App builders</button>
       </div>
+      <p class="cards-hint" aria-hidden="true">Swipe for all 9 tools →</p>
       <div class="grid" id="cards"><!-- PRERENDER:cards -->
       <article class="card" data-category="ai-ide" id="tool-cursor">
         <div class="badges">
@@ -212,7 +218,7 @@
         <div class="price">$8/mo <small>starting paid · free tier</small></div>
         <p class="meta"><strong>Best for:</strong> Daily coding in a full IDE with agents and cloud work</p>
         <ul class="list"><li>Full IDE</li><li>Cloud agents</li><li>Strong agent workflows</li></ul>
-        <p class="skip"><strong>Skip it if:</strong> Claude or GPT is your daily model. In Cursor they are billed at API list price on top of a $30+ plan; Copilot and Claude Code include them in the plan price.</p>
+        <details class="skip-d"><summary>Skip it if…</summary><p class="skip">Claude or GPT is your daily model. In Cursor they are billed at API list price on top of a $30+ plan; Copilot and Claude Code include them in the plan price.</p></details>
         <div class="actions">
           <a href="https://cursor.com" rel="noopener" class="btn btn-primary" data-link="cursor">Try Cursor free</a>
           <a class="btn" href="ai-coding-tool-pricing/#plans-cursor">Which plan?</a>
@@ -229,7 +235,7 @@
         <div class="price">$10/mo <small>starting paid · free tier</small></div>
         <p class="meta"><strong>Best for:</strong> GitHub-centric teams who want completions plus chat and agents</p>
         <ul class="list"><li>Deep GitHub integration</li><li>Works in many IDEs</li><li>Team admin controls</li></ul>
-        <p class="skip"><strong>Skip it if:</strong> You want a standalone agent-first IDE, or you run long agent sessions all day. Credits run out, and heavy users end up on Pro+ ($39) or Max ($100).</p>
+        <details class="skip-d"><summary>Skip it if…</summary><p class="skip">You want a standalone agent-first IDE, or you run long agent sessions all day. Credits run out, and heavy users end up on Pro+ ($39) or Max ($100).</p></details>
         <div class="actions">
           <a href="https://github.com/features/copilot" rel="noopener" class="btn btn-primary" data-link="copilot">Try GitHub Copilot free</a>
           <a class="btn" href="ai-coding-tool-pricing/#plans-copilot">Which plan?</a>
@@ -246,7 +252,7 @@
         <div class="price">$20/mo <small>starting paid · no free tier</small></div>
         <p class="meta"><strong>Best for:</strong> Terminal-native agentic coding on Claude models</p>
         <ul class="list"><li>Strong reasoning models</li><li>Terminal-first agent</li><li>Shared plan with Claude chat</li></ul>
-        <p class="skip"><strong>Skip it if:</strong> You want a free tier, a full visual IDE, or GPT/Gemini models. Claude Code is Claude-only and needs a paid plan.</p>
+        <details class="skip-d"><summary>Skip it if…</summary><p class="skip">You want a free tier, a full visual IDE, or GPT/Gemini models. Claude Code is Claude-only and needs a paid plan.</p></details>
         <div class="actions">
           <a href="https://claude.com/product/claude-code" rel="noopener" class="btn btn-primary" data-link="claude-code">Get Claude Code</a>
           <a class="btn" href="ai-coding-tool-pricing/#plans-claude-code">Which plan?</a>
@@ -263,7 +269,7 @@
         <div class="price">$20/mo <small>starting paid · free tier</small></div>
         <p class="meta"><strong>Best for:</strong> Engineers who want a Cursor-class IDE that manages many local and cloud agents</p>
         <ul class="list"><li>Agent Command Center (local + cloud agents)</li><li>Devin Cloud included on paid plans</li><li>Competitive Pro price</li></ul>
-        <p class="skip"><strong>Skip it if:</strong> You need predictable heavy usage on a fixed budget. Quotas aren't published as numbers, and overages bill at API pricing.</p>
+        <details class="skip-d"><summary>Skip it if…</summary><p class="skip">You need predictable heavy usage on a fixed budget. Quotas aren't published as numbers, and overages bill at API pricing.</p></details>
         <div class="actions">
           <a href="https://devin.ai" rel="noopener" class="btn btn-primary" data-link="windsurf">Try Devin Desktop free</a>
           <a class="btn" href="ai-coding-tool-pricing/#plans-windsurf">Which plan?</a>
@@ -280,7 +286,7 @@
         <div class="price">$25/mo <small>starting paid · free tier</small></div>
         <p class="meta"><strong>Best for:</strong> Non-engineers and vibe coders who want a working web app from chat</p>
         <ul class="list"><li>Fast chat-to-app</li><li>Hosting included</li><li>Great for prototypes</li></ul>
-        <p class="skip"><strong>Skip it if:</strong> You're a developer who wants full control of the stack, or you need to keep building in an existing repo. Lovable's Git sync always creates a new repo.</p>
+        <details class="skip-d"><summary>Skip it if…</summary><p class="skip">You're a developer who wants full control of the stack, or you need to keep building in an existing repo. Lovable's Git sync always creates a new repo.</p></details>
         <div class="actions">
           <a href="https://lovable.dev" rel="noopener" class="btn btn-primary" data-link="lovable">Try Lovable free</a>
           <a class="btn" href="ai-coding-tool-pricing/#plans-lovable">Which plan?</a>
@@ -297,7 +303,7 @@
         <div class="price">$25/mo <small>starting paid · free tier</small></div>
         <p class="meta"><strong>Best for:</strong> Code-visible chat-to-app with real project files in the browser</p>
         <ul class="list"><li>Real code in browser</li><li>Hosting + DB options</li><li>Token rollover on paid</li></ul>
-        <p class="skip"><strong>Skip it if:</strong> Your project will get big (each message syncs more files, so tokens go faster), or several people want to share one budget. Bolt Teams is priced per member.</p>
+        <details class="skip-d"><summary>Skip it if…</summary><p class="skip">Your project will get big (each message syncs more files, so tokens go faster), or several people want to share one budget. Bolt Teams is priced per member.</p></details>
         <div class="actions">
           <a href="https://bolt.cello.so/aLdglbfmlfZ" rel="sponsored nofollow noopener" class="btn btn-primary" data-link="bolt">Try Bolt.new free <span class="tag ref">referral</span></a>
           <a class="btn" href="ai-coding-tool-pricing/#plans-bolt">Which plan?</a>
@@ -314,7 +320,7 @@
         <div class="price">$8/mo <small>starting paid · free tier</small></div>
         <p class="meta"><strong>Best for:</strong> ChatGPT users who want a coding agent with cloud tasks and automatic PR reviews</p>
         <ul class="list"><li>Free and $8 entry tiers</li><li>Cloud tasks and automatic GitHub code review on Plus</li><li>No five-hour cap on Pro plans (weekly limits apply)</li></ul>
-        <p class="skip"><strong>Skip it if:</strong> You want Claude or Gemini models, or a full visual IDE. Codex on ChatGPT plans runs OpenAI models only.</p>
+        <details class="skip-d"><summary>Skip it if…</summary><p class="skip">You want Claude or Gemini models, or a full visual IDE. Codex on ChatGPT plans runs OpenAI models only.</p></details>
         <div class="actions">
           <a href="https://developers.openai.com/codex" rel="noopener" class="btn btn-primary" data-link="codex">Try OpenAI Codex free</a>
           <a class="btn" href="ai-coding-tool-pricing/#plans-codex">Which plan?</a>
@@ -331,7 +337,7 @@
         <div class="price">$19.99/mo <small>starting paid · free tier</small></div>
         <p class="meta"><strong>Best for:</strong> Developers who want Gemini and Claude models in one $20 plan, across app, IDE and terminal</p>
         <ul class="list"><li>Claude Opus and Sonnet 5.5 included in the $19.99 Pro quota</li><li>Free tier with unlimited Tab completions</li><li>Agent app, own IDE, CLI, and extensions for VS Code, JetBrains, Zed and Xcode</li></ul>
-        <p class="skip"><strong>Skip it if:</strong> You need a credit-card team plan with admin controls, want to bring your own API key, or sign in with a Google Workspace account. Individual plans are built for personal Google accounts, and teams go through Google Cloud.</p>
+        <details class="skip-d"><summary>Skip it if…</summary><p class="skip">You need a credit-card team plan with admin controls, want to bring your own API key, or sign in with a Google Workspace account. Individual plans are built for personal Google accounts, and teams go through Google Cloud.</p></details>
         <div class="actions">
           <a href="https://antigravity.google" rel="noopener" class="btn btn-primary" data-link="antigravity">Try Google Antigravity free</a>
           <a class="btn" href="ai-coding-tool-pricing/#plans-antigravity">Which plan?</a>
@@ -348,7 +354,7 @@
         <div class="price">Usage-based <small>starting paid · no free tier</small></div>
         <p class="meta"><strong>Best for:</strong> Teams with Gemini Code Assist licenses, and developers who want an open-source terminal agent billed per token</p>
         <ul class="list"><li>Open source under Apache 2.0, still updated weekly</li><li>Pay-per-token with a Gemini API key, good for scripts and CI (headless mode)</li><li>Subagents, hooks, skills, extensions, MCP, checkpointing and sandboxing</li></ul>
-        <p class="skip"><strong>Skip it if:</strong> You're an individual who wants a flat monthly plan. Google moved free, AI Pro and Ultra users to Antigravity CLI on June 18, 2026; Claude Code (from $20) or Antigravity (from $19.99) are the subscription options.</p>
+        <details class="skip-d"><summary>Skip it if…</summary><p class="skip">You're an individual who wants a flat monthly plan. Google moved free, AI Pro and Ultra users to Antigravity CLI on June 18, 2026; Claude Code (from $20) or Antigravity (from $19.99) are the subscription options.</p></details>
         <div class="actions">
           <a href="https://geminicli.com" rel="noopener" class="btn btn-primary" data-link="gemini-cli">Get Gemini CLI</a>
           <a class="btn" href="ai-coding-tool-pricing/#plans-gemini-cli">Which plan?</a>
@@ -359,7 +365,9 @@
     </section>
 
     <section class="panel" id="compare" style="margin-top:28px">
-      <h2>All eight at a glance</h2>
+      <h2>Compare any two</h2>
+      <div id="vs" class="vs"><noscript><p class="meta">Pick two tools to compare side by side (needs JavaScript). The full table is below.</p></noscript></div>
+      <h2 style="margin-top:24px">All nine at a glance</h2>
       <p class="sub">Free tier, entry price, which models are actually included, agents, and team pricing. Verified Oct 19 to 22, 2026.</p>
       <p class="meta swipe">Swipe sideways to see all columns →</p>
       <div class="table-scroll" tabindex="0" role="region" aria-label="Comparison table, scrolls sideways">
@@ -379,93 +387,93 @@
         <tbody><!-- PRERENDER:table -->
       <tr>
         <th scope="row"><a href="#tool-cursor">Cursor</a></th>
-        <td>Yes: limited agent and chat requests</td>
-        <td>$8/mo</td>
-        <td>Grok models included; Claude/GPT on Premium+ at extra API cost</td>
-        <td>Agent on all plans; cloud agents and Bugbot reviews on Premium+</td>
-        <td>Own desktop IDE (VS Code-based)</td>
-        <td>$30/seat</td>
-        <td><a href="https://cursor.com" rel="noopener" data-link="cursor">Try free</a></td>
+        <td data-label="Free tier">Yes: limited agent and chat requests</td>
+        <td data-label="Starting paid">$8/mo</td>
+        <td data-label="Models included">Grok models included; Claude/GPT on Premium+ at extra API cost</td>
+        <td data-label="Agents">Agent on all plans; cloud agents and Bugbot reviews on Premium+</td>
+        <td data-label="Works in">Own desktop IDE (VS Code-based)</td>
+        <td data-label="Teams from">$30/seat</td>
+        <td data-label="Get started"><a href="https://cursor.com" rel="noopener" data-link="cursor">Try free</a></td>
       </tr>
       <tr>
         <th scope="row"><a href="#tool-copilot">GitHub Copilot</a></th>
-        <td>Yes: 2,000 completions/mo, limited credits, auto model</td>
-        <td>$10/mo</td>
-        <td>Claude, GPT, Gemini, Grok and more inside your credits (paid plans)</td>
-        <td>Agent mode, cloud agent, code review (limited on Free)</td>
-        <td>Extension for VS Code, JetBrains and more, plus GitHub, CLI, app</td>
-        <td>$19/seat</td>
-        <td><a href="https://github.com/features/copilot" rel="noopener" data-link="copilot">Try free</a></td>
+        <td data-label="Free tier">Yes: 2,000 completions/mo, limited credits, auto model</td>
+        <td data-label="Starting paid">$10/mo</td>
+        <td data-label="Models included">Claude, GPT, Gemini, Grok and more inside your credits (paid plans)</td>
+        <td data-label="Agents">Agent mode, cloud agent, code review (limited on Free)</td>
+        <td data-label="Works in">Extension for VS Code, JetBrains and more, plus GitHub, CLI, app</td>
+        <td data-label="Teams from">$19/seat</td>
+        <td data-label="Get started"><a href="https://github.com/features/copilot" rel="noopener" data-link="copilot">Try free</a></td>
       </tr>
       <tr>
         <th scope="row"><a href="#tool-claude-code">Claude Code</a></th>
-        <td>No: Claude Free doesn't include Claude Code</td>
-        <td>$20/mo</td>
-        <td>Claude only (Sonnet, Opus, Haiku) inside plan usage</td>
-        <td>Agent-first: terminal, IDE extensions, desktop</td>
-        <td>Terminal / IDE agent</td>
-        <td>$25/seat ($20 billed annually)</td>
-        <td><a href="https://claude.com/product/claude-code" rel="noopener" data-link="claude-code">Get started</a></td>
+        <td data-label="Free tier">No: Claude Free doesn't include Claude Code</td>
+        <td data-label="Starting paid">$20/mo</td>
+        <td data-label="Models included">Claude only (Sonnet, Opus, Haiku) inside plan usage</td>
+        <td data-label="Agents">Agent-first: terminal, IDE extensions, desktop</td>
+        <td data-label="Works in">Terminal / IDE agent</td>
+        <td data-label="Teams from">$25/seat ($20 billed annually)</td>
+        <td data-label="Get started"><a href="https://claude.com/product/claude-code" rel="noopener" data-link="claude-code">Get started</a></td>
       </tr>
       <tr>
         <th scope="row"><a href="#tool-windsurf">Devin Desktop</a></th>
-        <td>Yes: light agent quota, unlimited Tab and inline edits</td>
-        <td>$20/mo</td>
-        <td>Frontier OpenAI, Claude, Gemini + SWE-2 (Pro+); SWE-2 Flash on Desktop/CLI (free until Dec 4)</td>
-        <td>Local agents; Devin Cloud agents on Pro+</td>
-        <td>Own desktop IDE (formerly Windsurf)</td>
-        <td>$80/mo min; $40/seat</td>
-        <td><a href="https://devin.ai" rel="noopener" data-link="windsurf">Try free</a></td>
+        <td data-label="Free tier">Yes: light agent quota, unlimited Tab and inline edits</td>
+        <td data-label="Starting paid">$20/mo</td>
+        <td data-label="Models included">Frontier OpenAI, Claude, Gemini + SWE-2 (Pro+); SWE-2 Flash on Desktop/CLI (free until Dec 4)</td>
+        <td data-label="Agents">Local agents; Devin Cloud agents on Pro+</td>
+        <td data-label="Works in">Own desktop IDE (formerly Windsurf)</td>
+        <td data-label="Teams from">$80/mo min; $40/seat</td>
+        <td data-label="Get started"><a href="https://devin.ai" rel="noopener" data-link="windsurf">Try free</a></td>
       </tr>
       <tr>
         <th scope="row"><a href="#tool-lovable">Lovable</a></th>
-        <td>Yes: 5 credits/day (up to 30/mo)</td>
-        <td>$25/mo</td>
-        <td>Managed by Lovable (you don't pick)</td>
-        <td>Chat-to-app builder with hosting</td>
-        <td>Browser app builder</td>
-        <td>$50/mo, unlimited users</td>
-        <td><a href="https://lovable.dev" rel="noopener" data-link="lovable">Try free</a></td>
+        <td data-label="Free tier">Yes: 5 credits/day (up to 30/mo)</td>
+        <td data-label="Starting paid">$25/mo</td>
+        <td data-label="Models included">Managed by Lovable (you don't pick)</td>
+        <td data-label="Agents">Chat-to-app builder with hosting</td>
+        <td data-label="Works in">Browser app builder</td>
+        <td data-label="Teams from">$50/mo, unlimited users</td>
+        <td data-label="Get started"><a href="https://lovable.dev" rel="noopener" data-link="lovable">Try free</a></td>
       </tr>
       <tr>
         <th scope="row"><a href="#tool-bolt">Bolt.new</a></th>
-        <td>Yes: 1M tokens/mo, 300K/day, Bolt branding</td>
-        <td>$25/mo</td>
-        <td>Newest AI models on Pro (managed by Bolt)</td>
-        <td>Chat-to-app builder with real project files</td>
-        <td>Browser IDE / app builder</td>
-        <td>$30/member ($27 annual)</td>
-        <td><a href="https://bolt.cello.so/aLdglbfmlfZ" rel="sponsored nofollow noopener" data-link="bolt">Try free <span class="tag ref">referral</span></a></td>
+        <td data-label="Free tier">Yes: 1M tokens/mo, 300K/day, Bolt branding</td>
+        <td data-label="Starting paid">$25/mo</td>
+        <td data-label="Models included">Newest AI models on Pro (managed by Bolt)</td>
+        <td data-label="Agents">Chat-to-app builder with real project files</td>
+        <td data-label="Works in">Browser IDE / app builder</td>
+        <td data-label="Teams from">$30/member ($27 annual)</td>
+        <td data-label="Get started"><a href="https://bolt.cello.so/aLdglbfmlfZ" rel="sponsored nofollow noopener" data-link="bolt">Try free <span class="tag ref">referral</span></a></td>
       </tr>
       <tr>
         <th scope="row"><a href="#tool-codex">OpenAI Codex</a></th>
-        <td>Yes: Free and Go ($8) in the desktop app, subject to rollout</td>
-        <td>$8/mo</td>
-        <td>OpenAI only: GPT-6.2 Sol and Astra, GPT-6.1 Sol, GPT-6 Luna</td>
-        <td>Agent-first: local and cloud tasks, automatic PR reviews (Plus+)</td>
-        <td>ChatGPT desktop app, web, CLI, IDE extension, iOS</td>
-        <td>$25/seat ($20 billed annually)</td>
-        <td><a href="https://developers.openai.com/codex" rel="noopener" data-link="codex">Try free</a></td>
+        <td data-label="Free tier">Yes: Free and Go ($8) in the desktop app, subject to rollout</td>
+        <td data-label="Starting paid">$8/mo</td>
+        <td data-label="Models included">OpenAI only: GPT-6.2 Sol and Astra, GPT-6.1 Sol, GPT-6 Luna</td>
+        <td data-label="Agents">Agent-first: local and cloud tasks, automatic PR reviews (Plus+)</td>
+        <td data-label="Works in">ChatGPT desktop app, web, CLI, IDE extension, iOS</td>
+        <td data-label="Teams from">$25/seat ($20 billed annually)</td>
+        <td data-label="Get started"><a href="https://developers.openai.com/codex" rel="noopener" data-link="codex">Try free</a></td>
       </tr>
       <tr>
         <th scope="row"><a href="#tool-antigravity">Google Antigravity</a></th>
-        <td>Yes: basic weekly limit, unlimited Tab, Gemini 3.8 Flash</td>
-        <td>$19.99/mo</td>
-        <td>Gemini 4 Neon and Argon + Claude Opus/Sonnet 5.5 inside the plan quota (Pro+)</td>
-        <td>Agent-first: multi-agent app, scheduled tasks, CLI, SDK</td>
-        <td>Own agent app + IDE, CLI, extensions for VS Code, JetBrains, Zed, Xcode</td>
-        <td>From $30/seat via Google Cloud</td>
-        <td><a href="https://antigravity.google" rel="noopener" data-link="antigravity">Try free</a></td>
+        <td data-label="Free tier">Yes: basic weekly limit, unlimited Tab, Gemini 3.8 Flash</td>
+        <td data-label="Starting paid">$19.99/mo</td>
+        <td data-label="Models included">Gemini 4 Neon and Argon + Claude Opus/Sonnet 5.5 inside the plan quota (Pro+)</td>
+        <td data-label="Agents">Agent-first: multi-agent app, scheduled tasks, CLI, SDK</td>
+        <td data-label="Works in">Own agent app + IDE, CLI, extensions for VS Code, JetBrains, Zed, Xcode</td>
+        <td data-label="Teams from">From $30/seat via Google Cloud</td>
+        <td data-label="Get started"><a href="https://antigravity.google" rel="noopener" data-link="antigravity">Try free</a></td>
       </tr>
       <tr>
         <th scope="row"><a href="#tool-gemini-cli">Gemini CLI</a></th>
-        <td>No for individuals: Google sign-in for free, AI Pro and Ultra users ended June 18, 2026</td>
-        <td>Usage-based</td>
-        <td>Gemini 3 and 2.5 (Auto); not optimized for Gemini 4 Argon</td>
-        <td>Terminal agent: subagents, plan mode, hooks, skills, MCP, headless mode</td>
-        <td>Terminal, open source (Apache 2.0)</td>
-        <td>Code Assist ~$22.80/seat ($19 on 12-mo)</td>
-        <td><a href="https://geminicli.com" rel="noopener" data-link="gemini-cli">Get started</a></td>
+        <td data-label="Free tier">No for individuals: Google sign-in for free, AI Pro and Ultra users ended June 18, 2026</td>
+        <td data-label="Starting paid">Usage-based</td>
+        <td data-label="Models included">Gemini 3 and 2.5 (Auto); not optimized for Gemini 4 Argon</td>
+        <td data-label="Agents">Terminal agent: subagents, plan mode, hooks, skills, MCP, headless mode</td>
+        <td data-label="Works in">Terminal, open source (Apache 2.0)</td>
+        <td data-label="Teams from">Code Assist ~$22.80/seat ($19 on 12-mo)</td>
+        <td data-label="Get started"><a href="https://geminicli.com" rel="noopener" data-link="gemini-cli">Get started</a></td>
       </tr>
       <!-- /PRERENDER:table --></tbody>
       </table>
@@ -480,28 +488,28 @@
       <div class="g-featured">
         <a class="g-card g-limits g-feat" href="gpt-6-2-limits-40-percent-faster/" data-cat="limits">
           <span class="g-top"><span class="g-cat">⏳ Limits</span><span class="g-new">New</span></span>
-          <span class="g-art" aria-hidden="true">🔥</span>
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-limits-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /><span class="g-art">🔥</span></span>
           <span class="g-title">GPT-6.2 limits: 40% faster now</span>
           <span class="g-hook">Astra burns 40% faster, Sol 25%. Free reset.</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#062016;background:#10a37f" title="OpenAI Codex / ChatGPT">AI</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-card g-limits g-feat" href="codex-usage-correction-gpt-6-2/" data-cat="limits">
           <span class="g-top"><span class="g-cat">⏳ Limits</span><span class="g-new">New</span></span>
-          <span class="g-art" aria-hidden="true">⏳</span>
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-limits-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /><span class="g-art">⏳</span></span>
           <span class="g-title">Codex limits hitting sooner?</span>
           <span class="g-hook">Price unchanged. Ultrafast is still 6x.</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#062016;background:#10a37f" title="OpenAI Codex / ChatGPT">AI</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-card g-versus g-feat" href="copilot-cli-vs-claude-code-vs-codex-cli/" data-cat="versus">
           <span class="g-top"><span class="g-cat">🥊 Head-to-head</span><span class="g-new">New</span></span>
-          <span class="g-art" aria-hidden="true">⚔️</span>
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-head-to-head-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /><span class="g-art">⚔️</span></span>
           <span class="g-title">Copilot CLI vs Claude Code vs Codex</span>
           <span class="g-hook">Same model, 21 matchups. Scores tie. Bills don't.</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#ffffff;background:#6e40c9" title="GitHub Copilot">GH</span><span class="g-logo" style="color:#1a0f08;background:#d97757" title="Claude / Claude Code">Cl</span><span class="g-logo" style="color:#062016;background:#10a37f" title="OpenAI Codex / ChatGPT">AI</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-card g-pricing g-feat" href="chatgpt-business-1-seat-codex/" data-cat="pricing">
           <span class="g-top"><span class="g-cat">💸 Pricing</span><span class="g-new">New</span></span>
-          <span class="g-art" aria-hidden="true">💼</span>
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-pricing-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /><span class="g-art">💼</span></span>
           <span class="g-title">1-seat ChatGPT Business for Codex?</span>
           <span class="g-hook">$25 a month for the same Codex as Plus</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#062016;background:#10a37f" title="OpenAI Codex / ChatGPT">AI</span></span><span class="g-go" aria-hidden="true">→</span></span>
@@ -510,238 +518,238 @@
       <div class="g-grid">
         <a class="g-card g-news" href="gemini-subscription-dec-2/" data-cat="news">
           <span class="g-top"><span class="g-cat">📰 News</span><span class="g-new">New</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-news-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">Gemini sub on Dec 2: what's real</span>
           <span class="g-hook">&quot;First step&quot; is not a promise. What's confirmed.</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#ffffff;background:#4285f4" title="Google Gemini / Antigravity">G</span><span class="g-logo" style="color:#1a0f08;background:#d97757" title="Claude / Claude Code">Cl</span><span class="g-logo" style="color:#062016;background:#10a37f" title="OpenAI Codex / ChatGPT">AI</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-card g-models" href="gemini-4-neon-vs-opus-5-5-vs-gpt-6-2-astra/" data-cat="models">
           <span class="g-top"><span class="g-cat">🧠 Models</span><span class="g-new">New</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-models-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">Neon vs Opus 5.5 vs Astra</span>
           <span class="g-hook">$6.86 vs $12.61 a task, tied score</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#ffffff;background:#4285f4" title="Google Gemini / Antigravity">G</span><span class="g-logo" style="color:#1a0f08;background:#d97757" title="Claude / Claude Code">Cl</span><span class="g-logo" style="color:#062016;background:#10a37f" title="OpenAI Codex / ChatGPT">AI</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-card g-models" href="mai-code-2-vs-code-2-flash/" data-cat="models">
           <span class="g-top"><span class="g-cat">🧠 Models</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-models-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">MAI Code 2 vs Code 2 Flash</span>
           <span class="g-hook">1/4 the price of Sol in Copilot</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#ffffff;background:#0078d4" title="Microsoft MAI">MS</span><span class="g-logo" style="color:#ffffff;background:#6e40c9" title="GitHub Copilot">GH</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-card g-models" href="gpt-6-2-astra-vs-sol/" data-cat="models">
           <span class="g-top"><span class="g-cat">🧠 Models</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-models-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">GPT-6.2 Astra vs Sol</span>
           <span class="g-hook">One Astra message costs about 3 Sol</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#062016;background:#10a37f" title="OpenAI Codex / ChatGPT">AI</span><span class="g-logo" style="color:#ffffff;background:#6e40c9" title="GitHub Copilot">GH</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-card g-pricing" href="tokeneconomizer-claude-code-codex/" data-cat="pricing">
           <span class="g-top"><span class="g-cat">💸 Pricing</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-pricing-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">TokenEconomizer: cut your agent bill?</span>
           <span class="g-hook">18 to 31% cheaper in tests. One catch.</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#1a0f08;background:#d97757" title="Claude / Claude Code">Cl</span><span class="g-logo" style="color:#062016;background:#10a37f" title="OpenAI Codex / ChatGPT">AI</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-card g-models" href="gemini-4-carbon-vs-hydrogen/" data-cat="models">
           <span class="g-top"><span class="g-cat">🧠 Models</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-models-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">Gemini 4 Carbon vs Hydrogen</span>
           <span class="g-hook">Carbon doubles to $4/$20 on Dec 1</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#ffffff;background:#4285f4" title="Google Gemini / Antigravity">G</span><span class="g-logo" style="color:#ffffff;background:#6e40c9" title="GitHub Copilot">GH</span><span class="g-logo" style="color:#e8eef7;background:#2a3342" title="Cursor">Cu</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-card g-alternatives" href="claude-code-down-backup/" data-cat="alternatives">
           <span class="g-top"><span class="g-cat">🔀 Alternatives</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-alternatives-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">Claude Code down? Backup plan</span>
           <span class="g-hook">2 outages in one morning. Switch in minutes.</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#1a0f08;background:#d97757" title="Claude / Claude Code">Cl</span><span class="g-logo" style="color:#062016;background:#10a37f" title="OpenAI Codex / ChatGPT">AI</span><span class="g-logo" style="color:#ffffff;background:#6e40c9" title="GitHub Copilot">GH</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-card g-versus" href="devin-vs-windsurf/" data-cat="versus">
           <span class="g-top"><span class="g-cat">🥊 Head-to-head</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-head-to-head-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">Devin vs Windsurf</span>
           <span class="g-hook">Not rivals anymore. Teams from $80.</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#062016;background:#67e8f9" title="Windsurf / Devin">Dv</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-more g-card g-limits" href="codex-usage-limits/" data-cat="limits">
           <span class="g-top"><span class="g-cat">⏳ Limits</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-limits-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">Codex usage limits explained</span>
           <span class="g-hook">No, Codex did not go unlimited</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#062016;background:#10a37f" title="OpenAI Codex / ChatGPT">AI</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-more g-card g-news" href="claude-code-secrets-check/" data-cat="news">
           <span class="g-top"><span class="g-cat">📰 News</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-news-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">Claude Code secrets check</span>
           <span class="g-hook">1,122 public repos leaked secrets</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#1a0f08;background:#d97757" title="Claude / Claude Code">Cl</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-more g-card g-models" href="claude-fable-5-2-vs-opus-5-5/" data-cat="models">
           <span class="g-top"><span class="g-cat">🧠 Models</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-models-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">Fable 5.2 vs Opus 5.5</span>
           <span class="g-hook">Fable costs 2x Opus per token</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#1a0f08;background:#d97757" title="Claude / Claude Code">Cl</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-more g-card g-pricing" href="jetbrains-air-subscriptions/" data-cat="pricing">
           <span class="g-top"><span class="g-cat">💸 Pricing</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-pricing-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">JetBrains Air subscriptions</span>
           <span class="g-hook">Copilot now runs in Air on your plan</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#ffffff;background:#e8457c" title="JetBrains">JB</span><span class="g-logo" style="color:#1a0f08;background:#d97757" title="Claude / Claude Code">Cl</span><span class="g-logo" style="color:#062016;background:#10a37f" title="OpenAI Codex / ChatGPT">AI</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-more g-card g-versus" href="cursor-live-apps-vs-lovable-bolt/" data-cat="versus">
           <span class="g-top"><span class="g-cat">🥊 Head-to-head</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-head-to-head-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">Cursor Live Apps vs Lovable vs Bolt</span>
           <span class="g-hook">Cursor now hosts apps on $30+ plans</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#e8eef7;background:#2a3342" title="Cursor">Cu</span><span class="g-logo" style="color:#ffffff;background:#e5486e" title="Lovable">Lv</span><span class="g-logo" style="color:#ffffff;background:#1d4ed8" title="Bolt.new">Bt</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-more g-card g-models" href="swe-2-flash-vs-swe-2/" data-cat="models">
           <span class="g-top"><span class="g-cat">🧠 Models</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-models-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">SWE-2 Flash vs SWE-2</span>
           <span class="g-hook">Free until Dec 4, then $0.10/M</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#062016;background:#67e8f9" title="Windsurf / Devin">Dv</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-more g-card g-news" href="cursor-openai-cutoff/" data-cat="news">
           <span class="g-top"><span class="g-cat">📰 News</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-news-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">Cursor's OpenAI cutoff</span>
           <span class="g-hook">GPT leaves Cursor's Agent. How to keep it.</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#e8eef7;background:#2a3342" title="Cursor">Cu</span><span class="g-logo" style="color:#062016;background:#10a37f" title="OpenAI Codex / ChatGPT">AI</span><span class="g-logo" style="color:#ffffff;background:#6e40c9" title="GitHub Copilot">GH</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-more g-card g-pricing" href="claude-max-vs-ultra/" data-cat="pricing">
           <span class="g-top"><span class="g-cat">💸 Pricing</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-pricing-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">Claude Max vs Ultra</span>
           <span class="g-hook">$200 gets 2x weekly, no 5-hour cap</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#1a0f08;background:#d97757" title="Claude / Claude Code">Cl</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-more g-card g-alternatives" href="jules-alternatives/" data-cat="alternatives">
           <span class="g-top"><span class="g-cat">🔀 Alternatives</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-alternatives-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">Jules alternatives</span>
           <span class="g-hook">Jules shuts down Dec 31. Where to go.</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#ffffff;background:#7c3aed" title="Google Jules">Ju</span><span class="g-logo" style="color:#062016;background:#10a37f" title="OpenAI Codex / ChatGPT">AI</span><span class="g-logo" style="color:#062016;background:#67e8f9" title="Windsurf / Devin">Dv</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-more g-card g-limits" href="chatgpt-pro-codex-limits/" data-cat="limits">
           <span class="g-top"><span class="g-cat">⏳ Limits</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-limits-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">ChatGPT Pro Codex limits</span>
           <span class="g-hook">The Pro 200 Codex cut is canceled</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#062016;background:#10a37f" title="OpenAI Codex / ChatGPT">AI</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-more g-card g-pricing" href="ai-coding-cost-per-task/" data-cat="pricing">
           <span class="g-top"><span class="g-cat">💸 Pricing</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-pricing-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">What one AI task really costs</span>
           <span class="g-hook">$0.16 to $13.30 per task</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#062016;background:#6ee7b7" title="All tools">All</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-more g-card g-alternatives" href="claude-code-alternatives/" data-cat="alternatives">
           <span class="g-top"><span class="g-cat">🔀 Alternatives</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-alternatives-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">Claude Code alternatives</span>
           <span class="g-hook">Who still gives you Opus 5.5</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#1a0f08;background:#d97757" title="Claude / Claude Code">Cl</span><span class="g-logo" style="color:#ffffff;background:#6e40c9" title="GitHub Copilot">GH</span><span class="g-logo" style="color:#e8eef7;background:#2a3342" title="Cursor">Cu</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-more g-card g-pricing" href="free-ai-coding-tools/" data-cat="pricing">
           <span class="g-top"><span class="g-cat">💸 Pricing</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-pricing-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">Free AI coding tools</span>
           <span class="g-hook">Every free plan and its catch</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#062016;background:#6ee7b7" title="All tools">All</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-more g-card g-versus" href="codex-vs-cursor/" data-cat="versus">
           <span class="g-top"><span class="g-cat">🥊 Head-to-head</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-head-to-head-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">OpenAI Codex vs Cursor</span>
           <span class="g-hook">$20 for GPT-6.1 vs $8 Grok-only</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#062016;background:#10a37f" title="OpenAI Codex / ChatGPT">AI</span><span class="g-logo" style="color:#e8eef7;background:#2a3342" title="Cursor">Cu</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-more g-card g-limits" href="usage-limits-compared/" data-cat="limits">
           <span class="g-top"><span class="g-cat">⏳ Limits</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-limits-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">Usage limits compared</span>
           <span class="g-hook">5-hour vs weekly vs monthly credits</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#062016;background:#6ee7b7" title="All tools">All</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-more g-card g-versus" href="gemini-cli-vs-claude-code/" data-cat="versus">
           <span class="g-top"><span class="g-cat">🥊 Head-to-head</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-head-to-head-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">Gemini CLI vs Claude Code</span>
           <span class="g-hook">Gemini CLI dropped Google AI plans</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#ffffff;background:#4285f4" title="Google Gemini / Antigravity">G</span><span class="g-logo" style="color:#1a0f08;background:#d97757" title="Claude / Claude Code">Cl</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-more g-card g-versus" href="copilot-vs-claude-code/" data-cat="versus">
           <span class="g-top"><span class="g-cat">🥊 Head-to-head</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-head-to-head-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">Copilot vs Claude Code</span>
           <span class="g-hook">$10 credits vs $20 with 5-hour limits</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#ffffff;background:#6e40c9" title="GitHub Copilot">GH</span><span class="g-logo" style="color:#1a0f08;background:#d97757" title="Claude / Claude Code">Cl</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-more g-card g-versus" href="cursor-vs-antigravity/" data-cat="versus">
           <span class="g-top"><span class="g-cat">🥊 Head-to-head</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-head-to-head-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">Cursor vs Antigravity</span>
           <span class="g-hook">$19.99 Gemini + Claude vs $30</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#e8eef7;background:#2a3342" title="Cursor">Cu</span><span class="g-logo" style="color:#ffffff;background:#4285f4" title="Google Gemini / Antigravity">G</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-more g-card g-versus" href="claude-code-vs-codex/" data-cat="versus">
           <span class="g-top"><span class="g-cat">🥊 Head-to-head</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-head-to-head-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">Claude Code vs Codex</span>
           <span class="g-hook">Same $20 price, different limits</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#1a0f08;background:#d97757" title="Claude / Claude Code">Cl</span><span class="g-logo" style="color:#062016;background:#10a37f" title="OpenAI Codex / ChatGPT">AI</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-more g-card g-pricing" href="ai-coding-tool-pricing/" data-cat="pricing">
           <span class="g-top"><span class="g-cat">💸 Pricing</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-pricing-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">AI coding tool pricing 2026</span>
           <span class="g-hook">All 41 plans on one page</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#062016;background:#6ee7b7" title="All tools">All</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-more g-card g-versus" href="lovable-vs-bolt/" data-cat="versus">
           <span class="g-top"><span class="g-cat">🥊 Head-to-head</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-head-to-head-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">Lovable vs Bolt.new</span>
           <span class="g-hook">Credits vs tokens for app builders</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#ffffff;background:#e5486e" title="Lovable">Lv</span><span class="g-logo" style="color:#ffffff;background:#1d4ed8" title="Bolt.new">Bt</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-more g-card g-versus" href="cursor-vs-windsurf/" data-cat="versus">
           <span class="g-top"><span class="g-cat">🥊 Head-to-head</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-head-to-head-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">Cursor vs Windsurf</span>
           <span class="g-hook">Windsurf is now Devin Desktop</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#e8eef7;background:#2a3342" title="Cursor">Cu</span><span class="g-logo" style="color:#062016;background:#67e8f9" title="Windsurf / Devin">Dv</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-more g-card g-versus" href="claude-code-vs-cursor/" data-cat="versus">
           <span class="g-top"><span class="g-cat">🥊 Head-to-head</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-head-to-head-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">Claude Code vs Cursor</span>
           <span class="g-hook">Terminal agent vs AI IDE</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#1a0f08;background:#d97757" title="Claude / Claude Code">Cl</span><span class="g-logo" style="color:#e8eef7;background:#2a3342" title="Cursor">Cu</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-more g-card g-versus" href="cursor-vs-copilot/" data-cat="versus">
           <span class="g-top"><span class="g-cat">🥊 Head-to-head</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-head-to-head-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">Cursor vs GitHub Copilot</span>
           <span class="g-hook">Plans, models and editors side by side</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#e8eef7;background:#2a3342" title="Cursor">Cu</span><span class="g-logo" style="color:#ffffff;background:#6e40c9" title="GitHub Copilot">GH</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-more g-card g-alternatives" href="switch-from-copilot-to-cursor/" data-cat="alternatives">
           <span class="g-top"><span class="g-cat">🔀 Alternatives</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-alternatives-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">Switch from Copilot to Cursor</span>
           <span class="g-hook">Move over without losing your setup</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#ffffff;background:#6e40c9" title="GitHub Copilot">GH</span><span class="g-logo" style="color:#e8eef7;background:#2a3342" title="Cursor">Cu</span></span><span class="g-go" aria-hidden="true">→</span></span>
         </a>
         <a class="g-more g-card g-alternatives" href="cursor-bundle-alternatives/" data-cat="alternatives">
           <span class="g-top"><span class="g-cat">🔀 Alternatives</span></span>
-          
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-alternatives-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" /></span>
           <span class="g-title">Cursor's new bundle: switch?</span>
           <span class="g-hook">Claude Code or Copilot instead?</span>
           <span class="g-foot"><span class="g-logos"><span class="g-logo" style="color:#e8eef7;background:#2a3342" title="Cursor">Cu</span><span class="g-logo" style="color:#1a0f08;background:#d97757" title="Claude / Claude Code">Cl</span><span class="g-logo" style="color:#ffffff;background:#6e40c9" title="GitHub Copilot">GH</span></span><span class="g-go" aria-hidden="true">→</span></span>
@@ -799,28 +807,38 @@
     </section>
 
     <section class="panel" id="disclosure" style="margin-top:28px">
-      <h2>Editorial disclosure</h2>
+      <details class="ui-full ui-plain"><summary><h2 style="margin:0;font-size:1.05rem">Editorial disclosure: rankings are not for sale</h2></summary>
       <p><strong>Rankings are not for sale.</strong> Sponsored placements and affiliate links are always labeled, and they never change our recommendations, quiz results, prices, or comparison data. <strong>Links marked "referral" are affiliate links (Bolt.new and Netlify):</strong> if you buy through them, we may earn a commission at no extra cost to you. Every other link is a plain link that pays us nothing, and pricing source links are never affiliate links. <a href="advertise/#policy">Editorial policy</a>.</p>
+      </details>
     </section>
 
     <section class="panel" id="faq" style="margin-top:28px">
       <h2>FAQ</h2>
-      <h3>What is the best AI coding tool in 2026?</h3>
+      
+      <details class="ui-faq"><summary><h3>What is the best AI coding tool in 2026?</h3></summary><div class="ui-faq-a">
       <p>It depends on your workflow. Cursor is the strongest all-round AI IDE, Claude Code is best for terminal-first agentic work, OpenAI Codex is the cheapest way into a coding agent (Free and $8 Go tiers), Google Antigravity packs Gemini and Claude models into a $19.99 plan, GitHub Copilot is the cheapest inside existing editors, Devin Desktop (formerly Windsurf) suits engineers juggling many local and cloud agents, and Lovable or Bolt.new are best for non-coders building full apps from prompts.</p>
-      <h3>Which AI coding tool is best for vibe coding?</h3>
+      </div></details>
+      <details class="ui-faq"><summary><h3>Which AI coding tool is best for vibe coding?</h3></summary><div class="ui-faq-a">
       <p>For vibe coding a full app without writing much code, Lovable and Bolt.new are the easiest. Developers who want to stay in control of the code usually prefer Cursor or Claude Code. See <a href="lovable-vs-bolt/">Lovable vs Bolt</a> and <a href="claude-code-vs-cursor/">Claude Code vs Cursor</a>.</p>
-      <h3>Is there a free AI coding tool?</h3>
+      </div></details>
+      <details class="ui-faq"><summary><h3>Is there a free AI coding tool?</h3></summary><div class="ui-faq-a">
       <p>Yes. Cursor, GitHub Copilot, Google Antigravity, OpenAI Codex (desktop app, subject to rollout), Devin Desktop (formerly Windsurf), Lovable, and Bolt.new all have free tiers with limited usage. Claude Code requires a paid Claude plan or API usage. See the <a href="free-ai-coding-tools/">free AI coding tools guide</a>.</p>
-      <h3>Cursor vs GitHub Copilot: which is better?</h3>
+      </div></details>
+      <details class="ui-faq"><summary><h3>Cursor vs GitHub Copilot: which is better?</h3></summary><div class="ui-faq-a">
       <p>Cursor offers deeper codebase-aware editing and agent features in its own IDE, and its Plus plan is $8/month but Grok-only (Claude and GPT cost extra at API list price on Premium $30+). Copilot Pro is $10/month, includes Claude and GPT models in its credits, and works inside VS Code, JetBrains, and other editors you already use. Full breakdown: <a href="cursor-vs-copilot/">Cursor vs GitHub Copilot</a>, plus a guide to <a href="switch-from-copilot-to-cursor/">switching from Copilot to Cursor without losing your setup</a>.</p>
-      <h3>What happened to Windsurf?</h3>
+      </div></details>
+      <details class="ui-faq"><summary><h3>What happened to Windsurf?</h3></summary><div class="ui-faq-a">
       <p>Cognition acquired Windsurf on July 14, 2025 and renamed it to Devin Desktop on June 2, 2026. It is the same IDE, now centered on an Agent Command Center for local and cloud Devin agents. windsurf.com redirects to devin.ai/desktop. Self-serve pricing, re-checked Nov 15, 2026: Free $0, Pro $20/month, Max $200/month, Teams $80/month minimum plus $40 per full seat, up to 100 members (five full seats are $200/month). Devin Apps launched Nov 13, 2026 (private web apps on Devin's cloud machine; rate unpublished). Sources: <a href="https://cognition.com/blog/windsurf" rel="noopener">acquisition</a>, <a href="https://devin.ai/blog/windsurf-is-now-devin-desktop" rel="noopener">rename</a>, <a href="https://devin.ai/pricing" rel="noopener">pricing</a>. Full story: <a href="devin-vs-windsurf/">Devin vs Windsurf</a>, and the IDE comparison <a href="cursor-vs-windsurf/">Cursor vs Windsurf (Devin Desktop)</a>.</p>
-      <h3>What is Google Antigravity and how much does it cost?</h3>
+      </div></details>
+      <details class="ui-faq"><summary><h3>What is Google Antigravity and how much does it cost?</h3></summary><div class="ui-faq-a">
       <p>Google Antigravity is Google's agent-first coding platform: a desktop agent app, its own IDE, a CLI, and extensions for VS Code, JetBrains, Zed and Xcode. It has a free tier (basic weekly limit, unlimited Tab). Paid tiers come with Google AI plans: Pro $19.99/month, which includes Gemini 4 Argon and Claude Opus and Sonnet 5.5, and Ultra at $99.99 or $199.99/month for 5x or 20x the Pro quota. Prices checked Oct 20, 2026. Full breakdown: <a href="cursor-vs-antigravity/">Cursor vs Google Antigravity</a>.</p>
-      <h3>Is Gemini CLI still free?</h3>
+      </div></details>
+      <details class="ui-faq"><summary><h3>Is Gemini CLI still free?</h3></summary><div class="ui-faq-a">
       <p>No, not for individuals anymore. On June 18, 2026 Google stopped serving Gemini CLI for free users and Google AI Pro and Ultra subscribers and moved them to Antigravity CLI. Gemini CLI is still open source (Apache 2.0) and still works with a paid Gemini API key (billed per token) or a Gemini Code Assist Standard or Enterprise license. Checked Oct 22, 2026. Full breakdown: <a href="gemini-cli-vs-claude-code/">Gemini CLI vs Claude Code</a>.</p>
-      <h3>How often is this comparison updated?</h3>
-      <p>Pricing and features are checked regularly against official vendor pages; see the <a href="ai-coding-tool-pricing/#changelog">pricing change log</a> for what changed and when. Always confirm prices on the vendor page.</p>
+      </div></details>
+      <details class="ui-faq"><summary><h3>How often is this comparison updated?</h3></summary><div class="ui-faq-a">
+      <p>Pricing and features are checked regularly against official vendor pages; see the <a href="ai-coding-tool-pricing/#changelog">pricing change log</a> for what changed and when. Always confirm prices on the vendor page.</p></div></details>
+    
     </section>
 
     <footer>

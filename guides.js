@@ -11,6 +11,9 @@
 //   date   YYYY-MM-DD the page went live. Cards dated within 7 days of the
 //          prerender date get a "New" badge; the 4 newest become the big featured row.
 //   icon   optional emoji for the card art (defaults to the category icon)
+//   Card thumbnails come from the category: img/cat-<category>-sm.webp (versus uses cat-head-to-head).
+// Guide PAGES also need a TL;DR entry in scripts/guide-tldr.js (winner, one-line verdict, 3-4 stats);
+// prerender.js runs scripts/enhance.js, which builds the TL;DR card, jump chips and accordions.
 // Then run: node scripts/prerender.js
 window.GUIDE_CATS = {
   pricing: { label: "Pricing", icon: "💸" },
@@ -81,6 +84,7 @@ window.GUIDES = [
 window.CTP_GUIDES = (function () {
   const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   const FEATURED = 4;
+  const IMG = { versus: "head-to-head" }; // category -> img/cat-*.webp (decorative, so alt="")
   const VISIBLE = 8; // grid cards shown before "Show all guides" (JS only; all links stay in the HTML)
   function card(g, isNew, featured) {
     const c = window.GUIDE_CATS[g.cat];
@@ -93,7 +97,7 @@ window.CTP_GUIDES = (function () {
     return `
         <a class="g-card g-${g.cat}${featured ? " g-feat" : ""}" href="${g.slug}/" data-cat="${g.cat}">
           <span class="g-top"><span class="g-cat">${c.icon} ${c.label}</span>${isNew ? '<span class="g-new">New</span>' : ""}</span>
-          ${featured ? `<span class="g-art" aria-hidden="true">${g.icon || c.icon}</span>` : ""}
+          <span class="g-img-wrap" aria-hidden="true"><img class="g-img" src="img/cat-${IMG[g.cat] || g.cat}-sm.webp" width="480" height="270" alt="" loading="lazy" decoding="async" />${featured ? `<span class="g-art">${g.icon || c.icon}</span>` : ""}</span>
           <span class="g-title">${esc(g.title)}</span>
           <span class="g-hook">${esc(g.hook)}</span>
           <span class="g-foot"><span class="g-logos">${logos}</span><span class="g-go" aria-hidden="true">→</span></span>
