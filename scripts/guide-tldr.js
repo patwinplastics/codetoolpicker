@@ -7,6 +7,7 @@
 //   stats   3 or 4 [big value, small label] pairs. Only numbers that are on the page.
 // Every fact must already be on the page. No em dashes.
 module.exports = {
+  "terminal-bench-4-1-cost-per-point": { win: "Sol for value, Fusion for top score", verdict: "GPT-6.2 Sol gets 61.5% for $0.3k. Fusion tops the board for $2.0k. Fable 5.2 is the priciest point.", stats: [["71.2%", "Copilot Fusion, $2.0k run"], ["$4.88", "per point: GPT-6.2 Sol"], ["$251", "per point: Fable 5.2"], ["3 of 13", "top agents worth paying for"]] },
   "gpt-6-2-limits-40-percent-faster": { win: "Same price, faster drain", verdict: "OpenAI fixed a GPT-6.2 billing bug in Codex. Your limit now drains faster; other models are untouched.", stats: [["40%", "faster: Astra"], ["25%", "faster: Sol"], ["$0", "price change"], ["1", "free banked reset"]] },
   "codex-usage-correction-gpt-6-2": { win: "Price unchanged", verdict: "Some Astra and Sol usage was undercounted. The meter is fixed, so limits may hit sooner.", stats: [["$0", "price change"], ["GPT-6.2", "Astra and Sol affected"], ["Nov 25", "email went out"]] },
   "copilot-cli-vs-claude-code-vs-codex-cli": { win: "Pick the model, not the harness", verdict: "Same model, different agent: scores barely move. The bill does.", stats: [["20 of 21", "pairs within 4 points"], ["7 to 21%", "Copilot CLI costlier than Claude Code (6 of 9)"], ["2 to 55%", "Copilot CLI cheaper than Codex CLI (11 of 12)"]] },
