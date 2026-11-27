@@ -434,7 +434,7 @@
         html += '<div class="fact"><div class="k">Best score under ' + k(max) + '</div>' + (b ? '<p class="big">' + b.s + '%</p><h3>' + b.n + '</h3><p>' + b.h + ', ' + k(b.c) + '</p>' : '<p class="big">None</p><p>Raise the budget.</p>') + '</div>';
         html += '<div class="fact' + (both.length ? '' : ' warn') + '"><div class="k">Agents that fit both</div><p class="big">' + both.length + '</p><p>of 16 with a listed cost</p></div>';
         var top = rows.slice().sort(function (a, b) { return b.s - a.s; })[0];
-        html += '<div class="fact"><div class="k">vs the top score</div>' + (c ? '<p class="big">' + Math.round(100 * c.c / top.c) + '%</p><p>of Fusion\'s cost for ' + (top.s - c.s).toFixed(1) + ' fewer points</p>' : '<p class="big">-</p><p>&nbsp;</p>') + '</div>';
+        html += '<div class="fact"><div class="k">vs the top score</div>' + (c && c === top ? '<p class="big">Top</p><p>This is the highest score on the board</p>' : c ? '<p class="big">' + Math.round(100 * c.c / top.c) + '%</p><p>of Fusion\'s cost for ' + (top.s - c.s).toFixed(1) + ' fewer points</p>' : '<p class="big">-</p><p>&nbsp;</p>') + '</div>';
         g("f-out").innerHTML = html + '</div>';
         draw(min, max);
       }
