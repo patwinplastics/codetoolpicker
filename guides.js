@@ -40,6 +40,7 @@ window.TOOL_BADGES = {
 };
 
 window.GUIDES = [
+  { slug: "ai-coding-dev-setup", title: "Best AI coding dev setup", hook: "Free launcher. Pro is $10 a month for AI.", cat: "alternatives", tools: ["cursor", "all"], date: "2026-11-27", icon: "🧰" },
   { slug: "terminal-bench-4-1-cost-per-point", title: "Terminal-Bench 4.1: cost per point", hook: "Fable costs 55x Sol for 4 more points", cat: "models", tools: ["copilot", "claude", "codex", "gemini"], date: "2026-11-27", icon: "📊" },
   { slug: "gpt-6-2-limits-40-percent-faster", title: "GPT-6.2 limits: 40% faster now", hook: "Astra burns 40% faster, Sol 25%. Free reset.", cat: "limits", tools: ["codex"], date: "2026-11-26", icon: "🔥" },
   { slug: "codex-usage-correction-gpt-6-2", title: "Codex limits hitting sooner?", hook: "Price unchanged. Ultrafast is still 6x.", cat: "limits", tools: ["codex"], date: "2026-11-25", icon: "⏳" },

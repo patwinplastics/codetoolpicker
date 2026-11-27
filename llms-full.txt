@@ -5,6 +5,7 @@ Editorial policy: rankings are not for sale. Sponsors and affiliate links are la
 Contact (sponsorships, corrections): sponsors@codetoolpicker.com
 
 See also: https://codetoolpicker.com/ai-coding-tool-pricing/ (all 41 plans across 9 tools, which one you need, cost calculator, pricing change log)
+See also: https://codetoolpicker.com/ai-coding-dev-setup/ (Best AI coding dev setup 2026, checked Nov 27, 2026 on raycast.com/pricing, the Raycast Manual billing page, raycast.com/windows and raycast.com/faq: Raycast is a free launcher with Store extensions; Pro $10/mo or $96/year with 500 AI credits, Pro+ $20/$192 with 3,000, Max $50/$480 with 7,500; one subscription covers macOS, Windows and iOS; Mac v2 needs macOS Tahoe and Apple Silicon; Windows 10 21H2+ and Windows 11; no Linux plans; official GitHub and Linear extensions; interactive plan picker; labeled Raycast affiliate link)
 See also: https://codetoolpicker.com/cursor-bundle-alternatives/ (Cursor bundle vs Claude Code vs Copilot)
 See also: https://codetoolpicker.com/cursor-vs-copilot/ (Cursor vs GitHub Copilot)
 See also: https://codetoolpicker.com/switch-from-copilot-to-cursor/ (switch from Copilot to Cursor without losing your setup)
